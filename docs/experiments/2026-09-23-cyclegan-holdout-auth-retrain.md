@@ -2,7 +2,7 @@
 
 - 实验 ID：`AUTH-HOLDOUT-20260923`
 - 日期：2026-09-23
-- 状态：九套认证头全部训练完成
+- 状态：九套认证头训练与五随机种子固定测试验证全部完成
 - 目的：在不重新训练 CycleGAN 的前提下，修复认证头直接使用 CycleGAN 训练样本造成的跨阶段泄漏
 
 ## 方案与原因
@@ -117,7 +117,7 @@ GitHub 历史记录确认 bo 300 样本 CycleGAN 已于2026-09-22完成，模型
 
 ## 待完成
 
-1. 使用本实验固定的 109 条最终测试子集重跑 EER、FAR、FRR、HTER 和 Balanced Accuracy；
-2. 重新运行 E1-A/E1-B，并明确标记为“低成本、梯度隔离协议”；
+1. 已完成固定109条测试子集上的 EER、FAR、FRR、HTER 和 Balanced Accuracy；结果见 [`2026-09-23-e1-holdout-global-vs-personalized.md`](./2026-09-23-e1-holdout-global-vs-personalized.md)。
+2. 当前宏平均测试 EER 约32.07%，旧5.54%结果不再作为正式证据；先进行用户质量门槛和困难用户审计。
 3. 若要形成论文最终结论，仍建议补做预先固定 outer split 的严格实验。
 
