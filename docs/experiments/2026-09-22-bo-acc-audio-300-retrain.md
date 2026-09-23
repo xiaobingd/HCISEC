@@ -63,3 +63,7 @@
 ## 数据隔离声明
 
 本条目不包含原始用户数据、原始特征、样本内容、凭据或模型二进制文件。仓库只保存脱敏后的配置、过程原因、哈希和聚合指标。
+
+## 2026-09-23 隔离协议补训
+
+历史模型已在文件存储盘按本记录路径找回，远程 SHA-256 与本页记录的 `77e2c2e1b93bc93a9d8e85e0210e337303e870d7cff98b1b152659a0e75db715` 完全一致。随后使用 CycleGAN validation+test 候选池和固定认证 326/109/109 划分补训 bo 认证头，跨阶段与认证阶段交集均为0。认证头 best epoch=85，test Intra=0.4237、Inter=0.1790、Sep=0.2447，认证头 SHA-256 为 `bc9bb1f3a490832702ec3f6a3b8a720e249a0e1a55df9a93d35918ebf96bce35`。完整协议见 [`2026-09-23-cyclegan-holdout-auth-retrain.md`](./2026-09-23-cyclegan-holdout-auth-retrain.md)。
