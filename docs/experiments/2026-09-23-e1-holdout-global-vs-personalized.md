@@ -2,9 +2,37 @@
 
 - 实验 ID：`E1-HOLDOUT-20260923`
 - 日期：2026-09-23
-- 状态：已完成
+- 状态：已完成，但协议被确认过度限制；结果仅作数据饥饿诊断，不作为模型最终结论
 - 目的：在修复跨阶段训练—测试泄漏后，重新评估九位注册者，并比较全局阈值与个性化阈值
 - 结论级别：低成本、梯度隔离协议；不是预先设计的严格 outer-holdout 最终实验
+
+## 2026-09-23 代码与协议复核更正
+
+用户指出旧版认证头整体效果正常后，重新对照旧/新 checkpoint 与训练日志，确认：
+
+- 新旧均使用 `trainb.py + modelb.py`；
+- 均为 `MultiSourceAuthModel`、SupCon、100 epochs、batch size 32；
+- 均启用 shallow、bottleneck、cycle-diff；
+- checkpoint 均有179个 state keys，模型配置一致；
+- 可训练参数均为825,216。
+
+性能下降的主要原因不是更换了认证头代码，而是本轮错误地把九个人都限制为各自 CycleGAN validation+test，导致认证头训练量从旧版1524条降到326条，注册模板从旧协议约28条/人降到5–6条/人。
+
+这一限制是不必要的。对于某个目标用户的单人 CycleGAN：
+
+1. 只有该目标用户的数据参与过该 CycleGAN；
+2. 其他八名用户的全部数据均未参与该目标 CycleGAN；
+3. 更重要的是，认证头可以与 CycleGAN 共用训练集；只要最终认证测试严格保留在未见的 CycleGAN test 中，就不存在最终测试泄漏。
+
+因此本页32.07% EER只能说明“用极少 holdout 数据训练认证头并仅用5–6条注册”效果差，不能据此否定原认证头结构。正确的低成本修复协议应是：
+
+- 目标用户 CycleGAN train：用于认证头训练；
+- 目标用户 CycleGAN validation：拆分 enrollment 与 threshold calibration；
+- 目标用户 CycleGAN test：仅用于最终 genuine 测试；
+- 其他用户：为该目标认证头单独固定 auth train/validation/test，确保该头的最终 impostor test 不进入认证头训练；
+- 每套目标认证头保存独立 manifest，并强制检查最终 genuine/impostor test 与认证头训练交集为0。
+
+本页结果保留用于完整溯源，但不再作为“模型整体失效”或“不能进入E2”的直接证据。
 
 ## 为什么执行
 
