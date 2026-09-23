@@ -132,3 +132,7 @@ audit_all_users.py 检查的是评估脚本新生成的 train/validation/test �
 ## 影响
 
 E1-A、E1-B 和基于它们形成的用户难度结论保留为探索性结果，不作为独立泛化证据。所有正式指标需要在统一外层划分下重新训练九套 CycleGAN、九套认证头并重新评估。
+
+## 后续低成本补救实验
+
+在暂不重训 CycleGAN 的成本约束下，已启动仅使用历史 CycleGAN validation+test 的认证头重训。该方案保证与 CycleGAN 梯度训练集隔离，但不等价于预先设计的严格 outer holdout。协议、样本计数、断言与运行状态见 [`2026-09-23-cyclegan-holdout-auth-retrain.md`](./2026-09-23-cyclegan-holdout-auth-retrain.md)。
