@@ -15,5 +15,5 @@ For comparison, the prior 15-genuine protocol gave C4 AUC 0.9789/0.7817 for user
 
 The 30-sample result is not simply a larger version of an unchanged test set: 15 former target-development examples entered final testing, reducing the data available for threshold calibration. Thus changes in FAR/FRR reflect both the new test composition and the recalibrated threshold. The existing per-user full-data normalization in `acc.npy` also remains a limitation.
 
-Reproducibility: `work/target_auth_protocol_150_final30.py` and `work/innovation1_user1_response_gap_pilot.py`. Full outputs and sample IDs: `work/innovation1_final30_20260929/user1/` and `work/innovation1_final30_20260929/user4/`.
+Reproducibility: `experiments/innovation1_final30/target_auth_protocol_150_final30.py` and `experiments/innovation1_final30/innovation1_response_gap_pilot.py`. Aggregate and per-source metrics are in `experiments/innovation1_final30/results/user1_result.json` and `user4_result.json`. Full sample-index manifests remain in the local/remote experiment outputs: `work/innovation1_final30_20260929/user1/` and `work/innovation1_final30_20260929/user4/`.
 
