@@ -1,0 +1,486 @@
+{
+  "protocol": "150_cyclegan_plus_auth_target_final30",
+  "target": "user4",
+  "mismatch_models": [
+    1,
+    5
+  ],
+  "checkpoint_paths": {
+    "1": "/root/autodl-fs/cyclegan_forward_aligned_20260928/user1/cyclegan/model/checkpoint_epoch_50.pth",
+    "4": "/root/autodl-fs/cyclegan_forward_aligned_20260928/user4/cyclegan/model/checkpoint_epoch_50.pth",
+    "5": "/root/autodl-fs/cyclegan_forward_aligned_20260928/user5/cyclegan/model/checkpoint_epoch_50.pth"
+  },
+  "checkpoint_sha256": {
+    "1": "a8e7a06b5a7fd4415585ea31026b55eeec25be0c09859afdb426553cd418ae82",
+    "4": "0c741a9056d55880130e6953815e2c17a0021dc12d6befbd53efdd9ad5201924",
+    "5": "638197e43d0d5d9fa7980a8a469460f5337f8c4ae0d67da6b9928b562c648f86"
+  },
+  "counts": {
+    "auth_train": 803,
+    "model_validation": 135,
+    "target_dev_pool": 14,
+    "final_genuine": 30,
+    "impostor_calibration": 119,
+    "final_impostor": 240
+  },
+  "normalizations": {
+    "N0_current": {
+      "calibration": {
+        "response_score_train_mean_std": {
+          "1": [
+            0.9993464946746826,
+            6.620688509428874e-05
+          ],
+          "4": [
+            0.9993586540222168,
+            9.828068141359836e-05
+          ],
+          "5": [
+            0.9993808269500732,
+            9.055962436832488e-05
+          ]
+        },
+        "response_prototype_owners": {
+          "1": "bo",
+          "4": "user4",
+          "5": "user5"
+        }
+      },
+      "candidates": {
+        "C0_shallow": {
+          "C": 0.1,
+          "model_val_multiclass_acc": 0.3111111111111111,
+          "threshold": 0.1290805410277441,
+          "dev_far": 0.20168067226890757,
+          "dev_frr": 0.35714285714285715,
+          "final_auc": 0.7305555555555555,
+          "final_eer_descriptive": 0.3291666666666667,
+          "final_far": 0.23333333333333334,
+          "final_frr": 0.36666666666666664,
+          "final_hter": 0.3,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 8,
+              "far": 0.26666666666666666
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 4,
+              "far": 0.13333333333333333
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 9,
+              "far": 0.3
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 8,
+              "far": 0.26666666666666666
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 7,
+              "far": 0.23333333333333334
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 12,
+              "far": 0.4
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 2,
+              "far": 0.06666666666666667
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 6,
+              "far": 0.2
+            }
+          }
+        },
+        "C1_bottleneck": {
+          "C": 0.01,
+          "model_val_multiclass_acc": 0.28888888888888886,
+          "threshold": 0.06558855203954635,
+          "dev_far": 0.3697478991596639,
+          "dev_frr": 0.07142857142857142,
+          "final_auc": 0.8015277777777777,
+          "final_eer_descriptive": 0.2333333333333333,
+          "final_far": 0.4166666666666667,
+          "final_frr": 0.2,
+          "final_hter": 0.30833333333333335,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 19,
+              "far": 0.6333333333333333
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 13,
+              "far": 0.43333333333333335
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 10,
+              "far": 0.3333333333333333
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 7,
+              "far": 0.23333333333333334
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 14,
+              "far": 0.4666666666666667
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 19,
+              "far": 0.6333333333333333
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 11,
+              "far": 0.36666666666666664
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 7,
+              "far": 0.23333333333333334
+            }
+          }
+        },
+        "C2_absolute_cycle": {
+          "C": 0.01,
+          "model_val_multiclass_acc": 0.2814814814814815,
+          "threshold": 0.09321768911718521,
+          "dev_far": 0.5042016806722689,
+          "dev_frr": 0.14285714285714285,
+          "final_auc": 0.6515277777777778,
+          "final_eer_descriptive": 0.36875,
+          "final_far": 0.4875,
+          "final_frr": 0.3333333333333333,
+          "final_hter": 0.41041666666666665,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 14,
+              "far": 0.4666666666666667
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 13,
+              "far": 0.43333333333333335
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 18,
+              "far": 0.6
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 16,
+              "far": 0.5333333333333333
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 13,
+              "far": 0.43333333333333335
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 22,
+              "far": 0.7333333333333333
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 12,
+              "far": 0.4
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 9,
+              "far": 0.3
+            }
+          }
+        },
+        "C3_bottleneck_absolute": {
+          "C": 0.01,
+          "model_val_multiclass_acc": 0.2962962962962963,
+          "threshold": 0.12872469099271733,
+          "dev_far": 0.21008403361344538,
+          "dev_frr": 0.21428571428571427,
+          "final_auc": 0.8644444444444445,
+          "final_eer_descriptive": 0.19166666666666665,
+          "final_far": 0.1875,
+          "final_frr": 0.16666666666666666,
+          "final_hter": 0.17708333333333331,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 13,
+              "far": 0.43333333333333335
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 5,
+              "far": 0.16666666666666666
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 6,
+              "far": 0.2
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 1,
+              "far": 0.03333333333333333
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 5,
+              "far": 0.16666666666666666
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 8,
+              "far": 0.26666666666666666
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 2,
+              "far": 0.06666666666666667
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 5,
+              "far": 0.16666666666666666
+            }
+          }
+        },
+        "C4_cycle_gap": {
+          "C": 10.0,
+          "model_val_multiclass_acc": 0.2962962962962963,
+          "threshold": 0.2642017409233235,
+          "dev_far": 0.10084033613445378,
+          "dev_frr": 0.2857142857142857,
+          "final_auc": 0.8372222222222223,
+          "final_eer_descriptive": 0.23124999999999996,
+          "final_far": 0.09583333333333334,
+          "final_frr": 0.5,
+          "final_hter": 0.29791666666666666,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 5,
+              "far": 0.16666666666666666
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 5,
+              "far": 0.16666666666666666
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 0,
+              "far": 0.0
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 0,
+              "far": 0.0
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 3,
+              "far": 0.1
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 7,
+              "far": 0.23333333333333334
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 2,
+              "far": 0.06666666666666667
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 1,
+              "far": 0.03333333333333333
+            }
+          }
+        },
+        "C5_response_gap": {
+          "C": 0.01,
+          "model_val_multiclass_acc": 0.2,
+          "threshold": 0.11291149314250387,
+          "dev_far": 0.4369747899159664,
+          "dev_frr": 0.42857142857142855,
+          "final_auc": 0.5883333333333334,
+          "final_eer_descriptive": 0.43333333333333335,
+          "final_far": 0.5208333333333334,
+          "final_frr": 0.3,
+          "final_hter": 0.41041666666666665,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 22,
+              "far": 0.7333333333333333
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 19,
+              "far": 0.6333333333333333
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 18,
+              "far": 0.6
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 10,
+              "far": 0.3333333333333333
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 18,
+              "far": 0.6
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 15,
+              "far": 0.5
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 15,
+              "far": 0.5
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 8,
+              "far": 0.26666666666666666
+            }
+          }
+        },
+        "C6_relative_gaps": {
+          "C": 0.1,
+          "model_val_multiclass_acc": 0.2814814814814815,
+          "threshold": 0.19804354642578273,
+          "dev_far": 0.18487394957983194,
+          "dev_frr": 0.2857142857142857,
+          "final_auc": 0.8170833333333334,
+          "final_eer_descriptive": 0.23958333333333331,
+          "final_far": 0.17916666666666667,
+          "final_frr": 0.4,
+          "final_hter": 0.28958333333333336,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 12,
+              "far": 0.4
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 6,
+              "far": 0.2
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 3,
+              "far": 0.1
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 1,
+              "far": 0.03333333333333333
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 6,
+              "far": 0.2
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 11,
+              "far": 0.36666666666666664
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 3,
+              "far": 0.1
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 1,
+              "far": 0.03333333333333333
+            }
+          }
+        },
+        "C7_all": {
+          "C": 0.01,
+          "model_val_multiclass_acc": 0.34074074074074073,
+          "threshold": 0.18189990929566077,
+          "dev_far": 0.13445378151260504,
+          "dev_frr": 0.21428571428571427,
+          "final_auc": 0.8934722222222222,
+          "final_eer_descriptive": 0.1708333333333333,
+          "final_far": 0.14166666666666666,
+          "final_frr": 0.2,
+          "final_hter": 0.17083333333333334,
+          "source_far": {
+            "bo": {
+              "n": 30,
+              "accepted": 10,
+              "far": 0.3333333333333333
+            },
+            "user2": {
+              "n": 30,
+              "accepted": 4,
+              "far": 0.13333333333333333
+            },
+            "user3": {
+              "n": 30,
+              "accepted": 4,
+              "far": 0.13333333333333333
+            },
+            "user5": {
+              "n": 30,
+              "accepted": 1,
+              "far": 0.03333333333333333
+            },
+            "user6": {
+              "n": 30,
+              "accepted": 3,
+              "far": 0.1
+            },
+            "user7": {
+              "n": 30,
+              "accepted": 9,
+              "far": 0.3
+            },
+            "user8": {
+              "n": 30,
+              "accepted": 2,
+              "far": 0.06666666666666667
+            },
+            "user9": {
+              "n": 30,
+              "accepted": 1,
+              "far": 0.03333333333333333
+            }
+          }
+        }
+      }
+    }
+  },
+  "note": "N1/N2 are post-hoc normalized-spectrogram stress tests for frozen generators. Existing acc.npy already used per-user full-data scaling; N3 requires raw-data retraining."
+}
