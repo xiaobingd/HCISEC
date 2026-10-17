@@ -1,0 +1,75 @@
+{
+  "fit": {
+    "original_pitch": {
+      "epoch": 38,
+      "val_loss": 9.952329397201538,
+      "parameters": 57453
+    },
+    "signed_axes_pitch": {
+      "epoch": 171,
+      "val_loss": 9.750132083892822,
+      "parameters": 8723
+    },
+    "signed_axes_contrast": {
+      "epoch": 144,
+      "val_loss": 9.740220308303833,
+      "parameters": 11907
+    }
+  },
+  "validation": {
+    "original_pitch": {
+      "voicing_f1": 0.7201346045989905,
+      "voiced_f0_median_error_cents": 151.49166895115445,
+      "voiced_f0_mean_error_cents": 195.320598352631,
+      "within50cents_on_voiced": 0.16422287390029325,
+      "within50cents_including_missed_voicing": 0.15542521994134897,
+      "frames": 682
+    },
+    "signed_axes_pitch": {
+      "voicing_f1": 0.7372972972972973,
+      "voiced_f0_median_error_cents": 190.27859586945146,
+      "voiced_f0_mean_error_cents": 225.1016102680099,
+      "within50cents_on_voiced": 0.09237536656891496,
+      "within50cents_including_missed_voicing": 0.09237536656891496,
+      "frames": 682
+    },
+    "signed_axes_contrast": {
+      "voicing_f1": 0.7372972972972973,
+      "voiced_f0_median_error_cents": 195.94604016800312,
+      "voiced_f0_mean_error_cents": 227.03797027594067,
+      "within50cents_on_voiced": 0.12609970674486803,
+      "within50cents_including_missed_voicing": 0.12609970674486803,
+      "frames": 682
+    },
+    "physical_acc_pitch": {
+      "voicing_f1": 0.7372972972972973,
+      "voiced_f0_median_error_cents": 1594.70165174952,
+      "voiced_f0_mean_error_cents": 1473.7694309036665,
+      "within50cents_on_voiced": 0.005865102639296188,
+      "within50cents_including_missed_voicing": 0.005865102639296188,
+      "frames": 682
+    },
+    "constant_train_pitch": {
+      "voicing_f1": 0.7372972972972973,
+      "voiced_f0_median_error_cents": 199.99999999999966,
+      "voiced_f0_mean_error_cents": 218.07917888563054,
+      "within50cents_on_voiced": 0.09090909090909091,
+      "within50cents_including_missed_voicing": 0.09090909090909091,
+      "frames": 682
+    },
+    "oracle_audio_pitch": {
+      "voicing_f1": 1.0,
+      "voiced_f0_median_error_cents": 0.0,
+      "voiced_f0_mean_error_cents": 0.0,
+      "within50cents_on_voiced": 1.0,
+      "within50cents_including_missed_voicing": 1.0,
+      "frames": 682
+    }
+  },
+  "train_f0_median": 234.51839242421903,
+  "label_voiced_frames": {
+    "train": 3404,
+    "val": 752
+  },
+  "notes": "Exploratory same-person validation; F0 truth from microphone pYIN, not human labels. First/last40ms excluded from pitch metrics. Constant-F0 and physical-F0 controls share signed-axis student voicing/RMS. No test/reserve read. Harmonic scaffold is not full audio or identity validation."
+}
