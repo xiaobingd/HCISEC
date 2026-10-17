@@ -1,0 +1,703 @@
+{
+  "protocol": {
+    "source": "same personal20train4val recordings, whole common-duration portions",
+    "goal": "cross-modal vocal/audio activity correspondence, not identical F0 or spectra",
+    "audio_labels": "one monotonic2Gaussian threshold fitted on pooledTRAIN NONZERO20ms audio logRMS>-6; no per-record thresholds; automatic energetic activity surrogate, not manually verified speech",
+    "audio_gmm": {
+      "means": [
+        -4.153020412251009,
+        -1.2407391869523683
+      ],
+      "variances": [
+        0.6363448733538931,
+        0.1402069950638402
+      ],
+      "mixtures": [
+        0.5649131348190334,
+        0.43508686518096856
+      ],
+      "threshold": -2.221013047387891
+    },
+    "train_active_time_span": [
+      0.32,
+      3.7057000000000015
+    ],
+    "bands": [
+      [
+        2,
+        10
+      ],
+      [
+        10,
+        40
+      ],
+      [
+        40,
+        100
+      ],
+      [
+        100,
+        200
+      ],
+      [
+        200,
+        450
+      ],
+      [
+        450,
+        490
+      ]
+    ],
+    "acc_features": "signed XYZ band energy plus RSS after power,50/250ms RMS, global TRAIN-only calibration",
+    "edge_exclusion_ms": 250,
+    "frames": "10ms, eachrecordonce; temporal frames are correlated,4validationrecordings independent units",
+    "probe": "L2 logistic, balancedclasses AND recordings, fixed regularization. Leave-one-record-out TRAIN-only scaling/fits and threshold selection",
+    "time_baseline": "smoothedTRAINactivity vs elapsedrecordtime; noACCinput",
+    "timing": "existing nominal pairing; no lag fitting",
+    "test_and_28reserve": "not opened",
+    "limitations": "Activity association does not prove identity or full audio recoverability. Band association is descriptive, not causal bone-conduction proof."
+  },
+  "train_oof": {
+    "activity_auc": 0.79613658384983,
+    "activity_f1": 0.7101450294887104,
+    "balanced_accuracy": 0.7737056398143902
+  },
+  "train_oof_time_baseline": {
+    "activity_auc": 0.8473557653477151,
+    "activity_f1": 0.6865332430971134,
+    "balanced_accuracy": 0.7939040178474378
+  },
+  "probe_threshold": 0.4099999999999999,
+  "time_threshold": 0.3999999999999999,
+  "train_selected_single_feature": "10-40Hz_x_250ms",
+  "validation": {
+    "recording_02_imu4": {
+      "acc_probe": {
+        "activity_auc": 0.7737742242931271,
+        "activity_f1": 0.6023391812865497,
+        "balanced_accuracy": 0.680345229270359,
+        "positive_fraction": 0.3480392156862745,
+        "frames": 408
+      },
+      "time_only_baseline": {
+        "activity_auc": 0.8908450704225352,
+        "activity_f1": 0.7705882352941177,
+        "balanced_accuracy": 0.8353277560097427,
+        "positive_fraction": 0.3480392156862745,
+        "frames": 408
+      },
+      "always_active_baseline": {
+        "activity_auc": 0.5,
+        "activity_f1": 0.5163636363636364,
+        "balanced_accuracy": 0.5,
+        "positive_fraction": 0.3480392156862745,
+        "frames": 408
+      },
+      "shift500ms_probe": {
+        "activity_auc": 0.7283702213279678,
+        "activity_f1": 0.6081871345029239,
+        "balanced_accuracy": 0.6857460552790426,
+        "positive_fraction": 0.3480392156862745,
+        "frames": 408
+      },
+      "wrong_record_auc": 0.7761765741009512,
+      "own_equalspan_auc": 0.7737742242931271,
+      "matched_minus_wrong_auc": -0.0024023498078240557,
+      "edge500ms_sensitivity": {
+        "activity_auc": 0.7650128755364807,
+        "activity_f1": 0.6253869969040248,
+        "balanced_accuracy": 0.6958454935622318,
+        "positive_fraction": 0.34916201117318435,
+        "frames": 358
+      },
+      "nonzero_audio_only": {
+        "activity_auc": 0.6722081120603401,
+        "activity_f1": 0.6023391812865497,
+        "balanced_accuracy": 0.5976487339336566,
+        "positive_fraction": 0.4369230769230769,
+        "frames": 325
+      },
+      "nonzero_audio_time_baseline": {
+        "activity_auc": 0.8413376433464173,
+        "activity_f1": 0.7705882352941177,
+        "balanced_accuracy": 0.7782074963441854,
+        "positive_fraction": 0.4369230769230769,
+        "frames": 325
+      },
+      "train_active_span_only": {
+        "activity_auc": 0.6966111389147065,
+        "activity_f1": 0.6023391812865497,
+        "balanced_accuracy": 0.6164831629370129,
+        "positive_fraction": 0.41887905604719766,
+        "frames": 339
+      },
+      "train_active_span_time_baseline": {
+        "activity_auc": 0.8526131407735754,
+        "activity_f1": 0.7705882352941177,
+        "balanced_accuracy": 0.791216844212483,
+        "positive_fraction": 0.41887905604719766,
+        "frames": 339
+      },
+      "digital_zero_fraction": 0.2034313725490196
+    },
+    "recording_04_imu4": {
+      "acc_probe": {
+        "activity_auc": 0.6138119036801454,
+        "activity_f1": 0.2766798418972332,
+        "balanced_accuracy": 0.4756360745115856,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "time_only_baseline": {
+        "activity_auc": 0.7583768741481145,
+        "activity_f1": 0.6335403726708074,
+        "balanced_accuracy": 0.742276238073603,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "always_active_baseline": {
+        "activity_auc": 0.5,
+        "activity_f1": 0.46616541353383456,
+        "balanced_accuracy": 0.5,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "shift500ms_probe": {
+        "activity_auc": 0.5651124488868696,
+        "activity_f1": 0.31620553359683795,
+        "balanced_accuracy": 0.5046001817355747,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "wrong_record_auc": 0.7652799907958902,
+      "own_equalspan_auc": 0.6138119036801454,
+      "matched_minus_wrong_auc": -0.15146808711574478,
+      "edge500ms_sensitivity": {
+        "activity_auc": 0.552901847256686,
+        "activity_f1": 0.2766798418972332,
+        "balanced_accuracy": 0.4402743314033637,
+        "positive_fraction": 0.3463687150837989,
+        "frames": 358
+      },
+      "nonzero_audio_only": {
+        "activity_auc": 0.4237536656891496,
+        "activity_f1": 0.2766798418972332,
+        "balanced_accuracy": 0.38979213386234257,
+        "positive_fraction": 0.3987138263665595,
+        "frames": 311
+      },
+      "nonzero_audio_time_baseline": {
+        "activity_auc": 0.6472744523029152,
+        "activity_f1": 0.6415094339622641,
+        "balanced_accuracy": 0.6653010177678109,
+        "positive_fraction": 0.3987138263665595,
+        "frames": 311
+      },
+      "train_active_span_only": {
+        "activity_auc": 0.4923105776444111,
+        "activity_f1": 0.2766798418972332,
+        "balanced_accuracy": 0.4225243810952738,
+        "positive_fraction": 0.36578171091445427,
+        "frames": 339
+      },
+      "train_active_span_time_baseline": {
+        "activity_auc": 0.6863090772693173,
+        "activity_f1": 0.6335403726708074,
+        "balanced_accuracy": 0.6880345086271569,
+        "positive_fraction": 0.36578171091445427,
+        "frames": 339
+      },
+      "digital_zero_fraction": 0.23774509803921567
+    },
+    "recording_05_imu4": {
+      "acc_probe": {
+        "activity_auc": 0.525755338482508,
+        "activity_f1": 0.2737642585551331,
+        "balanced_accuracy": 0.4638232621535666,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "time_only_baseline": {
+        "activity_auc": 0.7733416628805089,
+        "activity_f1": 0.577639751552795,
+        "balanced_accuracy": 0.6901408450704225,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "always_active_baseline": {
+        "activity_auc": 0.5,
+        "activity_f1": 0.46616541353383456,
+        "balanced_accuracy": 0.5,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "shift500ms_probe": {
+        "activity_auc": 0.6269877328487051,
+        "activity_f1": 0.34220532319391633,
+        "balanced_accuracy": 0.515958655156747,
+        "positive_fraction": 0.30392156862745096,
+        "frames": 408
+      },
+      "wrong_record_auc": 0.47169107508601105,
+      "own_equalspan_auc": 0.525755338482508,
+      "matched_minus_wrong_auc": 0.05406426339649695,
+      "edge500ms_sensitivity": {
+        "activity_auc": 0.43000413564929696,
+        "activity_f1": 0.2737642585551331,
+        "balanced_accuracy": 0.42507582023711055,
+        "positive_fraction": 0.3463687150837989,
+        "frames": 358
+      },
+      "nonzero_audio_only": {
+        "activity_auc": 0.42696675444371296,
+        "activity_f1": 0.28346456692913385,
+        "balanced_accuracy": 0.4053653719552337,
+        "positive_fraction": 0.3875,
+        "frames": 320
+      },
+      "nonzero_audio_time_baseline": {
+        "activity_auc": 0.6726053324555629,
+        "activity_f1": 0.577639751552795,
+        "balanced_accuracy": 0.6071428571428572,
+        "positive_fraction": 0.3875,
+        "frames": 320
+      },
+      "train_active_span_only": {
+        "activity_auc": 0.3911102775693924,
+        "activity_f1": 0.2737642585551331,
+        "balanced_accuracy": 0.4056264066016504,
+        "positive_fraction": 0.36578171091445427,
+        "frames": 339
+      },
+      "train_active_span_time_baseline": {
+        "activity_auc": 0.7071642910727682,
+        "activity_f1": 0.577639751552795,
+        "balanced_accuracy": 0.6308139534883721,
+        "positive_fraction": 0.36578171091445427,
+        "frames": 339
+      },
+      "digital_zero_fraction": 0.21568627450980393
+    },
+    "recording_08_imu3": {
+      "acc_probe": {
+        "activity_auc": 0.7731481481481481,
+        "activity_f1": 0.7072599531615925,
+        "balanced_accuracy": 0.6987847222222223,
+        "positive_fraction": 0.47058823529411764,
+        "frames": 408
+      },
+      "time_only_baseline": {
+        "activity_auc": 0.9549093364197531,
+        "activity_f1": 0.9076923076923077,
+        "balanced_accuracy": 0.9123263888888888,
+        "positive_fraction": 0.47058823529411764,
+        "frames": 408
+      },
+      "always_active_baseline": {
+        "activity_auc": 0.5,
+        "activity_f1": 0.64,
+        "balanced_accuracy": 0.5,
+        "positive_fraction": 0.47058823529411764,
+        "frames": 408
+      },
+      "shift500ms_probe": {
+        "activity_auc": 0.8816068672839507,
+        "activity_f1": 0.8290398126463701,
+        "balanced_accuracy": 0.8266782407407407,
+        "positive_fraction": 0.47058823529411764,
+        "frames": 408
+      },
+      "wrong_record_auc": 0.7228254928552641,
+      "own_equalspan_auc": 0.7731481481481483,
+      "matched_minus_wrong_auc": 0.050322655292884155,
+      "edge500ms_sensitivity": {
+        "activity_auc": 0.771410736579276,
+        "activity_f1": 0.7481296758104738,
+        "balanced_accuracy": 0.7172284644194757,
+        "positive_fraction": 0.5027932960893855,
+        "frames": 358
+      },
+      "nonzero_audio_only": {
+        "activity_auc": 0.6049227150537635,
+        "activity_f1": 0.7072599531615925,
+        "balanced_accuracy": 0.5545194892473119,
+        "positive_fraction": 0.6075949367088608,
+        "frames": 316
+      },
+      "nonzero_audio_time_baseline": {
+        "activity_auc": 0.9214549731182796,
+        "activity_f1": 0.9076923076923077,
+        "balanced_accuracy": 0.8762600806451613,
+        "positive_fraction": 0.6075949367088608,
+        "frames": 316
+      },
+      "train_active_span_only": {
+        "activity_auc": 0.6895904195011338,
+        "activity_f1": 0.719047619047619,
+        "balanced_accuracy": 0.6313244047619048,
+        "positive_fraction": 0.5663716814159292,
+        "frames": 339
+      },
+      "train_active_span_time_baseline": {
+        "activity_auc": 0.9337443310657596,
+        "activity_f1": 0.9076923076923077,
+        "balanced_accuracy": 0.8895089285714286,
+        "positive_fraction": 0.5663716814159292,
+        "frames": 339
+      },
+      "digital_zero_fraction": 0.22549019607843138
+    }
+  },
+  "validation_macro": {
+    "acc_probe": {
+      "activity_auc": 0.6716224036509821,
+      "activity_f1": 0.4650108087251271,
+      "balanced_accuracy": 0.5796473220394334
+    },
+    "time_only_baseline": {
+      "activity_auc": 0.8443682359677279,
+      "activity_f1": 0.722365166802507,
+      "balanced_accuracy": 0.7950178070106643
+    },
+    "always_active_baseline": {
+      "activity_auc": 0.5,
+      "activity_f1": 0.5221736158578264,
+      "balanced_accuracy": 0.5
+    },
+    "shift500ms_probe": {
+      "activity_auc": 0.7005193175868732,
+      "activity_f1": 0.5239094509850121,
+      "balanced_accuracy": 0.6332457832280263
+    },
+    "edge500ms_sensitivity": {
+      "activity_auc": 0.6298323987554348,
+      "activity_f1": 0.4809901932917162,
+      "balanced_accuracy": 0.5696060274055454
+    },
+    "nonzero_audio_only": {
+      "activity_auc": 0.5319628118117415,
+      "activity_f1": 0.4674358858186273,
+      "balanced_accuracy": 0.4868314322496362
+    },
+    "nonzero_audio_time_baseline": {
+      "activity_auc": 0.7706681003057937,
+      "activity_f1": 0.7243574321253711,
+      "balanced_accuracy": 0.7317278629750037
+    },
+    "train_active_span_only": {
+      "activity_auc": 0.5674056034074109,
+      "activity_f1": 0.4679577251966338,
+      "balanced_accuracy": 0.5189895888489604
+    },
+    "train_active_span_time_baseline": {
+      "activity_auc": 0.7949577100453551,
+      "activity_f1": 0.722365166802507,
+      "balanced_accuracy": 0.7498935587248601
+    },
+    "matched_minus_wrong_auc": -0.012370879558546932
+  },
+  "feature_summary": {
+    "raw_dc_x_50ms": {
+      "train_raw_auc": 0.6440262182919331,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.48214683462334457
+    },
+    "raw_dc_y_50ms": {
+      "train_raw_auc": 0.7344914149359176,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7280455241409562
+    },
+    "raw_dc_z_50ms": {
+      "train_raw_auc": 0.6313677362375039,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6543654088730305
+    },
+    "raw_dc_RSS_50ms": {
+      "train_raw_auc": 0.7169564568653015,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6934091361123942
+    },
+    "raw_dc_x_250ms": {
+      "train_raw_auc": 0.6986447661812518,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5019599339770808
+    },
+    "raw_dc_y_250ms": {
+      "train_raw_auc": 0.7556651792467906,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7471542909204965
+    },
+    "raw_dc_z_250ms": {
+      "train_raw_auc": 0.6728727285207079,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.703726165894105
+    },
+    "raw_dc_RSS_250ms": {
+      "train_raw_auc": 0.7458787516396419,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.719726807470789
+    },
+    "2-10Hz_x_50ms": {
+      "train_raw_auc": 0.6519508528498206,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5958171672216904
+    },
+    "2-10Hz_y_50ms": {
+      "train_raw_auc": 0.7332524896525621,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6428320843388108
+    },
+    "2-10Hz_z_50ms": {
+      "train_raw_auc": 0.6715683267762811,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6442297326796644
+    },
+    "2-10Hz_RSS_50ms": {
+      "train_raw_auc": 0.7357633900481403,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6713137748261734
+    },
+    "2-10Hz_x_250ms": {
+      "train_raw_auc": 0.7006261028624561,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6551515723577431
+    },
+    "2-10Hz_y_250ms": {
+      "train_raw_auc": 0.7574124396713978,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6933836202507324
+    },
+    "2-10Hz_z_250ms": {
+      "train_raw_auc": 0.7273032223945602,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7345210255922403
+    },
+    "2-10Hz_RSS_250ms": {
+      "train_raw_auc": 0.7549701100680889,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7185280233521799
+    },
+    "10-40Hz_x_50ms": {
+      "train_raw_auc": 0.7505629256885448,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5684094419963971
+    },
+    "10-40Hz_y_50ms": {
+      "train_raw_auc": 0.7638868463414863,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7034963843443331
+    },
+    "10-40Hz_z_50ms": {
+      "train_raw_auc": 0.6842050354891805,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5330438226952711
+    },
+    "10-40Hz_RSS_50ms": {
+      "train_raw_auc": 0.7740949561683305,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6990515375440169
+    },
+    "10-40Hz_x_250ms": {
+      "train_raw_auc": 0.808965824190633,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6171629788276469
+    },
+    "10-40Hz_y_250ms": {
+      "train_raw_auc": 0.796664130958078,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7254585037820972
+    },
+    "10-40Hz_z_250ms": {
+      "train_raw_auc": 0.765274808141539,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5586555128483004
+    },
+    "10-40Hz_RSS_250ms": {
+      "train_raw_auc": 0.8040686312120723,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7234789781137871
+    },
+    "40-100Hz_x_50ms": {
+      "train_raw_auc": 0.5377675435751278,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5189169367361709
+    },
+    "40-100Hz_y_50ms": {
+      "train_raw_auc": 0.6358383543306292,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5548374023332271
+    },
+    "40-100Hz_z_50ms": {
+      "train_raw_auc": 0.6437030698113739,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6247731358389838
+    },
+    "40-100Hz_RSS_50ms": {
+      "train_raw_auc": 0.6618167090482512,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.6284587076228344
+    },
+    "40-100Hz_x_250ms": {
+      "train_raw_auc": 0.5742232922413048,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5316556296585108
+    },
+    "40-100Hz_y_250ms": {
+      "train_raw_auc": 0.7425480046977057,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5851205554908583
+    },
+    "40-100Hz_z_250ms": {
+      "train_raw_auc": 0.7207795901593386,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.7416280605841485
+    },
+    "40-100Hz_RSS_250ms": {
+      "train_raw_auc": 0.7383576944294582,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.730768804002896
+    },
+    "100-200Hz_x_50ms": {
+      "train_raw_auc": 0.5144096751872544,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4755851159953193
+    },
+    "100-200Hz_y_50ms": {
+      "train_raw_auc": 0.5724170396775213,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5172646840312861
+    },
+    "100-200Hz_z_50ms": {
+      "train_raw_auc": 0.5285218306610251,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5002156106403626
+    },
+    "100-200Hz_RSS_50ms": {
+      "train_raw_auc": 0.5557565315981747,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.49954715650520853
+    },
+    "100-200Hz_x_250ms": {
+      "train_raw_auc": 0.5588903885984403,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.44027996300535166
+    },
+    "100-200Hz_y_250ms": {
+      "train_raw_auc": 0.6477122087081725,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5707082229829714
+    },
+    "100-200Hz_z_250ms": {
+      "train_raw_auc": 0.5699436307955472,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.5500060457250369
+    },
+    "100-200Hz_RSS_250ms": {
+      "train_raw_auc": 0.6261783088372547,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.539197477978019
+    },
+    "200-450Hz_x_50ms": {
+      "train_raw_auc": 0.5320628132218765,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.434956905708319
+    },
+    "200-450Hz_y_50ms": {
+      "train_raw_auc": 0.6092075003925748,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.46599922194048504
+    },
+    "200-450Hz_z_50ms": {
+      "train_raw_auc": 0.6360965717500828,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.48611862386439253
+    },
+    "200-450Hz_RSS_50ms": {
+      "train_raw_auc": 0.6371671012252593,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4671719195324605
+    },
+    "200-450Hz_x_250ms": {
+      "train_raw_auc": 0.5723528160162871,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.41391682623408177
+    },
+    "200-450Hz_y_250ms": {
+      "train_raw_auc": 0.6795714253632641,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.466072708173132
+    },
+    "200-450Hz_z_250ms": {
+      "train_raw_auc": 0.7167072565760819,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.49692664940555376
+    },
+    "200-450Hz_RSS_250ms": {
+      "train_raw_auc": 0.7024614603950216,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.47822776465699735
+    },
+    "450-490Hz_x_50ms": {
+      "train_raw_auc": 0.5183692866493397,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.44952568690777894
+    },
+    "450-490Hz_y_50ms": {
+      "train_raw_auc": 0.5298971344671215,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4347278381899137
+    },
+    "450-490Hz_z_50ms": {
+      "train_raw_auc": 0.5308339372242413,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4783376822839337
+    },
+    "450-490Hz_RSS_50ms": {
+      "train_raw_auc": 0.5334066393787827,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4477851110310611
+    },
+    "450-490Hz_x_250ms": {
+      "train_raw_auc": 0.5338791986684724,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4394006318331727
+    },
+    "450-490Hz_y_250ms": {
+      "train_raw_auc": 0.554125505227961,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4152477332760647
+    },
+    "450-490Hz_z_250ms": {
+      "train_raw_auc": 0.5686953217760302,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4375830751833796
+    },
+    "450-490Hz_RSS_250ms": {
+      "train_raw_auc": 0.5704790591500789,
+      "train_selected_direction": 1,
+      "validation_macro_auc": 0.4297570771611172
+    }
+  },
+  "selected_feature_per_record": {
+    "recording_02_imu4": {
+      "activity_auc": 0.7789103039288362,
+      "spearman_audio_energy": 0.6488357268896257,
+      "speech_minus_quiet_log10_rms": 0.22196843618285222
+    },
+    "recording_04_imu4": {
+      "activity_auc": 0.4511301681054066,
+      "spearman_audio_energy": 0.07011900347583695,
+      "speech_minus_quiet_log10_rms": -0.017878216515595735
+    },
+    "recording_05_imu4": {
+      "activity_auc": 0.5181735574738755,
+      "spearman_audio_energy": 0.1229948673690793,
+      "speech_minus_quiet_log10_rms": 0.0020049408877351738
+    },
+    "recording_08_imu3": {
+      "activity_auc": 0.7204378858024691,
+      "spearman_audio_energy": 0.5516230453906642,
+      "speech_minus_quiet_log10_rms": 0.1370878131344515
+    }
+  }
+}
