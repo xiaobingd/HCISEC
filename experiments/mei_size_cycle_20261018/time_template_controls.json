@@ -1,0 +1,112 @@
+{
+  "protocol": "TRAIN-only microphone means separately for0/.4/.8/1.2s crop positions; predicts VAL without ACC. Checks capture-flow prior; NOT a usable identity model. All same60source records, no VAL/test template fitting.",
+  "templates": {
+    "20": {
+      "audio_mae": 0.2808691494166851,
+      "audio_detail_corr": 0.28704713537459803,
+      "audio_envelope_corr": 0.6672308382625699
+    },
+    "70": {
+      "audio_mae": 0.27188013270497324,
+      "audio_detail_corr": 0.3154375941908529,
+      "audio_envelope_corr": 0.6733575055881107
+    },
+    "180": {
+      "audio_mae": 0.272676108032465,
+      "audio_detail_corr": 0.3225793608022352,
+      "audio_envelope_corr": 0.6737147792834025
+    }
+  },
+  "model_comparisons": [
+    {
+      "route": "mei20",
+      "seed": 42,
+      "model_audio_mae": 0.296860462675492,
+      "time_template_audio_mae": 0.2808691494166851,
+      "mean_template_minus_model": -0.015991313258806865,
+      "n_model_beats_time_template": 27,
+      "n_records": 60
+    },
+    {
+      "route": "mei70",
+      "seed": 42,
+      "model_audio_mae": 0.3046166049937407,
+      "time_template_audio_mae": 0.27188013270497324,
+      "mean_template_minus_model": -0.0327364722887675,
+      "n_model_beats_time_template": 17,
+      "n_records": 60
+    },
+    {
+      "route": "mei180",
+      "seed": 42,
+      "model_audio_mae": 0.3103222648302714,
+      "time_template_audio_mae": 0.272676108032465,
+      "mean_template_minus_model": -0.037646156797806425,
+      "n_model_beats_time_template": 18,
+      "n_records": 60
+    },
+    {
+      "route": "mei20",
+      "seed": 43,
+      "model_audio_mae": 0.30926488613088926,
+      "time_template_audio_mae": 0.2808691494166851,
+      "mean_template_minus_model": -0.028395736714204152,
+      "n_model_beats_time_template": 20,
+      "n_records": 60
+    },
+    {
+      "route": "mei70",
+      "seed": 43,
+      "model_audio_mae": 0.32385872676968575,
+      "time_template_audio_mae": 0.27188013270497324,
+      "mean_template_minus_model": -0.05197859406471252,
+      "n_model_beats_time_template": 16,
+      "n_records": 60
+    },
+    {
+      "route": "mei180",
+      "seed": 43,
+      "model_audio_mae": 0.31509336406985916,
+      "time_template_audio_mae": 0.272676108032465,
+      "mean_template_minus_model": -0.042417256037394206,
+      "n_model_beats_time_template": 17,
+      "n_records": 60
+    },
+    {
+      "route": "mei180_long",
+      "seed": 42,
+      "model_audio_mae": 0.2778621216615041,
+      "time_template_audio_mae": 0.272676108032465,
+      "mean_template_minus_model": -0.005186013629039129,
+      "n_model_beats_time_template": 31,
+      "n_records": 60
+    },
+    {
+      "route": "mei180_long",
+      "seed": 43,
+      "model_audio_mae": 0.2763674626747767,
+      "time_template_audio_mae": 0.272676108032465,
+      "mean_template_minus_model": -0.003691354642311732,
+      "n_model_beats_time_template": 30,
+      "n_records": 60
+    },
+    {
+      "route": "mei20_long",
+      "seed": 42,
+      "model_audio_mae": 0.3196335271000862,
+      "time_template_audio_mae": 0.2808691494166851,
+      "mean_template_minus_model": -0.03876437768340111,
+      "n_model_beats_time_template": 17,
+      "n_records": 60
+    },
+    {
+      "route": "mei20_long",
+      "seed": 43,
+      "model_audio_mae": 0.34094199041525525,
+      "time_template_audio_mae": 0.2808691494166851,
+      "mean_template_minus_model": -0.060072840998570125,
+      "n_model_beats_time_template": 14,
+      "n_records": 60
+    }
+  ]
+}
