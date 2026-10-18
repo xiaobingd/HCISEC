@@ -1,0 +1,1139 @@
+{
+  "scope": "same personal20train4REUSEDval;58/16 fixed targets. 3seeds do not add independent recordings. No identitymetric, no finaltest. Newfrontend/context onALL routes.",
+  "controls_macro": {
+    "mean_template_mae": 0.43819811195135117,
+    "time_only_mae": 0.43342517112257367
+  },
+  "controls_per_record": [
+    {
+      "recording": "recording_02_imu4",
+      "mean_template_mae": 0.4434586763381958,
+      "time_only_mae": 0.4459641855682803
+    },
+    {
+      "recording": "recording_04_imu4",
+      "mean_template_mae": 0.4680965840816498,
+      "time_only_mae": 0.4647808714355901
+    },
+    {
+      "recording": "recording_05_imu4",
+      "mean_template_mae": 0.4679609537124634,
+      "time_only_mae": 0.4641205623765859
+    },
+    {
+      "recording": "recording_08_imu3",
+      "mean_template_mae": 0.3732762336730957,
+      "time_only_mae": 0.35883506510983837
+    }
+  ],
+  "time_control": "TRAIN-only record-balanced ridge10 from fixed elapsed-time sin/cos .25/.5/1/2/4/8Hz; noACC/noVALaudio input",
+  "summary": {
+    "temporal_only": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "audio_mae": {
+          "mean": 0.4100331962108612,
+          "std": 0.013093093244999259,
+          "values": [
+            0.40228623896837234,
+            0.39934191852808,
+            0.4284714311361313
+          ]
+        },
+        "mean_template_mae": {
+          "mean": 0.43819811195135117,
+          "std": 0.0,
+          "values": [
+            0.43819811195135117,
+            0.43819811195135117,
+            0.43819811195135117
+          ]
+        },
+        "detail_corr": {
+          "mean": 0.2612840749655314,
+          "std": 0.028637210863498384,
+          "values": [
+            0.28697935039007344,
+            0.2755463871739703,
+            0.22132648733255048
+          ]
+        },
+        "envelope_corr": {
+          "mean": 0.22593662134782766,
+          "std": 0.05609666145138468,
+          "values": [
+            0.24308247175065392,
+            0.28444400621919097,
+            0.15028338607363814
+          ]
+        },
+        "shift400ms_minus_matched_mae": {
+          "mean": 0.06155528128147125,
+          "std": 0.01751401534377128,
+          "values": [
+            0.06490806490182877,
+            0.08113165944814682,
+            0.03862611949443817
+          ]
+        },
+        "wrong_record_ACC_minus_matched_mae": {
+          "mean": 0.04136957228183746,
+          "std": 0.012114172400378879,
+          "values": [
+            0.0531991645693779,
+            0.04618675261735916,
+            0.02472279965877533
+          ]
+        },
+        "zero_global_branch_minus_matched_mae": {
+          "mean": 0.0,
+          "std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "soft_activity_mse": {
+          "mean": 0.0981554181004564,
+          "std": 0.008240760618207423,
+          "values": [
+            0.08810812141746283,
+            0.10829317197203636,
+            0.09806496091187
+          ]
+        },
+        "attention_mean_offset_ms": {
+          "mean": 193.07429246155357,
+          "std": 1.318158574827628,
+          "values": [
+            194.07402637104934,
+            193.9370377499771,
+            191.21181326363427
+          ]
+        },
+        "noncircular_plus400ms_audio_mae": {
+          "mean": 0.4951731140414874,
+          "std": 0.00297578866056117,
+          "values": [
+            0.49934913218021393,
+            0.4935363605618477,
+            0.4926338493824005
+          ]
+        },
+        "noncircular_plus400ms_minus_matched_mae": {
+          "mean": 0.08513991783062617,
+          "std": 0.014879485198286042,
+          "values": [
+            0.09706289321184158,
+            0.0941944420337677,
+            0.06416241824626923
+          ]
+        }
+      },
+      "acc_retention_probe": {
+        "magnitude": {
+          "mean": 0.8462619449961535,
+          "std": 0.011286028067288345
+        },
+        "energy": {
+          "mean": 0.43618557105548345,
+          "std": 0.012774935113301375
+        },
+        "complex": {
+          "mean": 0.31825137913290713,
+          "std": 0.022081704916451565
+        }
+      },
+      "positive_wrong_record_gap_count": 3
+    },
+    "dual_unconstrained": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "audio_mae": {
+          "mean": 0.4151429111758868,
+          "std": 0.020763988618011448,
+          "values": [
+            0.39601051062345505,
+            0.40541718900203705,
+            0.4440010339021683
+          ]
+        },
+        "mean_template_mae": {
+          "mean": 0.43819811195135117,
+          "std": 0.0,
+          "values": [
+            0.43819811195135117,
+            0.43819811195135117,
+            0.43819811195135117
+          ]
+        },
+        "detail_corr": {
+          "mean": 0.25165114766423646,
+          "std": 0.03810826317793503,
+          "values": [
+            0.30257398742242797,
+            0.2414706923122673,
+            0.2109087632580141
+          ]
+        },
+        "envelope_corr": {
+          "mean": 0.21202358448238381,
+          "std": 0.09598547153548934,
+          "values": [
+            0.2887261948441416,
+            0.2706637649670242,
+            0.0766807936359857
+          ]
+        },
+        "shift400ms_minus_matched_mae": {
+          "mean": 0.06013660877943039,
+          "std": 0.02444095365169222,
+          "values": [
+            0.08268555998802185,
+            0.07154911011457443,
+            0.026175156235694885
+          ]
+        },
+        "wrong_record_ACC_minus_matched_mae": {
+          "mean": 0.038392312824726105,
+          "std": 0.01742213238321531,
+          "values": [
+            0.04900389909744263,
+            0.05234377086162567,
+            0.013829268515110016
+          ]
+        },
+        "zero_global_branch_minus_matched_mae": {
+          "mean": 0.0034762173891067505,
+          "std": 0.0006438016785355003,
+          "values": [
+            0.004377089440822601,
+            0.002911575138568878,
+            0.003139987587928772
+          ]
+        },
+        "soft_activity_mse": {
+          "mean": 0.09291124002387126,
+          "std": 0.014096390907852379,
+          "values": [
+            0.07897209469228983,
+            0.11222332157194614,
+            0.08753830380737782
+          ]
+        },
+        "attention_mean_offset_ms": {
+          "mean": 193.19523694168865,
+          "std": 0.8179668331457073,
+          "values": [
+            193.94068689212065,
+            193.58856215330132,
+            192.0564617796439
+          ]
+        },
+        "noncircular_plus400ms_audio_mae": {
+          "mean": 0.49480101217826206,
+          "std": 0.006182118923421803,
+          "values": [
+            0.502218596637249,
+            0.4951000213623047,
+            0.48708441853523254
+          ]
+        },
+        "noncircular_plus400ms_minus_matched_mae": {
+          "mean": 0.07965810100237529,
+          "std": 0.026727681158928426,
+          "values": [
+            0.10620808601379395,
+            0.08968283236026764,
+            0.04308338463306427
+          ]
+        }
+      },
+      "acc_retention_probe": {
+        "magnitude": {
+          "mean": 0.75966285690349,
+          "std": 0.004338360964199394
+        },
+        "energy": {
+          "mean": 0.2278534445423754,
+          "std": 0.006797625540301658
+        },
+        "complex": {
+          "mean": 0.1485330534778372,
+          "std": 0.009360866883439458
+        }
+      },
+      "positive_wrong_record_gap_count": 3
+    },
+    "dual_preserve": {
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "metrics": {
+        "audio_mae": {
+          "mean": 0.40978914747635525,
+          "std": 0.015471038463539628,
+          "values": [
+            0.3975202366709709,
+            0.4002349153161049,
+            0.4316122904419899
+          ]
+        },
+        "mean_template_mae": {
+          "mean": 0.43819811195135117,
+          "std": 0.0,
+          "values": [
+            0.43819811195135117,
+            0.43819811195135117,
+            0.43819811195135117
+          ]
+        },
+        "detail_corr": {
+          "mean": 0.2686089556758971,
+          "std": 0.036478601911107036,
+          "values": [
+            0.3176438471096737,
+            0.25797377067698407,
+            0.2302092492410335
+          ]
+        },
+        "envelope_corr": {
+          "mean": 0.22957173871988754,
+          "std": 0.05112979381676822,
+          "values": [
+            0.25018810059816776,
+            0.27928528668616703,
+            0.15924182887532773
+          ]
+        },
+        "shift400ms_minus_matched_mae": {
+          "mean": 0.059751905500888824,
+          "std": 0.01433653486987827,
+          "values": [
+            0.06485126912593842,
+            0.07419639080762863,
+            0.040208056569099426
+          ]
+        },
+        "wrong_record_ACC_minus_matched_mae": {
+          "mean": 0.04088361809651057,
+          "std": 0.014489559952331152,
+          "values": [
+            0.051395297050476074,
+            0.050860948860645294,
+            0.02039460837841034
+          ]
+        },
+        "zero_global_branch_minus_matched_mae": {
+          "mean": 0.00011948496103286743,
+          "std": 0.00010159670493410966,
+          "values": [
+            0.0001804456114768982,
+            -2.3670494556427002e-05,
+            0.0002016797661781311
+          ]
+        },
+        "soft_activity_mse": {
+          "mean": 0.09305206251641114,
+          "std": 0.010532254097501671,
+          "values": [
+            0.08418924361467361,
+            0.10785074718296528,
+            0.08711619675159454
+          ]
+        },
+        "attention_mean_offset_ms": {
+          "mean": 193.12762787758405,
+          "std": 0.9804634410316101,
+          "values": [
+            193.96400566680472,
+            193.66720564770634,
+            191.75167231824108
+          ]
+        },
+        "noncircular_plus400ms_audio_mae": {
+          "mean": 0.4940695067246755,
+          "std": 0.0008714569526842279,
+          "values": [
+            0.49293966591358185,
+            0.4950607493519783,
+            0.49420810490846634
+          ]
+        },
+        "noncircular_plus400ms_minus_matched_mae": {
+          "mean": 0.08428035924832027,
+          "std": 0.015335203522488336,
+          "values": [
+            0.09541942924261093,
+            0.09482583403587341,
+            0.06259581446647644
+          ]
+        }
+      },
+      "acc_retention_probe": {
+        "magnitude": {
+          "mean": 0.7274113703892832,
+          "std": 0.0020597050453734097
+        },
+        "energy": {
+          "mean": 0.12484466414155516,
+          "std": 0.004492531574313773
+        },
+        "complex": {
+          "mean": 0.14013837923006447,
+          "std": 0.0017935070953982466
+        }
+      },
+      "positive_wrong_record_gap_count": 3
+    }
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "route": "temporal_only",
+      "macro": {
+        "audio_mae": 0.40228623896837234,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.28697935039007344,
+        "envelope_corr": 0.24308247175065392,
+        "shift400ms_minus_matched_mae": 0.06490806490182877,
+        "wrong_record_ACC_minus_matched_mae": 0.0531991645693779,
+        "zero_global_branch_minus_matched_mae": 0.0,
+        "soft_activity_mse": 0.08810812141746283,
+        "attention_mean_offset_ms": 194.07402637104934,
+        "noncircular_plus400ms_audio_mae": 0.49934913218021393,
+        "noncircular_plus400ms_minus_matched_mae": 0.09706289321184158
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.8351260189341891,
+        "energy": 0.4280139486505264,
+        "complex": 0.34717975319644484
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.42865052819252014,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.31915377569126674,
+          "envelope_corr": 0.17443105048485885,
+          "shift400ms_minus_matched_mae": 0.06649476289749146,
+          "wrong_record_ACC_minus_matched_mae": 0.08798936009407043,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.05793939158320427,
+          "attention_mean_offset_ms": 193.56567570834653,
+          "noncircular_plus400ms_audio_mae": 0.5586554408073425,
+          "noncircular_plus400ms_minus_matched_mae": 0.1300049126148224
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.4160125255584717,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.3884018687945197,
+          "envelope_corr": 0.06680986381370747,
+          "shift400ms_minus_matched_mae": 0.1037408709526062,
+          "wrong_record_ACC_minus_matched_mae": -0.07364866137504578,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.10367882996797562,
+          "attention_mean_offset_ms": 195.94002806758604,
+          "noncircular_plus400ms_audio_mae": 0.47845256328582764,
+          "noncircular_plus400ms_minus_matched_mae": 0.06244003772735596
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.348556250333786,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.4704486920244536,
+          "envelope_corr": 0.5948313856849445,
+          "shift400ms_minus_matched_mae": 0.1297932267189026,
+          "wrong_record_ACC_minus_matched_mae": 0.19189700484275818,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.09883520007133484,
+          "attention_mean_offset_ms": 192.66687800407385,
+          "noncircular_plus400ms_audio_mae": 0.5262656807899475,
+          "noncircular_plus400ms_minus_matched_mae": 0.1777094304561615
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.41592565178871155,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": -0.03008693494994632,
+          "envelope_corr": 0.13625758701910487,
+          "shift400ms_minus_matched_mae": -0.04039660096168518,
+          "wrong_record_ACC_minus_matched_mae": 0.00655895471572876,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.09197906404733658,
+          "attention_mean_offset_ms": 194.12352370419094,
+          "noncircular_plus400ms_audio_mae": 0.43402284383773804,
+          "noncircular_plus400ms_minus_matched_mae": 0.01809719204902649
+        }
+      ],
+      "seconds": 12.2
+    },
+    {
+      "seed": 42,
+      "route": "dual_unconstrained",
+      "macro": {
+        "audio_mae": 0.39601051062345505,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.30257398742242797,
+        "envelope_corr": 0.2887261948441416,
+        "shift400ms_minus_matched_mae": 0.08268555998802185,
+        "wrong_record_ACC_minus_matched_mae": 0.04900389909744263,
+        "zero_global_branch_minus_matched_mae": 0.004377089440822601,
+        "soft_activity_mse": 0.07897209469228983,
+        "attention_mean_offset_ms": 193.94068689212065,
+        "noncircular_plus400ms_audio_mae": 0.502218596637249,
+        "noncircular_plus400ms_minus_matched_mae": 0.10620808601379395
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.7536075633951074,
+        "energy": 0.21865197602270472,
+        "complex": 0.15890932978212396
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.4306390583515167,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.33726822027293185,
+          "envelope_corr": 0.1617458013255307,
+          "shift400ms_minus_matched_mae": 0.07217839360237122,
+          "wrong_record_ACC_minus_matched_mae": 0.07852962613105774,
+          "zero_global_branch_minus_matched_mae": 0.007119357585906982,
+          "soft_activity_mse": 0.06020200625061989,
+          "attention_mean_offset_ms": 193.79089094546623,
+          "noncircular_plus400ms_audio_mae": 0.5429308414459229,
+          "noncircular_plus400ms_minus_matched_mae": 0.11229178309440613
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.41180557012557983,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.38413484958638056,
+          "envelope_corr": 0.13378987414431598,
+          "shift400ms_minus_matched_mae": 0.1347353458404541,
+          "wrong_record_ACC_minus_matched_mae": -0.08145579695701599,
+          "zero_global_branch_minus_matched_mae": 0.00045928359031677246,
+          "soft_activity_mse": 0.09563082456588745,
+          "attention_mean_offset_ms": 195.86340529296223,
+          "noncircular_plus400ms_audio_mae": 0.4997063875198364,
+          "noncircular_plus400ms_minus_matched_mae": 0.08790081739425659
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.33949095010757446,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.484221508677897,
+          "envelope_corr": 0.6064051524025897,
+          "shift400ms_minus_matched_mae": 0.14884737133979797,
+          "wrong_record_ACC_minus_matched_mae": 0.19389259815216064,
+          "zero_global_branch_minus_matched_mae": 0.014890700578689575,
+          "soft_activity_mse": 0.09162100404500961,
+          "attention_mean_offset_ms": 192.1221991787186,
+          "noncircular_plus400ms_audio_mae": 0.5267277359962463,
+          "noncircular_plus400ms_minus_matched_mae": 0.18723678588867188
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.40210646390914917,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.004671371152502601,
+          "envelope_corr": 0.2529639515041298,
+          "shift400ms_minus_matched_mae": -0.02501887083053589,
+          "wrong_record_ACC_minus_matched_mae": 0.005049169063568115,
+          "zero_global_branch_minus_matched_mae": -0.004960983991622925,
+          "soft_activity_mse": 0.06843454390764236,
+          "attention_mean_offset_ms": 193.98625215133552,
+          "noncircular_plus400ms_audio_mae": 0.43950942158699036,
+          "noncircular_plus400ms_minus_matched_mae": 0.037402957677841187
+        }
+      ],
+      "seconds": 11.7
+    },
+    {
+      "seed": 42,
+      "route": "dual_preserve",
+      "macro": {
+        "audio_mae": 0.3975202366709709,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.3176438471096737,
+        "envelope_corr": 0.25018810059816776,
+        "shift400ms_minus_matched_mae": 0.06485126912593842,
+        "wrong_record_ACC_minus_matched_mae": 0.051395297050476074,
+        "zero_global_branch_minus_matched_mae": 0.0001804456114768982,
+        "soft_activity_mse": 0.08418924361467361,
+        "attention_mean_offset_ms": 193.96400566680472,
+        "noncircular_plus400ms_audio_mae": 0.49293966591358185,
+        "noncircular_plus400ms_minus_matched_mae": 0.09541942924261093
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.7252051407461797,
+        "energy": 0.12198812023816655,
+        "complex": 0.13783306877995263
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.4126799702644348,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.38589065884024315,
+          "envelope_corr": 0.19723540940863762,
+          "shift400ms_minus_matched_mae": 0.08613142371177673,
+          "wrong_record_ACC_minus_matched_mae": 0.09879809617996216,
+          "zero_global_branch_minus_matched_mae": 0.0018073320388793945,
+          "soft_activity_mse": 0.06087988615036011,
+          "attention_mean_offset_ms": 193.0391334286204,
+          "noncircular_plus400ms_audio_mae": 0.543635368347168,
+          "noncircular_plus400ms_minus_matched_mae": 0.13095539808273315
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.41389402747154236,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.413247688522727,
+          "envelope_corr": 0.05173901852420617,
+          "shift400ms_minus_matched_mae": 0.09664538502693176,
+          "wrong_record_ACC_minus_matched_mae": -0.07357046008110046,
+          "zero_global_branch_minus_matched_mae": -0.002989470958709717,
+          "soft_activity_mse": 0.09020549803972244,
+          "attention_mean_offset_ms": 195.841260583348,
+          "noncircular_plus400ms_audio_mae": 0.4766383171081543,
+          "noncircular_plus400ms_minus_matched_mae": 0.06274428963661194
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.34964555501937866,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.4941909189010496,
+          "envelope_corr": 0.5477367353592116,
+          "shift400ms_minus_matched_mae": 0.1162291169166565,
+          "wrong_record_ACC_minus_matched_mae": 0.17374783754348755,
+          "zero_global_branch_minus_matched_mae": 0.009379655122756958,
+          "soft_activity_mse": 0.10729444026947021,
+          "attention_mean_offset_ms": 193.14849350037503,
+          "noncircular_plus400ms_audio_mae": 0.5138208866119385,
+          "noncircular_plus400ms_minus_matched_mae": 0.16417533159255981
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.41386139392852783,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": -0.022753877825324825,
+          "envelope_corr": 0.2040412391006157,
+          "shift400ms_minus_matched_mae": -0.03960084915161133,
+          "wrong_record_ACC_minus_matched_mae": 0.006605714559555054,
+          "zero_global_branch_minus_matched_mae": -0.007475733757019043,
+          "soft_activity_mse": 0.0783771499991417,
+          "attention_mean_offset_ms": 193.8271351548754,
+          "noncircular_plus400ms_audio_mae": 0.43766409158706665,
+          "noncircular_plus400ms_minus_matched_mae": 0.02380269765853882
+        }
+      ],
+      "seconds": 12.2
+    },
+    {
+      "seed": 43,
+      "route": "temporal_only",
+      "macro": {
+        "audio_mae": 0.39934191852808,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.2755463871739703,
+        "envelope_corr": 0.28444400621919097,
+        "shift400ms_minus_matched_mae": 0.08113165944814682,
+        "wrong_record_ACC_minus_matched_mae": 0.04618675261735916,
+        "zero_global_branch_minus_matched_mae": 0.0,
+        "soft_activity_mse": 0.10829317197203636,
+        "attention_mean_offset_ms": 193.9370377499771,
+        "noncircular_plus400ms_audio_mae": 0.4935363605618477,
+        "noncircular_plus400ms_minus_matched_mae": 0.0941944420337677
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.861732180865241,
+        "energy": 0.45422548169779303,
+        "complex": 0.3139736742493527
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.437959223985672,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.3161377040354043,
+          "envelope_corr": 0.16774864196726189,
+          "shift400ms_minus_matched_mae": 0.08588680624961853,
+          "wrong_record_ACC_minus_matched_mae": 0.05820566415786743,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.12086550146341324,
+          "attention_mean_offset_ms": 190.18229841672616,
+          "noncircular_plus400ms_audio_mae": 0.5205365419387817,
+          "noncircular_plus400ms_minus_matched_mae": 0.08257731795310974
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.3716132938861847,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.4698400107515365,
+          "envelope_corr": 0.3201810082981335,
+          "shift400ms_minus_matched_mae": 0.1543578803539276,
+          "wrong_record_ACC_minus_matched_mae": 0.014637976884841919,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.08828840404748917,
+          "attention_mean_offset_ms": 193.85267897029118,
+          "noncircular_plus400ms_audio_mae": 0.5291223526000977,
+          "noncircular_plus400ms_minus_matched_mae": 0.15750905871391296
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.3951416313648224,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.2807391083573303,
+          "envelope_corr": 0.29424746647618766,
+          "shift400ms_minus_matched_mae": 0.04027530550956726,
+          "wrong_record_ACC_minus_matched_mae": 0.08996623754501343,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.119534432888031,
+          "attention_mean_offset_ms": 197.76003128212008,
+          "noncircular_plus400ms_audio_mae": 0.4699157774448395,
+          "noncircular_plus400ms_minus_matched_mae": 0.07477414608001709
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.39265352487564087,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.035468725551610195,
+          "envelope_corr": 0.355598908135181,
+          "shift400ms_minus_matched_mae": 0.04400664567947388,
+          "wrong_record_ACC_minus_matched_mae": 0.021937131881713867,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.10448434948921204,
+          "attention_mean_offset_ms": 193.95314233077104,
+          "noncircular_plus400ms_audio_mae": 0.4545707702636719,
+          "noncircular_plus400ms_minus_matched_mae": 0.061917245388031006
+        }
+      ],
+      "seconds": 11.5
+    },
+    {
+      "seed": 43,
+      "route": "dual_unconstrained",
+      "macro": {
+        "audio_mae": 0.40541718900203705,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.2414706923122673,
+        "envelope_corr": 0.2706637649670242,
+        "shift400ms_minus_matched_mae": 0.07154911011457443,
+        "wrong_record_ACC_minus_matched_mae": 0.05234377086162567,
+        "zero_global_branch_minus_matched_mae": 0.002911575138568878,
+        "soft_activity_mse": 0.11222332157194614,
+        "attention_mean_offset_ms": 193.58856215330132,
+        "noncircular_plus400ms_audio_mae": 0.4951000213623047,
+        "noncircular_plus400ms_minus_matched_mae": 0.08968283236026764
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.7635461491327689,
+        "energy": 0.23486484308625658,
+        "complex": 0.1504644947203655
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.43019840121269226,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.3298366082050583,
+          "envelope_corr": 0.19819065195606034,
+          "shift400ms_minus_matched_mae": 0.09617438912391663,
+          "wrong_record_ACC_minus_matched_mae": 0.08255264163017273,
+          "zero_global_branch_minus_matched_mae": -0.0036004185676574707,
+          "soft_activity_mse": 0.12309622764587402,
+          "attention_mean_offset_ms": 190.1120998410016,
+          "noncircular_plus400ms_audio_mae": 0.5281213521957397,
+          "noncircular_plus400ms_minus_matched_mae": 0.09792295098304749
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.3863097131252289,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.42362351912422713,
+          "envelope_corr": 0.2948392030443705,
+          "shift400ms_minus_matched_mae": 0.13735023140907288,
+          "wrong_record_ACC_minus_matched_mae": 0.015674203634262085,
+          "zero_global_branch_minus_matched_mae": 0.010776221752166748,
+          "soft_activity_mse": 0.09727467596530914,
+          "attention_mean_offset_ms": 194.35104693634491,
+          "noncircular_plus400ms_audio_mae": 0.5398617386817932,
+          "noncircular_plus400ms_minus_matched_mae": 0.15355202555656433
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.4102267920970917,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.22733870230994196,
+          "envelope_corr": 0.22196390332188146,
+          "shift400ms_minus_matched_mae": 0.017727673053741455,
+          "wrong_record_ACC_minus_matched_mae": 0.07594820857048035,
+          "zero_global_branch_minus_matched_mae": 0.012006759643554688,
+          "soft_activity_mse": 0.12382381409406662,
+          "attention_mean_offset_ms": 196.72763294720258,
+          "noncircular_plus400ms_audio_mae": 0.46926721930503845,
+          "noncircular_plus400ms_minus_matched_mae": 0.05904042720794678
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.3949338495731354,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": -0.014916060390158173,
+          "envelope_corr": 0.36766130154578464,
+          "shift400ms_minus_matched_mae": 0.03494414687156677,
+          "wrong_record_ACC_minus_matched_mae": 0.035200029611587524,
+          "zero_global_branch_minus_matched_mae": -0.007536262273788452,
+          "soft_activity_mse": 0.10469856858253479,
+          "attention_mean_offset_ms": 193.16346888865627,
+          "noncircular_plus400ms_audio_mae": 0.44314977526664734,
+          "noncircular_plus400ms_minus_matched_mae": 0.04821592569351196
+        }
+      ],
+      "seconds": 11.5
+    },
+    {
+      "seed": 43,
+      "route": "dual_preserve",
+      "macro": {
+        "audio_mae": 0.4002349153161049,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.25797377067698407,
+        "envelope_corr": 0.27928528668616703,
+        "shift400ms_minus_matched_mae": 0.07419639080762863,
+        "wrong_record_ACC_minus_matched_mae": 0.050860948860645294,
+        "zero_global_branch_minus_matched_mae": -2.3670494556427002e-05,
+        "soft_activity_mse": 0.10785074718296528,
+        "attention_mean_offset_ms": 193.66720564770634,
+        "noncircular_plus400ms_audio_mae": 0.4950607493519783,
+        "noncircular_plus400ms_minus_matched_mae": 0.09482583403587341
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.7301616009876775,
+        "energy": 0.13118764642197886,
+        "complex": 0.14037497804401924
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.430323988199234,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.3304258952277586,
+          "envelope_corr": 0.1976806602692565,
+          "shift400ms_minus_matched_mae": 0.09819439053535461,
+          "wrong_record_ACC_minus_matched_mae": 0.06398952007293701,
+          "zero_global_branch_minus_matched_mae": -0.00693628191947937,
+          "soft_activity_mse": 0.11462225764989853,
+          "attention_mean_offset_ms": 190.18030739345232,
+          "noncircular_plus400ms_audio_mae": 0.521943211555481,
+          "noncircular_plus400ms_minus_matched_mae": 0.09161922335624695
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.3620946705341339,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.45863206979934856,
+          "envelope_corr": 0.34773653220525375,
+          "shift400ms_minus_matched_mae": 0.14996424317359924,
+          "wrong_record_ACC_minus_matched_mae": 0.03778013586997986,
+          "zero_global_branch_minus_matched_mae": 0.006589621305465698,
+          "soft_activity_mse": 0.09642865508794785,
+          "attention_mean_offset_ms": 193.84874951934134,
+          "noncircular_plus400ms_audio_mae": 0.5336254239082336,
+          "noncircular_plus400ms_minus_matched_mae": 0.17153075337409973
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.41016125679016113,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.21146064315065172,
+          "envelope_corr": 0.2303950732055759,
+          "shift400ms_minus_matched_mae": 0.012392163276672363,
+          "wrong_record_ACC_minus_matched_mae": 0.0793338418006897,
+          "zero_global_branch_minus_matched_mae": 0.0063190758228302,
+          "soft_activity_mse": 0.12538224458694458,
+          "attention_mean_offset_ms": 197.59801785247862,
+          "noncircular_plus400ms_audio_mae": 0.4694121479988098,
+          "noncircular_plus400ms_minus_matched_mae": 0.05925089120864868
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.3983597457408905,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.03137647453017754,
+          "envelope_corr": 0.34132888106458215,
+          "shift400ms_minus_matched_mae": 0.036234766244888306,
+          "wrong_record_ACC_minus_matched_mae": 0.02234029769897461,
+          "zero_global_branch_minus_matched_mae": -0.006067097187042236,
+          "soft_activity_mse": 0.09496983140707016,
+          "attention_mean_offset_ms": 193.04174782555313,
+          "noncircular_plus400ms_audio_mae": 0.4552622139453888,
+          "noncircular_plus400ms_minus_matched_mae": 0.05690246820449829
+        }
+      ],
+      "seconds": 11.7
+    },
+    {
+      "seed": 44,
+      "route": "temporal_only",
+      "macro": {
+        "audio_mae": 0.4284714311361313,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.22132648733255048,
+        "envelope_corr": 0.15028338607363814,
+        "shift400ms_minus_matched_mae": 0.03862611949443817,
+        "wrong_record_ACC_minus_matched_mae": 0.02472279965877533,
+        "zero_global_branch_minus_matched_mae": 0.0,
+        "soft_activity_mse": 0.09806496091187,
+        "attention_mean_offset_ms": 191.21181326363427,
+        "noncircular_plus400ms_audio_mae": 0.4926338493824005,
+        "noncircular_plus400ms_minus_matched_mae": 0.06416241824626923
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.8419276351890304,
+        "energy": 0.4263172828181309,
+        "complex": 0.29360070995292387
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.43837064504623413,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.24455676259282572,
+          "envelope_corr": 0.16355417729639632,
+          "shift400ms_minus_matched_mae": 0.07029342651367188,
+          "wrong_record_ACC_minus_matched_mae": 0.03198012709617615,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.06751807034015656,
+          "attention_mean_offset_ms": 189.4186655636921,
+          "noncircular_plus400ms_audio_mae": 0.5368433594703674,
+          "noncircular_plus400ms_minus_matched_mae": 0.0984727144241333
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.41643470525741577,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.409600799748014,
+          "envelope_corr": 0.07587638954599497,
+          "shift400ms_minus_matched_mae": 0.0793527364730835,
+          "wrong_record_ACC_minus_matched_mae": 0.02542862296104431,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.11320507526397705,
+          "attention_mean_offset_ms": 190.9258307712123,
+          "noncircular_plus400ms_audio_mae": 0.48038870096206665,
+          "noncircular_plus400ms_minus_matched_mae": 0.06395399570465088
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.45615148544311523,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.11287548996322619,
+          "envelope_corr": 0.22944672543373754,
+          "shift400ms_minus_matched_mae": -0.010521799325942993,
+          "wrong_record_ACC_minus_matched_mae": 0.045705318450927734,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.13207094371318817,
+          "attention_mean_offset_ms": 191.54316259110274,
+          "noncircular_plus400ms_audio_mae": 0.5089981555938721,
+          "noncircular_plus400ms_minus_matched_mae": 0.052846670150756836
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.40292888879776,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.11827289702613597,
+          "envelope_corr": 0.13225625201842373,
+          "shift400ms_minus_matched_mae": 0.015380114316940308,
+          "wrong_record_ACC_minus_matched_mae": -0.004222869873046875,
+          "zero_global_branch_minus_matched_mae": 0.0,
+          "soft_activity_mse": 0.07946575433015823,
+          "attention_mean_offset_ms": 192.95959412852997,
+          "noncircular_plus400ms_audio_mae": 0.4443051815032959,
+          "noncircular_plus400ms_minus_matched_mae": 0.04137629270553589
+        }
+      ],
+      "seconds": 11.8
+    },
+    {
+      "seed": 44,
+      "route": "dual_unconstrained",
+      "macro": {
+        "audio_mae": 0.4440010339021683,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.2109087632580141,
+        "envelope_corr": 0.0766807936359857,
+        "shift400ms_minus_matched_mae": 0.026175156235694885,
+        "wrong_record_ACC_minus_matched_mae": 0.013829268515110016,
+        "zero_global_branch_minus_matched_mae": 0.003139987587928772,
+        "soft_activity_mse": 0.08753830380737782,
+        "attention_mean_offset_ms": 192.0564617796439,
+        "noncircular_plus400ms_audio_mae": 0.48708441853523254,
+        "noncircular_plus400ms_minus_matched_mae": 0.04308338463306427
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.7618348581825939,
+        "energy": 0.23004351451816493,
+        "complex": 0.13622533593102218
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.4452042877674103,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.23675892189569078,
+          "envelope_corr": 0.10454742459439083,
+          "shift400ms_minus_matched_mae": 0.060497015714645386,
+          "wrong_record_ACC_minus_matched_mae": 0.041030704975128174,
+          "zero_global_branch_minus_matched_mae": 0.006695866584777832,
+          "soft_activity_mse": 0.06284262984991074,
+          "attention_mean_offset_ms": 190.79370681369838,
+          "noncircular_plus400ms_audio_mae": 0.5293014049530029,
+          "noncircular_plus400ms_minus_matched_mae": 0.08409711718559265
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.44914212822914124,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.35646032174129993,
+          "envelope_corr": -0.03772398880891548,
+          "shift400ms_minus_matched_mae": 0.05379512906074524,
+          "wrong_record_ACC_minus_matched_mae": -0.00551527738571167,
+          "zero_global_branch_minus_matched_mae": 0.0012574493885040283,
+          "soft_activity_mse": 0.10772991180419922,
+          "attention_mean_offset_ms": 191.84394815216734,
+          "noncircular_plus400ms_audio_mae": 0.46877962350845337,
+          "noncircular_plus400ms_minus_matched_mae": 0.019637495279312134
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.4604920446872711,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.17793824127761101,
+          "envelope_corr": 0.22409299543983938,
+          "shift400ms_minus_matched_mae": -0.01160341501235962,
+          "wrong_record_ACC_minus_matched_mae": 0.03775978088378906,
+          "zero_global_branch_minus_matched_mae": 0.008908271789550781,
+          "soft_activity_mse": 0.11104714125394821,
+          "attention_mean_offset_ms": 192.3370059392329,
+          "noncircular_plus400ms_audio_mae": 0.5189307928085327,
+          "noncircular_plus400ms_minus_matched_mae": 0.0584387481212616
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.42116567492485046,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.07247756811745469,
+          "envelope_corr": 0.015806743318628056,
+          "shift400ms_minus_matched_mae": 0.002011895179748535,
+          "wrong_record_ACC_minus_matched_mae": -0.017958134412765503,
+          "zero_global_branch_minus_matched_mae": -0.004301637411117554,
+          "soft_activity_mse": 0.0685335323214531,
+          "attention_mean_offset_ms": 193.25118621347698,
+          "noncircular_plus400ms_audio_mae": 0.43132585287094116,
+          "noncircular_plus400ms_minus_matched_mae": 0.010160177946090698
+        }
+      ],
+      "seconds": 11.3
+    },
+    {
+      "seed": 44,
+      "route": "dual_preserve",
+      "macro": {
+        "audio_mae": 0.4316122904419899,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.2302092492410335,
+        "envelope_corr": 0.15924182887532773,
+        "shift400ms_minus_matched_mae": 0.040208056569099426,
+        "wrong_record_ACC_minus_matched_mae": 0.02039460837841034,
+        "zero_global_branch_minus_matched_mae": 0.0002016797661781311,
+        "soft_activity_mse": 0.08711619675159454,
+        "attention_mean_offset_ms": 191.75167231824108,
+        "noncircular_plus400ms_audio_mae": 0.49420810490846634,
+        "noncircular_plus400ms_minus_matched_mae": 0.06259581446647644
+      },
+      "acc_retention_probe": {
+        "magnitude": 0.7268673694339923,
+        "energy": 0.1213582257645201,
+        "complex": 0.1422070908662216
+      },
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "audio_mae": 0.4344167411327362,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.28571773156653496,
+          "envelope_corr": 0.19709644943161708,
+          "shift400ms_minus_matched_mae": 0.08104917407035828,
+          "wrong_record_ACC_minus_matched_mae": 0.024897098541259766,
+          "zero_global_branch_minus_matched_mae": 0.0004648566246032715,
+          "soft_activity_mse": 0.07031027972698212,
+          "attention_mean_offset_ms": 189.6293862257211,
+          "noncircular_plus400ms_audio_mae": 0.5373538732528687,
+          "noncircular_plus400ms_minus_matched_mae": 0.10293713212013245
+        },
+        {
+          "recording": "recording_04_imu4",
+          "audio_mae": 0.4307761788368225,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.36769221551393577,
+          "envelope_corr": 0.03884504604125455,
+          "shift400ms_minus_matched_mae": 0.07912075519561768,
+          "wrong_record_ACC_minus_matched_mae": 0.0098685622215271,
+          "zero_global_branch_minus_matched_mae": 0.00037232041358947754,
+          "soft_activity_mse": 0.09665890783071518,
+          "attention_mean_offset_ms": 192.42132561030482,
+          "noncircular_plus400ms_audio_mae": 0.47183626890182495,
+          "noncircular_plus400ms_minus_matched_mae": 0.04106009006500244
+        },
+        {
+          "recording": "recording_05_imu4",
+          "audio_mae": 0.4597901999950409,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.13480011088254293,
+          "envelope_corr": 0.22153233766728792,
+          "shift400ms_minus_matched_mae": -0.019008129835128784,
+          "wrong_record_ACC_minus_matched_mae": 0.046579331159591675,
+          "zero_global_branch_minus_matched_mae": 0.004519939422607422,
+          "soft_activity_mse": 0.11847317963838577,
+          "attention_mean_offset_ms": 191.90300365664964,
+          "noncircular_plus400ms_audio_mae": 0.5117678046226501,
+          "noncircular_plus400ms_minus_matched_mae": 0.05197760462760925
+        },
+        {
+          "recording": "recording_08_imu3",
+          "audio_mae": 0.40146604180336,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.13262693900112035,
+          "envelope_corr": 0.17949348236115134,
+          "shift400ms_minus_matched_mae": 0.019670426845550537,
+          "wrong_record_ACC_minus_matched_mae": 0.00023344159126281738,
+          "zero_global_branch_minus_matched_mae": -0.0045503973960876465,
+          "soft_activity_mse": 0.0630224198102951,
+          "attention_mean_offset_ms": 193.05297378028874,
+          "noncircular_plus400ms_audio_mae": 0.4558744728565216,
+          "noncircular_plus400ms_minus_matched_mae": 0.05440843105316162
+        }
+      ],
+      "seconds": 11.8
+    }
+  ],
+  "source_hashes": {
+    "export_delay_generation.py": "2bd601ce6167228a7cd7b5e689cc7c8ed60d568507f74feb7c12e06284bd006a",
+    "train_delay_generation.py": "d63b0cecc1073c1228abe83d45d2f2632f02f9cbe43d24d4ab495b28f5fd7880",
+    "check_delay_generation_controls.py": "a0298e986614e71b7030f8f98c787c7e468bbfc36254ce89f55fff97e8185862",
+    "report_delay_generation.py": "3c623624f9f8b5d0c588fa694121d7185307ac9cef65102ebca489c82e634fda"
+  },
+  "trainer_source_verified_same_local_and_remote": true
+}
