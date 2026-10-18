@@ -1,0 +1,171 @@
+{
+  "source": "one person OpenVR vAccel, existing20TRAIN only for new crops",
+  "test_and_auth_reserve": "not opened",
+  "external_validation": "existing4 reused exploratory VAL, unchanged original16 windows",
+  "crop_bank": {
+    "step_ms": 40,
+    "duration_ms": 800,
+    "count": 1918,
+    "sampler": "8 distinct recordings/update, 75% select crop with audio-active fraction>=0.1 when available;25% uniform. Same rule fixed/dense. TRAIN labels only; no microphone inference",
+    "independent_new_recordings": 0
+  },
+  "coverage": [
+    {
+      "recording": "recording_01_imu3",
+      "duration": 4.256,
+      "crops": 87,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.24
+    },
+    {
+      "recording": "recording_01_imu4",
+      "duration": 4.288,
+      "crops": 88,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.28
+    },
+    {
+      "recording": "recording_02_imu3",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0000000000000004,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_02_imu5",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 0.8000000000000002,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_03_imu4",
+      "duration": 4.608,
+      "crops": 96,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.6
+    },
+    {
+      "recording": "recording_04_imu1",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0000000000000004,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_04_imu2",
+      "duration": 4.512,
+      "crops": 93,
+      "old_coverage_seconds": 1.6,
+      "new_coverage_seconds": 4.48
+    },
+    {
+      "recording": "recording_04_imu3",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_04_imu5",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 0.8000000000000002,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_05_imu5",
+      "duration": 4.544,
+      "crops": 94,
+      "old_coverage_seconds": 0.8000000000000002,
+      "new_coverage_seconds": 4.5200000000000005
+    },
+    {
+      "recording": "recording_06_imu1",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_06_imu4",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0000000000000004,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_07_imu1",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_08_imu2",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 1.5999999999999999,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_08_imu5",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 0.8000000000000002,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_09_imu2",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 1.6000000000000003,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_10_imu1",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 2.0,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_10_imu2",
+      "duration": 4.576,
+      "crops": 95,
+      "old_coverage_seconds": 1.6,
+      "new_coverage_seconds": 4.56
+    },
+    {
+      "recording": "recording_10_imu5",
+      "duration": 4.544,
+      "crops": 94,
+      "old_coverage_seconds": 0.8,
+      "new_coverage_seconds": 4.5200000000000005
+    },
+    {
+      "recording": "recording_imu",
+      "duration": 6.0369375,
+      "crops": 131,
+      "old_coverage_seconds": 0.8000000000000003,
+      "new_coverage_seconds": 6.0
+    }
+  ],
+  "old_union_seconds": 31.200000000000003,
+  "new_union_seconds": 91.92000000000002,
+  "raw_total_seconds": 92.27693749999999,
+  "frontend": "unchanged251XYZ magnitude+energy and80Mel, exact prior crop functions/parameters; no per-user/axis/window normalization; frozen previous20TRAIN scales, not refit",
+  "parity_max_absolute_error": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "internal_holdout_recordings": [
+    "recording_04_imu3",
+    "recording_06_imu4",
+    "recording_09_imu2",
+    "recording_10_imu5"
+  ],
+  "internal_split": "16 fit /4 early-stop. All crops of holdout excluded from gradient updates. Frozen prior calibration includes the20 originalTRAIN; internal split is gradient-held-out, not completely preprocessing-blind. ExternalVAL never used for checkpoint selection.",
+  "scale_source_sha256": "578d35e7ddbdda373d7390d333437b47051eeb7af4560ededca168ddfe9c2f13",
+  "scope": "coverage expansion and sampling of already authorizedTRAIN; overlapping crops are not independent utterances"
+}
