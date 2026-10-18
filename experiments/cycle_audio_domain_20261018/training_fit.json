@@ -1,0 +1,114 @@
+[
+  {
+    "route": "continuation",
+    "seed": 42,
+    "fit": {
+      "train": {
+        "audio_mae": 0.44496187567710876,
+        "ACC_cycle_mae": 0.09626326709985733
+      },
+      "val": {
+        "audio_mae": 0.5267831087112427,
+        "ACC_cycle_mae": 0.1147788017988205
+      }
+    }
+  },
+  {
+    "route": "audio_anchor",
+    "seed": 42,
+    "fit": {
+      "train": {
+        "audio_mae": 0.30473944544792175,
+        "ACC_cycle_mae": 0.11522581428289413
+      },
+      "val": {
+        "audio_mae": 0.49011823534965515,
+        "ACC_cycle_mae": 0.1335030496120453
+      }
+    }
+  },
+  {
+    "route": "audio_anchor_smooth",
+    "seed": 42,
+    "fit": {
+      "train": {
+        "audio_mae": 0.2847497761249542,
+        "ACC_cycle_mae": 0.15235130488872528
+      },
+      "val": {
+        "audio_mae": 0.4869694411754608,
+        "ACC_cycle_mae": 0.16507332026958466
+      }
+    }
+  },
+  {
+    "route": "continuation",
+    "seed": 43,
+    "fit": {
+      "train": {
+        "audio_mae": 0.4453677237033844,
+        "ACC_cycle_mae": 0.09635113179683685
+      },
+      "val": {
+        "audio_mae": 0.5195435881614685,
+        "ACC_cycle_mae": 0.11436566710472107
+      }
+    }
+  },
+  {
+    "route": "audio_anchor",
+    "seed": 43,
+    "fit": {
+      "train": {
+        "audio_mae": 0.31412816047668457,
+        "ACC_cycle_mae": 0.11364442110061646
+      },
+      "val": {
+        "audio_mae": 0.48734545707702637,
+        "ACC_cycle_mae": 0.1337481439113617
+      }
+    }
+  },
+  {
+    "route": "audio_anchor_smooth",
+    "seed": 43,
+    "fit": {
+      "train": {
+        "audio_mae": 0.2943865656852722,
+        "ACC_cycle_mae": 0.1527901291847229
+      },
+      "val": {
+        "audio_mae": 0.4875233769416809,
+        "ACC_cycle_mae": 0.16690996289253235
+      }
+    }
+  },
+  {
+    "route": "resnet_curriculum",
+    "seed": 42,
+    "fit": {
+      "train": {
+        "audio_mae": 0.1422867476940155,
+        "ACC_cycle_mae": 0.2186698168516159
+      },
+      "val": {
+        "audio_mae": 0.46164605021476746,
+        "ACC_cycle_mae": 0.21771076321601868
+      }
+    }
+  },
+  {
+    "route": "resnet_curriculum",
+    "seed": 43,
+    "fit": {
+      "train": {
+        "audio_mae": 0.15382269024848938,
+        "ACC_cycle_mae": 0.21620245277881622
+      },
+      "val": {
+        "audio_mae": 0.46990835666656494,
+        "ACC_cycle_mae": 0.21756255626678467
+      }
+    }
+  }
+]
