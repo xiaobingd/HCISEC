@@ -1,0 +1,504 @@
+{
+  "controls_macro": {
+    "time_elapsed_activity_auc": 0.6243119695069457,
+    "time_relative_activity_auc": 0.5428040223972102,
+    "raw_logistic_activity_auc": 0.6233958857548773,
+    "template_audio_mae": 0.43819811195135117,
+    "template_detail_corr": 0.1089065899189531
+  },
+  "controls_per_record": [
+    {
+      "recording": "recording_02_imu4",
+      "time_elapsed_activity_auc": 0.6822352685366384,
+      "time_relative_activity_auc": 0.49478147423352903,
+      "raw_logistic_activity_auc": 0.6434007392911503,
+      "template_audio_mae": 0.4434586763381958,
+      "template_detail_corr": 0.06950980594807293
+    },
+    {
+      "recording": "recording_04_imu4",
+      "time_elapsed_activity_auc": 0.2605743926160418,
+      "time_relative_activity_auc": 0.5542354780884091,
+      "raw_logistic_activity_auc": 0.652046226019299,
+      "template_audio_mae": 0.4680965840816498,
+      "template_detail_corr": 0.09149781223183817
+    },
+    {
+      "recording": "recording_05_imu4",
+      "time_elapsed_activity_auc": 0.8311987802553841,
+      "time_relative_activity_auc": 0.5334667429007052,
+      "raw_logistic_activity_auc": 0.5531541833428626,
+      "template_audio_mae": 0.4679609537124634,
+      "template_detail_corr": 0.10774026806384347
+    },
+    {
+      "recording": "recording_08_imu3",
+      "time_elapsed_activity_auc": 0.7232394366197183,
+      "time_relative_activity_auc": 0.5887323943661972,
+      "raw_logistic_activity_auc": 0.6449823943661972,
+      "template_audio_mae": 0.3732762336730957,
+      "template_detail_corr": 0.1668784734320579
+    }
+  ],
+  "raw_logistic_converged": true,
+  "routes": [
+    {
+      "route": "reconstruction",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "windows": 4,
+          "audio_mae": 0.5221534967422485,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": -0.14094000200411722,
+          "envelope_corr": -0.16174535431178294,
+          "wrong_minus_matched_mae": -0.035856664180755615,
+          "output_to_real_std": 0.521158754825592
+        },
+        {
+          "recording": "recording_04_imu4",
+          "windows": 4,
+          "audio_mae": 0.4543067216873169,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": 0.014625566119715947,
+          "envelope_corr": 0.06507943891778861,
+          "wrong_minus_matched_mae": 0.016531169414520264,
+          "output_to_real_std": 0.6433244347572327
+        },
+        {
+          "recording": "recording_05_imu4",
+          "windows": 4,
+          "audio_mae": 0.4759572446346283,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.01656893541184428,
+          "envelope_corr": -0.1527921542785898,
+          "wrong_minus_matched_mae": -0.005330562591552734,
+          "output_to_real_std": 0.5779933333396912
+        },
+        {
+          "recording": "recording_08_imu3",
+          "windows": 4,
+          "audio_mae": 0.40510043501853943,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.09897708887222291,
+          "envelope_corr": 0.10594390433940533,
+          "wrong_minus_matched_mae": 0.0942259132862091,
+          "output_to_real_std": 0.6271869540214539
+        }
+      ],
+      "macro": {
+        "audio_mae": 0.4643794745206833,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": -0.00269210290008352,
+        "envelope_corr": -0.0358785413332947,
+        "wrong_minus_matched_mae": 0.017392463982105255,
+        "output_to_real_std": 0.5924158692359924
+      },
+      "acc_retention_probe": {
+        "spectrum_normalized_mse": 0.82126869269833,
+        "energy_normalized_mse": 0.39105679473383254
+      },
+      "representation_dim": 630,
+      "raw_descriptor_retained_exactly": true,
+      "activity_head": "untrained; not interpreted"
+    },
+    {
+      "route": "activity_align",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "windows": 4,
+          "audio_mae": 0.5306447148323059,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": -0.13189026446541988,
+          "envelope_corr": -0.18379862912978479,
+          "wrong_minus_matched_mae": -0.041733622550964355,
+          "activity_auc": 0.5378125679495542,
+          "activity_nonzero_auc": 0.5378125679495542,
+          "output_to_real_std": 0.5615359544754028
+        },
+        {
+          "recording": "recording_04_imu4",
+          "windows": 4,
+          "audio_mae": 0.4968092143535614,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": -0.08032553263568701,
+          "envelope_corr": 0.01816014088675472,
+          "wrong_minus_matched_mae": -0.00868961215019226,
+          "activity_auc": 0.6130668599107517,
+          "activity_nonzero_auc": 0.6237329263042543,
+          "output_to_real_std": 0.7138156294822693
+        },
+        {
+          "recording": "recording_05_imu4",
+          "windows": 4,
+          "audio_mae": 0.5293914675712585,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.04741623967401568,
+          "envelope_corr": -0.19870219250912338,
+          "wrong_minus_matched_mae": -0.040392667055130005,
+          "activity_auc": 0.46331236897274636,
+          "activity_nonzero_auc": 0.46331236897274636,
+          "output_to_real_std": 0.6381862163543701
+        },
+        {
+          "recording": "recording_08_imu3",
+          "windows": 4,
+          "audio_mae": 0.39107489585876465,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.28823671360014447,
+          "envelope_corr": 0.1775824340487674,
+          "wrong_minus_matched_mae": 0.10789510607719421,
+          "activity_auc": 0.5930457746478873,
+          "activity_nonzero_auc": 0.5930457746478873,
+          "output_to_real_std": 0.5850260257720947
+        }
+      ],
+      "macro": {
+        "audio_mae": 0.4869800731539726,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.030859289043263315,
+        "envelope_corr": -0.04668956167584651,
+        "wrong_minus_matched_mae": 0.004269801080226898,
+        "activity_auc": 0.5518093928702349,
+        "activity_nonzero_auc": 0.5544759094686105,
+        "output_to_real_std": 0.6246409565210342
+      },
+      "acc_retention_probe": {
+        "spectrum_normalized_mse": 0.8320440092620808,
+        "energy_normalized_mse": 0.41711339404045
+      },
+      "representation_dim": 630,
+      "raw_descriptor_retained_exactly": true
+    },
+    {
+      "route": "activity_align_preserve",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "windows": 4,
+          "audio_mae": 0.5044195652008057,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": -0.1401177125157109,
+          "envelope_corr": -0.0304761598212462,
+          "wrong_minus_matched_mae": -0.01491430401802063,
+          "activity_auc": 0.49206349206349204,
+          "activity_nonzero_auc": 0.49206349206349204,
+          "output_to_real_std": 0.5681933164596558
+        },
+        {
+          "recording": "recording_04_imu4",
+          "windows": 4,
+          "audio_mae": 0.49778518080711365,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": -0.02954635740964054,
+          "envelope_corr": 0.05638221792462717,
+          "wrong_minus_matched_mae": 0.010046631097793579,
+          "activity_auc": 0.571608375605477,
+          "activity_nonzero_auc": 0.579194552072326,
+          "output_to_real_std": 0.7355067729949951
+        },
+        {
+          "recording": "recording_05_imu4",
+          "windows": 4,
+          "audio_mae": 0.5516011714935303,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.002669570390900881,
+          "envelope_corr": -0.27082383159435663,
+          "wrong_minus_matched_mae": -0.04855620861053467,
+          "activity_auc": 0.44429197636744805,
+          "activity_nonzero_auc": 0.44429197636744805,
+          "output_to_real_std": 0.7072157859802246
+        },
+        {
+          "recording": "recording_08_imu3",
+          "windows": 4,
+          "audio_mae": 0.4206527769565582,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.2149447019128133,
+          "envelope_corr": 0.16644169195049102,
+          "wrong_minus_matched_mae": 0.08440127968788147,
+          "activity_auc": 0.6702464788732394,
+          "activity_nonzero_auc": 0.6702464788732394,
+          "output_to_real_std": 0.7477976679801941
+        }
+      ],
+      "macro": {
+        "audio_mae": 0.49361467361450195,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.011987550594590689,
+        "envelope_corr": -0.019619020385121158,
+        "wrong_minus_matched_mae": 0.007744349539279938,
+        "activity_auc": 0.5445525807274141,
+        "activity_nonzero_auc": 0.5464491248441263,
+        "output_to_real_std": 0.6896783858537674
+      },
+      "acc_retention_probe": {
+        "spectrum_normalized_mse": 0.7368136906352958,
+        "energy_normalized_mse": 0.1265114822408459
+      },
+      "representation_dim": 630,
+      "raw_descriptor_retained_exactly": true
+    },
+    {
+      "route": "frozen_preserve_align",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "windows": 4,
+          "audio_mae": 0.48575636744499207,
+          "mean_template_mae": 0.4434586763381958,
+          "detail_corr": 0.05509481358449778,
+          "envelope_corr": -0.09031340016476946,
+          "wrong_minus_matched_mae": -0.007943063974380493,
+          "activity_auc": 0.6728854098717112,
+          "activity_nonzero_auc": 0.6728854098717112,
+          "output_to_real_std": 0.45516014099121094
+        },
+        {
+          "recording": "recording_04_imu4",
+          "windows": 4,
+          "audio_mae": 0.5116924047470093,
+          "mean_template_mae": 0.4680965840816498,
+          "detail_corr": -0.029149856084130944,
+          "envelope_corr": -0.3135702377625615,
+          "wrong_minus_matched_mae": -0.05153459310531616,
+          "activity_auc": 0.5195850337541478,
+          "activity_nonzero_auc": 0.517513991624594,
+          "output_to_real_std": 0.5058864951133728
+        },
+        {
+          "recording": "recording_05_imu4",
+          "windows": 4,
+          "audio_mae": 0.5107494592666626,
+          "mean_template_mae": 0.4679609537124634,
+          "detail_corr": 0.12169442456870079,
+          "envelope_corr": -0.49759946655638965,
+          "wrong_minus_matched_mae": -0.05335184931755066,
+          "activity_auc": 0.2703259005145798,
+          "activity_nonzero_auc": 0.2703259005145798,
+          "output_to_real_std": 0.49490517377853394
+        },
+        {
+          "recording": "recording_08_imu3",
+          "windows": 4,
+          "audio_mae": 0.37837132811546326,
+          "mean_template_mae": 0.3732762336730957,
+          "detail_corr": 0.2551249167551535,
+          "envelope_corr": 0.318125999410642,
+          "wrong_minus_matched_mae": 0.13016989827156067,
+          "activity_auc": 0.40290492957746477,
+          "activity_nonzero_auc": 0.40290492957746477,
+          "output_to_real_std": 0.6439217925071716
+        }
+      ],
+      "macro": {
+        "audio_mae": 0.4716423898935318,
+        "mean_template_mae": 0.43819811195135117,
+        "detail_corr": 0.10069107470605528,
+        "envelope_corr": -0.14583927626826965,
+        "wrong_minus_matched_mae": 0.004335097968578339,
+        "activity_auc": 0.4664253184294758,
+        "activity_nonzero_auc": 0.46590755789708743,
+        "output_to_real_std": 0.5249684005975723
+      },
+      "acc_retention_probe": {
+        "spectrum_normalized_mse": 0.6863874451172469,
+        "energy_normalized_mse": 0.06619584323230765
+      },
+      "representation_dim": 630,
+      "raw_descriptor_retained_exactly": true
+    }
+  ],
+  "scope": "single-person exploratory validation; activity AUC is not identity AUC; neural activity head in reconstruction route is untrained and must not be interpreted",
+  "conditioning_controls": [
+    {
+      "route": "reconstruction",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "matched_audio_mae": 0.5221534967422485,
+          "shift400ms_minus_matched_mae": -0.04492136836051941,
+          "wrong_record_ACC_minus_matched_mae": -0.08217069506645203
+        },
+        {
+          "recording": "recording_04_imu4",
+          "matched_audio_mae": 0.4543067216873169,
+          "shift400ms_minus_matched_mae": 0.03301107883453369,
+          "wrong_record_ACC_minus_matched_mae": -0.002548396587371826
+        },
+        {
+          "recording": "recording_05_imu4",
+          "matched_audio_mae": 0.4759572446346283,
+          "shift400ms_minus_matched_mae": -0.037136197090148926,
+          "wrong_record_ACC_minus_matched_mae": 0.027410179376602173
+        },
+        {
+          "recording": "recording_08_imu3",
+          "matched_audio_mae": 0.40510043501853943,
+          "shift400ms_minus_matched_mae": 0.04572322964668274,
+          "wrong_record_ACC_minus_matched_mae": 0.045545220375061035
+        }
+      ],
+      "macro": {
+        "matched_audio_mae": 0.4643794745206833,
+        "shift400ms_minus_matched_mae": -0.0008308142423629761,
+        "wrong_record_ACC_minus_matched_mae": -0.002940922975540161
+      },
+      "activity_head": "untrained; not interpreted"
+    },
+    {
+      "route": "activity_align",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "matched_audio_mae": 0.5306447148323059,
+          "shift400ms_minus_matched_mae": -0.019939661026000977,
+          "wrong_record_ACC_minus_matched_mae": -0.07274210453033447,
+          "matched_activity_auc": 0.5378125679495542,
+          "shift400ms_activity_auc": 0.4612959338986736,
+          "wrong_record_ACC_activity_auc": 0.5668188736681887
+        },
+        {
+          "recording": "recording_04_imu4",
+          "matched_audio_mae": 0.4968092143535614,
+          "shift400ms_minus_matched_mae": 0.0007187128067016602,
+          "wrong_record_ACC_minus_matched_mae": -0.00866633653640747,
+          "matched_activity_auc": 0.6130668599107517,
+          "shift400ms_activity_auc": 0.4748846256531523,
+          "wrong_record_ACC_activity_auc": 0.5206911018726877
+        },
+        {
+          "recording": "recording_05_imu4",
+          "matched_audio_mae": 0.5293914675712585,
+          "shift400ms_minus_matched_mae": -0.059993475675582886,
+          "wrong_record_ACC_minus_matched_mae": -0.03483101725578308,
+          "matched_activity_auc": 0.46331236897274636,
+          "shift400ms_activity_auc": 0.5430150562226034,
+          "wrong_record_ACC_activity_auc": 0.7251000571755288
+        },
+        {
+          "recording": "recording_08_imu3",
+          "matched_audio_mae": 0.39107489585876465,
+          "shift400ms_minus_matched_mae": 0.08069601655006409,
+          "wrong_record_ACC_minus_matched_mae": 0.03737747669219971,
+          "matched_activity_auc": 0.5930457746478873,
+          "shift400ms_activity_auc": 0.4471830985915493,
+          "wrong_record_ACC_activity_auc": 0.5616197183098591
+        }
+      ],
+      "macro": {
+        "matched_audio_mae": 0.4869800731539726,
+        "shift400ms_minus_matched_mae": 0.0003703981637954712,
+        "wrong_record_ACC_minus_matched_mae": -0.01971549540758133,
+        "matched_activity_auc": 0.5518093928702349,
+        "shift400ms_activity_auc": 0.4815946785914947,
+        "wrong_record_ACC_activity_auc": 0.5935574377565661
+      }
+    },
+    {
+      "route": "activity_align_preserve",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "matched_audio_mae": 0.5044195652008057,
+          "shift400ms_minus_matched_mae": -0.013263493776321411,
+          "wrong_record_ACC_minus_matched_mae": -0.012061119079589844,
+          "matched_activity_auc": 0.49206349206349204,
+          "shift400ms_activity_auc": 0.509632528810611,
+          "wrong_record_ACC_activity_auc": 0.44540117416829744
+        },
+        {
+          "recording": "recording_04_imu4",
+          "matched_audio_mae": 0.49778518080711365,
+          "shift400ms_minus_matched_mae": 0.02278926968574524,
+          "wrong_record_ACC_minus_matched_mae": 0.009342163801193237,
+          "matched_activity_auc": 0.571608375605477,
+          "shift400ms_activity_auc": 0.5068461802509631,
+          "wrong_record_ACC_activity_auc": 0.4989892825813341
+        },
+        {
+          "recording": "recording_05_imu4",
+          "matched_audio_mae": 0.5516011714935303,
+          "shift400ms_minus_matched_mae": -0.10577261447906494,
+          "wrong_record_ACC_minus_matched_mae": -0.07259294390678406,
+          "matched_activity_auc": 0.44429197636744805,
+          "shift400ms_activity_auc": 0.544463502954069,
+          "wrong_record_ACC_activity_auc": 0.6887745378311416
+        },
+        {
+          "recording": "recording_08_imu3",
+          "matched_audio_mae": 0.4206527769565582,
+          "shift400ms_minus_matched_mae": 0.07342156767845154,
+          "wrong_record_ACC_minus_matched_mae": -0.000998765230178833,
+          "matched_activity_auc": 0.6702464788732394,
+          "shift400ms_activity_auc": 0.5215669014084507,
+          "wrong_record_ACC_activity_auc": 0.5561619718309859
+        }
+      ],
+      "macro": {
+        "matched_audio_mae": 0.49361467361450195,
+        "shift400ms_minus_matched_mae": -0.005706317722797394,
+        "wrong_record_ACC_minus_matched_mae": -0.019077666103839874,
+        "matched_activity_auc": 0.5445525807274141,
+        "shift400ms_activity_auc": 0.5206272783560235,
+        "wrong_record_ACC_activity_auc": 0.5473317416029397
+      }
+    },
+    {
+      "route": "frozen_preserve_align",
+      "per_record": [
+        {
+          "recording": "recording_02_imu4",
+          "matched_audio_mae": 0.48575568199157715,
+          "shift400ms_minus_matched_mae": 0.008614838123321533,
+          "wrong_record_ACC_minus_matched_mae": -0.010741502046585083,
+          "matched_activity_auc": 0.6728419221569907,
+          "shift400ms_activity_auc": 0.4318330071754729,
+          "wrong_record_ACC_activity_auc": 0.5067623396390519
+        },
+        {
+          "recording": "recording_04_imu4",
+          "matched_audio_mae": 0.511698842048645,
+          "shift400ms_minus_matched_mae": -0.0660269558429718,
+          "wrong_record_ACC_minus_matched_mae": -0.013742566108703613,
+          "matched_activity_auc": 0.5195850337541478,
+          "shift400ms_activity_auc": 0.47846981196841987,
+          "wrong_record_ACC_activity_auc": 0.28445020786452574
+        },
+        {
+          "recording": "recording_05_imu4",
+          "matched_audio_mae": 0.5107572674751282,
+          "shift400ms_minus_matched_mae": -0.09109491109848022,
+          "wrong_record_ACC_minus_matched_mae": 0.011948347091674805,
+          "matched_activity_auc": 0.2703259005145798,
+          "shift400ms_activity_auc": 0.7688965122927387,
+          "wrong_record_ACC_activity_auc": 0.47470935772822564
+        },
+        {
+          "recording": "recording_08_imu3",
+          "matched_audio_mae": 0.3783762753009796,
+          "shift400ms_minus_matched_mae": 0.08667322993278503,
+          "wrong_record_ACC_minus_matched_mae": 0.06115660071372986,
+          "matched_activity_auc": 0.40290492957746477,
+          "shift400ms_activity_auc": 0.5503521126760563,
+          "wrong_record_ACC_activity_auc": 0.45695422535211266
+        }
+      ],
+      "macro": {
+        "matched_audio_mae": 0.4716470167040825,
+        "shift400ms_minus_matched_mae": -0.015458449721336365,
+        "wrong_record_ACC_minus_matched_mae": 0.012155219912528992,
+        "matched_activity_auc": 0.4664144465007957,
+        "shift400ms_activity_auc": 0.557387861028172,
+        "wrong_record_ACC_activity_auc": 0.430719032645979
+      }
+    }
+  ],
+  "source_hashes": {
+    "export_activity_alignment.py": "5e31fc701d5217a64e72605778d44ba5f6818ca3a98ef2b489bd65fd9d8aee9e",
+    "train_activity_alignment.py": "8cc37dc244c23546d01b3fb4a51203ce7402adc594edd50b54c918b48d9ef370",
+    "report_activity_alignment.py": "f59bad1f107d6974abdc6e41c23af5423b8e7232489a1b66f99d68f517e0ffd1",
+    "diagnose_activity_conditioning.py": "12e2b8dae655f2bf8026ad4e2e30569b6fc0cd9644ea43c4c6a30221ed3d8a1c"
+  }
+}
