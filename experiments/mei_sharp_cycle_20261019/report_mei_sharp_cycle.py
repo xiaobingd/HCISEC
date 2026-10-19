@@ -62,6 +62,8 @@ fig.suptitle('Fixed same .4-1.2s / Mel5-45 zoom / no per-panel contrast or sharp
 fig.savefig(root/'detail_zoom.png',dpi=160);plt.close(fig)
 lines=['# mei 完整循环频谱过度平滑：配对细节与结构消融','',
 '2026-10-19。完成六设置×两随机种子，共12个最终模型。目标是改善真实频谱细节对应，而非通过显示锐化或无条件纹理令图像看起来更清楚。结果均为模型原始输出，没有后处理。','',
+f"**结论：尚未达到修复标准，不替换前轮基线。** 保守highpass分支使局部峰召回从{baseline_sharp['near_target_peak_recall']:.1%}增至{summary['highpass']['sharp']['near_target_peak_recall']:.1%}、局部起伏RMS比从{baseline_sharp['active_highpass_rms_ratio']:.3f}增至{summary['highpass']['sharp']['active_highpass_rms_ratio']:.3f}，但真实细节相关性{baseline['audio_detail_corr']:.4f}→{summary['highpass']['macro']['audio_detail_corr']:.4f}基本不变，误发声率{baseline_extra['activity_false_positive_rate']:.1%}→{summary['highpass']['extra']['activity_false_positive_rate']:.1%}上升。视觉可见更多横向条纹，却没有恢复真实音频中清楚、随时间变化的谐波。更强结构约束的起伏较大，细节对应反而变差。仅延长训练也没有解决问题。",'',
+'highpass的冻结基底设计更好地保留前轮模型行为，优于相同预算全量继续训练，但不优于前轮模型的真实细节对应。该结果不能归因于特定一个组件，也不能把局部峰增加当作身份信息提升。','',
 '## 数据和训练','',
 '沿用清理后的 Data0723/wangjingmei：180个独立训练录制、60个反复探索过的验证录制。同一冻结预处理和归一化、原时间戳，无逐人滤波或调增益。推理仅输入约2秒ACC，属于离线未来上下文模型。未打开测试或认证保留数据，也没有训练认证头。','',
 '各组从前一轮相同种子的约2秒完整循环 G/F 初始化，180轮×4更新，批次8个不同训练录制，学习率0.0001。判别器均重新初始化并预热40次；相同种子的数据批次和中间Mel噪声随机流一致。固定终点，不通过验证集选择epoch。保留 ACC→生成Mel→ACC 和音频→ACC→音频双向循环；F没有ACC或潜在信息旁路。种子43的首个继续训练进程中断，未完成结果未使用，从相同初始权重重新完成。','',
