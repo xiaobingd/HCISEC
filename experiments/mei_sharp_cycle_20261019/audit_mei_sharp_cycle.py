@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 import torch
 from torch.nn import functional as F
-from train_mei_sharp_cycle import FullG,ReturnF,SharpG,load,legacy_predictions,detail_metrics
+from train_mei_sharp_cycle import FullG,ReturnF,SharpG,HighpassG,load,legacy_predictions,detail_metrics
 
 p=argparse.ArgumentParser();p.add_argument('--source',type=Path,required=True);p.add_argument('--prior',type=Path,required=True);p.add_argument('--output',type=Path,required=True);args=p.parse_args();torch.set_num_threads(2)
 va=load(args.prior/'full_context_data/full_validation.npz');legacy=load(args.source/'data/mei_val.npz');proto=json.loads((args.prior/'results/protocol.json').read_text());alo,ahi=proto['normalization_audio'];threshold=proto['audio_energy_threshold']
@@ -16,6 +16,7 @@ for seed in [42,43]:
         path=args.prior/'full_context_results'/('full_'+str(seed)+'_weights.pt') if route=='initial' else args.output/(route+'_'+str(seed)+'_weights.pt')
         cp=torch.load(path,map_location='cuda',weights_only=True);g=FullG().cuda();f=ReturnF().cuda()
         if route.endswith('_residual'):g=SharpG(g).cuda()
+        if route=='highpass':g=HighpassG(g).cuda()
         g.load_state_dict(cp['g']);f.load_state_dict(cp['f']);g.eval();f.eval()
         d,preds,full=legacy_predictions(g,f,va,legacy);sharp=detail_metrics(preds['generated_audio'],d['y'],threshold,alo,ahi)
         # Return perturbations on full recording before scoring common interiors.
