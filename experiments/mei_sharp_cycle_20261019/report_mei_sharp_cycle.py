@@ -8,16 +8,16 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 root=Path('outputs/mei_sharp_cycle_20261019');review=root/'review'
-runs=json.loads((review/'results.json').read_text());assert len(runs)==10
+runs=json.loads((review/'results.json').read_text());assert len(runs)==12
 prior=json.loads(Path('outputs/mei_audio_repair_20261018/full_context_review/summary.json').read_text())
 summary={}
-for route in ['continue','focal','focal_residual','structure','structure_residual']:
+for route in ['continue','focal','focal_residual','structure','structure_residual','highpass']:
     rr=[r for r in runs if r['route']==route]
     summary[route]=dict(macro={k:float(np.mean([r['metrics']['macro'][k] for r in rr])) for k in rr[0]['metrics']['macro']},extra={k:float(np.mean([r['metrics']['extra']['macro'][k] for r in rr])) for k in rr[0]['metrics']['extra']['macro']},sharp={k:float(np.mean([r['sharp'][k] for r in rr])) for k in rr[0]['sharp'] if isinstance(rr[0]['sharp'][k],(int,float))},train_audio_mae=float(np.mean([r['train_audio_mae'] for r in rr])))
 baseline={k:float(np.mean([r['final']['macro'][k] for r in prior['runs']])) for k in prior['runs'][0]['final']['macro']}
 baseline_extra={k:float(np.mean([r['final']['extra']['macro'][k] for r in prior['runs']])) for k in prior['runs'][0]['final']['extra']['macro']}
 paired={}
-for route in ['focal','focal_residual','structure','structure_residual']:
+for route in ['focal','focal_residual','structure','structure_residual','highpass']:
     deltas=[]
     for seed in [42,43]:
         target=next(r for r in runs if r['route']==route and r['seed']==seed)
@@ -26,8 +26,11 @@ for route in ['focal','focal_residual','structure','structure_residual']:
         deltas.append([aa[n]-bb[n] for n in sorted(aa)])
     delta=np.mean(deltas,axis=0);rng=np.random.default_rng(20261019);boot=delta[rng.integers(0,len(delta),size=(5000,len(delta)))].mean(1)
     paired[route]=dict(audio_mae_change_vs_continue=float(delta.mean()),conditional_record_bootstrap95=np.percentile(boot,[2.5,97.5]).tolist(),records_improved=int((delta<0).sum()),records=60,limits='Conditional on reused validation, seed-average predictions; not fresh sessions or architecture selection uncertainty.')
-public=dict(baseline=baseline,baseline_extra=baseline_extra,routes=summary,paired=paired,seed_results=[dict(seed=r['seed'],route=r['route'],macro=r['metrics']['macro'],extra=r['metrics']['extra']['macro'],sharp=r['sharp'],train_audio_mae=r['train_audio_mae']) for r in runs],protocol=json.loads((review/'protocol.json').read_text()),source_hashes={name:hashlib.sha256((Path('work')/name).read_bytes()).hexdigest() for name in ['train_mei_sharp_cycle.py','report_mei_sharp_cycle.py','audit_mei_sharp_cycle.py']})
+public=dict(baseline=baseline,baseline_extra=baseline_extra,routes=summary,paired=paired,seed_results=[dict(seed=r['seed'],route=r['route'],macro=r['metrics']['macro'],extra=r['metrics']['extra']['macro'],sharp=r['sharp'],train_audio_mae=r['train_audio_mae']) for r in runs],protocol=json.loads((review/'protocol.json').read_text()),source_hashes={name:hashlib.sha256((Path('work')/name).read_bytes()).hexdigest() for name in ['train_mei_sharp_cycle.py','report_mei_sharp_cycle.py','audit_mei_sharp_cycle.py','pack_mei_sharp_review.py']})
 if (review/'controls.json').exists():public['controls']=json.loads((review/'controls.json').read_text())
+initial_controls=[r for r in public.get('controls',{}).get('runs',[]) if r['route']=='initial']
+baseline_sharp={k:float(np.mean([r['sharp'][k] for r in initial_controls])) for k in initial_controls[0]['sharp'] if isinstance(initial_controls[0]['sharp'][k],(float,int))} if initial_controls else {}
+public['baseline_sharp']=baseline_sharp
 (root/'summary.json').write_text(json.dumps(public,indent=2),encoding='utf-8')
 old=dict(np.load('outputs/mei_audio_repair_20261018/full_context_review/full_42_whole_record_plots.npz'))
 plots={r:dict(np.load(review/(r+'_42_plots.npz'))) for r in summary}
@@ -43,12 +46,12 @@ for ri,(name,arr) in enumerate(rows):
 fig.suptitle('Anti-smoothing complete-cycle ablation / seed42 / first2 sources per task\nRaw outputs, shared scales, no visual filtering; explored VAL, no identity claim')
 fig.savefig(root/'comparison.png',dpi=150);plt.close(fig)
 fig,axs=plt.subplots(2,3,figsize=(12,6),layout='constrained')
-panels=[('Real microphone',old['real_audio'][0]),('Previous full-context',old['generated_audio'][0]),('Same-budget continue',plots['continue']['generated_audio'][0]),('Paired focal + full resolution',plots['focal_residual']['generated_audio'][0]),('Paired local structure',plots['structure']['generated_audio'][0]),('Structure + full resolution',plots['structure_residual']['generated_audio'][0])]
+panels=[('Real microphone',old['real_audio'][0]),('Previous full-context',old['generated_audio'][0]),('Same-budget continue',plots['continue']['generated_audio'][0]),('Paired focal + full resolution',plots['focal_residual']['generated_audio'][0]),('Structure + full resolution',plots['structure_residual']['generated_audio'][0]),('Frozen base + highpass branch',plots['highpass']['generated_audio'][0])]
 for ax,(name,arr) in zip(axs.flat,panels):
     ax.imshow(arr,origin='lower',aspect='auto',cmap='magma',vmin=-1,vmax=1,interpolation='nearest');ax.set_title(name,fontsize=10);ax.set_xlabel('Frame index');ax.set_ylabel('Mel bin')
 fig.suptitle('Fixed first VAL recording / seed42 / raw output and common scale')
 fig.savefig(root/'compact.png',dpi=160);plt.close(fig)
-fig,axs=plt.subplots(7,4,figsize=(15,13),layout='constrained')
+fig,axs=plt.subplots(8,4,figsize=(15,14),layout='constrained')
 for col in range(4):
     entries=[('Real microphone',old['real_audio'][col])]+[(r,plots[r]['generated_audio'][col]) for r in summary]+[('Previous',old['generated_audio'][col])]
     for row,(name,a) in enumerate(entries):
@@ -58,7 +61,7 @@ for col in range(4):
 fig.suptitle('Fixed same .4-1.2s / Mel5-45 zoom / no per-panel contrast or sharpening')
 fig.savefig(root/'detail_zoom.png',dpi=160);plt.close(fig)
 lines=['# mei 完整循环频谱过度平滑：配对细节与结构消融','',
-'2026-10-19。完成五设置×两随机种子，共10个最终模型。目标是改善真实频谱细节对应，而非通过显示锐化或无条件纹理令图像看起来更清楚。结果均为模型原始输出，没有后处理。','',
+'2026-10-19。完成六设置×两随机种子，共12个最终模型。目标是改善真实频谱细节对应，而非通过显示锐化或无条件纹理令图像看起来更清楚。结果均为模型原始输出，没有后处理。','',
 '## 数据和训练','',
 '沿用清理后的 Data0723/wangjingmei：180个独立训练录制、60个反复探索过的验证录制。同一冻结预处理和归一化、原时间戳，无逐人滤波或调增益。推理仅输入约2秒ACC，属于离线未来上下文模型。未打开测试或认证保留数据，也没有训练认证头。','',
 '各组从前一轮相同种子的约2秒完整循环 G/F 初始化，180轮×4更新，批次8个不同训练录制，学习率0.0001。判别器均重新初始化并预热40次；相同种子的数据批次和中间Mel噪声随机流一致。固定终点，不通过验证集选择epoch。保留 ACC→生成Mel→ACC 和音频→ACC→音频双向循环；F没有ACC或潜在信息旁路。种子43的首个继续训练进程中断，未完成结果未使用，从相同初始权重重新完成。','',
@@ -67,13 +70,14 @@ lines=['# mei 完整循环频谱过度平滑：配对细节与结构消融','',
 '- focal_residual：相同focal目标，再加不下采样、不使用归一化的全分辨率残差分支，零初始化输出头并限制增量至±0.35。',
 '- structure：在continue之上增加16×16配对图块去均值余弦损失及局部对数标准差误差，以目标局部标准差加权。',
 '- structure_residual：相同structure目标再加上述全分辨率分支。','',
+'- highpass：最后追加的保守方案，冻结同种子前轮基础G，只训练细节分支与F。细节增量限制为±0.35、去除9频带局部均值，形状/幅度损失减为1/0.5；这是冻结基底＋受限分支＋弱结构目标的组合，不能归因于单一改动。','',
 '结构组是看到首轮频域细节约束未改善后的追加探索，不是预先注册的独立确认实验。残差头的初始输出已与原G同批次逐元素相等核验。所有图使用相同色阶和nearest显示，无逐图增益、锐化或选择最好样本。','',
 'Focal部分借鉴[Focal Frequency Loss原论文](https://openaccess.thecvf.com/content/ICCV2021/html/Jiang_Focal_Frequency_Loss_for_Image_Reconstruction_and_Synthesis_ICCV_2021_paper.html)的自适应难频率加权。这里是Mel图像的空间傅里叶系数，不是波形频谱，也不代表恢复了语音物理基频；图块实现是本项目适配。结构损失为本项目实现。','',
 '## 相同目标片段上的结果','',
 '沿用前轮共同口径：60录制×前三个原0.8秒窗口×各65个内部帧，共180片段。所有行的目标完全相同。不能与更早240个完整81帧窗口的0.277等数字直接比较。以下为两随机种子平均；↑/↓仅表示指标方向。','',
 '|设置|音频MAE↓|细节相关↑|局部对比相关↑|频带起伏幅度比（真实=1）|局部峰召回↑|误发声率↓|ACC循环MAE↓|',
 '|---|---:|---:|---:|---:|---:|---:|---:|',
-f"|前轮2秒模型|{baseline['audio_mae']:.4f}|{baseline['audio_detail_corr']:.4f}|{baseline_extra['local_spectral_contrast_corr']:.4f}|见controls.json|见controls.json|{baseline_extra['activity_false_positive_rate']:.2%}|{baseline['ACC_cycle_mae']:.4f}|"]
+f"|前轮2秒模型|{baseline['audio_mae']:.4f}|{baseline['audio_detail_corr']:.4f}|{baseline_extra['local_spectral_contrast_corr']:.4f}|{baseline_sharp['active_highpass_rms_ratio']:.3f}|{baseline_sharp['near_target_peak_recall']:.2%}|{baseline_extra['activity_false_positive_rate']:.2%}|{baseline['ACC_cycle_mae']:.4f}|"]
 for route,r in summary.items():
     m,e,s=r['macro'],r['extra'],r['sharp']
     lines.append(f"|{route}|{m['audio_mae']:.4f}|{m['audio_detail_corr']:.4f}|{e['local_spectral_contrast_corr']:.4f}|{s['active_highpass_rms_ratio']:.3f}|{s['near_target_peak_recall']:.2%}|{e['activity_false_positive_rate']:.2%}|{m['ACC_cycle_mae']:.4f}|")
