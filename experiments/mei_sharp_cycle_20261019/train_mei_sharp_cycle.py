@@ -28,6 +28,17 @@ class SharpG(nn.Module):
         h=self.blocks(F.silu(self.stem(torch.cat([y[:,None],c],1))))
         return (y+.35*torch.tanh(self.head(h)[:,0])).clamp(-1,1)
 
+class HighpassG(SharpG):
+    def __init__(self,base):
+        super().__init__(base)
+        self.base.requires_grad_(False)
+    def forward(self,x):
+        y=self.base(x);c=self.projection(x).reshape(len(x),2,80,x.shape[-1])
+        h=self.blocks(F.silu(self.stem(torch.cat([y[:,None],c],1))))
+        delta=.175*torch.tanh(self.head(h)[:,0])
+        delta=delta-F.avg_pool2d(delta[:,None],(9,1),stride=1,padding=(4,0),count_include_pad=False)[:,0]
+        return (y+delta).clamp(-1,1)
+
 def focal_fourier(pred,target):
     # Tile local Mel images, comparing complex coefficients including phase.
     # Detached adaptive weights emphasize difficult components within each patch.
@@ -71,12 +82,13 @@ def detail_metrics(pred,target,threshold,alo,ahi):
     return dict(active_highpass_mae=float(abs(a-b)[mask].mean()),active_highpass_rms_ratio=float(np.sqrt(np.mean(a[mask]**2))/max(np.sqrt(np.mean(b[mask]**2)),1e-9)),gradient_mae=float(abs(ga-gb).mean()),gradient_magnitude_ratio=float(abs(ga).mean()/max(abs(gb).mean(),1e-9)),near_target_peak_precision=float((pa&dil&am).sum()/max((pa&am).sum(),1)),near_target_peak_recall=float((pb&(pa|np.concatenate([pa[:,1:],np.zeros_like(pa[:,:1])],1)|np.concatenate([np.zeros_like(pa[:,:1]),pa[:,:-1]],1))&am).sum()/max((pb&am).sum(),1)),peak_scope='Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric.')
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--source',type=Path,required=True);p.add_argument('--prior',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--epochs',type=int,default=180);p.add_argument('--seeds',nargs='+',type=int,default=[42,43]);p.add_argument('--routes',nargs='+',choices=['continue','focal','focal_residual','structure','structure_residual'],default=['continue','focal','focal_residual']);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--source',type=Path,required=True);p.add_argument('--prior',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--epochs',type=int,default=180);p.add_argument('--seeds',nargs='+',type=int,default=[42,43]);p.add_argument('--routes',nargs='+',choices=['continue','focal','focal_residual','structure','structure_residual','highpass'],default=['continue','focal','focal_residual']);args=p.parse_args()
     root=args.output;root.mkdir(exist_ok=True);torch.set_num_threads(2)
     proto=json.loads((args.prior/'results/protocol.json').read_text());alo,ahi=proto['normalization_audio'];threshold=proto['audio_energy_threshold'];span=ahi-alo
     tr=load(args.prior/'full_context_data/full_train.npz');va=load(args.prior/'full_context_data/full_validation.npz');legacy=load(args.source/'data/mei_val.npz');assert not set(tr['ids'])&set(va['ids'])
     x=torch.as_tensor(tr['x'],device='cuda');y=torch.as_tensor(tr['y'],device='cuda')
     protocol=dict(scope='Repeatedly explored same 180TRAIN/60VAL recordings; no TEST/auth read. Shared frozen frontend unchanged. Offline full2s. Same 180 common 65-frame interiors as preceding experiment. Fixed end point; no VAL selection.',routes=args.routes,seeds=args.seeds,epochs=args.epochs,updates_per_epoch=4,batch_recordings=8,initial='Same-seed final full-context G/F weights; new D 40 warmup all routes.',loss='All prior full-context losses and complete bidirectional cycles retained. Focal adds 8*mean patch16/32 focal complex Fourier error + 4*paired local contrast L1. Residual additionally trainable full-resolution zero-head .35 bounded branch, no downsample/normalization. Structure routes instead add 4*local centered cosine error + 2*local log std error in 16x16 target patches (8 stride), target std weights; exploratory followup after first focal observations.',reference='https://openaccess.thecvf.com/content/ICCV2021/html/Jiang_Focal_Frequency_Loss_for_Image_Reconstruction_and_Synthesis_ICCV_2021_paper.html',limits='Mel-image Fourier coefficients are not waveform spectral frequencies. Architecture/objective ablation, not proof of physical harmonic or identity recovery.')
+    protocol['highpass_followup']='After first structure route had more peaks but poorer correspondence: freeze same-seed prior full-context base G; learn ONLY high-pass residual .175*tanh(head) minus9bin localmean (max increment .35), F still trainable. Adds 1*local shape+0.5*logstd instead of structure4/2; all prior completecycle losses unchanged. Base freeze / constrained branch / weaker structure is a package, not isolated component attribution.'
     (root/'protocol.json').write_text(json.dumps(protocol,indent=2));results=json.loads((root/'results.json').read_text()) if (root/'results.json').exists() else []
     env=lambda a:torch.log10(torch.pow(10.,(a-1)*span/20).mean(1).clamp_min(1e-12))
     for seed in args.seeds:
@@ -85,8 +97,8 @@ def main():
                 print('SKIP_COMPLETED',route,seed,flush=True);continue
             torch.manual_seed(seed);cp=torch.load(args.prior/'full_context_results'/('full_'+str(seed)+'_weights.pt'),map_location='cuda',weights_only=True)
             g=FullG().cuda();f=ReturnF().cuda();g.load_state_dict(cp['g']);f.load_state_dict(cp['f'])
-            if route.endswith('_residual'):
-                base=g;g=SharpG(base).cuda()
+            if route.endswith('_residual') or route=='highpass':
+                base=g;g=(HighpassG(base) if route=='highpass' else SharpG(base)).cuda()
                 with torch.no_grad():assert torch.equal(g(x[:2]),base(x[:2]))
             # Reset RNG after optional branch initialization for common D, batches and noise.
             torch.manual_seed(seed+2027)
@@ -111,6 +123,8 @@ def main():
                     if route.startswith('focal'):loss=loss+8*focal_fourier(ga,b)+4*abs(contrast(ga)-contrast(b)).mean()
                     if route.startswith('structure'):
                         shape,amplitude=paired_structure(ga,b);loss=loss+4*shape+2*amplitude
+                    if route=='highpass':
+                        shape,amplitude=paired_structure(ga,b);loss=loss+shape+.5*amplitude
                     assert torch.isfinite(loss)
                     opt.zero_grad();loss.backward();nn.utils.clip_grad_norm_(list(g.parameters())+list(f.parameters()),5);opt.step();losses.append(float(loss.detach()))
                 if ep%30==0 or ep==args.epochs:
