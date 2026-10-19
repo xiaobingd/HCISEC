@@ -1,0 +1,13 @@
+{
+  "train_windows": 58,
+  "val_windows": 16,
+  "recordings": {
+    "train": 20,
+    "val": 4
+  },
+  "test": "not exported/read",
+  "auth_reserve": "28 recordings untouched",
+  "frontend": "original unchanged ACC arrays",
+  "audio": "nominal existing starts; 16 kHz reference resampled to 24k for codec; no per-record gain",
+  "source": "personal raw vr_imu_collector"
+}

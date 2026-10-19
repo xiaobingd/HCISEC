@@ -1,0 +1,296 @@
+{
+  "source": "same personal raw vAccel recordings;20train4val;test/28reserve excluded",
+  "protocol": {
+    "f0_reference": "existing pYIN60-400Hz,64ms/10ms; automatic not manual",
+    "acc_spectral_frame_ms": 128,
+    "acc_fft": 1024,
+    "actual_frequency_resolution_hz": 7.8125,
+    "fft_grid_hz": 0.9765625,
+    "main_prominence": "mean power F0+-12Hz / local sidebands25-60Hz,40-450Hz, dB; not physical SNR",
+    "edges_ms": 70,
+    "overlap": "deduplicated absolute sample index within each recording",
+    "statistics": "macro mean of recordings; frames not independent; no inferential p-values",
+    "coherence": "256ms no-overlap segments, phase-randomized-block null; no lag fitting; wrong-record control matched to equal lengths"
+  },
+  "coherence_validation": {
+    "recording_02_imu4": {
+      "nonoverlap_segments": 17,
+      "mean_msc_60_400hz": 0.048742327657588576,
+      "axis_mean_msc": [
+        0.04891656442189217,
+        0.053532758282556527,
+        0.04377766026831704
+      ],
+      "phase_null_median": 0.05111218910062099,
+      "phase_null_95pct": 0.054189677227928036,
+      "matched_equal_length_msc": 0.048742327657588576,
+      "wrong_record_equal_length_msc": 0.06256330090351768,
+      "matched_minus_wrong_msc": -0.013820973245929104
+    },
+    "recording_04_imu4": {
+      "nonoverlap_segments": 17,
+      "mean_msc_60_400hz": 0.051833689823160334,
+      "axis_mean_msc": [
+        0.05622732180287796,
+        0.04992618825611353,
+        0.049347559410489523
+      ],
+      "phase_null_median": 0.053704722428306664,
+      "phase_null_95pct": 0.05733209504125503,
+      "matched_equal_length_msc": 0.051833689823160334,
+      "wrong_record_equal_length_msc": 0.06002903808554971,
+      "matched_minus_wrong_msc": -0.00819534826238938
+    },
+    "recording_05_imu4": {
+      "nonoverlap_segments": 17,
+      "mean_msc_60_400hz": 0.061629442595705713,
+      "axis_mean_msc": [
+        0.07534354658464473,
+        0.06137574759921492,
+        0.04816903360325749
+      ],
+      "phase_null_median": 0.06399199128465616,
+      "phase_null_95pct": 0.06808976929548248,
+      "matched_equal_length_msc": 0.061629442595705713,
+      "wrong_record_equal_length_msc": 0.055285895764964725,
+      "matched_minus_wrong_msc": 0.006343546830740988
+    },
+    "recording_08_imu3": {
+      "nonoverlap_segments": 17,
+      "mean_msc_60_400hz": 0.054349957684162134,
+      "axis_mean_msc": [
+        0.05051177755376345,
+        0.05379798433431998,
+        0.058740111164402975
+      ],
+      "phase_null_median": 0.0593222036199451,
+      "phase_null_95pct": 0.06350581744136413,
+      "matched_equal_length_msc": 0.05434995768416214,
+      "wrong_record_equal_length_msc": 0.0532286228734404,
+      "matched_minus_wrong_msc": 0.0011213348107217413
+    }
+  },
+  "plot_scales": {
+    "acc_db": [
+      -80.44335714808125,
+      -20.868086815072928
+    ],
+    "audio_db": [
+      -117.4332946830457,
+      -25.889420713455195
+    ],
+    "fitted": "training windows only, same ACC scale every axis/window"
+  },
+  "spectral_macro": {
+    "train": {
+      "x": {
+        "prominence_db": -0.7871475458202578,
+        "quiet_median_pitch_prominence_db": -0.7559657928989733,
+        "matched_minus_wrong_db": -0.07240667681856491,
+        "matched_minus_shift_db": -0.3739174988102142,
+        "raw_peak_rpa": 0.005841139354856097,
+        "flattened_peak_rpa": 0.03263056386330685
+      },
+      "y": {
+        "prominence_db": -1.0429507483342555,
+        "quiet_median_pitch_prominence_db": -1.8278965595245886,
+        "matched_minus_wrong_db": -0.1701450142810884,
+        "matched_minus_shift_db": -0.5332553978503737,
+        "raw_peak_rpa": 0.01989340976807162,
+        "flattened_peak_rpa": 0.031393193865049476
+      },
+      "z": {
+        "prominence_db": -1.1579425798803733,
+        "quiet_median_pitch_prominence_db": -0.3871860469894621,
+        "matched_minus_wrong_db": -0.27265803259361526,
+        "matched_minus_shift_db": -0.4837150966573052,
+        "raw_peak_rpa": 0.017932669789641944,
+        "flattened_peak_rpa": 0.03941164095874801
+      },
+      "raw_xyz_power": {
+        "prominence_db": -0.7823714026645016,
+        "quiet_median_pitch_prominence_db": -0.3489451700494417,
+        "matched_minus_wrong_db": -0.2962557306132287,
+        "matched_minus_shift_db": -0.5433360320252749,
+        "raw_peak_rpa": 0.014833689337005383,
+        "flattened_peak_rpa": 0.024277500104851794
+      },
+      "filtered_xyz_power": {
+        "prominence_db": -0.7804058770315949,
+        "quiet_median_pitch_prominence_db": -0.34907372885978194,
+        "matched_minus_wrong_db": -0.30344290308474664,
+        "matched_minus_shift_db": -0.5425455879170856,
+        "raw_peak_rpa": 0.014833689337005383,
+        "flattened_peak_rpa": 0.031019921556708026
+      },
+      "original_time_magnitude": {
+        "prominence_db": -0.6965806769110034,
+        "quiet_median_pitch_prominence_db": -0.9738408458121522,
+        "matched_minus_wrong_db": 0.055336997438633406,
+        "matched_minus_shift_db": 0.42894949207796723,
+        "raw_peak_rpa": 0.026335586247345284,
+        "flattened_peak_rpa": 0.043204324040987556
+      },
+      "microphone_positive_reference": {
+        "prominence_db": 21.660107585065173,
+        "quiet_median_pitch_prominence_db": -0.5239716930091916,
+        "matched_minus_wrong_db": 26.605955758649536,
+        "matched_minus_shift_db": 23.583477506342,
+        "raw_peak_rpa": 0.890334897420565,
+        "flattened_peak_rpa": 0.19173006582873223
+      }
+    },
+    "val": {
+      "x": {
+        "prominence_db": -1.4266034648706605,
+        "quiet_median_pitch_prominence_db": -0.7680986693700661,
+        "matched_minus_wrong_db": -0.7844929357385295,
+        "matched_minus_shift_db": -0.33906807155966034,
+        "raw_peak_rpa": 0.008004610655737706,
+        "flattened_peak_rpa": 0.03018578305064113
+      },
+      "y": {
+        "prominence_db": -0.9054697357318776,
+        "quiet_median_pitch_prominence_db": -0.3750075567428598,
+        "matched_minus_wrong_db": -0.07149365173896388,
+        "matched_minus_shift_db": -1.7845733598543363,
+        "raw_peak_rpa": 0.017713490099009903,
+        "flattened_peak_rpa": 0.05505174941162149
+      },
+      "z": {
+        "prominence_db": -0.7465922854083318,
+        "quiet_median_pitch_prominence_db": -0.6473806469487258,
+        "matched_minus_wrong_db": 0.5109523722487361,
+        "matched_minus_shift_db": 0.6377400863026973,
+        "raw_peak_rpa": 0.019198702016718066,
+        "flattened_peak_rpa": 0.02705051178785911
+      },
+      "raw_xyz_power": {
+        "prominence_db": -0.6302690007264395,
+        "quiet_median_pitch_prominence_db": -0.28285350675880305,
+        "matched_minus_wrong_db": 0.0958702039763239,
+        "matched_minus_shift_db": -0.2998113585194977,
+        "raw_peak_rpa": 0.011854115099009901,
+        "flattened_peak_rpa": 0.027476578984742737
+      },
+      "filtered_xyz_power": {
+        "prominence_db": -0.6299954602285716,
+        "quiet_median_pitch_prominence_db": -0.2824147407562494,
+        "matched_minus_wrong_db": 0.09605636583148025,
+        "matched_minus_shift_db": -0.30031699988540894,
+        "raw_peak_rpa": 0.011854115099009901,
+        "flattened_peak_rpa": 0.029429703984742737
+      },
+      "original_time_magnitude": {
+        "prominence_db": -0.6376696363913165,
+        "quiet_median_pitch_prominence_db": -0.2005599431640836,
+        "matched_minus_wrong_db": 0.29546850442027917,
+        "matched_minus_shift_db": 0.7942168404640483,
+        "raw_peak_rpa": 0.03695403800113618,
+        "flattened_peak_rpa": 0.024287098279500083
+      },
+      "microphone_positive_reference": {
+        "prominence_db": 19.818373224534824,
+        "quiet_median_pitch_prominence_db": -0.8920518496453529,
+        "matched_minus_wrong_db": 22.7511780954637,
+        "matched_minus_shift_db": 23.669462661722935,
+        "raw_peak_rpa": 0.852272611994806,
+        "flattened_peak_rpa": 0.18634384890845643
+      }
+    }
+  },
+  "validation_raw_per_record": {
+    "recording_02_imu4": {
+      "unique_voiced_frames": 122,
+      "unique_quiet_frames": 65,
+      "prominence_db": -0.3886342088412926,
+      "quiet_median_pitch_prominence_db": 0.3529253389245177,
+      "high_confidence_prominence_db": -0.2512071202682117,
+      "matched_common_prominence_db": -0.39554984431277446,
+      "wrong_record_prominence_db": -1.0675746918836573,
+      "matched_minus_wrong_db": 0.6720248475708829,
+      "matched_shift_common_db": -0.26855079502436674,
+      "shift200ms_prominence_db": -0.2603961188366219,
+      "matched_minus_shift_db": -0.008154676187745073,
+      "raw_peak_rpa": 0.0,
+      "flattened_peak_rpa": 0.03278688524590164
+    },
+    "recording_04_imu4": {
+      "unique_voiced_frames": 101,
+      "unique_quiet_frames": 86,
+      "prominence_db": -0.1667591538535078,
+      "quiet_median_pitch_prominence_db": 0.07436333406488406,
+      "high_confidence_prominence_db": -0.5769727343692245,
+      "matched_common_prominence_db": -0.2509245094871656,
+      "wrong_record_prominence_db": -0.4400861006679648,
+      "matched_minus_wrong_db": 0.18916159118079912,
+      "matched_shift_common_db": 0.12729725107586762,
+      "shift200ms_prominence_db": -0.02773638154992586,
+      "matched_minus_shift_db": 0.1550336326257936,
+      "raw_peak_rpa": 0.039603960396039604,
+      "flattened_peak_rpa": 0.039603960396039604
+    },
+    "recording_05_imu4": {
+      "unique_voiced_frames": 101,
+      "unique_quiet_frames": 86,
+      "prominence_db": -0.6256943613519717,
+      "quiet_median_pitch_prominence_db": -0.7930098873293613,
+      "high_confidence_prominence_db": -0.36860805396627444,
+      "matched_common_prominence_db": -0.6513865976514768,
+      "wrong_record_prominence_db": -1.1886781354397407,
+      "matched_minus_wrong_db": 0.5372915377882639,
+      "matched_shift_common_db": -0.5073318529992756,
+      "shift200ms_prominence_db": -1.0856633224814403,
+      "matched_minus_shift_db": 0.5783314694821649,
+      "raw_peak_rpa": 0.0,
+      "flattened_peak_rpa": 0.0297029702970297
+    },
+    "recording_08_imu3": {
+      "unique_voiced_frames": 128,
+      "unique_quiet_frames": 59,
+      "prominence_db": -1.3399882788589859,
+      "quiet_median_pitch_prominence_db": -0.7656928126952528,
+      "high_confidence_prominence_db": -1.6818234694720444,
+      "matched_common_prominence_db": -1.3476721225366912,
+      "wrong_record_prominence_db": -0.33267496190204104,
+      "matched_minus_wrong_db": -1.0149971606346504,
+      "matched_shift_common_db": -2.3002696412477066,
+      "shift200ms_prominence_db": -0.37581378124950293,
+      "matched_minus_shift_db": -1.924455859998204,
+      "raw_peak_rpa": 0.0078125,
+      "flattened_peak_rpa": 0.0078125
+    }
+  },
+  "positive_controls_macro": {
+    "0dB_oracle_mic_injection": {
+      "prominence_db": 4.479036884005753,
+      "quiet_median_pitch_prominence_db": -0.2497528734405733,
+      "matched_minus_wrong_db": 4.782473968400413,
+      "matched_minus_shift_db": 3.8120657393282444,
+      "raw_peak_rpa": 0.3984425722285343,
+      "flattened_peak_rpa": 0.14473255406995617
+    },
+    "10dB_oracle_mic_injection": {
+      "prominence_db": 10.508539587218461,
+      "quiet_median_pitch_prominence_db": -0.15038643425232046,
+      "matched_minus_wrong_db": 10.719393550892173,
+      "matched_minus_shift_db": 9.283477491498973,
+      "raw_peak_rpa": 0.7252510119095925,
+      "flattened_peak_rpa": 0.31945624442054865
+    },
+    "20dB_oracle_mic_injection": {
+      "prominence_db": 15.360201765138514,
+      "quiet_median_pitch_prominence_db": -0.10925192868916123,
+      "matched_minus_wrong_db": 16.148627246490182,
+      "matched_minus_shift_db": 14.68902133873148,
+      "raw_peak_rpa": 0.8136561510915437,
+      "flattened_peak_rpa": 0.38637700860249957
+    }
+  },
+  "quality_summary": {
+    "used_recordings": 24,
+    "offscale_rows": 0,
+    "nonincreasing_hardware_timestamps": 0
+  },
+  "note": "Full per-record/per-condition results remain in local results.json; this public summary retains all main comparisons."
+}

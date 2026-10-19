@@ -1,0 +1,430 @@
+{
+  "target": "wangjingmei",
+  "attack_sources": [
+    "chengkeyi"
+  ],
+  "counts": {
+    "gan_train": {
+      "wangjingmei": 180,
+      "chengkeyi": 0
+    },
+    "gan_check": {
+      "wangjingmei": 30,
+      "chengkeyi": 0
+    },
+    "head_train": {
+      "wangjingmei": 30,
+      "chengkeyi": 120
+    },
+    "head_validation": {
+      "wangjingmei": 10,
+      "chengkeyi": 30
+    },
+    "enrollment": {
+      "wangjingmei": 10,
+      "chengkeyi": 0
+    },
+    "calibration": {
+      "wangjingmei": 10,
+      "chengkeyi": 30
+    },
+    "final_test": {
+      "wangjingmei": 30,
+      "chengkeyi": 118
+    }
+  },
+  "generation_check": {
+    "recordings": 30,
+    "metric_frame_scope": "Full2s201frames of30GENcheck sources; NOT former60sources180commoninteriors, so do not directly compare to .3071.",
+    "macro": {
+      "audio_mae": 0.22547030299901963,
+      "audio_detail_corr": 0.3353703348614561,
+      "ACC_cycle_mae": 0.11368277867635092,
+      "ACC_detail_corr": 0.10350041647656903
+    },
+    "extra": {
+      "active_audio_mae": 0.4086786816517512,
+      "inactive_audio_mae": 0.16069996679822604,
+      "activity_false_positive_rate": 0.06643050999527779,
+      "activity_recall": 0.6178237371837321,
+      "activity_F1": 0.6487562090556653,
+      "physical_log_energy_corr": 0.723101667944112,
+      "local_spectral_contrast_corr": 0.4852247861046838
+    }
+  },
+  "authentication": [
+    {
+      "route": "fusion",
+      "head_seed": 42,
+      "best_epoch": 49,
+      "threshold": 0.607916533946991,
+      "calibration": {
+        "genuine_n": 10,
+        "impostor_n": 30,
+        "FAR": 0.0,
+        "FRR": 0.0
+      },
+      "genuine": {
+        "n": 30,
+        "accepted": 22,
+        "rejected": 8,
+        "TAR": 0.7333333333333333,
+        "FRR": 0.26666666666666666,
+        "TAR_Wilson95": [
+          0.5555203830481162,
+          0.8581733668040342
+        ]
+      },
+      "attacks": {
+        "chengkeyi": {
+          "n": 118,
+          "accepted": 1,
+          "FAR": 0.00847457627118644,
+          "FAR_Wilson95": [
+            0.0014975405219653168,
+            0.04644557241540033
+          ]
+        }
+      },
+      "FAR": 0.00847457627118644,
+      "FRR": 0.26666666666666666,
+      "HTER": 0.13757062146892654,
+      "AUC": 0.9793785310734463,
+      "by_task": {
+        "0-9": {
+          "genuine_n": 8,
+          "TAR": 0.875,
+          "attack_n": 40,
+          "FAR": 0.0
+        },
+        "word": {
+          "genuine_n": 22,
+          "TAR": 0.6818181818181818,
+          "attack_n": 78,
+          "FAR": 0.01282051282051282
+        }
+      }
+    },
+    {
+      "route": "fusion",
+      "head_seed": 43,
+      "best_epoch": 8,
+      "threshold": 0.5856174230575562,
+      "calibration": {
+        "genuine_n": 10,
+        "impostor_n": 30,
+        "FAR": 0.0,
+        "FRR": 0.0
+      },
+      "genuine": {
+        "n": 30,
+        "accepted": 24,
+        "rejected": 6,
+        "TAR": 0.8,
+        "FRR": 0.2,
+        "TAR_Wilson95": [
+          0.6269430358685227,
+          0.9049489282270994
+        ]
+      },
+      "attacks": {
+        "chengkeyi": {
+          "n": 118,
+          "accepted": 1,
+          "FAR": 0.00847457627118644,
+          "FAR_Wilson95": [
+            0.0014975405219653168,
+            0.04644557241540033
+          ]
+        }
+      },
+      "FAR": 0.00847457627118644,
+      "FRR": 0.2,
+      "HTER": 0.10423728813559323,
+      "AUC": 0.9771186440677967,
+      "by_task": {
+        "0-9": {
+          "genuine_n": 8,
+          "TAR": 0.875,
+          "attack_n": 40,
+          "FAR": 0.0
+        },
+        "word": {
+          "genuine_n": 22,
+          "TAR": 0.7727272727272727,
+          "attack_n": 78,
+          "FAR": 0.01282051282051282
+        }
+      }
+    },
+    {
+      "route": "raw_ACC",
+      "head_seed": 42,
+      "best_epoch": 41,
+      "threshold": 0.06527144461870193,
+      "calibration": {
+        "genuine_n": 10,
+        "impostor_n": 30,
+        "FAR": 0.03333333333333333,
+        "FRR": 0.0
+      },
+      "genuine": {
+        "n": 30,
+        "accepted": 26,
+        "rejected": 4,
+        "TAR": 0.8666666666666667,
+        "FRR": 0.13333333333333333,
+        "TAR_Wilson95": [
+          0.7031867331796424,
+          0.9469034451594514
+        ]
+      },
+      "attacks": {
+        "chengkeyi": {
+          "n": 118,
+          "accepted": 4,
+          "FAR": 0.03389830508474576,
+          "FAR_Wilson95": [
+            0.013259833647159928,
+            0.08392760103482472
+          ]
+        }
+      },
+      "FAR": 0.03389830508474576,
+      "FRR": 0.13333333333333333,
+      "HTER": 0.08361581920903954,
+      "AUC": 0.9813559322033898,
+      "by_task": {
+        "0-9": {
+          "genuine_n": 8,
+          "TAR": 0.875,
+          "attack_n": 40,
+          "FAR": 0.05
+        },
+        "word": {
+          "genuine_n": 22,
+          "TAR": 0.8636363636363636,
+          "attack_n": 78,
+          "FAR": 0.02564102564102564
+        }
+      }
+    },
+    {
+      "route": "raw_ACC",
+      "head_seed": 43,
+      "best_epoch": 38,
+      "threshold": 0.16427014768123627,
+      "calibration": {
+        "genuine_n": 10,
+        "impostor_n": 30,
+        "FAR": 0.1,
+        "FRR": 0.1
+      },
+      "genuine": {
+        "n": 30,
+        "accepted": 27,
+        "rejected": 3,
+        "TAR": 0.9,
+        "FRR": 0.1,
+        "TAR_Wilson95": [
+          0.7437891742081646,
+          0.9654001112526649
+        ]
+      },
+      "attacks": {
+        "chengkeyi": {
+          "n": 118,
+          "accepted": 4,
+          "FAR": 0.03389830508474576,
+          "FAR_Wilson95": [
+            0.013259833647159928,
+            0.08392760103482472
+          ]
+        }
+      },
+      "FAR": 0.03389830508474576,
+      "FRR": 0.1,
+      "HTER": 0.06694915254237288,
+      "AUC": 0.972316384180791,
+      "by_task": {
+        "0-9": {
+          "genuine_n": 8,
+          "TAR": 0.875,
+          "attack_n": 40,
+          "FAR": 0.05
+        },
+        "word": {
+          "genuine_n": 22,
+          "TAR": 0.9090909090909091,
+          "attack_n": 78,
+          "FAR": 0.02564102564102564
+        }
+      }
+    },
+    {
+      "route": "cycle_ACC",
+      "head_seed": 42,
+      "best_epoch": 64,
+      "threshold": -0.47108444571495056,
+      "calibration": {
+        "genuine_n": 10,
+        "impostor_n": 30,
+        "FAR": 0.1,
+        "FRR": 0.1
+      },
+      "genuine": {
+        "n": 30,
+        "accepted": 26,
+        "rejected": 4,
+        "TAR": 0.8666666666666667,
+        "FRR": 0.13333333333333333,
+        "TAR_Wilson95": [
+          0.7031867331796424,
+          0.9469034451594514
+        ]
+      },
+      "attacks": {
+        "chengkeyi": {
+          "n": 118,
+          "accepted": 15,
+          "FAR": 0.1271186440677966,
+          "FAR_Wilson95": [
+            0.07857091225474466,
+            0.19917903549084304
+          ]
+        }
+      },
+      "FAR": 0.1271186440677966,
+      "FRR": 0.13333333333333333,
+      "HTER": 0.13022598870056495,
+      "AUC": 0.926271186440678,
+      "by_task": {
+        "0-9": {
+          "genuine_n": 8,
+          "TAR": 0.75,
+          "attack_n": 40,
+          "FAR": 0.1
+        },
+        "word": {
+          "genuine_n": 22,
+          "TAR": 0.9090909090909091,
+          "attack_n": 78,
+          "FAR": 0.14102564102564102
+        }
+      }
+    },
+    {
+      "route": "cycle_ACC",
+      "head_seed": 43,
+      "best_epoch": 53,
+      "threshold": 0.4032551050186157,
+      "calibration": {
+        "genuine_n": 10,
+        "impostor_n": 30,
+        "FAR": 0.03333333333333333,
+        "FRR": 0.0
+      },
+      "genuine": {
+        "n": 30,
+        "accepted": 25,
+        "rejected": 5,
+        "TAR": 0.8333333333333334,
+        "FRR": 0.16666666666666666,
+        "TAR_Wilson95": [
+          0.664356494935845,
+          0.9266345762815128
+        ]
+      },
+      "attacks": {
+        "chengkeyi": {
+          "n": 118,
+          "accepted": 6,
+          "FAR": 0.05084745762711865,
+          "FAR_Wilson95": [
+            0.023509631366969513,
+            0.10650735114476118
+          ]
+        }
+      },
+      "FAR": 0.05084745762711865,
+      "FRR": 0.16666666666666666,
+      "HTER": 0.10875706214689265,
+      "AUC": 0.9621468926553672,
+      "by_task": {
+        "0-9": {
+          "genuine_n": 8,
+          "TAR": 0.75,
+          "attack_n": 40,
+          "FAR": 0.025
+        },
+        "word": {
+          "genuine_n": 22,
+          "TAR": 0.8636363636363636,
+          "attack_n": 78,
+          "FAR": 0.0641025641025641
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "fusion": {
+      "FAR": 0.00847457627118644,
+      "FRR": 0.23333333333333334,
+      "HTER": 0.12090395480225988,
+      "AUC": 0.9782485875706215,
+      "TAR": 0.7666666666666666
+    },
+    "raw_ACC": {
+      "FAR": 0.03389830508474576,
+      "FRR": 0.11666666666666667,
+      "HTER": 0.07528248587570621,
+      "AUC": 0.9768361581920904,
+      "TAR": 0.8833333333333333
+    },
+    "cycle_ACC": {
+      "FAR": 0.08898305084745763,
+      "FRR": 0.15,
+      "HTER": 0.1194915254237288,
+      "AUC": 0.9442090395480226,
+      "TAR": 0.85
+    }
+  },
+  "head_protocol": {
+    "core_origin": "User E:/Edge\u4e0b\u8f7d/train_core/\u5bf9\u6bd4\u5b66\u4e60\u7279\u5f81\u5904\u7406/modelb.py; SupConLoss,ProjectionHead,FeatureAggregator copied verbatim via AST source extraction, whole original file SHA25605c7c8e40e427e5529346bd360940ef35a7eebd028c421b3fc119d37e1f6f153.",
+    "adapter": "CurrentG251->80 shared input projection, decoder shallow[:7]=32channels, truebottleneck[:13]=64channels, residual uses projectedx-projectedF(Gx) to cancel inputprojectionbias, 4originaldiffstats onx-F(Gx). Fusion196->512->512; proj512->256->128. Legacyoldmodel usesdifferentchannelwidth/cuts, so not exact wholetrainb replay.",
+    "head": "Original Adam lr.001 WD.0001, cosine100epoch eta1e-6, SupCon temperature/base.07, clip1,32batchshuffle/drop_last, best validation512embedding intra-inter separation; inference normalizedfusion512 notprojector128.",
+    "sampling": "Cached frozen G/F; each class duplicated to2*largestclass=240items; no fakeusers or simulatedidentitylabels. No old80x80imageaugment onheterogeneous251spectrum+energy rows; no signalaugment, balancing duplicates are not new recordings.",
+    "routes": [
+      "fusion",
+      "raw_ACC",
+      "cycle_ACC"
+    ],
+    "controls": "Same SupCon/fusion/projector and splits for rawmean/std502 and cycleACCmean/std502; inputwidthdiffers fromfusion196. SingletrainedGseed42, two headinitializations42/43. Allheadgroupsrecorddisjoint; thresholds fixed on separatecalibration beforefinal export. Ke identity seen inTRAIN; notunseen-useropen-set.",
+    "seeds": [
+      42,
+      43
+    ]
+  },
+  "data_assertions": {
+    "source_ids_disjoint": true,
+    "raw_pair_hashes_disjoint": true,
+    "raw_ACC_file_hashes_disjoint": true,
+    "normalization_frozen": true,
+    "mei_calibration_members_CGtrain": true,
+    "all_preprocessed_inputs_pairwise_disjoint": true,
+    "frontend_parity_max": 0.0
+  },
+  "scope": "Exploratory two-user same-collection-session authentication: mei enrolled; ke identity seen in head training but final recordings disjoint. Not unseen-impostor-identity open-set, not cross-day/person-general evidence.",
+  "limits": "Both users same shared processing but actual original signal provenance and sessions can confound identity. Historical60VAL/test mei previously explored; final authentication split locked before head training, not pristine independently collected confirmation. No per-user normalization. Cached CGTRAIN arrays unchanged; final signals only exported after heads locked.",
+  "lock_barrier": "No final arrays were present or read before these models, templates and thresholds were frozen.",
+  "baseline_sha256": "1862ef83b77d42a711bf05c9f923d15cf4f200db2551ca813427ea95ea35f0d5",
+  "source_hashes": {
+    "retrain_mei_auth_baseline.py": "0def42c2c17f422f2547bf8558d15af89dfc3e0aca35fe3ff1784a748201c3d6",
+    "prepare_mei_auth_data.py": "9701e74455c3c121bec4107b1643721a16d9808095518a28d35c954b750f7384",
+    "original_trainb_core.py": "dd743e148ca99bf56f93288da6bc022cc0edbec64ff92e0cd63b7d5e13aef108",
+    "train_mei_baseline_auth.py": "71d606581327d801b01a86450c1e0ba5340e1bc4a180facc2dab1f8bba5d04e6",
+    "evaluate_mei_baseline_auth.py": "a2d62d7fdafd07af16a71feab51801f30e0157a39f2c7398fe1dac4a55786376",
+    "pack_mei_auth_delivery.py": "8e38c20105afc4683029b648ab82b3687e6ddec02726c8ff4d2a9a35803ae701",
+    "report_mei_baseline_auth.py": "8da99e5307764d7ef34e58120f8eba6e098add3cf0c7323e764de3fd676f1163"
+  }
+}

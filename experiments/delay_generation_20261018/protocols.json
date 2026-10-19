@@ -1,0 +1,47 @@
+{
+  "data": {
+    "source": "same personal raw vAccel20train4reusedval;58/16 existing.8s targets;4test+28reserve untouched",
+    "context": "1.28s ACC from original target start, to generate0.8s Mel;480ms future context; no padding/exclusion or source timestamp edits; offline window task",
+    "features": "641x129: separateXYZ195 logmagnitudes +56multiscale energies +390real/imag STFT channels; preserve axis phase/amplitude; magnitude/energy scales frozen priorTRAIN, complex one sharedTRAIN scalar, no per-user/record gain normalization",
+    "complex_scale": 0.026634241648531884,
+    "activity": "original TRAIN audio threshold,20ms trailingRMS, instantaneousattack/exponentialrelease tau250ms, delayed200ms; computed fullrecord then sliced, bothTRAIN andVAL identical",
+    "alignment": "learned ACC-only localattention from audio-time t to ACC latent at t+80..300ms; TRAIN-motivated fixed bounds; encoder receptivefield +/-70ms extends effectivecontext; no microphone at inference",
+    "limits": "singleperson, no identity accuracy. Complex phase inclusion/newcontext changes frontend for ALL newroutes, so not an isolated comparison to earlier experiment",
+    "test": "not read"
+  },
+  "training": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 120,
+    "updates_per_epoch": 4,
+    "batch_size": 8,
+    "device": "cuda",
+    "torch": "2.4.1+cu121",
+    "routes": [
+      "temporal_only",
+      "dual_unconstrained",
+      "dual_preserve"
+    ],
+    "selection": "fixed endpoint, no validation checkpoint selection; existing reused4val recordings",
+    "sampler": "8distinctTRAIN recordings/update; uniform window per recording; identical numpy seed schedule across routes",
+    "augmentation": "none; no synthetic phase seams or pitch/gain/axis changes",
+    "losses": {
+      "audio_L1": 1.0,
+      "audio_envelope": 0.1,
+      "frequency_gradient": 0.1,
+      "trainstandardized16band_teacher_MSE": 0.02,
+      "balanced_soft_activity_BCE": 0.05,
+      "ACC_groupwise_MSE": 0.15
+    },
+    "activity_positive_fraction": 0.8269804120063782,
+    "attention": "ACC-only query at audio-time+200ms; keys+80..300ms with Gaussian relative offset prior; convolution receptivefield +/-70ms; futurecontext480ms; no absolute-time embedding or audio inference input",
+    "branch": "same48temporal+32candidate globalACC encoders instantiated; temporalonly zeroes global conditioning; dual_no_recon and dual_preserve same full architecture, latter adds ACC reconstruction loss",
+    "identity": "singleperson; globalbranch is candidate feature conditioning, NOT a trained identity embedding; no speaker teacher loss or verification accuracy",
+    "retention": "fixedTRAINridge10 from frozen central81frame latents to641input features; baseline48dim, dual80dim; primary controlled comparison dual_no_recon vsdual_preserve80dim",
+    "condition_controls": "validationACC shifted400ms withincontext, differentrecordACC, globalbranchzeroed; no favorable alignment onVAL",
+    "split": "20train4reusedval,58/16 windows; test4+reserve28unread"
+  }
+}
