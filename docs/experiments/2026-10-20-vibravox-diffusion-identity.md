@@ -59,3 +59,13 @@ The original 24-utterance pilot had suggested this owner's raw ACC was weak (mea
 
 The current evidence supports paired ACC/Audio timing and a learned input-dependent feature, but it does **not** show that Diffusion adds speaker identity beyond original ACC or that its generated Audio has sufficient fidelity. Every speaker has one recording context and sentence IDs are unmatched across speakers. This project still needs held-out recording sessions and content-balanced genuine/impostor tests to claim a transferable biometric.
 
+## Content-overlap audit (2026-10-25)
+
+I checked the transcript fields across all **20,981** `speech_clean/train` rows. The full train split contains **20,964 distinct normalized texts**; only **8 text strings** are repeated across speakers, and each is shared by exactly two speakers. None of the four speakers in the original pilot share a text with one another, even when their full train recordings are considered (694 utterances; 694 distinct texts). There are no common utterances across three or more users, so VibraVox cannot support a sufficiently sized, exact same-text multi-user train/calibration/final protocol for these speakers.
+
+As a limited negative control, a text-only character n-gram TF-IDF classifier on the same owner80 head split gave unseen AUC **0.403–0.431** and unseen FAR **75.8–77.1%** at a threshold calibrated to accept about three of four owner-calibration utterances. Surface text alone did not classify this owner, but this does **not** prove the ACC/Diffusion result is content-independent: the text samples are not repeated across users, each final owner fold has only six utterances, and phonetic content can interact with ACC features even when a simple text classifier performs poorly.
+
+The experimental conclusion must therefore be restricted to **identity discrimination under unmatched sentence content**. To verify content independence, collect a controlled set where all participants read the same prompts. Keep prompt sets disjoint by role: owner-only prompts for generator training; matched owner/seen-negative prompts for head training and calibration; and new prompts recorded from the owner plus unseen attackers for FINAL. Within FINAL, each genuine and attacker comparison must use the same exact prompt, while no FINAL prompt appears in earlier roles. Repeat across recording sessions. The VibraVox corpus's current train split does not provide enough repeated cross-speaker prompts for that protocol.
+
+Audit artifacts: `global_text_overlap.json`, `shared_text_scan.json`, and `text_only_auth.json`; analysis scripts `work/vibravox_global_text_overlap_20261025.py`, `work/vibravox_scan_shared_text_fast_20261025.py`, and `work/vibravox_text_only_auth_20261025.py`.
+
