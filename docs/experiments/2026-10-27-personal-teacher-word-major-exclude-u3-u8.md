@@ -1,3 +1,5 @@
+> 2026-10-29词序审计更正：用户确认前100条是10个英文数字、后段是20个VR指令；Audio诊断支持前段10项/后段20项轮流重复。本报告原row//10分词不能证明真实跨词隔离，旧数值保留但跨词解释撤回。详见2026-10-29-mei-audio-order-audit.md。
+
 # Personal cross-modal teacher and identity-constrained generator, word-major split
 
 Date: 2026-10-27
