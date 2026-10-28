@@ -1,3 +1,5 @@
+> 2026-10-29内容标签更正：真实Audio审计与用户确认支持前100条数字按10项轮流重复、后段指令按20项轮流重复。原统一row%30或row//10标签不能证明同词或跨词隔离。原数值保留；相关内容隔离、词探针和内容双头的解释需重新审计。见docs/experiments/2026-10-29-content-generalization-innovation-assessment.md。
+
 # 2026-10-28 紧凑SupCon、早期半难负类与同参数双头补充实验
 
 完整baseline的版本、数据隔离、特征公式、旧trainb与当前RBF读出的区别，见 [完整baseline技术路线](2026-10-28-complete-baseline-technical-route.md)。
