@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "routes_checked": 20,
+  "all_final_rows_retained": true,
+  "all_eight_attack_sources_retained": true,
+  "unknown_users_absent_from_removals": true,
+  "cap_and_word_role_checks": true
+}

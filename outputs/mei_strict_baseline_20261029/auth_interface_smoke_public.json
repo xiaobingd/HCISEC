@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "purpose": "Interface-only smoke using unrelated existing public checkpoint; no fitting, scores or weights reused in strict run",
+  "feature_dim": 772,
+  "fusion_dim": 512,
+  "projection_dim": 128,
+  "binary_dim": 1
+}
