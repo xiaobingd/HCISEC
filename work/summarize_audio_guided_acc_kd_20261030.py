@@ -32,6 +32,11 @@ for backend,prefix in [('cosine','cosine_K20_U'),('RBF','rbf_K20_U')]:
  for u in range(1,10):lines.append('|U%d|%s|'%(u,'|'.join('%.2f%%'%(100*statistics.mean(a['routes'][mode][prefix+str(u)]['hter'] for a in data.values())) for mode in MODES)))
 lines+=['','## 低FAR操作点与EER说明','',
 '完整JSON同时保留由校准集FAR≤5%阈值得到的最终TAR和实际最终FAR；不会用最终ROC重新选部署阈值。diagnostic_eer为最终ROC描述性指标，不参与选模/校准。','',
+'## 首轮结论','',
+'Audio和融合教师确实具备更好的开发集身份能力：三seed验证认证HTER平均ACC30.69%、Audio16.13%、融合12.21%，融合每个seed均优于两种单模态。但ACC Student的蒸馏收益没有稳定推广到最终词。',
+'K20余弦HTER：B0 CE32.78%、AudioKD33.45%、FusionKD32.74%；RBF为33.10%、33.00%、32.80%。融合KD的均值改善很小，并且不是三个seed都超过B0；不能认定有效。AAM与ACC自蒸馏在本轮也未稳定提高基线。',
+'这支持“强教师不保证跨模态迁移成功”的诊断，不能据此断言Audio身份信息完全不可由ACC学习，也不能证明LUPI范式无效。当前只是小CNN、400步、九已知身份logit-KL的首轮实验，不能代替更充分训练和独立新会话。',
+'协议B尚未执行；首轮尚未满足稳定超越B0的条件，不以已知身份成绩冒充未见身份增益。','',
 '## 范围与下一步','',
 '这是协议A：教师和Student都见过九身份的训练词，不能称开放集新用户注册。若要协议B，必须按6开发/3未见身份重新训练所有教师、Student、归一化、选择和校准，不能只改变最终查询。',
 '三seed衡量优化随机性，最终录制是同一批历史单会话数据，不是三个独立人群。词义仍依赖10/20周期、相位与尾部缺行假设。KD网格比CE有更多候选，ACC自蒸馏提供部分控制；教师额外训练预算也需区分。',

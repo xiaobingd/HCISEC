@@ -48,3 +48,5 @@ Student只输入ACC。余弦模板使用K=3/5/10/20条独立注册样本，按�
 
 已核实相关文献：[ISCA2021多模态至单模态身份蒸馏](https://www.isca-archive.org/interspeech_2021/zhang21m_interspeech.html)、[AAAI2023跨模态说话人蒸馏](https://ojs.aaai.org/index.php/AAAI/article/view/26525)。它们研究音视频/人脸，不是ACC直接证据。
 
+第三篇也已核实：[Audio Representation Learning by Distilling Video as Privileged Information](https://ieeexplore.ieee.org/abstract/document/10041728)，IEEE TAI第5卷第1期（2024年1月），在线发表为2023年2月；采用视频特权信息辅助音频表征，仍不是ACC验证。[作者预印本](https://arxiv.org/abs/2302.02845)。本轮仅借鉴特权训练范式，不声称复现上述论文模型。
+

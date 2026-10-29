@@ -1,5 +1,5 @@
 """Independent protocol-A enrollment/calibration/final inference and model-selection audit."""
-import sys,json
+import sys,json,time
 import numpy as np
 import torch
 sys.path.insert(0,'/root')
@@ -20,7 +20,12 @@ allsets=[set(data[r]['ids']) for r in run.ROLES]
 for i,a in enumerate(allsets):
  for b in allsets[:i]:assert not a&b
 for s in run.SEEDS:
- folder=run.ROOT/('seed%d'%s);lock=json.loads((folder/'locked_before_final.json').read_text());result=json.loads((folder/'results_public.json').read_text());b0,ck0=load_student(folder,'B0_CE');audio,cka=load_student(folder,'T1_Audio');ckf=torch.load(str(folder/'T2_Fusion_private.pt'),map_location=run.D,weights_only=False);fusion=run.Fusion(b0,audio).to(run.D);fusion.load_state_dict(ckf['state']);fusion.eval()
+ folder=run.ROOT/('seed%d'%s);deadline=time.monotonic()+1800
+ while True:
+  try:result=json.loads((folder/'results_public.json').read_text());break
+  except (FileNotFoundError,json.JSONDecodeError):
+   assert time.monotonic()<deadline,'training completion timeout';time.sleep(5)
+ lock=json.loads((folder/'locked_before_final.json').read_text());b0,ck0=load_student(folder,'B0_CE');audio,cka=load_student(folder,'T1_Audio');ckf=torch.load(str(folder/'T2_Fusion_private.pt'),map_location=run.D,weights_only=False);fusion=run.Fusion(b0,audio).to(run.D);fusion.load_state_dict(ckf['state']);fusion.eval()
  for net in [audio,fusion]:
   for p in net.parameters():p.requires_grad_(False)
  for ck in [ck0,cka,ckf]:check_history(ck['metadata'])
