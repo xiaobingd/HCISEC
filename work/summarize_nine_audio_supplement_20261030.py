@@ -18,7 +18,11 @@ for u,a in data.items():
 lines+=['','## 相对A的结果','']
 for k in ['audio','both','fixed_acc_audio']:
  wins=sum(a['routes'][k]['hter']<a['routes']['acc']['hter']-1e-12 for a in data.values());losses=sum(a['routes'][k]['hter']>a['routes']['acc']['hter']+1e-12 for a in data.values());included=sum(a['routes'][k]['audio_weight']>0 for a in data.values());lines.append('- %s：HTER改善%d、持平%d、变差%d；%d/9用户选入生成Audio。'%(names[k],wins,9-wins-losses,losses,included))
-lines+=['','## 核验与边界','',
+lines+=['','## 初步判断','',
+'固定原ACC组合后只补Audio，宏HTER28.10%至26.71%，宏TAR72.59%至73.70%，FAR28.80%至27.13%；5人改善、4人持平、无退步。该受控增量支持当前生成Audio表征有一定补充价值，但仅为历史小样本探索。宏AUC0.7958至0.7945略降，不能把操作点改善等同整体排序能力提高。',
+'独立只补Audio宏HTER26.67%，优于只补ACC28.10%；自由联合搜索27.31%反而差于只补Audio和固定ACC增补，说明更大的搜索空间不保证泛化。U4自由联合为TAR90%、FAR18.33%、HTER14.17%，固定ACC增补为90%、25.83%、17.92%；前者比本轮A好，但仍不是历史旧900维教师HTER13.75%的全面替代。',
+'U5固定ACC增补后TAR86.67%降至73.33%，FAR46.67%降至29.58%，HTER30.00%至28.12%，改善来自拒绝更多攻击者同时也拒绝更多本人。不能只报告FAR下降。总体绝对错误率仍高，未达到实用认证效果。','',
+'## 核验与边界','',
 '独立重拟合135个新增Audio外折模型重建OOF，重放每用户490个候选和阈值，逐项核验A与前轮完全一致、D不改变ACC组合。重算45条路线最终分数、逐词和逐攻击计数，并直接从原始ACC经冻结G、Audio教师重提校准/测试样本，确认缓存来源为生成Audio。',
 'C比A/B搜索空间更大，不能将提升全部归于模态信息，D提供更小搜索范围的增量检查。已有772维包含G内部特征，A并非完全不依赖Audio相关生成训练。即使生成Audio补充有效，也不证明恢复了ACC不存在的信息，可能是表示重编码。',
 '历史最终集已观察，属于探索性已知用户闭集；词映射依赖10/20周期和跨用户相位，未逐录音转写。OOF元选择并非全新完整嵌套，存在搜索过拟合。没有按最终成绩回退、删用户或重调阈值。']
