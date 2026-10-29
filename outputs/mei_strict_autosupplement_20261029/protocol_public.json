@@ -1,0 +1,80 @@
+{
+  "targets": [
+    1,
+    4,
+    5,
+    2,
+    6,
+    7,
+    9,
+    3,
+    8
+  ],
+  "strict_protocol_sha256": "4c189541b16f8e30428ebe2fa23f042bdd00a10c44025793705c19643b130ef6",
+  "groups": {
+    "gan_fit": [
+      0,
+      1,
+      2,
+      3,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "gan_val": [
+      4,
+      18,
+      19
+    ],
+    "auth_train": [
+      5,
+      6,
+      20,
+      21,
+      22
+    ],
+    "model_validation": [
+      7,
+      23,
+      24
+    ],
+    "calibration": [
+      8,
+      25
+    ],
+    "test": [
+      9,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "base_features": 772,
+  "teacher_families": [
+    "old",
+    "identity",
+    "robust"
+  ],
+  "diffusion": "Independent external ESMB0001 EMA initialization; new personal50epoch fine-tune strict fit120/val30; no old Mei diffusion",
+  "selector": "Original RBF optional score fusion;5outer content folds/3inner folds within authfit50 peridentity, zero supplements allowed",
+  "closed_set": true,
+  "all_eight_attacks": true,
+  "limitations": [
+    "Content grouping inferred from real Audio and user-confirmed two-part composition, not per-record transcript verification",
+    "Missing rows assumed at tail per user; actual source names/phase not individually verified",
+    "Existing spectrogram normalization provenance unknown; no new all-data normalizer fitted",
+    "Same-session, historical recordings reused; newly initialized weights do not make data blind"
+  ],
+  "source_sha256": {
+    "personal_diffusion_supplement_20261028.py": "5376221426c1a402294d296081595a9d5ab7dae17621293b9cc62e05d7bde0d5",
+    "select_personal_diffusion_supplement_20261028.py": "3d146619c8f6709b2d72af20097ba4b32b67baebd25843d3444bfcbecb28bb5e",
+    "optimize_personal_teacher_auth_20261028.py": "119a86c1316d7681b3acc06bd91dde6fbe358a0b925c22b690986dc5ab2959f2",
+    "run_complete_baseline_teacher_20261028.py": "b94312c648addb2700d5a9bd3485ae6819f9fff912737b6076935b14df8511c0"
+  }
+}

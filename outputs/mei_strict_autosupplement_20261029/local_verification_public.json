@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "targets": 9,
+  "routes": 27,
+  "zip_crc": true,
+  "pairwise_auc": true,
+  "all_source_counts": true,
+  "upstream_diffusion_groups": true,
+  "training_only_selection_replayed": true
+}
