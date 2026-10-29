@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "routes": 405,
+  "checks": [
+    "validation strictlynonzero selection",
+    "checkpoint selection and fixed shuffle parameters",
+    "student-only independent model replay",
+    "enrollment scalers calibration scores AUC all8sources"
+  ]
+}
