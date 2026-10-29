@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "targets": [
+    4,
+    5
+  ],
+  "routes": 10,
+  "checks": [
+    "same15words allidentities repeated roles balanced",
+    "auth rows disjoint from upstream",
+    "repeat-fold vocabulary match",
+    "all scaler675train rows only",
+    "40OOFfusion candidates and selected route",
+    "independent quantilecal30",
+    "saved models final inference",
+    "AUC and perword2genuine16attacks",
+    "all8sources30each"
+  ]
+}
