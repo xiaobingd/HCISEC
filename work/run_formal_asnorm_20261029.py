@@ -7,9 +7,10 @@ from sklearn.metrics import roc_auc_score
 sys.path.insert(0,'/root')
 import run_posthoc_subset_20261029 as previous
 old=previous.old;PRIOR=previous.ROOT
-ROOT=Path('/autodl-fs/data/mei_formal_asnorm_20261029')
+ROOT=Path('/autodl-fs/data/mei_formal_asnorm_20261029_f64')
 STD_FLOOR=1e-4
 def asnorm(e,t,cohort,k):
+ e=np.asarray(e,dtype=np.float64);t=np.asarray(t,dtype=np.float64);cohort=np.asarray(cohort,dtype=np.float64)
  assert 2<=k<=len(cohort)
  raw=t@e;ez=np.sort(cohort@e)[-k:];tz=np.sort(t@cohort.T,axis=1)[:,-k:]
  return .5*((raw-ez.mean())/max(ez.std(ddof=1),STD_FLOOR)+(raw-tz.mean(1))/np.maximum(tz.std(1,ddof=1),STD_FLOOR))
@@ -25,7 +26,7 @@ def selfcheck():
 def main():
  selfcheck();ROOT.mkdir(exist_ok=True)
  with (ROOT/'QUEUE_LOCK').open('x') as f:f.write(str(os.getpid()))
- save(ROOT/'protocol_public.json',dict(method='Formal AS-Norm1: half of enrollment-topK Z-normalization plus test-topK T-normalization, independently selected cohorts',formula='0.5*((s-mu_enroll_topK)/sigma_enroll_topK+(s-mu_test_topK)/sigma_test_topK)',std_ddof=1,std_floor=STD_FLOOR,fixed_K=4,K_grid='integers2 through min(5,background_count-1)',K_selection='5 train content-fold mean AUC, ties larger K;final not used',cohort='one training-only normalized mean prototype per retained background identity;target excluded',fit_per_user=80,drop_counts=[0,1,2],features=['base772','identity_acc64'],upstream_unchanged=True,limitations=['6 to8 background identities only','Drop1/2 lists were previously chosen using FINAL results; restricted-cohort estimates are post-hoc not independent','All identities known upstream; not open-set','Single seed, historical final data reused'],references=['https://www.fit.vut.cz/research/group/speech/public/publi/2017/matejka_interspeech2017_IS170803.pdf','https://github.com/Snowdar/asv-subtools/blob/master/score/ScoreNormalization.py'],source_sha256=old.sha(Path(__file__))))
+ save(ROOT/'protocol_public.json',dict(method='Formal AS-Norm1: half of enrollment-topK Z-normalization plus test-topK T-normalization, independently selected cohorts',formula='0.5*((s-mu_enroll_topK)/sigma_enroll_topK+(s-mu_test_topK)/sigma_test_topK)',score_precision='float64',std_ddof=1,std_floor=STD_FLOOR,fixed_K=4,K_grid='integers2 through min(5,background_count-1)',K_selection='5 train content-fold mean AUC, ties larger K;final not used',cohort='one training-only normalized mean prototype per retained background identity;target excluded',fit_per_user=80,drop_counts=[0,1,2],features=['base772','identity_acc64'],upstream_unchanged=True,limitations=['6 to8 background identities only','Drop1/2 lists were previously chosen using FINAL results; restricted-cohort estimates are post-hoc not independent','All identities known upstream; not open-set','Single seed, historical final data reused'],references=['https://www.fit.vut.cz/research/group/speech/public/publi/2017/matejka_interspeech2017_IS170803.pdf','https://github.com/Snowdar/asv-subtools/blob/master/score/ScoreNormalization.py'],source_sha256=old.sha(Path(__file__))))
  rows={}
  for u in old.ORDER:
   save(ROOT/'status_public.json',dict(state='running',target=u,completed=list(rows)))
