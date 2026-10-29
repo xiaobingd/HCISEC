@@ -1,0 +1,905 @@
+{
+  "status": "PASS",
+  "targets": 3,
+  "routes_verified": 42,
+  "macro": {
+    "ordinary_supcon": {
+      "tar": 0.7830732860520094,
+      "far": 0.1793050921538335,
+      "auc": 0.8723314796036795,
+      "hter": 0.198115903050912,
+      "same_word_mean_auc": 0.8714117903037734
+    },
+    "crossword_only": {
+      "tar": 0.7833569739952718,
+      "far": 0.1829517211136643,
+      "auc": 0.8725310688238913,
+      "hter": 0.19979737355919625,
+      "same_word_mean_auc": 0.8719290275302378
+    },
+    "episode_only": {
+      "tar": 0.7922458628841608,
+      "far": 0.17245684413690435,
+      "auc": 0.8767087798662966,
+      "hter": 0.1901054906263718,
+      "same_word_mean_auc": 0.8775860214747624
+    },
+    "combined": {
+      "tar": 0.7829314420803781,
+      "far": 0.17985612548558008,
+      "auc": 0.8742423977641195,
+      "hter": 0.19846234170260094,
+      "same_word_mean_auc": 0.873447646045403
+    },
+    "rbf_matched": {
+      "tar": 0.8353191489361702,
+      "far": 0.1766545064284818,
+      "auc": 0.898112762707228,
+      "hter": 0.17066767874615577,
+      "same_word_mean_auc": 0.8997695074129118
+    },
+    "raw772_cosine": {
+      "tar": 0.7678014184397162,
+      "far": 0.24280663490291285,
+      "auc": 0.8327603225064214,
+      "hter": 0.23750260823159827,
+      "same_word_mean_auc": 0.8367141736468185
+    }
+  },
+  "loss_checks": "PASS manual weighted contrast denominator/positive mask, finite nonzero gradient and different-word episodic sampling",
+  "verification": "Checkpoint rank replay, train scaler count, saved weights re-embedding, validation scores, calibration thresholds, pairwise AUC/all counts/eight attack sources/per-word counts;3seeds averaged without final selection",
+  "results": {
+    "1": {
+      "seed_summary": {
+        "ordinary_supcon": {
+          "tar": {
+            "mean": 0.8933333333333332,
+            "std": 0.05773502691896257
+          },
+          "far": {
+            "mean": 0.02813299232736573,
+            "std": 0.011148079139490214
+          },
+          "auc": {
+            "mean": 0.9883375959079284,
+            "std": 0.0003688543504311099
+          },
+          "hter": {
+            "mean": 0.06739982949701621,
+            "std": 0.02333902645418745
+          },
+          "same_word_mean_auc": {
+            "mean": 0.987532905982906,
+            "std": 0.0006786452613490774
+          }
+        },
+        "crossword_only": {
+          "tar": {
+            "mean": 0.88,
+            "std": 0.034641016151377574
+          },
+          "far": {
+            "mean": 0.026427962489343565,
+            "std": 0.010647907925657969
+          },
+          "auc": {
+            "mean": 0.9887638533674338,
+            "std": 0.0003481769455526793
+          },
+          "hter": {
+            "mean": 0.07321398124467178,
+            "std": 0.012219507060679457
+          },
+          "same_word_mean_auc": {
+            "mean": 0.9884038461538461,
+            "std": 0.0011654311575710222
+          }
+        },
+        "episode_only": {
+          "tar": {
+            "mean": 0.9266666666666666,
+            "std": 0.050332229568471644
+          },
+          "far": {
+            "mean": 0.03580562659846547,
+            "std": 0.022731955031497674
+          },
+          "auc": {
+            "mean": 0.9900255754475703,
+            "std": 0.001344597383948327
+          },
+          "hter": {
+            "mean": 0.0545694799658994,
+            "std": 0.01413714722546691
+          },
+          "same_word_mean_auc": {
+            "mean": 0.9889423076923077,
+            "std": 0.0012117053202150903
+          }
+        },
+        "combined": {
+          "tar": {
+            "mean": 0.9199999999999999,
+            "std": 0.0529150262212918
+          },
+          "far": {
+            "mean": 0.03495311167945439,
+            "std": 0.017963604011684127
+          },
+          "auc": {
+            "mean": 0.9892583120204602,
+            "std": 0.0016368286445012092
+          },
+          "hter": {
+            "mean": 0.057476555839727196,
+            "std": 0.021170544368481092
+          },
+          "same_word_mean_auc": {
+            "mean": 0.9883803418803417,
+            "std": 0.002885249313059374
+          }
+        }
+      },
+      "routes": {
+        "rbf_matched": {
+          "tar": 0.94,
+          "far": 0.04859335038363171,
+          "auc": 0.9909462915601024,
+          "hter": 0.05429667519181586,
+          "same_word_mean_auc": 0.9906858974358975,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 47,
+          "attack_accepted": 19
+        },
+        "ordinary_supcon_seed42": {
+          "tar": 0.86,
+          "far": 0.023017902813299233,
+          "auc": 0.9880306905370844,
+          "hter": 0.08150895140664963,
+          "same_word_mean_auc": 0.9877923076923076,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 43,
+          "attack_accepted": 9,
+          "mode": "ordinary_supcon",
+          "seed": 42,
+          "selected_step": 25
+        },
+        "ordinary_supcon_seed43": {
+          "tar": 0.96,
+          "far": 0.04092071611253197,
+          "auc": 0.9882352941176471,
+          "hter": 0.04046035805626599,
+          "same_word_mean_auc": 0.9867628205128206,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 48,
+          "attack_accepted": 16,
+          "mode": "ordinary_supcon",
+          "seed": 43,
+          "selected_step": 150
+        },
+        "ordinary_supcon_seed44": {
+          "tar": 0.86,
+          "far": 0.020460358056265986,
+          "auc": 0.9887468030690537,
+          "hter": 0.080230179028133,
+          "same_word_mean_auc": 0.9880435897435896,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 43,
+          "attack_accepted": 8,
+          "mode": "ordinary_supcon",
+          "seed": 44,
+          "selected_step": 50
+        },
+        "crossword_only_seed42": {
+          "tar": 0.86,
+          "far": 0.023017902813299233,
+          "auc": 0.9884910485933504,
+          "hter": 0.08150895140664963,
+          "same_word_mean_auc": 0.9883256410256409,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 43,
+          "attack_accepted": 9,
+          "mode": "crossword_only",
+          "seed": 42,
+          "selected_step": 25
+        },
+        "crossword_only_seed43": {
+          "tar": 0.92,
+          "far": 0.03836317135549872,
+          "auc": 0.9886445012787723,
+          "hter": 0.059181585677749365,
+          "same_word_mean_auc": 0.9872794871794872,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 46,
+          "attack_accepted": 15,
+          "mode": "crossword_only",
+          "seed": 43,
+          "selected_step": 275
+        },
+        "crossword_only_seed44": {
+          "tar": 0.86,
+          "far": 0.017902813299232736,
+          "auc": 0.9891560102301791,
+          "hter": 0.07895140664961638,
+          "same_word_mean_auc": 0.9896064102564102,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 43,
+          "attack_accepted": 7,
+          "mode": "crossword_only",
+          "seed": 44,
+          "selected_step": 50
+        },
+        "episode_only_seed42": {
+          "tar": 0.88,
+          "far": 0.017902813299232736,
+          "auc": 0.989462915601023,
+          "hter": 0.06895140664961637,
+          "same_word_mean_auc": 0.9893897435897436,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 44,
+          "attack_accepted": 7,
+          "mode": "episode_only",
+          "seed": 42,
+          "selected_step": 100
+        },
+        "episode_only_seed43": {
+          "tar": 0.98,
+          "far": 0.061381074168797956,
+          "auc": 0.9915601023017903,
+          "hter": 0.04069053708439898,
+          "same_word_mean_auc": 0.9898666666666667,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 49,
+          "attack_accepted": 24,
+          "mode": "episode_only",
+          "seed": 43,
+          "selected_step": 225
+        },
+        "episode_only_seed44": {
+          "tar": 0.92,
+          "far": 0.028132992327365727,
+          "auc": 0.9890537084398977,
+          "hter": 0.054066496163682864,
+          "same_word_mean_auc": 0.9875705128205128,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 46,
+          "attack_accepted": 11,
+          "mode": "episode_only",
+          "seed": 44,
+          "selected_step": 300
+        },
+        "combined_seed42": {
+          "tar": 0.86,
+          "far": 0.017902813299232736,
+          "auc": 0.9892583120204603,
+          "hter": 0.07895140664961638,
+          "same_word_mean_auc": 0.9880589743589743,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 43,
+          "attack_accepted": 7,
+          "mode": "combined",
+          "seed": 42,
+          "selected_step": 75
+        },
+        "combined_seed43": {
+          "tar": 0.94,
+          "far": 0.05370843989769821,
+          "auc": 0.9876214833759591,
+          "hter": 0.05685421994884911,
+          "same_word_mean_auc": 0.9856692307692307,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 47,
+          "attack_accepted": 21,
+          "mode": "combined",
+          "seed": 43,
+          "selected_step": 250
+        },
+        "combined_seed44": {
+          "tar": 0.96,
+          "far": 0.03324808184143223,
+          "auc": 0.9908951406649615,
+          "hter": 0.03662404092071611,
+          "same_word_mean_auc": 0.9914128205128204,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 48,
+          "attack_accepted": 13,
+          "mode": "combined",
+          "seed": 44,
+          "selected_step": 325
+        },
+        "raw772_cosine": {
+          "tar": 0.84,
+          "far": 0.10741687979539642,
+          "auc": 0.9255754475703324,
+          "hter": 0.1337084398976982,
+          "same_word_mean_auc": 0.9268230769230771,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 42,
+          "attack_accepted": 42
+        }
+      }
+    },
+    "4": {
+      "seed_summary": {
+        "ordinary_supcon": {
+          "tar": {
+            "mean": 0.7092198581560284,
+            "std": 0.06500107368731685
+          },
+          "far": {
+            "mean": 0.22504230118443316,
+            "std": 0.038769675930252455
+          },
+          "auc": {
+            "mean": 0.8277531770889586,
+            "std": 0.00811179886462534
+          },
+          "hter": {
+            "mean": 0.25791122151420237,
+            "std": 0.013115698878532232
+          },
+          "same_word_mean_auc": {
+            "mean": 0.827905883731833,
+            "std": 0.006129680150412382
+          }
+        },
+        "crossword_only": {
+          "tar": {
+            "mean": 0.7234042553191489,
+            "std": 0.09274253071363135
+          },
+          "far": {
+            "mean": 0.24365482233502536,
+            "std": 0.04941097039068981
+          },
+          "auc": {
+            "mean": 0.8284371962414948,
+            "std": 0.009567111245659609
+          },
+          "hter": {
+            "mean": 0.26012528350793823,
+            "std": 0.0218881558323417
+          },
+          "same_word_mean_auc": {
+            "mean": 0.8293405013941323,
+            "std": 0.009764972264797212
+          }
+        },
+        "episode_only": {
+          "tar": {
+            "mean": 0.7234042553191489,
+            "std": 0.04255319148936171
+          },
+          "far": {
+            "mean": 0.23604060913705585,
+            "std": 0.029270463438250755
+          },
+          "auc": {
+            "mean": 0.8297512330345249,
+            "std": 0.01016639719046784
+          },
+          "hter": {
+            "mean": 0.2563181769089535,
+            "std": 0.01992174625235899
+          },
+          "same_word_mean_auc": {
+            "mean": 0.8325785772447998,
+            "std": 0.007249310328297032
+          }
+        },
+        "combined": {
+          "tar": {
+            "mean": 0.702127659574468,
+            "std": 0.07671385692476572
+          },
+          "far": {
+            "mean": 0.2318104906937394,
+            "std": 0.057223981634808324
+          },
+          "auc": {
+            "mean": 0.8281491881772688,
+            "std": 0.016869084725437633
+          },
+          "hter": {
+            "mean": 0.2648414155596357,
+            "std": 0.025881549766840883
+          },
+          "same_word_mean_auc": {
+            "mean": 0.8286284082216794,
+            "std": 0.016580704258663682
+          }
+        }
+      },
+      "routes": {
+        "rbf_matched": {
+          "tar": 0.7659574468085106,
+          "far": 0.2614213197969543,
+          "auc": 0.8559239658710445,
+          "hter": 0.24773193649422184,
+          "same_word_mean_auc": 0.8558533940336073,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 36,
+          "attack_accepted": 103
+        },
+        "ordinary_supcon_seed42": {
+          "tar": 0.7659574468085106,
+          "far": 0.25888324873096447,
+          "auc": 0.8219570147964144,
+          "hter": 0.24646290096122692,
+          "same_word_mean_auc": 0.8216181434599157,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 36,
+          "attack_accepted": 102,
+          "mode": "ordinary_supcon",
+          "seed": 42,
+          "selected_step": 175
+        },
+        "ordinary_supcon_seed43": {
+          "tar": 0.6382978723404256,
+          "far": 0.18274111675126903,
+          "auc": 0.8370234366562264,
+          "hter": 0.2722216222054218,
+          "same_word_mean_auc": 0.8338642201495299,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 30,
+          "attack_accepted": 72,
+          "mode": "ordinary_supcon",
+          "seed": 43,
+          "selected_step": 75
+        },
+        "ordinary_supcon_seed44": {
+          "tar": 0.7234042553191489,
+          "far": 0.233502538071066,
+          "auc": 0.8242790798142349,
+          "hter": 0.2550491413759585,
+          "same_word_mean_auc": 0.8282352875860537,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 34,
+          "attack_accepted": 92,
+          "mode": "ordinary_supcon",
+          "seed": 44,
+          "selected_step": 150
+        },
+        "crossword_only_seed42": {
+          "tar": 0.7659574468085106,
+          "far": 0.2614213197969543,
+          "auc": 0.8244950858624042,
+          "hter": 0.24773193649422184,
+          "same_word_mean_auc": 0.8260760974165372,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 36,
+          "attack_accepted": 103,
+          "mode": "crossword_only",
+          "seed": 42,
+          "selected_step": 100
+        },
+        "crossword_only_seed43": {
+          "tar": 0.6170212765957447,
+          "far": 0.18781725888324874,
+          "auc": 0.839345501674047,
+          "hter": 0.28539799114375203,
+          "same_word_mean_auc": 0.8403194907098971,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 29,
+          "attack_accepted": 74,
+          "mode": "crossword_only",
+          "seed": 43,
+          "selected_step": 50
+        },
+        "crossword_only_seed44": {
+          "tar": 0.7872340425531915,
+          "far": 0.2817258883248731,
+          "auc": 0.8214710011880333,
+          "hter": 0.2472459228858408,
+          "same_word_mean_auc": 0.8216259160559627,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 37,
+          "attack_accepted": 111,
+          "mode": "crossword_only",
+          "seed": 44,
+          "selected_step": 150
+        },
+        "episode_only_seed42": {
+          "tar": 0.7234042553191489,
+          "far": 0.20558375634517767,
+          "auc": 0.818878928610001,
+          "hter": 0.24108975051301437,
+          "same_word_mean_auc": 0.8245121585609594,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 34,
+          "attack_accepted": 81,
+          "mode": "episode_only",
+          "seed": 42,
+          "selected_step": 275
+        },
+        "episode_only_seed43": {
+          "tar": 0.7659574468085106,
+          "far": 0.2639593908629442,
+          "auc": 0.8390214926017928,
+          "hter": 0.24900097202721677,
+          "same_word_mean_auc": 0.8385488378118291,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 36,
+          "attack_accepted": 104,
+          "mode": "episode_only",
+          "seed": 43,
+          "selected_step": 350
+        },
+        "episode_only_seed44": {
+          "tar": 0.6808510638297872,
+          "far": 0.23857868020304568,
+          "auc": 0.8313532778917809,
+          "hter": 0.27886380818662926,
+          "same_word_mean_auc": 0.834674735361611,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 32,
+          "attack_accepted": 94,
+          "mode": "episode_only",
+          "seed": 44,
+          "selected_step": 300
+        },
+        "combined_seed42": {
+          "tar": 0.7659574468085106,
+          "far": 0.23604060913705585,
+          "auc": 0.8338913489577708,
+          "hter": 0.2350415811642726,
+          "same_word_mean_auc": 0.8334782182248871,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 36,
+          "attack_accepted": 93,
+          "mode": "combined",
+          "seed": 42,
+          "selected_step": 100
+        },
+        "combined_seed43": {
+          "tar": 0.6170212765957447,
+          "far": 0.17258883248730963,
+          "auc": 0.8413975591316557,
+          "hter": 0.27778377794578246,
+          "same_word_mean_auc": 0.8422434303057221,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 29,
+          "attack_accepted": 68,
+          "mode": "combined",
+          "seed": 43,
+          "selected_step": 100
+        },
+        "combined_seed44": {
+          "tar": 0.7234042553191489,
+          "far": 0.2868020304568528,
+          "auc": 0.8091586564423803,
+          "hter": 0.281698887568852,
+          "same_word_mean_auc": 0.810163576134429,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 34,
+          "attack_accepted": 113,
+          "mode": "combined",
+          "seed": 44,
+          "selected_step": 225
+        },
+        "raw772_cosine": {
+          "tar": 0.7234042553191489,
+          "far": 0.39593908629441626,
+          "auc": 0.7426287936062209,
+          "hter": 0.33626741548763367,
+          "same_word_mean_auc": 0.7475348286327633,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "genuine_accepted": 34,
+          "attack_accepted": 156
+        }
+      }
+    },
+    "5": {
+      "seed_summary": {
+        "ordinary_supcon": {
+          "tar": {
+            "mean": 0.7466666666666667,
+            "std": 0.05033222956847171
+          },
+          "far": {
+            "mean": 0.28473998294970165,
+            "std": 0.01644271229495814
+          },
+          "auc": {
+            "mean": 0.8009036658141518,
+            "std": 0.015149331636277902
+          },
+          "hter": {
+            "mean": 0.2690366581415175,
+            "std": 0.020274835579438284
+          },
+          "same_word_mean_auc": {
+            "mean": 0.7987965811965813,
+            "std": 0.012081257070706742
+          }
+        },
+        "crossword_only": {
+          "tar": {
+            "mean": 0.7466666666666667,
+            "std": 0.05033222956847171
+          },
+          "far": {
+            "mean": 0.278772378516624,
+            "std": 0.02518889463374963
+          },
+          "auc": {
+            "mean": 0.8003921568627451,
+            "std": 0.01395597908416596
+          },
+          "hter": {
+            "mean": 0.2660528559249787,
+            "std": 0.019888036585111016
+          },
+          "same_word_mean_auc": {
+            "mean": 0.7980427350427349,
+            "std": 0.010305008048671776
+          }
+        },
+        "episode_only": {
+          "tar": {
+            "mean": 0.7266666666666666,
+            "std": 0.04163331998932269
+          },
+          "far": {
+            "mean": 0.2455242966751918,
+            "std": 0.019309039476395777
+          },
+          "auc": {
+            "mean": 0.8103495311167945,
+            "std": 0.02089877684122477
+          },
+          "hter": {
+            "mean": 0.25942881500426257,
+            "std": 0.01438228041999702
+          },
+          "same_word_mean_auc": {
+            "mean": 0.8112371794871795,
+            "std": 0.017495219268093148
+          }
+        },
+        "combined": {
+          "tar": {
+            "mean": 0.7266666666666666,
+            "std": 0.06429100507328642
+          },
+          "far": {
+            "mean": 0.2728047740835465,
+            "std": 0.05511098502606645
+          },
+          "auc": {
+            "mean": 0.8053196930946291,
+            "std": 0.004590205064638842
+          },
+          "hter": {
+            "mean": 0.27306905370843987,
+            "std": 0.010019799735132647
+          },
+          "same_word_mean_auc": {
+            "mean": 0.8033341880341881,
+            "std": 0.002087937450309695
+          }
+        }
+      },
+      "routes": {
+        "rbf_matched": {
+          "tar": 0.8,
+          "far": 0.21994884910485935,
+          "auc": 0.8474680306905371,
+          "hter": 0.20997442455242968,
+          "same_word_mean_auc": 0.8527692307692307,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 40,
+          "attack_accepted": 86
+        },
+        "ordinary_supcon_seed42": {
+          "tar": 0.8,
+          "far": 0.2915601023017903,
+          "auc": 0.8172378516624041,
+          "hter": 0.24578005115089516,
+          "same_word_mean_auc": 0.8120897435897435,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 40,
+          "attack_accepted": 114,
+          "mode": "ordinary_supcon",
+          "seed": 42,
+          "selected_step": 25
+        },
+        "ordinary_supcon_seed43": {
+          "tar": 0.74,
+          "far": 0.2966751918158568,
+          "auc": 0.7981585677749361,
+          "hter": 0.2783375959079284,
+          "same_word_mean_auc": 0.7958141025641026,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 37,
+          "attack_accepted": 116,
+          "mode": "ordinary_supcon",
+          "seed": 43,
+          "selected_step": 25
+        },
+        "ordinary_supcon_seed44": {
+          "tar": 0.7,
+          "far": 0.2659846547314578,
+          "auc": 0.7873145780051152,
+          "hter": 0.2829923273657289,
+          "same_word_mean_auc": 0.7884858974358975,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 35,
+          "attack_accepted": 104,
+          "mode": "ordinary_supcon",
+          "seed": 44,
+          "selected_step": 25
+        },
+        "crossword_only_seed42": {
+          "tar": 0.8,
+          "far": 0.2864450127877238,
+          "auc": 0.8154987212276215,
+          "hter": 0.2432225063938619,
+          "same_word_mean_auc": 0.809105128205128,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 40,
+          "attack_accepted": 112,
+          "mode": "crossword_only",
+          "seed": 42,
+          "selected_step": 25
+        },
+        "crossword_only_seed43": {
+          "tar": 0.74,
+          "far": 0.29923273657289,
+          "auc": 0.7976982097186701,
+          "hter": 0.279616368286445,
+          "same_word_mean_auc": 0.7963076923076924,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 37,
+          "attack_accepted": 117,
+          "mode": "crossword_only",
+          "seed": 43,
+          "selected_step": 25
+        },
+        "crossword_only_seed44": {
+          "tar": 0.7,
+          "far": 0.2506393861892583,
+          "auc": 0.7879795396419438,
+          "hter": 0.2753196930946291,
+          "same_word_mean_auc": 0.7887153846153845,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 35,
+          "attack_accepted": 98,
+          "mode": "crossword_only",
+          "seed": 44,
+          "selected_step": 25
+        },
+        "episode_only_seed42": {
+          "tar": 0.74,
+          "far": 0.26342710997442453,
+          "auc": 0.7905882352941176,
+          "hter": 0.26171355498721227,
+          "same_word_mean_auc": 0.7943820512820513,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 37,
+          "attack_accepted": 103,
+          "mode": "episode_only",
+          "seed": 42,
+          "selected_step": 25
+        },
+        "episode_only_seed43": {
+          "tar": 0.76,
+          "far": 0.24808184143222506,
+          "auc": 0.8322250639386188,
+          "hter": 0.24404092071611252,
+          "same_word_mean_auc": 0.8293089743589743,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 38,
+          "attack_accepted": 97,
+          "mode": "episode_only",
+          "seed": 43,
+          "selected_step": 100
+        },
+        "episode_only_seed44": {
+          "tar": 0.6799999999999999,
+          "far": 0.22506393861892582,
+          "auc": 0.808235294117647,
+          "hter": 0.2725319693094629,
+          "same_word_mean_auc": 0.8100205128205129,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 34,
+          "attack_accepted": 88,
+          "mode": "episode_only",
+          "seed": 44,
+          "selected_step": 75
+        },
+        "combined_seed42": {
+          "tar": 0.8,
+          "far": 0.329923273657289,
+          "auc": 0.8002557544757033,
+          "hter": 0.2649616368286445,
+          "same_word_mean_auc": 0.8012794871794873,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 40,
+          "attack_accepted": 129,
+          "mode": "combined",
+          "seed": 42,
+          "selected_step": 25
+        },
+        "combined_seed43": {
+          "tar": 0.7,
+          "far": 0.26854219948849106,
+          "auc": 0.8092071611253197,
+          "hter": 0.2842710997442455,
+          "same_word_mean_auc": 0.8054538461538462,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 35,
+          "attack_accepted": 105,
+          "mode": "combined",
+          "seed": 43,
+          "selected_step": 75
+        },
+        "combined_seed44": {
+          "tar": 0.6799999999999999,
+          "far": 0.21994884910485935,
+          "auc": 0.8064961636828645,
+          "hter": 0.2699744245524297,
+          "same_word_mean_auc": 0.8032692307692308,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 34,
+          "attack_accepted": 86,
+          "mode": "combined",
+          "seed": 44,
+          "selected_step": 50
+        },
+        "raw772_cosine": {
+          "tar": 0.74,
+          "far": 0.22506393861892582,
+          "auc": 0.830076726342711,
+          "hter": 0.2425319693094629,
+          "same_word_mean_auc": 0.8357846153846153,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "genuine_accepted": 37,
+          "attack_accepted": 88
+        }
+      }
+    }
+  }
+}
