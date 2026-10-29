@@ -1,0 +1,574 @@
+{
+  "4": {
+    "target": 4,
+    "routes": {
+      "baseline_original": {
+        "far": 0.19543147208121828,
+        "frr": 0.19148936170212766,
+        "tar": 0.8085106382978724,
+        "hter": 0.19346041689167298,
+        "auc": 0.8769305540555136,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 0.3370478609357483,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 17
+          },
+          "2": {
+            "n": 50,
+            "accepted": 16
+          },
+          "3": {
+            "n": 47,
+            "accepted": 11
+          },
+          "5": {
+            "n": 50,
+            "accepted": 2
+          },
+          "6": {
+            "n": 50,
+            "accepted": 11
+          },
+          "7": {
+            "n": 49,
+            "accepted": 15
+          },
+          "8": {
+            "n": 49,
+            "accepted": 3
+          },
+          "9": {
+            "n": 49,
+            "accepted": 2
+          }
+        },
+        "teacher_key": "none",
+        "raw_weight": 0.0,
+        "teacher_weight": 0.0
+      },
+      "control_original": {
+        "far": 0.08121827411167512,
+        "frr": 0.2553191489361702,
+        "tar": 0.7446808510638299,
+        "hter": 0.16826871152392264,
+        "auc": 0.9327141159952479,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 1.853879070771899,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 20
+          },
+          "2": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 1
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 4
+          },
+          "7": {
+            "n": 49,
+            "accepted": 6
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "teacher_key": "control",
+        "raw_weight": 0.25,
+        "teacher_weight": 1.0
+      },
+      "baseline_tar90": {
+        "far": 0.29949238578680204,
+        "frr": 0.14893617021276595,
+        "tar": 0.851063829787234,
+        "hter": 0.224214277999784,
+        "auc": 0.8769305540555136,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 0.16782407505583707,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 34
+          },
+          "2": {
+            "n": 50,
+            "accepted": 18
+          },
+          "3": {
+            "n": 47,
+            "accepted": 12
+          },
+          "5": {
+            "n": 50,
+            "accepted": 3
+          },
+          "6": {
+            "n": 50,
+            "accepted": 18
+          },
+          "7": {
+            "n": 49,
+            "accepted": 25
+          },
+          "8": {
+            "n": 49,
+            "accepted": 6
+          },
+          "9": {
+            "n": 49,
+            "accepted": 2
+          }
+        },
+        "teacher_key": "none",
+        "raw_weight": 0.0,
+        "teacher_weight": 0.0,
+        "calibration_tar": 0.9,
+        "calibration_far": 0.29375
+      },
+      "control_tar90": {
+        "far": 0.04314720812182741,
+        "frr": 0.3191489361702128,
+        "tar": 0.6808510638297872,
+        "hter": 0.1811480721460201,
+        "auc": 0.9327141159952479,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 2.084881652778771,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 10
+          },
+          "2": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 0
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 3
+          },
+          "7": {
+            "n": 49,
+            "accepted": 3
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "teacher_key": "control",
+        "raw_weight": 0.25,
+        "teacher_weight": 1.0,
+        "calibration_tar": 0.9,
+        "calibration_far": 0.06875
+      },
+      "selected_tar90": {
+        "far": 0.07360406091370558,
+        "frr": 0.2553191489361702,
+        "tar": 0.7446808510638299,
+        "hter": 0.1644616049249379,
+        "auc": 0.9345501674046873,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 1.7263130062005976,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 13
+          },
+          "2": {
+            "n": 50,
+            "accepted": 3
+          },
+          "3": {
+            "n": 47,
+            "accepted": 1
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 5
+          },
+          "7": {
+            "n": 49,
+            "accepted": 7
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "teacher_key": "personal_strong",
+        "raw_weight": 1.0,
+        "teacher_weight": 0.5,
+        "calibration_tar": 0.9,
+        "calibration_far": 0.09375
+      }
+    },
+    "chosen": {
+      "teacher_key": "personal_strong",
+      "raw_weight": 1.0,
+      "teacher_weight": 0.5,
+      "quality": {
+        "tar": 0.9,
+        "far": 0.1859375,
+        "auc": 0.9137890624999999,
+        "hter": 0.14296874999999998,
+        "shortfall": 0.0,
+        "folds": [
+          {
+            "threshold": 0.8867229977003752,
+            "tar": 0.9,
+            "far": 0.2
+          },
+          {
+            "threshold": 1.0874167017921776,
+            "tar": 0.75,
+            "far": 0.14375
+          },
+          {
+            "threshold": 0.8476526332369474,
+            "tar": 1.0,
+            "far": 0.225
+          },
+          {
+            "threshold": 0.8813026313159129,
+            "tar": 1.0,
+            "far": 0.1125
+          },
+          {
+            "threshold": 0.8867229977003752,
+            "tar": 0.9,
+            "far": 0.2375
+          }
+        ]
+      }
+    },
+    "old_control_replay_verified": true
+  },
+  "5": {
+    "target": 5,
+    "routes": {
+      "baseline_original": {
+        "far": 0.23273657289002558,
+        "frr": 0.22,
+        "tar": 0.78,
+        "hter": 0.22636828644501278,
+        "auc": 0.8466496163682864,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.4621676829960771,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 1
+          },
+          "2": {
+            "n": 50,
+            "accepted": 4
+          },
+          "3": {
+            "n": 47,
+            "accepted": 18
+          },
+          "4": {
+            "n": 47,
+            "accepted": 3
+          },
+          "6": {
+            "n": 50,
+            "accepted": 9
+          },
+          "7": {
+            "n": 49,
+            "accepted": 13
+          },
+          "8": {
+            "n": 49,
+            "accepted": 21
+          },
+          "9": {
+            "n": 49,
+            "accepted": 22
+          }
+        },
+        "teacher_key": "none",
+        "raw_weight": 0.0,
+        "teacher_weight": 0.0
+      },
+      "control_original": {
+        "far": 0.15601023017902813,
+        "frr": 0.34,
+        "tar": 0.6599999999999999,
+        "hter": 0.24800511508951406,
+        "auc": 0.8598976982097186,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 1.835278442974013,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 2
+          },
+          "3": {
+            "n": 47,
+            "accepted": 12
+          },
+          "4": {
+            "n": 47,
+            "accepted": 2
+          },
+          "6": {
+            "n": 50,
+            "accepted": 5
+          },
+          "7": {
+            "n": 49,
+            "accepted": 12
+          },
+          "8": {
+            "n": 49,
+            "accepted": 12
+          },
+          "9": {
+            "n": 49,
+            "accepted": 16
+          }
+        },
+        "teacher_key": "control",
+        "raw_weight": 1.0,
+        "teacher_weight": 1.0
+      },
+      "baseline_tar90": {
+        "far": 0.3887468030690537,
+        "frr": 0.12,
+        "tar": 0.88,
+        "hter": 0.2543734015345268,
+        "auc": 0.8466496163682864,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": -0.020127624818641422,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 2
+          },
+          "2": {
+            "n": 50,
+            "accepted": 11
+          },
+          "3": {
+            "n": 47,
+            "accepted": 23
+          },
+          "4": {
+            "n": 47,
+            "accepted": 6
+          },
+          "6": {
+            "n": 50,
+            "accepted": 16
+          },
+          "7": {
+            "n": 49,
+            "accepted": 22
+          },
+          "8": {
+            "n": 49,
+            "accepted": 37
+          },
+          "9": {
+            "n": 49,
+            "accepted": 35
+          }
+        },
+        "teacher_key": "none",
+        "raw_weight": 0.0,
+        "teacher_weight": 0.0,
+        "calibration_tar": 0.9,
+        "calibration_far": 0.4875
+      },
+      "control_tar90": {
+        "far": 0.29411764705882354,
+        "frr": 0.18,
+        "tar": 0.8200000000000001,
+        "hter": 0.23705882352941177,
+        "auc": 0.8598976982097186,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.46661885071996206,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 11
+          },
+          "3": {
+            "n": 47,
+            "accepted": 16
+          },
+          "4": {
+            "n": 47,
+            "accepted": 2
+          },
+          "6": {
+            "n": 50,
+            "accepted": 12
+          },
+          "7": {
+            "n": 49,
+            "accepted": 19
+          },
+          "8": {
+            "n": 49,
+            "accepted": 28
+          },
+          "9": {
+            "n": 49,
+            "accepted": 27
+          }
+        },
+        "teacher_key": "control",
+        "raw_weight": 1.0,
+        "teacher_weight": 1.0,
+        "calibration_tar": 0.9,
+        "calibration_far": 0.3625
+      },
+      "selected_tar90": {
+        "far": 0.26854219948849106,
+        "frr": 0.14,
+        "tar": 0.86,
+        "hter": 0.20427109974424554,
+        "auc": 0.8588235294117648,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.47176889808107536,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 8
+          },
+          "3": {
+            "n": 47,
+            "accepted": 14
+          },
+          "4": {
+            "n": 47,
+            "accepted": 2
+          },
+          "6": {
+            "n": 50,
+            "accepted": 12
+          },
+          "7": {
+            "n": 49,
+            "accepted": 17
+          },
+          "8": {
+            "n": 49,
+            "accepted": 25
+          },
+          "9": {
+            "n": 49,
+            "accepted": 27
+          }
+        },
+        "teacher_key": "control",
+        "raw_weight": 1.0,
+        "teacher_weight": 0.5,
+        "calibration_tar": 0.9,
+        "calibration_far": 0.3625
+      }
+    },
+    "chosen": {
+      "teacher_key": "control",
+      "raw_weight": 1.0,
+      "teacher_weight": 0.5,
+      "quality": {
+        "tar": 0.9,
+        "far": 0.409375,
+        "auc": 0.83357421875,
+        "hter": 0.25468749999999996,
+        "shortfall": 0.0,
+        "folds": [
+          {
+            "threshold": 0.3026150114339917,
+            "tar": 0.9,
+            "far": 0.38125
+          },
+          {
+            "threshold": 0.3026150114339917,
+            "tar": 0.9,
+            "far": 0.45
+          },
+          {
+            "threshold": 0.6017032922300477,
+            "tar": 0.8,
+            "far": 0.3375
+          },
+          {
+            "threshold": 0.2609331207502821,
+            "tar": 1.0,
+            "far": 0.4875
+          },
+          {
+            "threshold": 0.2609331207502821,
+            "tar": 1.0,
+            "far": 0.45
+          }
+        ]
+      }
+    },
+    "old_control_replay_verified": true
+  }
+}
