@@ -1,0 +1,129 @@
+{
+  "selection": "all users group5 repeat7;U4/U5 also groups20/29 repeat7;fixed before inference,not best samples",
+  "color_scale": [
+    -1,
+    1
+  ],
+  "model": "original strict personal G/F epoch200;no new generator training",
+  "scope": "paired spectral structure only;not evidence of identity preservation or audible speech quality",
+  "mapping": "word labels conditional on historical10/20period andphase",
+  "rows": [
+    {
+      "user": 1,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.26940566301345825,
+      "paired_audio_corr": 0.8075839032516415,
+      "cycle_acc_l1": 0.26433703303337097,
+      "cycle_acc_corr": 0.831033337706323
+    },
+    {
+      "user": 2,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.36614349484443665,
+      "paired_audio_corr": 0.6403599043675245,
+      "cycle_acc_l1": 0.19230684638023376,
+      "cycle_acc_corr": 0.7784448620547066
+    },
+    {
+      "user": 3,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.27264338731765747,
+      "paired_audio_corr": 0.6696451601196576,
+      "cycle_acc_l1": 0.20003005862236023,
+      "cycle_acc_corr": 0.7448176616403271
+    },
+    {
+      "user": 4,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.25094905495643616,
+      "paired_audio_corr": 0.6366151846037305,
+      "cycle_acc_l1": 0.2023400068283081,
+      "cycle_acc_corr": 0.7696509715536142
+    },
+    {
+      "user": 4,
+      "group": 20,
+      "row": 250,
+      "paired_audio_l1": 0.27811694145202637,
+      "paired_audio_corr": 0.7021967610678523,
+      "cycle_acc_l1": 0.17304520308971405,
+      "cycle_acc_corr": 0.6751988097973739
+    },
+    {
+      "user": 4,
+      "group": 29,
+      "row": 259,
+      "paired_audio_l1": 0.26474636793136597,
+      "paired_audio_corr": 0.7610555541330323,
+      "cycle_acc_l1": 0.26570022106170654,
+      "cycle_acc_corr": 0.6948227009012026
+    },
+    {
+      "user": 5,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.26786595582962036,
+      "paired_audio_corr": 0.7835432290669553,
+      "cycle_acc_l1": 0.19363977015018463,
+      "cycle_acc_corr": 0.7883642113667122
+    },
+    {
+      "user": 5,
+      "group": 20,
+      "row": 250,
+      "paired_audio_l1": 0.29025641083717346,
+      "paired_audio_corr": 0.7475426911287621,
+      "cycle_acc_l1": 0.17867928743362427,
+      "cycle_acc_corr": 0.8136980662332869
+    },
+    {
+      "user": 5,
+      "group": 29,
+      "row": 259,
+      "paired_audio_l1": 0.34355026483535767,
+      "paired_audio_corr": 0.6453034482287274,
+      "cycle_acc_l1": 0.19841553270816803,
+      "cycle_acc_corr": 0.8024436434469627
+    },
+    {
+      "user": 6,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.2865862250328064,
+      "paired_audio_corr": 0.8178097199155208,
+      "cycle_acc_l1": 0.18259161710739136,
+      "cycle_acc_corr": 0.8211907546401924
+    },
+    {
+      "user": 7,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.2675235867500305,
+      "paired_audio_corr": 0.7068536256617872,
+      "cycle_acc_l1": 0.18936091661453247,
+      "cycle_acc_corr": 0.7325706433617541
+    },
+    {
+      "user": 8,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.2746247351169586,
+      "paired_audio_corr": 0.43078456660751724,
+      "cycle_acc_l1": 0.2434883564710617,
+      "cycle_acc_corr": 0.7084354795095723
+    },
+    {
+      "user": 9,
+      "group": 5,
+      "row": 75,
+      "paired_audio_l1": 0.38593485951423645,
+      "paired_audio_corr": 0.4612077624030845,
+      "cycle_acc_l1": 0.20973649621009827,
+      "cycle_acc_corr": 0.7703268347967128
+    }
+  ]
+}
