@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "seeds": {
+    "42": {
+      "routes": 360,
+      "baseline_replayed": true,
+      "teacher_parameters": 164169,
+      "teacher_trainable_parameters": 83593
+    },
+    "43": {
+      "routes": 360,
+      "baseline_replayed": true,
+      "teacher_parameters": 164169,
+      "teacher_trainable_parameters": 83593
+    },
+    "44": {
+      "routes": 360,
+      "baseline_replayed": true,
+      "teacher_parameters": 164169,
+      "teacher_trainable_parameters": 83593
+    }
+  },
+  "checks": [
+    "record and word disjoint roles",
+    "400updates and validation-only checkpoint selection",
+    "equal teacher architecture parameter counts",
+    "unchanged student parameter count",
+    "train-only sameID differentword shuffle bijection",
+    "independent enrollment RBF scaler",
+    "ACC-only inference replay",
+    "calibration-only threshold replay",
+    "all final AUC/TAR/FAR/eightattack sources",
+    "nonzero relation gradient to student"
+  ]
+}

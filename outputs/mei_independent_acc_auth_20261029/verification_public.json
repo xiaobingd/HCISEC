@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "targets": [
+    1,
+    4,
+    5
+  ],
+  "routes": 15,
+  "checks": [
+    "crossword split disjointness",
+    "CNN checkpoint selection replay",
+    "saved model independent raw ACC inference",
+    "calibration thresholds replay",
+    "pairwise AUC and acceptance counts",
+    "all8attackers"
+  ]
+}
