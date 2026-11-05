@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "targets": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "routes": 27,
+  "checks": [
+    "identical word/repeat roles allusers",
+    "all auth indices upstream-disjoint",
+    "675train-only scalers",
+    "225 outermodel refits regenerate OOF",
+    "40fusion choices peruser replay",
+    "bruteforce joint FAR FRR calibration threshold",
+    "saved models final score replay",
+    "AUC and perword2positive16negative",
+    "8attack sources30each"
+  ]
+}

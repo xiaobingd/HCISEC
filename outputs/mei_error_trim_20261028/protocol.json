@@ -1,0 +1,47 @@
+{
+  "targets": [
+    1,
+    2,
+    4,
+    5,
+    7
+  ],
+  "unknown": [
+    3,
+    8
+  ],
+  "roles": {
+    "fit_words": [
+      0,
+      14
+    ],
+    "cal_words": [
+      15,
+      19
+    ],
+    "test_words": [
+      20,
+      29
+    ]
+  },
+  "features": [
+    "baseline772",
+    "baseline772_teacher64"
+  ],
+  "screening_seeds": [
+    42,
+    43,
+    44
+  ],
+  "error_boundary": 0,
+  "minimum_error_votes": 2,
+  "per_identity_removal_cap": 0.1,
+  "parameter_selection": "5 word-grouped folds seed42 mean AUC on complete authentication fit; identical chosen C/gamma for paired filtered/unfiltered arms",
+  "filter_selection": "fixed rule; neither calibration nor final chooses removals or filtering arm",
+  "caveats": [
+    "Historical test recordings reused: exploratory, not blind",
+    "Upstream150 random rows saw test word categories: authentication-stage content holdout only",
+    "OOF removes training difficult samples, not proven sensor noise",
+    "U4/U7 missing rows assumed at end; word mapping provisional"
+  ]
+}

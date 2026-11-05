@@ -1,0 +1,3197 @@
+{
+  "status": "PASS",
+  "targets": 3,
+  "results": {
+    "1": {
+      "target": 1,
+      "routes": {
+        "baseline772": {
+          "far": 0.0375,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.01875,
+          "auc": 1.0,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.5334792997487066,
+          "feature_dimensions": 772,
+          "attack_by_user": {
+            "2": {
+              "n": 30,
+              "accepted": 0
+            },
+            "3": {
+              "n": 30,
+              "accepted": 1
+            },
+            "4": {
+              "n": 30,
+              "accepted": 5
+            },
+            "5": {
+              "n": 30,
+              "accepted": 1
+            },
+            "6": {
+              "n": 30,
+              "accepted": 1
+            },
+            "7": {
+              "n": 30,
+              "accepted": 0
+            },
+            "8": {
+              "n": 30,
+              "accepted": 1
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "six": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "seven": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "eight": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "nine": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Back": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Off": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Grab": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Down": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Up": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Zoom": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Record": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Play": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            },
+            "Reset": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5334792997487066
+            }
+          },
+          "same_word_mean_auc": 1.0,
+          "genuine_accepted": 30,
+          "attack_accepted": 9
+        },
+        "old_teacher900": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.13910391937189903,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "2": {
+              "n": 30,
+              "accepted": 0
+            },
+            "3": {
+              "n": 30,
+              "accepted": 0
+            },
+            "4": {
+              "n": 30,
+              "accepted": 0
+            },
+            "5": {
+              "n": 30,
+              "accepted": 0
+            },
+            "6": {
+              "n": 30,
+              "accepted": 0
+            },
+            "7": {
+              "n": 30,
+              "accepted": 0
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "six": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "seven": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "eight": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "nine": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Back": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Off": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Grab": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Down": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Zoom": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Record": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Play": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            },
+            "Reset": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.13910391937189903
+            }
+          },
+          "same_word_mean_auc": 1.0,
+          "genuine_accepted": 30,
+          "attack_accepted": 0
+        },
+        "identity_teacher900": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": 0.5990685861872247,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "2": {
+              "n": 30,
+              "accepted": 0
+            },
+            "3": {
+              "n": 30,
+              "accepted": 0
+            },
+            "4": {
+              "n": 30,
+              "accepted": 0
+            },
+            "5": {
+              "n": 30,
+              "accepted": 0
+            },
+            "6": {
+              "n": 30,
+              "accepted": 0
+            },
+            "7": {
+              "n": 30,
+              "accepted": 0
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "six": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "seven": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "eight": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "nine": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Back": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Off": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Grab": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Down": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Zoom": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Record": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Play": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Reset": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            }
+          },
+          "same_word_mean_auc": 1.0,
+          "genuine_accepted": 30,
+          "attack_accepted": 0
+        },
+        "robust_teacher900": {
+          "far": 0.0125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.00625,
+          "auc": 1.0,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": 0.15693689161778662,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "2": {
+              "n": 30,
+              "accepted": 0
+            },
+            "3": {
+              "n": 30,
+              "accepted": 0
+            },
+            "4": {
+              "n": 30,
+              "accepted": 2
+            },
+            "5": {
+              "n": 30,
+              "accepted": 0
+            },
+            "6": {
+              "n": 30,
+              "accepted": 1
+            },
+            "7": {
+              "n": 30,
+              "accepted": 0
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "six": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "seven": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "eight": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "nine": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Back": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Off": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Grab": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Down": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Zoom": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Record": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Play": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            },
+            "Reset": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.15693689161778662
+            }
+          },
+          "same_word_mean_auc": 1.0,
+          "genuine_accepted": 30,
+          "attack_accepted": 3
+        },
+        "train_selected_teacher": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": 0.5990685861872247,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "2": {
+              "n": 30,
+              "accepted": 0
+            },
+            "3": {
+              "n": 30,
+              "accepted": 0
+            },
+            "4": {
+              "n": 30,
+              "accepted": 0
+            },
+            "5": {
+              "n": 30,
+              "accepted": 0
+            },
+            "6": {
+              "n": 30,
+              "accepted": 0
+            },
+            "7": {
+              "n": 30,
+              "accepted": 0
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "six": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "seven": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "eight": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "nine": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Back": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Off": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Grab": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Down": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Zoom": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Record": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Play": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            },
+            "Reset": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": 0.5990685861872247
+            }
+          },
+          "same_word_mean_auc": 1.0,
+          "genuine_accepted": 30,
+          "attack_accepted": 0,
+          "selected_family": "identity_teacher900"
+        }
+      },
+      "counts": {
+        "fit_positive": 75,
+        "fit_negative": 600,
+        "cal_positive": 30,
+        "cal_negative": 240,
+        "test_positive": 30,
+        "test_negative": 240
+      },
+      "mapping_scope": "User confirmed ordered vocabulary plus previous Audio10/20period audit; not per-record independently transcribed",
+      "scope": "All eight known attackers retained;identical15words,repeat-design and counts per identity;conditional on confirmed vocabulary+periodic row mapping;not per-file semantic verification"
+    },
+    "4": {
+      "target": 4,
+      "routes": {
+        "baseline772": {
+          "far": 0.19166666666666668,
+          "frr": 0.2,
+          "tar": 0.8,
+          "hter": 0.19583333333333336,
+          "auc": 0.8906944444444445,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.6189279597244157,
+          "feature_dimensions": 772,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 14
+            },
+            "2": {
+              "n": 30,
+              "accepted": 8
+            },
+            "3": {
+              "n": 30,
+              "accepted": 4
+            },
+            "5": {
+              "n": 30,
+              "accepted": 2
+            },
+            "6": {
+              "n": 30,
+              "accepted": 8
+            },
+            "7": {
+              "n": 30,
+              "accepted": 7
+            },
+            "8": {
+              "n": 30,
+              "accepted": 1
+            },
+            "9": {
+              "n": 30,
+              "accepted": 2
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "six": {
+              "far": 0.125,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.3125,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "seven": {
+              "far": 0.3125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.65625,
+              "auc": 0.59375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "eight": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "nine": {
+              "far": 0.125,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.3125,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Next": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Back": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Off": {
+              "far": 0.375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.1875,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Grab": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Down": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.25,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Zoom": {
+              "far": 0.1875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.09375,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Record": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Play": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            },
+            "Reset": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.6189279597244157
+            }
+          },
+          "same_word_mean_auc": 0.8958333333333334,
+          "genuine_accepted": 24,
+          "attack_accepted": 46
+        },
+        "old_teacher900": {
+          "far": 0.1625,
+          "frr": 0.13333333333333333,
+          "tar": 0.8666666666666667,
+          "hter": 0.14791666666666667,
+          "auc": 0.9330555555555555,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.605455472762757,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 14
+            },
+            "2": {
+              "n": 30,
+              "accepted": 6
+            },
+            "3": {
+              "n": 30,
+              "accepted": 2
+            },
+            "5": {
+              "n": 30,
+              "accepted": 4
+            },
+            "6": {
+              "n": 30,
+              "accepted": 3
+            },
+            "7": {
+              "n": 30,
+              "accepted": 8
+            },
+            "8": {
+              "n": 30,
+              "accepted": 1
+            },
+            "9": {
+              "n": 30,
+              "accepted": 1
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "six": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "seven": {
+              "far": 0.1875,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.34375,
+              "auc": 0.78125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "eight": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "nine": {
+              "far": 0.0,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.25,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Next": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Back": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Off": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Grab": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Down": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.25,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Zoom": {
+              "far": 0.1875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.09375,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Record": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Play": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.605455472762757
+            }
+          },
+          "same_word_mean_auc": 0.9416666666666667,
+          "genuine_accepted": 26,
+          "attack_accepted": 39
+        },
+        "identity_teacher900": {
+          "far": 0.10833333333333334,
+          "frr": 0.16666666666666666,
+          "tar": 0.8333333333333334,
+          "hter": 0.1375,
+          "auc": 0.9518055555555556,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.5320262215424097,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 14
+            },
+            "2": {
+              "n": 30,
+              "accepted": 3
+            },
+            "3": {
+              "n": 30,
+              "accepted": 1
+            },
+            "5": {
+              "n": 30,
+              "accepted": 0
+            },
+            "6": {
+              "n": 30,
+              "accepted": 2
+            },
+            "7": {
+              "n": 30,
+              "accepted": 6
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "six": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "seven": {
+              "far": 0.125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.5625,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "eight": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "nine": {
+              "far": 0.0625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.28125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Back": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Off": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Grab": {
+              "far": 0.0625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.28125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Down": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Zoom": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Record": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Play": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            }
+          },
+          "same_word_mean_auc": 0.9520833333333333,
+          "genuine_accepted": 25,
+          "attack_accepted": 26
+        },
+        "robust_teacher900": {
+          "far": 0.14583333333333334,
+          "frr": 0.1,
+          "tar": 0.9,
+          "hter": 0.12291666666666667,
+          "auc": 0.935,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.5523651963137395,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 14
+            },
+            "2": {
+              "n": 30,
+              "accepted": 4
+            },
+            "3": {
+              "n": 30,
+              "accepted": 2
+            },
+            "5": {
+              "n": 30,
+              "accepted": 1
+            },
+            "6": {
+              "n": 30,
+              "accepted": 6
+            },
+            "7": {
+              "n": 30,
+              "accepted": 7
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 1
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "six": {
+              "far": 0.1875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.09375,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "seven": {
+              "far": 0.1875,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.59375,
+              "auc": 0.71875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "eight": {
+              "far": 0.375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.1875,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "nine": {
+              "far": 0.125,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.3125,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Next": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Back": {
+              "far": 0.1875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.09375,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Off": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Grab": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Down": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Zoom": {
+              "far": 0.1875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.09375,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Record": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Play": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5523651963137395
+            }
+          },
+          "same_word_mean_auc": 0.9375,
+          "genuine_accepted": 27,
+          "attack_accepted": 35
+        },
+        "train_selected_teacher": {
+          "far": 0.10833333333333334,
+          "frr": 0.16666666666666666,
+          "tar": 0.8333333333333334,
+          "hter": 0.1375,
+          "auc": 0.9518055555555556,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.5320262215424097,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 14
+            },
+            "2": {
+              "n": 30,
+              "accepted": 3
+            },
+            "3": {
+              "n": 30,
+              "accepted": 1
+            },
+            "5": {
+              "n": 30,
+              "accepted": 0
+            },
+            "6": {
+              "n": 30,
+              "accepted": 2
+            },
+            "7": {
+              "n": 30,
+              "accepted": 6
+            },
+            "8": {
+              "n": 30,
+              "accepted": 0
+            },
+            "9": {
+              "n": 30,
+              "accepted": 0
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "six": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "seven": {
+              "far": 0.125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.5625,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "eight": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "nine": {
+              "far": 0.0625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.28125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Next": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Back": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Off": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Grab": {
+              "far": 0.0625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.28125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Down": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Up": {
+              "far": 0.0,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Zoom": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Record": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Play": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.5320262215424097
+            }
+          },
+          "same_word_mean_auc": 0.9520833333333333,
+          "genuine_accepted": 25,
+          "attack_accepted": 26,
+          "selected_family": "identity_teacher900"
+        }
+      },
+      "counts": {
+        "fit_positive": 75,
+        "fit_negative": 600,
+        "cal_positive": 30,
+        "cal_negative": 240,
+        "test_positive": 30,
+        "test_negative": 240
+      },
+      "mapping_scope": "User confirmed ordered vocabulary plus previous Audio10/20period audit; not per-record independently transcribed",
+      "scope": "All eight known attackers retained;identical15words,repeat-design and counts per identity;conditional on confirmed vocabulary+periodic row mapping;not per-file semantic verification"
+    },
+    "5": {
+      "target": 5,
+      "routes": {
+        "baseline772": {
+          "far": 0.39166666666666666,
+          "frr": 0.26666666666666666,
+          "tar": 0.7333333333333334,
+          "hter": 0.32916666666666666,
+          "auc": 0.7429166666666667,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.26457854039562023,
+          "feature_dimensions": 772,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 0
+            },
+            "2": {
+              "n": 30,
+              "accepted": 5
+            },
+            "3": {
+              "n": 30,
+              "accepted": 17
+            },
+            "4": {
+              "n": 30,
+              "accepted": 4
+            },
+            "6": {
+              "n": 30,
+              "accepted": 11
+            },
+            "7": {
+              "n": 30,
+              "accepted": 19
+            },
+            "8": {
+              "n": 30,
+              "accepted": 16
+            },
+            "9": {
+              "n": 30,
+              "accepted": 22
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.5625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.28125,
+              "auc": 0.6875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "six": {
+              "far": 0.4375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.46875,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "seven": {
+              "far": 0.5625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.28125,
+              "auc": 0.71875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "eight": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "nine": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.6875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Next": {
+              "far": 0.5,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.5,
+              "auc": 0.59375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Back": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Off": {
+              "far": 0.5,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.25,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Grab": {
+              "far": 0.25,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.625,
+              "auc": 0.5625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Down": {
+              "far": 0.4375,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.71875,
+              "auc": 0.375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Up": {
+              "far": 0.625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.3125,
+              "auc": 0.71875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Zoom": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Record": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Play": {
+              "far": 0.5625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.53125,
+              "auc": 0.59375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            },
+            "Reset": {
+              "far": 0.0625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.03125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.26457854039562023
+            }
+          },
+          "same_word_mean_auc": 0.7375,
+          "genuine_accepted": 22,
+          "attack_accepted": 94
+        },
+        "old_teacher900": {
+          "far": 0.35833333333333334,
+          "frr": 0.26666666666666666,
+          "tar": 0.7333333333333334,
+          "hter": 0.3125,
+          "auc": 0.7494444444444444,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.2824106499450427,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 0
+            },
+            "2": {
+              "n": 30,
+              "accepted": 5
+            },
+            "3": {
+              "n": 30,
+              "accepted": 14
+            },
+            "4": {
+              "n": 30,
+              "accepted": 3
+            },
+            "6": {
+              "n": 30,
+              "accepted": 6
+            },
+            "7": {
+              "n": 30,
+              "accepted": 20
+            },
+            "8": {
+              "n": 30,
+              "accepted": 15
+            },
+            "9": {
+              "n": 30,
+              "accepted": 23
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.5625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.28125,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "six": {
+              "far": 0.3125,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.40625,
+              "auc": 0.5,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "seven": {
+              "far": 0.4375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.21875,
+              "auc": 0.6875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "eight": {
+              "far": 0.375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.1875,
+              "auc": 0.84375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "nine": {
+              "far": 0.1875,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.34375,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Next": {
+              "far": 0.4375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.46875,
+              "auc": 0.71875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Back": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Off": {
+              "far": 0.375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.1875,
+              "auc": 0.84375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Grab": {
+              "far": 0.3125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.65625,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Down": {
+              "far": 0.375,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.6875,
+              "auc": 0.375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Up": {
+              "far": 0.5625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.28125,
+              "auc": 0.6875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Zoom": {
+              "far": 0.375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.1875,
+              "auc": 0.84375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Record": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Play": {
+              "far": 0.375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.4375,
+              "auc": 0.59375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.2824106499450427
+            }
+          },
+          "same_word_mean_auc": 0.75625,
+          "genuine_accepted": 22,
+          "attack_accepted": 86
+        },
+        "identity_teacher900": {
+          "far": 0.4,
+          "frr": 0.26666666666666666,
+          "tar": 0.7333333333333334,
+          "hter": 0.33333333333333337,
+          "auc": 0.7404166666666667,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.3102621014777467,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 0
+            },
+            "2": {
+              "n": 30,
+              "accepted": 4
+            },
+            "3": {
+              "n": 30,
+              "accepted": 15
+            },
+            "4": {
+              "n": 30,
+              "accepted": 4
+            },
+            "6": {
+              "n": 30,
+              "accepted": 10
+            },
+            "7": {
+              "n": 30,
+              "accepted": 18
+            },
+            "8": {
+              "n": 30,
+              "accepted": 18
+            },
+            "9": {
+              "n": 30,
+              "accepted": 27
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.5625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.28125,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "six": {
+              "far": 0.375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.4375,
+              "auc": 0.5625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "seven": {
+              "far": 0.625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.3125,
+              "auc": 0.71875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "eight": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "nine": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.75,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Next": {
+              "far": 0.5625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.53125,
+              "auc": 0.46875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Back": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Off": {
+              "far": 0.4375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.21875,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Grab": {
+              "far": 0.3125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.65625,
+              "auc": 0.5625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Down": {
+              "far": 0.375,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.6875,
+              "auc": 0.40625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Up": {
+              "far": 0.6875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.34375,
+              "auc": 0.78125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Zoom": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Record": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.78125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Play": {
+              "far": 0.5,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.5,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            }
+          },
+          "same_word_mean_auc": 0.7458333333333333,
+          "genuine_accepted": 22,
+          "attack_accepted": 96
+        },
+        "robust_teacher900": {
+          "far": 0.3416666666666667,
+          "frr": 0.3,
+          "tar": 0.7,
+          "hter": 0.3208333333333333,
+          "auc": 0.7463888888888889,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.19480743234333886,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 0
+            },
+            "2": {
+              "n": 30,
+              "accepted": 3
+            },
+            "3": {
+              "n": 30,
+              "accepted": 14
+            },
+            "4": {
+              "n": 30,
+              "accepted": 3
+            },
+            "6": {
+              "n": 30,
+              "accepted": 7
+            },
+            "7": {
+              "n": 30,
+              "accepted": 16
+            },
+            "8": {
+              "n": 30,
+              "accepted": 16
+            },
+            "9": {
+              "n": 30,
+              "accepted": 23
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.3125,
+              "auc": 0.78125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "six": {
+              "far": 0.375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.4375,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "seven": {
+              "far": 0.5,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.25,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "eight": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "nine": {
+              "far": 0.1875,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.34375,
+              "auc": 0.84375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Next": {
+              "far": 0.375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.4375,
+              "auc": 0.53125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Back": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 0.9375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Off": {
+              "far": 0.375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.1875,
+              "auc": 0.96875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Grab": {
+              "far": 0.3125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.65625,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Down": {
+              "far": 0.375,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.6875,
+              "auc": 0.375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Up": {
+              "far": 0.4375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.21875,
+              "auc": 0.75,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Zoom": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.84375,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Record": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.8125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Play": {
+              "far": 0.375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.4375,
+              "auc": 0.65625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.19480743234333886
+            }
+          },
+          "same_word_mean_auc": 0.7458333333333333,
+          "genuine_accepted": 21,
+          "attack_accepted": 82
+        },
+        "train_selected_teacher": {
+          "far": 0.4,
+          "frr": 0.26666666666666666,
+          "tar": 0.7333333333333334,
+          "hter": 0.33333333333333337,
+          "auc": 0.7404166666666667,
+          "genuine_n": 30,
+          "impostor_n": 240,
+          "threshold": -0.3102621014777467,
+          "feature_dimensions": 900,
+          "attack_by_user": {
+            "1": {
+              "n": 30,
+              "accepted": 0
+            },
+            "2": {
+              "n": 30,
+              "accepted": 4
+            },
+            "3": {
+              "n": 30,
+              "accepted": 15
+            },
+            "4": {
+              "n": 30,
+              "accepted": 4
+            },
+            "6": {
+              "n": 30,
+              "accepted": 10
+            },
+            "7": {
+              "n": 30,
+              "accepted": 18
+            },
+            "8": {
+              "n": 30,
+              "accepted": 18
+            },
+            "9": {
+              "n": 30,
+              "accepted": 27
+            }
+          },
+          "per_word": {
+            "five": {
+              "far": 0.5625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.28125,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "six": {
+              "far": 0.375,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.4375,
+              "auc": 0.5625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "seven": {
+              "far": 0.625,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.3125,
+              "auc": 0.71875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "eight": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "nine": {
+              "far": 0.25,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.375,
+              "auc": 0.75,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Next": {
+              "far": 0.5625,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.53125,
+              "auc": 0.46875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Back": {
+              "far": 0.25,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.125,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Off": {
+              "far": 0.4375,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.21875,
+              "auc": 0.90625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Grab": {
+              "far": 0.3125,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.65625,
+              "auc": 0.5625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Down": {
+              "far": 0.375,
+              "frr": 1.0,
+              "tar": 0.0,
+              "hter": 0.6875,
+              "auc": 0.40625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Up": {
+              "far": 0.6875,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.34375,
+              "auc": 0.78125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Zoom": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.875,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Record": {
+              "far": 0.3125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.15625,
+              "auc": 0.78125,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Play": {
+              "far": 0.5,
+              "frr": 0.5,
+              "tar": 0.5,
+              "hter": 0.5,
+              "auc": 0.625,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            },
+            "Reset": {
+              "far": 0.125,
+              "frr": 0.0,
+              "tar": 1.0,
+              "hter": 0.0625,
+              "auc": 1.0,
+              "genuine_n": 2,
+              "impostor_n": 16,
+              "threshold": -0.3102621014777467
+            }
+          },
+          "same_word_mean_auc": 0.7458333333333333,
+          "genuine_accepted": 22,
+          "attack_accepted": 96,
+          "selected_family": "identity_teacher900"
+        }
+      },
+      "counts": {
+        "fit_positive": 75,
+        "fit_negative": 600,
+        "cal_positive": 30,
+        "cal_negative": 240,
+        "test_positive": 30,
+        "test_negative": 240
+      },
+      "mapping_scope": "User confirmed ordered vocabulary plus previous Audio10/20period audit; not per-record independently transcribed",
+      "scope": "All eight known attackers retained;identical15words,repeat-design and counts per identity;conditional on confirmed vocabulary+periodic row mapping;not per-file semantic verification"
+    }
+  },
+  "macro": {
+    "baseline772": {
+      "tar": 0.8444444444444444,
+      "far": 0.20694444444444446,
+      "auc": 0.8778703703703704,
+      "hter": 0.18125,
+      "same_word_mean_auc": 0.8777777777777779
+    },
+    "old_teacher900": {
+      "tar": 0.8666666666666667,
+      "far": 0.17361111111111113,
+      "auc": 0.8941666666666667,
+      "hter": 0.15347222222222223,
+      "same_word_mean_auc": 0.8993055555555555
+    },
+    "identity_teacher900": {
+      "tar": 0.8555555555555556,
+      "far": 0.16944444444444443,
+      "auc": 0.8974074074074073,
+      "hter": 0.15694444444444447,
+      "same_word_mean_auc": 0.8993055555555557
+    },
+    "robust_teacher900": {
+      "tar": 0.8666666666666666,
+      "far": 0.16666666666666666,
+      "auc": 0.8937962962962963,
+      "hter": 0.15,
+      "same_word_mean_auc": 0.8944444444444445
+    },
+    "train_selected_teacher": {
+      "tar": 0.8555555555555556,
+      "far": 0.16944444444444443,
+      "auc": 0.8974074074074073,
+      "hter": 0.15694444444444447,
+      "same_word_mean_auc": 0.8993055555555557
+    }
+  },
+  "protocol": {
+    "targets": [
+      1,
+      4,
+      5
+    ],
+    "users": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "word_vocabulary": [
+      "zero",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "Start",
+      "Pause",
+      "Okay",
+      "Stop",
+      "Menu",
+      "Select",
+      "Cancel",
+      "Confirm",
+      "Exit",
+      "Help",
+      "Next",
+      "Back",
+      "Off",
+      "Grab",
+      "Down",
+      "Up",
+      "Zoom",
+      "Record",
+      "Play",
+      "Reset"
+    ],
+    "auth_groups": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "auth_words": [
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "Next",
+      "Back",
+      "Off",
+      "Grab",
+      "Down",
+      "Up",
+      "Zoom",
+      "Record",
+      "Play",
+      "Reset"
+    ],
+    "repeat_roles": {
+      "auth_train": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "calibration": [
+        5,
+        6
+      ],
+      "test": [
+        7,
+        8
+      ]
+    },
+    "upstream": "Existing strict personal G/F200 and frozen personal teacher families; original fit120/val30, none of these135 authentication rows exposed",
+    "mapping_evidence": "User confirmed ordered vocabulary plus previous Audio10/20period audit; not per-record independently transcribed",
+    "excluded": "Repeat9 uniformly excluded for all identities to avoid incomplete-tail imbalance;no error-based filtering",
+    "seed": 42
+  },
+  "verification": "Exact same word/repeat/row design across nine identities;upstream135-vs150 disjointness;train scaler counts;model and OOF scores;all eight attacks and per-word2-vs16 AUC/counts;teacher family chosen TRAIN only"
+}

@@ -1,0 +1,382 @@
+{
+  "target": 4,
+  "routes": {
+    "baseline772": {
+      "far": 0.15228426395939088,
+      "frr": 0.3191489361702128,
+      "tar": 0.6808510638297872,
+      "hter": 0.23571660006480183,
+      "auc": 0.8522518630521654,
+      "genuine_n": 47,
+      "impostor_n": 394,
+      "threshold": 0.42832038964097835,
+      "weights": {
+        "base": 1.0
+      },
+      "attack_by_user": {
+        "1": {
+          "n": 50,
+          "accepted": 13
+        },
+        "2": {
+          "n": 50,
+          "accepted": 13
+        },
+        "3": {
+          "n": 47,
+          "accepted": 8
+        },
+        "5": {
+          "n": 50,
+          "accepted": 1
+        },
+        "6": {
+          "n": 50,
+          "accepted": 9
+        },
+        "7": {
+          "n": 49,
+          "accepted": 12
+        },
+        "8": {
+          "n": 49,
+          "accepted": 4
+        },
+        "9": {
+          "n": 49,
+          "accepted": 0
+        }
+      }
+    },
+    "raw_only": {
+      "far": 0.18274111675126903,
+      "frr": 0.3191489361702128,
+      "tar": 0.6808510638297872,
+      "hter": 0.2509450264607409,
+      "auc": 0.860028080786262,
+      "genuine_n": 47,
+      "impostor_n": 394,
+      "threshold": 0.5978205318043149,
+      "weights": {
+        "raw": 1.0
+      },
+      "attack_by_user": {
+        "1": {
+          "n": 50,
+          "accepted": 23
+        },
+        "2": {
+          "n": 50,
+          "accepted": 12
+        },
+        "3": {
+          "n": 47,
+          "accepted": 6
+        },
+        "5": {
+          "n": 50,
+          "accepted": 2
+        },
+        "6": {
+          "n": 50,
+          "accepted": 7
+        },
+        "7": {
+          "n": 49,
+          "accepted": 17
+        },
+        "8": {
+          "n": 49,
+          "accepted": 3
+        },
+        "9": {
+          "n": 49,
+          "accepted": 2
+        }
+      }
+    },
+    "baseline_teacher": {
+      "far": 0.1116751269035533,
+      "frr": 0.23404255319148937,
+      "tar": 0.7659574468085106,
+      "hter": 0.17285884004752133,
+      "auc": 0.921535803002484,
+      "genuine_n": 47,
+      "impostor_n": 394,
+      "threshold": 1.498288181024,
+      "weights": {
+        "base": 1.0,
+        "identity_acc": 1.0
+      },
+      "attack_by_user": {
+        "1": {
+          "n": 50,
+          "accepted": 22
+        },
+        "2": {
+          "n": 50,
+          "accepted": 3
+        },
+        "3": {
+          "n": 47,
+          "accepted": 1
+        },
+        "5": {
+          "n": 50,
+          "accepted": 2
+        },
+        "6": {
+          "n": 50,
+          "accepted": 5
+        },
+        "7": {
+          "n": 49,
+          "accepted": 9
+        },
+        "8": {
+          "n": 49,
+          "accepted": 2
+        },
+        "9": {
+          "n": 49,
+          "accepted": 0
+        }
+      }
+    },
+    "baseline_raw_fixed1": {
+      "far": 0.2233502538071066,
+      "frr": 0.19148936170212766,
+      "tar": 0.8085106382978724,
+      "hter": 0.20741980775461713,
+      "auc": 0.8894049033372935,
+      "genuine_n": 47,
+      "impostor_n": 394,
+      "threshold": 0.6813759347651686,
+      "weights": {
+        "base": 1.0,
+        "raw": 1.0
+      },
+      "attack_by_user": {
+        "1": {
+          "n": 50,
+          "accepted": 23
+        },
+        "2": {
+          "n": 50,
+          "accepted": 19
+        },
+        "3": {
+          "n": 47,
+          "accepted": 9
+        },
+        "5": {
+          "n": 50,
+          "accepted": 1
+        },
+        "6": {
+          "n": 50,
+          "accepted": 8
+        },
+        "7": {
+          "n": 49,
+          "accepted": 21
+        },
+        "8": {
+          "n": 49,
+          "accepted": 4
+        },
+        "9": {
+          "n": 49,
+          "accepted": 3
+        }
+      }
+    },
+    "baseline_raw_optional": {
+      "far": 0.2233502538071066,
+      "frr": 0.19148936170212766,
+      "tar": 0.8085106382978724,
+      "hter": 0.20741980775461713,
+      "auc": 0.8894049033372935,
+      "genuine_n": 47,
+      "impostor_n": 394,
+      "threshold": 0.6813759347651686,
+      "weights": {
+        "base": 1.0,
+        "raw": 1.0
+      },
+      "attack_by_user": {
+        "1": {
+          "n": 50,
+          "accepted": 23
+        },
+        "2": {
+          "n": 50,
+          "accepted": 19
+        },
+        "3": {
+          "n": 47,
+          "accepted": 9
+        },
+        "5": {
+          "n": 50,
+          "accepted": 1
+        },
+        "6": {
+          "n": 50,
+          "accepted": 8
+        },
+        "7": {
+          "n": 49,
+          "accepted": 21
+        },
+        "8": {
+          "n": 49,
+          "accepted": 4
+        },
+        "9": {
+          "n": 49,
+          "accepted": 3
+        }
+      }
+    },
+    "baseline_teacher_raw_optional": {
+      "far": 0.13705583756345177,
+      "frr": 0.1702127659574468,
+      "tar": 0.8297872340425532,
+      "hter": 0.1536343017604493,
+      "auc": 0.9256399179177017,
+      "genuine_n": 47,
+      "impostor_n": 394,
+      "threshold": 1.7130085435983093,
+      "weights": {
+        "base": 1.0,
+        "identity_acc": 1.0,
+        "raw": 1.0
+      },
+      "attack_by_user": {
+        "1": {
+          "n": 50,
+          "accepted": 24
+        },
+        "2": {
+          "n": 50,
+          "accepted": 6
+        },
+        "3": {
+          "n": 47,
+          "accepted": 1
+        },
+        "5": {
+          "n": 50,
+          "accepted": 1
+        },
+        "6": {
+          "n": 50,
+          "accepted": 7
+        },
+        "7": {
+          "n": 49,
+          "accepted": 12
+        },
+        "8": {
+          "n": 49,
+          "accepted": 3
+        },
+        "9": {
+          "n": 49,
+          "accepted": 0
+        }
+      }
+    }
+  },
+  "selection": {
+    "baseline_raw_optional": {
+      "mean_fold_auc": 0.9129999999999999,
+      "fold_aucs": [
+        0.9137500000000001,
+        0.9574999999999999,
+        0.9299999999999999,
+        0.83125,
+        0.9325
+      ],
+      "attempts": [
+        {
+          "feature": "raw",
+          "weight": 0.25,
+          "mean_fold_auc": 0.88575,
+          "paired_gain": 0.032500000000000015,
+          "gain_se": 0.0073207752321731686,
+          "wins": 5,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 0.5,
+          "mean_fold_auc": 0.9019999999999999,
+          "paired_gain": 0.04875,
+          "gain_se": 0.012106300012803276,
+          "wins": 5,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 1.0,
+          "mean_fold_auc": 0.9129999999999999,
+          "paired_gain": 0.05974999999999999,
+          "gain_se": 0.017510711007837503,
+          "wins": 5,
+          "eligible": true
+        }
+      ]
+    },
+    "baseline_teacher_raw_optional": {
+      "mean_fold_auc": 0.9255000000000001,
+      "fold_aucs": [
+        0.9125,
+        0.96625,
+        0.92125,
+        0.875,
+        0.9524999999999999
+      ],
+      "attempts": [
+        {
+          "feature": "raw",
+          "weight": 0.25,
+          "mean_fold_auc": 0.9185000000000001,
+          "paired_gain": 0.004750000000000009,
+          "gain_se": 0.0017410485346480175,
+          "wins": 4,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 0.5,
+          "mean_fold_auc": 0.9225,
+          "paired_gain": 0.008750000000000036,
+          "gain_se": 0.003893102875599334,
+          "wins": 4,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 1.0,
+          "mean_fold_auc": 0.9255000000000001,
+          "paired_gain": 0.011749999999999993,
+          "gain_se": 0.006478329259924948,
+          "wins": 4,
+          "eligible": true
+        }
+      ]
+    }
+  },
+  "counts": {
+    "train_positive": 50,
+    "train_negative": 400,
+    "calibration_positive": 20,
+    "calibration_negative": 160,
+    "test_positive": 47,
+    "test_negative": 394
+  },
+  "feature_definition": "full772 unchanged; raw320=time/frequency mean/std of original input stored ACC spectrum; not unnormalized physical energy",
+  "scope": "strict inferred crossword known9users; frozen prior personalG/F and teachers, cached RBF; only score weights/calibration replay"
+}

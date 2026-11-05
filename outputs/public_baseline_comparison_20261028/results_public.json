@@ -1,0 +1,926 @@
+{
+  "esmb": {
+    "0001": {
+      "generation": {
+        "upstream_train": {
+          "windows": 60,
+          "audio_mae": 0.05522095412015915,
+          "audio_corr": 0.977112352848053,
+          "audio_dynamic_corr": 0.8848644495010376,
+          "audio_envelope_corr": 0.95504230260849,
+          "cycle_acc_mae": 0.03948506340384483,
+          "cycle_acc_corr": 0.9904486536979675
+        },
+        "upstream_validation": {
+          "windows": 12,
+          "audio_mae": 0.15418773889541626,
+          "audio_corr": 0.8692924976348877,
+          "audio_dynamic_corr": 0.5454531311988831,
+          "audio_envelope_corr": 0.6612332463264465,
+          "cycle_acc_mae": 0.10908371955156326,
+          "cycle_acc_corr": 0.9413602948188782
+        },
+        "auth_final": {
+          "windows": 16,
+          "audio_mae": 0.16874200105667114,
+          "audio_corr": 0.8607323169708252,
+          "audio_dynamic_corr": 0.5472874641418457,
+          "audio_envelope_corr": 0.6393587589263916,
+          "cycle_acc_mae": 0.10821570456027985,
+          "cycle_acc_corr": 0.9429247379302979
+        }
+      },
+      "routes": {
+        "raw320": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 36,
+            "tar": 1.0,
+            "far": 0.75,
+            "frr": 0.0,
+            "hter": 0.375,
+            "auc": 0.9583333333333334,
+            "tar_at_far5_test_roc": 0.625
+          },
+          "per_attacker": {
+            "0002": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.1394250206147179
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 13,
+              "mean_score": 0.11355977054296863
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 23,
+              "mean_score": 0.3737079637148651
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": 0.12144844755393785
+        },
+        "input_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 7,
+            "attacker_accepted": 1,
+            "tar": 0.875,
+            "far": 0.125,
+            "frr": 0.125,
+            "hter": 0.125,
+            "auc": 0.984375,
+            "tar_at_far5_test_roc": 0.875
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 7,
+            "attacker_accepted": 3,
+            "tar": 0.875,
+            "far": 0.0625,
+            "frr": 0.125,
+            "hter": 0.09375,
+            "auc": 0.984375,
+            "tar_at_far5_test_roc": 0.875
+          },
+          "per_attacker": {
+            "0002": {
+              "n": 8,
+              "accepted": 1,
+              "mean_score": -0.5325808346634511
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 3,
+              "mean_score": -0.509121108065289
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.8233002003030802
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": -0.3315298375849711
+        },
+        "cycle_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 12,
+            "tar": 1.0,
+            "far": 0.25,
+            "frr": 0.0,
+            "hter": 0.125,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "per_attacker": {
+            "0002": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.4076272616616172
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 3,
+              "mean_score": -0.26520297110211283
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 9,
+              "mean_score": -0.07439566554497373
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": -0.025447274844956236
+        },
+        "full772": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 9,
+            "tar": 1.0,
+            "far": 0.1875,
+            "frr": 0.0,
+            "hter": 0.09375,
+            "auc": 0.9973958333333333,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "per_attacker": {
+            "0002": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.5702069253177727
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 9,
+              "mean_score": -0.3660146266437672
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.820480069097291
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": -0.32206952712471565
+        }
+      },
+      "checkpoint_sha256": "b1b91bdba1246bab4032b6dd7665b3ce0dd904801413c97a5cda0b1ba73358f8"
+    },
+    "0002": {
+      "generation": {
+        "upstream_train": {
+          "windows": 60,
+          "audio_mae": 0.04998740181326866,
+          "audio_corr": 0.9823717474937439,
+          "audio_dynamic_corr": 0.9481614828109741,
+          "audio_envelope_corr": 0.9848735332489014,
+          "cycle_acc_mae": 0.03923214599490166,
+          "cycle_acc_corr": 0.9915114641189575
+        },
+        "upstream_validation": {
+          "windows": 12,
+          "audio_mae": 0.24560211598873138,
+          "audio_corr": 0.7359008193016052,
+          "audio_dynamic_corr": 0.4656640589237213,
+          "audio_envelope_corr": 0.5512225031852722,
+          "cycle_acc_mae": 0.11227577179670334,
+          "cycle_acc_corr": 0.9344201683998108
+        },
+        "auth_final": {
+          "windows": 16,
+          "audio_mae": 0.22179453074932098,
+          "audio_corr": 0.7909048199653625,
+          "audio_dynamic_corr": 0.6257174015045166,
+          "audio_envelope_corr": 0.7282900214195251,
+          "cycle_acc_mae": 0.11174306273460388,
+          "cycle_acc_corr": 0.9366386532783508
+        }
+      },
+      "routes": {
+        "raw320": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 10,
+            "tar": 1.0,
+            "far": 0.20833333333333334,
+            "frr": 0.0,
+            "hter": 0.10416666666666667,
+            "auc": 0.9739583333333333,
+            "tar_at_far5_test_roc": 0.75
+          },
+          "per_attacker": {
+            "0001": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.5118223590283932
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 10,
+              "mean_score": -0.018136050244579666
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.16207993714036115
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": "scale",
+            "cv_auc": 1.0
+          },
+          "threshold": 0.024095391605722632
+        },
+        "input_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 19,
+            "tar": 1.0,
+            "far": 0.3958333333333333,
+            "frr": 0.0,
+            "hter": 0.19791666666666666,
+            "auc": 0.8697916666666667,
+            "tar_at_far5_test_roc": 0.25
+          },
+          "per_attacker": {
+            "0001": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.43174357482188275
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 19,
+              "mean_score": 0.4621544738487156
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.11864704534902477
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": "scale",
+            "cv_auc": 1.0
+          },
+          "threshold": 0.3169808143840647
+        },
+        "cycle_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 1,
+            "tar": 1.0,
+            "far": 0.125,
+            "frr": 0.0,
+            "hter": 0.0625,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 1,
+            "tar": 1.0,
+            "far": 0.020833333333333332,
+            "frr": 0.0,
+            "hter": 0.010416666666666666,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "per_attacker": {
+            "0001": {
+              "n": 8,
+              "accepted": 1,
+              "mean_score": -0.4563734047360139
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 1,
+              "mean_score": -0.4711457017322564
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.5514132117389102
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": "scale",
+            "cv_auc": 1.0
+          },
+          "threshold": -0.20953103598124984
+        },
+        "full772": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 25,
+            "tar": 1.0,
+            "far": 0.5208333333333334,
+            "frr": 0.0,
+            "hter": 0.2604166666666667,
+            "auc": 0.7473958333333334,
+            "tar_at_far5_test_roc": 0.125
+          },
+          "per_attacker": {
+            "0001": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.413092809003924
+            },
+            "0003": {
+              "n": 24,
+              "accepted": 24,
+              "mean_score": 0.656735238609719
+            },
+            "0004": {
+              "n": 24,
+              "accepted": 1,
+              "mean_score": -0.04282356512199829
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": 0.28088584345250633
+        }
+      },
+      "checkpoint_sha256": "9390d5d0ef2982e3b06924b6901e1eb7f5a665c874bb13d2c77aa7e8981630c2"
+    }
+  },
+  "vibravox": {
+    "2BuQxDAGnW": {
+      "generation": {
+        "upstream_train": {
+          "windows": 60,
+          "audio_mae": 0.03752988949418068,
+          "audio_corr": 0.9920074939727783,
+          "audio_dynamic_corr": 0.987828254699707,
+          "audio_envelope_corr": 0.9979579448699951,
+          "cycle_acc_mae": 0.03835521638393402,
+          "cycle_acc_corr": 0.9921951293945312
+        },
+        "upstream_validation": {
+          "windows": 12,
+          "audio_mae": 0.23313051462173462,
+          "audio_corr": 0.6984702944755554,
+          "audio_dynamic_corr": 0.5912299752235413,
+          "audio_envelope_corr": 0.623223066329956,
+          "cycle_acc_mae": 0.20660321414470673,
+          "cycle_acc_corr": 0.7416777014732361
+        },
+        "auth_final": {
+          "windows": 16,
+          "audio_mae": 0.2336379587650299,
+          "audio_corr": 0.7207362651824951,
+          "audio_dynamic_corr": 0.6150792837142944,
+          "audio_envelope_corr": 0.6691400408744812,
+          "cycle_acc_mae": 0.18713881075382233,
+          "cycle_acc_corr": 0.7635763883590698
+        }
+      },
+      "routes": {
+        "raw320": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 10,
+            "tar": 1.0,
+            "far": 0.20833333333333334,
+            "frr": 0.0,
+            "hter": 0.10416666666666667,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "per_attacker": {
+            "95rDQfTOk7": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.37543311145252317
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 7,
+              "mean_score": 0.07925065388359462
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 3,
+              "mean_score": -0.030249046389503615
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": 0.11416394709297312
+        },
+        "input_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 14,
+            "tar": 1.0,
+            "far": 0.2916666666666667,
+            "frr": 0.0,
+            "hter": 0.14583333333333334,
+            "auc": 0.9635416666666666,
+            "tar_at_far5_test_roc": 0.75
+          },
+          "per_attacker": {
+            "95rDQfTOk7": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.7293669950649204
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 14,
+              "mean_score": 0.0991473203934894
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.875785163073278
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": 0.006644017889956222
+        },
+        "cycle_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 6,
+            "attacker_accepted": 1,
+            "tar": 0.75,
+            "far": 0.125,
+            "frr": 0.25,
+            "hter": 0.1875,
+            "auc": 0.953125,
+            "tar_at_far5_test_roc": 0.625
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 6,
+            "attacker_accepted": 17,
+            "tar": 0.75,
+            "far": 0.3541666666666667,
+            "frr": 0.25,
+            "hter": 0.30208333333333337,
+            "auc": 0.8098958333333334,
+            "tar_at_far5_test_roc": 0.25
+          },
+          "per_attacker": {
+            "95rDQfTOk7": {
+              "n": 8,
+              "accepted": 1,
+              "mean_score": -0.7754355677255304
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 16,
+              "mean_score": 0.2593619003019829
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 1,
+              "mean_score": -0.48278582852361956
+            }
+          },
+          "config": {
+            "C": 10.0,
+            "gamma": 0.1,
+            "cv_auc": 0.95
+          },
+          "threshold": 0.16694174044776416
+        },
+        "full772": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 13,
+            "tar": 1.0,
+            "far": 0.2708333333333333,
+            "frr": 0.0,
+            "hter": 0.13541666666666666,
+            "auc": 0.9817708333333334,
+            "tar_at_far5_test_roc": 0.875
+          },
+          "per_attacker": {
+            "95rDQfTOk7": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.693400216013556
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 13,
+              "mean_score": 0.19622904848020462
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 0,
+              "mean_score": -0.6883987379564531
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": 0.12311133287836608
+        }
+      },
+      "checkpoint_sha256": "4543cdaf7ae4eff13c0db3757bb0c61626f1a3240a7ccfa75a41cdadf86ebc89"
+    },
+    "95rDQfTOk7": {
+      "generation": {
+        "upstream_train": {
+          "windows": 60,
+          "audio_mae": 0.046076465398073196,
+          "audio_corr": 0.990729570388794,
+          "audio_dynamic_corr": 0.9877597689628601,
+          "audio_envelope_corr": 0.997987687587738,
+          "cycle_acc_mae": 0.040877602994441986,
+          "cycle_acc_corr": 0.9914942383766174
+        },
+        "upstream_validation": {
+          "windows": 12,
+          "audio_mae": 0.2312328815460205,
+          "audio_corr": 0.8007891774177551,
+          "audio_dynamic_corr": 0.718379020690918,
+          "audio_envelope_corr": 0.781610906124115,
+          "cycle_acc_mae": 0.19569146633148193,
+          "cycle_acc_corr": 0.7823712825775146
+        },
+        "auth_final": {
+          "windows": 16,
+          "audio_mae": 0.23278427124023438,
+          "audio_corr": 0.8003125190734863,
+          "audio_dynamic_corr": 0.7132700681686401,
+          "audio_envelope_corr": 0.7650166749954224,
+          "cycle_acc_mae": 0.20385326445102692,
+          "cycle_acc_corr": 0.7722436189651489
+        }
+      },
+      "routes": {
+        "raw320": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 38,
+            "tar": 1.0,
+            "far": 0.7916666666666666,
+            "frr": 0.0,
+            "hter": 0.3958333333333333,
+            "auc": 0.9791666666666667,
+            "tar_at_far5_test_roc": 0.875
+          },
+          "per_attacker": {
+            "2BuQxDAGnW": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.5514110911417935
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 17,
+              "mean_score": -0.07925065388359516
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 21,
+              "mean_score": 0.030249046389503282
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": -0.11416394709297117
+        },
+        "input_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 36,
+            "tar": 1.0,
+            "far": 0.75,
+            "frr": 0.0,
+            "hter": 0.375,
+            "auc": 0.5989583333333334,
+            "tar_at_far5_test_roc": 0.0
+          },
+          "per_attacker": {
+            "2BuQxDAGnW": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.6668896676779682
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 12,
+              "mean_score": -0.05441172002044883
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 24,
+              "mean_score": 0.9161486734615744
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": -0.027126900803535053
+        },
+        "cycle_encoder640": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 7,
+            "attacker_accepted": 0,
+            "tar": 0.875,
+            "far": 0.0,
+            "frr": 0.125,
+            "hter": 0.0625,
+            "auc": 0.96875,
+            "tar_at_far5_test_roc": 0.875
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 7,
+            "attacker_accepted": 16,
+            "tar": 0.875,
+            "far": 0.3333333333333333,
+            "frr": 0.125,
+            "hter": 0.22916666666666666,
+            "auc": 0.8619791666666666,
+            "tar_at_far5_test_roc": 0.375
+          },
+          "per_attacker": {
+            "2BuQxDAGnW": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.5116810262557527
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 3,
+              "mean_score": -0.4869407506285283
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 13,
+              "mean_score": -0.09794853137782995
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 0.95
+          },
+          "threshold": -0.12484832781464694
+        },
+        "full772": {
+          "known": {
+            "genuine_n": 8,
+            "attacker_n": 8,
+            "genuine_accepted": 8,
+            "attacker_accepted": 0,
+            "tar": 1.0,
+            "far": 0.0,
+            "frr": 0.0,
+            "hter": 0.0,
+            "auc": 1.0,
+            "tar_at_far5_test_roc": 1.0
+          },
+          "unknown": {
+            "genuine_n": 8,
+            "attacker_n": 48,
+            "genuine_accepted": 8,
+            "attacker_accepted": 39,
+            "tar": 1.0,
+            "far": 0.8125,
+            "frr": 0.0,
+            "hter": 0.40625,
+            "auc": 0.6953125,
+            "tar_at_far5_test_roc": 0.0
+          },
+          "per_attacker": {
+            "2BuQxDAGnW": {
+              "n": 8,
+              "accepted": 0,
+              "mean_score": -0.7030425135789777
+            },
+            "R7Mh-VA0Gl": {
+              "n": 24,
+              "accepted": 15,
+              "mean_score": -0.09257822939535154
+            },
+            "Rsw6ppioe6": {
+              "n": 24,
+              "accepted": 24,
+              "mean_score": 0.7797725314332151
+            }
+          },
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1,
+            "cv_auc": 1.0
+          },
+          "threshold": -0.11223875157325863
+        }
+      },
+      "checkpoint_sha256": "2b9ac36bbca9ad4210571837f0e7fdb2a7ae5bd8ebd9531d555a2ac88866ae73"
+    }
+  }
+}

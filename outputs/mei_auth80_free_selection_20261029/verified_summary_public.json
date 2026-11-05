@@ -1,0 +1,1896 @@
+{
+  "status": "PASS",
+  "targets": 9,
+  "results": {
+    "1": {
+      "target": 1,
+      "route": {
+        "far": 0.0,
+        "frr": 0.04,
+        "tar": 0.96,
+        "hter": 0.02,
+        "auc": 0.9970332480818414,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 2.809782546446586,
+        "attack_by_user": {
+          "2": {
+            "n": 50,
+            "accepted": 0
+          },
+          "3": {
+            "n": 47,
+            "accepted": 0
+          },
+          "4": {
+            "n": 47,
+            "accepted": 0
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 0
+          },
+          "7": {
+            "n": 49,
+            "accepted": 0
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "identity_acc": 1.0
+        },
+        "genuine_accepted": 48,
+        "attack_accepted": 0
+      },
+      "selected_count": 1,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.030690537084398978,
+          "frr": 0.02,
+          "tar": 0.98,
+          "hter": 0.02534526854219949,
+          "auc": 0.9953964194373401,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.8277871022731569,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 2
+            },
+            "3": {
+              "n": 47,
+              "accepted": 0
+            },
+            "4": {
+              "n": 47,
+              "accepted": 7
+            },
+            "5": {
+              "n": 50,
+              "accepted": 0
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 1
+            },
+            "8": {
+              "n": 49,
+              "accepted": 1
+            },
+            "9": {
+              "n": 49,
+              "accepted": 1
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.0,
+          "frr": 0.04,
+          "tar": 0.96,
+          "hter": 0.02,
+          "auc": 0.9970332480818414,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 2.809782546446586,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 0
+            },
+            "3": {
+              "n": 47,
+              "accepted": 0
+            },
+            "4": {
+              "n": 47,
+              "accepted": 0
+            },
+            "5": {
+              "n": 50,
+              "accepted": 0
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 0
+            },
+            "8": {
+              "n": 49,
+              "accepted": 0
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.0,
+        "frr": 0.04,
+        "tar": 0.96,
+        "hter": 0.02,
+        "auc": 0.9970332480818414,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 2.809782546446586,
+        "attack_by_user": {
+          "2": {
+            "n": 50,
+            "accepted": 0
+          },
+          "3": {
+            "n": 47,
+            "accepted": 0
+          },
+          "4": {
+            "n": 47,
+            "accepted": 0
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 0
+          },
+          "7": {
+            "n": 49,
+            "accepted": 0
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "identity_acc": 1.0
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "identity_acc": 1.0
+      }
+    },
+    "2": {
+      "target": 2,
+      "route": {
+        "far": 0.46035805626598464,
+        "frr": 0.12,
+        "tar": 0.88,
+        "hter": 0.29017902813299234,
+        "auc": 0.7752429667519182,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.4713616689971518,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 26
+          },
+          "4": {
+            "n": 47,
+            "accepted": 15
+          },
+          "5": {
+            "n": 50,
+            "accepted": 15
+          },
+          "6": {
+            "n": 50,
+            "accepted": 33
+          },
+          "7": {
+            "n": 49,
+            "accepted": 24
+          },
+          "8": {
+            "n": 49,
+            "accepted": 35
+          },
+          "9": {
+            "n": 49,
+            "accepted": 31
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "robust_audio": 0.5
+        },
+        "genuine_accepted": 44,
+        "attack_accepted": 180
+      },
+      "selected_count": 2,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.5063938618925832,
+          "frr": 0.1,
+          "tar": 0.9,
+          "hter": 0.3031969309462916,
+          "auc": 0.7645524296675192,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.236403863330084,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 6
+            },
+            "3": {
+              "n": 47,
+              "accepted": 24
+            },
+            "4": {
+              "n": 47,
+              "accepted": 27
+            },
+            "5": {
+              "n": 50,
+              "accepted": 15
+            },
+            "6": {
+              "n": 50,
+              "accepted": 33
+            },
+            "7": {
+              "n": 49,
+              "accepted": 29
+            },
+            "8": {
+              "n": 49,
+              "accepted": 33
+            },
+            "9": {
+              "n": 49,
+              "accepted": 31
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.46035805626598464,
+          "frr": 0.12,
+          "tar": 0.88,
+          "hter": 0.29017902813299234,
+          "auc": 0.7752429667519182,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.4713616689971518,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 26
+            },
+            "4": {
+              "n": 47,
+              "accepted": 15
+            },
+            "5": {
+              "n": 50,
+              "accepted": 15
+            },
+            "6": {
+              "n": 50,
+              "accepted": 33
+            },
+            "7": {
+              "n": 49,
+              "accepted": 24
+            },
+            "8": {
+              "n": 49,
+              "accepted": 35
+            },
+            "9": {
+              "n": 49,
+              "accepted": 31
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "robust_audio": 0.5
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.46035805626598464,
+        "frr": 0.12,
+        "tar": 0.88,
+        "hter": 0.29017902813299234,
+        "auc": 0.7752429667519182,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.4713616689971518,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 26
+          },
+          "4": {
+            "n": 47,
+            "accepted": 15
+          },
+          "5": {
+            "n": 50,
+            "accepted": 15
+          },
+          "6": {
+            "n": 50,
+            "accepted": 33
+          },
+          "7": {
+            "n": 49,
+            "accepted": 24
+          },
+          "8": {
+            "n": 49,
+            "accepted": 35
+          },
+          "9": {
+            "n": 49,
+            "accepted": 31
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "robust_audio": 0.5
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "raw": 1.0,
+        "robust_audio": 0.5
+      }
+    },
+    "3": {
+      "target": 3,
+      "route": {
+        "far": 0.46954314720812185,
+        "frr": 0.425531914893617,
+        "tar": 0.574468085106383,
+        "hter": 0.44753753105086946,
+        "auc": 0.6160492493789826,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 0.11642706953011403,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 18
+          },
+          "4": {
+            "n": 47,
+            "accepted": 12
+          },
+          "5": {
+            "n": 50,
+            "accepted": 39
+          },
+          "6": {
+            "n": 50,
+            "accepted": 25
+          },
+          "7": {
+            "n": 49,
+            "accepted": 25
+          },
+          "8": {
+            "n": 49,
+            "accepted": 30
+          },
+          "9": {
+            "n": 49,
+            "accepted": 36
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "old_acc": 1.0,
+          "old_audio": 0.25
+        },
+        "genuine_accepted": 27,
+        "attack_accepted": 185
+      },
+      "selected_count": 2,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.350253807106599,
+          "frr": 0.5319148936170213,
+          "tar": 0.46808510638297873,
+          "hter": 0.44108435036181015,
+          "auc": 0.6076790150124204,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.35430506009732887,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 12
+            },
+            "4": {
+              "n": 47,
+              "accepted": 5
+            },
+            "5": {
+              "n": 50,
+              "accepted": 39
+            },
+            "6": {
+              "n": 50,
+              "accepted": 11
+            },
+            "7": {
+              "n": 49,
+              "accepted": 24
+            },
+            "8": {
+              "n": 49,
+              "accepted": 20
+            },
+            "9": {
+              "n": 49,
+              "accepted": 27
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.46954314720812185,
+          "frr": 0.425531914893617,
+          "tar": 0.574468085106383,
+          "hter": 0.44753753105086946,
+          "auc": 0.6160492493789826,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.11642706953011403,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 18
+            },
+            "4": {
+              "n": 47,
+              "accepted": 12
+            },
+            "5": {
+              "n": 50,
+              "accepted": 39
+            },
+            "6": {
+              "n": 50,
+              "accepted": 25
+            },
+            "7": {
+              "n": 49,
+              "accepted": 25
+            },
+            "8": {
+              "n": 49,
+              "accepted": 30
+            },
+            "9": {
+              "n": 49,
+              "accepted": 36
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "old_acc": 1.0,
+            "old_audio": 0.25
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.46954314720812185,
+        "frr": 0.425531914893617,
+        "tar": 0.574468085106383,
+        "hter": 0.44753753105086946,
+        "auc": 0.6160492493789826,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 0.11642706953011403,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 18
+          },
+          "4": {
+            "n": 47,
+            "accepted": 12
+          },
+          "5": {
+            "n": 50,
+            "accepted": 39
+          },
+          "6": {
+            "n": 50,
+            "accepted": 25
+          },
+          "7": {
+            "n": 49,
+            "accepted": 25
+          },
+          "8": {
+            "n": 49,
+            "accepted": 30
+          },
+          "9": {
+            "n": 49,
+            "accepted": 36
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "old_acc": 1.0,
+          "old_audio": 0.25
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "old_acc": 1.0,
+        "old_audio": 0.25
+      }
+    },
+    "4": {
+      "target": 4,
+      "route": {
+        "far": 0.06598984771573604,
+        "frr": 0.2765957446808511,
+        "tar": 0.7234042553191489,
+        "hter": 0.17129279619829357,
+        "auc": 0.9214818014904418,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 2.4669863080653323,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 18
+          },
+          "2": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 0
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 3
+          },
+          "7": {
+            "n": 49,
+            "accepted": 4
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "identity_acc": 1.0,
+          "diff_latent": 1.0
+        },
+        "genuine_accepted": 34,
+        "attack_accepted": 26
+      },
+      "selected_count": 2,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.19543147208121828,
+          "frr": 0.19148936170212766,
+          "tar": 0.8085106382978724,
+          "hter": 0.19346041689167298,
+          "auc": 0.8769305540555136,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.3370478609357483,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 17
+            },
+            "2": {
+              "n": 50,
+              "accepted": 16
+            },
+            "3": {
+              "n": 47,
+              "accepted": 11
+            },
+            "5": {
+              "n": 50,
+              "accepted": 2
+            },
+            "6": {
+              "n": 50,
+              "accepted": 11
+            },
+            "7": {
+              "n": 49,
+              "accepted": 15
+            },
+            "8": {
+              "n": 49,
+              "accepted": 3
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.08375634517766498,
+          "frr": 0.2553191489361702,
+          "tar": 0.7446808510638299,
+          "hter": 0.1695377470569176,
+          "auc": 0.933200129603629,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 1.8436360292902805,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 20
+            },
+            "2": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 1
+            },
+            "5": {
+              "n": 50,
+              "accepted": 0
+            },
+            "6": {
+              "n": 50,
+              "accepted": 4
+            },
+            "7": {
+              "n": 49,
+              "accepted": 7
+            },
+            "8": {
+              "n": 49,
+              "accepted": 0
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "raw": 0.25
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.06091370558375635,
+        "frr": 0.2553191489361702,
+        "tar": 0.7446808510638299,
+        "hter": 0.15811642725996328,
+        "auc": 0.9249918997731937,
+        "genuine_n": 47,
+        "impostor_n": 394,
+        "threshold": 2.655166463794794,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 16
+          },
+          "2": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 0
+          },
+          "5": {
+            "n": 50,
+            "accepted": 0
+          },
+          "6": {
+            "n": 50,
+            "accepted": 3
+          },
+          "7": {
+            "n": 49,
+            "accepted": 4
+          },
+          "8": {
+            "n": 49,
+            "accepted": 0
+          },
+          "9": {
+            "n": 49,
+            "accepted": 0
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "identity_acc": 1.0,
+          "raw": 0.25,
+          "diff_latent": 1.0
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "identity_acc": 1.0,
+        "diff_latent": 1.0
+      }
+    },
+    "5": {
+      "target": 5,
+      "route": {
+        "far": 0.16879795396419436,
+        "frr": 0.34,
+        "tar": 0.6599999999999999,
+        "hter": 0.2543989769820972,
+        "auc": 0.8565728900255755,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 2.348769244442862,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 3
+          },
+          "3": {
+            "n": 47,
+            "accepted": 12
+          },
+          "4": {
+            "n": 47,
+            "accepted": 2
+          },
+          "6": {
+            "n": 50,
+            "accepted": 6
+          },
+          "7": {
+            "n": 49,
+            "accepted": 11
+          },
+          "8": {
+            "n": 49,
+            "accepted": 15
+          },
+          "9": {
+            "n": 49,
+            "accepted": 17
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "identity_acc": 1.0,
+          "diff_latent": 0.5,
+          "identity_audio": 0.5
+        },
+        "genuine_accepted": 33,
+        "attack_accepted": 66
+      },
+      "selected_count": 4,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.23273657289002558,
+          "frr": 0.22,
+          "tar": 0.78,
+          "hter": 0.22636828644501278,
+          "auc": 0.8466496163682864,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.4621676829960771,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "2": {
+              "n": 50,
+              "accepted": 4
+            },
+            "3": {
+              "n": 47,
+              "accepted": 18
+            },
+            "4": {
+              "n": 47,
+              "accepted": 3
+            },
+            "6": {
+              "n": 50,
+              "accepted": 9
+            },
+            "7": {
+              "n": 49,
+              "accepted": 13
+            },
+            "8": {
+              "n": 49,
+              "accepted": 21
+            },
+            "9": {
+              "n": 49,
+              "accepted": 22
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.15601023017902813,
+          "frr": 0.34,
+          "tar": 0.6599999999999999,
+          "hter": 0.24800511508951406,
+          "auc": 0.8598976982097186,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 1.8353396900959844,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 2
+            },
+            "3": {
+              "n": 47,
+              "accepted": 12
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "6": {
+              "n": 50,
+              "accepted": 5
+            },
+            "7": {
+              "n": 49,
+              "accepted": 12
+            },
+            "8": {
+              "n": 49,
+              "accepted": 12
+            },
+            "9": {
+              "n": 49,
+              "accepted": 16
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "identity_acc": 1.0
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.17135549872122763,
+        "frr": 0.34,
+        "tar": 0.6599999999999999,
+        "hter": 0.2556777493606138,
+        "auc": 0.8562148337595907,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 1.9674787911774172,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 3
+          },
+          "3": {
+            "n": 47,
+            "accepted": 13
+          },
+          "4": {
+            "n": 47,
+            "accepted": 2
+          },
+          "6": {
+            "n": 50,
+            "accepted": 6
+          },
+          "7": {
+            "n": 49,
+            "accepted": 12
+          },
+          "8": {
+            "n": 49,
+            "accepted": 14
+          },
+          "9": {
+            "n": 49,
+            "accepted": 17
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "identity_acc": 1.0,
+          "diff_latent": 0.5
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "raw": 1.0,
+        "identity_acc": 1.0,
+        "diff_latent": 0.5,
+        "identity_audio": 0.5
+      }
+    },
+    "6": {
+      "target": 6,
+      "route": {
+        "far": 0.44501278772378516,
+        "frr": 0.36,
+        "tar": 0.64,
+        "hter": 0.4025063938618926,
+        "auc": 0.6494117647058824,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.42692450710380947,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 5
+          },
+          "2": {
+            "n": 50,
+            "accepted": 38
+          },
+          "3": {
+            "n": 47,
+            "accepted": 28
+          },
+          "4": {
+            "n": 47,
+            "accepted": 17
+          },
+          "5": {
+            "n": 50,
+            "accepted": 18
+          },
+          "7": {
+            "n": 49,
+            "accepted": 24
+          },
+          "8": {
+            "n": 49,
+            "accepted": 22
+          },
+          "9": {
+            "n": 49,
+            "accepted": 22
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "identity_acc": 0.5
+        },
+        "genuine_accepted": 32,
+        "attack_accepted": 174
+      },
+      "selected_count": 1,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.4629156010230179,
+          "frr": 0.38,
+          "tar": 0.62,
+          "hter": 0.42145780051150894,
+          "auc": 0.6075703324808184,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.25417380193929273,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 10
+            },
+            "2": {
+              "n": 50,
+              "accepted": 36
+            },
+            "3": {
+              "n": 47,
+              "accepted": 27
+            },
+            "4": {
+              "n": 47,
+              "accepted": 24
+            },
+            "5": {
+              "n": 50,
+              "accepted": 16
+            },
+            "7": {
+              "n": 49,
+              "accepted": 25
+            },
+            "8": {
+              "n": 49,
+              "accepted": 20
+            },
+            "9": {
+              "n": 49,
+              "accepted": 23
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.44501278772378516,
+          "frr": 0.36,
+          "tar": 0.64,
+          "hter": 0.4025063938618926,
+          "auc": 0.6494117647058824,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.42692450710380947,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 5
+            },
+            "2": {
+              "n": 50,
+              "accepted": 38
+            },
+            "3": {
+              "n": 47,
+              "accepted": 28
+            },
+            "4": {
+              "n": 47,
+              "accepted": 17
+            },
+            "5": {
+              "n": 50,
+              "accepted": 18
+            },
+            "7": {
+              "n": 49,
+              "accepted": 24
+            },
+            "8": {
+              "n": 49,
+              "accepted": 22
+            },
+            "9": {
+              "n": 49,
+              "accepted": 22
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 0.5
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.44501278772378516,
+        "frr": 0.36,
+        "tar": 0.64,
+        "hter": 0.4025063938618926,
+        "auc": 0.6494117647058824,
+        "genuine_n": 50,
+        "impostor_n": 391,
+        "threshold": 0.42692450710380947,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 5
+          },
+          "2": {
+            "n": 50,
+            "accepted": 38
+          },
+          "3": {
+            "n": 47,
+            "accepted": 28
+          },
+          "4": {
+            "n": 47,
+            "accepted": 17
+          },
+          "5": {
+            "n": 50,
+            "accepted": 18
+          },
+          "7": {
+            "n": 49,
+            "accepted": 24
+          },
+          "8": {
+            "n": 49,
+            "accepted": 22
+          },
+          "9": {
+            "n": 49,
+            "accepted": 22
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "identity_acc": 0.5
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "identity_acc": 0.5
+      }
+    },
+    "7": {
+      "target": 7,
+      "route": {
+        "far": 0.15816326530612246,
+        "frr": 0.6530612244897959,
+        "tar": 0.34693877551020413,
+        "hter": 0.40561224489795916,
+        "auc": 0.7004893794252395,
+        "genuine_n": 49,
+        "impostor_n": 392,
+        "threshold": 0.9996796597126006,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 1
+          },
+          "2": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 7
+          },
+          "4": {
+            "n": 47,
+            "accepted": 19
+          },
+          "5": {
+            "n": 50,
+            "accepted": 18
+          },
+          "6": {
+            "n": 50,
+            "accepted": 8
+          },
+          "8": {
+            "n": 49,
+            "accepted": 5
+          },
+          "9": {
+            "n": 49,
+            "accepted": 3
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "old_acc": 0.5
+        },
+        "genuine_accepted": 17,
+        "attack_accepted": 62
+      },
+      "selected_count": 2,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.23469387755102042,
+          "frr": 0.673469387755102,
+          "tar": 0.326530612244898,
+          "hter": 0.45408163265306123,
+          "auc": 0.6144835485214494,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.26926691490075794,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 10
+            },
+            "2": {
+              "n": 50,
+              "accepted": 4
+            },
+            "3": {
+              "n": 47,
+              "accepted": 10
+            },
+            "4": {
+              "n": 47,
+              "accepted": 20
+            },
+            "5": {
+              "n": 50,
+              "accepted": 18
+            },
+            "6": {
+              "n": 50,
+              "accepted": 14
+            },
+            "8": {
+              "n": 49,
+              "accepted": 9
+            },
+            "9": {
+              "n": 49,
+              "accepted": 7
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.15816326530612246,
+          "frr": 0.6530612244897959,
+          "tar": 0.34693877551020413,
+          "hter": 0.40561224489795916,
+          "auc": 0.7004893794252395,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.9996796597126006,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "2": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 7
+            },
+            "4": {
+              "n": 47,
+              "accepted": 19
+            },
+            "5": {
+              "n": 50,
+              "accepted": 18
+            },
+            "6": {
+              "n": 50,
+              "accepted": 8
+            },
+            "8": {
+              "n": 49,
+              "accepted": 5
+            },
+            "9": {
+              "n": 49,
+              "accepted": 3
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "old_acc": 0.5
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.15816326530612246,
+        "frr": 0.6530612244897959,
+        "tar": 0.34693877551020413,
+        "hter": 0.40561224489795916,
+        "auc": 0.7004893794252395,
+        "genuine_n": 49,
+        "impostor_n": 392,
+        "threshold": 0.9996796597126006,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 1
+          },
+          "2": {
+            "n": 50,
+            "accepted": 1
+          },
+          "3": {
+            "n": 47,
+            "accepted": 7
+          },
+          "4": {
+            "n": 47,
+            "accepted": 19
+          },
+          "5": {
+            "n": 50,
+            "accepted": 18
+          },
+          "6": {
+            "n": 50,
+            "accepted": 8
+          },
+          "8": {
+            "n": 49,
+            "accepted": 5
+          },
+          "9": {
+            "n": 49,
+            "accepted": 3
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "old_acc": 0.5
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "raw": 1.0,
+        "old_acc": 0.5
+      }
+    },
+    "8": {
+      "target": 8,
+      "route": {
+        "far": 0.39540816326530615,
+        "frr": 0.30612244897959184,
+        "tar": 0.6938775510204082,
+        "hter": 0.350765306122449,
+        "auc": 0.699500208246564,
+        "genuine_n": 49,
+        "impostor_n": 392,
+        "threshold": 1.3518743150903574,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 26
+          },
+          "3": {
+            "n": 47,
+            "accepted": 22
+          },
+          "4": {
+            "n": 47,
+            "accepted": 5
+          },
+          "5": {
+            "n": 50,
+            "accepted": 23
+          },
+          "6": {
+            "n": 50,
+            "accepted": 30
+          },
+          "7": {
+            "n": 49,
+            "accepted": 16
+          },
+          "9": {
+            "n": 49,
+            "accepted": 33
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "diff_bundle": 1.0,
+          "diff_guidance": 0.5
+        },
+        "genuine_accepted": 34,
+        "attack_accepted": 155
+      },
+      "selected_count": 3,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.3596938775510204,
+          "frr": 0.32653061224489793,
+          "tar": 0.6734693877551021,
+          "hter": 0.34311224489795916,
+          "auc": 0.7018429820907954,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.42489325167921865,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 2
+            },
+            "2": {
+              "n": 50,
+              "accepted": 23
+            },
+            "3": {
+              "n": 47,
+              "accepted": 20
+            },
+            "4": {
+              "n": 47,
+              "accepted": 4
+            },
+            "5": {
+              "n": 50,
+              "accepted": 26
+            },
+            "6": {
+              "n": 50,
+              "accepted": 21
+            },
+            "7": {
+              "n": 49,
+              "accepted": 15
+            },
+            "9": {
+              "n": 49,
+              "accepted": 30
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.3622448979591837,
+          "frr": 0.2857142857142857,
+          "tar": 0.7142857142857143,
+          "hter": 0.3239795918367347,
+          "auc": 0.707725947521866,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.8672720638650545,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 23
+            },
+            "3": {
+              "n": 47,
+              "accepted": 20
+            },
+            "4": {
+              "n": 47,
+              "accepted": 4
+            },
+            "5": {
+              "n": 50,
+              "accepted": 23
+            },
+            "6": {
+              "n": 50,
+              "accepted": 24
+            },
+            "7": {
+              "n": 49,
+              "accepted": 16
+            },
+            "9": {
+              "n": 49,
+              "accepted": 32
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.3673469387755102,
+        "frr": 0.2857142857142857,
+        "tar": 0.7142857142857143,
+        "hter": 0.326530612244898,
+        "auc": 0.7088192419825072,
+        "genuine_n": 49,
+        "impostor_n": 392,
+        "threshold": 1.2374783246579004,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 26
+          },
+          "3": {
+            "n": 47,
+            "accepted": 17
+          },
+          "4": {
+            "n": 47,
+            "accepted": 4
+          },
+          "5": {
+            "n": 50,
+            "accepted": 24
+          },
+          "6": {
+            "n": 50,
+            "accepted": 27
+          },
+          "7": {
+            "n": 49,
+            "accepted": 15
+          },
+          "9": {
+            "n": 49,
+            "accepted": 31
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "diff_bundle": 1.0
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "raw": 1.0,
+        "diff_bundle": 1.0,
+        "diff_guidance": 0.5
+      }
+    },
+    "9": {
+      "target": 9,
+      "route": {
+        "far": 0.3112244897959184,
+        "frr": 0.3673469387755102,
+        "tar": 0.6326530612244898,
+        "hter": 0.3392857142857143,
+        "auc": 0.7280299875052061,
+        "genuine_n": 49,
+        "impostor_n": 392,
+        "threshold": 1.3426107782277146,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 21
+          },
+          "3": {
+            "n": 47,
+            "accepted": 18
+          },
+          "4": {
+            "n": 47,
+            "accepted": 3
+          },
+          "5": {
+            "n": 50,
+            "accepted": 22
+          },
+          "6": {
+            "n": 50,
+            "accepted": 15
+          },
+          "7": {
+            "n": 49,
+            "accepted": 15
+          },
+          "8": {
+            "n": 49,
+            "accepted": 28
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "diff_latent": 1.0,
+          "raw": 0.5
+        },
+        "genuine_accepted": 31,
+        "attack_accepted": 122
+      },
+      "selected_count": 2,
+      "reference": {
+        "baseline_rbf": {
+          "far": 0.29846938775510207,
+          "frr": 0.40816326530612246,
+          "tar": 0.5918367346938775,
+          "hter": 0.3533163265306123,
+          "auc": 0.711682632236568,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.5908855643629303,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 20
+            },
+            "3": {
+              "n": 47,
+              "accepted": 19
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "5": {
+              "n": 50,
+              "accepted": 22
+            },
+            "6": {
+              "n": 50,
+              "accepted": 11
+            },
+            "7": {
+              "n": 49,
+              "accepted": 18
+            },
+            "8": {
+              "n": 49,
+              "accepted": 25
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.2857142857142857,
+          "frr": 0.40816326530612246,
+          "tar": 0.5918367346938775,
+          "hter": 0.3469387755102041,
+          "auc": 0.7297480216576426,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 1.2516960497388954,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 17
+            },
+            "3": {
+              "n": 47,
+              "accepted": 17
+            },
+            "4": {
+              "n": 47,
+              "accepted": 0
+            },
+            "5": {
+              "n": 50,
+              "accepted": 25
+            },
+            "6": {
+              "n": 50,
+              "accepted": 12
+            },
+            "7": {
+              "n": 49,
+              "accepted": 13
+            },
+            "8": {
+              "n": 49,
+              "accepted": 28
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "robust_audio": 0.25
+          }
+        }
+      },
+      "fixed_quota_reference": {
+        "far": 0.3392857142857143,
+        "frr": 0.3469387755102041,
+        "tar": 0.653061224489796,
+        "hter": 0.3431122448979592,
+        "auc": 0.7269887546855477,
+        "genuine_n": 49,
+        "impostor_n": 392,
+        "threshold": 1.566016320093311,
+        "attack_by_user": {
+          "1": {
+            "n": 50,
+            "accepted": 0
+          },
+          "2": {
+            "n": 50,
+            "accepted": 20
+          },
+          "3": {
+            "n": 47,
+            "accepted": 22
+          },
+          "4": {
+            "n": 47,
+            "accepted": 3
+          },
+          "5": {
+            "n": 50,
+            "accepted": 26
+          },
+          "6": {
+            "n": 50,
+            "accepted": 15
+          },
+          "7": {
+            "n": 49,
+            "accepted": 15
+          },
+          "8": {
+            "n": 49,
+            "accepted": 32
+          }
+        },
+        "weights": {
+          "base": 1.0,
+          "raw": 1.0,
+          "robust_audio": 0.25,
+          "diff_latent": 1.0
+        }
+      },
+      "weights": {
+        "base": 1.0,
+        "diff_latent": 1.0,
+        "raw": 0.5
+      }
+    }
+  },
+  "macro": {
+    "baseline_rbf": {
+      "tar": 0.6831591643749698,
+      "far": 0.2968087772149984,
+      "auc": 0.7474208366523012,
+      "hter": 0.3068248064200143
+    },
+    "teacher_limited": {
+      "tar": 0.6791344622955565,
+      "far": 0.2689781128371307,
+      "auc": 0.7743109339263022,
+      "hter": 0.29492182527078714
+    },
+    "diffusion_limited": {
+      "tar": 0.6859371833839919,
+      "far": 0.2746643459855803,
+      "auc": 0.7728045931716337,
+      "hter": 0.2943635813007942
+    },
+    "free_selection": {
+      "tar": 0.6790379697978481,
+      "far": 0.2749441901383521,
+      "auc": 0.7715346106235168,
+      "hter": 0.29795311017025194
+    }
+  },
+  "verification": "Replayed train-fold greedy selection and final score fusion from fixed models/private features; recomputed pairwise AUC, all counts, HTER and eight-source labels"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "targets": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "routes": 45,
+  "checks": [
+    "135 Audio outer-model refits reproduce OOF",
+    "490candidates pertarget replay",
+    "ACC-only previous control exact replay",
+    "fixedACC anchor unchanged",
+    "independent threshold search",
+    "all final scores counts and perword2/16",
+    "all8sources30each",
+    "rawACC->G->AudioTeacher cache provenance on cal/test;no realAudio"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "targets": [
+    1,
+    4,
+    5
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": [
+    5,
+    10,
+    20,
+    50
+  ],
+  "variants": [
+    "compact64",
+    "compact128",
+    "semi_hard64",
+    "factorized_control64_16",
+    "factorized64_16"
+  ],
+  "input": "frozen complete CycleGAN 772-D features",
+  "upstream_per_user": 150,
+  "auth_fit_per_user": 60,
+  "auth_calibration_per_user": 30,
+  "cv": "5 word-grouped folds; scalers, projection, mining and SVM fit on fitting fold only",
+  "temperature": 0.07,
+  "projection_optimizer": {
+    "type": "AdamW",
+    "lr": 0.003,
+    "weight_decay": 0.01
+  },
+  "loss": "9-ID full-batch SupCon + target-balanced binary BCE; optional word CE * 0.2 and cross-covariance squared norm",
+  "semi_hard_strength": "clip((epoch-2)/8,0,1)",
+  "negative_strategy": "nearest 2 training identity prototypes; similarity below maximum same-ID positive similarity; upweight only; all negative samples retained and total per-anchor negative weight normalized",
+  "dual_control": "same parameter tensors and initialization; auxiliary loss weight 0 vs 1; both 62415 parameters, identity embedding 64, content 16",
+  "classification": "RBF SVM fitted on identity embeddings; C in [1,10,100], gamma in [scale,0.1] selected in training CV; threshold calibration separate",
+  "checks": [
+    "same total parameter count",
+    "auxiliary disabled identity tensors exactly equal compact64 after 5 training steps",
+    "semi-hard identity weights differ from compact64 by epoch5",
+    "auxiliary enabled changes identity tensors by epoch5"
+  ],
+  "limitations": [
+    "not original CHNS sampler reproduction",
+    "no direct historical 512-D learned fusion rerun",
+    "same historical final recordings reused: exploratory",
+    "final words not wholly held out; row//10 word labels assume missing rows only at tail",
+    "linear word probe alone does not prove content independence"
+  ]
+}

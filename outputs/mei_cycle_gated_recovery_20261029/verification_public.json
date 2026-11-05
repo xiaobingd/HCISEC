@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "targets": [
+    1,
+    4,
+    5
+  ],
+  "routes": 36,
+  "checks": [
+    "scaler authtrain450 only",
+    "validation selected checkpoint replay",
+    "saved classifier calibration threshold replay",
+    "AUC/TAR/FAR pairwise/count replay",
+    "all eight attack sources"
+  ]
+}

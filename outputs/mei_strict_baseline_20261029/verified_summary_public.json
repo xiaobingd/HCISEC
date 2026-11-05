@@ -1,0 +1,568 @@
+{
+  "status": "PASS",
+  "completed_targets": [
+    "1",
+    "4",
+    "5",
+    "2",
+    "6",
+    "7",
+    "9",
+    "3",
+    "8"
+  ],
+  "target_count": 9,
+  "all_nine_complete": true,
+  "content_role_disjoint": true,
+  "source_row_complete": true,
+  "counts_and_pairwise_auc": true,
+  "scope": "Closed-set known negative identities; disjoint content groups at all upstream/authentication stages under mixed10/20 mapping",
+  "limitations": [
+    "Content grouping inferred from real Audio and user-confirmed two-part composition, not per-record transcript verification",
+    "Missing rows assumed at tail per user; actual source names/phase not individually verified",
+    "Existing spectrogram normalization provenance unknown; no new all-data normalizer fitted",
+    "Same-session, historical recordings reused; newly initialized weights do not make data blind"
+  ],
+  "results": {
+    "1": {
+      "selected_epoch": 100,
+      "genuine_n": 50,
+      "genuine_accepted": 47,
+      "attack_n": 391,
+      "attack_accepted": 19,
+      "TAR": 0.94,
+      "FAR": 0.04859335038363171,
+      "AUC": 0.9881841432225064,
+      "by_attacker": {
+        "user2": {
+          "accepted": 0,
+          "n": 50,
+          "far": 0.0,
+          "mean_logit": -12.022909164428711
+        },
+        "user3": {
+          "accepted": 3,
+          "n": 47,
+          "far": 0.06382978723404255,
+          "mean_logit": -11.27794075012207
+        },
+        "user4": {
+          "accepted": 7,
+          "n": 47,
+          "far": 0.14893617021276595,
+          "mean_logit": -8.799356460571289
+        },
+        "user5": {
+          "accepted": 1,
+          "n": 50,
+          "far": 0.02,
+          "mean_logit": -12.190834999084473
+        },
+        "user6": {
+          "accepted": 1,
+          "n": 50,
+          "far": 0.02,
+          "mean_logit": -11.51672077178955
+        },
+        "user7": {
+          "accepted": 3,
+          "n": 49,
+          "far": 0.061224489795918366,
+          "mean_logit": -12.134349822998047
+        },
+        "user8": {
+          "accepted": 2,
+          "n": 49,
+          "far": 0.04081632653061224,
+          "mean_logit": -11.51972770690918
+        },
+        "user9": {
+          "accepted": 2,
+          "n": 49,
+          "far": 0.04081632653061224,
+          "mean_logit": -11.833988189697266
+        }
+      }
+    },
+    "4": {
+      "selected_epoch": 15,
+      "genuine_n": 47,
+      "genuine_accepted": 34,
+      "attack_n": 394,
+      "attack_accepted": 131,
+      "TAR": 0.723404255319149,
+      "FAR": 0.33248730964467005,
+      "AUC": 0.7896101090830543,
+      "by_attacker": {
+        "bo": {
+          "accepted": 20,
+          "n": 50,
+          "far": 0.4,
+          "mean_logit": 32.0464973449707
+        },
+        "user2": {
+          "accepted": 16,
+          "n": 50,
+          "far": 0.32,
+          "mean_logit": 30.240280151367188
+        },
+        "user3": {
+          "accepted": 18,
+          "n": 47,
+          "far": 0.3829787234042553,
+          "mean_logit": 31.26040267944336
+        },
+        "user5": {
+          "accepted": 12,
+          "n": 50,
+          "far": 0.24,
+          "mean_logit": 28.273908615112305
+        },
+        "user6": {
+          "accepted": 21,
+          "n": 50,
+          "far": 0.42,
+          "mean_logit": 30.485013961791992
+        },
+        "user7": {
+          "accepted": 20,
+          "n": 49,
+          "far": 0.40816326530612246,
+          "mean_logit": 30.92938804626465
+        },
+        "user8": {
+          "accepted": 12,
+          "n": 49,
+          "far": 0.24489795918367346,
+          "mean_logit": 29.265426635742188
+        },
+        "user9": {
+          "accepted": 12,
+          "n": 49,
+          "far": 0.24489795918367346,
+          "mean_logit": 27.737356185913086
+        }
+      }
+    },
+    "5": {
+      "selected_epoch": 70,
+      "genuine_n": 50,
+      "genuine_accepted": 29,
+      "attack_n": 391,
+      "attack_accepted": 102,
+      "TAR": 0.58,
+      "FAR": 0.2608695652173913,
+      "AUC": 0.6975959079283888,
+      "by_attacker": {
+        "bo": {
+          "accepted": 2,
+          "n": 50,
+          "far": 0.04,
+          "mean_logit": -21.998441696166992
+        },
+        "user2": {
+          "accepted": 12,
+          "n": 50,
+          "far": 0.24,
+          "mean_logit": -16.575050354003906
+        },
+        "user3": {
+          "accepted": 17,
+          "n": 47,
+          "far": 0.3617021276595745,
+          "mean_logit": -15.609766960144043
+        },
+        "user4": {
+          "accepted": 9,
+          "n": 47,
+          "far": 0.19148936170212766,
+          "mean_logit": -17.795106887817383
+        },
+        "user6": {
+          "accepted": 11,
+          "n": 50,
+          "far": 0.22,
+          "mean_logit": -16.315736770629883
+        },
+        "user7": {
+          "accepted": 12,
+          "n": 49,
+          "far": 0.24489795918367346,
+          "mean_logit": -15.116780281066895
+        },
+        "user8": {
+          "accepted": 22,
+          "n": 49,
+          "far": 0.4489795918367347,
+          "mean_logit": -14.264147758483887
+        },
+        "user9": {
+          "accepted": 17,
+          "n": 49,
+          "far": 0.3469387755102041,
+          "mean_logit": -14.873555183410645
+        }
+      }
+    },
+    "2": {
+      "selected_epoch": 30,
+      "genuine_n": 50,
+      "genuine_accepted": 42,
+      "attack_n": 391,
+      "attack_accepted": 204,
+      "TAR": 0.84,
+      "FAR": 0.5217391304347826,
+      "AUC": 0.719693094629156,
+      "by_attacker": {
+        "bo": {
+          "accepted": 11,
+          "n": 50,
+          "far": 0.22,
+          "mean_logit": 6.4979023933410645
+        },
+        "user3": {
+          "accepted": 28,
+          "n": 47,
+          "far": 0.5957446808510638,
+          "mean_logit": 13.198808670043945
+        },
+        "user4": {
+          "accepted": 26,
+          "n": 47,
+          "far": 0.5531914893617021,
+          "mean_logit": 12.559276580810547
+        },
+        "user5": {
+          "accepted": 25,
+          "n": 50,
+          "far": 0.5,
+          "mean_logit": 12.442397117614746
+        },
+        "user6": {
+          "accepted": 36,
+          "n": 50,
+          "far": 0.72,
+          "mean_logit": 15.27208137512207
+        },
+        "user7": {
+          "accepted": 27,
+          "n": 49,
+          "far": 0.5510204081632653,
+          "mean_logit": 12.283473014831543
+        },
+        "user8": {
+          "accepted": 27,
+          "n": 49,
+          "far": 0.5510204081632653,
+          "mean_logit": 14.094300270080566
+        },
+        "user9": {
+          "accepted": 24,
+          "n": 49,
+          "far": 0.4897959183673469,
+          "mean_logit": 12.744690895080566
+        }
+      }
+    },
+    "6": {
+      "selected_epoch": 35,
+      "genuine_n": 50,
+      "genuine_accepted": 28,
+      "attack_n": 391,
+      "attack_accepted": 183,
+      "TAR": 0.56,
+      "FAR": 0.4680306905370844,
+      "AUC": 0.570690537084399,
+      "by_attacker": {
+        "bo": {
+          "accepted": 7,
+          "n": 50,
+          "far": 0.14,
+          "mean_logit": -13.459931373596191
+        },
+        "user2": {
+          "accepted": 31,
+          "n": 50,
+          "far": 0.62,
+          "mean_logit": -4.79287052154541
+        },
+        "user3": {
+          "accepted": 23,
+          "n": 47,
+          "far": 0.48936170212765956,
+          "mean_logit": -5.594345569610596
+        },
+        "user4": {
+          "accepted": 17,
+          "n": 47,
+          "far": 0.3617021276595745,
+          "mean_logit": -7.883706092834473
+        },
+        "user5": {
+          "accepted": 22,
+          "n": 50,
+          "far": 0.44,
+          "mean_logit": -7.385648727416992
+        },
+        "user7": {
+          "accepted": 28,
+          "n": 49,
+          "far": 0.5714285714285714,
+          "mean_logit": -5.269754409790039
+        },
+        "user8": {
+          "accepted": 30,
+          "n": 49,
+          "far": 0.6122448979591837,
+          "mean_logit": -5.319577693939209
+        },
+        "user9": {
+          "accepted": 25,
+          "n": 49,
+          "far": 0.5102040816326531,
+          "mean_logit": -6.413403034210205
+        }
+      }
+    },
+    "7": {
+      "selected_epoch": 50,
+      "genuine_n": 49,
+      "genuine_accepted": 24,
+      "attack_n": 392,
+      "attack_accepted": 128,
+      "TAR": 0.4897959183673469,
+      "FAR": 0.32653061224489793,
+      "AUC": 0.6525926697209496,
+      "by_attacker": {
+        "bo": {
+          "accepted": 9,
+          "n": 50,
+          "far": 0.18,
+          "mean_logit": -19.6807918548584
+        },
+        "user2": {
+          "accepted": 18,
+          "n": 50,
+          "far": 0.36,
+          "mean_logit": -14.18175983428955
+        },
+        "user3": {
+          "accepted": 13,
+          "n": 47,
+          "far": 0.2765957446808511,
+          "mean_logit": -15.023882865905762
+        },
+        "user4": {
+          "accepted": 16,
+          "n": 47,
+          "far": 0.3404255319148936,
+          "mean_logit": -14.662059783935547
+        },
+        "user5": {
+          "accepted": 23,
+          "n": 50,
+          "far": 0.46,
+          "mean_logit": -12.689352035522461
+        },
+        "user6": {
+          "accepted": 17,
+          "n": 50,
+          "far": 0.34,
+          "mean_logit": -15.147309303283691
+        },
+        "user8": {
+          "accepted": 20,
+          "n": 49,
+          "far": 0.40816326530612246,
+          "mean_logit": -13.0316162109375
+        },
+        "user9": {
+          "accepted": 12,
+          "n": 49,
+          "far": 0.24489795918367346,
+          "mean_logit": -15.521697044372559
+        }
+      }
+    },
+    "9": {
+      "selected_epoch": 35,
+      "genuine_n": 49,
+      "genuine_accepted": 25,
+      "attack_n": 392,
+      "attack_accepted": 121,
+      "TAR": 0.5102040816326531,
+      "FAR": 0.3086734693877551,
+      "AUC": 0.6412432319866722,
+      "by_attacker": {
+        "bo": {
+          "accepted": 1,
+          "n": 50,
+          "far": 0.02,
+          "mean_logit": -18.028072357177734
+        },
+        "user2": {
+          "accepted": 17,
+          "n": 50,
+          "far": 0.34,
+          "mean_logit": -10.37309455871582
+        },
+        "user3": {
+          "accepted": 20,
+          "n": 47,
+          "far": 0.425531914893617,
+          "mean_logit": -9.193171501159668
+        },
+        "user4": {
+          "accepted": 3,
+          "n": 47,
+          "far": 0.06382978723404255,
+          "mean_logit": -14.446626663208008
+        },
+        "user5": {
+          "accepted": 25,
+          "n": 50,
+          "far": 0.5,
+          "mean_logit": -9.690004348754883
+        },
+        "user6": {
+          "accepted": 19,
+          "n": 50,
+          "far": 0.38,
+          "mean_logit": -10.354409217834473
+        },
+        "user7": {
+          "accepted": 14,
+          "n": 49,
+          "far": 0.2857142857142857,
+          "mean_logit": -10.722297668457031
+        },
+        "user8": {
+          "accepted": 22,
+          "n": 49,
+          "far": 0.4489795918367347,
+          "mean_logit": -8.376715660095215
+        }
+      }
+    },
+    "3": {
+      "selected_epoch": 15,
+      "genuine_n": 47,
+      "genuine_accepted": 21,
+      "attack_n": 394,
+      "attack_accepted": 196,
+      "TAR": 0.44680851063829785,
+      "FAR": 0.49746192893401014,
+      "AUC": 0.5053461496921914,
+      "by_attacker": {
+        "bo": {
+          "accepted": 22,
+          "n": 50,
+          "far": 0.44,
+          "mean_logit": 1.5709689855575562
+        },
+        "user2": {
+          "accepted": 28,
+          "n": 50,
+          "far": 0.56,
+          "mean_logit": 3.518362045288086
+        },
+        "user4": {
+          "accepted": 14,
+          "n": 47,
+          "far": 0.2978723404255319,
+          "mean_logit": 0.8381821513175964
+        },
+        "user5": {
+          "accepted": 30,
+          "n": 50,
+          "far": 0.6,
+          "mean_logit": 4.0560173988342285
+        },
+        "user6": {
+          "accepted": 24,
+          "n": 50,
+          "far": 0.48,
+          "mean_logit": 2.8879048824310303
+        },
+        "user7": {
+          "accepted": 28,
+          "n": 49,
+          "far": 0.5714285714285714,
+          "mean_logit": 3.0841732025146484
+        },
+        "user8": {
+          "accepted": 26,
+          "n": 49,
+          "far": 0.5306122448979592,
+          "mean_logit": 2.192650079727173
+        },
+        "user9": {
+          "accepted": 24,
+          "n": 49,
+          "far": 0.4897959183673469,
+          "mean_logit": 3.6042656898498535
+        }
+      }
+    },
+    "8": {
+      "selected_epoch": 20,
+      "genuine_n": 49,
+      "genuine_accepted": 33,
+      "attack_n": 392,
+      "attack_accepted": 187,
+      "TAR": 0.673469387755102,
+      "FAR": 0.4770408163265306,
+      "AUC": 0.6400458142440649,
+      "by_attacker": {
+        "bo": {
+          "accepted": 0,
+          "n": 50,
+          "far": 0.0,
+          "mean_logit": -1.8883918523788452
+        },
+        "user2": {
+          "accepted": 24,
+          "n": 50,
+          "far": 0.48,
+          "mean_logit": 8.379842758178711
+        },
+        "user3": {
+          "accepted": 25,
+          "n": 47,
+          "far": 0.5319148936170213,
+          "mean_logit": 9.63084602355957
+        },
+        "user4": {
+          "accepted": 19,
+          "n": 47,
+          "far": 0.40425531914893614,
+          "mean_logit": 6.190594673156738
+        },
+        "user5": {
+          "accepted": 35,
+          "n": 50,
+          "far": 0.7,
+          "mean_logit": 11.177452087402344
+        },
+        "user6": {
+          "accepted": 29,
+          "n": 50,
+          "far": 0.58,
+          "mean_logit": 9.429577827453613
+        },
+        "user7": {
+          "accepted": 24,
+          "n": 49,
+          "far": 0.4897959183673469,
+          "mean_logit": 8.29117488861084
+        },
+        "user9": {
+          "accepted": 31,
+          "n": 49,
+          "far": 0.6326530612244898,
+          "mean_logit": 10.71248722076416
+        }
+      }
+    }
+  }
+}

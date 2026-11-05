@@ -1,0 +1,120 @@
+{
+  "weights": {
+    "baseline772": {
+      "base": 1.0
+    },
+    "raw_only": {
+      "raw": 1.0
+    },
+    "baseline_teacher": {
+      "base": 1.0,
+      "identity_acc": 1.0
+    },
+    "baseline_raw_fixed1": {
+      "base": 1.0,
+      "raw": 1.0
+    },
+    "baseline_raw_optional": {
+      "base": 1.0,
+      "raw": 1.0
+    },
+    "baseline_teacher_raw_optional": {
+      "base": 1.0,
+      "identity_acc": 1.0,
+      "raw": 1.0
+    }
+  },
+  "thresholds": {
+    "baseline772": 0.42832038964097835,
+    "raw_only": 0.5978205318043149,
+    "baseline_teacher": 1.498288181024,
+    "baseline_raw_fixed1": 0.6813759347651686,
+    "baseline_raw_optional": 0.6813759347651686,
+    "baseline_teacher_raw_optional": 1.7130085435983093
+  },
+  "selection": {
+    "baseline_raw_optional": {
+      "mean_fold_auc": 0.9129999999999999,
+      "fold_aucs": [
+        0.9137500000000001,
+        0.9574999999999999,
+        0.9299999999999999,
+        0.83125,
+        0.9325
+      ],
+      "attempts": [
+        {
+          "feature": "raw",
+          "weight": 0.25,
+          "mean_fold_auc": 0.88575,
+          "paired_gain": 0.032500000000000015,
+          "gain_se": 0.0073207752321731686,
+          "wins": 5,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 0.5,
+          "mean_fold_auc": 0.9019999999999999,
+          "paired_gain": 0.04875,
+          "gain_se": 0.012106300012803276,
+          "wins": 5,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 1.0,
+          "mean_fold_auc": 0.9129999999999999,
+          "paired_gain": 0.05974999999999999,
+          "gain_se": 0.017510711007837503,
+          "wins": 5,
+          "eligible": true
+        }
+      ]
+    },
+    "baseline_teacher_raw_optional": {
+      "mean_fold_auc": 0.9255000000000001,
+      "fold_aucs": [
+        0.9125,
+        0.96625,
+        0.92125,
+        0.875,
+        0.9524999999999999
+      ],
+      "attempts": [
+        {
+          "feature": "raw",
+          "weight": 0.25,
+          "mean_fold_auc": 0.9185000000000001,
+          "paired_gain": 0.004750000000000009,
+          "gain_se": 0.0017410485346480175,
+          "wins": 4,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 0.5,
+          "mean_fold_auc": 0.9225,
+          "paired_gain": 0.008750000000000036,
+          "gain_se": 0.003893102875599334,
+          "wins": 4,
+          "eligible": true
+        },
+        {
+          "feature": "raw",
+          "weight": 1.0,
+          "mean_fold_auc": 0.9255000000000001,
+          "paired_gain": 0.011749999999999993,
+          "gain_se": 0.006478329259924948,
+          "wins": 4,
+          "eligible": true
+        }
+      ]
+    }
+  },
+  "source": "/autodl-fs/data/mei_strict_autosupplement_20261029/U4",
+  "teacher_anchor": "prior training-OOF selected nonDiff route, removing raw; no reselection",
+  "calibration": "joint minHTER with max error tie; differs from old acceptance-priority threshold",
+  "final_scores_seen": false,
+  "limitation": "historical final already seen in prior experiments; exploratory replay"
+}
