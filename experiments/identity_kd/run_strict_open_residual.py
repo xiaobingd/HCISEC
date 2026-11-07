@@ -194,13 +194,14 @@ def eval_scores(z,d,client,attackers,condition,direction):
 
 def evaluate(z,d,f):
     results={}
+    cs=[];cp=[]
     for cond in ['sameword','crossword']:
-        cs=[];cp=[]
         for direction in [0,1]:
             for client in f['calibration']:
                 attacks=[u for u in f['base']+f['calibration'] if u!=client]
                 sc,po=eval_scores(z,d,client,attacks,cond,direction);cs.extend(sc);cp.extend(po)
-        cs=np.asarray(cs);cp=np.asarray(cp);tau=r.eer_threshold(cs[cp],cs[~cp])
+    cs=np.asarray(cs);cp=np.asarray(cp);tau=r.eer_threshold(cs[cp],cs[~cp])
+    for cond in ['sameword','crossword']:
         results[cond]={}
         for scope,attacks in [('unseen_attacker',[f['unseen_attacker']]),('all_seven_sources',[u for u in range(1,9) if u!=f['target']])]:
             ss=[];pp=[]
@@ -232,7 +233,7 @@ def main(args):
         fit=np.flatnonzero(np.isin(d['user'],f['base'])&(d['role']=='fit'))
         assert np.all(np.linalg.norm(t[fit],axis=1)>.9)
         audit.append(dict(**f,base_fit_sample_ids=d['sample_id'][fit].tolist()))
-    dump(out/'protocol_private.json',dict(folds=audit,seeds=args.seeds,backbone_steps=args.backbone_steps,residual_steps=args.residual_steps,scope='strict identity-disjoint target and unseen attacker; separate two-identity calibration',same_cross='identical12queries per direction;12enrollment records; only enrollment word group differs; two directions; no target-dependent threshold',selection='only base fit/develop; no all-eight checkpoints or local-nine Audio teacher reused',teacher_cache=args.audio_cache,acc_cache=args.acc_cache,backbone_reuse_root=args.backbone_root,limits='inferred words; eight-user population selected after previous yue audit; three seeds; cosine prototype backend replaces trained closed-set RBF for genuine unseen-user enrollment'))
+    dump(out/'protocol_private.json',dict(folds=audit,seeds=args.seeds,backbone_steps=args.backbone_steps,residual_steps=args.residual_steps,scope='strict identity-disjoint target and unseen attacker; separate two-identity calibration',same_cross='identical12queries per direction;12enrollment records; only enrollment word group differs; two directions; one shared threshold per method pooled from calibration conditions; no target-dependent threshold',selection='only base fit/develop; no all-eight checkpoints or local-nine Audio teacher reused',teacher_cache=args.audio_cache,acc_cache=args.acc_cache,backbone_reuse_root=args.backbone_root,limits='inferred words; eight-user population selected after previous yue audit; three seeds; cosine prototype backend replaces trained closed-set RBF for genuine unseen-user enrollment'))
     results={}
     for seed in args.seeds:
         for target in args.targets:
