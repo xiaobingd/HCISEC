@@ -21,6 +21,7 @@ for name in ['model','deps']:
     if not(root/name).exists():(root/name).symlink_to(source/name,target_is_directory=True)
 torch.set_num_threads(1);device='cuda' if torch.cuda.is_available() else 'cpu'
 a=np.load(root/'vr_acceleration_transfer_private.npz');meta=np.load(source/'raw9_full_features_private.npz');assert np.array_equal(a['sample_id'],meta['sample_id'])
+raw_acceleration=a['acceleration']
 ix=np.flatnonzero(a['user']!=9)
 for mode in ['voxceleb_init','vibravox_acc']:
     if (root/(mode+'_complete.json')).exists():continue
@@ -30,7 +31,7 @@ for mode in ['voxceleb_init','vibravox_acc']:
     model.eval();path=root/(mode+'_embedding_private.npy');progress=root/(mode+'_progress.json');done=json.loads(progress.read_text())['done'] if progress.exists() else 0
     z=np.lib.format.open_memmap(path,mode='r+' if path.exists() else 'w+',dtype='float32',shape=(len(a['user']),192))
     for j in range(done,len(ix)):
-        i=ix[j];waves=resample_poly(a['acceleration'][i],16,1,axis=1).astype('float32');vectors=[]
+        i=ix[j];waves=resample_poly(raw_acceleration[i],16,1,axis=1).astype('float32');vectors=[]
         for axis in range(3):
             with torch.no_grad():v=F.normalize(model.encode_batch(torch.tensor(waves[axis:axis+1],device=device)).squeeze(1),dim=1).cpu().numpy()[0]
             vectors.append(v)
