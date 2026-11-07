@@ -40,10 +40,11 @@ net=ERes2NetV2(feat_dim=80,embedding_size=192).to(device)
 net.load_state_dict(torch.load(weights,map_location='cpu'));net.eval()
 src=Path('/autodl-fs/data/identity_kd_all9_raw_full_multisource_20261103/raw9_full_features_private.npz');d=np.load(src)
 ix=np.flatnonzero((d['user']!=9)&(d['role']=='fit'));path=root/'audio_embedding_private.npy';progress=root/'extraction_progress.json'
+waves=d['wave']
 done=json.loads(progress.read_text())['done'] if progress.exists() else 0
 z=np.lib.format.open_memmap(path,mode='r+' if path.exists() else 'w+',dtype='float32',shape=(len(d['user']),192))
 for j in range(done,len(ix)):
-    i=ix[j];w=torch.tensor(d['wave'][i:i+1].copy());feat=kaldi.fbank(w,num_mel_bins=80,sample_frequency=16000,dither=0);feat=feat-feat.mean(0,keepdim=True)
+    i=ix[j];w=torch.tensor(waves[i:i+1].copy());feat=kaldi.fbank(w,num_mel_bins=80,sample_frequency=16000,dither=0);feat=feat-feat.mean(0,keepdim=True)
     with torch.no_grad():v=F.normalize(net(feat[None].to(device)),dim=1).cpu().numpy()[0]
     assert np.isfinite(v).all();z[i]=v;z.flush();progress.write_text(json.dumps(dict(done=j+1,total=len(ix),device=device)))
     if j%20==0:print('EXTRACT',j+1,len(ix),flush=True)
