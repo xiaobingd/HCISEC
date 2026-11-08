@@ -79,6 +79,8 @@
 
 ## 最新实验记录
 
+- [2026-11-08 同步 Audio–HMD 双模态注册与 HMD 单模态验证实验方案（V1.0）](2026-11-08-multimodal-enrollment-acc-only-verification-plan.md)：拟执行；以新用户同步 Audio/HMD 注册、仅 HMD 验证为任务，定义 E0–E3 注册对照、C0–C4 耦合负控制、24折严格未见用户与 K-shot/冻结阈值评估。
+
 - [2026-11-03 Audio→ACC 说话人身份知识蒸馏独立实验方案](2026-11-03-speaker-identity-knowledge-distillation-audio-acc.md)：专门规定身份教师、ACC 学生、逐样本/原型蒸馏、KD0–KD5 消融、负控制及未见用户 K-shot 验证。
 - [2026-11-03 AirBone 启发的 Audio–ACC 预训练与身份蒸馏实验方案](2026-11-03-airbone-inspired-audio-acc-pretraining-distillation-plan.md)：拟执行，包含数据审计、AC 参数迁移与身份蒸馏对照、未见用户 K-shot、CycleGAN 增益消融及严格评估协议。
 - [2026-10-27 Mei 九用户跨模态身份认证实验汇总](2026-10-27-mei-nine-user-crossmodal-authentication.md)：逐用户认证头重训、共享/个人生成模型结果与数据隔离说明。
