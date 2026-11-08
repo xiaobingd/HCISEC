@@ -16,9 +16,9 @@ import run_p1_multimodal_enrollment as p
 from compare_background_normalization import far_threshold
 
 MODES=['linear','residual','residual_self','residual_audio']
-def fit_models(x,audio,mode,steps):
+def fit_models(x,audio,mode,steps,npos=12):
     # x: independent task x (12 genuine + 48 Base negatives) x 192.
-    pos=F.normalize(x[:,:12].mean(1),dim=1);neg=F.normalize(x[:,12:].mean(1),dim=1)
+    pos=F.normalize(x[:,:npos].mean(1),dim=1);neg=F.normalize(x[:,npos:].mean(1),dim=1)
     init=3*F.normalize(pos-neg,dim=1);w=nn.Parameter(init.clone());bias=nn.Parameter(-.5*((init*pos).sum(1)+(init*neg).sum(1)))
     gamma=nn.Parameter(torch.zeros_like(w))
     params=[dict(params=[w,bias],lr=.02)]
@@ -27,10 +27,10 @@ def fit_models(x,audio,mode,steps):
     for step in range(steps):
         zz=x if mode=='linear' else F.normalize(x*(1+.1*torch.tanh(gamma[:,None,:])),dim=2)
         logits=(zz*w[:,None,:]).sum(2)+bias[:,None]
-        per_task=.5*F.softplus(-logits[:,:12]).mean(1)+.5*F.softplus(logits[:,12:]).mean(1)+.001*w.square().mean(1)
+        per_task=.5*F.softplus(-logits[:,:npos]).mean(1)+.5*F.softplus(logits[:,npos:]).mean(1)+.001*w.square().mean(1)
         if mode!='linear':per_task=per_task+.01*torch.tanh(gamma).square().mean(1)
-        if mode=='residual_self':per_task=per_task+.1*(1-(zz[:,:12]*x[:,:12]).sum(2)).mean(1)
-        if mode=='residual_audio':per_task=per_task+.1*(1-(zz[:,:12]*audio).sum(2)).mean(1)
+        if mode=='residual_self':per_task=per_task+.1*(1-(zz[:,:npos]*x[:,:npos]).sum(2)).mean(1)
+        if mode=='residual_audio':per_task=per_task+.1*(1-(zz[:,:npos]*audio).sum(2)).mean(1)
         # Sum preserves each task's standalone gradient scale; Adam is elementwise.
         opt.zero_grad();per_task.sum().backward();opt.step()
     return dict(w=w.detach().numpy(),bias=bias.detach().numpy(),gamma=gamma.detach().numpy(),mode=mode)
