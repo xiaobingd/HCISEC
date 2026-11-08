@@ -103,6 +103,9 @@ def main(a):
     za=np.load(root/(a.teacher+'_fit_private.npy'))[keep_original].astype('float32');extra=np.load(root/(a.teacher+'_enrollment_private.npz'));lookup={str(s):i for i,s in enumerate(d['sample_id'])}
     for j,s in enumerate(extra['sample_id']):za[lookup[str(s)]]=extra['audio'][j]
     assert np.all(np.linalg.norm(za[support],axis=1)>.9)
+    query_rows=np.concatenate([np.flatnonzero((d['user']==u)&(d['word']==w)&(d['role']=='final'))[4:8] for u in range(1,9) for w in range(24,30)])
+    assert not set(query_rows)&set(support)
+    assert np.all(np.linalg.norm(za[query_rows],axis=1)==0),'query Audio embeddings must not be present'
     write(out/'protocol.json',dict(source_plan_commit='ec2ec9b1cf285c195b119d59777c879f4f17d2eb',experiment='P1 E0/E1/E2',teacher=a.teacher,backbones='frozen strict outerBase-only ResNet18,24existingcheckpoints',mapper='192-128GELU-192L2,AdamW1e-3,weightdecay1e-4',loss='crossmodal sameidentity differentword positives;differentidentity sameword negatives weight2;+.1pairedcosine',selection='four Base-only inner mapperidentityholdouts;checkpoint by E1meanAUC,lambda at that checkpoint by fusedmeanAUC,ties favor smallerlambda',budget=a.steps,K=12,threshold='eachmethodsharedsameword/crosswordEERthresholdfromindependentCalusers',identity_roles='4Base/2Cal/target/unseenattacker',limits=['word labels inferred,not semantically verified','eight-user population previously selected after yue audit','inneridentityholdout applies to mapper;fixedencoder saw all fourBaseidentities','not synchronization coupling evidence'],excluded_unconfirmed_fit_pairs=[str(s) for s,ok in zip(d['sample_id'],valid) if not ok],query_audio_used=False))
     result={}
     for seed in [42,43,44]:
