@@ -2,6 +2,7 @@
 
 > 日期：2026-11-08  
 > 状态：**P1 E0–E2及E3各完成两种冻结Audio模型的24折探索对照；C系列尚未执行。** [P1结果](2026-11-08-p1-enrollment-results.md) · [E3及阈值诊断](2026-11-08-e3-quality-gating-results.md)
+> 补充对照结果：[注册条件阈值](2026-11-08-enrollment-threshold-results.md) · [背景分数归一化](2026-11-08-background-normalization-results.md)
 > 仓库：HCISEC  
 > 目标：训练阶段未见用户的 **verification（本人/非本人）**，而非九分类 identification。  
 > **使用约束：新用户注册时同步采集 Audio + HMD 三轴速度；验证时只使用 HMD 信号，不读取 Audio，也不运行 Audio 教师。**
