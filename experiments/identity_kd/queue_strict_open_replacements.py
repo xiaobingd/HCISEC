@@ -9,7 +9,11 @@ ROOT=Path('/autodl-fs/data');BASE=ROOT/'mei8_strict_open_residual_20261108';PY=s
 def status(**v):(ROOT/'strict_open_replacement_queue_status.json').write_text(json.dumps(v,indent=2))
 def run(args):
     status(state='running',command=args)
-    subprocess.run([PY]+args,check=True)
+    try:
+        subprocess.run([PY]+args,check=True)
+    except Exception as exc:
+        status(state='failed',command=args,error=str(exc))
+        raise
 while True:
     p=BASE/'status.json';s=json.loads(p.read_text()) if p.exists() else {}
     if s.get('state')=='complete':break
