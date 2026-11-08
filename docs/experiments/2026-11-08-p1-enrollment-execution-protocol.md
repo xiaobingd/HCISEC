@@ -1,5 +1,7 @@
 # 最新方案实验一：P1 E0/E1/E2执行协议
 
+完成状态：ECAPA与ERes2NetV2各24折均已完成。[完整结果](2026-11-08-p1-enrollment-results.md)。48折复核通过：E0完全复现原ACC指标；lambda=0时E2与E0完全一致；查询Audio特征在评分数据中不存在。
+
 对应GitHub方案commit ec2ec9b1cf285c195b119d59777c879f4f17d2eb 的P1。此前蒸馏与残差结果不等于本实验：此前未用新用户注册Audio构造其模板。
 
 复用24个严格外层Base-only ResNet18检查点及对应192维HMD缓存，不更新骨干。Audio分别使用现有VibraVox Audio ECAPA和ERes2NetV2冻结缓存，两个教师独立运行、分别报告；不使用包含本地九用户的微调教师。
