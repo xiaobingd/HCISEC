@@ -44,7 +44,7 @@ waves=d['wave']
 done=json.loads(progress.read_text())['done'] if progress.exists() else 0
 z=np.lib.format.open_memmap(path,mode='r+' if path.exists() else 'w+',dtype='float32',shape=(len(d['user']),192))
 for j in range(done,len(ix)):
-    i=ix[j];w=torch.tensor(waves[i:i+1].copy());feat=kaldi.fbank(w,num_mel_bins=80,sample_frequency=16000,dither=0);feat=feat-feat.mean(0,keepdim=True)
+    i=ix[j];w=torch.tensor(waves[i:i+1].copy(),dtype=torch.float32);feat=kaldi.fbank(w,num_mel_bins=80,sample_frequency=16000,dither=0);feat=feat-feat.mean(0,keepdim=True)
     with torch.no_grad():v=F.normalize(net(feat[None].to(device)),dim=1).cpu().numpy()[0]
     assert np.isfinite(v).all();z[i]=v;z.flush();progress.write_text(json.dumps(dict(done=j+1,total=len(ix),device=device)))
     if j%20==0:print('EXTRACT',j+1,len(ix),flush=True)
