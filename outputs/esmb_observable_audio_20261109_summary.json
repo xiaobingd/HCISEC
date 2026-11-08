@@ -1,0 +1,152 @@
+{
+  "status": "complete_diagnostic_not_authentication",
+  "base": [
+    "0005",
+    "0006",
+    "0007",
+    "0021"
+  ],
+  "cal": [
+    "0022",
+    "0023",
+    "0026",
+    "0027"
+  ],
+  "final_targets_accessed": false,
+  "window_counts": {
+    "fit": 96,
+    "dev": 32,
+    "cal": 64
+  },
+  "audio_features": "64ms1024sample autocorrelation;16ms hop;50..500Hz candidateF0; normalized correlation>=.6 is proxy NOT calibrated voicing probability",
+  "regression": "StandardScaler+Ridge10;Basefit only;unseen Cal evaluated once;no targetAudio/no authentication results",
+  "coherence": {
+    "50-100": {
+      "paired_coherence": 0.2538351995305801,
+      "wrong_user_coherence": 0.052386711175790655,
+      "excess": 0.20144848835478943
+    },
+    "100-300": {
+      "paired_coherence": 0.6565261197910126,
+      "wrong_user_coherence": 0.036801035139766854,
+      "excess": 0.6197250846512458
+    },
+    "300-800": {
+      "paired_coherence": 0.6251376869724472,
+      "wrong_user_coherence": 0.03333925245809236,
+      "excess": 0.5917984345143549
+    },
+    "800-2000": {
+      "paired_coherence": 0.06069581231695921,
+      "wrong_user_coherence": 0.03498273733046258,
+      "excess": 0.02571307498649663
+    },
+    "2000-4000": {
+      "paired_coherence": 0.035751895562648836,
+      "wrong_user_coherence": 0.03468624798983996,
+      "excess": 0.0010656475728088722
+    },
+    "4000-8000": {
+      "paired_coherence": 0.03872928467447026,
+      "wrong_user_coherence": 0.03476260778110611,
+      "excess": 0.0039666768933641445
+    }
+  },
+  "lag_seconds": {
+    "median": 0.0,
+    "q10": -0.032,
+    "q90": 0.016,
+    "search_range": [
+      -0.096,
+      0.096
+    ],
+    "interpretation": "empirical envelope lag,not proof of propagation delay"
+  },
+  "observable_band_centers": [
+    74.33046984186736,
+    87.1055099121785,
+    102.0761724391384,
+    119.61981498449305,
+    140.17865085464334,
+    164.27089573726005,
+    192.50383008967236,
+    225.58910653573543,
+    264.3606881166237,
+    309.79586955553674,
+    363.03991140820483,
+    425.4349080391788,
+    498.55361708369463,
+    584.2391031164404,
+    684.6511948041913,
+    802.3209265631507,
+    940.2143370030265
+  ],
+  "results": {
+    "paired": {
+      "periodicity": {
+        "cal_r2": 0.2427205762088005,
+        "cal_corr": 0.5190345924154706
+      },
+      "log_envelope": {
+        "cal_r2": 0.7889389145498211,
+        "cal_corr": 0.9082932925308299
+      },
+      "f0": {
+        "cal_voiced_frames": 4616,
+        "cents_mae": 637.2691416482704,
+        "cal_r2": 0.3377522900411992
+      },
+      "shared_spectrum": {
+        "bands": 17,
+        "cal_r2": 0.44651412849170447
+      }
+    },
+    "same_user_wrong_time": {
+      "periodicity": {
+        "cal_r2": 0.12817470154266375,
+        "cal_corr": 0.43198301934187766
+      },
+      "log_envelope": {
+        "cal_r2": 0.2462098912981091,
+        "cal_corr": 0.761688587744181
+      },
+      "f0": {
+        "cal_voiced_frames": 4616,
+        "cents_mae": 749.5679990718014,
+        "cal_r2": 0.08906004127364497
+      },
+      "shared_spectrum": {
+        "bands": 17,
+        "cal_r2": 0.013365172782064309
+      }
+    },
+    "different_user_same_index": {
+      "periodicity": {
+        "cal_r2": 0.1026396639454562,
+        "cal_corr": 0.4392386806414022
+      },
+      "log_envelope": {
+        "cal_r2": 0.04116890626401348,
+        "cal_corr": 0.4586169249641433
+      },
+      "f0": {
+        "cal_voiced_frames": 4616,
+        "cents_mae": 918.8402501444206,
+        "cal_r2": -0.06255957242076193
+      },
+      "shared_spectrum": {
+        "bands": 17,
+        "cal_r2": -0.09756840182980069
+      }
+    }
+  },
+  "elapsed_seconds": 28.51825737953186,
+  "limits": [
+    "one recording/user;no verified text",
+    "shared excitation does not prove bone-only propagation",
+    "F0 autocorrelation can make octave errors",
+    "framewise regression is only predictability diagnostic",
+    "observability does not establish identity gain",
+    "no final target identities or Audio accessed"
+  ]
+}
