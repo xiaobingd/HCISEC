@@ -1,0 +1,1235 @@
+{
+  "macro": {
+    "beta_0.0": {
+      "12": {
+        "cosine_eer": {
+          "unseen_attacker": {
+            "tar": 0.9375,
+            "far": 0.4,
+            "hter": 0.23125,
+            "auc": 0.868125
+          },
+          "all_nine_sources": {
+            "tar": 0.9375,
+            "far": 0.1375,
+            "hter": 0.1,
+            "auc": 0.9672222222222222
+          }
+        },
+        "cosine_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.675,
+            "far": 0.125,
+            "hter": 0.225,
+            "auc": 0.868125
+          },
+          "all_nine_sources": {
+            "tar": 0.675,
+            "far": 0.015277777777777779,
+            "hter": 0.1701388888888889,
+            "auc": 0.9672222222222222
+          }
+        },
+        "linear_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.6875,
+            "hter": 0.38125,
+            "auc": 0.568125
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14722222222222223,
+            "hter": 0.1111111111111111,
+            "auc": 0.9264583333333334
+          }
+        },
+        "linear_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6875,
+            "far": 0.5625,
+            "hter": 0.4375,
+            "auc": 0.568125
+          },
+          "all_nine_sources": {
+            "tar": 0.6875,
+            "far": 0.09027777777777778,
+            "hter": 0.2013888888888889,
+            "auc": 0.9264583333333334
+          }
+        },
+        "residual_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.6875,
+            "hter": 0.38125,
+            "auc": 0.568125
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14583333333333334,
+            "hter": 0.11041666666666666,
+            "auc": 0.9272916666666666
+          }
+        },
+        "residual_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6875,
+            "far": 0.5625,
+            "hter": 0.4375,
+            "auc": 0.568125
+          },
+          "all_nine_sources": {
+            "tar": 0.6875,
+            "far": 0.09027777777777778,
+            "hter": 0.2013888888888889,
+            "auc": 0.9272916666666666
+          }
+        },
+        "residual_self_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.6875,
+            "hter": 0.38125,
+            "auc": 0.568125
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14722222222222223,
+            "hter": 0.1111111111111111,
+            "auc": 0.9272916666666666
+          }
+        },
+        "residual_self_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6875,
+            "far": 0.5625,
+            "hter": 0.4375,
+            "auc": 0.568125
+          },
+          "all_nine_sources": {
+            "tar": 0.6875,
+            "far": 0.09027777777777778,
+            "hter": 0.2013888888888889,
+            "auc": 0.9272916666666666
+          }
+        },
+        "residual_audio_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.6875,
+            "hter": 0.38125,
+            "auc": 0.565625
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14444444444444443,
+            "hter": 0.10972222222222222,
+            "auc": 0.9273611111111111
+          }
+        },
+        "residual_audio_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6625000000000001,
+            "far": 0.5625,
+            "hter": 0.44999999999999996,
+            "auc": 0.565625
+          },
+          "all_nine_sources": {
+            "tar": 0.6625000000000001,
+            "far": 0.08888888888888888,
+            "hter": 0.2131944444444444,
+            "auc": 0.9273611111111111
+          }
+        }
+      },
+      "60": {
+        "cosine_eer": {
+          "unseen_attacker": {
+            "tar": 0.9375,
+            "far": 0.3125,
+            "hter": 0.1875,
+            "auc": 0.9078125
+          },
+          "all_nine_sources": {
+            "tar": 0.9375,
+            "far": 0.12916666666666665,
+            "hter": 0.09583333333333333,
+            "auc": 0.9569791666666667
+          }
+        },
+        "cosine_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.675,
+            "far": 0.075,
+            "hter": 0.19999999999999998,
+            "auc": 0.9078125
+          },
+          "all_nine_sources": {
+            "tar": 0.675,
+            "far": 0.07222222222222223,
+            "hter": 0.19861111111111107,
+            "auc": 0.9569791666666667
+          }
+        },
+        "linear_eer": {
+          "unseen_attacker": {
+            "tar": 0.9375,
+            "far": 0.6625,
+            "hter": 0.3625,
+            "auc": 0.6025
+          },
+          "all_nine_sources": {
+            "tar": 0.9375,
+            "far": 0.14166666666666666,
+            "hter": 0.10208333333333333,
+            "auc": 0.9280555555555555
+          }
+        },
+        "linear_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6875,
+            "far": 0.5375,
+            "hter": 0.425,
+            "auc": 0.6025
+          },
+          "all_nine_sources": {
+            "tar": 0.6875,
+            "far": 0.09305555555555554,
+            "hter": 0.20277777777777778,
+            "auc": 0.9280555555555555
+          }
+        },
+        "residual_eer": {
+          "unseen_attacker": {
+            "tar": 0.95,
+            "far": 0.675,
+            "hter": 0.3625,
+            "auc": 0.6046875
+          },
+          "all_nine_sources": {
+            "tar": 0.95,
+            "far": 0.14305555555555555,
+            "hter": 0.09652777777777777,
+            "auc": 0.9293055555555555
+          }
+        },
+        "residual_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7125,
+            "far": 0.5375,
+            "hter": 0.4125,
+            "auc": 0.6046875
+          },
+          "all_nine_sources": {
+            "tar": 0.7125,
+            "far": 0.09444444444444444,
+            "hter": 0.1909722222222222,
+            "auc": 0.9293055555555555
+          }
+        },
+        "residual_self_eer": {
+          "unseen_attacker": {
+            "tar": 0.95,
+            "far": 0.675,
+            "hter": 0.3625,
+            "auc": 0.6046875
+          },
+          "all_nine_sources": {
+            "tar": 0.95,
+            "far": 0.14305555555555555,
+            "hter": 0.09652777777777777,
+            "auc": 0.9293055555555555
+          }
+        },
+        "residual_self_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7125,
+            "far": 0.5375,
+            "hter": 0.4125,
+            "auc": 0.6046875
+          },
+          "all_nine_sources": {
+            "tar": 0.7125,
+            "far": 0.09444444444444444,
+            "hter": 0.1909722222222222,
+            "auc": 0.9293055555555555
+          }
+        },
+        "residual_audio_eer": {
+          "unseen_attacker": {
+            "tar": 0.9375,
+            "far": 0.675,
+            "hter": 0.36875,
+            "auc": 0.5978125
+          },
+          "all_nine_sources": {
+            "tar": 0.9375,
+            "far": 0.14305555555555555,
+            "hter": 0.10277777777777777,
+            "auc": 0.9288194444444444
+          }
+        },
+        "residual_audio_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7,
+            "far": 0.5375,
+            "hter": 0.41874999999999996,
+            "auc": 0.5978125
+          },
+          "all_nine_sources": {
+            "tar": 0.7,
+            "far": 0.09166666666666666,
+            "hter": 0.19583333333333333,
+            "auc": 0.9288194444444444
+          }
+        }
+      },
+      "120": {
+        "cosine_eer": {
+          "unseen_attacker": {
+            "tar": 0.95,
+            "far": 0.2875,
+            "hter": 0.16875,
+            "auc": 0.9184375
+          },
+          "all_nine_sources": {
+            "tar": 0.95,
+            "far": 0.12777777777777777,
+            "hter": 0.08888888888888888,
+            "auc": 0.9612152777777778
+          }
+        },
+        "cosine_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6625000000000001,
+            "far": 0.0625,
+            "hter": 0.19999999999999998,
+            "auc": 0.9184375
+          },
+          "all_nine_sources": {
+            "tar": 0.6625000000000001,
+            "far": 0.06805555555555555,
+            "hter": 0.20277777777777778,
+            "auc": 0.9612152777777778
+          }
+        },
+        "linear_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.6625,
+            "hter": 0.36875,
+            "auc": 0.5912499999999999
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.1388888888888889,
+            "hter": 0.10694444444444444,
+            "auc": 0.9261111111111111
+          }
+        },
+        "linear_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6375,
+            "far": 0.5375,
+            "hter": 0.45,
+            "auc": 0.5912499999999999
+          },
+          "all_nine_sources": {
+            "tar": 0.6375,
+            "far": 0.09027777777777776,
+            "hter": 0.2263888888888889,
+            "auc": 0.9261111111111111
+          }
+        },
+        "residual_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.675,
+            "hter": 0.375,
+            "auc": 0.5953125
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14027777777777778,
+            "hter": 0.10763888888888888,
+            "auc": 0.9276041666666667
+          }
+        },
+        "residual_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.65,
+            "far": 0.5375,
+            "hter": 0.44375,
+            "auc": 0.5953125
+          },
+          "all_nine_sources": {
+            "tar": 0.65,
+            "far": 0.08888888888888888,
+            "hter": 0.21944444444444441,
+            "auc": 0.9276041666666667
+          }
+        },
+        "residual_self_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.675,
+            "hter": 0.375,
+            "auc": 0.5953125
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14027777777777778,
+            "hter": 0.10763888888888888,
+            "auc": 0.9276041666666667
+          }
+        },
+        "residual_self_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.65,
+            "far": 0.5375,
+            "hter": 0.44375,
+            "auc": 0.5953125
+          },
+          "all_nine_sources": {
+            "tar": 0.65,
+            "far": 0.08888888888888888,
+            "hter": 0.21944444444444441,
+            "auc": 0.9276041666666667
+          }
+        },
+        "residual_audio_eer": {
+          "unseen_attacker": {
+            "tar": 0.925,
+            "far": 0.675,
+            "hter": 0.375,
+            "auc": 0.588125
+          },
+          "all_nine_sources": {
+            "tar": 0.925,
+            "far": 0.14166666666666666,
+            "hter": 0.10833333333333334,
+            "auc": 0.9270833333333334
+          }
+        },
+        "residual_audio_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.65,
+            "far": 0.5375,
+            "hter": 0.44375,
+            "auc": 0.588125
+          },
+          "all_nine_sources": {
+            "tar": 0.65,
+            "far": 0.08888888888888888,
+            "hter": 0.21944444444444441,
+            "auc": 0.9270833333333334
+          }
+        }
+      }
+    },
+    "beta_0.5": {
+      "12": {
+        "cosine_eer": {
+          "unseen_attacker": {
+            "tar": 0.975,
+            "far": 0.875,
+            "hter": 0.45,
+            "auc": 0.8484375
+          },
+          "all_nine_sources": {
+            "tar": 0.975,
+            "far": 0.26666666666666666,
+            "hter": 0.14583333333333334,
+            "auc": 0.9591319444444444
+          }
+        },
+        "cosine_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.775,
+            "far": 0.1875,
+            "hter": 0.20625,
+            "auc": 0.8484375
+          },
+          "all_nine_sources": {
+            "tar": 0.775,
+            "far": 0.058333333333333334,
+            "hter": 0.14166666666666666,
+            "auc": 0.9591319444444444
+          }
+        },
+        "linear_eer": {
+          "unseen_attacker": {
+            "tar": 1.0,
+            "far": 0.7375,
+            "hter": 0.36875,
+            "auc": 0.6531250000000001
+          },
+          "all_nine_sources": {
+            "tar": 1.0,
+            "far": 0.17222222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9418402777777777
+          }
+        },
+        "linear_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7,
+            "far": 0.4125,
+            "hter": 0.35624999999999996,
+            "auc": 0.6531250000000001
+          },
+          "all_nine_sources": {
+            "tar": 0.7,
+            "far": 0.07222222222222222,
+            "hter": 0.18611111111111114,
+            "auc": 0.9418402777777777
+          }
+        },
+        "residual_eer": {
+          "unseen_attacker": {
+            "tar": 1.0,
+            "far": 0.75,
+            "hter": 0.375,
+            "auc": 0.655625
+          },
+          "all_nine_sources": {
+            "tar": 1.0,
+            "far": 0.1736111111111111,
+            "hter": 0.08680555555555555,
+            "auc": 0.9434027777777778
+          }
+        },
+        "residual_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7124999999999999,
+            "far": 0.4125,
+            "hter": 0.35,
+            "auc": 0.655625
+          },
+          "all_nine_sources": {
+            "tar": 0.7124999999999999,
+            "far": 0.07083333333333333,
+            "hter": 0.1791666666666667,
+            "auc": 0.9434027777777778
+          }
+        },
+        "residual_self_eer": {
+          "unseen_attacker": {
+            "tar": 1.0,
+            "far": 0.75,
+            "hter": 0.375,
+            "auc": 0.655625
+          },
+          "all_nine_sources": {
+            "tar": 1.0,
+            "far": 0.17222222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9433680555555555
+          }
+        },
+        "residual_self_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7124999999999999,
+            "far": 0.4125,
+            "hter": 0.35,
+            "auc": 0.655625
+          },
+          "all_nine_sources": {
+            "tar": 0.7124999999999999,
+            "far": 0.07083333333333333,
+            "hter": 0.1791666666666667,
+            "auc": 0.9433680555555555
+          }
+        },
+        "residual_audio_eer": {
+          "unseen_attacker": {
+            "tar": 1.0,
+            "far": 0.75,
+            "hter": 0.375,
+            "auc": 0.646875
+          },
+          "all_nine_sources": {
+            "tar": 1.0,
+            "far": 0.17222222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9423611111111112
+          }
+        },
+        "residual_audio_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6875,
+            "far": 0.4125,
+            "hter": 0.36249999999999993,
+            "auc": 0.646875
+          },
+          "all_nine_sources": {
+            "tar": 0.6875,
+            "far": 0.07083333333333333,
+            "hter": 0.19166666666666668,
+            "auc": 0.9423611111111112
+          }
+        }
+      },
+      "60": {
+        "cosine_eer": {
+          "unseen_attacker": {
+            "tar": 0.9624999999999999,
+            "far": 0.7875,
+            "hter": 0.4125,
+            "auc": 0.8753124999999999
+          },
+          "all_nine_sources": {
+            "tar": 0.9624999999999999,
+            "far": 0.2125,
+            "hter": 0.125,
+            "auc": 0.9573611111111111
+          }
+        },
+        "cosine_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.825,
+            "far": 0.15,
+            "hter": 0.16249999999999998,
+            "auc": 0.8753124999999999
+          },
+          "all_nine_sources": {
+            "tar": 0.825,
+            "far": 0.0875,
+            "hter": 0.13124999999999998,
+            "auc": 0.9573611111111111
+          }
+        },
+        "linear_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.6625,
+            "hter": 0.3375,
+            "auc": 0.6793750000000001
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.15,
+            "hter": 0.08125,
+            "auc": 0.9439236111111111
+          }
+        },
+        "linear_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.675,
+            "far": 0.35,
+            "hter": 0.3375,
+            "auc": 0.6793750000000001
+          },
+          "all_nine_sources": {
+            "tar": 0.675,
+            "far": 0.058333333333333334,
+            "hter": 0.19166666666666665,
+            "auc": 0.9439236111111111
+          }
+        },
+        "residual_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.6625,
+            "hter": 0.3375,
+            "auc": 0.683125
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.1486111111111111,
+            "hter": 0.08055555555555556,
+            "auc": 0.9447569444444444
+          }
+        },
+        "residual_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7125,
+            "far": 0.375,
+            "hter": 0.33124999999999993,
+            "auc": 0.683125
+          },
+          "all_nine_sources": {
+            "tar": 0.7125,
+            "far": 0.061111111111111116,
+            "hter": 0.17430555555555555,
+            "auc": 0.9447569444444444
+          }
+        },
+        "residual_self_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.6625,
+            "hter": 0.3375,
+            "auc": 0.6828125
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.1486111111111111,
+            "hter": 0.08055555555555556,
+            "auc": 0.9447222222222222
+          }
+        },
+        "residual_self_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7125,
+            "far": 0.375,
+            "hter": 0.33124999999999993,
+            "auc": 0.6828125
+          },
+          "all_nine_sources": {
+            "tar": 0.7125,
+            "far": 0.061111111111111116,
+            "hter": 0.17430555555555555,
+            "auc": 0.9447222222222222
+          }
+        },
+        "residual_audio_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.6625,
+            "hter": 0.3375,
+            "auc": 0.6771874999999999
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.15,
+            "hter": 0.08125,
+            "auc": 0.9445486111111111
+          }
+        },
+        "residual_audio_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.7250000000000001,
+            "far": 0.39999999999999997,
+            "hter": 0.3374999999999999,
+            "auc": 0.6771874999999999
+          },
+          "all_nine_sources": {
+            "tar": 0.7250000000000001,
+            "far": 0.06388888888888888,
+            "hter": 0.16944444444444443,
+            "auc": 0.9445486111111111
+          }
+        }
+      },
+      "120": {
+        "cosine_eer": {
+          "unseen_attacker": {
+            "tar": 0.975,
+            "far": 0.7875,
+            "hter": 0.40625,
+            "auc": 0.876875
+          },
+          "all_nine_sources": {
+            "tar": 0.975,
+            "far": 0.20277777777777778,
+            "hter": 0.1138888888888889,
+            "auc": 0.9604861111111112
+          }
+        },
+        "cosine_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.8125,
+            "far": 0.16249999999999998,
+            "hter": 0.175,
+            "auc": 0.876875
+          },
+          "all_nine_sources": {
+            "tar": 0.8125,
+            "far": 0.07916666666666666,
+            "hter": 0.13333333333333333,
+            "auc": 0.9604861111111112
+          }
+        },
+        "linear_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.65,
+            "hter": 0.33125,
+            "auc": 0.6553125
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.1597222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9372569444444444
+          }
+        },
+        "linear_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.6875,
+            "far": 0.4125,
+            "hter": 0.36250000000000004,
+            "auc": 0.6553125
+          },
+          "all_nine_sources": {
+            "tar": 0.6875,
+            "far": 0.06666666666666667,
+            "hter": 0.18958333333333333,
+            "auc": 0.9372569444444444
+          }
+        },
+        "residual_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.65,
+            "hter": 0.33125,
+            "auc": 0.6575
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.1597222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9371180555555556
+          }
+        },
+        "residual_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.675,
+            "far": 0.38749999999999996,
+            "hter": 0.35625,
+            "auc": 0.6575
+          },
+          "all_nine_sources": {
+            "tar": 0.675,
+            "far": 0.0625,
+            "hter": 0.19375,
+            "auc": 0.9371180555555556
+          }
+        },
+        "residual_self_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.65,
+            "hter": 0.33125,
+            "auc": 0.6575
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.1597222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9371527777777777
+          }
+        },
+        "residual_self_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.675,
+            "far": 0.38749999999999996,
+            "hter": 0.35625,
+            "auc": 0.6575
+          },
+          "all_nine_sources": {
+            "tar": 0.675,
+            "far": 0.0625,
+            "hter": 0.19375,
+            "auc": 0.9371527777777777
+          }
+        },
+        "residual_audio_eer": {
+          "unseen_attacker": {
+            "tar": 0.9875,
+            "far": 0.65,
+            "hter": 0.33125,
+            "auc": 0.6509375
+          },
+          "all_nine_sources": {
+            "tar": 0.9875,
+            "far": 0.1597222222222222,
+            "hter": 0.08611111111111111,
+            "auc": 0.9363888888888888
+          }
+        },
+        "residual_audio_cal_far05": {
+          "unseen_attacker": {
+            "tar": 0.675,
+            "far": 0.4125,
+            "hter": 0.36875,
+            "auc": 0.6509375
+          },
+          "all_nine_sources": {
+            "tar": 0.675,
+            "far": 0.06666666666666667,
+            "hter": 0.19583333333333333,
+            "auc": 0.9363888888888888
+          }
+        }
+      }
+    }
+  },
+  "per_target_120": {
+    "beta_0.0": {
+      "cosine_eer": {
+        "0024": {
+          "tar": 0.975,
+          "far": 0.3,
+          "hter": 0.1625,
+          "auc": 0.9125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.925,
+          "far": 0.275,
+          "hter": 0.175,
+          "auc": 0.924375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "cosine_cal_far05": {
+        "0024": {
+          "tar": 0.675,
+          "far": 0.075,
+          "hter": 0.19999999999999998,
+          "auc": 0.9125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.65,
+          "far": 0.05,
+          "hter": 0.19999999999999998,
+          "auc": 0.924375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "linear_eer": {
+        "0024": {
+          "tar": 0.975,
+          "far": 0.325,
+          "hter": 0.17500000000000002,
+          "auc": 0.9356249999999999,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.875,
+          "far": 1.0,
+          "hter": 0.5625,
+          "auc": 0.24687499999999998,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "linear_cal_far05": {
+        "0024": {
+          "tar": 0.875,
+          "far": 0.2,
+          "hter": 0.1625,
+          "auc": 0.9356249999999999,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.4,
+          "far": 0.875,
+          "hter": 0.7375,
+          "auc": 0.24687499999999998,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_eer": {
+        "0024": {
+          "tar": 0.975,
+          "far": 0.35,
+          "hter": 0.1875,
+          "auc": 0.9375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.875,
+          "far": 1.0,
+          "hter": 0.5625,
+          "auc": 0.25312500000000004,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_cal_far05": {
+        "0024": {
+          "tar": 0.875,
+          "far": 0.2,
+          "hter": 0.1625,
+          "auc": 0.9375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.425,
+          "far": 0.875,
+          "hter": 0.725,
+          "auc": 0.25312500000000004,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_self_eer": {
+        "0024": {
+          "tar": 0.975,
+          "far": 0.35,
+          "hter": 0.1875,
+          "auc": 0.9375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.875,
+          "far": 1.0,
+          "hter": 0.5625,
+          "auc": 0.25312500000000004,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_self_cal_far05": {
+        "0024": {
+          "tar": 0.875,
+          "far": 0.2,
+          "hter": 0.1625,
+          "auc": 0.9375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.425,
+          "far": 0.875,
+          "hter": 0.725,
+          "auc": 0.25312500000000004,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_audio_eer": {
+        "0024": {
+          "tar": 0.975,
+          "far": 0.35,
+          "hter": 0.1875,
+          "auc": 0.93625,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.875,
+          "far": 1.0,
+          "hter": 0.5625,
+          "auc": 0.24000000000000002,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_audio_cal_far05": {
+        "0024": {
+          "tar": 0.875,
+          "far": 0.2,
+          "hter": 0.1625,
+          "auc": 0.93625,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.425,
+          "far": 0.875,
+          "hter": 0.725,
+          "auc": 0.24000000000000002,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      }
+    },
+    "beta_0.5": {
+      "cosine_eer": {
+        "0024": {
+          "tar": 1.0,
+          "far": 0.75,
+          "hter": 0.375,
+          "auc": 0.8831249999999999,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.95,
+          "far": 0.825,
+          "hter": 0.4375,
+          "auc": 0.870625,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "cosine_cal_far05": {
+        "0024": {
+          "tar": 0.875,
+          "far": 0.15,
+          "hter": 0.1375,
+          "auc": 0.8831249999999999,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.75,
+          "far": 0.175,
+          "hter": 0.2125,
+          "auc": 0.870625,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "linear_eer": {
+        "0024": {
+          "tar": 1.0,
+          "far": 0.325,
+          "hter": 0.1625,
+          "auc": 0.88125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.975,
+          "far": 0.975,
+          "hter": 0.5,
+          "auc": 0.429375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "linear_cal_far05": {
+        "0024": {
+          "tar": 0.85,
+          "far": 0.2,
+          "hter": 0.17500000000000002,
+          "auc": 0.88125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.525,
+          "far": 0.625,
+          "hter": 0.55,
+          "auc": 0.429375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_eer": {
+        "0024": {
+          "tar": 1.0,
+          "far": 0.325,
+          "hter": 0.1625,
+          "auc": 0.88375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.975,
+          "far": 0.975,
+          "hter": 0.5,
+          "auc": 0.43125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_cal_far05": {
+        "0024": {
+          "tar": 0.85,
+          "far": 0.2,
+          "hter": 0.17500000000000002,
+          "auc": 0.88375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.5,
+          "far": 0.575,
+          "hter": 0.5375,
+          "auc": 0.43125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_self_eer": {
+        "0024": {
+          "tar": 1.0,
+          "far": 0.325,
+          "hter": 0.1625,
+          "auc": 0.88375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.975,
+          "far": 0.975,
+          "hter": 0.5,
+          "auc": 0.43125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_self_cal_far05": {
+        "0024": {
+          "tar": 0.85,
+          "far": 0.2,
+          "hter": 0.17500000000000002,
+          "auc": 0.88375,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.5,
+          "far": 0.575,
+          "hter": 0.5375,
+          "auc": 0.43125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_audio_eer": {
+        "0024": {
+          "tar": 1.0,
+          "far": 0.325,
+          "hter": 0.1625,
+          "auc": 0.880625,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.975,
+          "far": 0.975,
+          "hter": 0.5,
+          "auc": 0.42125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      },
+      "residual_audio_cal_far05": {
+        "0024": {
+          "tar": 0.85,
+          "far": 0.2,
+          "hter": 0.17500000000000002,
+          "auc": 0.880625,
+          "genuine_n": 40,
+          "impostor_n": 40
+        },
+        "0025": {
+          "tar": 0.5,
+          "far": 0.625,
+          "hter": 0.5625,
+          "auc": 0.42125,
+          "genuine_n": 40,
+          "impostor_n": 40
+        }
+      }
+    }
+  },
+  "audio_parity": {
+    "state": "complete",
+    "registration_records": 720,
+    "golden_error": 3.296881914138794e-07,
+    "golden_min_cos": 0.9999998807907104,
+    "seconds": 416.804003238678,
+    "model_sha256": "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2",
+    "final_audio_access": false
+  }
+}
