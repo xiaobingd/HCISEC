@@ -1,6 +1,6 @@
 # VibraVox ACC 主干本地微调对照
 
-状态：执行代码已准备、已加入服务器依赖队列；等待冻结迁移对照完成。尚未产生微调认证结果。
+状态：按用户要求改为优先运行主干微调，冻结对照的未完成计算保留断点，随后恢复。第一折 target1/seed42/identity_ft 已执行第1步，监控参数最大绝对更新量约1.00136e-5，已确认主体权重实际更新。尚未产生微调后的认证结果。
 
 不是只训练适配层：从VibraVox ACC ECAPA检查点出发，更新embedding_model全部参数。冻结声学前端、BatchNorm运行统计；不冻结BN可学习的仿射参数。使用两遍梯度缓存、每次一条三轴录制，形成8条逻辑批次，以降低内存占用。eval模式固定统计及随机模块，不等于冻结参数；代码检查主体梯度非空及权重实际变化。
 
@@ -12,4 +12,4 @@
 
 冻结与微调的对照隔离的是本地适配作用；与旧ResNet速度频谱组比较时仍含前端和结构变化。词标签仍依赖录制顺序推断。多个训练种子不等于多个独立采集会话。
 
-代码：experiments/identity_kd/finetune_vibravox_acc_open.py；队列：queue_vibravox_acc_finetune.py。服务器状态：vibravox_acc_finetune_queue_status.json；结果目录：mei8_vibravox_acc_fullft_20261108。当前实例无GPU、0.5CPU核，因此串行等待前序任务，不将排队描述为已开始更新主干。
+代码：experiments/identity_kd/finetune_vibravox_acc_open.py；当前优先队列：queue_acc_finetune_priority.py，原依赖队列queue_vibravox_acc_finetune.py已停止以防重复训练。服务器状态：vibravox_acc_finetune_queue_status.json；结果目录：mei8_vibravox_acc_fullft_20261108。当前实例无GPU、0.5CPU核；采用串行运行，不与冻结对照争抢计算资源。
