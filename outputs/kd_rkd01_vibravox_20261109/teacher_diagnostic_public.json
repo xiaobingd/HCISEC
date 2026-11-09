@@ -1,0 +1,17 @@
+{
+  "state": "complete",
+  "teacher": "external VoxCeleb ECAPA frozen;verified official five asset hashes;loaded embedding state bit-exact to original checkpoint",
+  "base_dev_auc": 0.9985602487155621,
+  "base_dev_eer": 0.017459620956720934,
+  "same_user_cross_text_mean": 0.6157374978065491,
+  "different_user_mean": 0.129132479429245,
+  "different_user_same_text_pairs": 0,
+  "different_user_same_text_mean": null,
+  "identity_geometry_spearman": 0.4696554969354023,
+  "teacher_records": 2765,
+  "cal_test_audio_reads": 0,
+  "stats_hashes_verified": 6783,
+  "exact_acc_duplicates": 0,
+  "teacher_gate": "pass",
+  "gate_rule": "predeclared Base-dev pair AUC>0.8;not Test-selected;low-level identity diagnostic,not proof of student transfer"
+}
