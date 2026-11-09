@@ -41,9 +41,11 @@ def assess(cal,query):
 def encode(net,x):
     net.eval()
     with torch.no_grad():return np.concatenate([net(torch.tensor(x[i:i+256])).numpy() for i in range(0,len(x),256)])
+def encode_subset(net,x,indices):
+    z=np.zeros((len(x),192),dtype='float32');z[indices]=encode(net,x[indices]);return z
 def prepared(d,users):
     fit=np.isin(d['user'],users)&(d['role']=='fit');sc=StandardScaler().fit(d['x'][fit]);x=sc.transform(d['x']).astype('float32');return x,norm(x),norm(x[:,:40]),sc
-def train(d,t,users,method,lam,seed,steps,x,callback=None):
+def train(d,t,users,method,lam,seed,steps,x,callback=None,callback_indices=None):
     torch.manual_seed(seed);rng=np.random.RandomState(seed);net=Student();head=nn.Linear(192,len(users));opt=torch.optim.AdamW(list(net.parameters())+list(head.parameters()),lr=1e-4,weight_decay=1e-4);lookup={u:np.flatnonzero((d['user']==u)&(d['role']=='fit')) for u in users};labels={u:i for i,u in enumerate(users)};history=[];states={}
     assert all(len(v)>=4 for v in lookup.values())
     if method!='S1':assert all(np.linalg.norm(t[ix],axis=1).min()>.99 for ix in lookup.values())
@@ -53,7 +55,7 @@ def train(d,t,users,method,lam,seed,steps,x,callback=None):
         elif method=='S3':kd=rkd(z,torch.tensor(t[ix]),y)
         loss=loss+lam*kd;opt.zero_grad();loss.backward();nn.utils.clip_grad_norm_(list(net.parameters())+list(head.parameters()),1);opt.step()
         if step%100==0 or step==steps:
-            if callback:history.append(dict(step=step,**callback(encode(net,x))))
+            if callback:history.append(dict(step=step,**callback(encode_subset(net,x,callback_indices))))
             states[step]=copy.deepcopy(net.state_dict());print('TRAIN',method,seed,lam,step,float(loss.detach()),flush=True)
     return states,history
 def fit_development(d,t,out,steps):
@@ -61,17 +63,17 @@ def fit_development(d,t,out,steps):
     if path.exists():return json.loads(path.read_text())
     users=list(range(29));cal=[29,30,31];dev=[32,33,34];x,stat,shape,sc=prepared(d,users)
     # Strong frozen shape baseline and full-stat reference are both reported.
-    stat=shape;cs=comparisons(stat,d,cal,12);qs=comparisons(stat,d,dev,12);fixed=assess(cs,qs);selected={};allhist={}
+    stat=shape;cs=comparisons(stat,d,cal,12);qs=comparisons(stat,d,dev,12);fixed=assess(cs,qs);selected={};allhist={};selection_ix=np.flatnonzero(np.isin(d['user'],cal+dev)&np.isin(d['role'],['registration','query']))
     for method in ['S1','S2','S3']:
         best=None
         for lam in ([0] if method=='S1' else [0,.03,.1,.3]):
             def callback(z):
                 result=assess(comparisons(z,d,cal,12),comparisons(z,d,dev,12));r=result['metrics']['Cal_EER'];return dict(hter=r['hter'],auc=r['auc'])
-            states,hist=train(d,t,users,method,lam,42,steps,x,callback);allhist[f'{method}_{lam}']=hist
+            states,hist=train(d,t,users,method,lam,42,steps,x,callback,selection_ix);allhist[f'{method}_{lam}']=hist
             for row in hist:
                 key=(row['hter'],-row['auc'],lam,row['step'])
                 if best is None or key<best[0]:best=(key,lam,row['step'],states[row['step']])
-        _,lam,step,state=best;net=Student();net.load_state_dict(state);z=encode(net,x);zc=comparisons(z,d,cal,12);zq=comparisons(z,d,dev,12);mu=[float(cs[0].mean()),float(zc[0].mean())];sd=[float(cs[0].std()),float(zc[0].std())];choice=None
+        _,lam,step,state=best;net=Student();net.load_state_dict(state);z=encode_subset(net,x,selection_ix);zc=comparisons(z,d,cal,12);zq=comparisons(z,d,dev,12);mu=[float(cs[0].mean()),float(zc[0].mean())];sd=[float(cs[0].std()),float(zc[0].std())];choice=None
         for alpha in [0,.25,.5,.75,1]:
             fc=((1-alpha)*(cs[0]-mu[0])/max(sd[0],1e-8)+alpha*(zc[0]-mu[1])/max(sd[1],1e-8),cs[1],cs[2]);fq=((1-alpha)*(qs[0]-mu[0])/max(sd[0],1e-8)+alpha*(zq[0]-mu[1])/max(sd[1],1e-8),qs[1],qs[2]);r=assess(fc,fq)['metrics']['Cal_EER'];key=(r['hter'],-r['auc'],alpha)
             if choice is None or key<choice[0]:choice=(key,alpha)
@@ -86,7 +88,7 @@ def evaluate_final(d,t,out,selection,seeds,steps):
         result={}
         for name,z in [('S0_shape',shape),('S0_allstats',full)]:result[name]={str(k):assess(comparisons(z,d,cal,k),comparisons(z,d,test,k)) for k in [3,5,12]}
         for method in ['S1','S2','S3']:
-            p=selection['selected'][method];states,_=train(d,t,users,method,p['lam'],seed,steps,x);net=Student();net.load_state_dict(states[p['step']]);torch.save(dict(state=states[p['step']],selection=p,base_users=users),out/f'{method}_seed{seed}_private.pt');z=encode(net,x);result[method+'_student']={};result[method+'_fusion']={}
+            p=selection['selected'][method];states,_=train(d,t,users,method,p['lam'],seed,steps,x);net=Student();net.load_state_dict(states[p['step']]);torch.save(dict(state=states[p['step']],selection=p,base_users=users),out/f'{method}_seed{seed}_private.pt');final_ix=np.flatnonzero(np.isin(d['user'],cal+test)&np.isin(d['role'],['registration','query']));z=encode_subset(net,x,final_ix);result[method+'_student']={};result[method+'_fusion']={}
             for k in [3,5,12]:
                 cc=comparisons(z,d,cal,k);qq=comparisons(z,d,test,k);result[method+'_student'][str(k)]=assess(cc,qq);bc=comparisons(shape,d,cal,k);bq=comparisons(shape,d,test,k);mu=p['score_means'];sd=p['score_stds'];alpha=p['alpha']
                 def mix(s,b):return ((1-alpha)*(b[0]-mu[0])/max(sd[0],1e-8)+alpha*(s[0]-mu[1])/max(sd[1],1e-8),s[1],s[2])
