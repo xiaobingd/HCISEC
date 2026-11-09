@@ -1,0 +1,66 @@
+{
+  "alpha": 1.0,
+  "rho": 0.3,
+  "rule": "Base29train3innerCal3innerDev;positive alpha only,minHTER,tie macroAUC then smaller alpha;alpha0 reference only;V4 only",
+  "dimension": 232,
+  "shape_branch": "unmodified standardized shape40,weight1,never projected or learned",
+  "student_branch": "V4 personalized Audio-finetuned teacher+balancedRKD192",
+  "choices": [
+    {
+      "alpha": 0,
+      "hter": 0.02430555555555553,
+      "auc": 0.9962384259259259,
+      "tar": 0.9861111111111112,
+      "far": 0.034722222222222224
+    },
+    {
+      "alpha": 0.05,
+      "hter": 0.02430555555555553,
+      "auc": 0.9965277777777777,
+      "tar": 0.9861111111111112,
+      "far": 0.034722222222222224
+    },
+    {
+      "alpha": 0.1,
+      "hter": 0.02430555555555553,
+      "auc": 0.9965277777777777,
+      "tar": 0.9861111111111112,
+      "far": 0.034722222222222224
+    },
+    {
+      "alpha": 0.2,
+      "hter": 0.027777777777777783,
+      "auc": 0.9965277777777777,
+      "tar": 0.9722222222222222,
+      "far": 0.027777777777777776
+    },
+    {
+      "alpha": 0.3,
+      "hter": 0.02430555555555556,
+      "auc": 0.9968171296296297,
+      "tar": 0.9722222222222222,
+      "far": 0.020833333333333332
+    },
+    {
+      "alpha": 0.5,
+      "hter": 0.02083333333333334,
+      "auc": 0.9973958333333334,
+      "tar": 0.9722222222222222,
+      "far": 0.013888888888888888
+    },
+    {
+      "alpha": 0.75,
+      "hter": 0.013888888888888895,
+      "auc": 0.9985532407407408,
+      "tar": 0.9722222222222222,
+      "far": 0.0
+    },
+    {
+      "alpha": 1.0,
+      "hter": 0.013888888888888895,
+      "auc": 0.9994212962962963,
+      "tar": 0.9722222222222222,
+      "far": 0.0
+    }
+  ]
+}
