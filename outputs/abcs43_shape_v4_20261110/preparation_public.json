@@ -1,0 +1,29 @@
+{
+  "state": "prepared",
+  "total_users": 43,
+  "base_users": 23,
+  "cal_users": 8,
+  "test_users": 12,
+  "records": 2445,
+  "teacher_audio_records": 332,
+  "query_audio_forward_candidates": 0,
+  "role_counts": {
+    "fit": 1380,
+    "develop": 345,
+    "registration": 240,
+    "calibration": 192,
+    "query": 288
+  },
+  "shared_test_query_texts": 24,
+  "shared_registration_texts": 12,
+  "shared_cal_query_texts": 24,
+  "text_role_overlap": 0,
+  "crc_checks": 2445,
+  "exact_pcm_duplicates": 0,
+  "selection": "fixed identity sha256 abcs43-v1,metadata coverage only;all43included;no auth-score selection",
+  "channels": "ch0 provisional vibration,ch1 provisional Audio;physical mapping unresolved",
+  "files": {
+    "inputs_private.npz": 4182143,
+    "audio_fit_register_private.npz": 19728635
+  }
+}
