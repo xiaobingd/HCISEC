@@ -1,0 +1,70 @@
+{
+  "stage": "partial_T0_T3_only_controls_pending",
+  "cohort": {
+    "base_identities": 7,
+    "calibration_identities": 2,
+    "target_identities": 5
+  },
+  "macro": {
+    "T0_matched": {
+      "eer": {
+        "unseen_attackers": {
+          "tar": 0.925,
+          "far": 0.225,
+          "hter": 0.15,
+          "auc": 0.9307187499999999
+        },
+        "all_other_sources": {
+          "tar": 0.925,
+          "far": 0.20653846153846156,
+          "hter": 0.14076923076923079,
+          "auc": 0.9251538461538462
+        }
+      },
+      "cal_far05": {
+        "unseen_attackers": {
+          "tar": 0.9549999999999998,
+          "far": 0.28250000000000003,
+          "hter": 0.16375,
+          "auc": 0.9307187499999999
+        },
+        "all_other_sources": {
+          "tar": 0.9549999999999998,
+          "far": 0.28346153846153843,
+          "hter": 0.16423076923076924,
+          "auc": 0.9251538461538462
+        }
+      }
+    },
+    "T3_paired": {
+      "eer": {
+        "unseen_attackers": {
+          "tar": 0.925,
+          "far": 0.215,
+          "hter": 0.145,
+          "auc": 0.92796875
+        },
+        "all_other_sources": {
+          "tar": 0.925,
+          "far": 0.20192307692307693,
+          "hter": 0.13846153846153847,
+          "auc": 0.9208173076923076
+        }
+      },
+      "cal_far05": {
+        "unseen_attackers": {
+          "tar": 0.9649999999999999,
+          "far": 0.26125000000000004,
+          "hter": 0.148125,
+          "auc": 0.92796875
+        },
+        "all_other_sources": {
+          "tar": 0.9649999999999999,
+          "far": 0.28230769230769226,
+          "hter": 0.15865384615384615,
+          "auc": 0.9208173076923076
+        }
+      }
+    }
+  }
+}
