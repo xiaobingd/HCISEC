@@ -1,0 +1,77 @@
+{
+  "state": "complete",
+  "targets": 8,
+  "results": {
+    "original_statistics": {
+      "unseen_attacker": {
+        "tar": 0.640625,
+        "far": 0.4322916666666667,
+        "hter": 0.39583333333333337,
+        "auc": 0.9329427083333334
+      },
+      "all_seven_sources": {
+        "tar": 0.640625,
+        "far": 0.16889880952380953,
+        "hter": 0.26413690476190477,
+        "auc": 0.9623635912698413
+      }
+    },
+    "statistics_pca192": {
+      "unseen_attacker": {
+        "tar": 0.640625,
+        "far": 0.4322916666666667,
+        "hter": 0.39583333333333337,
+        "auc": 0.9325086805555556
+      },
+      "all_seven_sources": {
+        "tar": 0.640625,
+        "far": 0.16889880952380953,
+        "hter": 0.26413690476190477,
+        "auc": 0.9620225694444444
+      }
+    },
+    "stats_mlp": {
+      "unseen_attacker": {
+        "tar": 0.6354166666666667,
+        "far": 0.4166666666666667,
+        "hter": 0.390625,
+        "auc": 0.9077690972222222
+      },
+      "all_seven_sources": {
+        "tar": 0.6354166666666667,
+        "far": 0.1875,
+        "hter": 0.2760416666666667,
+        "auc": 0.9345238095238095
+      }
+    },
+    "resnet18": {
+      "unseen_attacker": {
+        "tar": 0.5625,
+        "far": 0.49479166666666674,
+        "hter": 0.46614583333333337,
+        "auc": 0.7033420138888888
+      },
+      "all_seven_sources": {
+        "tar": 0.5625,
+        "far": 0.2217261904761905,
+        "hter": 0.32961309523809523,
+        "auc": 0.8208705357142857
+      }
+    }
+  },
+  "training_macro": {
+    "stats_mlp": {
+      "fit_pair_auc": 0.9999788626020087,
+      "dev_pair_auc": 0.992066798941799,
+      "selected_step": 200.0,
+      "parameters": 111040.0
+    },
+    "resnet18": {
+      "fit_pair_auc": 0.9999971064814814,
+      "dev_pair_auc": 0.9610152116402116,
+      "selected_step": 162.5,
+      "parameters": 11268736.0
+    }
+  },
+  "protocol": "4Base/2Cal/1target/1unseen;12shot;matched actual query texts;cross-text enrollment;channel0 provisionalBC;seed42;200steps"
+}
