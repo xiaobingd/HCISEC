@@ -1,0 +1,159 @@
+{
+  "state": "complete",
+  "total_identities": 43,
+  "base": 23,
+  "calibration": 8,
+  "test": 12,
+  "K": 12,
+  "seed": 42,
+  "alpha": 1,
+  "rho": 0.3,
+  "results": {
+    "shape40": {
+      "Cal_EER": {
+        "tar": 0.9583333333333334,
+        "far": 0.08301767676767677,
+        "frr": 0.04166666666666663,
+        "hter": 0.0623421717171717,
+        "auc": 0.9849328791386083,
+        "eer": 0.06281565656565657,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.9942129629629629,
+        "macro_eer": 0.026357323232323246,
+        "worst_target_far": 0.19318181818181818,
+        "lowest_target_tar": 0.75
+      },
+      "Cal_FAR5": {
+        "tar": 0.9722222222222222,
+        "far": 0.11142676767676768,
+        "frr": 0.02777777777777779,
+        "hter": 0.06960227272727273,
+        "auc": 0.9849328791386083,
+        "eer": 0.06281565656565657,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.9942129629629629,
+        "macro_eer": 0.026357323232323246,
+        "worst_target_far": 0.23106060606060605,
+        "lowest_target_tar": 0.9166666666666666
+      }
+    },
+    "statistics240": {
+      "Cal_EER": {
+        "tar": 0.8888888888888888,
+        "far": 0.1537247474747475,
+        "frr": 0.11111111111111116,
+        "hter": 0.13241792929292934,
+        "auc": 0.9383625754068462,
+        "eer": 0.13494318181818182,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.9689472853535354,
+        "macro_eer": 0.07323232323232325,
+        "worst_target_far": 0.36742424242424243,
+        "lowest_target_tar": 0.625
+      },
+      "Cal_FAR5": {
+        "tar": 0.8194444444444444,
+        "far": 0.10669191919191919,
+        "frr": 0.18055555555555558,
+        "hter": 0.14362373737373738,
+        "auc": 0.9383625754068462,
+        "eer": 0.13494318181818182,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.9689472853535354,
+        "macro_eer": 0.07323232323232325,
+        "worst_target_far": 0.3106060606060606,
+        "lowest_target_tar": 0.4166666666666667
+      }
+    },
+    "student192": {
+      "Cal_EER": {
+        "tar": 0.90625,
+        "far": 0.06849747474747475,
+        "frr": 0.09375,
+        "hter": 0.08112373737373738,
+        "auc": 0.9703666438692481,
+        "eer": 0.07922979797979801,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.9731428872053872,
+        "macro_eer": 0.08254419191919192,
+        "worst_target_far": 0.17045454545454544,
+        "lowest_target_tar": 0.75
+      },
+      "Cal_FAR5": {
+        "tar": 0.9236111111111112,
+        "far": 0.08175505050505051,
+        "frr": 0.07638888888888884,
+        "hter": 0.07907196969696967,
+        "auc": 0.9703666438692481,
+        "eer": 0.07922979797979801,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.9731428872053872,
+        "macro_eer": 0.08254419191919192,
+        "worst_target_far": 0.1893939393939394,
+        "lowest_target_tar": 0.7916666666666666
+      }
+    },
+    "supplement232": {
+      "Cal_EER": {
+        "tar": 0.9618055555555556,
+        "far": 0.05523989898989899,
+        "frr": 0.03819444444444442,
+        "hter": 0.046717171717171706,
+        "auc": 0.9869002525252526,
+        "eer": 0.0494002525252526,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.992660984848485,
+        "macro_eer": 0.03393308080808082,
+        "worst_target_far": 0.14015151515151514,
+        "lowest_target_tar": 0.8333333333333334
+      },
+      "Cal_FAR5": {
+        "tar": 0.9652777777777778,
+        "far": 0.06502525252525253,
+        "frr": 0.03472222222222221,
+        "hter": 0.04987373737373737,
+        "auc": 0.9869002525252526,
+        "eer": 0.0494002525252526,
+        "genuine_n": 288,
+        "impostor_n": 3168,
+        "macro_auc": 0.992660984848485,
+        "macro_eer": 0.03393308080808082,
+        "worst_target_far": 0.1553030303030303,
+        "lowest_target_tar": 0.8333333333333334
+      }
+    }
+  },
+  "paired_vs": {
+    "shape40": {
+      "hter_delta": -0.015625,
+      "identity_bootstrap95": [
+        -0.03630050505050504,
+        0.002840909090909097
+      ],
+      "improved_targets": 9
+    },
+    "student192": {
+      "hter_delta": -0.034406565656565656,
+      "identity_bootstrap95": [
+        -0.055871212121212106,
+        -0.014204545454545447
+      ],
+      "improved_targets": 10
+    }
+  },
+  "protocol": "fixed hash23/8/12;shared actual registration12/calquery24/testquery24,all text roles disjoint;Test each24g264att;V4 only;shape40+student192",
+  "channels": "ch0 provisional vibration/ch1 provisional Audio,physical mapping unresolved",
+  "limits": [
+    "partial source archive;43 available users not59",
+    "single seed,explored corpus",
+    "no independent same-sentence repeated recording",
+    "no verified redon/crossdevice sessions"
+  ]
+}
