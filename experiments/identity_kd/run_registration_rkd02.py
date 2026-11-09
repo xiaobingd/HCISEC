@@ -50,11 +50,14 @@ def teacher_targets(a,d,records,source,root,owner,base,external):
 def adapt_student(d,x,initial,owner,base,indices,targets,method,rho):
     torch.manual_seed(42);rng=np.random.RandomState(42000+owner);net=copy.deepcopy(initial);head=nn.Linear(192,len(base)+1,bias=False);labels={u:j for j,u in enumerate(base+[owner])};yall=np.array([labels[int(u)] for u in d['user'][indices]]);lookup={u:np.flatnonzero(d['user'][indices]==u) for u in base+[owner]};xx=x[indices];start=encode(net,xx)
     with torch.no_grad():head.weight.copy_(torch.tensor(norm(np.stack([start[yall==j].mean(0) for j in range(len(labels))]))))
-    opt=torch.optim.AdamW(list(net.parameters())+list(head.parameters()),lr=1e-4,weight_decay=1e-4);ema_id=None;ema_kd=None;trace=[];params=list(net.parameters())
+    opt=torch.optim.AdamW(list(net.parameters())+list(head.parameters()),lr=1e-4,weight_decay=1e-4);ema_id=None;ema_kd=None;trace=[];params=list(net.parameters());control_rng=np.random.RandomState(142000+owner);rp=torch.randn(246,192,generator=torch.Generator().manual_seed(20261110))/np.sqrt(246)
     for step in range(1,101):
         net.train();uu=rng.choice(base,6,replace=False);ii=np.concatenate([rng.choice(lookup[owner],8,replace=False)]+[rng.choice(lookup[u],4,replace=False) for u in uu]);y=torch.tensor(yall[ii],dtype=torch.long);z=net(torch.tensor(xx[ii]));identity=F.cross_entropy(16*F.linear(z,F.normalize(head.weight,dim=1)),y)+.1*supcon(z,y)+.1*(1-F.cosine_similarity(z[8:],torch.tensor(start[ii[8:]]),dim=1)).mean();kd=z.new_zeros(());lam=0.;ratio=0.
         if method!='V0':
-            kd=rkd(z,torch.tensor(targets[ii]),y);gi=torch.autograd.grad(identity,params,retain_graph=True,allow_unused=True);gk=torch.autograd.grad(kd,params,retain_graph=True,allow_unused=True);ni=torch.sqrt(sum(g.square().sum() for g in gi if g is not None));nk=torch.sqrt(sum(g.square().sum() for g in gk if g is not None));ema_id=float(ni) if ema_id is None else .9*ema_id+.1*float(ni);ema_kd=float(nk) if ema_kd is None else .9*ema_kd+.1*float(nk);lam=.3 if method in ['V1','V3'] else min(100.,rho*ema_id/max(ema_kd,1e-8));ratio=lam*float(nk)/max(float(ni),1e-8)
+            target=torch.tensor(targets[ii])
+            if method=='V5':target=torch.tensor(targets[[control_rng.choice(np.flatnonzero(yall!=label)) for label in yall[ii]]])
+            elif method=='V6':target=F.normalize(torch.tensor(xx[ii])@rp,dim=1)
+            kd=rkd(z,target,y);gi=torch.autograd.grad(identity,params,retain_graph=True,allow_unused=True);gk=torch.autograd.grad(kd,params,retain_graph=True,allow_unused=True);ni=torch.sqrt(sum(g.square().sum() for g in gi if g is not None));nk=torch.sqrt(sum(g.square().sum() for g in gk if g is not None));ema_id=float(ni) if ema_id is None else .9*ema_id+.1*float(ni);ema_kd=float(nk) if ema_kd is None else .9*ema_kd+.1*float(nk);lam=.3 if method in ['V1','V3'] else min(100.,rho*ema_id/max(ema_kd,1e-8));ratio=lam*float(nk)/max(float(ni),1e-8)
         loss=identity+lam*kd;opt.zero_grad();loss.backward();nn.utils.clip_grad_norm_(list(net.parameters())+list(head.parameters()),1);opt.step()
         if step in [1,25,50,100]:trace.append(dict(step=step,lambda_rkd=lam,gradient_ratio=ratio,identity_loss=float(identity.detach()),rkd_loss=float(kd.detach())))
     return net,trace
@@ -73,7 +76,7 @@ def evaluate_owners(a,d,x,initial,base,owners,root,external,rho,methods):
             dest=folder/f'{method}_rho{rho}_private.json'
             if dest.exists():result=json.loads(dest.read_text())
             else:
-                net,trace=adapt_student(d,x,initial,u,base,indices,adapted if method in ['V3','V4'] else frozen,method,rho);group=list(range(29,32)) if u in range(29,32) else list(range(32,35)) if u in range(32,35) else list(range(35,47)) if u<47 else list(range(47,59));result=score_owner(net,x,d,u,[v for v in group if v!=u]);result['trace']=trace;dump(dest,result);torch.save(net.state_dict(),folder/f'{method}_rho{rho}_student_private.pt')
+                net,trace=adapt_student(d,x,initial,u,base,indices,adapted if method in ['V3','V4','V5'] else frozen,method,rho);group=list(range(29,32)) if u in range(29,32) else list(range(32,35)) if u in range(32,35) else list(range(35,47)) if u<47 else list(range(47,59));result=score_owner(net,x,d,u,[v for v in group if v!=u]);result['trace']=trace;dump(dest,result);torch.save(net.state_dict(),folder/f'{method}_rho{rho}_student_private.pt')
             allrows[method][u]=result
         print('OWNER_COMPLETE',u,rho,methods,flush=True)
     return allrows
@@ -89,7 +92,7 @@ def main(a):
         for rho in [.03,.1,.3]:
             rows=evaluate_owners(a,d,x,initial,base,list(range(29,35)),root/'inner',external,rho,['V2']);r=assess_rows([rows['V2'][u] for u in range(29,32)],[rows['V2'][u] for u in range(32,35)]);choices.append((r['Cal_EER']['hter'],-r['Cal_EER']['macro_auc'],rho))
         best=min(choices);dump(lock,dict(rho=best[2],selection='Base29train,3innerCal,3innerDev;seed42,K12;V2 only',teacher_steps=30,student_steps=100,choices=[dict(hter=v[0],rho=v[2]) for v in choices]));print('RHO_LOCKED',best[2],flush=True)
-    rho=json.loads(lock.read_text())['rho'];base=list(range(35));fit=np.isin(d['user'],base)&(d['role']=='fit');x=StandardScaler().fit(d['x'][fit]).transform(d['x']).astype('float32');initial=Student();initial.load_state_dict(torch.load(source/'training/S1_seed42_private.pt',map_location='cpu',weights_only=False)['state']);methods=['V0','V1','V2','V3','V4'];rows=evaluate_owners(a,d,x,initial,base,list(range(35,59)),root/'outer',external,rho,methods);public={}
+    rho=json.loads(lock.read_text())['rho'];base=list(range(35));fit=np.isin(d['user'],base)&(d['role']=='fit');x=StandardScaler().fit(d['x'][fit]).transform(d['x']).astype('float32');initial=Student();initial.load_state_dict(torch.load(source/'training/S1_seed42_private.pt',map_location='cpu',weights_only=False)['state']);methods=['V0','V1','V2','V3','V4']+(['V5','V6'] if a.controls else []);rows=evaluate_owners(a,d,x,initial,base,list(range(35,59)),root/'outer',external,rho,methods);public={}
     for method in methods:public[method]=assess_rows([rows[method][u] for u in range(35,47)],[rows[method][u] for u in range(47,59)])
     for name in ['R_frozen','S0_shape']:
         ref={};shape=norm(x[:,:40])
@@ -99,6 +102,6 @@ def main(a):
             else:
                 en=registration(d,u);q=np.flatnonzero(np.isin(d['user'],group)&(d['role']=='query'));ref[u]=dict(scores=(shape[q]@norm(shape[en].mean(0))).tolist(),labels=(d['user'][q]==u).tolist())
         public[name]=assess_rows([ref[u] for u in range(35,47)],[ref[u] for u in range(47,59)])
-    dump(root/'results_public.json',dict(state='complete',protocol='registration Audio+vibration allowed;query vibration only;K12;35Base12Cal12Test;seed42;one fixed identity split',rho=rho,methods=dict(V0='vibration-only personal adaptation',V1='frozen ECAPA,lambda0.3',V2='frozen ECAPA,gradient balanced',V3='registrant Audio-finetuned ECAPA,lambda0.3',V4='registrant Audio-finetuned ECAPA,gradient balanced'),results=public));print('COMPLETE',flush=True)
+    dump(root/'results_public.json',dict(state='complete',protocol='registration Audio+vibration allowed;query vibration only;K12;35Base12Cal12Test;seed42;one fixed identity split',rho=rho,methods=dict(V0='vibration-only personal adaptation',V1='frozen ECAPA,lambda0.3',V2='frozen ECAPA,gradient balanced',V3='registrant Audio-finetuned ECAPA,lambda0.3',V4='registrant Audio-finetuned ECAPA,gradient balanced',V5='wrong identity correspondence,adapted teacher,gradient balanced',V6='vibration random-projection geometry,no Audio,gradient balanced'),results=public));print('COMPLETE',flush=True)
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--paired',required=True);p.add_argument('--out',required=True);main(p.parse_args())
+    p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--paired',required=True);p.add_argument('--out',required=True);p.add_argument('--controls',action='store_true');main(p.parse_args())
