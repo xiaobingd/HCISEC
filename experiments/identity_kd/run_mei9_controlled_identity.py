@@ -43,7 +43,7 @@ def descriptives(a,out):
     for name,v in groups.items():
         y=StandardScaler().fit_transform(v);total=np.sum((y-y.mean(0))**2)
         def r2(x):return float(1-np.sum((y-x@np.linalg.lstsq(x,y,rcond=None)[0])**2)/total)
-        result[name]=dict(user_r2=r2(user),word_r2=r2(word),user_plus_word_r2=r2(np.c_[user,word]))
+        result[name]=dict(user_r2=r2(user),word_r2=r2(word),user_plus_word_r2=r2(np.c_[user,word]),date_r2=r2(date),additional_user_given_date_r2=r2(user)-r2(date))
     (out/'descriptive_public.json').write_text(json.dumps(dict(component_variance=result,user_design_rank=int(np.linalg.matrix_rank(user)),user_plus_date_design_rank=int(np.linalg.matrix_rank(np.c_[user,date])),interpretation='all-record descriptive ANOVA only,not fitting authentication;date is collinear with identity when each user has one recording date;not evidence of biological origin',user_confirmed_same_headset=True,user_confirmed_no_redon_or_crossday_repeat=True),indent=2))
 def ablations(a,out):
     b=a['spectrum'];amp=a['amplitude'];fac=factors(b,amp);base_stats=stats(b);centered_stats=stats(b-b.mean((2,3),keepdims=True));d={k:a[k] for k in ['user','word','role','sample_id']};results={}
