@@ -32,7 +32,7 @@ def train(d,method,steps):
     if (folder/'complete.json').exists():return
     torch.manual_seed(42);rng=np.random.RandomState(42);net=r.Model(8);opt=torch.optim.AdamW(net.parameters(),lr=1e-4,weight_decay=1e-4);initial=hashlib.sha256(b''.join(t.numpy().tobytes() for t in net.state_dict().values())).hexdigest();fit=np.flatnonzero(d['role']=='fit');dev=np.flatnonzero(d['role']=='dev');lookup={(int(u),int(j)):i for i,(u,j) in enumerate(zip(d['user'],d['index']))};best=-1;history=[];gradient=None;start=time.time()
     for step in range(1,steps+1):
-        net.train();ix=np.concatenate([rng.choice(fit[d['user'][fit]==u],2,replace=False) for u in range(8)]);yy=torch.tensor(d['user'][ix]);target=torch.tensor(d['audio'][ix].copy())
+        net.train();ix=np.concatenate([rng.choice(fit[d['user'][fit]==u],2,replace=False) for u in range(8)]);yy=torch.tensor(d['user'][ix],dtype=torch.long);target=torch.tensor(d['audio'][ix].copy())
         if method=='T3_wrong_time':target=torch.roll(target,14,-1)
         if method=='T3_wrong_user':target=torch.tensor(d['audio'][[lookup[(int(d['user'][i])+1)%8,int(d['index'][i])] for i in ix]])
         z,logits,pred=net(torch.tensor(d['x'][ix]));identity=F.cross_entropy(logits,yy)+.1*r.supcon(z,yy);spec=F.mse_loss(pred[:,:17],target[:,:17]);env=F.mse_loss(pred[:,17:],target[:,17:]);aux=.1*(spec+env);loss=identity if method=='T0_matched' else identity+aux
