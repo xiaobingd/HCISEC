@@ -1,0 +1,40 @@
+{
+  "state": "complete",
+  "scope": "post-hoc gradient audit on Base-fit only;separate frozen-score verification of final results;no tuning",
+  "seed": 42,
+  "lambda_rkd": 0.3,
+  "replayed_steps": 700,
+  "max_replay_checkpoint_difference": 0.0,
+  "max_rkd_vs_no_kd_parameter_difference": 0.0005313255824148655,
+  "gradient_diagnostic": [
+    {
+      "step": 1,
+      "identity_loss": 4.31630802154541,
+      "rkd_loss": 0.01618162915110588,
+      "identity_grad_norm": 7.043835163116455,
+      "weighted_rkd_grad_norm": 0.009744355455040932,
+      "weighted_rkd_to_identity_grad_ratio": 0.0013833878329023719,
+      "gradient_cosine": 0.06610064953565598
+    },
+    {
+      "step": 100,
+      "identity_loss": 3.0292623043060303,
+      "rkd_loss": 0.019622478634119034,
+      "identity_grad_norm": 6.378231525421143,
+      "weighted_rkd_grad_norm": 0.010254498571157455,
+      "weighted_rkd_to_identity_grad_ratio": 0.001607733778655529,
+      "gradient_cosine": 0.15261304378509521
+    },
+    {
+      "step": 700,
+      "identity_loss": 0.3420494794845581,
+      "rkd_loss": 0.004830804653465748,
+      "identity_grad_norm": 1.5904197692871094,
+      "weighted_rkd_grad_norm": 0.004945106338709593,
+      "weighted_rkd_to_identity_grad_ratio": 0.0031093088909983635,
+      "gradient_cosine": 0.25003179907798767
+    }
+  ],
+  "frozen_target_workpoint_checks": 3456,
+  "pairwise_auc_and_cal_far5_verified": true
+}
