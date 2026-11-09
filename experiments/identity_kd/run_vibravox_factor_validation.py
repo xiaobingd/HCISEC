@@ -39,9 +39,12 @@ def ablate(d,out):
         for band in ['low','mid']:
             x=stats(d[band+'_spectrum']);vectors[band+'_band_statistics']=p.norm(StandardScaler().fit(x[fit]).transform(x))
         result=dict(fold=f,methods={name:evaluate(z,d,f) for name,z in vectors.items()},gain_stress={})
-        for gain,label in [(.5,'gain_half'),(2.,'gain_double')]:result['gain_stress'][label]=evaluate(vectors['original_statistics'],d,f,p.norm(sc.transform(stats(d['spectrum']+2*np.log(gain)))))
+        shape_sc=StandardScaler().fit(fac['shape'][fit])
+        for gain,label in [(.5,'gain_half'),(2.,'gain_double')]:
+            bb=d['spectrum']+2*np.log(gain);result['gain_stress'][label]=evaluate(vectors['original_statistics'],d,f,p.norm(sc.transform(stats(bb))))
+            shape=factors(bb,d['amplitude']+np.log(gain))['shape'];result['gain_stress']['shape_'+label]=evaluate(vectors['shape_only'],d,f,p.norm(shape_sc.transform(shape)))
         rows[str(target)]=result;print('ABLATION_TARGET',target,flush=True)
-    (out/'ablation_results_private.json').write_text(json.dumps(rows));stress={name:{k:float(np.mean([v['gain_stress'][name]['two_unseen_attackers'][k] for v in rows.values()])) for k in ['tar','far','hter','auc']} for name in ['gain_half','gain_double']};(out/'ablation_summary_public.json').write_text(json.dumps(dict(state='complete',targets=9,results=aggregate(rows),simulated_gain_query_only=stress,protocol='real-text globally disjoint registration/query;no matched same-content claim;4Base2Cal1target2unseen;12shot24genuine48impostor;noAudio;gain linear,no ADC clipping'),indent=2))
+    (out/'ablation_results_private.json').write_text(json.dumps(rows));stress={name:{k:float(np.mean([v['gain_stress'][name]['two_unseen_attackers'][k] for v in rows.values()])) for k in ['tar','far','hter','auc']} for name in ['gain_half','gain_double','shape_gain_half','shape_gain_double']};(out/'ablation_summary_public.json').write_text(json.dumps(dict(state='complete',targets=9,results=aggregate(rows),simulated_gain_query_only=stress,protocol='real-text globally disjoint registration/query;no matched same-content claim;4Base2Cal1target2unseen;12shot24genuine48impostor;noAudio;gain linear,no ADC clipping'),indent=2))
 class MLP(nn.Module):
     def __init__(self):super().__init__();self.net=nn.Sequential(nn.Linear(240,256),nn.GELU(),nn.Linear(256,192))
     def forward(self,x):return F.normalize(self.net(x),dim=1)
