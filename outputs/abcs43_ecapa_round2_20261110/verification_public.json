@@ -1,0 +1,11 @@
+{
+  "state": "PASS",
+  "round": 2,
+  "verified_saved_models": 40,
+  "per_user_workpoint_checks": 600,
+  "max_saved_score_error": 2.384185791015625e-07,
+  "query_audio_forwards": 0,
+  "training_registration_query_isolation": true,
+  "all_predeclared_users_and_methods_reported": true,
+  "calibration_selection_recomputed": true
+}
