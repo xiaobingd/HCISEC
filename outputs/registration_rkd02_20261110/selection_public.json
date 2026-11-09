@@ -1,0 +1,20 @@
+{
+  "rho": 0.3,
+  "selection": "Base29train,3innerCal,3innerDev;seed42,K12;V2 only",
+  "teacher_steps": 30,
+  "student_steps": 100,
+  "choices": [
+    {
+      "hter": 0.02777777777777779,
+      "rho": 0.03
+    },
+    {
+      "hter": 0.03472222222222221,
+      "rho": 0.1
+    },
+    {
+      "hter": 0.020833333333333315,
+      "rho": 0.3
+    }
+  ]
+}
