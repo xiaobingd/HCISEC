@@ -1,0 +1,43 @@
+{
+  "state": "complete",
+  "users": 8,
+  "common_texts": 125,
+  "used_common_texts": 124,
+  "records": 992,
+  "role_counts": {
+    "fit": 480,
+    "develop": 120,
+    "registration": 96,
+    "calibration": 104,
+    "query": 192
+  },
+  "per_user_counts": {
+    "fit": 60,
+    "develop": 15,
+    "registration": 12,
+    "calibration": 13,
+    "query": 24
+  },
+  "unused_texts": 1,
+  "text_role_overlap": 0,
+  "all_query_texts_matched_across_users": true,
+  "crc_failures": 0,
+  "exact_pcm_duplicates": 0,
+  "source_duration_range": [
+    1.47175,
+    7.23
+  ],
+  "window": "whole original utterance for main;time-frequency representation interpolated16frames,no waveform stretching/zero padding;center1.25sec only raw-stat control",
+  "frontend": "16kHz DC removal,4096Hann/1024hop/16384FFT,1x40x16;primary50..7600Hz;10..300/50..1200Hz raw controls",
+  "channels": "channel0 provisional BC per user;channel1 independent raw-stat control,not fused;official channel index not independently confirmed",
+  "split": "reuse previous abcs-split-v1 text order;60fit15dev12register13Cal24query1unused;Cal-query texts separate from final-query texts",
+  "limits": [
+    "partial archive subset,z01 unavailable",
+    "no independent same-text repeats for same-content training/testing",
+    "no verified redon/session/device labels",
+    "official transcript structure checked,not independent listening/ASR",
+    "whole-utterance normalized time differs from VibraVox fixed2sec frontend;within-dataset methods matched",
+    "shared prompts do not imply framewise phoneme alignment"
+  ],
+  "elapsed_seconds": 114.67339277267456
+}
