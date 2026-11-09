@@ -56,8 +56,8 @@ def prepare():
     np.savez_compressed(path,**d);write(ROOT/'preprocessing_private.json',dict(bc_low=float(lo),bc_high=float(hi),audio_mean=mean.ravel().tolist(),audio_std=std.ravel().tolist(),selected_band_centers=CENTERS[selected].tolist(),audio_access='onlyBase first100;no Cal or targetAudio',exact_bc_duplicate_pairs=dups));return d
 
 class Model(nn.Module):
-    def __init__(self):
-        super().__init__();self.body=resnet18(weights=None);self.body.fc=nn.Linear(512,192);self.classifier=nn.Linear(192,4);self.aux=nn.Sequential(nn.Conv1d(64,64,3,padding=1),nn.GELU(),nn.Conv1d(64,18,1))
+    def __init__(self,nclasses=4):
+        super().__init__();self.body=resnet18(weights=None);self.body.fc=nn.Linear(512,192);self.classifier=nn.Linear(192,nclasses);self.aux=nn.Sequential(nn.Conv1d(64,64,3,padding=1),nn.GELU(),nn.Conv1d(64,18,1))
     def forward(self,x):
         b=self.body;x=x[:,None].repeat(1,3,1,1);x=b.maxpool(b.relu(b.bn1(b.conv1(x))));early=b.layer1(x)
         prediction=F.interpolate(self.aux(early.mean(2)),size=80,mode='linear',align_corners=False)
