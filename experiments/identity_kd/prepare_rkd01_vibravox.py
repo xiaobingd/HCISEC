@@ -4,6 +4,7 @@ for k in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS']:os.environ
 import argparse,json,hashlib,unicodedata,time,sys
 from pathlib import Path
 from collections import defaultdict,Counter
+from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 from scipy import signal
 from scipy.stats import spearmanr
@@ -15,6 +16,10 @@ def textrole(t):
     v=int(h('vib-factor-text-v1|'+t)[:8],16)%100
     return 'fit' if v<50 else 'develop' if v<65 else 'registration' if v<80 else 'query'
 def dump(p,x):Path(p).write_text(json.dumps(x,ensure_ascii=False,indent=2),encoding='utf8')
+def savearray(p,x):
+    p=Path(p);tmp=p.with_suffix('.tmp')
+    with tmp.open('wb') as f:np.save(f,x)
+    tmp.replace(p)
 def norm(x):return x/np.maximum(np.linalg.norm(x,axis=-1,keepdims=True),1e-12)
 def main(a):
     root=Path(a.source);out=Path(a.out);out.mkdir(parents=True,exist_ok=True);started=time.time()
@@ -36,12 +41,18 @@ def main(a):
     audit=dict(state='metadata_audited',cache_records=len(rows),cache_users=len(pool),eligible_users=len(eligible),chosen_users=59,identity_roles=dict(base=35,cal=12,test=12),record_roles=dict(Counter(r['role'] for r in records)),records=len(records),duplicate_user_texts_removed=dedup,text_groups_crossing_roles=0,identity_selection='sha256 KD-RKD-01-identity-v1,first59 eligible;not authentication scores',frontend='centered2sec per original recording,DC remove;16kHz STFT4096/1024hop/16384FFT;40log-spaced50..7600Hz;logpower mean40,std40,relative4segmentmeans160,mean-centered spectralshape40 replaces absolute mean,log amplitude6 appended=246;all scaling Basefit only',teacher='official unmodified VoxCeleb ECAPA192,hashchecked;no VibraVox-finetuned weights',inference='Audio is read only for Base fit/develop;Cal/Test Audio never read;registration/query Audio never read',limits=['VibraVox texts not matched across different users;not ABCS same-prompt experiment','sensor is single-axis forehead accelerometer,not HMD tracking velocity','previous exploratory VibraVox work exists;new fixed protocol is not an independent data collection'])
     dump(out/'audit_public.json',audit);dump(out/'manifest_private.json',dict(users=users,records=records));print(json.dumps(audit),flush=True)
     if a.audit_only:return
-    features=[];meta=[];hashes=set()
-    for r in records:
+    partial=out/'stats_partial_private.npy';features=list(np.load(partial)) if partial.exists() else [];meta=records[:len(features)];hashes={r['acc_sha256'] for r in meta};assert len(hashes)==len(meta)
+    def process(r):
         with np.load(root/'paired'/r['file']) as pair:w=pair['acc'].astype('float32')
-        dig=hashlib.sha256(w.tobytes()).hexdigest();assert dig==r['acc_sha256'] and dig not in hashes;hashes.add(dig);i=(len(w)-32000)//2;w=w[i:i+32000].astype(float);w-=w.mean()
-        f,t,z=signal.stft(w,fs=16000,nperseg=4096,noverlap=3072,nfft=16384,boundary=None,padded=False);lp=np.log(abs(z)**2+1e-20);b=np.stack([np.interp(np.geomspace(50,7600,40),f,lp[:,j]) for j in range(lp.shape[1])],1);m=b.mean(-1);seg=np.stack([b[:,q].mean(-1)-m for q in np.array_split(np.arange(b.shape[1]),4)],0);amp=np.log(np.r_[np.sqrt(np.mean(w*w)+1e-20),abs(w).max(),np.quantile(abs(w),[.5,.9,.99])]+1e-20);v=np.r_[m-m.mean(),b.std(-1),seg.ravel(),m.mean(),amp];assert v.shape==(246,) and np.isfinite(v).all();features.append(v);meta.append(r)
-        if len(meta)%250==0:print('STATS',len(meta),len(records),flush=True)
+        dig=hashlib.sha256(w.tobytes()).hexdigest();assert dig==r['acc_sha256'];i=(len(w)-32000)//2;w=w[i:i+32000].astype(float);w-=w.mean()
+        f,t,z=signal.stft(w,fs=16000,nperseg=4096,noverlap=3072,nfft=16384,boundary=None,padded=False);lp=np.log(abs(z)**2+1e-20);b=np.stack([np.interp(np.geomspace(50,7600,40),f,lp[:,j]) for j in range(lp.shape[1])],1);m=b.mean(-1);seg=np.stack([b[:,q].mean(-1)-m for q in np.array_split(np.arange(b.shape[1]),4)],0);amp=np.log(np.r_[np.sqrt(np.mean(w*w)+1e-20),abs(w).max(),np.quantile(abs(w),[.5,.9,.99])]+1e-20);v=np.r_[m-m.mean(),b.std(-1),seg.ravel(),m.mean(),amp];assert v.shape==(246,) and np.isfinite(v).all();return v,dig
+    remaining=records[len(features):]
+    with ThreadPoolExecutor(max_workers=8) as workers:
+        for r,(v,dig) in zip(remaining,workers.map(process,remaining)):
+            assert dig not in hashes;hashes.add(dig);features.append(v);meta.append(r)
+            if len(meta)%250==0:
+                savearray(partial,np.array(features,dtype='float32'));print('STATS',len(meta),len(records),flush=True)
+    savearray(partial,np.array(features,dtype='float32'))
     d=dict(x=np.array(features,dtype='float32'),user=np.array([r['user'] for r in meta]),group=np.array([r['identity_role'] for r in meta]),role=np.array([r['role'] for r in meta]),text=np.array([r['text'] for r in meta]),sample_id=np.array([r['file'] for r in meta]));np.savez_compressed(out/'inputs_private.npz',**d)
     if a.stats_only:return
     # Import the audited external-model loader, never load local adapted weights.
@@ -51,20 +62,20 @@ def main(a):
     for n in ['model','deps']:
         p=out/n
         if not p.exists():p.symlink_to(root/n,target_is_directory=True)
-    model=teacher_load(out);assert all(not p.requires_grad for p in model.parameters())
+    model=teacher_load(out);assert all(not p.requires_grad for p in model.parameters());device=next(model.parameters()).device;batchsize=16 if device.type=='cuda' else 4
     ix=np.flatnonzero((d['group']=='base')&np.isin(d['role'],['fit','develop']));dest=out/'audio_targets_private.npy';teacher=np.load(dest) if dest.exists() else np.zeros((len(meta),192),dtype='float32');finished=out/'audio_done_private.json';done=set(json.loads(finished.read_text())) if finished.exists() else set()
-    for start in range(0,len(ix),4):
-        jj=[int(i) for i in ix[start:start+4] if int(i) not in done]
+    for start in range(0,len(ix),batchsize):
+        jj=[int(i) for i in ix[start:start+batchsize] if int(i) not in done]
         if not jj:continue
         waves=[]
         for j in jj:
             r=meta[j]
             with np.load(root/'paired'/r['file']) as p:w=p['audio'].astype('float32')
             assert hashlib.sha256(w.tobytes()).hexdigest()==r['audio_sha256'];i=(len(w)-32000)//2;w=w[i:i+32000].copy();w-=w.mean();waves.append(w)
-        with torch.no_grad():teacher[jj]=norm(model.encode_batch(torch.tensor(np.stack(waves))).squeeze(1).cpu().numpy())
+        with torch.no_grad():teacher[jj]=norm(model.encode_batch(torch.tensor(np.stack(waves),device=device)).squeeze(1).cpu().numpy())
         done.update(jj)
-        if start%40==0 or start+4>=len(ix):
-            np.save(dest,teacher);dump(finished,sorted(done));dump(out/'status_public.json',dict(state='extracting_external_teacher',done=len(done),total=len(ix),elapsed_seconds=time.time()-started));print('AUDIO_TARGETS',len(done),len(ix),flush=True)
+        if start%(batchsize*10)==0 or start+batchsize>=len(ix):
+            savearray(dest,teacher);dump(finished,sorted(done));dump(out/'status_public.json',dict(state='extracting_external_teacher',device=str(device),done=len(done),total=len(ix),elapsed_seconds=time.time()-started));print('AUDIO_TARGETS',len(done),len(ix),flush=True)
     assert np.all(np.linalg.norm(teacher[ix],axis=1)>.99);assert np.all(teacher[~np.isin(np.arange(len(meta)),ix)]==0)
     dev=np.flatnonzero((d['group']=='base')&(d['role']=='develop'));z=teacher[dev];y=d['user'][dev];upper=np.triu(np.ones((len(dev),len(dev)),bool),1);same=y[:,None]==y[None,:];sim=z@z.T;labels=same[upper];vals=sim[upper];fp,tp,_=roc_curve(labels,vals);eer=float((fp[np.argmin(abs(fp-(1-tp)))]+1-tp[np.argmin(abs(fp-(1-tp)))])/2)
     # Identity-centroid geometry on Base development only.
