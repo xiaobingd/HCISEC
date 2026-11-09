@@ -11,6 +11,12 @@ def main(a):
     text+='35 Base / 12 Cal / 12 Test，三训练种子42/43/44，所有Test身份均未参与学生训练或超参数选择。注册与查询均仅使用振动；12位Test互相攻击。每目标24条本人查询、264条攻击查询。K=3/5/12为相同12条注册记录的嵌套子集。\n\n'
     text+=f"外部冻结VoxCeleb ECAPA在Base开发集AUC={diag['base_dev_auc']:.4f}、EER={100*diag['base_dev_eer']:.2f}%，Audio/振动身份关系Spearman={diag['identity_geometry_spearman']:.3f}。Base开发集中异人同文本配对为{diag['different_user_same_text_pairs']}，不能声称教师已通过相同文本困难负类验证。\n\n"
     text+='本轮是**纯统计模块3**，未加入CycleGAN。固定40维相对谱形状为强参考，并保留246维统计参考；所有学生统一输入246维。全程未读取Cal/Test的Audio。\n\n'
+    if 'S6_student' in r['results']:
+        q=r['results'];s0=q['S0_shape']['12']['Cal_EER'];s1=q['S1_student']['12']['Cal_EER'];s3=q['S3_student']['12']['Cal_EER'];s6=q['S6_student']['12']['Cal_EER'];p=r['paired']['K12_S3_minus_S1_student']
+        text+=f"## 本轮结论\n\n**这版RKD未通过预先设置的收益门槛。** 12-shot纯振动学生HTER={100*s1['hter']:.2f}%，RKD={100*s3['hter']:.2f}%，只改善{100*(s1['hter']-s3['hter']):.2f}个百分点；仅{p['improved_identities']}/12目标平均改善。错误身份RKD的HTER={100*s6['hter']:.2f}%，并未更差，不能把微小变化归因于正确的Audio身份知识。\n\n固定谱形状参考TAR={100*s0['tar']:.2f}%、FAR={100*s0['far']:.2f}%、HTER={100*s0['hter']:.2f}%，仍优于学习学生和融合。该参考最困难目标FAR={100*s0['worst_target_far']:.2f}%，不能把队列平均解释为每人都安全。\n\n"
+    if (root/'implementation_audit_public.json').exists():
+        audit=json.loads((root/'implementation_audit_public.json').read_text());ratios=[100*v['weighted_rkd_to_identity_grad_ratio'] for v in audit['gradient_diagnostic']]
+        text+=f"## 实现与梯度核查\n\n仅用Base-fit重放seed42的700步，最终模型与保存检查点最大差值={audit['max_replay_checkpoint_difference']}；RKD与无蒸馏模型参数最大差值={audit['max_rkd_vs_no_kd_parameter_difference']:.6f}。蒸馏确实参与反传。第1/100/700步，已加权RKD梯度范数分别仅为身份梯度的{', '.join(f'{v:.3f}%' for v in ratios)}。这支持“当前推荐权重下蒸馏影响过弱”的解释，不能推出Audio知识本身无效。\n\n后验诊断不用于修改本轮权重或阈值；下一轮若采用梯度量级校准，需要另立开发规则及报告，不能回填成本轮成功。\n\n"
     for k in ks:
         text+=f'## {k}-shot，Cal-EER阈值\n\n| 方法 | 宏AUC | 宏EER | TAR | FAR | HTER | 最困难目标FAR |\n|---|---:|---:|---:|---:|---:|---:|\n'
         for m in methods:
@@ -29,7 +35,7 @@ def main(a):
         selection=json.loads((root/'selection_public.json').read_text());text+='\n## Base内部锁定的超参数\n\n| 方法 | λ | 检查点步数 | 融合α |\n|---|---:|---:|---:|\n'
         for m,p in selection.items():text+=f"| {m} | {p['lam']} | {p['step']} | {p['alpha']} |\n"
         text+='\n零λ表示该开发流程没有选择Audio约束，不能将相应方法称为有效蒸馏。零α表示融合评分完全由原统计分支决定。\n'
-    text+='\n## 解释边界\n\nAUC/EER按目标身份计算，再平均身份及训练种子；固定阈值TAR/FAR/HTER按相同数量查询汇总。最困难目标FAR为每身份先平均种子后取最大值。JSON另保留跨目标池化AUC/EER，不能与宏平均混淆。EER由Test分数作描述性排序诊断，部署阈值只能来自Cal。\n\nS3必须同时超过S1、S6和非Audio控制，才可讨论Audio身份关系的增量；S3超过S2才支持关系蒸馏优于逐样本匹配。不能只依据融合增益掩盖学生退化。\n\n这是VibraVox一次固定身份划分，之前已有探索；没有相同文本攻击、重新佩戴或跨设备控制。ABCS需先确认通道物理归属，HMD需完成词标签及采样率审核；两项尚不能冒充本轮已完成的严格复现。完整[协议](2026-11-09-kd-rkd01-protocol.md)。\n'
+    text+='\n## 解释边界\n\nAUC/EER按目标身份计算，再平均身份及训练种子；固定阈值TAR/FAR/HTER按相同数量查询汇总。最困难目标FAR为每身份先平均种子后取最大值。JSON另保留跨目标池化AUC/EER，不能与宏平均混淆。EER由Test分数作描述性排序诊断，部署阈值只能来自Cal。\n\nS3必须同时超过S1、S6和非Audio控制，才可讨论Audio身份关系的增量；S3超过S2才支持关系蒸馏优于逐样本匹配。不能只依据融合增益掩盖学生退化。\n\n这是VibraVox一次固定身份划分，之前已有探索；没有相同文本攻击、重新佩戴或跨设备控制。ABCS通道0为BC仍只是工作假设：用户确认没有明确映射说明，不能通过通道认证效果较差推定物理归属。HMD需完成词标签及采样率审核。两项尚不能冒充本轮已完成的严格复现。完整[协议](2026-11-09-kd-rkd01-protocol.md)。\n'
     Path(a.report).write_text(text,encoding='utf8')
     fig,axes=plt.subplots(1,2,figsize=(13,4.8));x=np.arange(len(methods));w=.25
     for off,key,label in [(-1,'tar','TAR'),(0,'far','FAR'),(1,'hter','HTER')]:axes[0].bar(x+off*w,[100*r['results'][m]['12']['Cal_EER'][key] for m in methods],w,label=label)
