@@ -30,7 +30,9 @@ def main():
             x=pair[:,1].astype(float)/32768.;clip=float((np.abs(x)>=.999).mean());x-=x.mean()
             f,t,z=signal.stft(x,fs=fs,nperseg=1024,noverlap=768,nfft=2048,boundary=None,padded=False)
             p=np.abs(z)**2;edges=np.geomspace(50,1200,41)
-            b=np.stack([np.log(p[(f>=a)&(f<c)].mean(0)+1e-12) for a,c in zip(edges[:-1],edges[1:])])
+            centers=np.sqrt(edges[:-1]*edges[1:])
+            b=np.stack([np.interp(centers,f,np.log(p[:,it]+1e-12)) for it in range(p.shape[1])],axis=1)
+            assert np.isfinite(b).all()
             # One scalar mean/std per original window removes absolute level but retains relative spectrum.
             n=(b-b.mean())/max(b.std(),1e-4)
             def pool(v):return np.concatenate([v.mean(1),v.std(1)]+[v[:,part].mean(1) for part in np.array_split(np.arange(v.shape[1]),4)])
