@@ -1,0 +1,32 @@
+{
+  "state": "prepared",
+  "identities": 8,
+  "feature_records": 992,
+  "teacher_audio_records": 128,
+  "teacher_audio_fit_per_user": 4,
+  "teacher_audio_registration_per_user": 12,
+  "query_audio_records": 0,
+  "query_audio_excluded": true,
+  "crc_checks": 128,
+  "feature_dimension": 246,
+  "shape_dimension": 40,
+  "student_dimension": 192,
+  "supplement_dimension": 232,
+  "channels": "ch0 provisional vibration,ch1 provisional Audio;not confirmed by official mapping",
+  "frontend": "reuse whole-utterance ch0 50..7600Hz logpower40x16;ch1 teacher center<=2sec,padright ifshort,valid lengths supplied to frontend/ECAPA",
+  "short_teacher_clips": 19,
+  "roles": {
+    "fit": 60,
+    "develop": 15,
+    "registration": 12,
+    "calibration": 13,
+    "query": 24
+  },
+  "text_role_overlap": 0,
+  "matched_real_text_across_users": true,
+  "privacy": "anonymous row/user indices,no speaker names,transcripts,source paths or sample hashes in exported inputs",
+  "files": {
+    "inputs_private.npz": 1696137,
+    "audio_fit_register_private.npz": 7770323
+  }
+}
