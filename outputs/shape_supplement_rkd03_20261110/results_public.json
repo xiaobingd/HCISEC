@@ -1,0 +1,113 @@
+{
+  "state": "complete",
+  "seed": 42,
+  "K": 12,
+  "base": 35,
+  "calibration": 12,
+  "test": 12,
+  "alpha": 1.0,
+  "rho": 0.3,
+  "dimension": 232,
+  "shape_only": {
+    "Cal_EER": {
+      "tar": 0.9513888888888888,
+      "far": 0.019570707070707072,
+      "frr": 0.04861111111111116,
+      "hter": 0.034090909090909116,
+      "auc": 0.9949856639309764,
+      "eer": 0.03140782828282829,
+      "genuine_n": 288,
+      "impostor_n": 3168,
+      "macro_auc": 0.9938446969696969,
+      "macro_eer": 0.021780303030303035,
+      "worst_target_far": 0.10984848484848485
+    },
+    "Cal_FAR5": {
+      "tar": 0.9548611111111112,
+      "far": 0.02335858585858586,
+      "frr": 0.04513888888888884,
+      "hter": 0.03424873737373735,
+      "auc": 0.9949856639309764,
+      "eer": 0.03140782828282829,
+      "genuine_n": 288,
+      "impostor_n": 3168,
+      "macro_auc": 0.9938446969696969,
+      "macro_eer": 0.021780303030303035,
+      "worst_target_far": 0.11742424242424243
+    }
+  },
+  "supplement": {
+    "Cal_EER": {
+      "tar": 0.9548611111111112,
+      "far": 0.015782828282828284,
+      "frr": 0.04513888888888884,
+      "hter": 0.030460858585858563,
+      "auc": 0.9964992810044894,
+      "eer": 0.028251262626262597,
+      "genuine_n": 288,
+      "impostor_n": 3168,
+      "macro_auc": 0.9944628577441078,
+      "macro_eer": 0.01720328282828283,
+      "worst_target_far": 0.08712121212121213
+    },
+    "Cal_FAR5": {
+      "tar": 0.9548611111111112,
+      "far": 0.016414141414141416,
+      "frr": 0.04513888888888884,
+      "hter": 0.030776515151515128,
+      "auc": 0.9964992810044894,
+      "eer": 0.028251262626262597,
+      "genuine_n": 288,
+      "impostor_n": 3168,
+      "macro_auc": 0.9944628577441078,
+      "macro_eer": 0.01720328282828283,
+      "worst_target_far": 0.09090909090909091
+    }
+  },
+  "student_only_reused_reference": {
+    "Cal_EER": {
+      "tar": 0.9375,
+      "far": 0.030618686868686868,
+      "frr": 0.0625,
+      "hter": 0.04655934343434343,
+      "auc": 0.9932692813552189,
+      "eer": 0.03866792929292928,
+      "genuine_n": 288,
+      "impostor_n": 3168,
+      "macro_auc": 0.9911221590909091,
+      "macro_eer": 0.028882575757575756,
+      "worst_target_far": 0.11742424242424243
+    },
+    "Cal_FAR5": {
+      "tar": 0.9409722222222222,
+      "far": 0.032196969696969696,
+      "frr": 0.05902777777777779,
+      "hter": 0.04561237373737374,
+      "auc": 0.9932692813552189,
+      "eer": 0.03866792929292928,
+      "genuine_n": 288,
+      "impostor_n": 3168,
+      "macro_auc": 0.9911221590909091,
+      "macro_eer": 0.028882575757575756,
+      "worst_target_far": 0.12121212121212122
+    }
+  },
+  "paired_vs_shape": {
+    "hter_delta": -0.003630050505050504,
+    "identity_bootstrap95": [
+      -0.01672979797979798,
+      0.007102272727272732
+    ],
+    "improved_targets": 5
+  },
+  "integrity": {
+    "shape_never_replaced": true,
+    "new_outer_training": 0,
+    "new_inner_V4_students": 6,
+    "query_audio_reads": 0,
+    "models_reused_from": "registration-rkd02 V4 only",
+    "independent_branch_formula_max_error": 1.7881393432617188e-07,
+    "pairwise_auc_workpoint_checks": 24,
+    "all_sources_retained": 11
+  }
+}
