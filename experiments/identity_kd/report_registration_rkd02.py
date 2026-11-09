@@ -10,6 +10,10 @@ def main(a):
     root=Path(a.out);r=json.loads((root/'results_public.json').read_text());assert r['integrity']['state']=='pass';keys=[k for k in LABELS if k in r['results']];text='# RKD-02：注册者Audio微调与梯度平衡结果\n\n'
     text+='协议已改变：注册可用本人12条同步Audio+振动，查询只有振动。35 Base、12 Cal、12 Test，seed42；每目标24条本人查询及264条未见攻击查询。注册与查询文本互斥，所有用户保留。不能与“注册也没有Audio”的RKD-01混称同一任务。\n\n'
     text+='ECAPA embedding backbone全部参数可训练，固定BN统计，30步，LR1e-6，Base回放与原教师锚定；之后冻结供个人学生使用。各个人学生100步、相同初始化/采样，保留Base回放与原学生锚定。ρ由Base内部模拟注册选择为'+str(r['rho'])+'，不使用最终用户效果挑选。\n\n'
+    q=r['results'];text+='## 本轮判断\n\n'
+    text+=f"振动个人适配本身有效果：原冻结学生HTER={100*q['R_frozen']['Cal_EER']['hter']:.2f}%，仅振动个人适配={100*q['V0']['Cal_EER']['hter']:.2f}%。不能将这部分收益归给Audio。\n\n"
+    text+=f"梯度平衡使冻结教师HTER从{100*q['V1']['Cal_EER']['hter']:.2f}%降至{100*q['V2']['Cal_EER']['hter']:.2f}%，但目标身份级区间仍跨零。注册Audio微调没有提供额外收益：旧权重下V3与V1决策指标相同；梯度平衡下V4为{100*q['V4']['Cal_EER']['hter']:.2f}%，略差于冻结教师V2。\n\n"
+    text+=f"完整组合相对无Audio个人适配只改善{100*(q['V0']['Cal_EER']['hter']-q['V4']['Cal_EER']['hter']):.2f}个百分点，且对错误身份/无Audio几何控制的优势均不确定。固定谱形状参考HTER={100*q['S0_shape']['Cal_EER']['hter']:.2f}%，仍优于所有学生。本轮未证明Audio知识带来稳定增益；也不能据此否定更强或经独立开发选择的Audio域适配。\n\n"
     for point,title in [('Cal_EER','Cal-EER工作点'),('Cal_FAR5','Cal-FAR5工作点')]:
         text+='## '+title+'\n\n| 方法 | 宏AUC | 宏EER | TAR | FAR | HTER | 最困难目标FAR |\n|---|---:|---:|---:|---:|---:|---:|\n'
         for k in keys:
