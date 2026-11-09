@@ -29,7 +29,7 @@ for number in [1,2]:
  lines+=['','## Cal-FAR5工作点汇总','','| 方法 | TAR% | FAR% | HTER% |','|---|---:|---:|---:|']
  for m in methods:
   q=r['results'][m]['Cal_FAR5'];lines.append(f"| {m} | {100*q['tar']:.2f} | {100*q['far']:.2f} | {100*q['hter']:.2f} |")
- lines+=['','## 限制与可复现性','','这是同一已探索数据划分上的单种子多方法探索，不是独立确认。多项比较的区间未做多重比较校正；不能选择Test最好者作为正式最终方案。Cal-FAR5不保证未知Test FAR≤5%。每位24本人、264攻击，总288本人/3168攻击比较；同一录制参与多目标比较，不能按独立录制计算置信区间。bootstrap单位是目标身份。','','重要的训练限制：个人适配使用本人12条注册句子，而Base回放使用另一组4句；个人分类头的目标身份与背景身份没有同句困难负样本。虽然最终跨句查询和跨用户同句比较保持隔离，这仍可能让个人适配学习到内容差异；不能称适配阶段已完全消除文本混杂。此问题两轮都相同，未引入Test泄漏，但可能限制教师微调收益，下一步应补充同注册句子的Base背景录制后再做独立对照。','','Base23位仅用于通用模型训练，不伪报未见用户结果。全部20个注册目标均报告，未移除难用户或难攻击。完整双工作点逐用户数据见同目录的per_user_public.csv。教师、学生权重、阈值、样本分数、源身份映射不发布。检查记录见verification_public.json。']
+ lines+=['','## 限制与可复现性','','这是同一已探索数据划分上的单种子多方法探索，不是独立确认。多项比较的区间未做多重比较校正；不能选择Test最好者作为正式最终方案。Cal-FAR5不保证未知Test FAR≤5%。每位24本人、264攻击，总288本人/3168攻击比较；同一录制参与多目标比较，不能按独立录制计算置信区间。bootstrap单位是目标身份。','','重要的训练限制：个人适配使用本人12条注册句子，而Base回放使用另一组4句；个人分类头的目标身份与背景身份没有同句困难负样本。虽然最终跨句查询和跨用户同句比较保持隔离，这仍可能让个人适配学习到内容差异；不能称适配阶段已完全消除文本混杂。此问题两轮都相同，未引入Test泄漏，但可能限制教师微调收益，下一步应补充同注册句子的Base背景录制后再做独立对照。','','Base23位仅用于通用模型训练，不伪报未见用户结果。全部20个注册目标均报告，未移除难用户或难攻击。完整双工作点逐用户数据见仓库outputs下对应轮次目录的per_user_public.csv。教师、学生权重、阈值、样本分数、源身份映射不发布。检查记录见verification_public.json。']
  (docs/f'2026-11-10-abcs43-ecapa-round{number}-results.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
  with (root/'per_user_public.csv').open('w',newline='',encoding='utf8') as f:
   fields=['user','role','method','point','tar','far','frr','hter','auc','eer','genuine_n','impostor_n'];w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
@@ -40,3 +40,4 @@ for ax,number in zip(axes,[1,2]):
  r,p=allresults[number];names=['shape40','no_audio_supplement','frozen_supplement','current_supplement']+(['same_identity_shuffle_supplement','wrong_identity_supplement'] if number==1 else ['projection_supplement','attentive_supplement']);values=[r['results'][n]['Cal_EER']['hter']*100 for n in names];labels=[n.replace('_supplement',' + shape').replace('_',' ') for n in names];ax.barh(labels,values,color=['#777777','#5c91ad','#2d817e','#c7933c','#9564a7','#a26662']);ax.invert_yaxis();ax.set_xlabel('HTER (%) at calibration EER threshold');ax.set_title(f'Round {number}: unseen targets (n=12)');ax.set_xlim(0,max(values)*1.22)
  for i,v in enumerate(values):ax.text(v+.05,i,f'{v:.2f}',va='center',fontsize=9)
 fig.suptitle('ABCS43 exploratory study; fixed split / one seed / channel mapping provisional',fontsize=10);out=base/'abcs43_ecapa_round2_20261110';fig.savefig(out/'two_round_hter.png',dpi=180);fig.savefig(out/'two_round_hter.pdf');print('REPORTS_COMPLETE')
+
