@@ -1,0 +1,30 @@
+{
+  "state": "metadata_audited",
+  "cache_records": 12472,
+  "cache_users": 84,
+  "eligible_users": 59,
+  "chosen_users": 59,
+  "identity_roles": {
+    "base": 35,
+    "cal": 12,
+    "test": 12
+  },
+  "record_roles": {
+    "fit": 3727,
+    "develop": 932,
+    "registration": 708,
+    "query": 1416
+  },
+  "records": 6783,
+  "duplicate_user_texts_removed": 3,
+  "text_groups_crossing_roles": 0,
+  "identity_selection": "sha256 KD-RKD-01-identity-v1,first59 eligible;not authentication scores",
+  "frontend": "centered2sec per original recording,DC remove;16kHz STFT4096/1024hop/16384FFT;40log-spaced50..7600Hz;logpower mean40,std40,relative4segmentmeans160,mean-centered spectralshape40 replaces absolute mean,log amplitude6 appended=246;all scaling Basefit only",
+  "teacher": "official unmodified VoxCeleb ECAPA192,hashchecked;no VibraVox-finetuned weights",
+  "inference": "Audio is read only for Base fit/develop;Cal/Test Audio never read;registration/query Audio never read",
+  "limits": [
+    "VibraVox texts not matched across different users;not ABCS same-prompt experiment",
+    "sensor is single-axis forehead accelerometer,not HMD tracking velocity",
+    "previous exploratory VibraVox work exists;new fixed protocol is not an independent data collection"
+  ]
+}
