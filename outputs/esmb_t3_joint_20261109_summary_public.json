@@ -1,0 +1,700 @@
+{
+  "metrics": {
+    "T3_paired": {
+      "eer": {
+        "threshold": 0.47022709250450134,
+        "cal_tar": 0.74375,
+        "cal_far": 0.25625,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.85,
+              "far": 0.025,
+              "hter": 0.08750000000000001,
+              "auc": 0.97875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.85,
+              "far": 0.2388888888888889,
+              "hter": 0.19444444444444448,
+              "auc": 0.8904861111111111,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.975,
+              "far": 0.15,
+              "hter": 0.08750000000000001,
+              "auc": 0.9575,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.975,
+              "far": 0.39166666666666666,
+              "hter": 0.20833333333333334,
+              "auc": 0.8627777777777778,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      },
+      "cal_far05": {
+        "threshold": 0.8878167271614075,
+        "cal_tar": 0.275,
+        "cal_far": 0.05,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.225,
+              "far": 0.0,
+              "hter": 0.3875,
+              "auc": 0.97875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.225,
+              "far": 0.019444444444444445,
+              "hter": 0.39722222222222225,
+              "auc": 0.8904861111111111,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.675,
+              "far": 0.025,
+              "hter": 0.175,
+              "auc": 0.9575,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.675,
+              "far": 0.15833333333333333,
+              "hter": 0.24166666666666664,
+              "auc": 0.8627777777777778,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      }
+    },
+    "T0_matched": {
+      "eer": {
+        "threshold": 0.39158517122268677,
+        "cal_tar": 0.7625,
+        "cal_far": 0.23958333333333334,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.875,
+              "far": 0.05,
+              "hter": 0.0875,
+              "auc": 0.971875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.875,
+              "far": 0.25,
+              "hter": 0.1875,
+              "auc": 0.8845833333333334,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.975,
+              "far": 0.1,
+              "hter": 0.06250000000000001,
+              "auc": 0.975625,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.975,
+              "far": 0.36944444444444446,
+              "hter": 0.19722222222222224,
+              "auc": 0.8630555555555556,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      },
+      "cal_far05": {
+        "threshold": 0.876867413520813,
+        "cal_tar": 0.325,
+        "cal_far": 0.05,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.275,
+              "far": 0.0,
+              "hter": 0.3625,
+              "auc": 0.971875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.275,
+              "far": 0.027777777777777776,
+              "hter": 0.3763888888888889,
+              "auc": 0.8845833333333334,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.725,
+              "far": 0.05,
+              "hter": 0.1625,
+              "auc": 0.975625,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.725,
+              "far": 0.18611111111111112,
+              "hter": 0.23055555555555557,
+              "auc": 0.8630555555555556,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      }
+    },
+    "T3_wrong_time": {
+      "eer": {
+        "threshold": 0.4059326648712158,
+        "cal_tar": 0.74375,
+        "cal_far": 0.25625,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.925,
+              "far": 0.05,
+              "hter": 0.06249999999999998,
+              "auc": 0.974375,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.925,
+              "far": 0.275,
+              "hter": 0.175,
+              "auc": 0.8783333333333334,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.95,
+              "far": 0.1,
+              "hter": 0.07500000000000002,
+              "auc": 0.9574999999999999,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.95,
+              "far": 0.3611111111111111,
+              "hter": 0.20555555555555557,
+              "auc": 0.8639583333333333,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      },
+      "cal_far05": {
+        "threshold": 0.8691983222961426,
+        "cal_tar": 0.275,
+        "cal_far": 0.05,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.375,
+              "far": 0.0,
+              "hter": 0.3125,
+              "auc": 0.974375,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.375,
+              "far": 0.04722222222222222,
+              "hter": 0.33611111111111114,
+              "auc": 0.8783333333333334,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.75,
+              "far": 0.025,
+              "hter": 0.1375,
+              "auc": 0.9574999999999999,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.75,
+              "far": 0.19444444444444445,
+              "hter": 0.2222222222222222,
+              "auc": 0.8639583333333333,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      }
+    },
+    "T3_wrong_user": {
+      "eer": {
+        "threshold": 0.4599829316139221,
+        "cal_tar": 0.75,
+        "cal_far": 0.25,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.85,
+              "far": 0.025,
+              "hter": 0.08750000000000001,
+              "auc": 0.95875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.85,
+              "far": 0.29444444444444445,
+              "hter": 0.22222222222222224,
+              "auc": 0.8614583333333333,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 1.0,
+              "far": 0.175,
+              "hter": 0.0875,
+              "auc": 0.97875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 1.0,
+              "far": 0.39166666666666666,
+              "hter": 0.19583333333333333,
+              "auc": 0.8554166666666667,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      },
+      "cal_far05": {
+        "threshold": 0.9134314060211182,
+        "cal_tar": 0.23125,
+        "cal_far": 0.05,
+        "targets": {
+          "0024": {
+            "unseen_attacker": {
+              "tar": 0.2,
+              "far": 0.0,
+              "hter": 0.4,
+              "auc": 0.95875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.2,
+              "far": 0.016666666666666666,
+              "hter": 0.4083333333333334,
+              "auc": 0.8614583333333333,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          },
+          "0025": {
+            "unseen_attacker": {
+              "tar": 0.725,
+              "far": 0.0,
+              "hter": 0.1375,
+              "auc": 0.97875,
+              "genuine_n": 40,
+              "impostor_n": 40
+            },
+            "all_nine_sources": {
+              "tar": 0.725,
+              "far": 0.17222222222222222,
+              "hter": 0.22361111111111112,
+              "auc": 0.8554166666666667,
+              "genuine_n": 40,
+              "impostor_n": 360
+            }
+          }
+        }
+      }
+    }
+  },
+  "macro": {
+    "T3_paired": {
+      "eer": {
+        "unseen_attacker": {
+          "tar": 0.9125,
+          "far": 0.0875,
+          "hter": 0.08750000000000001,
+          "auc": 0.968125
+        },
+        "all_nine_sources": {
+          "tar": 0.9125,
+          "far": 0.31527777777777777,
+          "hter": 0.2013888888888889,
+          "auc": 0.8766319444444444
+        }
+      },
+      "cal_far05": {
+        "unseen_attacker": {
+          "tar": 0.45,
+          "far": 0.0125,
+          "hter": 0.28125,
+          "auc": 0.968125
+        },
+        "all_nine_sources": {
+          "tar": 0.45,
+          "far": 0.08888888888888888,
+          "hter": 0.3194444444444444,
+          "auc": 0.8766319444444444
+        }
+      }
+    },
+    "T0_matched": {
+      "eer": {
+        "unseen_attacker": {
+          "tar": 0.925,
+          "far": 0.07500000000000001,
+          "hter": 0.07500000000000001,
+          "auc": 0.97375
+        },
+        "all_nine_sources": {
+          "tar": 0.925,
+          "far": 0.30972222222222223,
+          "hter": 0.19236111111111112,
+          "auc": 0.8738194444444445
+        }
+      },
+      "cal_far05": {
+        "unseen_attacker": {
+          "tar": 0.5,
+          "far": 0.025,
+          "hter": 0.2625,
+          "auc": 0.97375
+        },
+        "all_nine_sources": {
+          "tar": 0.5,
+          "far": 0.10694444444444445,
+          "hter": 0.30347222222222225,
+          "auc": 0.8738194444444445
+        }
+      }
+    },
+    "T3_wrong_time": {
+      "eer": {
+        "unseen_attacker": {
+          "tar": 0.9375,
+          "far": 0.07500000000000001,
+          "hter": 0.06875,
+          "auc": 0.9659374999999999
+        },
+        "all_nine_sources": {
+          "tar": 0.9375,
+          "far": 0.31805555555555554,
+          "hter": 0.19027777777777777,
+          "auc": 0.8711458333333333
+        }
+      },
+      "cal_far05": {
+        "unseen_attacker": {
+          "tar": 0.5625,
+          "far": 0.0125,
+          "hter": 0.225,
+          "auc": 0.9659374999999999
+        },
+        "all_nine_sources": {
+          "tar": 0.5625,
+          "far": 0.12083333333333333,
+          "hter": 0.2791666666666667,
+          "auc": 0.8711458333333333
+        }
+      }
+    },
+    "T3_wrong_user": {
+      "eer": {
+        "unseen_attacker": {
+          "tar": 0.925,
+          "far": 0.09999999999999999,
+          "hter": 0.0875,
+          "auc": 0.96875
+        },
+        "all_nine_sources": {
+          "tar": 0.925,
+          "far": 0.34305555555555556,
+          "hter": 0.20902777777777778,
+          "auc": 0.8584375
+        }
+      },
+      "cal_far05": {
+        "unseen_attacker": {
+          "tar": 0.4625,
+          "far": 0.0,
+          "hter": 0.26875000000000004,
+          "auc": 0.96875
+        },
+        "all_nine_sources": {
+          "tar": 0.4625,
+          "far": 0.09444444444444444,
+          "hter": 0.31597222222222227,
+          "auc": 0.8584375
+        }
+      }
+    }
+  },
+  "training": {
+    "T3_paired": {
+      "complete": {
+        "method": "T3_paired",
+        "steps": 200,
+        "selected_step": 200,
+        "base_dev_auc": 0.9168729166666666,
+        "aux_to_encoder_gradient_norm": 0.47909948229789734,
+        "elapsed_seconds": 278.0145115852356
+      },
+      "history": {
+        "method": "T3_paired",
+        "seed": 42,
+        "init_sha256": "8659f97858ccacc7f0e1ad9f97321be6c569167e3532d6f17de229fa956f607f",
+        "history": [
+          {
+            "step": 50,
+            "base_dev_identity_auc": 0.8613458333333334,
+            "identity_loss": 1.0872151851654053,
+            "spec_loss": 0.894734799861908,
+            "env_loss": 0.34573620557785034
+          },
+          {
+            "step": 100,
+            "base_dev_identity_auc": 0.8766666666666666,
+            "identity_loss": 0.8529168367385864,
+            "spec_loss": 0.7405874133110046,
+            "env_loss": 0.25604936480522156
+          },
+          {
+            "step": 150,
+            "base_dev_identity_auc": 0.9155958333333334,
+            "identity_loss": 0.7868176102638245,
+            "spec_loss": 0.823206901550293,
+            "env_loss": 0.17973028123378754
+          },
+          {
+            "step": 200,
+            "base_dev_identity_auc": 0.9168729166666666,
+            "identity_loss": 0.7479302287101746,
+            "spec_loss": 0.8054415583610535,
+            "env_loss": 0.21617770195007324
+          }
+        ],
+        "aux_to_encoder_gradient_norm": 0.47909948229789734
+      }
+    },
+    "T0_matched": {
+      "complete": {
+        "method": "T0_matched",
+        "steps": 200,
+        "selected_step": 150,
+        "base_dev_auc": 0.90745625,
+        "aux_to_encoder_gradient_norm": null,
+        "elapsed_seconds": 275.84167671203613
+      },
+      "history": {
+        "method": "T0_matched",
+        "seed": 42,
+        "init_sha256": "8659f97858ccacc7f0e1ad9f97321be6c569167e3532d6f17de229fa956f607f",
+        "history": [
+          {
+            "step": 50,
+            "base_dev_identity_auc": 0.8584604166666666,
+            "identity_loss": 1.0815001726150513,
+            "spec_loss": 0.962665855884552,
+            "env_loss": 0.9098426699638367
+          },
+          {
+            "step": 100,
+            "base_dev_identity_auc": 0.8825458333333334,
+            "identity_loss": 0.8510297536849976,
+            "spec_loss": 0.8901046514511108,
+            "env_loss": 1.0251696109771729
+          },
+          {
+            "step": 150,
+            "base_dev_identity_auc": 0.90745625,
+            "identity_loss": 0.7856287360191345,
+            "spec_loss": 0.9733143448829651,
+            "env_loss": 0.7917482852935791
+          },
+          {
+            "step": 200,
+            "base_dev_identity_auc": 0.9073604166666667,
+            "identity_loss": 0.7346259355545044,
+            "spec_loss": 0.9964627623558044,
+            "env_loss": 0.8365047574043274
+          }
+        ],
+        "aux_to_encoder_gradient_norm": null
+      }
+    },
+    "T3_wrong_time": {
+      "complete": {
+        "method": "T3_wrong_time",
+        "steps": 200,
+        "selected_step": 150,
+        "base_dev_auc": 0.9085249999999999,
+        "aux_to_encoder_gradient_norm": 0.3032965064048767,
+        "elapsed_seconds": 299.80553674697876
+      },
+      "history": {
+        "method": "T3_wrong_time",
+        "seed": 42,
+        "init_sha256": "8659f97858ccacc7f0e1ad9f97321be6c569167e3532d6f17de229fa956f607f",
+        "history": [
+          {
+            "step": 50,
+            "base_dev_identity_auc": 0.8512395833333333,
+            "identity_loss": 1.1085838079452515,
+            "spec_loss": 0.9374989867210388,
+            "env_loss": 0.7117292881011963
+          },
+          {
+            "step": 100,
+            "base_dev_identity_auc": 0.86899375,
+            "identity_loss": 0.8564774990081787,
+            "spec_loss": 0.8143000602722168,
+            "env_loss": 0.46572446823120117
+          },
+          {
+            "step": 150,
+            "base_dev_identity_auc": 0.9085249999999999,
+            "identity_loss": 0.7870650291442871,
+            "spec_loss": 0.8797276020050049,
+            "env_loss": 0.35169661045074463
+          },
+          {
+            "step": 200,
+            "base_dev_identity_auc": 0.9033541666666667,
+            "identity_loss": 0.7386349439620972,
+            "spec_loss": 0.8690595030784607,
+            "env_loss": 0.38266271352767944
+          }
+        ],
+        "aux_to_encoder_gradient_norm": 0.3032965064048767
+      }
+    },
+    "T3_wrong_user": {
+      "complete": {
+        "method": "T3_wrong_user",
+        "steps": 200,
+        "selected_step": 200,
+        "base_dev_auc": 0.9012229166666667,
+        "aux_to_encoder_gradient_norm": 0.12162596732378006,
+        "elapsed_seconds": 259.10812759399414
+      },
+      "history": {
+        "method": "T3_wrong_user",
+        "seed": 42,
+        "init_sha256": "8659f97858ccacc7f0e1ad9f97321be6c569167e3532d6f17de229fa956f607f",
+        "history": [
+          {
+            "step": 50,
+            "base_dev_identity_auc": 0.8555229166666668,
+            "identity_loss": 1.0893199443817139,
+            "spec_loss": 0.9692734479904175,
+            "env_loss": 0.8353521227836609
+          },
+          {
+            "step": 100,
+            "base_dev_identity_auc": 0.8793687500000001,
+            "identity_loss": 0.8546574115753174,
+            "spec_loss": 0.9812605977058411,
+            "env_loss": 1.0241849422454834
+          },
+          {
+            "step": 150,
+            "base_dev_identity_auc": 0.8988979166666666,
+            "identity_loss": 0.7844859957695007,
+            "spec_loss": 0.9015877842903137,
+            "env_loss": 0.8135469555854797
+          },
+          {
+            "step": 200,
+            "base_dev_identity_auc": 0.9012229166666667,
+            "identity_loss": 0.7337164878845215,
+            "spec_loss": 0.9265092015266418,
+            "env_loss": 1.070314645767212
+          }
+        ],
+        "aux_to_encoder_gradient_norm": 0.12162596732378006
+      }
+    }
+  },
+  "verification": {
+    "status": "pass",
+    "score_recount": "all4methods bothrules bothtargets bothscopes",
+    "init_sha256": "8659f97858ccacc7f0e1ad9f97321be6c569167e3532d6f17de229fa956f607f",
+    "target_audio_targets_zero": true,
+    "checks": {
+      "T3_paired": {
+        "base_dev_spectrum_mse": 0.8669108152389526,
+        "base_dev_envelope_mse": 0.2595781981945038,
+        "base_dev_spectrum_r2": 0.15783472310329563,
+        "base_dev_envelope_r2": 0.7927260753563617,
+        "selected_step": 200
+      },
+      "T0_matched": {
+        "base_dev_spectrum_mse": 1.0613148212432861,
+        "base_dev_envelope_mse": 1.184635877609253,
+        "base_dev_spectrum_r2": -0.02946925893461611,
+        "base_dev_envelope_r2": 0.05406491016531356,
+        "selected_step": 150
+      },
+      "T3_wrong_time": {
+        "base_dev_spectrum_mse": 0.9956239461898804,
+        "base_dev_envelope_mse": 1.3356040716171265,
+        "base_dev_spectrum_r2": 0.034954367856984976,
+        "base_dev_envelope_r2": -0.06648369859186931,
+        "selected_step": 150
+      },
+      "T3_wrong_user": {
+        "base_dev_spectrum_mse": 1.0193111896514893,
+        "base_dev_envelope_mse": 1.2370890378952026,
+        "base_dev_spectrum_r2": 0.011635846438475412,
+        "base_dev_envelope_r2": 0.012180959986442863,
+        "selected_step": 200
+      }
+    }
+  }
+}
