@@ -1,7 +1,7 @@
 """ESMB preprocessing diagnostic; content is UNVERIFIED, not a T3 replacement."""
 import os
 for k in ['OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS']:os.environ[k]='1'
-import json,time,hashlib
+import json,time,hashlib,sys
 from pathlib import Path
 import numpy as np
 from scipy.io import wavfile
@@ -18,6 +18,9 @@ def source(name):
 old=SimpleNamespace(BASE=BASE,CAL=CAL,USERS=BASE+CAL+TARGET,source=source)
 
 ROOT=Path('/autodl-fs/data/esmb_preprocessing_rbf_20261109')
+CHANNEL=int(sys.argv[1]) if len(sys.argv)>1 else 1
+assert CHANNEL in (0,1)
+if CHANNEL==0:ROOT=Path(str(ROOT)+'_channel0_control')
 def main():
     ROOT.mkdir(exist_ok=True);start=time.time();features=[];labels=[];indices=[];seen={};dups=[];quality=[];channels=[]
     for u,name in enumerate(old.USERS):
@@ -27,7 +30,7 @@ def main():
             h=hashlib.sha256(pair.tobytes()).hexdigest()
             if h in seen:dups.append([seen[h],[u,j]])
             seen[h]=[u,j]
-            x=pair[:,1].astype(float)/32768.;clip=float((np.abs(x)>=.999).mean());x-=x.mean()
+            x=pair[:,CHANNEL].astype(float)/32768.;clip=float((np.abs(x)>=.999).mean());x-=x.mean()
             f,t,z=signal.stft(x,fs=fs,nperseg=1024,noverlap=768,nfft=2048,boundary=None,padded=False)
             p=np.abs(z)**2;edges=np.geomspace(50,1200,41)
             centers=np.sqrt(edges[:-1]*edges[1:])
@@ -67,5 +70,9 @@ def main():
             tar=float((s[truth]>=tau).mean());far=float((s[~truth]>=tau).mean());rows.append(dict(user=old.USERS[u],tar=tar,far=far,hter=(1-tar+far)/2,auc=float(roc_auc_score(truth,s))))
         private[method]={'threshold':float(tau),'targets':rows};result[method]={key:float(np.mean([r[key] for r in rows])) for key in ['tar','far','hter','auc']};print('RESULT',method,result[method],flush=True)
     public=dict(status='complete_preprocessing_diagnostic',base_identities=nb,cal_identities=nc,unseen_target_identities=len(targets),registration_per_user=120,query_per_user=40,unseen_attack_samples_per_target=160,methods=result,elapsed_seconds=time.time()-start,duplicate_pairs=len(dups),clipped_sample_fraction_max=float(np.max(np.array(quality)[:,0])),channel_high_low_ratio_median=np.median(channels,axis=0).tolist(),protocol='BC channel1,Audio channel0 follows previously corrected ESMB mapping;16kHz;2sec every3sec;first120 registration/background;200..239 query;Base-only scaler;fixed balanced SVC RBF C1 gamma scale;Cal-only EER threshold;all5 targets and all4 unseen attackers retained',features='50..1200Hz logpower40bands;mean/std plus4temporalblocks=240dims;energy branch5dims;no hard100..500Hz bandpass;mean removal;no per-user filter;no quality exclusions',limits=['text and channel semantics not independently reverified this run','same-session windows,not independent recording sessions','not strict same-content or cross-content','fixed handcrafted frontend,not original772-dimensional full baseline or T3','two Cal identities only;previously explored identities;single deterministic diagnostic'])
+    public['input_channel']=CHANNEL
+    public['channel_assignment']='physical modality unverified;channel1 follows historical user correction,channel0 is diagnostic control;do not choose modality by authentication performance'
+    public['protocol']=public['protocol'].replace('BC channel1,Audio channel0 follows previously corrected ESMB mapping', 'physical channel'+str(CHANNEL)+'; historical modality labels provisional')
+    public['features']=public['features'].replace('logpower40bands','logpower interpolated at40geometric centers')
     (ROOT/'summary_public.json').write_text(json.dumps(public,indent=2));(ROOT/'results_private.json').write_text(json.dumps(private,indent=2));(ROOT/'status.json').write_text(json.dumps({'state':'complete'}));print('COMPLETE',json.dumps(public),flush=True)
 if __name__=='__main__':main()
