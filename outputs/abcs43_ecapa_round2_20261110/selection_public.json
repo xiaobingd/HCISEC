@@ -1,0 +1,27 @@
+{
+  "selected_method": "current_supplement",
+  "rule": "Cal01-04 threshold;Cal05-08 route selection;subcohort query attackers only;minHTER then maxAUC then simpler;no Test scores accessed",
+  "choices": [
+    {
+      "method": "current_supplement",
+      "hter": 0.04687500000000002,
+      "auc": 0.9884982638888888,
+      "tar": 0.9791666666666666,
+      "far": 0.07291666666666667
+    },
+    {
+      "method": "projection_supplement",
+      "hter": 0.04687500000000002,
+      "auc": 0.9884620949074074,
+      "tar": 0.9791666666666666,
+      "far": 0.07291666666666667
+    },
+    {
+      "method": "attentive_supplement",
+      "hter": 0.04687500000000002,
+      "auc": 0.9884620949074074,
+      "tar": 0.9791666666666666,
+      "far": 0.07291666666666667
+    }
+  ]
+}
