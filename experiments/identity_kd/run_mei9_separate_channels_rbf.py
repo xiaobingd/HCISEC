@@ -20,10 +20,19 @@ def features(x,fs,low,high):
 def prepare(a,out):
     cache=out/'features_private.npz'
     if cache.exists():return {k:v for k,v in np.load(cache).items()}
-    manifest=json.loads(Path(a.manifest).read_text(encoding='utf-8'));rows=manifest['records'];users=manifest['user_order'];bank=defaultdict(list);meta=[];seen_a=set();seen_m=set();excluded=Counter();hash_fail=[]
+    manifest=json.loads(Path(a.manifest).read_text(encoding='utf-8'));rows=manifest['records'];users=manifest['user_order'];bank=defaultdict(list);meta=[];seen_a=set();seen_m=set();excluded=Counter();path_repairs=0
+    # Old manifest contains mojibake in one Chinese directory component.
+    # Only repair missing paths; exact original array hashes remain mandatory.
+    resolved={}
+    for r in rows:
+        for key,sub in [('acc_file','acc'),('audio_file','audio')]:
+            p=Path(r[key])
+            if not p.exists():
+                p=Path(a.raw_root)/r['user']/sub/p.name;assert p.exists(),str(p);path_repairs+=1
+            resolved[r['sample_id'],key]=p
     for r in rows:
         if r['pair_mode']!='exact_timestamp':excluded['unverified_pairing']+=1;continue
-        acc=np.load(r['acc_file'],allow_pickle=False);mic=np.load(r['audio_file'],allow_pickle=False);ah=digest(acc);mh=digest(mic)
+        acc=np.load(resolved[r['sample_id'],'acc_file'],allow_pickle=False);mic=np.load(resolved[r['sample_id'],'audio_file'],allow_pickle=False);ah=digest(acc);mh=digest(mic)
         assert ah==r['acc_array_sha256'] and mh==r['audio_array_sha256'],'Source changed since manifest audit'
         assert ah not in seen_a and mh not in seen_m,'Duplicate recording payload';seen_a.add(ah);seen_m.add(mh)
         assert acc.ndim==2 and acc.shape[1]==4 and mic.shape==(96000,2) and np.isfinite(acc).all() and np.isfinite(mic).all()
@@ -41,7 +50,7 @@ def prepare(a,out):
         meta.append(r)
         if len(meta)%100==0:print('PREPARED',len(meta),flush=True)
     d={k:np.stack(v) for k,v in bank.items()};d.update(user=np.array([r['user_id'] for r in meta]),word=np.array([r['word_id'] for r in meta]),row=np.array([r['row'] for r in meta]),sample_id=np.array([r['sample_id'] for r in meta]))
-    np.savez_compressed(cache,**d);(out/'source_audit_public.json').write_text(json.dumps(dict(users=len(users),source_records=len(rows),included_records=len(meta),excluded=dict(excluded),payload_duplicates=0,source_hash_mismatches=0,user_count_limitation='nine confirmed identities,not ten',word_mapping='inherited raw reconstruction recording-order hypothesis;not independently verified semantic transcript',source_channels='HMD originalXYZ velocity;dv/dt-derived acceleration;microphone two raw channels;not bone-conduction stereo'),indent=2))
+    np.savez_compressed(cache,**d);(out/'source_audit_public.json').write_text(json.dumps(dict(users=len(users),source_records=len(rows),included_records=len(meta),excluded=dict(excluded),repaired_source_paths=path_repairs,payload_duplicates=0,source_hash_mismatches=0,user_count_limitation='nine confirmed identities,not ten',word_mapping='inherited raw reconstruction recording-order hypothesis;not independently verified semantic transcript',source_channels='HMD originalXYZ velocity;dv/dt-derived acceleration;microphone two raw channels;not bone-conduction stereo'),indent=2))
     return d
 
 def main(a):
@@ -67,4 +76,4 @@ def main(a):
     summary=dict(state='complete',users=9,original_recordings=len(y),branches=branches,results=results,split_counts={p:dict(Counter(s)) for p,s in [('same_word_assumed',split_same),('cross_word_assumed',split_cross)]},backend='each branch independent balanced RBF SVC C1 gamma scale;StandardScaler fit-only;peruser CalEER threshold;all8other identities retained;closed-set',frontend='DC removal;logpower40geometriccenters;mean/std/4timeblockmeans240dim peraxis;XYZconcat720dim;allusers same;no perrecord amplitude normalization;HMD10..300Hz;Audio50..7600Hz plus10..300Hz control;source hashes checked',identity_names='private mapping inherits raw9user_order;not oldU1..U9 mapping',limits=['word labels conditional on inherited order hypothesis;not verified strict content','missing last records and nonexact pairing exclusions disclosed','same recording conditions may contribute','XYZ has greater feature dimension than singleaxis','HMD is not ABCS BC;do not conflate sensor modality','handcrafted independent-channel baseline,not generated or teacher feature comparison'],elapsed_seconds=time.time()-start)
     (out/'summary_public.json').write_text(json.dumps(summary,indent=2));print('COMPLETE',json.dumps(summary),flush=True)
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--manifest',required=True);p.add_argument('--out',required=True);main(p.parse_args())
+    p=argparse.ArgumentParser();p.add_argument('--manifest',required=True);p.add_argument('--out',required=True);p.add_argument('--raw-root',default='E:/desk/数据操作');main(p.parse_args())
