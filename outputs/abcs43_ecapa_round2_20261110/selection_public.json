@@ -1,6 +1,6 @@
 {
   "selected_method": "current_supplement",
-  "rule": "Cal01-04 threshold;Cal05-08 route selection;subcohort query attackers only;minHTER then maxAUC then simpler;no Test scores accessed",
+  "rule": "Cal01-04 threshold;Cal05-08 route selection;subcohort query attackers only;minHTER then maxAUC then simpler;Test scores excluded from selection; prior scores preloaded as references",
   "choices": [
     {
       "method": "current_supplement",
