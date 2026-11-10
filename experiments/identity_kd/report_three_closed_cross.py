@@ -38,7 +38,7 @@ def main():
         vals=[100*r['results'][m]['Cal_EER']['hter'] for m in CORE];ax.bar(range(4),vals,color=['#777777','#387cb0','#24a585','#a66bbc']);ax.set_title(name);ax.set_xticks(range(4),LABELS,rotation=35,ha='right');ax.grid(axis='y',alpha=.2)
         for i,v in enumerate(vals):ax.text(i,v+.15,f'{v:.2f}',ha='center',fontsize=8)
     axes[0].set_ylabel('Macro HTER (%) — lower is better');fig.tight_layout();dest=ROOT/'outputs'/'three_closed_cross_20261110';dest.mkdir(exist_ok=True);fig.savefig(dest/'comparison.png',dpi=180);plt.close(fig)
-    report+=['','## 解读规则','','首先比较同预算纯ACC与Audio辅助；再比较Audio辅助与仅校准选择的CycleGAN。固定分支的查询表现可作诊断，不能替代预先锁定方案。小幅差异不代表稳定提升；逐用户置信区间不能替代多训练种子。闭集优于开放集也不能单归因于内容，因为身份训练覆盖和负类协议同时不同。','','## 逐数据集完整结果','']
+    report+=['','## 当前结论','','三套均未显示Audio蒸馏相对同预算纯ACC的明确增益。Mei校准选择不加入循环；ABCS选择25步循环编码、权重0.5，HTER下降0.37个百分点，但逐身份95%区间[-1.25,+0.53]跨零。VibraVox的循环选择虽使HTER下降0.69个百分点，区间[-1.84,+0.41]也跨零。', '', 'VibraVox需特别谨慎：Audio基线到循环补充，TAR为89.05%→90.82%，FAR为0.52%→0.91%，AUC为0.9985→0.9969，最差目标FAR仍为16.09%。这说明工作点有变化，不能将HTER改善直接等同为排序或安全性改善。ABCS补充后的最差目标FAR仍为12.10%，平均值不能代替逐用户评估。', '', '本轮支持“已知身份、不同录制/内容可做认证”，尚不支持“Audio辅助稳定改善”或“循环生成增加身份信息”。公开数据只用文本的身份识别仍高于随机（ABCS4.46%对2.33%，VibraVox3.95%对1.69%），不能声称彻底排除内容分配混杂。', '', '当前路线是统计残差编码器＋RKD Audio蒸馏＋个人CycleGAN＋RBF，并非历史完整772维SupCon基线。', '', '## 解读规则','','首先比较同预算纯ACC与Audio辅助；再比较Audio辅助与仅校准选择的CycleGAN。固定分支的查询表现可作诊断，不能替代预先锁定方案。小幅差异不代表稳定提升；逐用户置信区间不能替代多训练种子。闭集优于开放集也不能单归因于内容，因为身份训练覆盖和负类协议同时不同。','','## 逐数据集完整结果','']
     for name,folder in SETS.items():report.append(f'- [{name}全部用户及方法](../../outputs/{folder}/report.md)')
     (ROOT/'docs/experiments/2026-11-10-three-dataset-closed-cross-results.md').write_text('\n'.join(report)+'\n',encoding='utf-8')
 if __name__=='__main__':main()
