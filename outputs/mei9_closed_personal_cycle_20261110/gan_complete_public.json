@@ -1,0 +1,10 @@
+{
+  "steps": 4000,
+  "batch": 16,
+  "equivalent_epochs": 44.50625869262865,
+  "selected_step": 3250,
+  "fit_records": 1438,
+  "develop_records": 36,
+  "all9known_training_users": true,
+  "loss": "LSGAN+10pairedL1+10cycleL1;3ACCchannels/1Audiochannel,identitymapping omitted due channel mismatch"
+}
