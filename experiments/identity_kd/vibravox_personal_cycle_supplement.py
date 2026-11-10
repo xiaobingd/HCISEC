@@ -67,7 +67,7 @@ def main(a):
         chosen=min(choices,key=lambda c:(c['hter'],-c['auc'],c['alpha'],c['step'],c['branch']));dump(lock,dict(selected=chosen,choices=choices,rule='only Cal01-06 threshold,Cal07-12 selection;minHTER/AUC/smallerweight/fewersteps;zeroallowed;before personal Test models trained'));print('PERSONAL_SELECTION_LOCKED',chosen,flush=True)
     chosen=json.loads(lock.read_text())['selected']
     for u in CAL+TEST:
-        b,zz=calcache[u] if u in CAL else make(u);group=CAL if u in CAL else TEST;variants={'shape40':shape,'baseline232':b}
+        b,zz=calcache[u] if u in CAL else make(u);group=CAL if u in CAL else TEST;variants={'shape40':shape,'baseline232':b,'cycle_only100':zz[100]['cycle_encoder256'],'input_only100':zz[100]['input_encoder256']}
         for step in [25,100]:
             for branch in ['input_encoder256','cycle_encoder256','cycle_statistics240']:
                 variants[f'personal{step}_{branch}']=np.concatenate([b,.5*zz[step][branch]],1)/np.sqrt(1.25)
