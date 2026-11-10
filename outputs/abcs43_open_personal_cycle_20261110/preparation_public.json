@@ -1,0 +1,20 @@
+{
+  "state": "prepared",
+  "users": 43,
+  "base": 23,
+  "cal": 8,
+  "test": 12,
+  "records": 2445,
+  "fit_records": 1380,
+  "develop_records": 345,
+  "registration_audio_records": 240,
+  "allowed_audio_spectrum_records": 1965,
+  "query_audio_feature_calculations": 0,
+  "query_audio_model_forwards": 0,
+  "crc_checks": 2445,
+  "exact_pcm_duplicates": 0,
+  "frontend": "whole paired utterance,DC remove,16k/STFT4096hop1024FFT16384/40geom50..7600logpower,timeinterpolation32;globalBasefitmeanSDclip3",
+  "channels": "ch0 provisional vibration,ch1 provisional Audio,physical mapping not independently confirmed",
+  "stereo_note": "stereo WAV bytes read for ACC/CRC; query ch1 not transformed or model-forwarded",
+  "private_npz_bytes": 20874538
+}
