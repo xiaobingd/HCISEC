@@ -1,0 +1,19 @@
+{
+  "state": "PASS",
+  "base": 23,
+  "cal": 8,
+  "test": 12,
+  "personal_models": 20,
+  "personal_checkpoints": 40,
+  "workpoint_checks": 720,
+  "max_feature_or_score_error": 1.430511474609375e-05,
+  "query_decisions_unchanged": true,
+  "selection_replayed": true,
+  "original_four_references_reproduced": true,
+  "query_audio_feature_calculations": 0,
+  "query_audio_model_forwards": 0,
+  "personal_only_own12": true,
+  "all11unseen_attackers_retained": true,
+  "text_role_overlap": 0,
+  "channel_mapping": "provisional"
+}
