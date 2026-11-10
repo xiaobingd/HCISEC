@@ -1,0 +1,145 @@
+{
+  "selected": {
+    "step": 100,
+    "branch": "cycle_statistics",
+    "alpha": 1.0,
+    "hter": 0.06896551724137931,
+    "auc": 0.9957992402104033
+  },
+  "choices": [
+    {
+      "step": 0,
+      "branch": "none",
+      "alpha": 0.0,
+      "hter": 0.08065458796025717,
+      "auc": 0.9978265634132086
+    },
+    {
+      "step": 25,
+      "branch": "input256",
+      "alpha": 0.25,
+      "hter": 0.08251753360607832,
+      "auc": 0.9980639976621859
+    },
+    {
+      "step": 25,
+      "branch": "input256",
+      "alpha": 0.5,
+      "hter": 0.09278199883109293,
+      "auc": 0.998374488603156
+    },
+    {
+      "step": 25,
+      "branch": "input256",
+      "alpha": 1.0,
+      "hter": 0.09964932787843366,
+      "auc": 0.9985206019871421
+    },
+    {
+      "step": 25,
+      "branch": "cycle256",
+      "alpha": 0.25,
+      "hter": 0.0826271186440678,
+      "auc": 0.9982283752191701
+    },
+    {
+      "step": 25,
+      "branch": "cycle256",
+      "alpha": 0.5,
+      "hter": 0.08872735242548217,
+      "auc": 0.9986119228521332
+    },
+    {
+      "step": 25,
+      "branch": "cycle256",
+      "alpha": 1.0,
+      "hter": 0.09164962010520164,
+      "auc": 0.999123319696084
+    },
+    {
+      "step": 25,
+      "branch": "cycle_statistics",
+      "alpha": 0.25,
+      "hter": 0.0847822910578609,
+      "auc": 0.9975708649912333
+    },
+    {
+      "step": 25,
+      "branch": "cycle_statistics",
+      "alpha": 0.5,
+      "hter": 0.08240794856808885,
+      "auc": 0.9969681472822911
+    },
+    {
+      "step": 25,
+      "branch": "cycle_statistics",
+      "alpha": 1.0,
+      "hter": 0.07546756282875511,
+      "auc": 0.995927089421391
+    },
+    {
+      "step": 100,
+      "branch": "input256",
+      "alpha": 0.25,
+      "hter": 0.0825540619520748,
+      "auc": 0.9980274693161894
+    },
+    {
+      "step": 100,
+      "branch": "input256",
+      "alpha": 0.5,
+      "hter": 0.0885447106954997,
+      "auc": 0.998374488603156
+    },
+    {
+      "step": 100,
+      "branch": "input256",
+      "alpha": 1.0,
+      "hter": 0.10140268848626534,
+      "auc": 0.9984840736411456
+    },
+    {
+      "step": 100,
+      "branch": "cycle256",
+      "alpha": 0.25,
+      "hter": 0.08043541788427822,
+      "auc": 0.998082261835184
+    },
+    {
+      "step": 100,
+      "branch": "cycle256",
+      "alpha": 0.5,
+      "hter": 0.08653565166569258,
+      "auc": 0.9983562244301578
+    },
+    {
+      "step": 100,
+      "branch": "cycle256",
+      "alpha": 1.0,
+      "hter": 0.09515634132086498,
+      "auc": 0.9987032437171245
+    },
+    {
+      "step": 100,
+      "branch": "cycle_statistics",
+      "alpha": 0.25,
+      "hter": 0.08054500292226768,
+      "auc": 0.9976073933372296
+    },
+    {
+      "step": 100,
+      "branch": "cycle_statistics",
+      "alpha": 0.5,
+      "hter": 0.08459964932787843,
+      "auc": 0.9970777323202806
+    },
+    {
+      "step": 100,
+      "branch": "cycle_statistics",
+      "alpha": 1.0,
+      "hter": 0.06896551724137931,
+      "auc": 0.9957992402104033
+    }
+  ],
+  "rule": "reg12/person fit eachbinaryhead;CalA4/person thresholds CalB4/person globalfeatureselection,minHTER/AUC/smallerweight/fewersteps;zeroallowed;before queryG/Ffeatures"
+}
