@@ -1,0 +1,13 @@
+{
+  "state": "PASS",
+  "shared_base_users": 35,
+  "personal_owners": 24,
+  "personal_checkpoints_verified": 48,
+  "per_user_workpoint_checks": 672,
+  "max_inference_or_feature_error": 2.384185791015625e-07,
+  "cal_selection_recomputed": true,
+  "prior_baseline_reproduced": true,
+  "query_audio_reads": 0,
+  "owner_only_registration_training": true,
+  "all_attackers_retained": 11
+}
