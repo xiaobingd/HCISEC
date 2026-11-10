@@ -1,0 +1,145 @@
+{
+  "selected": {
+    "step": 0,
+    "branch": "none",
+    "alpha": 0.0,
+    "hter": 0.0954861111111111,
+    "auc": 0.9921875
+  },
+  "choices": [
+    {
+      "step": 0,
+      "branch": "none",
+      "alpha": 0.0,
+      "hter": 0.0954861111111111,
+      "auc": 0.9921875
+    },
+    {
+      "step": 25,
+      "branch": "input256",
+      "alpha": 0.25,
+      "hter": 0.1111111111111111,
+      "auc": 0.9895833333333334
+    },
+    {
+      "step": 25,
+      "branch": "input256",
+      "alpha": 0.5,
+      "hter": 0.1267361111111111,
+      "auc": 0.9895833333333334
+    },
+    {
+      "step": 25,
+      "branch": "input256",
+      "alpha": 1.0,
+      "hter": 0.12152777777777778,
+      "auc": 0.9852430555555556
+    },
+    {
+      "step": 25,
+      "branch": "cycle256",
+      "alpha": 0.25,
+      "hter": 0.125,
+      "auc": 0.9904513888888888
+    },
+    {
+      "step": 25,
+      "branch": "cycle256",
+      "alpha": 0.5,
+      "hter": 0.1388888888888889,
+      "auc": 0.9852430555555556
+    },
+    {
+      "step": 25,
+      "branch": "cycle256",
+      "alpha": 1.0,
+      "hter": 0.18055555555555555,
+      "auc": 0.9704861111111112
+    },
+    {
+      "step": 25,
+      "branch": "cycle_stats720",
+      "alpha": 0.25,
+      "hter": 0.1267361111111111,
+      "auc": 0.9895833333333334
+    },
+    {
+      "step": 25,
+      "branch": "cycle_stats720",
+      "alpha": 0.5,
+      "hter": 0.1545138888888889,
+      "auc": 0.984375
+    },
+    {
+      "step": 25,
+      "branch": "cycle_stats720",
+      "alpha": 1.0,
+      "hter": 0.1545138888888889,
+      "auc": 0.9696180555555556
+    },
+    {
+      "step": 100,
+      "branch": "input256",
+      "alpha": 0.25,
+      "hter": 0.1111111111111111,
+      "auc": 0.9895833333333334
+    },
+    {
+      "step": 100,
+      "branch": "input256",
+      "alpha": 0.5,
+      "hter": 0.1267361111111111,
+      "auc": 0.9895833333333334
+    },
+    {
+      "step": 100,
+      "branch": "input256",
+      "alpha": 1.0,
+      "hter": 0.11979166666666667,
+      "auc": 0.9869791666666666
+    },
+    {
+      "step": 100,
+      "branch": "cycle256",
+      "alpha": 0.25,
+      "hter": 0.125,
+      "auc": 0.9887152777777778
+    },
+    {
+      "step": 100,
+      "branch": "cycle256",
+      "alpha": 0.5,
+      "hter": 0.13020833333333334,
+      "auc": 0.9861111111111112
+    },
+    {
+      "step": 100,
+      "branch": "cycle256",
+      "alpha": 1.0,
+      "hter": 0.1857638888888889,
+      "auc": 0.9713541666666666
+    },
+    {
+      "step": 100,
+      "branch": "cycle_stats720",
+      "alpha": 0.25,
+      "hter": 0.1111111111111111,
+      "auc": 0.9904513888888888
+    },
+    {
+      "step": 100,
+      "branch": "cycle_stats720",
+      "alpha": 0.5,
+      "hter": 0.14930555555555555,
+      "auc": 0.9869791666666666
+    },
+    {
+      "step": 100,
+      "branch": "cycle_stats720",
+      "alpha": 1.0,
+      "hter": 0.1545138888888889,
+      "auc": 0.9722222222222222
+    }
+  ],
+  "rule": "SVMtrain registration108;CalA threshold CalB featureselection across9users;no finalquery features extracted beforelock;minHTER/AUC/smallerweight/fewersteps;zeroallowed"
+}
