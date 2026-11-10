@@ -13,7 +13,7 @@ for method in methods:
 lines+=['','## 自主选择相对baseline312的配对差异','','| 条件 | HTER差百分点 | 身份bootstrap95%区间 | 改善人数/9 |','|---|---:|---|---:|']
 for cond in ['sameword','crossword']:
  v=r['paired_vs_baseline312']['selected_cycle'][cond];lo,hi=v['identity_bootstrap95'];lines.append(f"| {cond} | {100*v['hter_delta']:+.2f} | [{100*lo:+.2f},{100*hi:+.2f}] | {v['improved_users']} |")
-if choice['step']==0:lines+=['','Cal选择不增加CycleGAN分支，自主选择结果等于baseline312；九个个人G/F都确实完成了25/100步训练，固定补充结果仍完整报告。']
+if choice['step']==0:lines+=['','Cal选择不增加CycleGAN分支，自主选择结果等于baseline312；九个个人G/F都确实完成了25/100步训练，固定补充结果仍完整报告。不能在看到Test后用表现更好的固定分支替换该主结果。']
 lines+=['','## 逐用户完整结果（Cal-EER）','','| 用户 | 条件 | 方法 | TAR% | FAR% | HTER% | AUC | 本人/攻击 |','|---|---|---|---:|---:|---:|---:|---:|']
 for u in sorted({v['user'] for v in per}):
  for cond in ['sameword','crossword']:
@@ -23,7 +23,9 @@ lines+=['','## Cal-FAR5宏平均','','| 方法 | 条件 | TAR% | FAR% | HTER% |'
 for method in methods:
  for cond in ['sameword','crossword']:
   v=r['results'][method][cond]['Cal_FAR5'];lines.append(f"| {method} | {cond} | {100*v['tar']:.2f} | {100*v['far']:.2f} | {100*v['hter']:.2f} |")
-lines+=['','## 解读边界','','本轮是已见身份闭集，并不证明未见用户注册泛化。与此前开放集比较还同时改变了身份训练、后端和查询数量，不能把差异全部归因闭集。只有本轮方法之间是固定数据/固定后端的配对比较。','','名义跨词仍取决于推断词序，未独立完成逐录制语义核验。数据来自同一头显、缺少重戴/跨天/跨设备条件标记；不能排除佩戴、设备或录制条件身份线索。单种子、多方法探索，bootstrap按用户身份，未经多重比较校正。最终Cal-FAR5不保证Test FAR≤5%。没有加入随机未训练GAN对照，因此即使个别分支改善，也不能单凭本轮证明跨模态生成是唯一增益来源。','','[全部九人双工作点CSV](../../outputs/mei9_closed_personal_cycle_20261110/per_user_public.csv)，[独立检查记录](../../outputs/mei9_closed_personal_cycle_20261110/verification_public.json)。原始信号、源姓名、个人权重、阈值及样本分数保持私有。']
+lines+=['','## 解读边界','','本轮是已见身份闭集，并不证明未见用户注册泛化。与此前开放集比较还同时改变了身份训练、后端和查询数量，不能把差异全部归因闭集。只有本轮方法之间是固定数据/固定后端的配对比较。原始统计与baseline312还同时改变了身份监督训练和维度，缺少同预算纯ACC编码器对照，因此不能把其差异全部归因Audio蒸馏。','','名义跨词仍取决于推断词序，未独立完成逐录制语义核验。数据来自同一头显、缺少重戴/跨天/跨设备条件标记；不能排除佩戴、设备或录制条件身份线索。单种子、多方法探索，bootstrap按用户身份，未经多重比较校正。最终Cal-FAR5不保证Test FAR≤5%。没有加入随机未训练GAN对照，因此即使个别分支改善，也不能单凭本轮证明跨模态生成是唯一增益来源。','','[全部九人双工作点CSV](../../outputs/mei9_closed_personal_cycle_20261110/per_user_public.csv)，[独立检查记录](../../outputs/mei9_closed_personal_cycle_20261110/verification_public.json)。原始信号、源姓名、个人权重、阈值及样本分数保持私有。']
+if (root/'verification_public.json').exists():
+ audit=json.loads((root/'verification_public.json').read_text());lines+=['','复核通过：18个个人G/F检查点、432个逐用户工作点；划分互斥、全九人训练/八个已知负类、Cal选择重放均通过。原缓存特征重训SVM一致；GPU重算最大特征/分数差为'+format(audit['max_feature_or_score_error'],'.3g')+'，所有查询接受/拒绝决定不变。查询Audio模型前向次数为0。']
 Path('docs/experiments/2026-11-10-mei9-closed-personal-cycle-results.md').write_text('\n'.join(lines)+'\n',encoding='utf8')
 with (root/'per_user_public.csv').open('w',newline='',encoding='utf8') as f:
  fields=['user','method','condition','point','tar','far','frr','hter','auc','eer','genuine_n','impostor_n'];w=csv.DictWriter(f,fieldnames=fields);w.writeheader()
@@ -31,6 +33,6 @@ with (root/'per_user_public.csv').open('w',newline='',encoding='utf8') as f:
 fig,axes=plt.subplots(1,2,figsize=(12,4.8),constrained_layout=True)
 for ax,cond in zip(axes,['sameword','crossword']):
  for method,label in [('raw120','Raw shape120'),('baseline312','Audio-assisted baseline312'),('selected_cycle','Cal-selected CycleGAN supplement')]:
-  vv=[next(v['hter'] for v in per if v['user']==f'Mei9-U{u:02}' and v['method']==method and v['condition']==cond and v['point']=='Cal_EER')*100 for u in range(1,10)];ax.plot(range(1,10),vv,'o-',label=label)
+  vv=[next(v['hter'] for v in per if v['user']==f'Mei9-U{u:02}' and v['method']==method and v['condition']==cond and v['point']=='Cal_EER')*100 for u in range(1,10)];ax.plot(range(1,10),vv,'o-',label='Cal-selected: no added CycleGAN' if method=='selected_cycle' and choice['step']==0 else label)
  ax.set_title('Nominal '+cond);ax.set_xticks(range(1,10));ax.set_xlabel('Anonymous raw9 user');ax.set_ylabel('HTER (%)');ax.legend(fontsize=8)
 fig.suptitle('Mei9 closed set: all nine training identities / all eight known attackers / one seed');fig.savefig(root/'mei9_closed_comparison.png',dpi=180);fig.savefig(root/'mei9_closed_comparison.pdf');print('CLOSED_REPORT_COMPLETE')
