@@ -1,0 +1,23 @@
+{
+  "records": 2695,
+  "users": 9,
+  "identity_protocol": "closed:all9fit,all8knownnegativeidentities",
+  "counts": {
+    "fit": 1438,
+    "dev": 36,
+    "register": 108,
+    "calA": 36,
+    "calB": 36,
+    "sameword": 144,
+    "crossword": 216
+  },
+  "teacher_audio_records": 144,
+  "gan_audio_allowed_records": 1582,
+  "query_audio_model_forwards": 0,
+  "source": "exact-timestamp raw9 common2695;XYZ OpenVR tracking vVelocity,not raw accelerometer",
+  "limits": [
+    "nominal word order inferred,not transcript-verified",
+    "cached microphone left-channel wavefloat16 convertedfloat32;archive may decompress whole wave array",
+    "same headset,no redon/session/device labels"
+  ]
+}
