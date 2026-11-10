@@ -1,0 +1,20 @@
+{
+  "state": "PASS",
+  "dataset": "VibraVox",
+  "users": 59,
+  "known_attackers_each": 58,
+  "personal_checkpoints": 118,
+  "workpoint_checks": 1652,
+  "selection_replayed": true,
+  "selection_precedes_query_features": true,
+  "all_users_identity_training": true,
+  "personal_only_own12": true,
+  "query_audio_model_forwards": 0,
+  "query_text_training_overlap": 0,
+  "max_feature_error": 0.0,
+  "max_cached_refit_error": 0.0,
+  "max_gpu_reextraction_score_error": 0.0,
+  "gpu_query_decision_mismatches": 0,
+  "gpu_query_decisions_compared": 2339232,
+  "numerical_note": "cached-feature SVM refits exact;GPU reextraction diagnostic reports any boundary flips,not silently assumed bit-exact"
+}
