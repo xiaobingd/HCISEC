@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "dataset": "Mei9",
+  "users": 9,
+  "known_attackers_each": 8,
+  "new_matched_identity_only_control_verified": true,
+  "archived_cycle_verification_reused": true,
+  "archived_personal_checkpoints": 18,
+  "workpoint_checks": 252,
+  "max_cached_refit_error": 0,
+  "query_audio_model_forwards": 0
+}
