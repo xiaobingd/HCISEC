@@ -114,7 +114,7 @@ def choose_cal(rows,out):
                 row=rows[u][m];mask=np.repeat(np.isin(CAL,owners),24);ss.extend(np.array(row['scores'])[mask]);yy.extend(np.array(row['labels'])[mask])
             return np.array(ss),np.array(yy)
         cs,cy=subset(CAL[:4]);s,y=subset(CAL[4:]);tau=thresholds(cs,cy)['Cal_EER'];r=metrics(s,y,tau);choices.append(dict(method=m,hter=r['hter'],auc=r['auc'],tar=r['tar'],far=r['far']))
-    chosen=min(choices,key=lambda q:(q['hter'],-q['auc'],methods.index(q['method'])))['method'];dump(out/'selection_public.json',dict(selected_method=chosen,rule='Cal01-04 threshold;Cal05-08 route selection;subcohort query attackers only;minHTER then maxAUC then simpler;no Test scores accessed',choices=choices));return chosen
+    chosen=min(choices,key=lambda q:(q['hter'],-q['auc'],methods.index(q['method'])))['method'];dump(out/'selection_public.json',dict(selected_method=chosen,rule='Cal01-04 threshold;Cal05-08 route selection;subcohort query attackers only;minHTER then maxAUC then simpler;Test scores excluded from selection; prior scores preloaded as references',choices=choices));return chosen
 
 def round2(source,r1,out):
     global d_global
@@ -137,3 +137,4 @@ if __name__=='__main__':
     torch.set_num_threads(1);p=argparse.ArgumentParser();p.add_argument('--source',required=True);p.add_argument('--out',required=True);p.add_argument('--round',type=int,choices=[1,2],required=True);p.add_argument('--round1');a=p.parse_args();out=Path(a.out);out.mkdir(parents=True,exist_ok=True)
     if a.round==1:round1(Path(a.source),out)
     else:round2(Path(a.source),Path(a.round1),out)
+
