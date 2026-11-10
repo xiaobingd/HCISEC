@@ -1,0 +1,8 @@
+{
+  "registration_audio_records": 288,
+  "owners": 24,
+  "each_owner": 12,
+  "query_audio_reads": 0,
+  "normalization": "same shared Base-fit modality constants",
+  "all_other_users_excluded_from_personal_gradient": true
+}
