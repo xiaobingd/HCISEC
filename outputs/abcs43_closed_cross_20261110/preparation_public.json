@@ -1,0 +1,40 @@
+{
+  "state": "prepared",
+  "dataset": "ABCS",
+  "users": 43,
+  "records": 5117,
+  "role_counts": {
+    "fit": 2580,
+    "develop": 645,
+    "registration": 516,
+    "calibration": 344,
+    "query": 1032
+  },
+  "used_counts": {
+    "fit": 2580,
+    "dev": 172,
+    "register": 516,
+    "calA": 172,
+    "calB": 172,
+    "query": 1032
+  },
+  "teacher_audio_records": 688,
+  "audio_spectrum_records": 3268,
+  "crc_checks": 5117,
+  "exact_pcm_duplicates": 0,
+  "query_audio_model_forwards": 0,
+  "query_audio_spectrum_calculations": 0,
+  "text_roles_global_overlap": 0,
+  "text_only_query_identity_accuracy": 0.044573643410852716,
+  "text_only_chance": 0.023255813953488372,
+  "identity_selection": "same metadata-fixed43,allincluded;no authentication-score selection",
+  "text_selection": "sha256 closed3-ABCS-text-v1 45fit10dev15reg10cal20query;fixed record hash caps",
+  "channel_mapping": "ch0 provisional vibration,ch1 provisional Audio,not physically verified",
+  "stereo_note": "whole WAV bytes read for CRC/ACC;query ch1 not transformed or model-forwarded",
+  "frontend": "full utterance;16k/4096Hann1024hopFFT16384,40geom50..7600;GAN32time,stat16time;Basefit globalmodality normalization",
+  "files": {
+    "inputs_private.npz": 8749743,
+    "spectra_private.npz": 39724020,
+    "teacher_audio_private.npz": 41992679
+  }
+}
