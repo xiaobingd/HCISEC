@@ -1,0 +1,15 @@
+{
+  "state": "PASS",
+  "identities": 9,
+  "closed_all_nine_train": true,
+  "known_attackers_each": 8,
+  "personal_checkpoints": 18,
+  "workpoint_checks": 432,
+  "max_feature_or_score_error": 5.3882598876953125e-05,
+  "original_cached_feature_refit_tolerance": 1e-07,
+  "query_decisions_unchanged_under_gpu_reextraction": true,
+  "selection_replayed": true,
+  "query_audio_model_forwards": 0,
+  "personal_gan_only_own12": true,
+  "splits_disjoint": true
+}
