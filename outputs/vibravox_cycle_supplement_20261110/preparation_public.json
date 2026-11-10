@@ -1,0 +1,18 @@
+{
+  "records": 6783,
+  "base_users": 35,
+  "cal_users": 12,
+  "test_users": 12,
+  "gan_fit_records": 2214,
+  "gan_develop_records": 551,
+  "gan_audio_records": 2765,
+  "cal_test_audio_reads": 0,
+  "exact_acc_duplicates": 0,
+  "frontend": "same centered2s/DC/STFT4096hop1024FFT16384/log40geometric50..7600Hz;timeinterpolation28to32;one Base-fit global mean/std permodality,clip3SD",
+  "shape": [
+    40,
+    32
+  ],
+  "normalization_fit": "Base fit only",
+  "identity_roles_disjoint": true
+}
