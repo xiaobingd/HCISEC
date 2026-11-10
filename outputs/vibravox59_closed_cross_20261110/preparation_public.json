@@ -1,0 +1,30 @@
+{
+  "state": "prepared",
+  "dataset": "VibraVox",
+  "users": 59,
+  "records": 6783,
+  "used_counts": {
+    "fit": 3727,
+    "register": 708,
+    "calA": 236,
+    "calB": 236,
+    "dev": 118,
+    "query": 1416
+  },
+  "teacher_audio_records": 944,
+  "audio_spectrum_records": 4553,
+  "query_audio_model_forwards": 0,
+  "query_audio_spectrum_calculations": 0,
+  "fit_register_query_exact_text_overlap": 0,
+  "dev_cal_text_note": "old develop is partitioned by recording;the same prompt may occur across different identities in dev/Cal,never in final query",
+  "text_only_query_identity_accuracy": 0.03954802259887006,
+  "text_only_chance": 0.01694915254237288,
+  "selection": "existing metadata-fixed59,allincluded,no auth-score selection",
+  "frontend": "center2s/DC16k4096Hann1024hopFFT16384,40geom50..7600,32time;all-known-fit global normalization",
+  "sensor": "single-axis forehead accelerometer and headset microphone,not HMDvelocity",
+  "files": {
+    "inputs_private.npz": 11921637,
+    "spectra_private.npz": 53750889,
+    "teacher_audio_private.npz": 113484347
+  }
+}
