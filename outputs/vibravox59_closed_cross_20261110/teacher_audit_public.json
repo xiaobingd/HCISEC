@@ -1,0 +1,10 @@
+{
+  "users": 59,
+  "records": 944,
+  "steps": 100,
+  "body_lr": 1e-06,
+  "head_lr": 0.0001,
+  "backbone_maxdelta": 8.297059684991837e-05,
+  "original_loaded_state_verified": true,
+  "query_audio_model_forwards": 0
+}
