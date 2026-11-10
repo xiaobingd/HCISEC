@@ -1,0 +1,18 @@
+{
+  "steps": 4000,
+  "batch": 16,
+  "selected_step": 4000,
+  "fit_records": 2214,
+  "equivalent_epochs": 28.906955736224027,
+  "architecture": "shared ResNet G/F,width32,4resblocks,nearestconvupsampling,PatchGAN;not old full772",
+  "loss": "LSGAN+10pairedL1+10cycleL1+identityL1",
+  "selection": "70 Base-dev recordings,2peridentity,lowest sum4paired/cycleMAEs;never Cal/Test",
+  "best_validation": {
+    "pair_audio": 0.13808640837669373,
+    "pair_acc": 0.13843731284141542,
+    "cycle_acc": 0.09455750435590744,
+    "cycle_audio": 0.09991217702627182,
+    "selection_loss": 0.4709934026002884,
+    "step": 4000
+  }
+}
