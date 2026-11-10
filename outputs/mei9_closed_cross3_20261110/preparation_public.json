@@ -1,0 +1,11 @@
+{
+  "dataset": "Mei9",
+  "users": 9,
+  "source": "mei9_closed_personal_cycle_20261110",
+  "crossword_only": true,
+  "reused_existing_complete_cycle_experiment": true,
+  "new_training": "matched100step identity-only control from same archived700step initialization;all9x4 same batches",
+  "word_labels": "nominal inferred,not transcript-verified",
+  "query_each": 24,
+  "known_attackers": 8
+}
