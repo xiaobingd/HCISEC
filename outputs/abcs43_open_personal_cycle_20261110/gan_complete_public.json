@@ -1,0 +1,12 @@
+{
+  "steps": 4000,
+  "batch": 16,
+  "equivalent_epochs": 46.3768115942029,
+  "selected_step": 3500,
+  "base_users": 23,
+  "fit_records": 1380,
+  "develop_records": 345,
+  "architecture": "shared width32 fourRes G/F,PatchGAN,40x32",
+  "loss": "LSGAN+10pairedL1+10cycleL1+identitymapping1",
+  "selection": "only Base23 develop345,weighted mean sum4MAEs"
+}
