@@ -1,0 +1,272 @@
+[
+  {
+    "user": "U1",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": -0.4786410269538701,
+    "same_user_shuffle_R2": -0.4099792243397671,
+    "audio_identity_auc": 0.69384765625,
+    "predicted_identity_auc": 0.87646484375,
+    "candidate": false
+  },
+  {
+    "user": "U2",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": 0.359509031838643,
+    "same_user_shuffle_R2": 0.4322692115633655,
+    "audio_identity_auc": 0.98486328125,
+    "predicted_identity_auc": 0.92822265625,
+    "candidate": false
+  },
+  {
+    "user": "U3",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": 0.04040266914529811,
+    "same_user_shuffle_R2": 0.09535845077212224,
+    "audio_identity_auc": 0.8076171875,
+    "predicted_identity_auc": 0.84228515625,
+    "candidate": false
+  },
+  {
+    "user": "U4",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": 0.2246955414641003,
+    "same_user_shuffle_R2": -0.03882651515534796,
+    "audio_identity_auc": 0.6533203125,
+    "predicted_identity_auc": 0.79443359375,
+    "candidate": false
+  },
+  {
+    "user": "U5",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": -0.28296217273076585,
+    "same_user_shuffle_R2": -0.26121740156553797,
+    "audio_identity_auc": 0.5283203125,
+    "predicted_identity_auc": 0.6728515625,
+    "candidate": false
+  },
+  {
+    "user": "U6",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": 0.13353841736438066,
+    "same_user_shuffle_R2": -0.018992226770647713,
+    "audio_identity_auc": 0.828125,
+    "predicted_identity_auc": 0.7646484375,
+    "candidate": true
+  },
+  {
+    "user": "U7",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": -0.1037698316598088,
+    "same_user_shuffle_R2": -0.1767777808383446,
+    "audio_identity_auc": 0.95166015625,
+    "predicted_identity_auc": 0.759765625,
+    "candidate": false
+  },
+  {
+    "user": "U8",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": -0.20384692977629482,
+    "same_user_shuffle_R2": -0.5577400146933356,
+    "audio_identity_auc": 0.767578125,
+    "predicted_identity_auc": 0.70849609375,
+    "candidate": false
+  },
+  {
+    "user": "U9",
+    "family": "periodicity",
+    "records": 16,
+    "crossword_prediction_R2": -0.2333984009397625,
+    "same_user_shuffle_R2": -0.1934468889854155,
+    "audio_identity_auc": 0.61669921875,
+    "predicted_identity_auc": 0.3798828125,
+    "candidate": false
+  },
+  {
+    "user": "U1",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": 0.08348345436726978,
+    "same_user_shuffle_R2": -0.00493790386340498,
+    "audio_identity_auc": 0.93896484375,
+    "predicted_identity_auc": 0.87841796875,
+    "candidate": true
+  },
+  {
+    "user": "U2",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": 0.1583361708407499,
+    "same_user_shuffle_R2": 0.011822796062216923,
+    "audio_identity_auc": 0.84765625,
+    "predicted_identity_auc": 0.89697265625,
+    "candidate": true
+  },
+  {
+    "user": "U3",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": 0.08644024164262609,
+    "same_user_shuffle_R2": 0.21883236719522592,
+    "audio_identity_auc": 0.96044921875,
+    "predicted_identity_auc": 0.75390625,
+    "candidate": false
+  },
+  {
+    "user": "U4",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": -0.08468278793920314,
+    "same_user_shuffle_R2": -0.4069143353981852,
+    "audio_identity_auc": 0.70263671875,
+    "predicted_identity_auc": 0.65771484375,
+    "candidate": false
+  },
+  {
+    "user": "U5",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": -0.05702712789263442,
+    "same_user_shuffle_R2": -0.05925037447728876,
+    "audio_identity_auc": 0.71533203125,
+    "predicted_identity_auc": 0.8037109375,
+    "candidate": false
+  },
+  {
+    "user": "U6",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": -0.10517063123270165,
+    "same_user_shuffle_R2": -0.13985396796328553,
+    "audio_identity_auc": 0.90869140625,
+    "predicted_identity_auc": 0.681640625,
+    "candidate": false
+  },
+  {
+    "user": "U7",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": -0.15553399617888264,
+    "same_user_shuffle_R2": -0.11359298776768911,
+    "audio_identity_auc": 0.833984375,
+    "predicted_identity_auc": 0.673828125,
+    "candidate": false
+  },
+  {
+    "user": "U8",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": -0.27559351186765424,
+    "same_user_shuffle_R2": -0.5224814252835368,
+    "audio_identity_auc": 0.8515625,
+    "predicted_identity_auc": 0.822265625,
+    "candidate": false
+  },
+  {
+    "user": "U9",
+    "family": "low_spectrum",
+    "records": 16,
+    "crossword_prediction_R2": 0.12818162175073067,
+    "same_user_shuffle_R2": 0.0012970011904867018,
+    "audio_identity_auc": 0.83056640625,
+    "predicted_identity_auc": 0.70166015625,
+    "candidate": true
+  },
+  {
+    "user": "U1",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": -0.06136918701185157,
+    "same_user_shuffle_R2": -0.07431057078321857,
+    "audio_identity_auc": 0.63720703125,
+    "predicted_identity_auc": 0.6630859375,
+    "candidate": false
+  },
+  {
+    "user": "U2",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": 0.2183848472627612,
+    "same_user_shuffle_R2": 0.06957617087978929,
+    "audio_identity_auc": 0.88916015625,
+    "predicted_identity_auc": 0.90087890625,
+    "candidate": true
+  },
+  {
+    "user": "U3",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": 0.1338370729402858,
+    "same_user_shuffle_R2": -0.06516094912688741,
+    "audio_identity_auc": 0.8583984375,
+    "predicted_identity_auc": 0.6806640625,
+    "candidate": false
+  },
+  {
+    "user": "U4",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": 0.1674503858848897,
+    "same_user_shuffle_R2": -0.10570972407049317,
+    "audio_identity_auc": 0.8466796875,
+    "predicted_identity_auc": 0.8388671875,
+    "candidate": true
+  },
+  {
+    "user": "U5",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": -0.21858301682595283,
+    "same_user_shuffle_R2": -0.22768338563117507,
+    "audio_identity_auc": 0.6494140625,
+    "predicted_identity_auc": 0.560546875,
+    "candidate": false
+  },
+  {
+    "user": "U6",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": -0.27552803530485104,
+    "same_user_shuffle_R2": -0.43992565717554455,
+    "audio_identity_auc": 0.802734375,
+    "predicted_identity_auc": 0.74267578125,
+    "candidate": false
+  },
+  {
+    "user": "U7",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": 0.04109055434434139,
+    "same_user_shuffle_R2": -0.1372504339948133,
+    "audio_identity_auc": 0.65087890625,
+    "predicted_identity_auc": 0.56103515625,
+    "candidate": false
+  },
+  {
+    "user": "U8",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": -0.1795039131806393,
+    "same_user_shuffle_R2": -0.2323441070401937,
+    "audio_identity_auc": 0.68994140625,
+    "predicted_identity_auc": 0.72412109375,
+    "candidate": false
+  },
+  {
+    "user": "U9",
+    "family": "envelope",
+    "records": 16,
+    "crossword_prediction_R2": -0.21993672098458283,
+    "same_user_shuffle_R2": -0.1871605745289311,
+    "audio_identity_auc": 0.732421875,
+    "predicted_identity_auc": 0.6064453125,
+    "candidate": false
+  }
+]
