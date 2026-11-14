@@ -1,0 +1,650 @@
+[
+  {
+    "user": "U1",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.99072265625
+  },
+  {
+    "user": "U1",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.9858940972222223
+  },
+  {
+    "user": "U1",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.99072265625
+  },
+  {
+    "user": "U1",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.9858940972222223
+  },
+  {
+    "user": "U1",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.99072265625
+  },
+  {
+    "user": "U1",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.9858940972222223
+  },
+  {
+    "user": "U1",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.99072265625
+  },
+  {
+    "user": "U1",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.75,
+    "far": 0.015625,
+    "hter": 0.1328125,
+    "auc": 0.9858940972222223
+  },
+  {
+    "user": "U2",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0625,
+    "hter": 0.03125,
+    "auc": 0.99365234375
+  },
+  {
+    "user": "U2",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.026041666666666668,
+    "hter": 0.03385416666666665,
+    "auc": 0.998046875
+  },
+  {
+    "user": "U2",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0625,
+    "hter": 0.03125,
+    "auc": 0.99365234375
+  },
+  {
+    "user": "U2",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.026041666666666668,
+    "hter": 0.03385416666666665,
+    "auc": 0.998046875
+  },
+  {
+    "user": "U2",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0625,
+    "hter": 0.03125,
+    "auc": 0.99365234375
+  },
+  {
+    "user": "U2",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.026041666666666668,
+    "hter": 0.03385416666666665,
+    "auc": 0.998046875
+  },
+  {
+    "user": "U2",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0625,
+    "hter": 0.03125,
+    "auc": 0.99365234375
+  },
+  {
+    "user": "U2",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.026041666666666668,
+    "hter": 0.03385416666666665,
+    "auc": 0.998046875
+  },
+  {
+    "user": "U3",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.9375,
+    "far": 0.078125,
+    "hter": 0.0703125,
+    "auc": 0.970703125
+  },
+  {
+    "user": "U3",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 1.0,
+    "far": 0.046875,
+    "hter": 0.0234375,
+    "auc": 0.9822048611111112
+  },
+  {
+    "user": "U3",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.9375,
+    "far": 0.078125,
+    "hter": 0.0703125,
+    "auc": 0.970703125
+  },
+  {
+    "user": "U3",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 1.0,
+    "far": 0.046875,
+    "hter": 0.0234375,
+    "auc": 0.9822048611111112
+  },
+  {
+    "user": "U3",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.078125,
+    "hter": 0.1015625,
+    "auc": 0.9677734375
+  },
+  {
+    "user": "U3",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.08333333333333333,
+    "hter": 0.06249999999999998,
+    "auc": 0.9841579861111112
+  },
+  {
+    "user": "U3",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.9375,
+    "far": 0.078125,
+    "hter": 0.0703125,
+    "auc": 0.970703125
+  },
+  {
+    "user": "U3",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 1.0,
+    "far": 0.046875,
+    "hter": 0.0234375,
+    "auc": 0.9822048611111112
+  },
+  {
+    "user": "U4",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.6875,
+    "far": 0.046875,
+    "hter": 0.1796875,
+    "auc": 0.94970703125
+  },
+  {
+    "user": "U4",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.7916666666666666,
+    "far": 0.041666666666666664,
+    "hter": 0.12500000000000003,
+    "auc": 0.9555121527777778
+  },
+  {
+    "user": "U4",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.6875,
+    "far": 0.046875,
+    "hter": 0.1796875,
+    "auc": 0.94970703125
+  },
+  {
+    "user": "U4",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.7916666666666666,
+    "far": 0.041666666666666664,
+    "hter": 0.12500000000000003,
+    "auc": 0.9555121527777778
+  },
+  {
+    "user": "U4",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.6875,
+    "far": 0.046875,
+    "hter": 0.1796875,
+    "auc": 0.94970703125
+  },
+  {
+    "user": "U4",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.7916666666666666,
+    "far": 0.041666666666666664,
+    "hter": 0.12500000000000003,
+    "auc": 0.9555121527777778
+  },
+  {
+    "user": "U4",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.6875,
+    "far": 0.046875,
+    "hter": 0.1796875,
+    "auc": 0.94970703125
+  },
+  {
+    "user": "U4",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.7916666666666666,
+    "far": 0.041666666666666664,
+    "hter": 0.12500000000000003,
+    "auc": 0.9555121527777778
+  },
+  {
+    "user": "U5",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.1484375,
+    "hter": 0.13671875,
+    "auc": 0.9716796875
+  },
+  {
+    "user": "U5",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.8333333333333334,
+    "far": 0.11979166666666667,
+    "hter": 0.14322916666666666,
+    "auc": 0.9418402777777778
+  },
+  {
+    "user": "U5",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.1484375,
+    "hter": 0.13671875,
+    "auc": 0.9716796875
+  },
+  {
+    "user": "U5",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.8333333333333334,
+    "far": 0.11979166666666667,
+    "hter": 0.14322916666666666,
+    "auc": 0.9418402777777778
+  },
+  {
+    "user": "U5",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.1484375,
+    "hter": 0.13671875,
+    "auc": 0.9716796875
+  },
+  {
+    "user": "U5",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.8333333333333334,
+    "far": 0.11979166666666667,
+    "hter": 0.14322916666666666,
+    "auc": 0.9418402777777778
+  },
+  {
+    "user": "U5",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.1484375,
+    "hter": 0.13671875,
+    "auc": 0.9716796875
+  },
+  {
+    "user": "U5",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.8333333333333334,
+    "far": 0.11979166666666667,
+    "hter": 0.14322916666666666,
+    "auc": 0.9418402777777778
+  },
+  {
+    "user": "U6",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.8125,
+    "far": 0.125,
+    "hter": 0.15625,
+    "auc": 0.9453125
+  },
+  {
+    "user": "U6",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.875,
+    "far": 0.11979166666666667,
+    "hter": 0.12239583333333334,
+    "auc": 0.9578993055555556
+  },
+  {
+    "user": "U6",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.8125,
+    "far": 0.203125,
+    "hter": 0.1953125,
+    "auc": 0.89990234375
+  },
+  {
+    "user": "U6",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.75,
+    "far": 0.20833333333333334,
+    "hter": 0.22916666666666669,
+    "auc": 0.8854166666666666
+  },
+  {
+    "user": "U6",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.8125,
+    "far": 0.1875,
+    "hter": 0.1875,
+    "auc": 0.8984375
+  },
+  {
+    "user": "U6",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.7083333333333334,
+    "far": 0.20833333333333334,
+    "hter": 0.25,
+    "auc": 0.8843315972222223
+  },
+  {
+    "user": "U6",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.1875,
+    "hter": 0.15625,
+    "auc": 0.90625
+  },
+  {
+    "user": "U6",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.7083333333333334,
+    "far": 0.18229166666666666,
+    "hter": 0.23697916666666663,
+    "auc": 0.8823784722222223
+  },
+  {
+    "user": "U7",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.6875,
+    "far": 0.0546875,
+    "hter": 0.18359375,
+    "auc": 0.951171875
+  },
+  {
+    "user": "U7",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.9166666666666666,
+    "far": 0.08333333333333333,
+    "hter": 0.08333333333333334,
+    "auc": 0.9620225694444444
+  },
+  {
+    "user": "U7",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.140625,
+    "hter": 0.1328125,
+    "auc": 0.93017578125
+  },
+  {
+    "user": "U7",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.9166666666666666,
+    "far": 0.15104166666666666,
+    "hter": 0.11718750000000001,
+    "auc": 0.9455295138888888
+  },
+  {
+    "user": "U7",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.140625,
+    "hter": 0.1328125,
+    "auc": 0.92822265625
+  },
+  {
+    "user": "U7",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.9166666666666666,
+    "far": 0.15104166666666666,
+    "hter": 0.11718750000000001,
+    "auc": 0.9455295138888888
+  },
+  {
+    "user": "U7",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.875,
+    "far": 0.140625,
+    "hter": 0.1328125,
+    "auc": 0.93017578125
+  },
+  {
+    "user": "U7",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.9166666666666666,
+    "far": 0.15104166666666666,
+    "hter": 0.11718750000000001,
+    "auc": 0.9455295138888888
+  },
+  {
+    "user": "U8",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0234375,
+    "hter": 0.01171875,
+    "auc": 0.99755859375
+  },
+  {
+    "user": "U8",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.10416666666666667,
+    "hter": 0.07291666666666666,
+    "auc": 0.9715711805555555
+  },
+  {
+    "user": "U8",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0234375,
+    "hter": 0.01171875,
+    "auc": 0.99755859375
+  },
+  {
+    "user": "U8",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.10416666666666667,
+    "hter": 0.07291666666666666,
+    "auc": 0.9715711805555555
+  },
+  {
+    "user": "U8",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0234375,
+    "hter": 0.01171875,
+    "auc": 0.99755859375
+  },
+  {
+    "user": "U8",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.10416666666666667,
+    "hter": 0.07291666666666666,
+    "auc": 0.9715711805555555
+  },
+  {
+    "user": "U8",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 1.0,
+    "far": 0.0234375,
+    "hter": 0.01171875,
+    "auc": 0.99755859375
+  },
+  {
+    "user": "U8",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.9583333333333334,
+    "far": 0.10416666666666667,
+    "hter": 0.07291666666666666,
+    "auc": 0.9715711805555555
+  },
+  {
+    "user": "U9",
+    "method": "raw",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.1171875,
+    "hter": 0.18359375,
+    "auc": 0.9208984375
+  },
+  {
+    "user": "U9",
+    "method": "raw",
+    "condition": "crossword",
+    "tar": 0.20833333333333334,
+    "far": 0.11458333333333333,
+    "hter": 0.453125,
+    "auc": 0.6788194444444444
+  },
+  {
+    "user": "U9",
+    "method": "identity",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.1171875,
+    "hter": 0.18359375,
+    "auc": 0.9208984375
+  },
+  {
+    "user": "U9",
+    "method": "identity",
+    "condition": "crossword",
+    "tar": 0.20833333333333334,
+    "far": 0.11458333333333333,
+    "hter": 0.453125,
+    "auc": 0.6788194444444444
+  },
+  {
+    "user": "U9",
+    "method": "all_physical",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.1171875,
+    "hter": 0.18359375,
+    "auc": 0.9208984375
+  },
+  {
+    "user": "U9",
+    "method": "all_physical",
+    "condition": "crossword",
+    "tar": 0.20833333333333334,
+    "far": 0.11458333333333333,
+    "hter": 0.453125,
+    "auc": 0.6788194444444444
+  },
+  {
+    "user": "U9",
+    "method": "selected_physical",
+    "condition": "sameword",
+    "tar": 0.75,
+    "far": 0.1171875,
+    "hter": 0.18359375,
+    "auc": 0.9208984375
+  },
+  {
+    "user": "U9",
+    "method": "selected_physical",
+    "condition": "crossword",
+    "tar": 0.20833333333333334,
+    "far": 0.11458333333333333,
+    "hter": 0.453125,
+    "auc": 0.6788194444444444
+  }
+]
