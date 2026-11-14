@@ -14,7 +14,7 @@ from sklearn.metrics import roc_auc_score,roc_curve
 
 def norm(x):return x/np.maximum(np.linalg.norm(x,axis=1,keepdims=True),1e-8)
 def threshold(s,y):
- f,t,th=roc_curve(y,s);return float(th[np.argmin(abs(f-(1-t)))])
+ f,t,th=roc_curve(y,s,drop_intermediate=False);i=min(range(len(th)),key=lambda j:(abs(f[j]-(1-t[j])),f[j]));return float(th[i])
 def metric(s,y,tau):
  tar=float((s[y]>=tau).mean());far=float((s[~y]>=tau).mean());return dict(tar=tar,far=far,hter=(1-tar+far)/2,auc=float(roc_auc_score(y,s)))
 def main(a):
@@ -35,7 +35,9 @@ def main(a):
    if mode=='selective':
     rr=norm(x[ti]);gap=np.maximum(0.,(rr@rr.T)-(target@target.T));weights=np.sqrt(rel[:,None]*rel[None,:])*(1+gap)
    w=torch.tensor(weights*mask,dtype=torch.float32);mt=torch.tensor(mask);positive=torch.tensor(same&diffword);negative=torch.tensor((~same)&sameword)
-   for step in range(400):
+   checkpoint=out/f'{mode}_{seed}_private.pt'
+   if checkpoint.exists():net.load_state_dict(torch.load(checkpoint,map_location='cpu',weights_only=True))
+   for step in range(0 if checkpoint.exists() else 400):
     z=F.normalize(net(xx),dim=1);sim=z@z.T;loss=F.cross_entropy(head(z)*8,yy)+.1*(1-sim[positive]).mean()+.1*F.relu(sim[negative]-.2).mean()
     if mode!='identity':loss=loss+.1*((sim-tm).square()*w).sum()/w.sum().clamp_min(1)
     opt.zero_grad();loss.backward();opt.step()
