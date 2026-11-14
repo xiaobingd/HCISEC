@@ -1,0 +1,94 @@
+{
+  "state": "complete",
+  "summary": [
+    {
+      "method": "raw",
+      "condition": "sameword",
+      "tar": 0.8333333333333334,
+      "far": 0.07465277777777778,
+      "hter": 0.12065972222222222,
+      "auc": 0.9657118055555556
+    },
+    {
+      "method": "raw",
+      "condition": "crossword",
+      "tar": 0.8101851851851852,
+      "far": 0.07465277777777778,
+      "hter": 0.1322337962962963,
+      "auc": 0.9370900848765431
+    },
+    {
+      "method": "identity",
+      "condition": "sameword",
+      "tar": 0.8333333333333334,
+      "far": 0.07725694444444445,
+      "hter": 0.12196180555555555,
+      "auc": 0.9631257233796297
+    },
+    {
+      "method": "identity",
+      "condition": "crossword",
+      "tar": 0.8163580246913581,
+      "far": 0.07600308641975308,
+      "hter": 0.1298225308641975,
+      "auc": 0.9357880015432097
+    },
+    {
+      "method": "uniform",
+      "condition": "sameword",
+      "tar": 0.8333333333333334,
+      "far": 0.10387731481481481,
+      "hter": 0.13527199074074073,
+      "auc": 0.9504665798611112
+    },
+    {
+      "method": "uniform",
+      "condition": "crossword",
+      "tar": 0.8117283950617284,
+      "far": 0.10165895061728396,
+      "hter": 0.1449652777777778,
+      "auc": 0.9322273662551439
+    },
+    {
+      "method": "selective",
+      "condition": "sameword",
+      "tar": 0.8310185185185185,
+      "far": 0.10358796296296297,
+      "hter": 0.1362847222222222,
+      "auc": 0.9505208333333334
+    },
+    {
+      "method": "selective",
+      "condition": "crossword",
+      "tar": 0.8117283950617284,
+      "far": 0.10165895061728396,
+      "hter": 0.1449652777777778,
+      "auc": 0.9321871784979423
+    },
+    {
+      "method": "shuffle_same_user",
+      "condition": "sameword",
+      "tar": 0.8333333333333334,
+      "far": 0.10387731481481481,
+      "hter": 0.13527199074074073,
+      "auc": 0.9503942418981481
+    },
+    {
+      "method": "shuffle_same_user",
+      "condition": "crossword",
+      "tar": 0.8148148148148147,
+      "far": 0.10416666666666667,
+      "hter": 0.14467592592592593,
+      "auc": 0.9318656764403291
+    }
+  ],
+  "limits": [
+    "nominal word labels",
+    "closed known identities",
+    "archived explored Audio teacher",
+    "teacher training includes registration Audio",
+    "simple cosine relation matching,not full RKD",
+    "alpha chosen only CalA/B",
+    "CPU400updates three seeds"
+  ]
+}
