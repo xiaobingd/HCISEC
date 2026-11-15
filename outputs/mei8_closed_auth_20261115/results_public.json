@@ -1,0 +1,134 @@
+{
+  "state": "complete",
+  "summary": [
+    {
+      "method": "raw_statistics",
+      "condition": "sameword",
+      "point": "Cal_EER",
+      "tar": 0.84375,
+      "far": 0.05357142857142856,
+      "hter": 0.10491071428571429,
+      "auc": 0.9727957589285715
+    },
+    {
+      "method": "raw_statistics",
+      "condition": "sameword",
+      "point": "Cal_FAR5",
+      "tar": 0.75,
+      "far": 0.03013392857142857,
+      "hter": 0.1400669642857143,
+      "auc": 0.9727957589285715
+    },
+    {
+      "method": "raw_statistics",
+      "condition": "crossword",
+      "point": "Cal_EER",
+      "tar": 0.8697916666666667,
+      "far": 0.05282738095238095,
+      "hter": 0.09151785714285714,
+      "auc": 0.9737103174603174
+    },
+    {
+      "method": "raw_statistics",
+      "condition": "crossword",
+      "point": "Cal_FAR5",
+      "tar": 0.7604166666666667,
+      "far": 0.025297619047619044,
+      "hter": 0.13244047619047616,
+      "auc": 0.9737103174603174
+    },
+    {
+      "method": "audio_baseline",
+      "condition": "sameword",
+      "point": "Cal_EER",
+      "tar": 0.8359375,
+      "far": 0.03683035714285714,
+      "hter": 0.10044642857142858,
+      "auc": 0.9744698660714286
+    },
+    {
+      "method": "audio_baseline",
+      "condition": "sameword",
+      "point": "Cal_FAR5",
+      "tar": 0.765625,
+      "far": 0.0234375,
+      "hter": 0.12890625,
+      "auc": 0.9744698660714286
+    },
+    {
+      "method": "audio_baseline",
+      "condition": "crossword",
+      "point": "Cal_EER",
+      "tar": 0.8489583333333333,
+      "far": 0.029761904761904764,
+      "hter": 0.09040178571428571,
+      "auc": 0.9866071428571428
+    },
+    {
+      "method": "audio_baseline",
+      "condition": "crossword",
+      "point": "Cal_FAR5",
+      "tar": 0.7708333333333334,
+      "far": 0.018601190476190473,
+      "hter": 0.12388392857142858,
+      "auc": 0.9866071428571428
+    },
+    {
+      "method": "selected_generator",
+      "condition": "sameword",
+      "point": "Cal_EER",
+      "tar": 0.8515625,
+      "far": 0.0546875,
+      "hter": 0.1015625,
+      "auc": 0.9762137276785714
+    },
+    {
+      "method": "selected_generator",
+      "condition": "sameword",
+      "point": "Cal_FAR5",
+      "tar": 0.7421875,
+      "far": 0.0234375,
+      "hter": 0.140625,
+      "auc": 0.9762137276785714
+    },
+    {
+      "method": "selected_generator",
+      "condition": "crossword",
+      "point": "Cal_EER",
+      "tar": 0.90625,
+      "far": 0.046130952380952384,
+      "hter": 0.06994047619047619,
+      "auc": 0.9846230158730158
+    },
+    {
+      "method": "selected_generator",
+      "condition": "crossword",
+      "point": "Cal_FAR5",
+      "tar": 0.828125,
+      "far": 0.017857142857142856,
+      "hter": 0.09486607142857142,
+      "auc": 0.9846230158730158
+    }
+  ],
+  "selected": {
+    "step": 100,
+    "branch": "input256",
+    "alpha": 1.0,
+    "hter": 0.08482142857142856,
+    "auc": 0.9854910714285714
+  },
+  "audit": {
+    "state": "PASS",
+    "authentication_users": 8,
+    "excluded_user": "U9",
+    "registration": 96,
+    "calibration": 64,
+    "sameword_query": 128,
+    "crossword_query": 192,
+    "known_attackers_each": 7,
+    "all_authentication_roles_exclude_U9": true,
+    "upstream_models_still_trained_with_all9": true,
+    "query_used_for_selection": false,
+    "scope": "restricted user cohort;not unseen-user experiment;nominal word labels"
+  }
+}
