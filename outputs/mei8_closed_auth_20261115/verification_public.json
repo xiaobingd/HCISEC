@@ -1,0 +1,14 @@
+{
+  "state": "PASS",
+  "authentication_users": 8,
+  "excluded_user": "U9",
+  "registration": 96,
+  "calibration": 64,
+  "sameword_query": 128,
+  "crossword_query": 192,
+  "known_attackers_each": 7,
+  "all_authentication_roles_exclude_U9": true,
+  "upstream_models_still_trained_with_all9": true,
+  "query_used_for_selection": false,
+  "scope": "restricted user cohort;not unseen-user experiment;nominal word labels"
+}
