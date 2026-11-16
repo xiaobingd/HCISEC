@@ -1,0 +1,34 @@
+{
+  "participants": [
+    {
+      "participant_id": "N01",
+      "words": 16,
+      "recordings": 16,
+      "saved_segments": 162,
+      "recordings_with_overflow": 12,
+      "integrity_pass_recordings": 4,
+      "aligned_word_recordings": 0
+    },
+    {
+      "participant_id": "N02",
+      "words": 12,
+      "recordings": 12,
+      "saved_segments": 63,
+      "recordings_with_overflow": 12,
+      "integrity_pass_recordings": 0,
+      "aligned_word_recordings": 0
+    }
+  ],
+  "shared_words": [
+    "five",
+    "four",
+    "nine",
+    "one",
+    "six",
+    "start",
+    "three",
+    "two",
+    "zero",
+    "你好"
+  ]
+}
