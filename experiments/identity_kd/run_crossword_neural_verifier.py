@@ -39,6 +39,23 @@ def norm(x):
     return x / np.maximum(np.linalg.norm(x, axis=-1, keepdims=True), 1e-8)
 
 
+def resolve_audio_path(value):
+    """Reverse legacy UTF-8-as-GBK path corruption; payload hash checked below."""
+    path = Path(value)
+    if path.exists():
+        return path
+    parts = []
+    for part in path.parts:
+        try:
+            parts.append(part.encode('gbk').decode('utf-8'))
+        except (UnicodeError, LookupError):
+            parts.append(part)
+    repaired = Path(*parts)
+    if repaired.exists():
+        return repaired
+    raise FileNotFoundError('Audio path unavailable after legacy encoding repair: '+str(repaired))
+
+
 def threshold(y, s):
     f, t, th = roc_curve(y, s, drop_intermediate=False)
     j = min(range(len(th)), key=lambda i: (abs(f[i]-(1-t[i])), f[i]))
@@ -129,7 +146,7 @@ def teacher_embeddings(a, d, fit, out):
             continue
         record = source[str(d['sample_id'][i])]
         assert record['word_id'] == int(d['word'][i])
-        wave = np.load(record['audio_file'], allow_pickle=False)
+        wave = np.load(resolve_audio_path(record['audio_file']), allow_pickle=False)
         assert hashlib.sha256(memoryview(np.ascontiguousarray(wave)).cast('B')).hexdigest() == record['audio_array_sha256']
         assert wave.shape == (96000, 2)
         wave = resample_poly(wave[:, 0].astype('float64'), 1, 3).astype('float32')
