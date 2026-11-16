@@ -73,21 +73,23 @@ def metrics(y, s, tau):
 
 
 class Tasks:
-    def __init__(self, user, word):
+    def __init__(self, user, word, users=None, evaluation_users=None):
         self.user, self.word = user, word
+        self.users = sorted(np.unique(user).tolist()) if users is None else list(users)
+        self.evaluation_users = self.users if evaluation_users is None else list(evaluation_users)
         self.lookup = {(u, w): np.flatnonzero((user == u) & (word == w))
-                       for u in range(1, 10) for w in range(30)}
+                       for u in sorted(set(self.users+self.evaluation_users)) for w in range(30)}
 
     def sample(self, words, n, seed):
         rng = np.random.RandomState(seed)
         queries, supports, targets, owners = [], [], [], []
         for j in range(n):
-            owner = 1 + (j//2) % 9
+            owner = self.users[(j//2) % len(self.users)]
             genuine = j % 2 == 0
             # Cycle all eight attack sources; random draws can omit a source
             # in short development batches and skew per-owner calibration.
-            negatives = [u for u in range(1, 10) if u != owner]
-            speaker = owner if genuine else negatives[(j//18) % 8]
+            negatives = [u for u in self.users if u != owner]
+            speaker = owner if genuine else negatives[(j//(2*len(self.users))) % len(negatives)]
             sw, sw2, qw = rng.choice(words, 3, replace=False)
             rr = np.r_[rng.choice(self.lookup[owner, sw], 6, replace=False),
                        rng.choice(self.lookup[owner, sw2], 6, replace=False)]
@@ -99,10 +101,10 @@ class Tasks:
 
     def evaluation(self, support_words, query_words, same=False):
         q, r, y, owner = [], [], [], []
-        for u in range(1, 10):
+        for u in self.users:
             rr = np.concatenate([self.lookup[u, w][:4] for w in support_words])
             assert len(rr) == 12
-            for v in range(1, 10):
+            for v in self.evaluation_users:
                 for w in query_words:
                     jj = self.lookup[v, w][4:8] if same else self.lookup[v, w][:4]
                     assert len(jj) == 4
@@ -129,6 +131,19 @@ def teacher_embeddings(a, d, fit, out):
         done, z = int(cache['done']), cache['embedding']
         if done == len(fit):
             return z
+    if a.teacher_cache and not path.exists():
+        cache=np.load(a.teacher_cache)
+        assert np.array_equal(cache['sample_id'], d['sample_id'])
+        assert set(fit).issubset(set(cache['indices']))
+        z=np.zeros_like(cache['embedding']);z[fit]=cache['embedding'][fit]
+        assert np.all(np.linalg.norm(z[fit],axis=1)>.99)
+        np.savez_compressed(path,embedding=z,indices=fit,sample_id=d['sample_id'],done=len(fit))
+        dump(out/'teacher_audit_public.json',dict(backbone='external frozen ReDimNet2-B3 vox2 lm',
+             revision=REVISION,weight_sha256=WEIGHT_SHA,audio_records=len(fit),
+             reused_independent_frozen_per_record_embeddings=True,
+             excluded_users=a.exclude_users,excluded_user_embeddings_zero=True,
+             excluded_audio_used_in_training=False,calibration_audio_reads=0,final_audio_reads=0))
+        return z
     sys.path.insert(0, str(Path(a.runtime)/('redimnet2-'+REVISION)))
     sys.path.insert(0, str(Path(a.deps).resolve()))
     from redimnet2.redimnet2 import ReDimNet2Wrap
@@ -175,8 +190,11 @@ def run(a):
     data = np.load(a.frontend)
     d = {k: data[k] for k in ['spectrum', 'user', 'word', 'sample_id']}
     assert len(set(d['sample_id'])) == len(d['sample_id'])
-    fit = np.flatnonzero(d['word'] < 18)
-    tasks = Tasks(d['user'], d['word'])
+    users=[int(u) for u in np.unique(d['user']) if u not in a.exclude_users]
+    assert len(users)>=2
+    active=np.isin(d['user'],users)
+    fit = np.flatnonzero((d['word'] < 18)&active)
+    tasks = Tasks(d['user'], d['word'],users,list(range(1,10)))
     x = d['spectrum'].astype('float32')
     mean = x[fit].mean((0, 3), keepdims=True)
     std = x[fit].std((0, 3), keepdims=True).clip(1e-4)
@@ -188,9 +206,10 @@ def run(a):
     scaler = StandardScaler().fit(raw[fit]); raw = norm(scaler.transform(raw)).astype('float32')
     np.savez_compressed(out/'normalization_private.npz', mean=mean, std=std,
                         raw_mean=scaler.mean_, raw_scale=scaler.scale_)
-    train = tasks.sample(list(range(18)), 3600, a.seed)
-    dev = tasks.sample([18, 19, 20], 900, 18042)
-    cal = tasks.sample([21, 22, 23], 1800, 21042)
+    train = tasks.sample(list(range(18)), 400*len(users), a.seed)
+    dev = tasks.sample([18, 19, 20], 100*len(users), 18042)
+    cal = tasks.sample([21, 22, 23], 200*len(users), 21042)
+    assert all(np.isin(d['user'][t['q']],users).all() and np.isin(d['user'][t['r']],users).all() for t in [train,dev,cal])
     tests = dict(sameword=tasks.evaluation([24, 25, 26], [24, 25, 26], True),
                  crossword=tasks.evaluation([24, 25, 26], [27, 28, 29]))
     # Split by physical recording and word; supports repeat within a role only.
@@ -205,19 +224,22 @@ def run(a):
     all_methods=list(dict.fromkeys(prior_protocol.get('methods',[])+a.methods))
     dump(protocol_path, dict(stage='running', seed=a.seed,
          methods=all_methods, last_invocation_methods=a.methods, fit_words=list(range(18)), develop_words=[18,19,20],
+         training_users=users, excluded_training_users=a.exclude_users, evaluation_users=list(range(1,10)),
+         excluded_users_role='unseen attackers only;no owner enrollment or Cal',
          calibration_words=[21,22,23], registration_words=[24,25,26], cross_words=[27,28,29],
          encoder_steps=a.encoder_steps, verifier_steps=a.steps, budget='same task order and initialization per verifier',
          local_attention='one layer,128dim,4heads,bidirectional;temporal mean pooling;enrollment mean/std pooling',
          thresholds='per-user on Cal only;shared between same/cross final queries',
          registration=12, same_queries_per_user=12, cross_queries_per_user=12,
          train_support=12, all_eight_attack_sources=True, scaler_fit_only=True,
-         limits=['closed nine known identities','nominal chronological word labels, not transcript-verified',
+         limits=[f'{len(users)} known registered identities; excluded identities are unseen attackers only','nominal chronological word labels, not transcript-verified',
                  'single session; no controlled redon','historically explored cohort',
                  'HMD tracking velocity, not hardware raw acceleration',
                  'adaptation of 2026 neural rescoring;not original hybrid TD/TI enrollment']))
     dump(out/'status.json', dict(stage='encoder_training'))
     enc = ACCEncoder(); torch.manual_seed(a.seed); enc = ACCEncoder()
-    head = nn.Linear(128, 9)
+    head = nn.Linear(128, len(users))
+    user_label={u:j for j,u in enumerate(users)}
     enc_path = out/'encoder_private.pt'
     if enc_path.exists():
         enc.load_state_dict(torch.load(enc_path, weights_only=True))
@@ -227,10 +249,10 @@ def run(a):
         for step in range(a.encoder_steps):
             ww = rng.choice(18, 2, replace=False)
             ii = np.concatenate([rng.choice(tasks.lookup[u,w], 2, replace=False)
-                                 for u in range(1,10) for w in ww])
+                                 for u in users for w in ww])
             z = F.normalize(enc(x[ii]).mean(1), dim=1)
             loss = F.cross_entropy(16*F.linear(z, F.normalize(head.weight, dim=1)),
-                                   torch.tensor(d['user'][ii]-1,dtype=torch.long))
+                                   torch.tensor([user_label[int(u)] for u in d['user'][ii]],dtype=torch.long))
             opt.zero_grad(); loss.backward(); opt.step()
             if (step+1)%100 == 0:
                 print('ENCODER', step+1, float(loss.detach()), flush=True)
@@ -251,7 +273,7 @@ def run(a):
         # OOF scorer never fits the query word whose tasks it predicts.
         for fold in range(3):
             words = [w for w in range(18) if w%3 != fold]
-            tr = tasks.sample(words, 3600, a.seed+100+fold)
+            tr = tasks.sample(words, 400*len(users), a.seed+100+fold)
             scorer = LogisticRegression(C=1, max_iter=1000).fit(pair_features(teacher, tr), tr['y'])
             selected = d['word'][train['q']]%3 == fold
             tt = {k:v[selected] for k,v in train.items()}
@@ -266,25 +288,38 @@ def run(a):
     results=[r for r in previous if r['method'] not in rerun]
     def evaluate(name, scorer):
         cs = scorer(cal)
-        thresholds = {u:threshold(cal['y'][cal['owner']==u],cs[cal['owner']==u]) for u in range(1,10)}
+        thresholds = {u:threshold(cal['y'][cal['owner']==u],cs[cal['owner']==u]) for u in users}
         for condition, t in tests.items():
             score = scorer(t)
-            for u in range(1,10):
+            for u in users:
                 sel = t['owner']==u
-                results.append(dict(method=name,user='U'+str(u),condition=condition,
-                     **metrics(t['y'][sel],score[sel],thresholds[u])))
+                row=dict(method=name,user='U'+str(u),condition=condition,
+                     **metrics(t['y'][sel],score[sel],thresholds[u]))
+                known=sel&~t['y']&np.isin(d['user'][t['q']],users)
+                unseen=sel&np.isin(d['user'][t['q']],a.exclude_users)
+                row['known_attack_far']=float((score[known]>=thresholds[u]).mean())
+                row['unseen_attack_far']=float((score[unseen]>=thresholds[u]).mean()) if unseen.any() else None
+                row['unseen_attack_n']=int(unseen.sum())
+                results.append(row)
         dump(out/'per_user_public.json',results)
     evaluate('raw_pair_score',base_scores)
     # RBF reference uses exactly the same final registration and Cal protocol.
     register = np.unique(tests['sameword']['r'])
-    for u in range(1,10):
+    for u in users:
         clf = SVC(C=10,gamma='scale',class_weight='balanced').fit(raw[register],d['user'][register]==u)
         cc=cal['owner']==u; ss=clf.decision_function(raw[cal['q'][cc]])
         tau=threshold(cal['y'][cc],ss)
         for condition,t in tests.items():
             sel=t['owner']==u
-            results.append(dict(method='raw_rbf',user='U'+str(u),condition=condition,
-                 **metrics(t['y'][sel],clf.decision_function(raw[t['q'][sel]]),tau)))
+            score=clf.decision_function(raw[t['q']])
+            row=dict(method='raw_rbf',user='U'+str(u),condition=condition,
+                 **metrics(t['y'][sel],score[sel],tau))
+            known=sel&~t['y']&np.isin(d['user'][t['q']],users)
+            unseen=sel&np.isin(d['user'][t['q']],a.exclude_users)
+            row['known_attack_far']=float((score[known]>=tau).mean())
+            row['unseen_attack_far']=float((score[unseen]>=tau).mean()) if unseen.any() else None
+            row['unseen_attack_n']=int(unseen.sum())
+            results.append(row)
     for mode in a.methods:
         torch.manual_seed(a.seed)
         net = Verifier(local=mode!='global')
@@ -296,13 +331,13 @@ def run(a):
         if mode=='shuffle':
             shuffled=teacher.copy()
             shuffle_rng=np.random.RandomState(a.seed+1000)
-            for u in range(1,10):
+            for u in users:
                 jj=fit[d['user'][fit]==u]
                 shuffled[jj]=teacher[shuffle_rng.permutation(jj)]
             # Same calibrated scoring protocol, train-only identity-preserving permutation.
             targets=np.zeros(len(train['q']),dtype='float32')
             for fold in range(3):
-                tr=tasks.sample([w for w in range(18) if w%3!=fold],3600,a.seed+100+fold)
+                tr=tasks.sample([w for w in range(18) if w%3!=fold],400*len(users),a.seed+100+fold)
                 sc=LogisticRegression(C=1,max_iter=1000).fit(pair_features(shuffled,tr),tr['y'])
                 sel=d['word'][train['q']]%3==fold
                 targets[sel]=sc.decision_function(pair_features(shuffled,{k:v[sel] for k,v in train.items()}))
@@ -329,7 +364,7 @@ def run(a):
             opt.zero_grad();loss.backward();nn.utils.clip_grad_norm_(net.parameters(),1);opt.step()
             if step%100==0 or step==a.steps:
                 ds=score(dev)
-                auc=float(np.mean([roc_auc_score(dev['y'][dev['owner']==u],ds[dev['owner']==u]) for u in range(1,10)]))
+                auc=float(np.mean([roc_auc_score(dev['y'][dev['owner']==u],ds[dev['owner']==u]) for u in users]))
                 history.append(dict(step=step,loss=float(loss.detach()),dev_macro_auc=auc))
                 if auc>best:
                     best,best_step,state=auc,step,copy.deepcopy(net.state_dict())
@@ -348,7 +383,10 @@ def run(a):
     for method in sorted(set(r['method'] for r in results)):
         for condition in tests:
             rows=[r for r in results if r['method']==method and r['condition']==condition]
-            summary.append(dict(method=method,condition=condition,**{k:float(np.mean([r[k] for r in rows])) for k in ['auc','eer','tar','far','frr','hter']}))
+            row=dict(method=method,condition=condition,**{k:float(np.mean([r[k] for r in rows])) for k in ['auc','eer','tar','far','frr','hter','known_attack_far']})
+            if a.exclude_users:
+                row['unseen_attack_far']=float(np.mean([r['unseen_attack_far'] for r in rows]))
+            summary.append(row)
     dump(out/'results_public.json',dict(state='complete',summary=summary))
     dump(out/'status.json',dict(stage='complete'))
     print('ALL_COMPLETE',flush=True)
@@ -361,4 +399,6 @@ if __name__=='__main__':
     p.add_argument('--deps',default='work/verifier_deps');p.add_argument('--seed',type=int,default=42)
     p.add_argument('--encoder-steps',type=int,default=400);p.add_argument('--steps',type=int,default=1000)
     p.add_argument('--methods',nargs='+',choices=['global','local','audio','shuffle'],default=['global','local','audio','shuffle'])
+    p.add_argument('--exclude-users',nargs='*',type=int,default=[])
+    p.add_argument('--teacher-cache',default=None)
     run(p.parse_args())
