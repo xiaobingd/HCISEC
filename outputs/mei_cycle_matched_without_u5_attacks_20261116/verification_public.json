@@ -1,0 +1,11 @@
+{
+  "state": "PASS",
+  "recomputed_workpoints": 4800,
+  "prior_score_aggregation_error": 0.0,
+  "genuine_acceptance_unchanged": true,
+  "each_pair_genuine": 4,
+  "each_pair_impostor": 28,
+  "excluded_user": 5,
+  "thresholds_models_and_registration_unchanged": true,
+  "limits": "posthoc attack-subset recomputation,not retraining or a new blind test"
+}
