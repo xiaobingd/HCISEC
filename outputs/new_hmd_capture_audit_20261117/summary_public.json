@@ -1,0 +1,1277 @@
+{
+  "state": "complete",
+  "recordings": 10,
+  "metadata_identity_count": 1,
+  "metadata_session_wear_count": 1,
+  "confirmed_words": [
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four"
+  ],
+  "confirmed_recordings": 5,
+  "total_audio_segments": 80,
+  "confirmed_word_audio_segments": 52,
+  "duplicate_payload_groups": [],
+  "records": [
+    {
+      "recording": "C01",
+      "confirmed_word": "zero",
+      "metadata_prompt": "one",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "one",
+      "word_label_conflict": true,
+      "expected_repeats": 10,
+      "segments": 10,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "segment_duration_range_s": [
+        0.8,
+        0.96
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 19.2,
+      "audio_peak": 0.54620361328125,
+      "audio_rms_dbfs": -24.425883967027428,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -85.29927463159673,
+        -74.34183285510821,
+        -17.839667262399498
+      ],
+      "imu_samples": 19172,
+      "imu_span_s": 19.18861799989827,
+      "imu_median_hz": 999.1007550188621,
+      "imu_mean_hz": 999.0818515487482,
+      "imu_dt_ms_q01_q50_q99": [
+        0.992499990388751,
+        1.0009000543504953,
+        1.0046998504549265
+      ],
+      "imu_gap_count_over_1_5_dt": 0,
+      "imu_max_gap_ms": 1.0072998702526093,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.501350081525743,
+      "metadata_imu_gap_count": 0,
+      "spectrum_longest_continuous_samples": 19172,
+      "spectrum_longest_continuous_span_s": 19.18861799989827,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        0.411716895464758,
+        9.72055889690703,
+        0.569062031204375
+      ],
+      "accel_mean_vector_norm": 9.74590209604057,
+      "accel_detrended_rms_xyz": [
+        0.06768871319719644,
+        0.09941014268318284,
+        0.30218345805064184
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.0017011502150687096,
+          0.00406853979169102,
+          0.001328051035607274
+        ],
+        "10_50_Hz": [
+          0.00037781068990257335,
+          0.004627332372869729,
+          0.0003640134024502124
+        ],
+        "50_100_Hz": [
+          9.064426889688616e-05,
+          9.038914887137762e-05,
+          0.0002692759070440519
+        ],
+        "100_300_Hz": [
+          0.00023577097392473153,
+          0.0002531641071669919,
+          0.0010054106670549796
+        ],
+        "300_450_Hz": [
+          3.921456445546626e-05,
+          3.878084636216979e-05,
+          0.00014946437570283582
+        ]
+      },
+      "callback_rows": 1200,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 307200,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 19.16999050000004,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.06969799998387316,
+        0.789100000019971,
+        45.824905999960485
+      ],
+      "callback_intervals_under_1ms": 603,
+      "adc_backsteps": 599,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 19.168000000000003,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": true,
+      "capture_quality_issues": [],
+      "capture_wall_duration_s": 19.1838,
+      "audio_overflow_callbacks": 0,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": 0.011382000101729517,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C02",
+      "confirmed_word": "one",
+      "metadata_prompt": "one-zero",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "one-zero",
+      "word_label_conflict": true,
+      "expected_repeats": 10,
+      "segments": 10,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "segment_duration_range_s": [
+        0.52,
+        0.78
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 17.152,
+      "audio_peak": 0.372650146484375,
+      "audio_rms_dbfs": -29.253744055062228,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -92.67473390347386,
+        -82.23026737916103,
+        -22.882549827620412
+      ],
+      "imu_samples": 19299,
+      "imu_span_s": 20.060885600047186,
+      "imu_median_hz": 999.1007550188621,
+      "imu_mean_hz": 961.9714894318827,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9925002162344753,
+        1.0009000543504953,
+        1.0045000817626715
+      ],
+      "imu_gap_count_over_1_5_dt": 4,
+      "imu_max_gap_ms": 665.4173999559134,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.501350081525743,
+      "metadata_imu_gap_count": 3,
+      "spectrum_longest_continuous_samples": 9974,
+      "spectrum_longest_continuous_span_s": 9.98234390001744,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        0.4111000167982455,
+        9.713171089212091,
+        0.6040713072831454
+      ],
+      "accel_mean_vector_norm": 9.740615893073697,
+      "accel_detrended_rms_xyz": [
+        0.07713129603156742,
+        0.08960227628099535,
+        0.40877068749477574
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.0008938289239766124,
+          0.002149784697727996,
+          0.00043030638820776523
+        ],
+        "10_50_Hz": [
+          0.00041536327492713577,
+          0.0034556044534254605,
+          0.00032196288519062
+        ],
+        "50_100_Hz": [
+          8.368989608755147e-05,
+          9.648266728823227e-05,
+          0.00027988462704904067
+        ],
+        "100_300_Hz": [
+          0.0002291070718754857,
+          0.0002429571008607927,
+          0.0009379684451581011
+        ],
+        "300_450_Hz": [
+          3.729748778305526e-05,
+          3.973870903186891e-05,
+          0.00013373670575071207
+        ]
+      },
+      "callback_rows": 1072,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 274432,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 20.018493800000005,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.06672000000165214,
+        0.8100999999989256,
+        99.76967000000089
+      ],
+      "callback_intervals_under_1ms": 541,
+      "adc_backsteps": 535,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 17.12,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 2.909s"
+      ],
+      "capture_wall_duration_s": 20.061,
+      "audio_overflow_callbacks": 12,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -2.908885600047185,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C03",
+      "confirmed_word": "two",
+      "metadata_prompt": "2",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "two",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 12,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "segment_duration_range_s": [
+        0.25,
+        1.06
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 22.624,
+      "audio_peak": 0.99114990234375,
+      "audio_rms_dbfs": -27.226300722991013,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -90.57483352645498,
+        -83.64908697210959,
+        -24.036447578142166
+      ],
+      "imu_samples": 22917,
+      "imu_span_s": 22.94298050017096,
+      "imu_median_hz": 999.0010601819569,
+      "imu_mean_hz": 998.8240193914318,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9926999919116497,
+        1.0009999386966228,
+        1.0047849849797783
+      ],
+      "imu_gap_count_over_1_5_dt": 3,
+      "imu_max_gap_ms": 3.0029001645743847,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.5014999080449343,
+      "metadata_imu_gap_count": 0,
+      "spectrum_longest_continuous_samples": 14174,
+      "spectrum_longest_continuous_span_s": 14.186760999960825,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.374048285942703,
+        9.508205008666026,
+        -0.10855716796177631
+      ],
+      "accel_mean_vector_norm": 9.516178816402846,
+      "accel_detrended_rms_xyz": [
+        0.41546779206139006,
+        0.3265791138234598,
+        2.105002545301048
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.0771690136897113,
+          0.06295085859376147,
+          0.032208853349752216
+        ],
+        "10_50_Hz": [
+          0.00215706437628583,
+          0.008975136987787147,
+          0.0007981769686763988
+        ],
+        "50_100_Hz": [
+          9.835745444061333e-05,
+          8.992043973804992e-05,
+          0.0002759547446738868
+        ],
+        "100_300_Hz": [
+          0.00023598429637572958,
+          0.00026510845462380384,
+          0.0009830714511260476
+        ],
+        "300_450_Hz": [
+          4.919055835514975e-05,
+          0.00011612652852691343,
+          0.00130868962706178
+        ]
+      },
+      "callback_rows": 1414,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 361984,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 22.8629612,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.06481199999370801,
+        0.8373000000005959,
+        62.91508399999256
+      ],
+      "callback_intervals_under_1ms": 714,
+      "adc_backsteps": 706,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 22.592000000000002,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "capture_wall_duration_s": 22.8913,
+      "audio_overflow_callbacks": 2,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -0.31898050017096224,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C04",
+      "confirmed_word": "three",
+      "metadata_prompt": "3",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "three",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 10,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "segment_duration_range_s": [
+        0.7,
+        0.94
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 20.448,
+      "audio_peak": 0.603759765625,
+      "audio_rms_dbfs": -23.830132752881493,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -92.49822662996696,
+        -81.39443073654925,
+        -17.607264786418984
+      ],
+      "imu_samples": 20682,
+      "imu_span_s": 20.700922900112346,
+      "imu_median_hz": 999.0010601819569,
+      "imu_mean_hz": 999.037583966257,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9926001075655222,
+        1.0009999386966228,
+        1.004599966108799
+      ],
+      "imu_gap_count_over_1_5_dt": 0,
+      "imu_max_gap_ms": 1.0073999874293804,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.5014999080449343,
+      "metadata_imu_gap_count": 0,
+      "spectrum_longest_continuous_samples": 20682,
+      "spectrum_longest_continuous_span_s": 20.700922900112346,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.14498886607268063,
+        9.472609247500264,
+        2.0763114339933226
+      ],
+      "accel_mean_vector_norm": 9.698578086402355,
+      "accel_detrended_rms_xyz": [
+        0.15074003598905844,
+        0.26715743018725474,
+        0.6523376526643032
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.00293899574502846,
+          0.019508348702472998,
+          0.011821742774693417
+        ],
+        "10_50_Hz": [
+          0.00036527650105532407,
+          0.007096464057481409,
+          0.0004681074485724435
+        ],
+        "50_100_Hz": [
+          8.72808499468978e-05,
+          9.552297425414651e-05,
+          0.0002688350169094534
+        ],
+        "100_300_Hz": [
+          0.00023633981493891666,
+          0.00029066645219233774,
+          0.0012412371105168106
+        ],
+        "300_450_Hz": [
+          3.785710821526693e-05,
+          4.780803487099808e-05,
+          0.00022629911400006737
+        ]
+      },
+      "callback_rows": 1278,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 327168,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 20.6620669,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.06862799999993285,
+        1.0302000000024236,
+        44.73719199999891
+      ],
+      "callback_intervals_under_1ms": 638,
+      "adc_backsteps": 638,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 20.416,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "capture_wall_duration_s": 20.6944,
+      "audio_overflow_callbacks": 2,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -0.2529229001123454,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C05",
+      "confirmed_word": "four",
+      "metadata_prompt": "4",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "four",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 10,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "segment_duration_range_s": [
+        0.62,
+        0.86
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 18.912,
+      "audio_peak": 0.71728515625,
+      "audio_rms_dbfs": -24.60248732337788,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -91.02440712101019,
+        -85.11564180540175,
+        -19.06795987189801
+      ],
+      "imu_samples": 19660,
+      "imu_span_s": 19.68007000000216,
+      "imu_median_hz": 999.0010601819569,
+      "imu_mean_hz": 998.9293737267114,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9926999919116497,
+        1.0009999386966228,
+        1.0046998504549265
+      ],
+      "imu_gap_count_over_1_5_dt": 1,
+      "imu_max_gap_ms": 3.002899931743741,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.5014999080449343,
+      "metadata_imu_gap_count": 0,
+      "spectrum_longest_continuous_samples": 13267,
+      "spectrum_longest_continuous_span_s": 13.278767300071195,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.31413827948895773,
+        9.566980174109903,
+        1.6162709621564488
+      ],
+      "accel_mean_vector_norm": 9.707632272267135,
+      "accel_detrended_rms_xyz": [
+        0.12133364259634516,
+        0.3091696617760173,
+        0.5761839121830062
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.00245190576674341,
+          0.033391551331651906,
+          0.013286528309086294
+        ],
+        "10_50_Hz": [
+          0.0004540972798989224,
+          0.013559079877779427,
+          0.000592591927211522
+        ],
+        "50_100_Hz": [
+          9.339430000239121e-05,
+          0.0001315431010631288,
+          0.00034114187455764374
+        ],
+        "100_300_Hz": [
+          0.0002789078296263169,
+          0.0005126575036220681,
+          0.0019178334056281045
+        ],
+        "300_450_Hz": [
+          6.692232605247314e-05,
+          0.0001171635042198772,
+          0.0006916128342489874
+        ]
+      },
+      "callback_rows": 1182,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 302592,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 19.415439100000004,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.07250000000098566,
+        0.7868000000001985,
+        66.91253999999923
+      ],
+      "callback_intervals_under_1ms": 598,
+      "adc_backsteps": 590,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 18.880000000000003,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "capture_wall_duration_s": 19.4281,
+      "audio_overflow_callbacks": 4,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -0.7680700000021616,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C06",
+      "confirmed_word": null,
+      "metadata_prompt": "5",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "five",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 3,
+      "segment_ids": [
+        1,
+        2,
+        3
+      ],
+      "segment_duration_range_s": [
+        0.538,
+        0.82
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 4.608,
+      "audio_peak": 0.999969482421875,
+      "audio_rms_dbfs": -24.304905954105003,
+      "audio_clipping_fraction": 2.712673611111111e-05,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -96.73326024487804,
+        -82.2706965235624,
+        -18.04278306696578
+      ],
+      "imu_samples": 31512,
+      "imu_span_s": 38.06201479979791,
+      "imu_median_hz": 999.0010601819569,
+      "imu_mean_hz": 827.8857586952362,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9923998732119799,
+        1.0009999386966228,
+        1.0053999722003937
+      ],
+      "imu_gap_count_over_1_5_dt": 18,
+      "imu_max_gap_ms": 1730.5642000865191,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.5014999080449343,
+      "metadata_imu_gap_count": 11,
+      "spectrum_longest_continuous_samples": 10726,
+      "spectrum_longest_continuous_span_s": 10.735518099972978,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.34348274447758054,
+        9.475672889613518,
+        1.281623262102591
+      ],
+      "accel_mean_vector_norm": 9.568119736535122,
+      "accel_detrended_rms_xyz": [
+        1.1177892398829803,
+        0.7058235958641081,
+        1.403031318589079
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          1.583423376591868e-05,
+          1.620234572941481e-05,
+          4.3849854675525997e-05
+        ],
+        "10_50_Hz": [
+          7.306979502871647e-05,
+          7.27759762351693e-05,
+          0.00018946207814455744
+        ],
+        "50_100_Hz": [
+          9.228728224726367e-05,
+          9.115380844845111e-05,
+          0.000256895058716993
+        ],
+        "100_300_Hz": [
+          0.00022737330000014293,
+          0.0002361845031229121,
+          0.0007146795379971302
+        ],
+        "300_450_Hz": [
+          3.7497512168641235e-05,
+          3.8530575765503395e-05,
+          0.00011350668552786685
+        ]
+      },
+      "callback_rows": 288,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 73728,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 9.2343716,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.04873199999948952,
+        0.5665999999990845,
+        570.7398299999986
+      ],
+      "callback_intervals_under_1ms": 151,
+      "adc_backsteps": 143,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 4.576,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 150.980s",
+        "IMU时间跨度与采集墙钟时间差异: 38.062s vs 155.588s"
+      ],
+      "capture_wall_duration_s": 155.588,
+      "audio_overflow_callbacks": 6,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -33.45401479979791,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C07",
+      "confirmed_word": null,
+      "metadata_prompt": "zero",
+      "metadata_word_id": "W001",
+      "normalized_metadata_prompt": "zero",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 5,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "segment_duration_range_s": [
+        0.39,
+        1.3
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 5.568,
+      "audio_peak": 0.573272705078125,
+      "audio_rms_dbfs": -23.44176391910779,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -89.0675458117942,
+        -80.5236142551102,
+        -17.4924588135183
+      ],
+      "imu_samples": 18466,
+      "imu_span_s": 19.56028169998899,
+      "imu_median_hz": 999.1009874310046,
+      "imu_mean_hz": 944.0048095018178,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9925998747348785,
+        1.0008998215198517,
+        1.004599966108799
+      ],
+      "imu_gap_count_over_1_5_dt": 4,
+      "imu_max_gap_ms": 1027.7779998723418,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.5013497322797775,
+      "metadata_imu_gap_count": 2,
+      "spectrum_longest_continuous_samples": 9214,
+      "spectrum_longest_continuous_span_s": 9.220718000084162,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.027786668194768056,
+        9.557403804987556,
+        -2.1118233547546987
+      ],
+      "accel_mean_vector_norm": 9.787979233335518,
+      "accel_detrended_rms_xyz": [
+        0.06047289755630375,
+        0.10629495191597163,
+        0.20204023122206585
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.0010018798083043807,
+          0.005808387919773677,
+          0.0024574410230524778
+        ],
+        "10_50_Hz": [
+          0.0002525759558436933,
+          0.002559242197992058,
+          0.0002867727837473665
+        ],
+        "50_100_Hz": [
+          8.513377748653042e-05,
+          9.765322602105038e-05,
+          0.00027158393290557223
+        ],
+        "100_300_Hz": [
+          0.00023020925953220006,
+          0.0005179734652551677,
+          0.0018140001187754273
+        ],
+        "300_450_Hz": [
+          4.7804030363102066e-05,
+          9.374356714704591e-05,
+          0.000555962305257424
+        ]
+      },
+      "callback_rows": 348,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 89088,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 18.73550469999998,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.09251999999037253,
+        2.7686999999900763,
+        567.6362260000086
+      ],
+      "callback_intervals_under_1ms": 143,
+      "adc_backsteps": 173,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 5.536,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 13.650s"
+      ],
+      "capture_wall_duration_s": 19.2178,
+      "audio_overflow_callbacks": 70,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -13.992281699988991,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C08",
+      "confirmed_word": null,
+      "metadata_prompt": "one",
+      "metadata_word_id": "W002",
+      "normalized_metadata_prompt": "one",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 8,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "segment_duration_range_s": [
+        0.38,
+        0.84
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 13.056,
+      "audio_peak": 0.573638916015625,
+      "audio_rms_dbfs": -24.977355228738976,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -96.90951808225086,
+        -87.89819124802462,
+        -20.032491846573805
+      ],
+      "imu_samples": 22299,
+      "imu_span_s": 25.195308099966496,
+      "imu_median_hz": 999.1009874310046,
+      "imu_mean_hz": 885.0060460276591,
+      "imu_dt_ms_q01_q50_q99": [
+        0.992499990388751,
+        1.0008998215198517,
+        1.0045999730937183
+      ],
+      "imu_gap_count_over_1_5_dt": 9,
+      "imu_max_gap_ms": 1526.0872000362724,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.5013497322797775,
+      "metadata_imu_gap_count": 8,
+      "spectrum_longest_continuous_samples": 6336,
+      "spectrum_longest_continuous_span_s": 6.340131300035864,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.010662499869276617,
+        9.586949850015738,
+        -1.950322325312811
+      ],
+      "accel_mean_vector_norm": 9.78332654510897,
+      "accel_detrended_rms_xyz": [
+        0.08126436079740254,
+        0.1467567039626426,
+        0.32169859182222516
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.0014763027985917293,
+          0.018725420809827458,
+          0.0022943345344462653
+        ],
+        "10_50_Hz": [
+          0.00018744591243690335,
+          0.0030305146093784047,
+          0.0003009332851490452
+        ],
+        "50_100_Hz": [
+          9.24674684482444e-05,
+          9.007765049823287e-05,
+          0.00024340945355353142
+        ],
+        "100_300_Hz": [
+          0.00022309019867646277,
+          0.0002577601374244811,
+          0.0007188693157826434
+        ],
+        "300_450_Hz": [
+          4.002910430805786e-05,
+          4.270509979524993e-05,
+          0.00020614438400077162
+        ]
+      },
+      "callback_rows": 816,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 208896,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 24.565795700000024,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.1114900000027319,
+        1.2475999999992382,
+        359.25300599997286
+      ],
+      "callback_intervals_under_1ms": 392,
+      "adc_backsteps": 407,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 13.024,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 11.565s"
+      ],
+      "capture_wall_duration_s": 24.6214,
+      "audio_overflow_callbacks": 60,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -12.139308099966497,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C09",
+      "confirmed_word": null,
+      "metadata_prompt": "two",
+      "metadata_word_id": "W003",
+      "normalized_metadata_prompt": "two",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 10,
+      "segment_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "segment_duration_range_s": [
+        0.46,
+        0.9
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 15.296,
+      "audio_peak": 0.48431396484375,
+      "audio_rms_dbfs": -23.68520005157169,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -96.22235995855625,
+        -84.36197485252212,
+        -16.017114827702486
+      ],
+      "imu_samples": 21719,
+      "imu_span_s": 23.616066500078887,
+      "imu_median_hz": 999.1007550188621,
+      "imu_mean_hz": 919.6281692350186,
+      "imu_dt_ms_q01_q50_q99": [
+        0.9922999888658524,
+        1.0009000543504953,
+        1.0044998489320278
+      ],
+      "imu_gap_count_over_1_5_dt": 12,
+      "imu_max_gap_ms": 473.5175999812782,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.501350081525743,
+      "metadata_imu_gap_count": 10,
+      "spectrum_longest_continuous_samples": 5341,
+      "spectrum_longest_continuous_span_s": 5.3442702000029385,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        -0.05519167314787951,
+        9.61280699037726,
+        -1.8068814126525072
+      ],
+      "accel_mean_vector_norm": 9.78130486154173,
+      "accel_detrended_rms_xyz": [
+        0.07879381257473131,
+        0.08731801557151678,
+        0.26962157906300643
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.001264082155136475,
+          0.004584222218144706,
+          0.0016291663322046354
+        ],
+        "10_50_Hz": [
+          0.000203581324397466,
+          0.0018059799364224872,
+          0.00024998664116940414
+        ],
+        "50_100_Hz": [
+          9.473928319420343e-05,
+          8.831673394767146e-05,
+          0.00027744212553150384
+        ],
+        "100_300_Hz": [
+          0.0002305419625495503,
+          0.000553096337702897,
+          0.0013860517558574054
+        ],
+        "300_450_Hz": [
+          3.9928519398563995e-05,
+          5.4329779415242634e-05,
+          0.0003819084768188357
+        ]
+      },
+      "callback_rows": 956,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 244736,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 24.167916900000023,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.13486600003034255,
+        0.9873999999854277,
+        293.5407420000117
+      ],
+      "callback_intervals_under_1ms": 478,
+      "adc_backsteps": 477,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 15.264,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 9.084s"
+      ],
+      "capture_wall_duration_s": 24.3804,
+      "audio_overflow_callbacks": 58,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -8.320066500078887,
+      "segment_overlap_pairs": 0
+    },
+    {
+      "recording": "C10",
+      "confirmed_word": null,
+      "metadata_prompt": "three",
+      "metadata_word_id": "W004",
+      "normalized_metadata_prompt": "three",
+      "word_label_conflict": false,
+      "expected_repeats": 10,
+      "segments": 2,
+      "segment_ids": [
+        1,
+        2
+      ],
+      "segment_duration_range_s": [
+        0.54,
+        1.34
+      ],
+      "sample_rate": 16000,
+      "audio_channels": 1,
+      "audio_duration_s": 2.976,
+      "audio_peak": 0.49456787109375,
+      "audio_rms_dbfs": -24.733176537212955,
+      "audio_clipping_fraction": 0.0,
+      "audio_20ms_rms_dbfs_q10_q50_q90": [
+        -96.84791499520266,
+        -90.52955507761274,
+        -18.802584018537974
+      ],
+      "imu_samples": 23519,
+      "imu_span_s": 28.309338999912143,
+      "imu_median_hz": 999.1007550188621,
+      "imu_mean_hz": 830.7505872911051,
+      "imu_dt_ms_q01_q50_q99": [
+        0.992599914316088,
+        1.0009000543504953,
+        1.0049999691545963
+      ],
+      "imu_gap_count_over_1_5_dt": 11,
+      "imu_max_gap_ms": 1308.9833001140505,
+      "nonmonotonic_imu": 0,
+      "analysis_gap_threshold_ms": 1.501350081525743,
+      "metadata_imu_gap_count": 11,
+      "spectrum_longest_continuous_samples": 8065,
+      "spectrum_longest_continuous_span_s": 8.070976100163534,
+      "nonfinite_axis_values": 0,
+      "offscale_rows": 0,
+      "accel_mean_xyz": [
+        0.09003455109650164,
+        9.61451618547841,
+        -1.7411105536178546
+      ],
+      "accel_mean_vector_norm": 9.77130972086838,
+      "accel_detrended_rms_xyz": [
+        0.3016668088482845,
+        0.2858497499629773,
+        0.6115253088665511
+      ],
+      "imu_psd_bandpower_xyz": {
+        "1_10_Hz": [
+          0.0005118627098080991,
+          0.0016531869866771532,
+          0.0007163239862680882
+        ],
+        "10_50_Hz": [
+          0.00010613931991660637,
+          0.0004980736341397414,
+          0.00021549972295906004
+        ],
+        "50_100_Hz": [
+          9.432943913146085e-05,
+          7.876476114702245e-05,
+          0.0002588692319575074
+        ],
+        "100_300_Hz": [
+          0.00021804568039946677,
+          0.0002532837657322458,
+          0.00071316852519485
+        ],
+        "300_450_Hz": [
+          4.06227026439965e-05,
+          4.633025258909662e-05,
+          0.0002909392865021463
+        ]
+      },
+      "callback_rows": 186,
+      "audio_frame_contiguity_errors": 0,
+      "audio_timestamp_frame_total": 47616,
+      "timestamp_frames_match_wav": true,
+      "callback_host_span_s": 26.81393460000004,
+      "callback_host_dt_ms_q01_q50_q99": [
+        0.1860680000299908,
+        12.59680000003982,
+        889.4053359999816
+      ],
+      "callback_intervals_under_1ms": 65,
+      "adc_backsteps": 92,
+      "adc_unique_values": 2,
+      "adc_range_s": [
+        0.0,
+        0.016
+      ],
+      "adc_minus_audio_index_variation_s": 2.944,
+      "metadata_adc_timestamps_plausible": false,
+      "alignment": "UNVERIFIED",
+      "audio_segments_imu_aligned": false,
+      "all_segments_have_imu_files": false,
+      "capture_integrity_pass": false,
+      "capture_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 23.879s"
+      ],
+      "capture_wall_duration_s": 26.8551,
+      "audio_overflow_callbacks": 96,
+      "audio_queue_dropped": 0,
+      "segment_full_slice_mismatches": 0,
+      "missing_segment_files": 0,
+      "audio_imu_duration_difference_s": -25.333338999912144,
+      "segment_overlap_pairs": 0
+    }
+  ],
+  "limitations": [
+    "identity is metadata-only;not independent speaker verification",
+    "word overrides user-confirmed,not transcribed",
+    "cross-clock alignment unverified;no coherence,voice-SNR or paired IMU slicing claimed",
+    "full recordings and segments are not independent samples"
+  ],
+  "snapshot_completed_at_bj": "2026-11-17T01:56:47.689023+08:00"
+}
