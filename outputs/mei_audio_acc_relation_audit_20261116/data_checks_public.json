@@ -1,0 +1,242 @@
+{
+  "state": "PASS",
+  "available_fit_records": 1618,
+  "balanced_used_records": 1296,
+  "excluded_fit_records": 322,
+  "sample_ids_unique_and_exactly_aligned": true,
+  "user_word_labels_match_frontend_and_E0": true,
+  "audio_indices_exactly_fit_0_17": true,
+  "nonfit_audio_is_zero_placeholder": true,
+  "no_waveform_or_final_audio_reads": true,
+  "all_nine_users_included": true,
+  "per_user_word_counts": [
+    {
+      "user": "U1",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        9,
+        10
+      ]
+    },
+    {
+      "user": "U2",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        9,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U3",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U4",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U5",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U6",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U7",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U8",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "user": "U9",
+      "word_counts": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    }
+  ],
+  "exact_duplicate_embedding_rows": {
+    "Audio": 0,
+    "ACC_E0": 0
+  },
+  "record_order": "within each user-word,first8 cached occurrence order;not independently verified repetition metadata",
+  "word_semantics": "nominal historical mapping;not transcript-verified",
+  "E0_training_exposure": "all audit recordings used to train E0;selected checkpoint used Dev18..20;no Audio distillation",
+  "source_sha256": [
+    {
+      "kind": "frontend",
+      "sha256": "e2d23913ff19ade225237d11acf1fa3a5cae71d696c6741b912da369769ce9f5"
+    },
+    {
+      "kind": "train_audio_cache",
+      "sha256": "5e091f26da6eef56d89dca10dc29ce44ff688b76f2b5283c59d93cad2829d6fc"
+    },
+    {
+      "kind": "E0_cache",
+      "sha256": "746719d182e2903d8e258721149b9613637ec9e2e4417766ba06cc628fa1d064"
+    }
+  ]
+}
