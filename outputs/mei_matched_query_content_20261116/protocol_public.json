@@ -1,0 +1,74 @@
+{
+  "state": "running",
+  "source": "frozen nine-user verifier pilot",
+  "target_users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "training_users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "attack_sources": "all other eight identities including U5",
+  "fit_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "calibration_words": [
+    21,
+    22,
+    23
+  ],
+  "final_words": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "registration_per_target": 4,
+  "query_per_identity_per_word_per_fold": 4,
+  "folds": "0:register repeat0:4/query4:8;1:register4:8/query0:4",
+  "ordered_crossword_pairs": 30,
+  "identical_queries_in_each_same_cross_pair": true,
+  "thresholds": "per target/method/fold on equal-weight pooled same/cross Cal scores;shared final conditions",
+  "rbf": "C10,gamma scale,balanced;fit K4 genuine and4 from each other identity per registration word",
+  "models": "raw_rbf;frozen local verifier;frozen Audio-decision verifier",
+  "limits": [
+    "nominal chronological word labels",
+    "K4 evaluation differs from previous K12",
+    "neural verifiers trained with K12,not retrained for K4",
+    "pairs share queries and supports;not independent trials",
+    "single seed and historically explored single-session data"
+  ]
+}
