@@ -7,5 +7,8 @@
   "duplicate_repeat_ids": 0,
   "wav_frames_match_metadata": true,
   "human_utterance_count_not_replaced_with_vad": true,
-  "no_authentication_model_trained": true
+  "no_authentication_model_trained": true,
+  "user_confirmed_word_corrections": 2,
+  "shared_words_after_correction": 12,
+  "recordings_and_segments_unchanged": true
 }
