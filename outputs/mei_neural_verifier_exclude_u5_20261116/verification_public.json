@@ -1,0 +1,17 @@
+{
+  "state": "PASS",
+  "replayed_workpoints": 96,
+  "max_metric_error": 0.0,
+  "calibration_replayed": true,
+  "checkpoint_selection_replayed": true,
+  "word_record_role_disjoint": true,
+  "teacher_zero_embeddings_outside_fit": true,
+  "scaler_fit_only": true,
+  "registered_users": 8,
+  "all_eight_attackers_retained": true,
+  "excluded_training_users": [
+    5
+  ],
+  "excluded_absent_from_training_development_calibration": true,
+  "limits": "replays inference and selection;does not retrain from seed or verify nominal transcript semantics"
+}
