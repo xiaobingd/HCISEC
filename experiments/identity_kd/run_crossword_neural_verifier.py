@@ -257,7 +257,10 @@ def run(a):
         dump(out/'teacher_task_quality_public.json', dict(oof_auc=float(roc_auc_score(train['y'],teacher_targets)),
              scorer='logistic pair similarity statistics;3fold heldout query-word scorer',
              backbone='external pretrained frozen;no local backbone fit', tasks=len(teacher_targets)))
-    results = []
+    result_path=out/'per_user_public.json'
+    previous=json.loads(result_path.read_text(encoding='utf-8')) if result_path.exists() else []
+    rerun=set(a.methods)|{'raw_pair_score','raw_rbf'}
+    results=[r for r in previous if r['method'] not in rerun]
     def evaluate(name, scorer):
         cs = scorer(cal)
         thresholds = {u:threshold(cal['y'][cal['owner']==u],cs[cal['owner']==u]) for u in range(1,10)}
@@ -289,9 +292,10 @@ def run(a):
         targets=teacher_targets
         if mode=='shuffle':
             shuffled=teacher.copy()
+            shuffle_rng=np.random.RandomState(a.seed+1000)
             for u in range(1,10):
                 jj=fit[d['user'][fit]==u]
-                shuffled[jj]=teacher[rng.permutation(jj)]
+                shuffled[jj]=teacher[shuffle_rng.permutation(jj)]
             # Same calibrated scoring protocol, train-only identity-preserving permutation.
             targets=np.zeros(len(train['q']),dtype='float32')
             for fold in range(3):
