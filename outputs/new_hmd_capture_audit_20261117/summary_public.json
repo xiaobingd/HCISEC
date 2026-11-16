@@ -137,7 +137,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": 0.011382000101729517,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N01"
     },
     {
       "recording": "C02",
@@ -265,7 +266,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -2.908885600047185,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N01"
     },
     {
       "recording": "C03",
@@ -393,7 +395,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -0.31898050017096224,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N01"
     },
     {
       "recording": "C04",
@@ -519,7 +522,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -0.2529229001123454,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N01"
     },
     {
       "recording": "C05",
@@ -645,7 +649,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -0.7680700000021616,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N01"
     },
     {
       "recording": "C06",
@@ -767,7 +772,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -33.45401479979791,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": null
     },
     {
       "recording": "C07",
@@ -890,7 +896,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -13.992281699988991,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N02"
     },
     {
       "recording": "C08",
@@ -1016,7 +1023,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -12.139308099966497,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N02"
     },
     {
       "recording": "C09",
@@ -1144,7 +1152,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -8.320066500078887,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N02"
     },
     {
       "recording": "C10",
@@ -1264,7 +1273,8 @@
       "segment_full_slice_mismatches": 0,
       "missing_segment_files": 0,
       "audio_imu_duration_difference_s": -25.333338999912144,
-      "segment_overlap_pairs": 0
+      "segment_overlap_pairs": 0,
+      "participant_id": "N02"
     }
   ],
   "limitations": [
@@ -1273,5 +1283,8 @@
     "cross-clock alignment unverified;no coherence,voice-SNR or paired IMU slicing claimed",
     "full recordings and segments are not independent samples"
   ],
-  "snapshot_completed_at_bj": "2026-11-17T01:56:47.689023+08:00"
+  "snapshot_completed_at_bj": "2026-11-17T01:56:47.689023+08:00",
+  "user_confirmed_participant_count": 2,
+  "identity_label_provenance": "user confirmation;anonymous groups;original metadata_identity_count unchanged",
+  "records_with_unconfirmed_participant": 1
 }
