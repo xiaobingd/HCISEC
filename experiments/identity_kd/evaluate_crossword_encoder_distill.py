@@ -138,6 +138,16 @@ def main(a):
         final_U5_target_and_attack_removed=True,training_registration_and_calibration_still_nine_users=True,
         all_alpha_choices_locked_on_Dev_before_final_scores=True,
         limits='saved-score replay and index checks;not independent full retraining'))
+    gradient_summary=[]
+    for method in ['E0','E1','E2_rho0.03','E2_rho0.1','E2_rho0.3','E3','E4']:
+        trace=json.loads((out/(method+'_gradient_public.json')).read_text())
+        ratios=[r['weighted_gradient_ratio'] for r in trace]
+        cosines=[r['gradient_cosine'] for r in trace if r['gradient_cosine'] is not None]
+        gradient_summary.append(dict(method=method,recorded_steps=[r['step'] for r in trace],
+            snapshot_mean_ratio=float(np.mean(ratios)),snapshot_median_ratio=float(np.median(ratios)),
+            snapshot_max_ratio=float(max(ratios)),snapshot_mean_cosine=float(np.mean(cosines)) if cosines else None,
+            snapshot_negative_cosine_fraction=float(np.mean(np.array(cosines)<0)) if cosines else None))
+    dump(out/'gradient_summary_public.json',gradient_summary)
     lines=['# Audio辅助跨词身份表征学习：首轮结果','',
         '独立于已冻结创新点一；九人参与原始训练，U5不作为最终目标或攻击者，保留八名目标及七名攻击来源。所有编码器使用相同均值/标准差池化、128维投影和训练批次。',
         '', 'E0=CE；E1=CE+跨词SupCon；E2=最佳正rho Audio关系KL；E3=对应rho跨身份错配；E4=对应rho ACC自关系。Audio的rho=0选择由E1提供，不能把E2正权重诊断冒充必然被开发集选择。',
@@ -147,6 +157,15 @@ def main(a):
     for r in summary:lines.append(f"|{r['method']}|{r['condition']}|{100*r['tar']:.2f}|{100*r['far']:.2f}|{100*r['hter']:.2f}|{100*r['eer']:.2f}|{r['auc']:.4f}|")
     lines+=['','## 开发集融合选择','', '|方法|alpha|Dev跨词RBF AUC|','|---|---:|---:|']
     for name,r in locks.items():lines.append(f"|{name}|{r['selected']['alpha']}|{r['selected']['dev_cross_rbf_auc']:.4f}|")
+    lines+=['','## 梯度快照','',
+        '以下为第1/10/每100步记录的快照统计，不是所有优化步的均值。比值是裁剪前加权KD/完整身份目标的编码器梯度范数；方向余弦只对非零关系梯度定义。',
+        '', '|训练分支|比值中位数%|比值最大值%|平均方向余弦|负方向占比%|','|---|---:|---:|---:|---:|']
+    for r in gradient_summary:
+        co='—' if r['snapshot_mean_cosine'] is None else f"{r['snapshot_mean_cosine']:.3f}"
+        ne='—' if r['snapshot_negative_cosine_fraction'] is None else f"{100*r['snapshot_negative_cosine_fraction']:.1f}"
+        lines.append(f"|{r['method']}|{100*r['snapshot_median_ratio']:.2f}|{100*r['snapshot_max_ratio']:.2f}|{co}|{ne}|")
+    lines+=['','## 身份关系几何','', '|方法|同人异词相似度|异人同词相似度|间隔|','|---|---:|---:|---:|']
+    for r in geometry:lines.append(f"|{r['method']}|{r['same_user_cross_word']:.4f}|{r['different_user_same_word']:.4f}|{r['similarity_gap']:.4f}|")
     lines+=['','## 逐用户','', '|用户|方法|条件|TAR%|FAR%|HTER%|EER%|AUC|','|---|---|---|---:|---:|---:|---:|---:|']
     for r in sorted(per_user,key=lambda r:(r['user'],r['method'],r['condition'])):lines.append(f"|{r['user']}|{r['method']}|{r['condition']}|{100*r['tar']:.2f}|{100*r['far']:.2f}|{100*r['hter']:.2f}|{100*r['eer']:.2f}|{r['auc']:.4f}|")
     lines+=['','固定查询K4、六词30方向、两折；Cal21–23同词/跨词等权池确定共享阈值，最终24–29不调参。同一查询在词对中重复，不是独立新试次。第一点模型和结果未修改。',
