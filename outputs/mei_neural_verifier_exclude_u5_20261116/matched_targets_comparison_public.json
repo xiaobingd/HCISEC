@@ -1,0 +1,86 @@
+[
+  {
+    "method": "audio",
+    "condition": "sameword",
+    "old_hter": 0.07747395833333333,
+    "new_hter": 0.099609375,
+    "delta": 0.02213541666666667
+  },
+  {
+    "method": "audio",
+    "condition": "crossword",
+    "old_hter": 0.08919270833333333,
+    "new_hter": 0.1015625,
+    "delta": 0.012369791666666671
+  },
+  {
+    "method": "global",
+    "condition": "sameword",
+    "old_hter": 0.10416666666666666,
+    "new_hter": 0.11263020833333333,
+    "delta": 0.008463541666666671
+  },
+  {
+    "method": "global",
+    "condition": "crossword",
+    "old_hter": 0.09309895833333333,
+    "new_hter": 0.10677083333333334,
+    "delta": 0.013671875000000014
+  },
+  {
+    "method": "local",
+    "condition": "sameword",
+    "old_hter": 0.076171875,
+    "new_hter": 0.10221354166666666,
+    "delta": 0.026041666666666657
+  },
+  {
+    "method": "local",
+    "condition": "crossword",
+    "old_hter": 0.09049479166666667,
+    "new_hter": 0.09505208333333331,
+    "delta": 0.0045572916666666435
+  },
+  {
+    "method": "raw_pair_score",
+    "condition": "sameword",
+    "old_hter": 0.10546875,
+    "new_hter": 0.11393229166666667,
+    "delta": 0.008463541666666671
+  },
+  {
+    "method": "raw_pair_score",
+    "condition": "crossword",
+    "old_hter": 0.09309895833333333,
+    "new_hter": 0.10677083333333334,
+    "delta": 0.013671875000000014
+  },
+  {
+    "method": "raw_rbf",
+    "condition": "sameword",
+    "old_hter": 0.08072916666666667,
+    "new_hter": 0.07552083333333333,
+    "delta": -0.005208333333333343
+  },
+  {
+    "method": "raw_rbf",
+    "condition": "crossword",
+    "old_hter": 0.064453125,
+    "new_hter": 0.07356770833333333,
+    "delta": 0.009114583333333329
+  },
+  {
+    "method": "shuffle",
+    "condition": "sameword",
+    "old_hter": 0.07942708333333334,
+    "new_hter": 0.10091145833333333,
+    "delta": 0.021484374999999986
+  },
+  {
+    "method": "shuffle",
+    "condition": "crossword",
+    "old_hter": 0.08398437499999999,
+    "new_hter": 0.09375,
+    "delta": 0.009765625000000014
+  }
+]
