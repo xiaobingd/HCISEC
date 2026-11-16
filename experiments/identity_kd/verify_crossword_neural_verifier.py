@@ -14,6 +14,9 @@ from run_crossword_neural_verifier import norm, pair_features, threshold, metric
 def verify(frontend, out):
     torch.set_num_threads(2)
     out=Path(out); data=np.load(frontend); n=np.load(out/'normalization_private.npz')
+    protocol=json.loads((out/'protocol_public.json').read_text(encoding='utf-8'))
+    users=protocol.get('training_users',list(range(1,10)))
+    excluded=protocol.get('excluded_training_users',[])
     tasksfile=np.load(out/'tasks_private.npz')
     tasks={role:{k:tasksfile[role+'_'+k] for k in ['q','r','y','owner']}
            for role in ['train','dev','cal','sameword','crossword']}
@@ -21,6 +24,7 @@ def verify(frontend, out):
     role_pools=[set(np.r_[t['q'],t['r'].ravel()]) for t in [tasks[k] for k in ['train','dev','cal']]]
     role_pools.append(set(np.r_[tasks['sameword']['q'],tasks['crossword']['q'],tasks['sameword']['r'].ravel()]))
     assert all(not role_pools[i]&role_pools[j] for i in range(4) for j in range(i))
+    assert all(not np.isin(data['user'][list(pool)],excluded).any() for pool in role_pools[:3])
     for role in ['train','dev','cal']:
         t=tasks[role]
         assert not np.any(data['word'][t['q'],None]==data['word'][t['r']])
@@ -29,7 +33,7 @@ def verify(frontend, out):
                         spectrum.std(-1).reshape(len(spectrum),-1),
                         *[spectrum[...,j].mean(-1).reshape(len(spectrum),-1)
                           for j in np.array_split(np.arange(28),4)]],1)
-    fit=np.flatnonzero(data['word']<18)
+    fit=np.flatnonzero((data['word']<18)&np.isin(data['user'],users))
     scaler=StandardScaler().fit(raw[fit])
     assert np.array_equal(scaler.mean_,n['raw_mean'])
     assert np.array_equal(scaler.scale_,n['raw_scale'])
@@ -40,39 +44,46 @@ def verify(frontend, out):
     assert np.array_equal(teacher['indices'],fit)
     assert np.array_equal(teacher['sample_id'],data['sample_id'])
     assert not teacher['embedding'][data['word']>=18].any()
+    assert not teacher['embedding'][np.isin(data['user'],excluded)].any()
     x=torch.tensor((spectrum-n['mean'])/n['std'])
     enc=ACCEncoder().eval();enc.load_state_dict(torch.load(out/'encoder_private.pt',weights_only=True))
     with torch.no_grad():tokens=torch.cat([enc(v) for v in x.split(64)])
     base=LogisticRegression(C=1,max_iter=1000).fit(pair_features(raw,tasks['train']),tasks['train']['y'])
     rows=json.loads((out/'per_user_public.json').read_text(encoding='utf-8'))
     bykey={(r['method'],r['user'],r['condition']):r for r in rows}
-    assert len(bykey)==108
+    assert len(bykey)==len(users)*12
     max_error=0.;checks=0
     def check(method,tau_fn,scorer):
         nonlocal max_error,checks
         for cond in ['sameword','crossword']:
             t=tasks[cond];scores=scorer(t)
-            for u in range(1,10):
+            for u in users:
                 jj=t['owner']==u; y=t['y'][jj]
                 assert y.sum()==12 and (~y).sum()==96
                 assert set(data['user'][t['q'][jj&~t['y']]])==set(range(1,10))-{u}
                 m=metrics(y,scores[jj],tau_fn(u))
                 old=bykey[method,'U'+str(u),cond]
                 err=max(abs(m[k]-old[k]) for k in m)
+                known=jj&~t['y']&np.isin(data['user'][t['q']],users)
+                unseen=jj&np.isin(data['user'][t['q']],excluded)
+                if 'known_attack_far' in old:
+                    assert abs(float((scores[known]>=tau_fn(u)).mean())-old['known_attack_far'])<1e-10
+                if unseen.any():
+                    assert abs(float((scores[unseen]>=tau_fn(u)).mean())-old['unseen_attack_far'])<1e-10
                 max_error=max(max_error,err);assert err<1e-7,(method,u,cond,err)
                 checks+=1
     def bs(t):return base.decision_function(pair_features(raw,t)).astype('float32')
-    def taus(s):return {u:threshold(tasks['cal']['y'][tasks['cal']['owner']==u],s[tasks['cal']['owner']==u]) for u in range(1,10)}
+    def taus(s):return {u:threshold(tasks['cal']['y'][tasks['cal']['owner']==u],s[tasks['cal']['owner']==u]) for u in users}
     th=taus(bs(tasks['cal']));check('raw_pair_score',lambda u:th[u],bs)
     register=np.unique(tasks['sameword']['r']);models={};thresholds={}
-    for u in range(1,10):
+    for u in users:
         model=SVC(C=10,gamma='scale',class_weight='balanced').fit(raw[register],data['user'][register]==u)
         jj=tasks['cal']['owner']==u
         thresholds[u]=threshold(tasks['cal']['y'][jj],model.decision_function(raw[tasks['cal']['q'][jj]]))
         models[u]=model
     def rb(t):
         score=np.zeros(len(t['q']))
-        for u in range(1,10):
+        for u in users:
             jj=t['owner']==u;score[jj]=models[u].decision_function(raw[t['q'][jj]])
         return score
     check('raw_rbf',lambda u:thresholds[u],rb)
@@ -93,9 +104,11 @@ def verify(frontend, out):
         th=taus(score(tasks['cal']));check(mode,lambda u:th[u],score)
     dump(out/'verification_public.json',dict(state='PASS',replayed_workpoints=checks,max_metric_error=max_error,
         calibration_replayed=True,checkpoint_selection_replayed=True,word_record_role_disjoint=True,
-        teacher_zero_embeddings_outside_fit=True,scaler_fit_only=True,all_nine_users_all_eight_attackers=True,
+        teacher_zero_embeddings_outside_fit=True,scaler_fit_only=True,registered_users=len(users),
+        all_eight_attackers_retained=True,excluded_training_users=excluded,
+        excluded_absent_from_training_development_calibration=True,
         limits='replays inference and selection;does not retrain from seed or verify nominal transcript semantics'))
-    print('ALL_108_WORKPOINTS_VERIFIED',max_error,flush=True)
+    print('ALL_WORKPOINTS_VERIFIED',checks,max_error,flush=True)
 
 
 if __name__=='__main__':
