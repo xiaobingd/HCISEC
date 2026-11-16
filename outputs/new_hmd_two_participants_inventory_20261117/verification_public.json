@@ -1,0 +1,11 @@
+{
+  "state": "PASS",
+  "participant_roots": 2,
+  "word_recordings": 28,
+  "saved_audio_segments": 225,
+  "missing_segment_files": 0,
+  "duplicate_repeat_ids": 0,
+  "wav_frames_match_metadata": true,
+  "human_utterance_count_not_replaced_with_vad": true,
+  "no_authentication_model_trained": true
+}
