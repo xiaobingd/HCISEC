@@ -1,0 +1,10 @@
+{
+  "state": "PASS",
+  "source_caches_unchanged": true,
+  "all_nine_users_and_72_directed_pairs": true,
+  "aggregate_recalculation": true,
+  "no_tied_aggregate_hard_ranks": true,
+  "repeated_execution_core_parity": true,
+  "synthetic_tests": "run check_audio_acc_relation_audit.py separately;PASS recorded in work log",
+  "limits": "aggregate/source checks;not independent waveform or embedding re-extraction"
+}
