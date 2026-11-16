@@ -29,5 +29,13 @@ t=tasks.sample(list(range(18)),360,42)
 assert np.all(d['word'][t['q']]!=d['word'][t['r'][:,0]])
 assert set(t['owner'])==set(range(1,10))
 assert all(set(d['user'][t['q'][(t['owner']==u)&~t['y']]])==set(range(1,10))-{u} for u in range(1,10))
+active=[u for u in range(1,10) if u!=5]
+excluded=Tasks(d['user'],d['word'],active,list(range(1,10)))
+tr=excluded.sample(list(range(18)),3200,42)
+assert not (d['user'][tr['q']]==5).any()
+assert not (d['user'][tr['r']]==5).any()
+ev=excluded.evaluation([24,25,26],[27,28,29])
+assert 5 not in ev['owner']
+assert (d['user'][ev['q']]==5).sum()==len(active)*12
 print(json.dumps(dict(state='PASS',baseline_preserved=True,enrollment_permutation_invariant=True,
     attention_gradient_nonzero=True,crossword_tasks=True,all_attack_sources=True)))
