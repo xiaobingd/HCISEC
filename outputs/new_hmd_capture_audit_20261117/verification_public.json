@@ -8,5 +8,7 @@
   "missing_segment_files": 0,
   "new_data_ready_for_paired_training": false,
   "original_files_only_read_by_audit": true,
-  "private_paths_identity_maps_and_signal_plot_not_published": true
+  "private_paths_identity_maps_and_signal_plot_not_published": true,
+  "user_confirmed_participant_count": 2,
+  "unconfirmed_recordings": 1
 }
