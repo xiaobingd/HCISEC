@@ -1,0 +1,290 @@
+[
+  {
+    "condition": "sameword",
+    "B2_minus": "B0",
+    "metric": "eer",
+    "mean": -0.005449459876543211,
+    "user_cluster_bootstrap95": [
+      -0.008680555555555566,
+      -0.0026041666666666644
+    ],
+    "improved_users": 8,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B0",
+    "metric": "hter",
+    "mean": -0.005160108024691353,
+    "user_cluster_bootstrap95": [
+      -0.010320216049382712,
+      -0.0002411265432098747
+    ],
+    "improved_users": 6,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B0",
+    "metric": "far",
+    "mean": -0.006462191358024689,
+    "user_cluster_bootstrap95": [
+      -0.01437114197530864,
+      0.0028935185185185205
+    ],
+    "improved_users": 7,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B1",
+    "metric": "eer",
+    "mean": -0.0030864197530864274,
+    "user_cluster_bootstrap95": [
+      -0.0072337962962963015,
+      0.0020254629629629563
+    ],
+    "improved_users": 7,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B1",
+    "metric": "hter",
+    "mean": -0.00602816358024691,
+    "user_cluster_bootstrap95": [
+      -0.012731481481481476,
+      -0.000434027777777773
+    ],
+    "improved_users": 6,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B1",
+    "metric": "far",
+    "mean": -0.005883487654320987,
+    "user_cluster_bootstrap95": [
+      -0.012731481481481483,
+      9.645061728395294e-05
+    ],
+    "improved_users": 5,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B3",
+    "metric": "eer",
+    "mean": 0.004774305555555549,
+    "user_cluster_bootstrap95": [
+      -0.0007716049382715896,
+      0.009307484567901233
+    ],
+    "improved_users": 1,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B3",
+    "metric": "hter",
+    "mean": 0.0004822530864197593,
+    "user_cluster_bootstrap95": [
+      -0.010561342592592582,
+      0.008873456790123462
+    ],
+    "improved_users": 2,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B3",
+    "metric": "far",
+    "mean": 0.0025077160493827185,
+    "user_cluster_bootstrap95": [
+      -0.004147376543209873,
+      0.009741512345679017
+    ],
+    "improved_users": 4,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B4",
+    "metric": "eer",
+    "mean": -0.0007233796296296255,
+    "user_cluster_bootstrap95": [
+      -0.005690586419753099,
+      0.004292052469135805
+    ],
+    "improved_users": 5,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B4",
+    "metric": "hter",
+    "mean": -0.003858024691358024,
+    "user_cluster_bootstrap95": [
+      -0.01220100308641975,
+      0.003907455632716033
+    ],
+    "improved_users": 5,
+    "users": 9
+  },
+  {
+    "condition": "sameword",
+    "B2_minus": "B4",
+    "metric": "far",
+    "mean": -0.006944444444444444,
+    "user_cluster_bootstrap95": [
+      -0.013985339506172836,
+      -0.0003858024691358034
+    ],
+    "improved_users": 6,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B0",
+    "metric": "eer",
+    "mean": -0.0037422839506173014,
+    "user_cluster_bootstrap95": [
+      -0.008564814814814834,
+      0.0008969907407407209
+    ],
+    "improved_users": 5,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B0",
+    "metric": "hter",
+    "mean": -0.0028452932098765433,
+    "user_cluster_bootstrap95": [
+      -0.0068865740740740745,
+      0.0017076581790123411
+    ],
+    "improved_users": 6,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B0",
+    "metric": "far",
+    "mean": -0.0029128086419753074,
+    "user_cluster_bootstrap95": [
+      -0.01304012345679012,
+      0.010243537808641968
+    ],
+    "improved_users": 7,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B1",
+    "metric": "eer",
+    "mean": -0.0025655864197530885,
+    "user_cluster_bootstrap95": [
+      -0.004012345679012361,
+      -0.0010609567901234643
+    ],
+    "improved_users": 7,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B1",
+    "metric": "hter",
+    "mean": -0.0030189043209876507,
+    "user_cluster_bootstrap95": [
+      -0.004967206790123451,
+      -0.0013985339506172813
+    ],
+    "improved_users": 8,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B1",
+    "metric": "far",
+    "mean": -0.004031635802469134,
+    "user_cluster_bootstrap95": [
+      -0.010590760030864196,
+      0.001851851851851855
+    ],
+    "improved_users": 4,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B3",
+    "metric": "eer",
+    "mean": 0.005796682098765417,
+    "user_cluster_bootstrap95": [
+      0.001167052469135773,
+      0.01045548804012345
+    ],
+    "improved_users": 1,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B3",
+    "metric": "hter",
+    "mean": 0.006076388888888891,
+    "user_cluster_bootstrap95": [
+      0.0015236786265432167,
+      0.01107277199074074
+    ],
+    "improved_users": 3,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B3",
+    "metric": "far",
+    "mean": 0.0059799382716049405,
+    "user_cluster_bootstrap95": [
+      -0.002238136574074075,
+      0.015489969135802476
+    ],
+    "improved_users": 3,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B4",
+    "metric": "eer",
+    "mean": -0.0013599537037037167,
+    "user_cluster_bootstrap95": [
+      -0.00405092592592593,
+      0.0014371141975308708
+    ],
+    "improved_users": 6,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B4",
+    "metric": "hter",
+    "mean": -0.0013310185185185174,
+    "user_cluster_bootstrap95": [
+      -0.00635609567901235,
+      0.004021990740740746
+    ],
+    "improved_users": 6,
+    "users": 9
+  },
+  {
+    "condition": "crossword",
+    "B2_minus": "B4",
+    "metric": "far",
+    "mean": -0.0018904320987654303,
+    "user_cluster_bootstrap95": [
+      -0.010725308641975309,
+      0.009239969135802474
+    ],
+    "improved_users": 6,
+    "users": 9
+  }
+]
