@@ -1,0 +1,767 @@
+{
+  "graphs_seed42_public.json": {
+    "seed": 42,
+    "per_user": [
+      {
+        "user": "U1",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U2",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 0
+      },
+      {
+        "user": "U3",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U4",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U5",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U6",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U7",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U8",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U9",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      }
+    ],
+    "all_users_still_in_CE": true,
+    "mask_only_filters_relations_not_users": true
+  },
+  "graphs_seed43_public.json": {
+    "seed": 43,
+    "per_user": [
+      {
+        "user": "U1",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U2",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 0
+      },
+      {
+        "user": "U3",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U4",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U5",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U6",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U7",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U8",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U9",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      }
+    ],
+    "all_users_still_in_CE": true,
+    "mask_only_filters_relations_not_users": true
+  },
+  "graphs_seed44_public.json": {
+    "seed": 44,
+    "per_user": [
+      {
+        "user": "U1",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U2",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 0
+      },
+      {
+        "user": "U3",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U4",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U5",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U6",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 1
+      },
+      {
+        "user": "U7",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U8",
+        "ACC_self_neighbors": 1,
+        "Audio_neighbors": 2
+      },
+      {
+        "user": "U9",
+        "ACC_self_neighbors": 2,
+        "Audio_neighbors": 2
+      }
+    ],
+    "all_users_still_in_CE": true,
+    "mask_only_filters_relations_not_users": true
+  },
+  "B0_seed42_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.006673275493085384,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 100,
+      "ce": 0.0030555003322660923,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 200,
+      "ce": 0.0006257241475395858,
+      "relation": -0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 300,
+      "ce": 0.0004727455088868737,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 400,
+      "ce": 0.000328276859363541,
+      "relation": 0.0,
+      "active_anchors": 0
+    }
+  ],
+  "B0_seed43_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.005343673750758171,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 100,
+      "ce": 0.004145409911870956,
+      "relation": -0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 200,
+      "ce": 0.0010192026384174824,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 300,
+      "ce": 0.000226662028580904,
+      "relation": -0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 400,
+      "ce": 0.00018983331392519176,
+      "relation": 0.0,
+      "active_anchors": 0
+    }
+  ],
+  "B0_seed44_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.0038004384841769934,
+      "relation": -0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 100,
+      "ce": 0.002877132734283805,
+      "relation": -0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 200,
+      "ce": 0.0007858437020331621,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 300,
+      "ce": 0.00031822899472899735,
+      "relation": 0.0,
+      "active_anchors": 0
+    },
+    {
+      "step": 400,
+      "ce": 0.0002556914696469903,
+      "relation": -0.0,
+      "active_anchors": 0
+    }
+  ],
+  "B1_seed42_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.006673275493085384,
+      "relation": 6.51925802230835e-09,
+      "active_anchors": 36,
+      "lambda_kd": 1.0,
+      "identity_gradient_norm": 1.0954811573028564,
+      "relation_gradient_norm": 6.260003715397033e-07,
+      "weighted_gradient_ratio": 5.714387393763629e-07,
+      "gradient_cosine": -0.12384609133005142
+    },
+    {
+      "step": 100,
+      "ce": 0.006060928106307983,
+      "relation": 0.027390874922275543,
+      "active_anchors": 36,
+      "lambda_kd": 0.015335968953419188,
+      "identity_gradient_norm": 0.6126906871795654,
+      "relation_gradient_norm": 1.1985366344451904,
+      "weighted_gradient_ratio": 0.030000000000000002,
+      "gradient_cosine": 0.12825311720371246
+    },
+    {
+      "step": 200,
+      "ce": 0.000712947454303503,
+      "relation": 0.05139186978340149,
+      "active_anchors": 36,
+      "lambda_kd": 0.0008504838037297009,
+      "identity_gradient_norm": 0.06618371605873108,
+      "relation_gradient_norm": 2.334567070007324,
+      "weighted_gradient_ratio": 0.029999999999999995,
+      "gradient_cosine": -0.2016155868768692
+    },
+    {
+      "step": 300,
+      "ce": 0.0004561274836305529,
+      "relation": 0.0668516457080841,
+      "active_anchors": 36,
+      "lambda_kd": 0.000524648426787544,
+      "identity_gradient_norm": 0.04584009572863579,
+      "relation_gradient_norm": 2.6211893558502197,
+      "weighted_gradient_ratio": 0.029999999999999995,
+      "gradient_cosine": -0.031382713466882706
+    },
+    {
+      "step": 400,
+      "ce": 0.0003487518697511405,
+      "relation": 0.09172322601079941,
+      "active_anchors": 36,
+      "lambda_kd": 0.000300413895732576,
+      "identity_gradient_norm": 0.031316790729761124,
+      "relation_gradient_norm": 3.12736439704895,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": 0.04606306925415993
+    }
+  ],
+  "B1_seed43_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.005343673750758171,
+      "relation": 1.30385160446167e-08,
+      "active_anchors": 36,
+      "lambda_kd": 1.0,
+      "identity_gradient_norm": 0.6845830082893372,
+      "relation_gradient_norm": 5.508916842700273e-07,
+      "weighted_gradient_ratio": 8.047113025002141e-07,
+      "gradient_cosine": -0.1333942413330078
+    },
+    {
+      "step": 100,
+      "ce": 0.012554547749459743,
+      "relation": 0.060163743793964386,
+      "active_anchors": 36,
+      "lambda_kd": 0.028569994306983093,
+      "identity_gradient_norm": 2.651413917541504,
+      "relation_gradient_norm": 2.7841243743896484,
+      "weighted_gradient_ratio": 0.030000000000000002,
+      "gradient_cosine": 0.2548738121986389
+    },
+    {
+      "step": 200,
+      "ce": 0.0009846769971773028,
+      "relation": 0.09369079768657684,
+      "active_anchors": 36,
+      "lambda_kd": 0.0009587495057389655,
+      "identity_gradient_norm": 0.12933902442455292,
+      "relation_gradient_norm": 4.047116279602051,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": 0.0927036926150322
+    },
+    {
+      "step": 300,
+      "ce": 0.00029824694502167404,
+      "relation": 0.06281125545501709,
+      "active_anchors": 36,
+      "lambda_kd": 9.999090181166684e-05,
+      "identity_gradient_norm": 0.011751627549529076,
+      "relation_gradient_norm": 3.5258090496063232,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.1980573534965515
+    },
+    {
+      "step": 400,
+      "ce": 0.00021807177108712494,
+      "relation": 0.12464842200279236,
+      "active_anchors": 36,
+      "lambda_kd": 7.171912105621973e-05,
+      "identity_gradient_norm": 0.01061191875487566,
+      "relation_gradient_norm": 4.4389495849609375,
+      "weighted_gradient_ratio": 0.030000000000000002,
+      "gradient_cosine": 0.0012269022408872843
+    }
+  ],
+  "B1_seed44_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.0038004384841769934,
+      "relation": -1.5935963659785557e-08,
+      "active_anchors": 36,
+      "lambda_kd": 1.0,
+      "identity_gradient_norm": 0.3114283084869385,
+      "relation_gradient_norm": 1.0730162784966524e-06,
+      "weighted_gradient_ratio": 3.4454680234749932e-06,
+      "gradient_cosine": -0.03916357830166817
+    },
+    {
+      "step": 100,
+      "ce": 0.004099848214536905,
+      "relation": 0.022579865530133247,
+      "active_anchors": 36,
+      "lambda_kd": 0.018235365285248918,
+      "identity_gradient_norm": 1.1086091995239258,
+      "relation_gradient_norm": 1.8238338232040405,
+      "weighted_gradient_ratio": 0.030000000000000002,
+      "gradient_cosine": -0.4005560576915741
+    },
+    {
+      "step": 200,
+      "ce": 0.0010250993072986603,
+      "relation": 0.03816219046711922,
+      "active_anchors": 36,
+      "lambda_kd": 0.002510673522325276,
+      "identity_gradient_norm": 0.14748600125312805,
+      "relation_gradient_norm": 1.7623080015182495,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.3837231695652008
+    },
+    {
+      "step": 300,
+      "ce": 0.00026892105233855546,
+      "relation": 0.05192667990922928,
+      "active_anchors": 36,
+      "lambda_kd": 0.00013868325819257055,
+      "identity_gradient_norm": 0.014778375625610352,
+      "relation_gradient_norm": 3.19686222076416,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.4299740195274353
+    },
+    {
+      "step": 400,
+      "ce": 0.000254358456004411,
+      "relation": 0.0595756433904171,
+      "active_anchors": 36,
+      "lambda_kd": 0.00016114479582123807,
+      "identity_gradient_norm": 0.016988655552268028,
+      "relation_gradient_norm": 3.16274356842041,
+      "weighted_gradient_ratio": 0.030000000000000002,
+      "gradient_cosine": -0.6264241933822632
+    }
+  ],
+  "B2_seed42_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.006673275493085384,
+      "relation": 0.3168072998523712,
+      "active_anchors": 32,
+      "lambda_kd": 0.007358777606340606,
+      "identity_gradient_norm": 1.0954811573028564,
+      "relation_gradient_norm": 4.466018199920654,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.42970138788223267
+    },
+    {
+      "step": 100,
+      "ce": 0.004133367910981178,
+      "relation": 0.3623639643192291,
+      "active_anchors": 32,
+      "lambda_kd": 0.00186710609244259,
+      "identity_gradient_norm": 0.4996396601200104,
+      "relation_gradient_norm": 8.028033256530762,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.32966652512550354
+    },
+    {
+      "step": 200,
+      "ce": 0.0005383701645769179,
+      "relation": 0.41849157214164734,
+      "active_anchors": 32,
+      "lambda_kd": 0.0001628545383995087,
+      "identity_gradient_norm": 0.04992194473743439,
+      "relation_gradient_norm": 9.196294784545898,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.6855363249778748
+    },
+    {
+      "step": 300,
+      "ce": 0.0004511210136115551,
+      "relation": 0.40631094574928284,
+      "active_anchors": 32,
+      "lambda_kd": 0.00013537337783152965,
+      "identity_gradient_norm": 0.043064553290605545,
+      "relation_gradient_norm": 9.543505668640137,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.43843573331832886
+    },
+    {
+      "step": 400,
+      "ce": 0.0003235066251363605,
+      "relation": 0.5484086275100708,
+      "active_anchors": 32,
+      "lambda_kd": 8.755335995463909e-05,
+      "identity_gradient_norm": 0.027726374566555023,
+      "relation_gradient_norm": 9.500391960144043,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.16814923286437988
+    }
+  ],
+  "B2_seed43_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.005343673750758171,
+      "relation": 0.437340646982193,
+      "active_anchors": 32,
+      "lambda_kd": 0.00306844072068275,
+      "identity_gradient_norm": 0.6845830082893372,
+      "relation_gradient_norm": 6.693135738372803,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.056227993220090866
+    },
+    {
+      "step": 100,
+      "ce": 0.0015106790233403444,
+      "relation": 0.48285236954689026,
+      "active_anchors": 32,
+      "lambda_kd": 0.0005846829462267881,
+      "identity_gradient_norm": 0.1988951861858368,
+      "relation_gradient_norm": 10.205284118652344,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.11154139786958694
+    },
+    {
+      "step": 200,
+      "ce": 0.0005373120657168329,
+      "relation": 0.5308918952941895,
+      "active_anchors": 32,
+      "lambda_kd": 7.94002025020339e-05,
+      "identity_gradient_norm": 0.034512028098106384,
+      "relation_gradient_norm": 13.039775848388672,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.40904510021209717
+    },
+    {
+      "step": 300,
+      "ce": 0.0002908427850343287,
+      "relation": 0.5227932929992676,
+      "active_anchors": 32,
+      "lambda_kd": 3.559367744268425e-05,
+      "identity_gradient_norm": 0.014029414393007755,
+      "relation_gradient_norm": 11.824640274047852,
+      "weighted_gradient_ratio": 0.030000000000000006,
+      "gradient_cosine": -0.12688769400119781
+    },
+    {
+      "step": 400,
+      "ce": 0.00022327061742544174,
+      "relation": 0.5883238315582275,
+      "active_anchors": 32,
+      "lambda_kd": 4.503344265516119e-05,
+      "identity_gradient_norm": 0.02303282544016838,
+      "relation_gradient_norm": 15.3438138961792,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.7771259546279907
+    }
+  ],
+  "B2_seed44_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.0038004384841769934,
+      "relation": 0.3238412141799927,
+      "active_anchors": 32,
+      "lambda_kd": 0.0010765889974743254,
+      "identity_gradient_norm": 0.3114283084869385,
+      "relation_gradient_norm": 8.678194999694824,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.5975955724716187
+    },
+    {
+      "step": 100,
+      "ce": 0.006341446191072464,
+      "relation": 0.4707292318344116,
+      "active_anchors": 32,
+      "lambda_kd": 0.004390842866098657,
+      "identity_gradient_norm": 1.7486995458602905,
+      "relation_gradient_norm": 11.947816848754883,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": 0.033183906227350235
+    },
+    {
+      "step": 200,
+      "ce": 0.0011110076447948813,
+      "relation": 0.4431804418563843,
+      "active_anchors": 32,
+      "lambda_kd": 0.00057931455215993,
+      "identity_gradient_norm": 0.18870016932487488,
+      "relation_gradient_norm": 9.771902084350586,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.6186054348945618
+    },
+    {
+      "step": 300,
+      "ce": 0.00028568750713020563,
+      "relation": 0.4035344123840332,
+      "active_anchors": 32,
+      "lambda_kd": 8.209191568228954e-05,
+      "identity_gradient_norm": 0.024359161034226418,
+      "relation_gradient_norm": 8.901909828186035,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.3234652876853943
+    },
+    {
+      "step": 400,
+      "ce": 0.0002301728236488998,
+      "relation": 0.5202189087867737,
+      "active_anchors": 32,
+      "lambda_kd": 4.462628776903095e-05,
+      "identity_gradient_norm": 0.0137954605743289,
+      "relation_gradient_norm": 9.273991584777832,
+      "weighted_gradient_ratio": 0.029999999999999995,
+      "gradient_cosine": -0.09879011660814285
+    }
+  ],
+  "B3_seed42_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.006673275493085384,
+      "relation": 0.7090399265289307,
+      "active_anchors": 32,
+      "lambda_kd": 0.0032798832424884117,
+      "identity_gradient_norm": 1.0954811573028564,
+      "relation_gradient_norm": 10.020001411437988,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.2800973355770111
+    },
+    {
+      "step": 100,
+      "ce": 0.00480766873806715,
+      "relation": 0.7538625597953796,
+      "active_anchors": 32,
+      "lambda_kd": 0.0015081413744071216,
+      "identity_gradient_norm": 0.6353181600570679,
+      "relation_gradient_norm": 12.637770652770996,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.3144121468067169
+    },
+    {
+      "step": 200,
+      "ce": 0.0006194879533722997,
+      "relation": 0.7407584190368652,
+      "active_anchors": 32,
+      "lambda_kd": 0.00011095109378552708,
+      "identity_gradient_norm": 0.052167221903800964,
+      "relation_gradient_norm": 14.105463981628418,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.5550034642219543
+    },
+    {
+      "step": 300,
+      "ce": 0.0004688694898504764,
+      "relation": 0.6946586966514587,
+      "active_anchors": 32,
+      "lambda_kd": 9.482161710542444e-05,
+      "identity_gradient_norm": 0.0457630455493927,
+      "relation_gradient_norm": 14.47867488861084,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.4779253900051117
+    },
+    {
+      "step": 400,
+      "ce": 0.0003166960959788412,
+      "relation": 0.9372611045837402,
+      "active_anchors": 32,
+      "lambda_kd": 5.018459486913333e-05,
+      "identity_gradient_norm": 0.02536451257765293,
+      "relation_gradient_norm": 15.162728309631348,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.14665783941745758
+    }
+  ],
+  "B3_seed43_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.005343673750758171,
+      "relation": 0.663237988948822,
+      "active_anchors": 32,
+      "lambda_kd": 0.002137567606962903,
+      "identity_gradient_norm": 0.6845830082893372,
+      "relation_gradient_norm": 9.607878684997559,
+      "weighted_gradient_ratio": 0.030000000000000002,
+      "gradient_cosine": -0.26157018542289734
+    },
+    {
+      "step": 100,
+      "ce": 0.0014542944263666868,
+      "relation": 0.8204918503761292,
+      "active_anchors": 32,
+      "lambda_kd": 0.0002683665599711772,
+      "identity_gradient_norm": 0.14413337409496307,
+      "relation_gradient_norm": 16.112295150756836,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.3861541748046875
+    },
+    {
+      "step": 200,
+      "ce": 0.007090216036885977,
+      "relation": 0.651679277420044,
+      "active_anchors": 32,
+      "lambda_kd": 0.0037801781446359563,
+      "identity_gradient_norm": 2.00703501701355,
+      "relation_gradient_norm": 15.928098678588867,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.5316020846366882
+    },
+    {
+      "step": 300,
+      "ce": 0.00025714951334521174,
+      "relation": 0.9475926756858826,
+      "active_anchors": 32,
+      "lambda_kd": 3.0030545492731218e-05,
+      "identity_gradient_norm": 0.015111667104065418,
+      "relation_gradient_norm": 15.096296310424805,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": 0.06890598684549332
+    },
+    {
+      "step": 400,
+      "ce": 0.00016772486560512334,
+      "relation": 1.087867021560669,
+      "active_anchors": 32,
+      "lambda_kd": 1.1210672347104487e-05,
+      "identity_gradient_norm": 0.006789374630898237,
+      "relation_gradient_norm": 18.16851234436035,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.3700009286403656
+    }
+  ],
+  "B3_seed44_trace_public.json": [
+    {
+      "step": 1,
+      "ce": 0.0038004384841769934,
+      "relation": 0.5319732427597046,
+      "active_anchors": 32,
+      "lambda_kd": 0.0005795056955094655,
+      "identity_gradient_norm": 0.3114283084869385,
+      "relation_gradient_norm": 16.122100830078125,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.6331825852394104
+    },
+    {
+      "step": 100,
+      "ce": 0.004737227223813534,
+      "relation": 0.5638085007667542,
+      "active_anchors": 32,
+      "lambda_kd": 0.002268502153298506,
+      "identity_gradient_norm": 1.0516496896743774,
+      "relation_gradient_norm": 13.907630920410156,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.4797871708869934
+    },
+    {
+      "step": 200,
+      "ce": 0.001414556405507028,
+      "relation": 0.8111793994903564,
+      "active_anchors": 32,
+      "lambda_kd": 0.000624434915129713,
+      "identity_gradient_norm": 0.26991409063339233,
+      "relation_gradient_norm": 12.96760082244873,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": -0.5005382895469666
+    },
+    {
+      "step": 300,
+      "ce": 0.0002949205518234521,
+      "relation": 0.915816605091095,
+      "active_anchors": 32,
+      "lambda_kd": 4.552030204258771e-05,
+      "identity_gradient_norm": 0.027765510603785515,
+      "relation_gradient_norm": 18.298765182495117,
+      "weighted_gradient_ratio": 0.029999999999999995,
+      "gradient_cosine": -0.38864853978157043
+    },
+    {
+      "step": 400,
+      "ce": 0.00023513816995546222,
+      "relation": 1.1075160503387451,
+      "active_anchors": 32,
+      "lambda_kd": 2.3812897120320253e-05,
+      "identity_gradient_norm": 0.013903808780014515,
+      "relation_gradient_norm": 17.51631736755371,
+      "weighted_gradient_ratio": 0.03,
+      "gradient_cosine": 0.058199960738420486
+    }
+  ]
+}
