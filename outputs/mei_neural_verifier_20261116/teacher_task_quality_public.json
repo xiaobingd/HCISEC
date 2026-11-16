@@ -1,0 +1,6 @@
+{
+  "oof_auc": 0.9813873456790123,
+  "scorer": "logistic pair similarity statistics;3fold heldout query-word scorer",
+  "backbone": "external pretrained frozen;no local backbone fit",
+  "tasks": 3600
+}
