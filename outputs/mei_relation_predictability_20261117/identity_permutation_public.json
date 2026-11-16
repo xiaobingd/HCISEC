@@ -1,0 +1,26 @@
+{
+  "primary_two_methods": {
+    "ACC_similarity": {
+      "task_spearman": 0.19832450151443481,
+      "p_one_sided": 0.046,
+      "null_95pct": [
+        -0.19645940214395521,
+        0.2206525579094886
+      ],
+      "identity_permutations": 1999,
+      "p_holm_2": 0.046
+    },
+    "Audio_Ridge": {
+      "task_spearman": 0.45705466617404183,
+      "p_one_sided": 0.0005,
+      "null_95pct": [
+        -0.2872310361470727,
+        0.31135801840453003
+      ],
+      "identity_permutations": 1999,
+      "p_holm_2": 0.001
+    }
+  },
+  "scope": "all validation words share paired row/column identity permutation;shared-identity dependence preserved;one-sided test",
+  "timing": "supplemental inference,not model selection or retraining"
+}
