@@ -1,0 +1,14 @@
+{
+  "backbone": "external frozen ReDimNet2-B3 vox2 lm",
+  "revision": "c5bbe0b76e37df698c403f8844e41304ceab6307",
+  "weight_sha256": "02d14efdc184573873b5c3f62bea847fcdb6919fbba19a8da7af7c1ba36b76a2",
+  "audio_records": 1438,
+  "reused_independent_frozen_per_record_embeddings": true,
+  "excluded_users": [
+    5
+  ],
+  "excluded_user_embeddings_zero": true,
+  "excluded_audio_used_in_training": false,
+  "calibration_audio_reads": 0,
+  "final_audio_reads": 0
+}
