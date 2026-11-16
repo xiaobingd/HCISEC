@@ -12,7 +12,8 @@
       "imu_span_s": 19.188618,
       "overflow_callbacks": 0,
       "vad_detected": 10,
-      "integrity": true
+      "integrity": true,
+      "participant_id": "N01"
     },
     {
       "recording": "C02",
@@ -24,7 +25,8 @@
       "imu_span_s": 20.060886,
       "overflow_callbacks": 12,
       "vad_detected": 10,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N01"
     },
     {
       "recording": "C03",
@@ -36,7 +38,8 @@
       "imu_span_s": 22.94298,
       "overflow_callbacks": 2,
       "vad_detected": 12,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N01"
     },
     {
       "recording": "C04",
@@ -48,7 +51,8 @@
       "imu_span_s": 20.700923,
       "overflow_callbacks": 2,
       "vad_detected": 10,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N01"
     },
     {
       "recording": "C05",
@@ -60,7 +64,8 @@
       "imu_span_s": 19.68007,
       "overflow_callbacks": 4,
       "vad_detected": 10,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N01"
     },
     {
       "recording": "F01",
@@ -72,7 +77,8 @@
       "imu_span_s": 0,
       "overflow_callbacks": 0,
       "vad_detected": null,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F02",
@@ -84,7 +90,8 @@
       "imu_span_s": 19.560282,
       "overflow_callbacks": 70,
       "vad_detected": 5,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N02"
     },
     {
       "recording": "F03",
@@ -96,7 +103,8 @@
       "imu_span_s": 25.195308,
       "overflow_callbacks": 60,
       "vad_detected": 8,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N02"
     },
     {
       "recording": "F04",
@@ -108,7 +116,8 @@
       "imu_span_s": 23.616067,
       "overflow_callbacks": 58,
       "vad_detected": 10,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N02"
     },
     {
       "recording": "F05",
@@ -120,7 +129,8 @@
       "imu_span_s": 28.309339,
       "overflow_callbacks": 96,
       "vad_detected": 2,
-      "integrity": false
+      "integrity": false,
+      "participant_id": "N02"
     },
     {
       "recording": "F06",
@@ -132,7 +142,8 @@
       "imu_span_s": 22.885622,
       "overflow_callbacks": 32,
       "vad_detected": 9,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F07",
@@ -144,7 +155,8 @@
       "imu_span_s": 27.195056,
       "overflow_callbacks": 76,
       "vad_detected": 3,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F08",
@@ -156,19 +168,21 @@
       "imu_span_s": 24.650002,
       "overflow_callbacks": 98,
       "vad_detected": 3,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F09",
       "payload_previously_audited": false,
-      "declared_word": "\u6d63\u72b2\u30bd",
+      "declared_word": "浣犲ソ",
       "status": "REVIEW",
       "capture_wall_duration_s": 27.5111,
       "audio_duration_s": 4.128,
       "imu_span_s": 28.090034,
       "overflow_callbacks": 96,
       "vad_detected": 2,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F10",
@@ -180,7 +194,8 @@
       "imu_span_s": 22.334381,
       "overflow_callbacks": 46,
       "vad_detected": 10,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F11",
@@ -192,7 +207,8 @@
       "imu_span_s": 22.168225,
       "overflow_callbacks": 88,
       "vad_detected": 4,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F12",
@@ -204,7 +220,8 @@
       "imu_span_s": 25.082961,
       "overflow_callbacks": 88,
       "vad_detected": 4,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     },
     {
       "recording": "F13",
@@ -216,10 +233,12 @@
       "imu_span_s": 28.645068,
       "overflow_callbacks": 98,
       "vad_detected": 3,
-      "integrity": false
+      "integrity": false,
+      "participant_id": null
     }
   ],
   "metadata_identity_count": 1,
   "unmatched_path_metadata_records": 13,
-  "path_match_limit": "unmatched paths may be new recordings or renamed folders;not independent new sample count"
+  "path_match_limit": "unmatched paths may be new recordings or renamed folders;not independent new sample count",
+  "identity_assignment_scope": "only exact metadata matches to user-confirmed source records;other recordings unconfirmed"
 }
