@@ -1,0 +1,21 @@
+{
+  "state": "PASS",
+  "workpoints": 2880,
+  "max_saved_score_metric_error": 0.0,
+  "queries_identical_within_pairs": true,
+  "registration_query_disjoint_within_fold": true,
+  "calibration_final_disjoint": true,
+  "thresholds_shared_across_conditions": true,
+  "registration_count_equal": true,
+  "all_30_word_directions": true,
+  "two_repeat_folds": true,
+  "unique_final_recordings": 432,
+  "query_reuse": "each physical query appears in five word-pair comparisons",
+  "source_hashes": {
+    "encoder_private.pt": "65aab87c5d901801889a51ae4ec2ade64463915316673f99d3352ff5e053b4b9",
+    "local_best_private.pt": "b0b2bf5a6b4b5f7194e0302fd4b57c8a0b34940919c55484450a2d2e98b76272",
+    "audio_best_private.pt": "ca3b64437f4c97ed5c0dce25181f25abd72c9f5f4293d8a6d9109b79abd680b2",
+    "normalization_private.npz": "794da93c14c1935477c2e99ac4c997ec93e0634632ef77ed7feda5e27a5c1279"
+  },
+  "limits": "saved-score replay,not a second implementation of the scoring networks"
+}
