@@ -1,0 +1,41 @@
+{
+  "state": "predictions_locked_before_validation_Audio",
+  "methods": [
+    "ACC_similarity",
+    "ACC_fixed_prior",
+    "Audio_fixed_identity_memory",
+    "ACC_self_Ridge",
+    "Audio_Ridge",
+    "Audio_Ridge_no_word_type",
+    "Audio_residual_Ridge",
+    "Audio_Ridge_command_only",
+    "Audio_Ridge_heldout_dyad",
+    "Audio_Ridge_heldout_endpoint"
+  ],
+  "ridge_alpha": 10,
+  "no_validation_selection": true,
+  "word_ids_as_onehot": false,
+  "identity_ids_as_features": false,
+  "training_Audio_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "null_training_identity_permutations": 99,
+  "cohort_counts": {
+    "5": 126,
+    "7": 36,
+    "9": 1
+  },
+  "endpoint_holdout": "all Audio supervision involving target excluded;ACC encoder still trained all9",
+  "checkpoint_sha256": "14df059aa0f7d34475b460c94d3e855a9b93fdbb1ce5dc6fff1d90dfc816d0f7"
+}
