@@ -1,0 +1,1459 @@
+{
+  "started_at_bj": "2026-11-17T02:37:25.353855+08:00",
+  "completed_at_bj": "2026-11-17T02:43:37.147870+08:00",
+  "participant_count": 2,
+  "participants": [
+    {
+      "participant_id": "N01",
+      "prior_identity_hash_match": true,
+      "word_records": 16
+    },
+    {
+      "participant_id": "N02",
+      "prior_identity_hash_match": true,
+      "word_records": 12
+    }
+  ],
+  "total_word_recordings": 28,
+  "total_saved_audio_segments": 225,
+  "word_matrix": [
+    {
+      "word": "eight",
+      "participants": {
+        "N01": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 9,
+          "vad_detected": 9,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "five",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 1
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 4,
+          "vad_detected": 4,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "four",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "ni",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "nine",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 3,
+          "vad_detected": 3,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "okay",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "one",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 8,
+          "vad_detected": 8,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "pause",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 9,
+          "vad_detected": 9,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "seven",
+      "participants": {
+        "N01": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 3,
+          "vad_detected": 3,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "seven.eight",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 1
+        },
+        "N02": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "six",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 4,
+          "vad_detected": 4,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "start",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 11,
+          "vad_detected": 11,
+          "integrity_pass_recordings": 1
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 3,
+          "vad_detected": 3,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "stop",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "three",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 2,
+          "vad_detected": 2,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "two",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 12,
+          "vad_detected": 12,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "zero",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 1
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 5,
+          "vad_detected": 5,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "东南大学",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 0,
+          "saved_segments": 0,
+          "vad_detected": 0,
+          "integrity_pass_recordings": 0
+        }
+      }
+    },
+    {
+      "word": "你好",
+      "participants": {
+        "N01": {
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
+          "integrity_pass_recordings": 0
+        },
+        "N02": {
+          "recordings": 1,
+          "saved_segments": 2,
+          "vad_detected": 2,
+          "integrity_pass_recordings": 0
+        }
+      }
+    }
+  ],
+  "shared_words": [
+    "five",
+    "four",
+    "nine",
+    "one",
+    "six",
+    "start",
+    "three",
+    "two",
+    "zero",
+    "你好"
+  ],
+  "records": [
+    {
+      "recording": "R001",
+      "participant_id": "N01",
+      "word": "zero",
+      "word_provenance": "user-confirmed original directory digit",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 8.74,
+      "audio": {
+        "frames": 307200,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 19.2
+      },
+      "audio_overflow_callbacks": 0,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 19.1838,
+      "actual_imu_samples": 19172,
+      "actual_imu_span_s": 19.18861799989827,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 1.0072998702526093,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": true,
+      "metadata_quality_issues": [],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R002",
+      "participant_id": "N01",
+      "word": "one",
+      "word_provenance": "user-confirmed original directory digit",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 6.4799999999999995,
+      "audio": {
+        "frames": 274432,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 17.152
+      },
+      "audio_overflow_callbacks": 12,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 20.061,
+      "actual_imu_samples": 19299,
+      "actual_imu_span_s": 20.060885600047186,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 665.4173999559134,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 2.909s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R003",
+      "participant_id": "N01",
+      "word": "two",
+      "word_provenance": "user-confirmed original directory digit",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 12,
+      "saved_audio_segments": 12,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 7.09,
+      "audio": {
+        "frames": 361984,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 22.624
+      },
+      "audio_overflow_callbacks": 2,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 22.8913,
+      "actual_imu_samples": 22917,
+      "actual_imu_span_s": 22.94298050017096,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 3.0029001645743847,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R004",
+      "participant_id": "N01",
+      "word": "three",
+      "word_provenance": "user-confirmed original directory digit",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 8.46,
+      "audio": {
+        "frames": 327168,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 20.448
+      },
+      "audio_overflow_callbacks": 2,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 20.6944,
+      "actual_imu_samples": 20682,
+      "actual_imu_span_s": 20.700922900112346,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 1.0073999874293804,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R005",
+      "participant_id": "N01",
+      "word": "four",
+      "word_provenance": "user-confirmed original directory digit",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 7.26,
+      "audio": {
+        "frames": 302592,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 18.912
+      },
+      "audio_overflow_callbacks": 4,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 19.4281,
+      "actual_imu_samples": 19660,
+      "actual_imu_span_s": 19.68007000000216,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 3.002899931743741,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R006",
+      "participant_id": "N01",
+      "word": "nine",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 7.44,
+      "audio": {
+        "frames": 364032,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 22.752
+      },
+      "audio_overflow_callbacks": 6,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 23.5306,
+      "actual_imu_samples": 23533,
+      "actual_imu_span_s": 23.55391489993781,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 1.0071999859064817,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R007",
+      "participant_id": "N01",
+      "word": "start",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 11,
+      "saved_audio_segments": 11,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 9.05,
+      "audio": {
+        "frames": 429568,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 26.848
+      },
+      "audio_overflow_callbacks": 0,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 26.8502,
+      "actual_imu_samples": 26971,
+      "actual_imu_span_s": 26.99505169992335,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 1.007499871775508,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": true,
+      "metadata_quality_issues": [],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W002"
+    },
+    {
+      "recording": "R008",
+      "participant_id": "N01",
+      "word": "你好",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 9.02,
+      "audio": {
+        "frames": 381952,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 23.872
+      },
+      "audio_overflow_callbacks": 4,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 25.0557,
+      "actual_imu_samples": 24832,
+      "actual_imu_span_s": 25.07377259992063,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 216.27460001036525,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W003"
+    },
+    {
+      "recording": "R009",
+      "participant_id": "N01",
+      "word": "five",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 8.44,
+      "audio": {
+        "frames": 330752,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 20.672
+      },
+      "audio_overflow_callbacks": 0,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 20.6621,
+      "actual_imu_samples": 20652,
+      "actual_imu_span_s": 20.669757600175217,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 1.0089001152664423,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": true,
+      "metadata_quality_issues": [],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R010",
+      "participant_id": "N01",
+      "word": "six",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 8.32,
+      "audio": {
+        "frames": 335360,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 20.96
+      },
+      "audio_overflow_callbacks": 6,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 22.0497,
+      "actual_imu_samples": 22115,
+      "actual_imu_span_s": 22.203189100138843,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 70.08230010978878,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W002"
+    },
+    {
+      "recording": "R011",
+      "participant_id": "N01",
+      "word": "seven.eight",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 8.56,
+      "audio": {
+        "frames": 368128,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 23.008
+      },
+      "audio_overflow_callbacks": 0,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 23.0048,
+      "actual_imu_samples": 22987,
+      "actual_imu_span_s": 23.008307800162584,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 2.0018001087009907,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": true,
+      "metadata_quality_issues": [],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W003"
+    },
+    {
+      "recording": "R012",
+      "participant_id": "N01",
+      "word": "ni",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 7.22,
+      "audio": {
+        "frames": 361472,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 22.592
+      },
+      "audio_overflow_callbacks": 4,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 23.1765,
+      "actual_imu_samples": 23243,
+      "actual_imu_span_s": 23.263358399970457,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 1.007499871775508,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W004"
+    },
+    {
+      "recording": "R013",
+      "participant_id": "N01",
+      "word": "pause",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 9,
+      "saved_audio_segments": 9,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 6.76,
+      "audio": {
+        "frames": 379904,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 23.744
+      },
+      "audio_overflow_callbacks": 8,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 24.9329,
+      "actual_imu_samples": 24997,
+      "actual_imu_span_s": 25.019412799971178,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 1.0083001106977463,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R014",
+      "participant_id": "N01",
+      "word": "okay",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 7.64,
+      "audio": {
+        "frames": 315904,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 19.744
+      },
+      "audio_overflow_callbacks": 4,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 20.3287,
+      "actual_imu_samples": 20375,
+      "actual_imu_span_s": 20.39313709991984,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 1.0081999935209751,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W002"
+    },
+    {
+      "recording": "R015",
+      "participant_id": "N01",
+      "word": "stop",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 9.96,
+      "audio": {
+        "frames": 306176,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 19.136
+      },
+      "audio_overflow_callbacks": 4,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 19.8617,
+      "actual_imu_samples": 20027,
+      "actual_imu_span_s": 20.045024099992588,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 1.0072998702526093,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W003"
+    },
+    {
+      "recording": "R016",
+      "participant_id": "N01",
+      "word": "东南大学",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 11.74,
+      "audio": {
+        "frames": 375808,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 23.488
+      },
+      "audio_overflow_callbacks": 18,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 26.1499,
+      "actual_imu_samples": 26088,
+      "actual_imu_span_s": 26.208871699869633,
+      "imu_median_hz": 999.0010601819569,
+      "imu_max_gap_ms": 81.10220008529723,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 2.662s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W004"
+    },
+    {
+      "recording": "R017",
+      "participant_id": "N02",
+      "word": "zero",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 5,
+      "saved_audio_segments": 5,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 3.72,
+      "audio": {
+        "frames": 89088,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 5.568
+      },
+      "audio_overflow_callbacks": 70,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 19.2178,
+      "actual_imu_samples": 18466,
+      "actual_imu_span_s": 19.56028169998899,
+      "imu_median_hz": 999.1009874310046,
+      "imu_max_gap_ms": 1027.7779998723418,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 13.650s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R018",
+      "participant_id": "N02",
+      "word": "one",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 8,
+      "saved_audio_segments": 8,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 4.8,
+      "audio": {
+        "frames": 208896,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 13.056
+      },
+      "audio_overflow_callbacks": 60,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 24.6214,
+      "actual_imu_samples": 22299,
+      "actual_imu_span_s": 25.195308099966496,
+      "imu_median_hz": 999.1009874310046,
+      "imu_max_gap_ms": 1526.0872000362724,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 11.565s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W002"
+    },
+    {
+      "recording": "R019",
+      "participant_id": "N02",
+      "word": "two",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 6.52,
+      "audio": {
+        "frames": 244736,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 15.296
+      },
+      "audio_overflow_callbacks": 58,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 24.3804,
+      "actual_imu_samples": 21719,
+      "actual_imu_span_s": 23.616066500078887,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 473.5175999812782,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 9.084s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W003"
+    },
+    {
+      "recording": "R020",
+      "participant_id": "N02",
+      "word": "three",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 2,
+      "saved_audio_segments": 2,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 1.8800000000000001,
+      "audio": {
+        "frames": 47616,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 2.976
+      },
+      "audio_overflow_callbacks": 96,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 26.8551,
+      "actual_imu_samples": 23519,
+      "actual_imu_span_s": 28.309338999912143,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 1308.9833001140505,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 23.879s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W004"
+    },
+    {
+      "recording": "R021",
+      "participant_id": "N02",
+      "word": "eight",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 9,
+      "saved_audio_segments": 9,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 6.46,
+      "audio": {
+        "frames": 278528,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 17.408
+      },
+      "audio_overflow_callbacks": 32,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 22.76,
+      "actual_imu_samples": 21549,
+      "actual_imu_span_s": 22.88562189997174,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 630.7260999456048,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 5.352s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R022",
+      "participant_id": "N02",
+      "word": "nine",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 3,
+      "saved_audio_segments": 3,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 2.35,
+      "audio": {
+        "frames": 47104,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 2.944
+      },
+      "audio_overflow_callbacks": 76,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 26.122,
+      "actual_imu_samples": 19196,
+      "actual_imu_span_s": 27.195056300144643,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 3161.8773001246154,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 23.178s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W002"
+    },
+    {
+      "recording": "R023",
+      "participant_id": "N02",
+      "word": "start",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 3,
+      "saved_audio_segments": 3,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 2.16,
+      "audio": {
+        "frames": 47616,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 2.976
+      },
+      "audio_overflow_callbacks": 98,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 24.652,
+      "actual_imu_samples": 17140,
+      "actual_imu_span_s": 24.650002300040796,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 832.6679000165313,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 21.676s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W003"
+    },
+    {
+      "recording": "R024",
+      "participant_id": "N02",
+      "word": "你好",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 2,
+      "saved_audio_segments": 2,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 2.24,
+      "audio": {
+        "frames": 66048,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 4.128
+      },
+      "audio_overflow_callbacks": 96,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 27.5111,
+      "actual_imu_samples": 25648,
+      "actual_imu_span_s": 28.09003429999575,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 601.8095000181347,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 23.383s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W004"
+    },
+    {
+      "recording": "R025",
+      "participant_id": "N02",
+      "word": "four",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 10,
+      "saved_audio_segments": 10,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 5.2,
+      "audio": {
+        "frames": 248320,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 15.52
+      },
+      "audio_overflow_callbacks": 46,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 22.4593,
+      "actual_imu_samples": 21773,
+      "actual_imu_span_s": 22.33438130002469,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 280.2445001434535,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 6.939s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W001"
+    },
+    {
+      "recording": "R026",
+      "participant_id": "N02",
+      "word": "five",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 4,
+      "saved_audio_segments": 4,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 3.13,
+      "audio": {
+        "frames": 65536,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 4.096
+      },
+      "audio_overflow_callbacks": 88,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 21.6602,
+      "actual_imu_samples": 20781,
+      "actual_imu_span_s": 22.168224700028077,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 436.6601000074297,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 17.564s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W002"
+    },
+    {
+      "recording": "R027",
+      "participant_id": "N02",
+      "word": "six",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 4,
+      "saved_audio_segments": 4,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 2.5999999999999996,
+      "audio": {
+        "frames": 52224,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 3.264
+      },
+      "audio_overflow_callbacks": 88,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 24.5751,
+      "actual_imu_samples": 22829,
+      "actual_imu_span_s": 25.082961099920794,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 784.811899997294,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 21.311s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W003"
+    },
+    {
+      "recording": "R028",
+      "participant_id": "N02",
+      "word": "seven",
+      "word_provenance": "metadata prompt,not independently transcribed",
+      "user_stated_min_actual_utterances": 10,
+      "utterance_count_independently_verified": false,
+      "metadata_expected_repeats": 10,
+      "vad_detected": 3,
+      "saved_audio_segments": 3,
+      "missing_audio_segment_files": 0,
+      "duplicate_repeat_ids": 0,
+      "segment_total_duration_s": 3.56,
+      "audio": {
+        "frames": 97280,
+        "sample_rate": 16000,
+        "channels": 1,
+        "duration_s": 6.08
+      },
+      "audio_overflow_callbacks": 98,
+      "audio_queue_dropped": 0,
+      "capture_wall_duration_s": 27.4239,
+      "actual_imu_samples": 26429,
+      "actual_imu_span_s": 28.645067800069228,
+      "imu_median_hz": 999.1007550188621,
+      "imu_max_gap_ms": 556.659699883312,
+      "imu_nonmonotonic": 0,
+      "imu_invalid_rows": 0,
+      "imu_offscale_rows": 0,
+      "metadata_capture_integrity_pass": false,
+      "metadata_quality_issues": [
+        "音频有丢块/溢出",
+        "IMU存在断档、回退或超量程",
+        "音频长度与采集墙钟时间差异: 21.344s"
+      ],
+      "alignment": "UNVERIFIED",
+      "all_segments_imu_aligned": false,
+      "metadata_wav_frames_match": true,
+      "full_payload_files_present": true,
+      "metadata_word_id": "W004"
+    }
+  ],
+  "human_statement": "each word spoken at least10 times;VAD/saved segments are distinct observations,not ground-truth utterance count",
+  "words_not_ASR_verified": true,
+  "raw_files_unchanged_by_inventory": true,
+  "private_subject_names_paths_and_signals_not_published": true
+}
