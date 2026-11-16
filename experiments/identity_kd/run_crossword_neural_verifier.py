@@ -200,8 +200,11 @@ def run(a):
     assert all(not pools[i] & pools[j] for i in range(4) for j in range(i))
     np.savez_compressed(out/'tasks_private.npz', **{role+'_'+k: v for role, t in
                          dict(train=train, dev=dev, cal=cal, **tests).items() for k, v in t.items()})
-    dump(out/'protocol_public.json', dict(stage='running', seed=a.seed,
-         methods=a.methods, fit_words=list(range(18)), develop_words=[18,19,20],
+    protocol_path=out/'protocol_public.json'
+    prior_protocol=json.loads(protocol_path.read_text(encoding='utf-8')) if protocol_path.exists() else {}
+    all_methods=list(dict.fromkeys(prior_protocol.get('methods',[])+a.methods))
+    dump(protocol_path, dict(stage='running', seed=a.seed,
+         methods=all_methods, last_invocation_methods=a.methods, fit_words=list(range(18)), develop_words=[18,19,20],
          calibration_words=[21,22,23], registration_words=[24,25,26], cross_words=[27,28,29],
          encoder_steps=a.encoder_steps, verifier_steps=a.steps, budget='same task order and initialization per verifier',
          local_attention='one layer,128dim,4heads,bidirectional;temporal mean pooling;enrollment mean/std pooling',
