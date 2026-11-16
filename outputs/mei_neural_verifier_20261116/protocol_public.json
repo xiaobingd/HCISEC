@@ -1,0 +1,72 @@
+{
+  "stage": "running",
+  "seed": 42,
+  "methods": [
+    "global",
+    "local",
+    "audio",
+    "shuffle"
+  ],
+  "last_invocation_methods": [
+    "shuffle"
+  ],
+  "fit_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "develop_words": [
+    18,
+    19,
+    20
+  ],
+  "calibration_words": [
+    21,
+    22,
+    23
+  ],
+  "registration_words": [
+    24,
+    25,
+    26
+  ],
+  "cross_words": [
+    27,
+    28,
+    29
+  ],
+  "encoder_steps": 400,
+  "verifier_steps": 1000,
+  "budget": "same task order and initialization per verifier",
+  "local_attention": "one layer,128dim,4heads,bidirectional;temporal mean pooling;enrollment mean/std pooling",
+  "thresholds": "per-user on Cal only;shared between same/cross final queries",
+  "registration": 12,
+  "same_queries_per_user": 12,
+  "cross_queries_per_user": 12,
+  "train_support": 12,
+  "all_eight_attack_sources": true,
+  "scaler_fit_only": true,
+  "limits": [
+    "closed nine known identities",
+    "nominal chronological word labels, not transcript-verified",
+    "single session; no controlled redon",
+    "historically explored cohort",
+    "HMD tracking velocity, not hardware raw acceleration",
+    "adaptation of 2026 neural rescoring;not original hybrid TD/TI enrollment"
+  ]
+}
