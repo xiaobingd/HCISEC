@@ -36,6 +36,7 @@ def report(root):
     lines+=['', '独立重载编码器、四个验证器和两种原始统计后端，重建合法Cal阈值与全部108个工作点。核查结论：'+verification['state']+f"；最大指标误差{verification['max_metric_error']:.3g}。", '',
             '教师评分器按训练查询词三折交叉拟合，主干冻结；不是未见身份教师交叉验证。打乱对照保留身份，仅破坏具体词/录制配对。', '',
             'raw_rbf在最终合法注册数据拟合，并用Cal查询校准；神经验证器在Cal内部模拟注册校准，校准支持构造不同。主要方法消融看global/local/audio/shuffle，不能把RBF与神经组差异全部归因于表示。', '',
+            'global仅使用三种全局分数；local增加注意力及更宽的局部输入，实际参与反传的参数更多。因此local对global是完整验证器结构比较，尚未通过等参数MLP控制单独归因于注意力。local/audio/shuffle结构与预算相同，可用于比较Audio监督。', '',
             '本轮没有完成ECAPA替换、传统特征蒸馏同结构对照或多种子验证；不将强教师本身的识别能力等同于ACC增益。历史同会话数据已探索，未验证重戴/跨天，词标签为名义映射。', '',
             '协议：docs/experiments/2026-11-16-neural-verifier-protocol.md。私有数据、模型、身份映射、分数和阈值不公开。']
     (root/'report.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
