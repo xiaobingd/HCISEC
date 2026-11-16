@@ -36,7 +36,7 @@ def main(a):
         identity=next(iter(known)) if known else f'NEW{ordinal:02d}'
         participants.append(dict(participant_id=identity,prior_identity_hash_match=bool(known),word_records=len(paths)))
         for path in paths:
-            m=load(path);folder=path.parent;label=normalized_prompt(m.get('prompt_text'))
+            m=load(path);folder=path.parent;label=normalized_prompt(m.get('prompt_text'));original_word_label=label
             override=identity=='N01' and folder.name in ['0','1','2','3','4']
             if override:label=WORDS[int(folder.name)]
             corrected_by_user=hashes[str(path)] in word_rules
@@ -64,6 +64,7 @@ def main(a):
             overflow=m.get('audio',{}).get('overflow_callbacks');qd=m.get('audio',{}).get('queue_dropped')
             actual_segments=len(segments)-missing
             row=dict(recording=alias,participant_id=identity,word=label,
+                original_word_label=original_word_label,
                 word_provenance='user-confirmed correction' if corrected_by_user else ('user-confirmed original directory digit' if override else 'metadata prompt,not independently transcribed'),
                 user_stated_min_actual_utterances=10,utterance_count_independently_verified=False,
                 metadata_expected_repeats=m.get('expected_repeats'),vad_detected=m.get('vad',{}).get('detected'),
@@ -132,8 +133,12 @@ def write_inventory(out,rows,sources,participants,started):
       '|记录|参与者|词语|VAD/保存切片|WAV秒|墙钟秒|溢出回调|IMU最大间隔ms|完整性|','|---|---|---|---:|---:|---:|---:|---:|---|']
     def show(v):return '—' if v is None else f'{v:.3f}'
     for r in rows:lines.append(f"|{r['recording']}|{r['participant_id']}|{r['word']}|{r['vad_detected']} / {r['saved_audio_segments']}|{show(r['audio']['duration_s'] if r['audio'] else None)}|{show(r['capture_wall_duration_s'])}|{r['audio_overflow_callbacks']}|{show(r['imu_max_gap_ms'])}|{'通过' if r['metadata_capture_integrity_pass'] else '不通过/待核查'}|")
+    pending=any(r['word'] in ['seven.eight','ni'] for r in rows)
+    corrected=any(r.get('original_word_label') in ['seven.eight','ni'] and r['word_provenance']=='user-confirmed correction' for r in rows)
+    label_note=('seven.eight、ni两条词标签待用户确认，暂不强行归并。' if pending else
+        ('用户已确认：seven.eight实际为seven，ni实际为eight；已在整理清单修正，原始元数据保留。' if corrected else '词标签保留各自来源；未做独立语义转写。'))
     lines+=['','## 当前可用范围','',
-      '元数据提示中有seven.eight、ni等疑似不规范词标签时，先保留原值并等待用户确认，不按文件夹批次名称强行推断。独立私有词修正表以元数据SHA256绑定，防止改名/排序变化串标签。',
+      label_note+'独立私有词修正表以元数据SHA256绑定，防止改名/排序变化串标签。',
       '两个人的身份目录与逐词对应已经可以整理。能否形成至少10个完整配对样本，仍需依据原始信号连续性、切分和同步确定，不能用人为补齐VAD数量替代。',
       '先检查完整WAV，区分VAD漏检/合并与实际信号缺失；只对确认丢失的内容安排重录。完成连续性和同步核验后，再将Audio片段对应到IMU。原始完整录音和切片不重复计为独立样本；暂不进行新模型训练或认证指标计算。',
       '', '本轮只读WAV头/元数据及原生IMU时间，核查实际保存数量、时长与采样连续性；没有做逐条内容转写，没有计算语音发声真实次数，也没有重复执行全部负载哈希去重。完整路径、姓名和原始信号只在私有清单/源目录保留。']
