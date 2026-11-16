@@ -1,6 +1,6 @@
 {
   "started_at_bj": "2026-11-17T02:37:25.353855+08:00",
-  "completed_at_bj": "2026-11-17T02:43:37.147870+08:00",
+  "completed_at_bj": "2026-11-17T02:52:29.426892+08:00",
   "participant_count": 2,
   "participants": [
     {
@@ -21,9 +21,9 @@
       "word": "eight",
       "participants": {
         "N01": {
-          "recordings": 0,
-          "saved_segments": 0,
-          "vad_detected": 0,
+          "recordings": 1,
+          "saved_segments": 10,
+          "vad_detected": 10,
           "integrity_pass_recordings": 0
         },
         "N02": {
@@ -64,23 +64,6 @@
           "recordings": 1,
           "saved_segments": 10,
           "vad_detected": 10,
-          "integrity_pass_recordings": 0
-        }
-      }
-    },
-    {
-      "word": "ni",
-      "participants": {
-        "N01": {
-          "recordings": 1,
-          "saved_segments": 10,
-          "vad_detected": 10,
-          "integrity_pass_recordings": 0
-        },
-        "N02": {
-          "recordings": 0,
-          "saved_segments": 0,
-          "vad_detected": 0,
           "integrity_pass_recordings": 0
         }
       }
@@ -157,32 +140,15 @@
       "word": "seven",
       "participants": {
         "N01": {
-          "recordings": 0,
-          "saved_segments": 0,
-          "vad_detected": 0,
-          "integrity_pass_recordings": 0
-        },
-        "N02": {
-          "recordings": 1,
-          "saved_segments": 3,
-          "vad_detected": 3,
-          "integrity_pass_recordings": 0
-        }
-      }
-    },
-    {
-      "word": "seven.eight",
-      "participants": {
-        "N01": {
           "recordings": 1,
           "saved_segments": 10,
           "vad_detected": 10,
           "integrity_pass_recordings": 1
         },
         "N02": {
-          "recordings": 0,
-          "saved_segments": 0,
-          "vad_detected": 0,
+          "recordings": 1,
+          "saved_segments": 3,
+          "vad_detected": 3,
           "integrity_pass_recordings": 0
         }
       }
@@ -325,10 +291,12 @@
     }
   ],
   "shared_words": [
+    "eight",
     "five",
     "four",
     "nine",
     "one",
+    "seven",
     "six",
     "start",
     "three",
@@ -728,8 +696,8 @@
     {
       "recording": "R011",
       "participant_id": "N01",
-      "word": "seven.eight",
-      "word_provenance": "metadata prompt,not independently transcribed",
+      "word": "seven",
+      "word_provenance": "user-confirmed correction",
       "user_stated_min_actual_utterances": 10,
       "utterance_count_independently_verified": false,
       "metadata_expected_repeats": 10,
@@ -760,13 +728,14 @@
       "all_segments_imu_aligned": false,
       "metadata_wav_frames_match": true,
       "full_payload_files_present": true,
-      "metadata_word_id": "W003"
+      "metadata_word_id": "W003",
+      "original_word_label": "seven.eight"
     },
     {
       "recording": "R012",
       "participant_id": "N01",
-      "word": "ni",
-      "word_provenance": "metadata prompt,not independently transcribed",
+      "word": "eight",
+      "word_provenance": "user-confirmed correction",
       "user_stated_min_actual_utterances": 10,
       "utterance_count_independently_verified": false,
       "metadata_expected_repeats": 10,
@@ -799,7 +768,8 @@
       "all_segments_imu_aligned": false,
       "metadata_wav_frames_match": true,
       "full_payload_files_present": true,
-      "metadata_word_id": "W004"
+      "metadata_word_id": "W004",
+      "original_word_label": "ni"
     },
     {
       "recording": "R013",
