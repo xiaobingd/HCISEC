@@ -1,0 +1,71 @@
+{
+  "state": "encoder_complete",
+  "training_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "independent_validation_words": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "seed": 42,
+  "steps": 1400,
+  "checkpoint": "fixed final step;no validation selection",
+  "initialization": "fresh random weights;no old E0 or other pretrained ACC model",
+  "architecture": "existing IdentityEncoder CNN32/64/128,temporal mean+std256,Linear128,L2",
+  "loss": "cosine CE scale16 only;no Audio/SupCon/KD",
+  "optimizer": "AdamW lr.0003 wd.001 clip1",
+  "batch": "9users x2shared trainingwords x2repeats=36",
+  "normalization": "fit0..11 only,peraxis-frequency mean/std",
+  "audio_in_training": false,
+  "calibration_or_final18_29_used": false,
+  "predictor": "predeclared Ridge alpha10;no identity or word one-hot;fit only0..11 Audio targets",
+  "controls": [
+    "ACC raw relation",
+    "ACC identity-prior relation",
+    "Audio fixed dyad-prior memory",
+    "Ridge Audio supervision",
+    "task-residual Ridge",
+    "held-out dyad supervision",
+    "held-out endpoint supervision",
+    "command10/11-only predictor",
+    "all size5/7/9 user cohorts",
+    "99 training identity permutations"
+  ],
+  "user_scope": "known users,unseen words;endpoint prediction holdout does not make encoder unseen-user",
+  "limits": [
+    "nominal word labels",
+    "same session",
+    "single encoder seed",
+    "historically explored cohort"
+  ],
+  "fit_records": 1079,
+  "validation_records": 539,
+  "encoder_max_change": 0.06422276794910431,
+  "checkpoint_sha256": "14df059aa0f7d34475b460c94d3e855a9b93fdbb1ce5dc6fff1d90dfc816d0f7"
+}
