@@ -1,0 +1,22 @@
+{
+  "state": "PASS",
+  "score_replay_error": 0.0,
+  "aggregate_rows": 432,
+  "workpoints": 25920,
+  "all9_users_all3_seeds_all4_methods": true,
+  "all12_checkpoints_locked_before_auth": true,
+  "same_queries_in_same_cross": true,
+  "cal_queries_not_in_encoder_fit": true,
+  "thresholds_shared_across_conditions_and_folds": true,
+  "no_query_audio": true,
+  "no_words18_29_used": true,
+  "same_batch_order_within_seed": true,
+  "single_seed_differences_not_claimed_stable": true,
+  "limits": "checkpoint/cache and score replay;not independent raw extraction;exploratory words12..17",
+  "actual_checkpoint_fit_indices_verified": true,
+  "all12_checkpoint_cache_parity_max_error": 3.8743019104003906e-07,
+  "independent_threshold_replay_error": 0.0,
+  "margin_replay_max_error": 2.6645352591003757e-15,
+  "complete432_seed_user_condition_rows": true,
+  "normalization_independently_recomputed": true
+}
