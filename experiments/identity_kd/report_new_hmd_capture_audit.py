@@ -6,6 +6,16 @@ from pathlib import Path
 from audit_new_hmd_capture import normalized_prompt,dump
 
 OUT=Path('outputs/new_hmd_capture_audit_20261117')
+def participant_assignments(records,identity):
+    # Recording aliases can move when folders are added/renamed. Bind the
+    # private human confirmation to immutable metadata content, not row order.
+    rules=identity.get('by_metadata_sha256',{});result={}
+    for record in records:
+        groups={rules[h] for p,h in record.get('source_file_sha256',{}).items() if p.endswith('_meta.json') and h in rules}
+        if len(groups)>1:raise ValueError('Conflicting participant overrides')
+        if groups:result[record['recording']]=next(iter(groups))
+    return result
+
 def main():
     path=OUT/'summary_public.json';r=json.loads(path.read_text(encoding='utf-8'))
     snapshot=r.get('snapshot_completed_at_bj',datetime.fromtimestamp(path.stat().st_mtime,timezone(timedelta(hours=8))).isoformat())
@@ -13,7 +23,7 @@ def main():
     private=json.loads((OUT/'corrected_source_manifest_private.json').read_text(encoding='utf-8'))
     identity_path=OUT/'identity_overrides_private.json'
     identity=json.loads(identity_path.read_text(encoding='utf-8')) if identity_path.exists() else {}
-    by_recording=identity.get('by_recording',{})
+    by_recording=participant_assignments(private,identity)
     for row,source in zip(r['records'],private):
         row['participant_id']=by_recording.get(row['recording'])
         source['corrected_participant_id']=row['participant_id']
