@@ -1,0 +1,67 @@
+{
+  "state": "running",
+  "primary_targets": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7
+  ],
+  "all_targets": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "primary_scope": "same six targets as preceding report;all nine trained and all eight attackers retained",
+  "source_selection": {
+    "step": 100,
+    "branch": "input256",
+    "alpha": 0.5,
+    "hter": 0.08680555555555555,
+    "auc": 0.9913194444444444
+  },
+  "personal_generator": "original owner100,old12 registration records,unchanged across comparisons",
+  "methods": [
+    "statistics720",
+    "baseline312",
+    "selected_input256",
+    "cycle256_fused",
+    "cycle256_only"
+  ],
+  "K": 4,
+  "calibration_words": [
+    21,
+    22,
+    23
+  ],
+  "final_words": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "ordered_crossword_pairs": 30,
+  "final_folds": "register0:4/query4:8 then reverse",
+  "calibration": "fixed register0:4/query4:8 in both folds;avoids old personal training records in Cal queries",
+  "threshold": "one per target/method,balanced pooled same/cross Cal;shared all final words/folds/conditions",
+  "no_new_training": true,
+  "new_registration": "RBF K4 only,not GAN adaptation",
+  "original_sameword_is_nominally_valid": true,
+  "original_comparison_query_words_differ": true,
+  "limits": [
+    "K4 differs from originalK12",
+    "frozen historical personal adaptation is not new K4 adaptation",
+    "nominal word labels,not transcript-verified",
+    "single-session explored cohort",
+    "pairs reuse queries"
+  ]
+}
