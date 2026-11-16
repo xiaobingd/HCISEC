@@ -1,0 +1,1619 @@
+{
+  "methods": {
+    "ACC_similarity": {
+      "sameword": {
+        "task_spearman_macro": 0.1997354497354497,
+        "top1": 0.33333333333333337,
+        "aggregate_identity_ranking_spearman": 0.23280423280423282,
+        "residual_spearman_macro": 0.013400395619240606,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.5238095238095238,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.08195831524099002
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.14285714285714288,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.18899261832392536
+          },
+          {
+            "user": "U3",
+            "task_spearman": -0.03968253968253969,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.18573599652627013
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.13888888888888887,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.06328701693443337
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.2976190476190476,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.1756404689535389
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.11111111111111112,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.06752062527138517
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.3571428571428572,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.10681719496309164
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5198412698412699,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": -0.07783326096396007
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.031746031746031744,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": -0.15892314372557537
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.19832451499118167,
+        "top1": 0.3925925925925926,
+        "aggregate_identity_ranking_spearman": 0.20105820105820105,
+        "residual_spearman_macro": -0.008595442436307726,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.5023809523809523,
+            "top1": 0.5666666666666667,
+            "within_identity_pair_task_residual_spearman": -0.005552179725342453
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.20873015873015877,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.19005364676470074
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.0023809523809523838,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.03900935780135071
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.04365079365079364,
+            "top1": 0.2,
+            "within_identity_pair_task_residual_spearman": 0.02678518724283407
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.2888888888888889,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": -0.0353608569593222
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.05793650793650793,
+            "top1": 0.36666666666666664,
+            "within_identity_pair_task_residual_spearman": -0.06256792652650219
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.45079365079365075,
+            "top1": 0.3,
+            "within_identity_pair_task_residual_spearman": 0.09343564992447784
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5904761904761906,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.06658275317279813
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.05714285714285715,
+            "top1": 0.8,
+            "within_identity_pair_task_residual_spearman": -0.17856039167346652
+          }
+        ]
+      }
+    },
+    "ACC_fixed_prior": {
+      "sameword": {
+        "task_spearman_macro": 0.24779541446208114,
+        "top1": 0.5925925925925926,
+        "aggregate_identity_ranking_spearman": 0.27248677248677244,
+        "residual_spearman_macro": null,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": -0.023809523809523808,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.019841269841269844,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U3",
+            "task_spearman": -0.02380952380952381,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U4",
+            "task_spearman": -0.08730158730158728,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.7857142857142857,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.6865079365079364,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U7",
+            "task_spearman": -0.10714285714285715,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.7341269841269841,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.2857142857142857,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": null
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.21146384479717814,
+        "top1": 0.5666666666666667,
+        "aggregate_identity_ranking_spearman": 0.24603174603174605,
+        "residual_spearman_macro": null,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": -0.00793650793650794,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.04365079365079367,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U3",
+            "task_spearman": -0.19444444444444445,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U4",
+            "task_spearman": -0.12063492063492064,
+            "top1": 0.7333333333333333,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.75,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.634920634920635,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U7",
+            "task_spearman": -0.15634920634920635,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.772222222222222,
+            "top1": 0.26666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.269047619047619,
+            "top1": 0.8,
+            "within_identity_pair_task_residual_spearman": null
+          }
+        ]
+      }
+    },
+    "Audio_fixed_identity_memory": {
+      "sameword": {
+        "task_spearman_macro": 0.7888007054673721,
+        "top1": 0.7037037037037037,
+        "aggregate_identity_ranking_spearman": 0.9047619047619047,
+        "residual_spearman_macro": null,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.8452380952380952,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.4841269841269842,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.619047619047619,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.9166666666666666,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.8769841269841269,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.8214285714285713,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.7658730158730158,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.8452380952380953,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.9246031746031748,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": null
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.7778659611992945,
+        "top1": 0.6666666666666666,
+        "aggregate_identity_ranking_spearman": 0.9021164021164021,
+        "residual_spearman_macro": null,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.8277777777777776,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.4507936507936508,
+            "top1": 0.23333333333333334,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.5206349206349207,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.8944444444444443,
+            "top1": 0.7333333333333333,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.8841269841269841,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.85,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.7674603174603173,
+            "top1": 0.43333333333333335,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.8753968253968254,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": null
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.9301587301587301,
+            "top1": 0.8,
+            "within_identity_pair_task_residual_spearman": null
+          }
+        ]
+      }
+    },
+    "ACC_self_Ridge": {
+      "sameword": {
+        "task_spearman_macro": 0.1997354497354497,
+        "top1": 0.33333333333333337,
+        "aggregate_identity_ranking_spearman": 0.23280423280423282,
+        "residual_spearman_macro": 0.013400395619240606,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.5238095238095238,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.08195831524099002
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.14285714285714288,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.18899261832392536
+          },
+          {
+            "user": "U3",
+            "task_spearman": -0.03968253968253969,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.18573599652627013
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.13888888888888887,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.06328701693443337
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.2976190476190476,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.1756404689535389
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.11111111111111112,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.06752062527138517
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.3571428571428572,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.10681719496309164
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5198412698412699,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": -0.07783326096396007
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.031746031746031744,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": -0.15892314372557537
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.19832451499118167,
+        "top1": 0.3925925925925926,
+        "aggregate_identity_ranking_spearman": 0.20105820105820105,
+        "residual_spearman_macro": -0.008595442436307726,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.5023809523809523,
+            "top1": 0.5666666666666667,
+            "within_identity_pair_task_residual_spearman": -0.005552179725342453
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.20873015873015877,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.19005364676470074
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.0023809523809523838,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.03900935780135071
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.04365079365079364,
+            "top1": 0.2,
+            "within_identity_pair_task_residual_spearman": 0.02678518724283407
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.2888888888888889,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": -0.0353608569593222
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.05793650793650793,
+            "top1": 0.36666666666666664,
+            "within_identity_pair_task_residual_spearman": -0.06256792652650219
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.45079365079365075,
+            "top1": 0.3,
+            "within_identity_pair_task_residual_spearman": 0.09343564992447784
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5904761904761906,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.06658275317279813
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.05714285714285715,
+            "top1": 0.8,
+            "within_identity_pair_task_residual_spearman": -0.17856039167346652
+          }
+        ]
+      }
+    },
+    "Audio_Ridge": {
+      "sameword": {
+        "task_spearman_macro": 0.46164021164021163,
+        "top1": 0.2777777777777778,
+        "aggregate_identity_ranking_spearman": 0.5846560846560847,
+        "residual_spearman_macro": 0.07861726250784001,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.6944444444444445,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.15490664350846725
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.15079365079365079,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.07283977420755537
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.09126984126984126,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.029418150238818937
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.32936507936507936,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.07967867998263137
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.7380952380952381,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.005970473295701261
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.7579365079365079,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.34845853234910995
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.5992063492063492,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.2818063395570995
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.4880952380952381,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.1463308727746418
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.6071428571428572,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.11615284411636997
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.4570546737213404,
+        "top1": 0.2518518518518518,
+        "aggregate_identity_ranking_spearman": 0.5846560846560847,
+        "residual_spearman_macro": 0.05740965796088279,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.6055555555555555,
+            "top1": 0.4,
+            "within_identity_pair_task_residual_spearman": 0.02755429781767044
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.03412698412698413,
+            "top1": 0.03333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.05175263459435059
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.03809523809523809,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.037720272921404875
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.2968253968253968,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.10397489539748953
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.6373015873015873,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.062250212677303414
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.7126984126984126,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.07187537978089896
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.6325396825396826,
+            "top1": 0.36666666666666664,
+            "within_identity_pair_task_residual_spearman": 0.13718467334502332
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5325396825396825,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.17367489018906573
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.6238095238095237,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.1621547249084185
+          }
+        ]
+      }
+    },
+    "Audio_Ridge_no_word_type": {
+      "sameword": {
+        "task_spearman_macro": 0.4810405643738977,
+        "top1": 0.33333333333333337,
+        "aggregate_identity_ranking_spearman": 0.5687830687830687,
+        "residual_spearman_macro": 0.0665798234187292,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.6944444444444445,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.17108119843682157
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.0992063492063492,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.07772470690403822
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.07936507936507937,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.05699088145896657
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.41269841269841273,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": -0.08749457229700393
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.7738095238095238,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.02485887972210161
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.7698412698412698,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.33619192357794186
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.6031746031746031,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.2722535822839775
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.4880952380952381,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.16359096830221453
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.6071428571428572,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.08988276161528443
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.46014109347442683,
+        "top1": 0.26296296296296295,
+        "aggregate_identity_ranking_spearman": 0.5767195767195767,
+        "residual_spearman_macro": 0.05083961720014428,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.6079365079365079,
+            "top1": 0.4,
+            "within_identity_pair_task_residual_spearman": 0.02839545825448358
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.01825396825396826,
+            "top1": 0.03333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.04448254309970658
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.01507936507936508,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.016516779805204947
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.2968253968253968,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.10515373530790463
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.6547619047619048,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.053968818903105946
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.7214285714285714,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.06736141252452298
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.6325396825396825,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.12431465824059443
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5476190476190477,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.17158978454487053
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.6468253968253969,
+            "top1": 0.4,
+            "within_identity_pair_task_residual_spearman": 0.14504592093612734
+          }
+        ]
+      }
+    },
+    "Audio_residual_Ridge": {
+      "sameword": {
+        "task_spearman_macro": 0.7865961199294532,
+        "top1": 0.6851851851851852,
+        "aggregate_identity_ranking_spearman": 0.8941798941798942,
+        "residual_spearman_macro": 0.18485550248468186,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.8809523809523808,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": 0.03245766391663049
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.4801587301587302,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.011506730351715157
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.6071428571428571,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.16554494138080766
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.880952380952381,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": 0.12331741207121148
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.8928571428571429,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": 0.35204081632653067
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.8253968253968252,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": 0.3514980460269215
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.7658730158730158,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": 0.43117672600955287
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.8293650793650794,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.15718627876682592
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.9166666666666669,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": 0.038970907511940954
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.7733686067019401,
+        "top1": 0.6592592592592592,
+        "aggregate_identity_ranking_spearman": 0.8888888888888888,
+        "residual_spearman_macro": 0.09184187225472663,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.846031746031746,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": 0.13079740967725131
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.4150793650793651,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.1480815639160402
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.5198412698412699,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.052449695307210185
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.8642857142857142,
+            "top1": 0.7333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.0030278303442768098
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.8857142857142857,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": 0.05933696765568845
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.8507936507936509,
+            "top1": 1.0,
+            "within_identity_pair_task_residual_spearman": 0.01577718363166027
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.7753968253968252,
+            "top1": 0.43333333333333335,
+            "within_identity_pair_task_residual_spearman": 0.43032604732721047
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.8809523809523808,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.15638639559714576
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.922222222222222,
+            "top1": 0.8,
+            "within_identity_pair_task_residual_spearman": -0.1696062431639438
+          }
+        ]
+      }
+    },
+    "Audio_Ridge_command_only": {
+      "sameword": {
+        "task_spearman_macro": 0.41710758377425045,
+        "top1": 0.1111111111111111,
+        "aggregate_identity_ranking_spearman": 0.5370370370370371,
+        "residual_spearman_macro": 0.05403579871664979,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.615079365079365,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": -0.1830221450282241
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.12301587301587301,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.04548415110725142
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.2023809523809524,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.05536257056013896
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.32539682539682535,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.0993269648284846
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.626984126984127,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": -0.08586626139817631
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.7063492063492064,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.3000434216239688
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.4523809523809524,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.2781155015197569
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.4166666666666667,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.16152844116369955
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.5317460317460317,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.12472861485019542
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.41516754850088183,
+        "top1": 0.16296296296296295,
+        "aggregate_identity_ranking_spearman": 0.47619047619047616,
+        "residual_spearman_macro": 0.0465778726868329,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.546031746031746,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.014684282713241546
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.1349206349206349,
+            "top1": 0.03333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.06938922550738727
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.08095238095238094,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.021544644872306805
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.3126984126984127,
+            "top1": 0.6333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.11171287695966942
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.5071428571428572,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.04728120279865969
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.665079365079365,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.0731349502595531
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.5238095238095238,
+            "top1": 0.23333333333333334,
+            "within_identity_pair_task_residual_spearman": 0.07372610635601311
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.44841269841269854,
+            "top1": 0.2,
+            "within_identity_pair_task_residual_spearman": 0.16556103404572992
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.5174603174603175,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.2043707356030486
+          }
+        ]
+      }
+    },
+    "Audio_Ridge_heldout_dyad": {
+      "sameword": {
+        "task_spearman_macro": 0.41754850088183426,
+        "top1": 0.1851851851851852,
+        "aggregate_identity_ranking_spearman": 0.5185185185185185,
+        "residual_spearman_macro": 0.08704829449510304,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.638888888888889,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.1254884932696483
+          },
+          {
+            "user": "U2",
+            "task_spearman": -0.07142857142857144,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.08260963960052108
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.08730158730158728,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.030937907077724713
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.23809523809523814,
+            "top1": 0.5,
+            "within_identity_pair_task_residual_spearman": -0.054602692140686075
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.6785714285714287,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": -0.0001085540599218411
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.6587301587301587,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.3415110725141121
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.6150793650793651,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.30699088145896664
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.45634920634920634,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.15957446808510642
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.4563492063492063,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.10388623534520193
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.39541446208112874,
+        "top1": 0.21851851851851853,
+        "aggregate_identity_ranking_spearman": 0.49470899470899465,
+        "residual_spearman_macro": 0.06102758342640979,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.5888888888888888,
+            "top1": 0.36666666666666664,
+            "within_identity_pair_task_residual_spearman": 0.04119255542630948
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.04603174603174603,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.04320127085539679
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.018253968253968255,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.0413991562353513
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.203968253968254,
+            "top1": 0.6333333333333333,
+            "within_identity_pair_task_residual_spearman": -0.10304432368617508
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.5365079365079365,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.05912863070539418
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.6182539682539684,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.0648188336603066
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.6349206349206349,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.14995920068056734
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.5031746031746032,
+            "top1": 0.13333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.17896751679716658
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.4087301587301587,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.16002795187416444
+          }
+        ]
+      }
+    },
+    "Audio_Ridge_heldout_endpoint": {
+      "sameword": {
+        "task_spearman_macro": 0.4951499118165784,
+        "top1": 0.29629629629629634,
+        "aggregate_identity_ranking_spearman": 0.626984126984127,
+        "residual_spearman_macro": 0.10728759588941962,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.7023809523809524,
+            "top1": 0.16666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.14307425097698656
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.015873015873015872,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.05720798957881026
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.20634920634920637,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.09020842379504995
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.29365079365079366,
+            "top1": 0.8333333333333334,
+            "within_identity_pair_task_residual_spearman": -0.08879722101606602
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.7142857142857143,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": -0.0768562744246635
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.6706349206349206,
+            "top1": 0.0,
+            "within_identity_pair_task_residual_spearman": 0.32587928788536696
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.5793650793650794,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.37201476335214945
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.6428571428571428,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.32631350412505433
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.630952380952381,
+            "top1": 0.3333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.10269214068606168
+          }
+        ]
+      },
+      "crossword": {
+        "task_spearman_macro": 0.4532627865961199,
+        "top1": 0.26666666666666666,
+        "aggregate_identity_ranking_spearman": 0.5925925925925926,
+        "residual_spearman_macro": 0.08181565652181459,
+        "per_user": [
+          {
+            "user": "U1",
+            "task_spearman": 0.6388888888888888,
+            "top1": 0.4,
+            "within_identity_pair_task_residual_spearman": 0.05981006614698171
+          },
+          {
+            "user": "U2",
+            "task_spearman": 0.026984126984126992,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": -0.05210073091546727
+          },
+          {
+            "user": "U3",
+            "task_spearman": 0.11190476190476192,
+            "top1": 0.23333333333333334,
+            "within_identity_pair_task_residual_spearman": 0.14943401795170053
+          },
+          {
+            "user": "U4",
+            "task_spearman": 0.22619047619047616,
+            "top1": 0.6666666666666666,
+            "within_identity_pair_task_residual_spearman": -0.10319363183388598
+          },
+          {
+            "user": "U5",
+            "task_spearman": 0.5888888888888888,
+            "top1": 0.03333333333333333,
+            "within_identity_pair_task_residual_spearman": 0.035517977742669134
+          },
+          {
+            "user": "U6",
+            "task_spearman": 0.6626984126984127,
+            "top1": 0.1,
+            "within_identity_pair_task_residual_spearman": 0.06987534505807391
+          },
+          {
+            "user": "U7",
+            "task_spearman": 0.6357142857142858,
+            "top1": 0.26666666666666666,
+            "within_identity_pair_task_residual_spearman": 0.2319493393982534
+          },
+          {
+            "user": "U8",
+            "task_spearman": 0.584126984126984,
+            "top1": 0.23333333333333334,
+            "within_identity_pair_task_residual_spearman": 0.16356360353478355
+          },
+          {
+            "user": "U9",
+            "task_spearman": 0.6039682539682539,
+            "top1": 0.36666666666666664,
+            "within_identity_pair_task_residual_spearman": 0.1814849216132224
+          }
+        ]
+      }
+    }
+  },
+  "word_block_intervals": {
+    "ACC_similarity": {
+      "word_block_95pct": [
+        0.13712705761316873,
+        0.27380952380952384
+      ],
+      "difference_from_ACC_95pct": [
+        0.0,
+        0.0
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.0,
+        0.0
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.655797558922559,
+        -0.5000771604938272
+      ]
+    },
+    "ACC_fixed_prior": {
+      "word_block_95pct": [
+        0.1681967338217338,
+        0.2534534331409331
+      ],
+      "difference_from_ACC_95pct": [
+        -0.05479612979612979,
+        0.07024295149295146
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        -0.05479612979612979,
+        0.07024295149295146
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.6071403133903134,
+        -0.5250691438191438
+      ]
+    },
+    "Audio_fixed_identity_memory": {
+      "word_block_95pct": [
+        0.7362914862914863,
+        0.8042328042328042
+      ],
+      "difference_from_ACC_95pct": [
+        0.5000771604938271,
+        0.655797558922559
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.5000771604938271,
+        0.655797558922559
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        0.0,
+        0.0
+      ]
+    },
+    "ACC_self_Ridge": {
+      "word_block_95pct": [
+        0.13712705761316873,
+        0.27380952380952384
+      ],
+      "difference_from_ACC_95pct": [
+        0.0,
+        0.0
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.0,
+        0.0
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.655797558922559,
+        -0.5000771604938272
+      ]
+    },
+    "Audio_Ridge": {
+      "word_block_95pct": [
+        0.3676527176527177,
+        0.5115995115995117
+      ],
+      "difference_from_ACC_95pct": [
+        0.14381914381914382,
+        0.3439363876863875
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.14381914381914382,
+        0.3439363876863875
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.38003848003848006,
+        -0.26455026455026454
+      ]
+    },
+    "Audio_Ridge_no_word_type": {
+      "word_block_95pct": [
+        0.36041366041366046,
+        0.5138708513708513
+      ],
+      "difference_from_ACC_95pct": [
+        0.14199401421623645,
+        0.34582932499599156
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.14199401421623645,
+        0.34582932499599156
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.386952861952862,
+        -0.2625160333493667
+      ]
+    },
+    "Audio_residual_Ridge": {
+      "word_block_95pct": [
+        0.7305077895355674,
+        0.8083305776014109
+      ],
+      "difference_from_ACC_95pct": [
+        0.4974399250440917,
+        0.6523974867724868
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.4974399250440917,
+        0.6523974867724868
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.013521624979958275,
+        0.003474977954144627
+      ]
+    },
+    "Audio_Ridge_command_only": {
+      "word_block_95pct": [
+        0.33306277056277056,
+        0.4790922619047619
+      ],
+      "difference_from_ACC_95pct": [
+        0.09259626690182245,
+        0.30677655677655674
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.09259626690182245,
+        0.30677655677655674
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.42531542531542527,
+        -0.3057439474106141
+      ]
+    },
+    "Audio_Ridge_heldout_dyad": {
+      "word_block_95pct": [
+        0.3193616054727166,
+        0.46616809116809116
+      ],
+      "difference_from_ACC_95pct": [
+        0.08465608465608465,
+        0.29773629148629144
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.08465608465608465,
+        0.29773629148629144
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.44874592999593005,
+        -0.30226054809388153
+      ]
+    },
+    "Audio_Ridge_heldout_endpoint": {
+      "word_block_95pct": [
+        0.3676406926406926,
+        0.5079365079365079
+      ],
+      "difference_from_ACC_95pct": [
+        0.14410473785473782,
+        0.3417429792429792
+      ],
+      "difference_from_ACC_self_Ridge_95pct": [
+        0.14410473785473782,
+        0.3417429792429792
+      ],
+      "difference_from_fixed_Audio_memory_95pct": [
+        -0.38239538239538234,
+        -0.26249398749398745
+      ]
+    }
+  },
+  "training_identity_permutation_control": {
+    "correct_training_audio_task_spearman": 0.4570546737213404,
+    "null_median": -0.07530864197530864,
+    "null_95pct": [
+      -0.45029982363315696,
+      0.4332275132275132
+    ],
+    "p_one_sided": 0.02
+  },
+  "all_combination_user_count_control": [
+    {
+      "users": 5,
+      "cohorts": 126,
+      "baseline": 0.17899470899470893,
+      "supervised": 0.3495767195767195,
+      "improvement_range": [
+        -0.5453333333333332,
+        0.6213333333333332
+      ],
+      "fraction_improved": 0.8571428571428571,
+      "baseline_top1": 0.40867724867724875,
+      "supervised_top1": 0.4522751322751323,
+      "random_top1": 0.25
+    },
+    {
+      "users": 7,
+      "cohorts": 36,
+      "baseline": 0.19142101284958427,
+      "supervised": 0.3767346938775511,
+      "improvement_range": [
+        -0.18367346938775514,
+        0.4103401360544217
+      ],
+      "fraction_improved": 0.9166666666666666,
+      "baseline_top1": 0.38690476190476186,
+      "supervised_top1": 0.35886243386243394,
+      "random_top1": 0.16666666666666666
+    },
+    {
+      "users": 9,
+      "cohorts": 1,
+      "baseline": 0.19832451499118167,
+      "supervised": 0.4570546737213404,
+      "improvement_range": [
+        0.2587301587301587,
+        0.2587301587301587
+      ],
+      "fraction_improved": 1.0,
+      "baseline_top1": 0.3925925925925926,
+      "supervised_top1": 0.2518518518518518,
+      "random_top1": 0.125
+    }
+  ],
+  "independent_word_authentication": [
+    {
+      "modality": "Audio",
+      "per_user": [
+        {
+          "user": "U1",
+          "sameword": 0.958984375,
+          "crossword": 0.9768229166666667
+        },
+        {
+          "user": "U2",
+          "sameword": 0.9993489583333334,
+          "crossword": 0.9990885416666667
+        },
+        {
+          "user": "U3",
+          "sameword": 1.0,
+          "crossword": 0.99921875
+        },
+        {
+          "user": "U4",
+          "sameword": 0.9680989583333334,
+          "crossword": 0.959375
+        },
+        {
+          "user": "U5",
+          "sameword": 0.9303385416666666,
+          "crossword": 0.9322916666666666
+        },
+        {
+          "user": "U6",
+          "sameword": 0.9856770833333334,
+          "crossword": 0.9751302083333333
+        },
+        {
+          "user": "U7",
+          "sameword": 0.9466145833333334,
+          "crossword": 0.9475260416666667
+        },
+        {
+          "user": "U8",
+          "sameword": 0.9674479166666666,
+          "crossword": 0.965234375
+        },
+        {
+          "user": "U9",
+          "sameword": 0.9420572916666666,
+          "crossword": 0.9475260416666667
+        }
+      ],
+      "macro": {
+        "sameword": 0.9665075231481483,
+        "crossword": 0.9669126157407406
+      }
+    },
+    {
+      "modality": "ACC_fresh",
+      "per_user": [
+        {
+          "user": "U1",
+          "sameword": 0.9967447916666666,
+          "crossword": 0.9908854166666666
+        },
+        {
+          "user": "U2",
+          "sameword": 0.9973958333333334,
+          "crossword": 0.9920572916666667
+        },
+        {
+          "user": "U3",
+          "sameword": 0.95703125,
+          "crossword": 0.953125
+        },
+        {
+          "user": "U4",
+          "sameword": 0.9641927083333334,
+          "crossword": 0.9729166666666667
+        },
+        {
+          "user": "U5",
+          "sameword": 0.90234375,
+          "crossword": 0.8903645833333333
+        },
+        {
+          "user": "U6",
+          "sameword": 0.8131510416666666,
+          "crossword": 0.7421875
+        },
+        {
+          "user": "U7",
+          "sameword": 0.7838541666666666,
+          "crossword": 0.780859375
+        },
+        {
+          "user": "U8",
+          "sameword": 0.9720052083333334,
+          "crossword": 0.9619791666666667
+        },
+        {
+          "user": "U9",
+          "sameword": 0.9055989583333334,
+          "crossword": 0.911328125
+        }
+      ],
+      "macro": {
+        "sameword": 0.9213686342592593,
+        "crossword": 0.9106336805555557
+      }
+    }
+  ],
+  "validation_words": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "all_validation_words_are_commands": true,
+  "limits": "known-user unseen-word;recording halves are not independent users;CI conditional on9users;single encoder seed"
+}
