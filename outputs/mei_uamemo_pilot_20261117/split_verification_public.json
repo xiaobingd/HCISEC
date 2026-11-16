@@ -1,0 +1,24 @@
+{
+  "state": "PASS",
+  "fit": 648,
+  "calibration": 216,
+  "evaluation": 432,
+  "all9_users": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": 5,
+  "disjoint_sample_roles": true,
+  "fit_only_normalization": true,
+  "sample_id_alignment": true,
+  "unique_sample_ids": true,
+  "identical_branch_batches": true,
+  "checkpoint_hashes_verified": true,
+  "all_encoders_updated": true,
+  "unit_embedding_norms": true,
+  "query_audio_not_used_in_training": "code path slices only fit embeddings to teacher targets;query cache exists historically",
+  "no_words18_29_used": true,
+  "scope": "closed identities,unseen words;nominal word-order labels;single session"
+}
