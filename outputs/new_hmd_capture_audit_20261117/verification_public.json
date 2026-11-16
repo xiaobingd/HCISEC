@@ -1,0 +1,12 @@
+{
+  "state": "PASS",
+  "scope": "stored snapshot consistency;capture quality is a separate failing condition",
+  "raw_recordings": 10,
+  "main_confirmed_recordings": 5,
+  "all_confirmed_word_overrides_match_user_statement": true,
+  "segment_slice_mismatches": 0,
+  "missing_segment_files": 0,
+  "new_data_ready_for_paired_training": false,
+  "original_files_only_read_by_audit": true,
+  "private_paths_identity_maps_and_signal_plot_not_published": true
+}
