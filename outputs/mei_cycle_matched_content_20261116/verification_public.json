@@ -1,0 +1,18 @@
+{
+  "state": "PASS",
+  "matched_workpoints": 5400,
+  "saved_score_replay_error": 0.0,
+  "old_workpoints_replayed": 54,
+  "old_metric_error": 1.1102230246251565e-16,
+  "old_personal_training_disjoint_from_cal_queries_and_final": true,
+  "cal_queries_fixed_to_unseen_repeats": true,
+  "threshold_shared_same_cross_and_folds": true,
+  "source_payload_hashes_verified": true,
+  "source_feature_parity": {
+    "U1": {
+      "records": 432,
+      "max_abs_error": 1.4543533325195312e-05
+    }
+  },
+  "limits": "score replay and source hash checks;not independent end-to-end implementation"
+}
