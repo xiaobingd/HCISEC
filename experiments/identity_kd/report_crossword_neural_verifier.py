@@ -5,7 +5,7 @@ from pathlib import Path
 import numpy as np
 
 
-def report(root):
+def report(root, baseline=None):
     root=Path(root)
     result=json.loads((root/'results_public.json').read_text(encoding='utf-8'))
     rows=json.loads((root/'per_user_public.json').read_text(encoding='utf-8'))
@@ -13,6 +13,10 @@ def report(root):
     protocol=json.loads((root/'protocol_public.json').read_text(encoding='utf-8'))
     users=sorted(set(r['user'] for r in rows))
     excluded=protocol.get('excluded_training_users',[])
+    if baseline is None and excluded:
+        archived=Path('outputs/mei_neural_verifier_20261116')
+        if (archived/'per_user_public.json').exists():
+            baseline=archived
     assert result['state']=='complete' and verification['state']=='PASS'
     lines=[f'# Mei：{len(users)}名注册者的Audio决策蒸馏与跨词神经验证器结果','',
            f'本轮为{len(users)}名已知注册身份、单seed42、独立ACC认证方法，不使用CycleGAN。注册/查询均仅ACC；Audio教师为外部冻结ReDimNet2-B3，只使用合法训练词特征。词编号按历史顺序推断，尚未逐条语义核验。',
@@ -21,6 +25,21 @@ def report(root):
            '', '|方法|条件|TAR%|FAR%|FRR%|HTER%|EER%|AUC|', '|---|---|---:|---:|---:|---:|---:|---:|']
     for r in result['summary']:
         lines.append('|'+r['method']+'|'+r['condition']+'|'+ '|'.join(f'{100*r[k]:.2f}' for k in ['tar','far','frr','hter','eer'])+f"|{r['auc']:.4f}|")
+    if baseline:
+        old=json.loads((Path(baseline)/'per_user_public.json').read_text(encoding='utf-8'))
+        old=[r for r in old if r['user'] in users]
+        comparison=[]
+        lines+=['','## 相同八名目标：九人训练与排除U5训练','',
+                '两边只统计相同八名目标，攻击查询均仍含U5。此表避免仅删除U5目标就改变宏平均；训练任务与Cal具体采样随用户集合变化，不等于严格固定批次的单变量实验。',
+                '', '|方法|条件|旧九人训练HTER%|新八人训练HTER%|差值(pp)|','|---|---|---:|---:|---:|']
+        for method in sorted(set(r['method'] for r in rows)):
+            for cond in ['sameword','crossword']:
+                previous=[r for r in old if r['method']==method and r['condition']==cond]
+                current=[r for r in rows if r['method']==method and r['condition']==cond]
+                oh=np.mean([r['hter'] for r in previous]);nh=np.mean([r['hter'] for r in current])
+                comparison.append(dict(method=method,condition=cond,old_hter=float(oh),new_hter=float(nh),delta=float(nh-oh)))
+                lines.append(f'|{method}|{cond}|{100*oh:.2f}|{100*nh:.2f}|{100*(nh-oh):+.2f}|')
+        (root/'matched_targets_comparison_public.json').write_text(json.dumps(comparison,indent=2),encoding='utf-8')
     lines+=['','## 成对比较','', '|前者减后者|条件|HTER变化(pp)|FAR变化(pp)|TAR变化(pp)|HTER改善用户数|','|---|---|---:|---:|---:|---:|']
     pairs=[('local','global'),('audio','local'),('shuffle','audio')]
     summary={(r['method'],r['condition']):r for r in result['summary']}
@@ -61,4 +80,5 @@ def report(root):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--out',required=True);report(p.parse_args().out)
+    p=argparse.ArgumentParser();p.add_argument('--out',required=True);p.add_argument('--baseline')
+    a=p.parse_args();report(a.out,a.baseline)
