@@ -79,6 +79,8 @@
 
 ## 最新实验记录
 
+- [2026-11-16 创新点一正式定版 V1：循环一致性特征身份认证](2026-11-16-innovation1-frozen-baseline-v1.md)：用户确认固定；个人100步 input256＋baseline312、alpha0.5、568维RBF；同词/跨词HTER=5.97%/10.43%。九人参与原训练，最终排除U5目标及攻击，保留其余八名目标；不删除U5的原训练、负类注册或Cal数据。包含完整训练方法、固定查询K4协议、逐用户结果、代码版本与模型SHA256，配置见[机器可读清单](../../configs/innovation1_cycle_frozen_v1.json)。
+
 - [2026-11-08 同步 Audio–HMD 双模态注册与 HMD 单模态验证实验方案（V1.0）](2026-11-08-multimodal-enrollment-acc-only-verification-plan.md)：拟执行；以新用户同步 Audio/HMD 注册、仅 HMD 验证为任务，定义 E0–E3 注册对照、C0–C4 耦合负控制、24折严格未见用户与 K-shot/冻结阈值评估。
 
 - [2026-11-03 Audio→ACC 说话人身份知识蒸馏独立实验方案](2026-11-03-speaker-identity-knowledge-distillation-audio-acc.md)：专门规定身份教师、ACC 学生、逐样本/原型蒸馏、KD0–KD5 消融、负控制及未见用户 K-shot 验证。
