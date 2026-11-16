@@ -1,0 +1,9 @@
+{
+  "state": "PASS",
+  "workpoints": 54,
+  "max_error": 1.1102230246251565e-16,
+  "sameword_register_query_word_sets_equal": true,
+  "register_query_record_disjoint": true,
+  "cross_query_words_disjoint_from_registration": true,
+  "conclusion": "original same-word labeling valid by nominal IDs;original same/cross comparison uses different query words"
+}
