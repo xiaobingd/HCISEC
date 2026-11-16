@@ -1,0 +1,90 @@
+{
+  "state": "all12_checkpoints_locked",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": {
+    "B0": "ACC CE",
+    "B1": "CE+frozen ACC self local relation",
+    "B2": "CE+correct Audio local relation",
+    "B3": "CE+wrong Audio local relation,same mask as B2"
+  },
+  "users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "encoder_fit_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "fit_repeats": "first6 per user-word",
+  "cal_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "cal_queries": "repeat6:8,not in encoder fit",
+  "validation_words": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "validation_repeats": "first8:K4 two-fold swap",
+  "encoder": "fresh IdentityEncoder CNN32/64/128 temporal mean/std256 Linear128 L2",
+  "warmup": 400,
+  "continuation": 400,
+  "total_steps_each_method": 800,
+  "branch_optimizer_reset": true,
+  "optimizer": "AdamW lr3e-4 wd1e-3 clip1",
+  "checkpoint": "fixed final,no validation selection",
+  "batch": "9users x2shared words x2repeats=36;same continuation batches within seed",
+  "normalization": "only648 encoder-fit ACC records",
+  "graph": "Top2 intersection:all training data,repeat first3,last3,even words,odd words",
+  "graph_source": "B1 warmup ACC;B2 frozen ReDimNet2-B3;B3 same frozen mask as B2",
+  "local_loss": "row KL tau.2;crossword sameidentity positives;only stable-neighbor sameword negatives",
+  "gradient_weight": "exact current encoder norm ratio rho.03,lambda cap1,no tuning,no EMA",
+  "wrong_teacher": "different nonzero identity shifts per batch word,repeat rank preserved;B2 mask retained",
+  "calibration": "per owner/backend/method/seed Cal-EER threshold,pooled same/cross equal weight;locked for both validation conditions/folds",
+  "backend": "main balancedRBF C10 gammaScale;cosine prototype diagnostic",
+  "margin": "genuine mean minus hardest attacker-identity mean;also worstsample;divide by Cal impostor std",
+  "no_validation_audio": true,
+  "no_words18_29_used": true,
+  "limits": [
+    "known users",
+    "12..17 previously inspected;exploratory validation,not new confirmation",
+    "nominal word labels",
+    "single session",
+    "three seeds are optimizer repeats,not new subjects"
+  ]
+}
