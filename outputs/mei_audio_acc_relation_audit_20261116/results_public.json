@@ -1,0 +1,1150 @@
+{
+  "authentication": [
+    {
+      "modality": "Audio",
+      "per_user": [
+        {
+          "user": "U1",
+          "sameword": 0.9720052083333334,
+          "crossword": 0.9746604370915033
+        },
+        {
+          "user": "U2",
+          "sameword": 0.9997829861111112,
+          "crossword": 0.999093647875817
+        },
+        {
+          "user": "U3",
+          "sameword": 0.9993489583333334,
+          "crossword": 0.9982255923202614
+        },
+        {
+          "user": "U4",
+          "sameword": 0.9813368055555556,
+          "crossword": 0.9683415032679739
+        },
+        {
+          "user": "U5",
+          "sameword": 0.953125,
+          "crossword": 0.9525760825163399
+        },
+        {
+          "user": "U6",
+          "sameword": 0.9774305555555556,
+          "crossword": 0.9652139501633987
+        },
+        {
+          "user": "U7",
+          "sameword": 0.9383680555555556,
+          "crossword": 0.9272875816993464
+        },
+        {
+          "user": "U8",
+          "sameword": 0.982421875,
+          "crossword": 0.9772646037581699
+        },
+        {
+          "user": "U9",
+          "sameword": 0.9763454861111112,
+          "crossword": 0.9789113562091504
+        }
+      ],
+      "macro_auc": {
+        "sameword": 0.9755738811728395,
+        "crossword": 0.9712860838779958
+      }
+    },
+    {
+      "modality": "ACC",
+      "per_user": [
+        {
+          "user": "U1",
+          "sameword": 0.9997829861111112,
+          "crossword": 0.9983532475490197
+        },
+        {
+          "user": "U2",
+          "sameword": 1.0,
+          "crossword": 0.9998978758169934
+        },
+        {
+          "user": "U3",
+          "sameword": 0.9939236111111112,
+          "crossword": 0.9910258374183006
+        },
+        {
+          "user": "U4",
+          "sameword": 0.998046875,
+          "crossword": 0.9956724877450981
+        },
+        {
+          "user": "U5",
+          "sameword": 0.9997829861111112,
+          "crossword": 0.9990553513071896
+        },
+        {
+          "user": "U6",
+          "sameword": 0.9963107638888888,
+          "crossword": 0.9854473039215687
+        },
+        {
+          "user": "U7",
+          "sameword": 0.9950086805555556,
+          "crossword": 0.9902854370915033
+        },
+        {
+          "user": "U8",
+          "sameword": 0.9986979166666666,
+          "crossword": 0.9989276960784313
+        },
+        {
+          "user": "U9",
+          "sameword": 0.9993489583333334,
+          "crossword": 0.9979830473856209
+        }
+      ],
+      "macro_auc": {
+        "sameword": 0.9978780864197532,
+        "crossword": 0.9951831427015251
+      }
+    }
+  ],
+  "relation_conditions": {
+    "same_user_cross_word": {
+      "spearman": 0.8166666666666665,
+      "identity_permutation_p_one_sided": 0.006,
+      "null_95pct": [
+        -0.7,
+        0.6833333333333332
+      ],
+      "units": 9,
+      "word_block_bootstrap_95pct_conditional_on_users": [
+        0.49999999999999994,
+        0.8333333333333333
+      ],
+      "leave_one_user_out_sensitivity": [
+        {
+          "removed_user": "U1",
+          "spearman": 0.8571428571428571
+        },
+        {
+          "removed_user": "U2",
+          "spearman": 0.8333333333333334
+        },
+        {
+          "removed_user": "U3",
+          "spearman": 0.7380952380952381
+        },
+        {
+          "removed_user": "U4",
+          "spearman": 0.7380952380952381
+        },
+        {
+          "removed_user": "U5",
+          "spearman": 0.8333333333333334
+        },
+        {
+          "removed_user": "U6",
+          "spearman": 0.7380952380952381
+        },
+        {
+          "removed_user": "U7",
+          "spearman": 0.7380952380952381
+        },
+        {
+          "removed_user": "U8",
+          "spearman": 0.8571428571428571
+        },
+        {
+          "removed_user": "U9",
+          "spearman": 0.9761904761904762
+        }
+      ],
+      "wordpair_centered_descriptive_spearman": 0.34251080224546404,
+      "repeat_half_relation_reliability": [
+        {
+          "modality": "Audio",
+          "spearman": 0.8666666666666666
+        },
+        {
+          "modality": "ACC",
+          "spearman": 0.9999999999999999
+        }
+      ],
+      "disjoint_wordgroup_relation_reliability": {
+        "Audio": 0.3833333333333333,
+        "ACC": 0.7
+      },
+      "identity_permutation_p_holm_3": 0.006
+    },
+    "different_user_same_word": {
+      "spearman": 0.5485199485199486,
+      "identity_permutation_p_one_sided": 0.0005,
+      "null_95pct": [
+        -0.29806949806949806,
+        0.36900900900900885
+      ],
+      "units": 36,
+      "word_block_bootstrap_95pct_conditional_on_users": [
+        0.4260682110682111,
+        0.6066924066924066
+      ],
+      "leave_one_user_out_sensitivity": [
+        {
+          "removed_user": "U1",
+          "spearman": 0.5298303229337713
+        },
+        {
+          "removed_user": "U2",
+          "spearman": 0.6469622331691298
+        },
+        {
+          "removed_user": "U3",
+          "spearman": 0.5867542419266558
+        },
+        {
+          "removed_user": "U4",
+          "spearman": 0.6360153256704981
+        },
+        {
+          "removed_user": "U5",
+          "spearman": 0.4482758620689656
+        },
+        {
+          "removed_user": "U6",
+          "spearman": 0.48604269293924474
+        },
+        {
+          "removed_user": "U7",
+          "spearman": 0.5522714833059661
+        },
+        {
+          "removed_user": "U8",
+          "spearman": 0.380952380952381
+        },
+        {
+          "removed_user": "U9",
+          "spearman": 0.6338259441707719
+        }
+      ],
+      "wordpair_centered_descriptive_spearman": 0.4296052148198953,
+      "repeat_half_relation_reliability": [
+        {
+          "modality": "Audio",
+          "spearman": 0.9361647361647362
+        },
+        {
+          "modality": "ACC",
+          "spearman": 0.9691119691119691
+        }
+      ],
+      "disjoint_wordgroup_relation_reliability": {
+        "Audio": 0.9462033462033462,
+        "ACC": 0.7626769626769627
+      },
+      "identity_permutation_p_holm_3": 0.0015
+    },
+    "different_user_cross_word": {
+      "spearman": 0.522007722007722,
+      "identity_permutation_p_one_sided": 0.0005,
+      "null_95pct": [
+        -0.29214929214929214,
+        0.3577863577863578
+      ],
+      "units": 36,
+      "word_block_bootstrap_95pct_conditional_on_users": [
+        0.4375418275418276,
+        0.5827670527670528
+      ],
+      "leave_one_user_out_sensitivity": [
+        {
+          "removed_user": "U1",
+          "spearman": 0.5073891625615764
+        },
+        {
+          "removed_user": "U2",
+          "spearman": 0.6064586754241927
+        },
+        {
+          "removed_user": "U3",
+          "spearman": 0.5736179529282979
+        },
+        {
+          "removed_user": "U4",
+          "spearman": 0.6299945265462508
+        },
+        {
+          "removed_user": "U5",
+          "spearman": 0.41762452107279696
+        },
+        {
+          "removed_user": "U6",
+          "spearman": 0.4553913519430761
+        },
+        {
+          "removed_user": "U7",
+          "spearman": 0.5276409414340449
+        },
+        {
+          "removed_user": "U8",
+          "spearman": 0.3289545703338807
+        },
+        {
+          "removed_user": "U9",
+          "spearman": 0.6310892172961139
+        }
+      ],
+      "wordpair_centered_descriptive_spearman": 0.39559074389805277,
+      "repeat_half_relation_reliability": [
+        {
+          "modality": "Audio",
+          "spearman": 0.9456885456885457
+        },
+        {
+          "modality": "ACC",
+          "spearman": 0.9621621621621622
+        }
+      ],
+      "disjoint_wordgroup_relation_reliability": {
+        "Audio": 0.9441441441441442,
+        "ACC": 0.7732303732303732
+      },
+      "identity_permutation_p_holm_3": 0.0015
+    }
+  },
+  "hard_impostor_ranking": {
+    "spearman_macro": 0.48677248677248675,
+    "per_user": [
+      {
+        "user": "U1",
+        "spearman": 0.8571428571428571,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        }
+      },
+      {
+        "user": "U2",
+        "spearman": 0.19047619047619047,
+        "topk_overlap": {
+          "1": 0.0,
+          "2": 0.5,
+          "3": 0.3333333333333333
+        }
+      },
+      {
+        "user": "U3",
+        "spearman": 0.30952380952380953,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.6666666666666666
+        }
+      },
+      {
+        "user": "U4",
+        "spearman": 0.0,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 0.5,
+          "3": 0.3333333333333333
+        }
+      },
+      {
+        "user": "U5",
+        "spearman": 0.8571428571428571,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.6666666666666666
+        }
+      },
+      {
+        "user": "U6",
+        "spearman": 0.5952380952380952,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 0.5,
+          "3": 0.6666666666666666
+        }
+      },
+      {
+        "user": "U7",
+        "spearman": 0.40476190476190477,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.6666666666666666
+        }
+      },
+      {
+        "user": "U8",
+        "spearman": 0.8809523809523809,
+        "topk_overlap": {
+          "1": 0.0,
+          "2": 0.5,
+          "3": 0.6666666666666666
+        }
+      },
+      {
+        "user": "U9",
+        "spearman": 0.2857142857142857,
+        "topk_overlap": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 0.6666666666666666
+        }
+      }
+    ],
+    "topk_overlap": {
+      "1": 0.7777777777777778,
+      "2": 0.7777777777777778,
+      "3": 0.6296296296296297
+    },
+    "random_overlap": {
+      "1": 0.125,
+      "2": 0.25,
+      "3": 0.375
+    },
+    "identity_permutation_p_one_sided": 0.0005,
+    "topk_permutation_p_one_sided": {
+      "1": 0.0005,
+      "2": 0.0005,
+      "3": 0.006
+    }
+  },
+  "margin": {
+    "per_user": [
+      {
+        "user": "U1",
+        "audio_mean": 0.19621524964672288,
+        "acc_mean": 0.46439265420818643,
+        "within_user_task_spearman": -0.08269553135506351
+      },
+      {
+        "user": "U2",
+        "audio_mean": 0.4047527093123766,
+        "acc_mean": 0.5207195913090426,
+        "within_user_task_spearman": 0.2914900055178797
+      },
+      {
+        "user": "U3",
+        "audio_mean": 0.3761433857231358,
+        "acc_mean": 0.35624809382982503,
+        "within_user_task_spearman": 0.19029983969878864
+      },
+      {
+        "user": "U4",
+        "audio_mean": 0.1958583158507846,
+        "acc_mean": 0.4236478206086782,
+        "within_user_task_spearman": -0.14624475304085427
+      },
+      {
+        "user": "U5",
+        "audio_mean": 0.1635028883035666,
+        "acc_mean": 0.40589321916009863,
+        "within_user_task_spearman": 0.009576400646230616
+      },
+      {
+        "user": "U6",
+        "audio_mean": 0.16068325410870946,
+        "acc_mean": 0.2996128887376365,
+        "within_user_task_spearman": -0.06637935998877575
+      },
+      {
+        "user": "U7",
+        "audio_mean": 0.18393561151487375,
+        "acc_mean": 0.4315374547895653,
+        "within_user_task_spearman": 0.2692748333380449
+      },
+      {
+        "user": "U8",
+        "audio_mean": 0.17420719510394764,
+        "acc_mean": 0.41260285592741436,
+        "within_user_task_spearman": 0.1291345095735736
+      },
+      {
+        "user": "U9",
+        "audio_mean": 0.17904122680230858,
+        "acc_mean": 0.3746703146816858,
+        "within_user_task_spearman": -0.09446631004620568
+      }
+    ],
+    "owner_mean_spearman": 0.5833333333333333,
+    "owner_mean_identity_permutation_p_one_sided": 0.0555,
+    "wordpair_centered_descriptive_spearman": 0.15996383969340167
+  },
+  "all_directed_relations": [
+    {
+      "target": "U1",
+      "impostor": "U2",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U1",
+      "impostor": "U3",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U1",
+      "impostor": "U4",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U1",
+      "impostor": "U5",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U1",
+      "impostor": "U6",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U1",
+      "impostor": "U7",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U1",
+      "impostor": "U8",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U1",
+      "impostor": "U9",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U1",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U3",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U2",
+      "impostor": "U4",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U5",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U6",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U7",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U8",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U2",
+      "impostor": "U9",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U1",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U2",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U3",
+      "impostor": "U4",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U5",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U6",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U7",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U8",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U3",
+      "impostor": "U9",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U4",
+      "impostor": "U1",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U4",
+      "impostor": "U2",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U4",
+      "impostor": "U3",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U4",
+      "impostor": "U5",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U4",
+      "impostor": "U6",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U4",
+      "impostor": "U7",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U4",
+      "impostor": "U8",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U4",
+      "impostor": "U9",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U1",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U2",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U3",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U4",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U6",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U7",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U8",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U5",
+      "impostor": "U9",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U6",
+      "impostor": "U1",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U6",
+      "impostor": "U2",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U6",
+      "impostor": "U3",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U6",
+      "impostor": "U4",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U6",
+      "impostor": "U5",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U6",
+      "impostor": "U7",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U6",
+      "impostor": "U8",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U6",
+      "impostor": "U9",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U1",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U7",
+      "impostor": "U2",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U3",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U4",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U5",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U6",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U8",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U7",
+      "impostor": "U9",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U1",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U2",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U3",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U4",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U8",
+      "impostor": "U5",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U6",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U7",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U8",
+      "impostor": "U9",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U1",
+      "audio_difficulty_rank": 4.0,
+      "acc_difficulty_rank": 6.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U2",
+      "audio_difficulty_rank": 7.0,
+      "acc_difficulty_rank": 5.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U3",
+      "audio_difficulty_rank": 8.0,
+      "acc_difficulty_rank": 3.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U4",
+      "audio_difficulty_rank": 3.0,
+      "acc_difficulty_rank": 8.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U5",
+      "audio_difficulty_rank": 1.0,
+      "acc_difficulty_rank": 1.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    },
+    {
+      "target": "U9",
+      "impostor": "U6",
+      "audio_difficulty_rank": 5.0,
+      "acc_difficulty_rank": 4.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U7",
+      "audio_difficulty_rank": 6.0,
+      "acc_difficulty_rank": 7.0,
+      "shared_top2": false,
+      "audio_top2_stable_across_repeat_and_word_splits": false,
+      "acc_top2_stable_across_repeat_and_word_splits": false
+    },
+    {
+      "target": "U9",
+      "impostor": "U8",
+      "audio_difficulty_rank": 2.0,
+      "acc_difficulty_rank": 2.0,
+      "shared_top2": true,
+      "audio_top2_stable_across_repeat_and_word_splits": true,
+      "acc_top2_stable_across_repeat_and_word_splits": true
+    }
+  ],
+  "cross_word_dyadic_relation_after_additive_user_effect_removal": {
+    "spearman": 0.36087516087516086,
+    "identity_permutation_p_one_sided": 0.035,
+    "null_95pct": [
+      -0.34594594594594597,
+      0.39361647361647356
+    ],
+    "units": 36
+  },
+  "pooled_unconditioned_spearman_descriptive": 0.5673420423773553,
+  "settings": {
+    "users": 9,
+    "words": 18,
+    "repeats_used": 8,
+    "registration": 4,
+    "query": 4,
+    "folds": 2,
+    "bootstrap_word_blocks": 500,
+    "identity_permutations": 1999,
+    "seed": 20261116
+  },
+  "inference_scope": "conditional training-set representation audit;not unseen-recording or unseen-user performance;no new training"
+}
