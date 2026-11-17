@@ -1,0 +1,73 @@
+{
+  "state": "PASS",
+  "workpoints": 12480,
+  "score_replay_error": 0.0,
+  "historical_population_difference": 0.017708333333333326,
+  "owner_audit": [
+    {
+      "user": "U1",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U2",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U3",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U4",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U6",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U7",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U8",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    },
+    {
+      "user": "U9",
+      "cached_records": 648,
+      "personal_training_query_overlap": 0
+    }
+  ],
+  "fixed_cycle_weight": 0.5,
+  "no_new_generator_training": true,
+  "historical_personal_adaptation": "own12 records words20..23;unchanged",
+  "cal_query_and_final_not_in_personal_adaptation": true,
+  "final_targets_and_attackers": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "training_registration_calibration_users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "limitation": "fixed historical personal adaptation;not a new K4-only adaptation protocol"
+}
