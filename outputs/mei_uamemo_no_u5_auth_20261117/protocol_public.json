@@ -1,0 +1,99 @@
+{
+  "state": "all_checkpoints_locked",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": {
+    "B0": "ACC CE",
+    "B1": "CE+self/cross separate heads,fixed equal auxiliary weights",
+    "B2": "B1+sample discrepancy reliability+bounded learned task uncertainty",
+    "B3": "B2+wrong Audio identity targets",
+    "B4": "CE+ACC EMA self-distillation only,early SupCon"
+  },
+  "implementation": "UA-MeMo-inspired supervised Audio-to-ACC adaptation;NOT original self-supervised DINO reproduction",
+  "original_source": "https://doi.org/10.1109/TASLPRO.2026.3682072",
+  "author_code_found": false,
+  "full_equations_obtained": false,
+  "users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "encoder_fit_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "fit_repeats": "first6",
+  "cal_repeats": "6:8 on words0:11",
+  "evaluation_words": [
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "evaluation": "K4 registration/query swap;matched same/cross queries",
+  "teacher": "existing frozen ReDimNet2-B3 embeddings;fit-only nine identity prototypes,cosine logits scale16",
+  "encoder": "unchanged IdentityEncoder CNN32/64/128 mean/std Linear128 L2;encoder updated by all losses",
+  "heads": "CE identity head plus distinct self/cross Linear128to9 biasFalse;removed at deployment",
+  "self_teacher": "EMA(.99) ACC encoder and self head,initialized from CE warmup",
+  "loss": "CE + .1 auxiliary;aux=selfKL+crossKL (B1), exp(-s)*L+s (B2/B3);s=2tanh(raw)",
+  "sample_weight": "exp(-KL(EMA_ACC,Audio)/T^2),clamp .05:1,mean normalized,detached;T2",
+  "early_contrast": "crossword SupCon .1 on first100 continuation steps in B1:B4;off later;B0 pureCE",
+  "warmup": 400,
+  "continuation": 400,
+  "optimizer": "AdamW3e-4 wd1e-3 clip1;uncertainty raw AdamW1e-2 noWD",
+  "selection": "fixed final checkpoint,no query selection or hyperparameter sweep",
+  "backend": "balanced RBF C10 gammaScale + cosine diagnostic",
+  "no_query_audio": true,
+  "no_words18_29_used": true,
+  "privacy": "no embeddings,mappings,raw audio or individual scores published",
+  "limits": [
+    "known training identities,unseen words;NOT unseen-user protocol",
+    "nominal word-order labels",
+    "single recording session",
+    "words12:17 previously explored;exploratory not fresh confirmation",
+    "ReDimNet2 cache is not an independently retrained teacher per seed"
+  ],
+  "authentication_users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "encoder_training_users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "U5_removed_from_authentication": true
+}
