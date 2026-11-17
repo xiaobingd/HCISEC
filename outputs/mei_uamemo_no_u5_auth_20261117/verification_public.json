@@ -1,0 +1,17 @@
+{
+  "state": "PASS",
+  "score_replay_error": 0.0,
+  "aggregate_rows": 480,
+  "workpoints": 28800,
+  "U5_excluded_from_targets_backend_fit_calibration_and_queries": true,
+  "encoder_training_still_all9": true,
+  "all_checkpoints_locked_before_auth": true,
+  "same_queries_in_same_cross": true,
+  "cal_queries_not_in_encoder_fit": true,
+  "thresholds_shared_across_conditions_and_folds": true,
+  "no_query_audio": true,
+  "no_words18_29_used": true,
+  "same_batch_order_within_seed": true,
+  "single_seed_differences_not_claimed_stable": true,
+  "limits": "saved-score replay and split checks;12..17 previously explored;not new confirmatory data"
+}
