@@ -1,0 +1,68 @@
+{
+  "state": "PASS",
+  "workpoints": 4800,
+  "score_replay_error": 0.0,
+  "historical_population_difference": 0.017708333333333326,
+  "owner_audit": [
+    {
+      "user": "U1",
+      "joint_encoder": true
+    },
+    {
+      "user": "U2",
+      "joint_encoder": true
+    },
+    {
+      "user": "U3",
+      "joint_encoder": true
+    },
+    {
+      "user": "U4",
+      "joint_encoder": true
+    },
+    {
+      "user": "U6",
+      "joint_encoder": true
+    },
+    {
+      "user": "U7",
+      "joint_encoder": true
+    },
+    {
+      "user": "U8",
+      "joint_encoder": true
+    },
+    {
+      "user": "U9",
+      "joint_encoder": true
+    }
+  ],
+  "final_targets_and_attackers": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "training_registration_calibration_users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "limitation": "known users,nominal word order,single seed,historically explored final words",
+  "no_generator_features": true,
+  "teacher_weights": [
+    0.5,
+    0.5
+  ],
+  "joint_total_gradient_rho": 0.03,
+  "seed": 42
+}
