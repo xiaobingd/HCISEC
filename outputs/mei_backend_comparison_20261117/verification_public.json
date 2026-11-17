@@ -1,0 +1,57 @@
+{
+  "state": "PASS",
+  "RBF_prior_reproduction_error": 1.1102230246251565e-16,
+  "users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "frozen_encoders": true,
+  "whitening_fit_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "LR_C_dev_words": [
+    18,
+    19,
+    20
+  ],
+  "cal_words": [
+    21,
+    22,
+    23
+  ],
+  "final_words": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "no_query_audio": true,
+  "thresholds_shared_same_cross": true,
+  "selection": "LR dev crossAUC then smallerC;whitening automatic LedoitWolf on within-user fit residuals",
+  "limits": "single seed,known users,historically explored words;fusion originally tuned for RBF"
+}
