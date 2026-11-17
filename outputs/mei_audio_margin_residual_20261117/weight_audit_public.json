@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "mean_train_acc_hardness_rho": -0.4419642857142858,
+    "mean_final_attack_score_rho": -0.5937500000000001,
+    "mean_acc_weight_final_rho": -0.549107142857143,
+    "top1_matches": 0,
+    "targets": 8,
+    "zero_weight_pairs": 0,
+    "total_pairs": 56
+  },
+  "per_user": [
+    {
+      "user": "U1",
+      "train_acc_hardness_rho": -0.7857142857142859,
+      "final_attack_score_rho": -0.7857142857142859,
+      "acc_weight_final_rho": -0.8928571428571429,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 7,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U2",
+      "train_acc_hardness_rho": -0.1785714285714286,
+      "final_attack_score_rho": -0.5357142857142858,
+      "acc_weight_final_rho": -0.4642857142857144,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 7,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U3",
+      "train_acc_hardness_rho": -0.21428571428571433,
+      "final_attack_score_rho": -0.6071428571428572,
+      "acc_weight_final_rho": -0.3214285714285715,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 6,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U4",
+      "train_acc_hardness_rho": -0.10714285714285716,
+      "final_attack_score_rho": -0.3214285714285715,
+      "acc_weight_final_rho": -0.6785714285714287,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 7,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U6",
+      "train_acc_hardness_rho": -0.8928571428571429,
+      "final_attack_score_rho": -0.642857142857143,
+      "acc_weight_final_rho": -0.7142857142857144,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 7,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U7",
+      "train_acc_hardness_rho": -0.42857142857142866,
+      "final_attack_score_rho": -0.28571428571428575,
+      "acc_weight_final_rho": -0.7500000000000002,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 4,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U8",
+      "train_acc_hardness_rho": -0.8571428571428573,
+      "final_attack_score_rho": -0.7142857142857144,
+      "acc_weight_final_rho": -0.5357142857142858,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 7,
+      "audio_weight_zero_count": 0
+    },
+    {
+      "user": "U9",
+      "train_acc_hardness_rho": -0.07142857142857144,
+      "final_attack_score_rho": -0.8571428571428573,
+      "acc_weight_final_rho": -0.03571428571428572,
+      "audio_top_matches_final_hardest": false,
+      "audio_top_weight_rank_of_hardest": 7,
+      "audio_weight_zero_count": 0
+    }
+  ]
+}
