@@ -1,0 +1,20 @@
+{
+  "E2": {
+    "ASNorm_topK": 3,
+    "PLDA_PCA": 32,
+    "neural_steps": 400,
+    "neural_seed": 42
+  },
+  "E4": {
+    "ASNorm_topK": 3,
+    "PLDA_PCA": 32,
+    "neural_steps": 400,
+    "neural_seed": 42
+  },
+  "E24": {
+    "ASNorm_topK": 3,
+    "PLDA_PCA": 32,
+    "neural_steps": 400,
+    "neural_seed": 42
+  }
+}
