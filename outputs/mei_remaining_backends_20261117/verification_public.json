@@ -1,0 +1,60 @@
+{
+  "state": "PASS",
+  "all_fit_only": true,
+  "users": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "frozen_encoders": true,
+  "cal_words": [
+    21,
+    22,
+    23
+  ],
+  "final_words": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "no_query_audio": true,
+  "thresholds_shared_same_cross": true,
+  "selection": "fixed ASNormTop3;PCA32 Gaussian PLDA moment estimate with within covariance shrinkage and between PSD projection;pairMLP64to32to1 BCE400steps seed42;no final tuning",
+  "limits": "single seed,known users,historically explored words;fusion originally tuned for RBF",
+  "training_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "finite_score_arrays": 144,
+  "score_shape": [
+    60,
+    32
+  ],
+  "per_user_rows": 144,
+  "HTER_formula_checked": true,
+  "scope": "split restrictions enforced by code;finite scores/counts/HTER identities;not an independent hardware or open-user validation"
+}
