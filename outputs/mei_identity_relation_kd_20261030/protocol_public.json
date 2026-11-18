@@ -1,0 +1,75 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "steps": 400,
+  "groups": {
+    "train": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "enroll": [
+      18,
+      19
+    ],
+    "validation": [
+      20,
+      21,
+      22
+    ],
+    "calibration": [
+      23,
+      24
+    ],
+    "test": [
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "student": "unchanged CNN128,CE9;cached AAM control;identical initialization and 72-record minibatches",
+  "teachers": "frozen real ACC/Audio encoders, independent128 projections;concat versus elementwise cross interaction;equal parameters and400updates",
+  "loss": "CE+.1*balanced relation cosine-matrix MSE+.1*crossword sameID attraction/sameword differentID hinge .2",
+  "relation_masks": "same identity different word;different identity same word, equal mean weights",
+  "backend": "unchanged K3/5/10/20 cosine and K20RBF validation grid,calibration threshold",
+  "selection": "checkpoint every25steps by heldout validation macro HTER,worst error,AUC,CE;all weights fixed before final",
+  "controls": [
+    "CE",
+    "AAM",
+    "concat relation",
+    "interaction relation",
+    "full",
+    "ACC stability",
+    "full shuffled withinidentity differentword",
+    "selfrelation+stability"
+  ],
+  "deployment": "ACC student only;no Audio/projection/fusion at enrollment or test",
+  "limitations": [
+    "known9identities;not identity-disjoint open set",
+    "historical single-session heldout words reused exploratorily",
+    "tail missing and word-order metadata assumption inherited",
+    "teacher pretraining adds resources;students have equal400updates",
+    "pair geometry observations dependent",
+    "shuffle tests exact recording/content matching;equal scores can still indicate identity-level transfer"
+  ]
+}

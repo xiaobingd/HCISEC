@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "routes_checked": 20,
+  "independent_pairwise_auc": true,
+  "per_attacker_counts_verified": true
+}

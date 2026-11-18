@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "routes": 675,
+  "checks": [
+    "exact E0/E1 previous control replay",
+    "6candidate validation selection and checkpoint audit",
+    "withinidentity crossword derangement",
+    "shuffle fixed E2 lambda/m",
+    "student-only deployment embeddings and enrollment scalers",
+    "joint and lowFARcalibration",
+    "all score/AUC/counts8sources",
+    "gradient toStudent andprojection notteacher;zero beyondmargin"
+  ]
+}

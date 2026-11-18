@@ -1,0 +1,74 @@
+{
+  "esmb": {
+    "dataset": "ESMB",
+    "owners": [
+      "0001",
+      "0002"
+    ],
+    "unknown": [
+      "0003",
+      "0004"
+    ],
+    "scales_bc_mel": [
+      [
+        -125.67154190063476,
+        -53.50696716308593
+      ],
+      [
+        -94.99455307006836,
+        -32.080919647216795
+      ]
+    ],
+    "shared_normalization": "Pooled GAN TRAIN of both owners only, one scale/domain/dataset applied to every user and role, never per-user.",
+    "clip_fractions": {
+      "x_db": {
+        "0001": 0.022446614583333333,
+        "0004": 0.013277994791666666,
+        "0002": 0.017671875,
+        "0003": 0.016647135416666667
+      },
+      "y_db": {
+        "0001": 0.025248697916666667,
+        "0004": 0.012109375,
+        "0002": 0.01423828125,
+        "0003": 0.016227213541666667
+      }
+    }
+  },
+  "vibravox": {
+    "dataset": "VibraVox",
+    "owners": [
+      "2BuQxDAGnW",
+      "95rDQfTOk7"
+    ],
+    "unknown": [
+      "R7Mh-VA0Gl",
+      "Rsw6ppioe6"
+    ],
+    "scales_bc_mel": [
+      [
+        -109.82339012145997,
+        -58.721326675415035
+      ],
+      [
+        -113.4066471862793,
+        -54.337949867248525
+      ]
+    ],
+    "shared_normalization": "Pooled GAN TRAIN of both owners only, one scale/domain/dataset applied to every user and role, never per-user.",
+    "clip_fractions": {
+      "x_db": {
+        "95rDQfTOk7": 0.018783854166666666,
+        "2BuQxDAGnW": 0.019875,
+        "R7Mh-VA0Gl": 0.025699869791666666,
+        "Rsw6ppioe6": 0.0261328125
+      },
+      "y_db": {
+        "95rDQfTOk7": 0.030403645833333333,
+        "2BuQxDAGnW": 0.010291666666666666,
+        "R7Mh-VA0Gl": 0.05568359375,
+        "Rsw6ppioe6": 0.09052734375
+      }
+    }
+  }
+}

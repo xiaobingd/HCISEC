@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-28",
+  "purpose": "Canonical baseline documentation; no model retraining",
+  "source_snapshots": {
+    "data.py": {
+      "sha256": "6f331a7eb55d680bb039fcf4f1bbbba231f715ef0025d7b0a2c11299adc9b799",
+      "bytes": 27553
+    },
+    "data_loader.py": {
+      "sha256": "d9e8b1b303505ff8966989bcded76db699ffe7e0a99641609a19ec46bbbdeb86",
+      "bytes": 6879
+    },
+    "loss_new.py": {
+      "sha256": "2f163a0acc85337aea2a838140c4899acf2cf6ebd856a82e44e80a5734ee0a7a",
+      "bytes": 1960
+    },
+    "model_drop.py": {
+      "sha256": "35b7adbcbb6e37c03f79cfb25afa21525ac64a2c945cd8f1b81d05b7899602d0",
+      "bytes": 40062
+    },
+    "modelb.py": {
+      "sha256": "f94cc1eece8fd45301ddb7b38f8116576b86d87078fdce53da182ddd5372c379",
+      "bytes": 33615
+    },
+    "tools.py": {
+      "sha256": "36e7fd7fd138542657322fe42e2da6f2ef604af273bade70cfd8ee25537f318f",
+      "bytes": 1682
+    },
+    "train_cyclegan_user1.py": {
+      "sha256": "6efce10901a02dc364fce67794d977cec35bc71453e7f8ac4490d91910581844",
+      "bytes": 43615
+    },
+    "trainb_target_150.py": {
+      "sha256": "c1219d3f785fbaa1cbb47f76edae794af0f8d3c337b7c53816e5dd37ba46ba4e",
+      "bytes": 10617
+    },
+    "trainb_target_binary.py": {
+      "sha256": "e723e14623c024b9e6e642a08179cc8ca37f5f0eab4fcee7adfea684fd540288",
+      "bytes": 8274
+    }
+  },
+  "checkpoint_recorded_sha256": {
+    "1": "c75f564213676c5fd9dc813327c528b0f9a544b4c3afbdbf2ddd3862130cb611d",
+    "4": "4033a03ffa49641e49a70253bc846f1d5a97c7c050ff2be1ac20d6feb257f3a29",
+    "5": "76a21f4e3406bdb5fb1d18ee63556bcadb75574a960ca5ad85eedf67683b90d2b"
+  },
+  "checkpoint_hash_status": "Copied from archived cyclegan.sha256 files; not recomputed in this documentation action",
+  "feature_dimensions": {
+    "shallow": 128,
+    "bottleneck_mean_std": 512,
+    "cycle_difference_shallow": 128,
+    "signed_difference_stats": 4,
+    "total": 772
+  },
+  "routes": {
+    "B0_trainb_original": {
+      "readout": "772→512→512 fusion; 512→256→128 projector; binary 512→1",
+      "loss": "9-user SupCon + target BCE",
+      "split": "old random 150 upstream / remainder auth, original 60/10/20/10 percent auth roles"
+    },
+    "B1_full772_rbf_current": {
+      "readout": "StandardScaler(train)→divide sqrt(772)→balanced RBF SVC",
+      "C_grid": [
+        1,
+        10,
+        100
+      ],
+      "gamma_grid": [
+        "scale",
+        0.1
+      ],
+      "split": "150 upstream / auth60fit30cal_remainder_test",
+      "cv": "5 word-grouped folds only inside auth_train",
+      "threshold": "min(abs(FAR-FRR),HTER) on calibration only",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "baseline_deterministic_seed_runs": 1
+    }
+  },
+  "checkpoint_paths": {
+    "1": "/autodl-fs/data/auth_full_pipeline_150x150_20260924/user1/cyclegan/model/checkpoint_epoch_200.pth",
+    "4": "/autodl-fs/data/auth_full_pipeline_150x150_20260924/user4/cyclegan/model/checkpoint_epoch_200.pth",
+    "5": "/autodl-fs/data/auth_full_pipeline_150x150_20260924/user5/cyclegan/model/checkpoint_epoch_200.pth"
+  },
+  "known_gaps": [
+    "Original raw waveform to historical npy normalization/STFT parameters not proven from current checkpoint; preserve source arrays and hashes rather than invent these parameters.",
+    "Final words not fully held out; exploratory repeated final set.",
+    "Checkpoint recorded hashes are historical attestations, not newly recomputed hashes."
+  ]
+}

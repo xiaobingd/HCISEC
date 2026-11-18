@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "targets": [
+    4,
+    5
+  ],
+  "routes": 6,
+  "checks": [
+    "upstream checkpoints replay",
+    "training OOF forward selection replay",
+    "personal parameter choice OOF replay",
+    "calibration threshold",
+    "saved teachers and classifiers final inference replay",
+    "AUC and acceptance counts all8attackers",
+    "unchanged G checkpoint SHA"
+  ]
+}

@@ -1,0 +1,1932 @@
+{
+  "status": "PASS",
+  "targets": 9,
+  "routes": 27,
+  "results": {
+    "1": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.056265984654731455,
+          "frr": 0.04,
+          "tar": 0.96,
+          "hter": 0.04813299232736573,
+          "auc": 0.9908951406649616,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.5485908211284898,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 2
+            },
+            "4": {
+              "n": 47,
+              "accepted": 12
+            },
+            "5": {
+              "n": 50,
+              "accepted": 1
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 2
+            },
+            "8": {
+              "n": 49,
+              "accepted": 2
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.056265984654731455,
+          "frr": 0.04,
+          "tar": 0.96,
+          "hter": 0.04813299232736573,
+          "auc": 0.9908951406649616,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.5485908211284898,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 2
+            },
+            "4": {
+              "n": 47,
+              "accepted": 12
+            },
+            "5": {
+              "n": 50,
+              "accepted": 1
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 2
+            },
+            "8": {
+              "n": 49,
+              "accepted": 2
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.056265984654731455,
+          "frr": 0.04,
+          "tar": 0.96,
+          "hter": 0.04813299232736573,
+          "auc": 0.9908951406649616,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.5485908211284898,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 2
+            },
+            "4": {
+              "n": 47,
+              "accepted": 12
+            },
+            "5": {
+              "n": 50,
+              "accepted": 1
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 2
+            },
+            "8": {
+              "n": 49,
+              "accepted": 2
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": -3.8481554985046387,
+        "far": 0.04859335038363171,
+        "frr": 0.06,
+        "hter": 0.05429667519181586,
+        "auc": 0.9881841432225064,
+        "attack_by_user": {
+          "user2": {
+            "accepted": 0,
+            "n": 50,
+            "far": 0.0,
+            "mean_logit": -12.022909164428711
+          },
+          "user3": {
+            "accepted": 3,
+            "n": 47,
+            "far": 0.06382978723404255,
+            "mean_logit": -11.27794075012207
+          },
+          "user4": {
+            "accepted": 7,
+            "n": 47,
+            "far": 0.14893617021276595,
+            "mean_logit": -8.799356460571289
+          },
+          "user5": {
+            "accepted": 1,
+            "n": 50,
+            "far": 0.02,
+            "mean_logit": -12.190834999084473
+          },
+          "user6": {
+            "accepted": 1,
+            "n": 50,
+            "far": 0.02,
+            "mean_logit": -11.51672077178955
+          },
+          "user7": {
+            "accepted": 3,
+            "n": 49,
+            "far": 0.061224489795918366,
+            "mean_logit": -12.134349822998047
+          },
+          "user8": {
+            "accepted": 2,
+            "n": 49,
+            "far": 0.04081632653061224,
+            "mean_logit": -11.51972770690918
+          },
+          "user9": {
+            "accepted": 2,
+            "n": 49,
+            "far": 0.04081632653061224,
+            "mean_logit": -11.833988189697266
+          }
+        },
+        "genuine_n": 50,
+        "genuine_accepted": 47,
+        "attack_n": 391,
+        "attack_accepted": 19
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.13824382529128343
+    },
+    "2": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.5012787723785166,
+          "frr": 0.16,
+          "tar": 0.84,
+          "hter": 0.3306393861892583,
+          "auc": 0.7349360613810741,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.23456123902631332,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 7
+            },
+            "3": {
+              "n": 47,
+              "accepted": 24
+            },
+            "4": {
+              "n": 47,
+              "accepted": 28
+            },
+            "5": {
+              "n": 50,
+              "accepted": 19
+            },
+            "6": {
+              "n": 50,
+              "accepted": 31
+            },
+            "7": {
+              "n": 49,
+              "accepted": 25
+            },
+            "8": {
+              "n": 49,
+              "accepted": 32
+            },
+            "9": {
+              "n": 49,
+              "accepted": 30
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.4680306905370844,
+          "frr": 0.16,
+          "tar": 0.84,
+          "hter": 0.3140153452685422,
+          "auc": 0.7574936061381075,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.20776027355975807,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 25
+            },
+            "4": {
+              "n": 47,
+              "accepted": 14
+            },
+            "5": {
+              "n": 50,
+              "accepted": 18
+            },
+            "6": {
+              "n": 50,
+              "accepted": 35
+            },
+            "7": {
+              "n": 49,
+              "accepted": 25
+            },
+            "8": {
+              "n": 49,
+              "accepted": 36
+            },
+            "9": {
+              "n": 49,
+              "accepted": 29
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "robust_acc": 0.5
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.4680306905370844,
+          "frr": 0.16,
+          "tar": 0.84,
+          "hter": 0.3140153452685422,
+          "auc": 0.7574936061381075,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.20776027355975807,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "3": {
+              "n": 47,
+              "accepted": 25
+            },
+            "4": {
+              "n": 47,
+              "accepted": 14
+            },
+            "5": {
+              "n": 50,
+              "accepted": 18
+            },
+            "6": {
+              "n": 50,
+              "accepted": 35
+            },
+            "7": {
+              "n": 49,
+              "accepted": 25
+            },
+            "8": {
+              "n": 49,
+              "accepted": 36
+            },
+            "9": {
+              "n": 49,
+              "accepted": 29
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "robust_acc": 0.5
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": 11.753072738647461,
+        "far": 0.5217391304347826,
+        "frr": 0.16,
+        "hter": 0.3408695652173913,
+        "auc": 0.719693094629156,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 11,
+            "n": 50,
+            "far": 0.22,
+            "mean_logit": 6.4979023933410645
+          },
+          "user3": {
+            "accepted": 28,
+            "n": 47,
+            "far": 0.5957446808510638,
+            "mean_logit": 13.198808670043945
+          },
+          "user4": {
+            "accepted": 26,
+            "n": 47,
+            "far": 0.5531914893617021,
+            "mean_logit": 12.559276580810547
+          },
+          "user5": {
+            "accepted": 25,
+            "n": 50,
+            "far": 0.5,
+            "mean_logit": 12.442397117614746
+          },
+          "user6": {
+            "accepted": 36,
+            "n": 50,
+            "far": 0.72,
+            "mean_logit": 15.27208137512207
+          },
+          "user7": {
+            "accepted": 27,
+            "n": 49,
+            "far": 0.5510204081632653,
+            "mean_logit": 12.283473014831543
+          },
+          "user8": {
+            "accepted": 27,
+            "n": 49,
+            "far": 0.5510204081632653,
+            "mean_logit": 14.094300270080566
+          },
+          "user9": {
+            "accepted": 24,
+            "n": 49,
+            "far": 0.4897959183673469,
+            "mean_logit": 12.744690895080566
+          }
+        },
+        "genuine_n": 50,
+        "genuine_accepted": 42,
+        "attack_n": 391,
+        "attack_accepted": 204
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.15431388292927295
+    },
+    "3": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.3096446700507614,
+          "frr": 0.46808510638297873,
+          "tar": 0.5319148936170213,
+          "hter": 0.38886488821687004,
+          "auc": 0.6803110487093638,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.19274473410169066,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 15
+            },
+            "4": {
+              "n": 47,
+              "accepted": 4
+            },
+            "5": {
+              "n": 50,
+              "accepted": 25
+            },
+            "6": {
+              "n": 50,
+              "accepted": 18
+            },
+            "7": {
+              "n": 49,
+              "accepted": 19
+            },
+            "8": {
+              "n": 49,
+              "accepted": 18
+            },
+            "9": {
+              "n": 49,
+              "accepted": 23
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.3730964467005076,
+          "frr": 0.40425531914893614,
+          "tar": 0.5957446808510638,
+          "hter": 0.3886758829247219,
+          "auc": 0.7010476293336213,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.4852951200647215,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 23
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "5": {
+              "n": 50,
+              "accepted": 28
+            },
+            "6": {
+              "n": 50,
+              "accepted": 25
+            },
+            "7": {
+              "n": 49,
+              "accepted": 14
+            },
+            "8": {
+              "n": 49,
+              "accepted": 22
+            },
+            "9": {
+              "n": 49,
+              "accepted": 33
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "old_audio": 0.5
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.3730964467005076,
+          "frr": 0.40425531914893614,
+          "tar": 0.5957446808510638,
+          "hter": 0.3886758829247219,
+          "auc": 0.7010476293336213,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.4852951200647215,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 23
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "5": {
+              "n": 50,
+              "accepted": 28
+            },
+            "6": {
+              "n": 50,
+              "accepted": 25
+            },
+            "7": {
+              "n": 49,
+              "accepted": 14
+            },
+            "8": {
+              "n": 49,
+              "accepted": 22
+            },
+            "9": {
+              "n": 49,
+              "accepted": 33
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "old_audio": 0.5
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": 2.868504047393799,
+        "far": 0.49746192893401014,
+        "frr": 0.5531914893617021,
+        "hter": 0.5253267091478562,
+        "auc": 0.5053461496921914,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 22,
+            "n": 50,
+            "far": 0.44,
+            "mean_logit": 1.5709689855575562
+          },
+          "user2": {
+            "accepted": 28,
+            "n": 50,
+            "far": 0.56,
+            "mean_logit": 3.518362045288086
+          },
+          "user4": {
+            "accepted": 14,
+            "n": 47,
+            "far": 0.2978723404255319,
+            "mean_logit": 0.8381821513175964
+          },
+          "user5": {
+            "accepted": 30,
+            "n": 50,
+            "far": 0.6,
+            "mean_logit": 4.0560173988342285
+          },
+          "user6": {
+            "accepted": 24,
+            "n": 50,
+            "far": 0.48,
+            "mean_logit": 2.8879048824310303
+          },
+          "user7": {
+            "accepted": 28,
+            "n": 49,
+            "far": 0.5714285714285714,
+            "mean_logit": 3.0841732025146484
+          },
+          "user8": {
+            "accepted": 26,
+            "n": 49,
+            "far": 0.5306122448979592,
+            "mean_logit": 2.192650079727173
+          },
+          "user9": {
+            "accepted": 24,
+            "n": 49,
+            "far": 0.4897959183673469,
+            "mean_logit": 3.6042656898498535
+          }
+        },
+        "genuine_n": 47,
+        "genuine_accepted": 21,
+        "attack_n": 394,
+        "attack_accepted": 196
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.15272233204450458
+    },
+    "4": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.19796954314720813,
+          "frr": 0.2765957446808511,
+          "tar": 0.7234042553191489,
+          "hter": 0.2372826439140296,
+          "auc": 0.8522518630521654,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.32382232577032705,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 17
+            },
+            "2": {
+              "n": 50,
+              "accepted": 18
+            },
+            "3": {
+              "n": 47,
+              "accepted": 11
+            },
+            "5": {
+              "n": 50,
+              "accepted": 1
+            },
+            "6": {
+              "n": 50,
+              "accepted": 10
+            },
+            "7": {
+              "n": 49,
+              "accepted": 14
+            },
+            "8": {
+              "n": 49,
+              "accepted": 5
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.1065989847715736,
+          "frr": 0.2127659574468085,
+          "tar": 0.7872340425531915,
+          "hter": 0.15968247110919107,
+          "auc": 0.9256399179177017,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 1.8818409161939866,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 19
+            },
+            "2": {
+              "n": 50,
+              "accepted": 4
+            },
+            "3": {
+              "n": 47,
+              "accepted": 1
+            },
+            "5": {
+              "n": 50,
+              "accepted": 1
+            },
+            "6": {
+              "n": 50,
+              "accepted": 5
+            },
+            "7": {
+              "n": 49,
+              "accepted": 10
+            },
+            "8": {
+              "n": 49,
+              "accepted": 2
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "raw": 1.0
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.09390862944162437,
+          "frr": 0.2553191489361702,
+          "tar": 0.7446808510638299,
+          "hter": 0.17461388918889728,
+          "auc": 0.9231558483637542,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 2.3518348489759884,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 20
+            },
+            "2": {
+              "n": 50,
+              "accepted": 2
+            },
+            "3": {
+              "n": 47,
+              "accepted": 0
+            },
+            "5": {
+              "n": 50,
+              "accepted": 0
+            },
+            "6": {
+              "n": 50,
+              "accepted": 5
+            },
+            "7": {
+              "n": 49,
+              "accepted": 10
+            },
+            "8": {
+              "n": 49,
+              "accepted": 0
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "raw": 1.0,
+            "diff_latent": 1.0
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": 32.416770935058594,
+        "far": 0.33248730964467005,
+        "frr": 0.2765957446808511,
+        "hter": 0.30454152716276056,
+        "auc": 0.7896101090830543,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 20,
+            "n": 50,
+            "far": 0.4,
+            "mean_logit": 32.0464973449707
+          },
+          "user2": {
+            "accepted": 16,
+            "n": 50,
+            "far": 0.32,
+            "mean_logit": 30.240280151367188
+          },
+          "user3": {
+            "accepted": 18,
+            "n": 47,
+            "far": 0.3829787234042553,
+            "mean_logit": 31.26040267944336
+          },
+          "user5": {
+            "accepted": 12,
+            "n": 50,
+            "far": 0.24,
+            "mean_logit": 28.273908615112305
+          },
+          "user6": {
+            "accepted": 21,
+            "n": 50,
+            "far": 0.42,
+            "mean_logit": 30.485013961791992
+          },
+          "user7": {
+            "accepted": 20,
+            "n": 49,
+            "far": 0.40816326530612246,
+            "mean_logit": 30.92938804626465
+          },
+          "user8": {
+            "accepted": 12,
+            "n": 49,
+            "far": 0.24489795918367346,
+            "mean_logit": 29.265426635742188
+          },
+          "user9": {
+            "accepted": 12,
+            "n": 49,
+            "far": 0.24489795918367346,
+            "mean_logit": 27.737356185913086
+          }
+        },
+        "genuine_n": 47,
+        "genuine_accepted": 34,
+        "attack_n": 394,
+        "attack_accepted": 131
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.1502620824612677
+    },
+    "5": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.21994884910485935,
+          "frr": 0.2,
+          "tar": 0.8,
+          "hter": 0.20997442455242968,
+          "auc": 0.8474680306905371,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.46236384697601335,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "2": {
+              "n": 50,
+              "accepted": 4
+            },
+            "3": {
+              "n": 47,
+              "accepted": 16
+            },
+            "4": {
+              "n": 47,
+              "accepted": 3
+            },
+            "6": {
+              "n": 50,
+              "accepted": 7
+            },
+            "7": {
+              "n": 49,
+              "accepted": 14
+            },
+            "8": {
+              "n": 49,
+              "accepted": 21
+            },
+            "9": {
+              "n": 49,
+              "accepted": 20
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.17391304347826086,
+          "frr": 0.38,
+          "tar": 0.62,
+          "hter": 0.27695652173913043,
+          "auc": 0.8450639386189259,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 1.023679138791108,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 4
+            },
+            "3": {
+              "n": 47,
+              "accepted": 13
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "6": {
+              "n": 50,
+              "accepted": 6
+            },
+            "7": {
+              "n": 49,
+              "accepted": 12
+            },
+            "8": {
+              "n": 49,
+              "accepted": 14
+            },
+            "9": {
+              "n": 49,
+              "accepted": 17
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "robust_acc": 1.0
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.17391304347826086,
+          "frr": 0.38,
+          "tar": 0.62,
+          "hter": 0.27695652173913043,
+          "auc": 0.8450639386189259,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 1.023679138791108,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 4
+            },
+            "3": {
+              "n": 47,
+              "accepted": 13
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "6": {
+              "n": 50,
+              "accepted": 6
+            },
+            "7": {
+              "n": 49,
+              "accepted": 12
+            },
+            "8": {
+              "n": 49,
+              "accepted": 14
+            },
+            "9": {
+              "n": 49,
+              "accepted": 17
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "robust_acc": 1.0
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": -13.45196533203125,
+        "far": 0.2608695652173913,
+        "frr": 0.42,
+        "hter": 0.34043478260869564,
+        "auc": 0.6975959079283887,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 2,
+            "n": 50,
+            "far": 0.04,
+            "mean_logit": -21.998441696166992
+          },
+          "user2": {
+            "accepted": 12,
+            "n": 50,
+            "far": 0.24,
+            "mean_logit": -16.575050354003906
+          },
+          "user3": {
+            "accepted": 17,
+            "n": 47,
+            "far": 0.3617021276595745,
+            "mean_logit": -15.609766960144043
+          },
+          "user4": {
+            "accepted": 9,
+            "n": 47,
+            "far": 0.19148936170212766,
+            "mean_logit": -17.795106887817383
+          },
+          "user6": {
+            "accepted": 11,
+            "n": 50,
+            "far": 0.22,
+            "mean_logit": -16.315736770629883
+          },
+          "user7": {
+            "accepted": 12,
+            "n": 49,
+            "far": 0.24489795918367346,
+            "mean_logit": -15.116780281066895
+          },
+          "user8": {
+            "accepted": 22,
+            "n": 49,
+            "far": 0.4489795918367347,
+            "mean_logit": -14.264147758483887
+          },
+          "user9": {
+            "accepted": 17,
+            "n": 49,
+            "far": 0.3469387755102041,
+            "mean_logit": -14.873555183410645
+          }
+        },
+        "genuine_n": 50,
+        "genuine_accepted": 29,
+        "attack_n": 391,
+        "attack_accepted": 102
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.14154133456759155
+    },
+    "6": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.4143222506393862,
+          "frr": 0.46,
+          "tar": 0.54,
+          "hter": 0.4371611253196931,
+          "auc": 0.6132480818414323,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.11484618489881622,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 8
+            },
+            "2": {
+              "n": 50,
+              "accepted": 35
+            },
+            "3": {
+              "n": 47,
+              "accepted": 21
+            },
+            "4": {
+              "n": 47,
+              "accepted": 25
+            },
+            "5": {
+              "n": 50,
+              "accepted": 12
+            },
+            "7": {
+              "n": 49,
+              "accepted": 26
+            },
+            "8": {
+              "n": 49,
+              "accepted": 17
+            },
+            "9": {
+              "n": 49,
+              "accepted": 18
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.4782608695652174,
+          "frr": 0.18,
+          "tar": 0.8200000000000001,
+          "hter": 0.3291304347826087,
+          "auc": 0.6968286445012788,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.03506033427528555,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "2": {
+              "n": 50,
+              "accepted": 40
+            },
+            "3": {
+              "n": 47,
+              "accepted": 30
+            },
+            "4": {
+              "n": 47,
+              "accepted": 21
+            },
+            "5": {
+              "n": 50,
+              "accepted": 17
+            },
+            "7": {
+              "n": 49,
+              "accepted": 23
+            },
+            "8": {
+              "n": 49,
+              "accepted": 26
+            },
+            "9": {
+              "n": 49,
+              "accepted": 29
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "old_acc": 0.5
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.4782608695652174,
+          "frr": 0.18,
+          "tar": 0.8200000000000001,
+          "hter": 0.3291304347826087,
+          "auc": 0.6968286445012788,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.03506033427528555,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 1
+            },
+            "2": {
+              "n": 50,
+              "accepted": 40
+            },
+            "3": {
+              "n": 47,
+              "accepted": 30
+            },
+            "4": {
+              "n": 47,
+              "accepted": 21
+            },
+            "5": {
+              "n": 50,
+              "accepted": 17
+            },
+            "7": {
+              "n": 49,
+              "accepted": 23
+            },
+            "8": {
+              "n": 49,
+              "accepted": 26
+            },
+            "9": {
+              "n": 49,
+              "accepted": 29
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "identity_acc": 1.0,
+            "old_acc": 0.5
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": -6.5137834548950195,
+        "far": 0.4680306905370844,
+        "frr": 0.44,
+        "hter": 0.4540153452685422,
+        "auc": 0.570690537084399,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 7,
+            "n": 50,
+            "far": 0.14,
+            "mean_logit": -13.459931373596191
+          },
+          "user2": {
+            "accepted": 31,
+            "n": 50,
+            "far": 0.62,
+            "mean_logit": -4.79287052154541
+          },
+          "user3": {
+            "accepted": 23,
+            "n": 47,
+            "far": 0.48936170212765956,
+            "mean_logit": -5.594345569610596
+          },
+          "user4": {
+            "accepted": 17,
+            "n": 47,
+            "far": 0.3617021276595745,
+            "mean_logit": -7.883706092834473
+          },
+          "user5": {
+            "accepted": 22,
+            "n": 50,
+            "far": 0.44,
+            "mean_logit": -7.385648727416992
+          },
+          "user7": {
+            "accepted": 28,
+            "n": 49,
+            "far": 0.5714285714285714,
+            "mean_logit": -5.269754409790039
+          },
+          "user8": {
+            "accepted": 30,
+            "n": 49,
+            "far": 0.6122448979591837,
+            "mean_logit": -5.319577693939209
+          },
+          "user9": {
+            "accepted": 25,
+            "n": 49,
+            "far": 0.5102040816326531,
+            "mean_logit": -6.413403034210205
+          }
+        },
+        "genuine_n": 50,
+        "genuine_accepted": 28,
+        "attack_n": 391,
+        "attack_accepted": 183
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.14643108705058694
+    },
+    "7": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.3239795918367347,
+          "frr": 0.5714285714285714,
+          "tar": 0.4285714285714286,
+          "hter": 0.4477040816326531,
+          "auc": 0.6248958767180341,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.12600276159767712,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 13
+            },
+            "2": {
+              "n": 50,
+              "accepted": 13
+            },
+            "3": {
+              "n": 47,
+              "accepted": 14
+            },
+            "4": {
+              "n": 47,
+              "accepted": 22
+            },
+            "5": {
+              "n": 50,
+              "accepted": 19
+            },
+            "6": {
+              "n": 50,
+              "accepted": 20
+            },
+            "8": {
+              "n": 49,
+              "accepted": 15
+            },
+            "9": {
+              "n": 49,
+              "accepted": 11
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.16071428571428573,
+          "frr": 0.6326530612244898,
+          "tar": 0.36734693877551017,
+          "hter": 0.39668367346938777,
+          "auc": 0.6656601416076634,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.8856528893812666,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 4
+            },
+            "2": {
+              "n": 50,
+              "accepted": 3
+            },
+            "3": {
+              "n": 47,
+              "accepted": 8
+            },
+            "4": {
+              "n": 47,
+              "accepted": 18
+            },
+            "5": {
+              "n": 50,
+              "accepted": 14
+            },
+            "6": {
+              "n": 50,
+              "accepted": 7
+            },
+            "8": {
+              "n": 49,
+              "accepted": 7
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "old_acc": 0.5
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.16071428571428573,
+          "frr": 0.6326530612244898,
+          "tar": 0.36734693877551017,
+          "hter": 0.39668367346938777,
+          "auc": 0.6656601416076634,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.8856528893812666,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 4
+            },
+            "2": {
+              "n": 50,
+              "accepted": 3
+            },
+            "3": {
+              "n": 47,
+              "accepted": 8
+            },
+            "4": {
+              "n": 47,
+              "accepted": 18
+            },
+            "5": {
+              "n": 50,
+              "accepted": 14
+            },
+            "6": {
+              "n": 50,
+              "accepted": 7
+            },
+            "8": {
+              "n": 49,
+              "accepted": 7
+            },
+            "9": {
+              "n": 49,
+              "accepted": 2
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "raw": 1.0,
+            "old_acc": 0.5
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": -12.14747428894043,
+        "far": 0.32653061224489793,
+        "frr": 0.5102040816326531,
+        "hter": 0.41836734693877553,
+        "auc": 0.6525926697209496,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 9,
+            "n": 50,
+            "far": 0.18,
+            "mean_logit": -19.6807918548584
+          },
+          "user2": {
+            "accepted": 18,
+            "n": 50,
+            "far": 0.36,
+            "mean_logit": -14.18175983428955
+          },
+          "user3": {
+            "accepted": 13,
+            "n": 47,
+            "far": 0.2765957446808511,
+            "mean_logit": -15.023882865905762
+          },
+          "user4": {
+            "accepted": 16,
+            "n": 47,
+            "far": 0.3404255319148936,
+            "mean_logit": -14.662059783935547
+          },
+          "user5": {
+            "accepted": 23,
+            "n": 50,
+            "far": 0.46,
+            "mean_logit": -12.689352035522461
+          },
+          "user6": {
+            "accepted": 17,
+            "n": 50,
+            "far": 0.34,
+            "mean_logit": -15.147309303283691
+          },
+          "user8": {
+            "accepted": 20,
+            "n": 49,
+            "far": 0.40816326530612246,
+            "mean_logit": -13.0316162109375
+          },
+          "user9": {
+            "accepted": 12,
+            "n": 49,
+            "far": 0.24489795918367346,
+            "mean_logit": -15.521697044372559
+          }
+        },
+        "genuine_n": 49,
+        "genuine_accepted": 24,
+        "attack_n": 392,
+        "attack_accepted": 128
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.1532416552072391
+    },
+    "8": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.37244897959183676,
+          "frr": 0.3469387755102041,
+          "tar": 0.653061224489796,
+          "hter": 0.35969387755102045,
+          "auc": 0.6889837567680133,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.3414254449932529,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 4
+            },
+            "2": {
+              "n": 50,
+              "accepted": 18
+            },
+            "3": {
+              "n": 47,
+              "accepted": 23
+            },
+            "4": {
+              "n": 47,
+              "accepted": 5
+            },
+            "5": {
+              "n": 50,
+              "accepted": 29
+            },
+            "6": {
+              "n": 50,
+              "accepted": 17
+            },
+            "7": {
+              "n": 49,
+              "accepted": 18
+            },
+            "9": {
+              "n": 49,
+              "accepted": 32
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.375,
+          "frr": 0.2857142857142857,
+          "tar": 0.7142857142857143,
+          "hter": 0.33035714285714285,
+          "auc": 0.70423781757601,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.3917828419128791,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 2
+            },
+            "2": {
+              "n": 50,
+              "accepted": 17
+            },
+            "3": {
+              "n": 47,
+              "accepted": 20
+            },
+            "4": {
+              "n": 47,
+              "accepted": 5
+            },
+            "5": {
+              "n": 50,
+              "accepted": 33
+            },
+            "6": {
+              "n": 50,
+              "accepted": 16
+            },
+            "7": {
+              "n": 49,
+              "accepted": 21
+            },
+            "9": {
+              "n": 49,
+              "accepted": 33
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "robust_acc": 0.25
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.3392857142857143,
+          "frr": 0.3469387755102041,
+          "tar": 0.653061224489796,
+          "hter": 0.3431122448979592,
+          "auc": 0.7087151187005414,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.9425794696055321,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 19
+            },
+            "3": {
+              "n": 47,
+              "accepted": 18
+            },
+            "4": {
+              "n": 47,
+              "accepted": 5
+            },
+            "5": {
+              "n": 50,
+              "accepted": 24
+            },
+            "6": {
+              "n": 50,
+              "accepted": 17
+            },
+            "7": {
+              "n": 49,
+              "accepted": 17
+            },
+            "9": {
+              "n": 49,
+              "accepted": 33
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "robust_acc": 0.25,
+            "diff_bundle": 1.0
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": 8.604923248291016,
+        "far": 0.4770408163265306,
+        "frr": 0.32653061224489793,
+        "hter": 0.4017857142857143,
+        "auc": 0.640045814244065,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 0,
+            "n": 50,
+            "far": 0.0,
+            "mean_logit": -1.8883918523788452
+          },
+          "user2": {
+            "accepted": 24,
+            "n": 50,
+            "far": 0.48,
+            "mean_logit": 8.379842758178711
+          },
+          "user3": {
+            "accepted": 25,
+            "n": 47,
+            "far": 0.5319148936170213,
+            "mean_logit": 9.63084602355957
+          },
+          "user4": {
+            "accepted": 19,
+            "n": 47,
+            "far": 0.40425531914893614,
+            "mean_logit": 6.190594673156738
+          },
+          "user5": {
+            "accepted": 35,
+            "n": 50,
+            "far": 0.7,
+            "mean_logit": 11.177452087402344
+          },
+          "user6": {
+            "accepted": 29,
+            "n": 50,
+            "far": 0.58,
+            "mean_logit": 9.429577827453613
+          },
+          "user7": {
+            "accepted": 24,
+            "n": 49,
+            "far": 0.4897959183673469,
+            "mean_logit": 8.29117488861084
+          },
+          "user9": {
+            "accepted": 31,
+            "n": 49,
+            "far": 0.6326530612244898,
+            "mean_logit": 10.71248722076416
+          }
+        },
+        "genuine_n": 49,
+        "genuine_accepted": 33,
+        "attack_n": 392,
+        "attack_accepted": 187
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.15454898565076292
+    },
+    "9": {
+      "routes": {
+        "baseline_rbf": {
+          "far": 0.29846938775510207,
+          "frr": 0.42857142857142855,
+          "tar": 0.5714285714285714,
+          "hter": 0.3635204081632653,
+          "auc": 0.7032486463973344,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 0.602194101560062,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 15
+            },
+            "3": {
+              "n": 47,
+              "accepted": 18
+            },
+            "4": {
+              "n": 47,
+              "accepted": 2
+            },
+            "5": {
+              "n": 50,
+              "accepted": 26
+            },
+            "6": {
+              "n": 50,
+              "accepted": 10
+            },
+            "7": {
+              "n": 49,
+              "accepted": 20
+            },
+            "8": {
+              "n": 49,
+              "accepted": 26
+            }
+          },
+          "weights": {
+            "base": 1.0
+          }
+        },
+        "auto_without_diffusion": {
+          "far": 0.2780612244897959,
+          "frr": 0.3877551020408163,
+          "tar": 0.6122448979591837,
+          "hter": 0.33290816326530615,
+          "auc": 0.7510412328196585,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 1.0084183237719335,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 15
+            },
+            "3": {
+              "n": 47,
+              "accepted": 24
+            },
+            "4": {
+              "n": 47,
+              "accepted": 0
+            },
+            "5": {
+              "n": 50,
+              "accepted": 24
+            },
+            "6": {
+              "n": 50,
+              "accepted": 7
+            },
+            "7": {
+              "n": 49,
+              "accepted": 10
+            },
+            "8": {
+              "n": 49,
+              "accepted": 29
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "robust_acc": 0.5,
+            "raw": 0.25
+          }
+        },
+        "auto_with_diffusion": {
+          "far": 0.3622448979591837,
+          "frr": 0.3469387755102041,
+          "tar": 0.653061224489796,
+          "hter": 0.35459183673469385,
+          "auc": 0.7303206997084548,
+          "genuine_n": 49,
+          "impostor_n": 392,
+          "threshold": 1.319595186884388,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 24
+            },
+            "3": {
+              "n": 47,
+              "accepted": 26
+            },
+            "4": {
+              "n": 47,
+              "accepted": 1
+            },
+            "5": {
+              "n": 50,
+              "accepted": 25
+            },
+            "6": {
+              "n": 50,
+              "accepted": 17
+            },
+            "7": {
+              "n": 49,
+              "accepted": 16
+            },
+            "8": {
+              "n": 49,
+              "accepted": 33
+            }
+          },
+          "weights": {
+            "base": 1.0,
+            "robust_acc": 0.5,
+            "raw": 0.25,
+            "diff_latent": 1.0
+          }
+        }
+      },
+      "trainb_reference": {
+        "threshold": -8.763166427612305,
+        "far": 0.3086734693877551,
+        "frr": 0.4897959183673469,
+        "hter": 0.399234693877551,
+        "auc": 0.6412432319866722,
+        "attack_by_user": {
+          "bo": {
+            "accepted": 1,
+            "n": 50,
+            "far": 0.02,
+            "mean_logit": -18.028072357177734
+          },
+          "user2": {
+            "accepted": 17,
+            "n": 50,
+            "far": 0.34,
+            "mean_logit": -10.37309455871582
+          },
+          "user3": {
+            "accepted": 20,
+            "n": 47,
+            "far": 0.425531914893617,
+            "mean_logit": -9.193171501159668
+          },
+          "user4": {
+            "accepted": 3,
+            "n": 47,
+            "far": 0.06382978723404255,
+            "mean_logit": -14.446626663208008
+          },
+          "user5": {
+            "accepted": 25,
+            "n": 50,
+            "far": 0.5,
+            "mean_logit": -9.690004348754883
+          },
+          "user6": {
+            "accepted": 19,
+            "n": 50,
+            "far": 0.38,
+            "mean_logit": -10.354409217834473
+          },
+          "user7": {
+            "accepted": 14,
+            "n": 49,
+            "far": 0.2857142857142857,
+            "mean_logit": -10.722297668457031
+          },
+          "user8": {
+            "accepted": 22,
+            "n": 49,
+            "far": 0.4489795918367347,
+            "mean_logit": -8.376715660095215
+          }
+        },
+        "genuine_n": 49,
+        "genuine_accepted": 25,
+        "attack_n": 392,
+        "attack_accepted": 121
+      },
+      "diffusion_selected_epoch": 50,
+      "diffusion_validation": 0.14943228976335377
+    }
+  },
+  "macro": {
+    "baseline_rbf": {
+      "tar": 0.6720422637139962,
+      "far": 0.29936978101768186,
+      "auc": 0.7484709451358795,
+      "hter": 0.3136637586518428
+    },
+    "auto_without_diffusion": {
+      "tar": 0.7018729193805182,
+      "far": 0.27443794776793967,
+      "auc": 0.7819897854642144,
+      "hter": 0.28628251419371076
+    },
+    "auto_with_diffusion": {
+      "tar": 0.6948772132966662,
+      "far": 0.2784133958151789,
+      "auc": 0.7799089741819232,
+      "hter": 0.29176809125925635
+    }
+  },
+  "scope": "Closed-set strict mixed-content groups under inferred ordering; same-session historical exploratory data",
+  "selection": "Original training-only nested word CV and optional score fusion, no final-based fallback"
+}

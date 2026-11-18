@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": [
+    "reuse U4 same-word fitted branch models",
+    "recomputed independent balanced thresholds",
+    "recomputed all route scores AUC and 8 attacker counts",
+    "exact replay prior baseline and selected fused route",
+    "raw weight independently selected from training-only OOF"
+  ]
+}

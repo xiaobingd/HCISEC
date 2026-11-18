@@ -1,0 +1,196 @@
+{
+  "users": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "queue_order": [
+    1,
+    4,
+    5,
+    2,
+    6,
+    7,
+    9,
+    3,
+    8
+  ],
+  "groups": {
+    "gan_fit": [
+      0,
+      1,
+      2,
+      3,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "gan_val": [
+      4,
+      18,
+      19
+    ],
+    "auth_train": [
+      5,
+      6,
+      20,
+      21,
+      22
+    ],
+    "model_validation": [
+      7,
+      23,
+      24
+    ],
+    "calibration": [
+      8,
+      25
+    ],
+    "test": [
+      9,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "seed": 42,
+  "gan_epochs": 200,
+  "auth_epochs": 100,
+  "features": 772,
+  "head": "Original trainb fusion512/SupCon128 plus target BCE",
+  "preprocessing": "Original arrays unchanged, float32 crop [:,:80,:80] identically for everyone; no per-user filtering/scaling",
+  "scope": "Closed-set known negative identities; disjoint content groups at all upstream/authentication stages under mixed10/20 mapping",
+  "limitations": [
+    "Content grouping inferred from real Audio and user-confirmed two-part composition, not per-record transcript verification",
+    "Missing rows assumed at tail per user; actual source names/phase not individually verified",
+    "Existing spectrogram normalization provenance unknown; no new all-data normalizer fitted",
+    "Same-session, historical recordings reused; newly initialized weights do not make data blind"
+  ],
+  "all_sources_retained": true,
+  "no_teacher": true,
+  "no_diffusion": true,
+  "counts": {
+    "1": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 50
+    },
+    "2": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 50
+    },
+    "3": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 47
+    },
+    "4": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 47
+    },
+    "5": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 50
+    },
+    "6": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 50
+    },
+    "7": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 49
+    },
+    "8": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 49
+    },
+    "9": {
+      "gan_fit": 120,
+      "gan_val": 30,
+      "auth_train": 50,
+      "model_validation": 30,
+      "calibration": 20,
+      "test": 49
+    }
+  },
+  "source_sha256": {
+    "1": {
+      "acc": "5186065ead1c455736b06cd8b0914d288a74113cf2319ea8f1b71e61d5ba7def",
+      "audio": "85091862fac7be718279ef8ef88a2cce4c3754b799b828b27c8d70de1efb4fc1"
+    },
+    "2": {
+      "acc": "e718b8b1a4ea0a6921e38392bcf8d36a44595b185027875360b8fa68e1b81a69",
+      "audio": "b2a9c4f1b988b99fb9b75b2552994b9f75bc4fedb2c55f527303cd46cb3249f2"
+    },
+    "3": {
+      "acc": "4cf02113074788543b580eaef2bda8bb5767ac51257e034d2a1a8ff6e6f14fff",
+      "audio": "356bd12ee9b811496445a27a3fd93dee02196efc74d41445e311650ee7a4dd4d"
+    },
+    "4": {
+      "acc": "f0ad098087f76b08c10c26c5877ffb781fb37e808550b02bac84dd944c773769",
+      "audio": "0e9f2fe3aae77190f6c1f82a1c4342b521b5b608c8cebc02ec6514a775a3dda7"
+    },
+    "5": {
+      "acc": "14b221ea7c336f1ccd3b8c346df9bae6e6ca3e4470d187d5f35a9dabf660623a",
+      "audio": "f64bafa320e3816361e1b8687318feaadac5f98e0de0e1334302b82ffece9cd7"
+    },
+    "6": {
+      "acc": "5908c8a52cacccd5723e4b09fef2ab5d2128513e81cc134a32ad9c8581f08262",
+      "audio": "dc22540dde9ae903c5903999b81ebffe1ce5babc3ec6a736b26170aedb9b44cf"
+    },
+    "7": {
+      "acc": "4de7817ea902f3c1b07a0c87f42a33aa7632b48c76ff1e10f93c5573cbb70e18",
+      "audio": "46c60c2959b1c84147d64f71ec0e25cc38884a20137c79e487eac8c0759473c6"
+    },
+    "8": {
+      "acc": "92301d16783c73896475bebb19cf85e02e5d50b7b713defa1500eae8addef6ba",
+      "audio": "3e17b54c47b2da5f1fedddcb4beff96a3df9a29c2ed26ffff98bce9b99759e9d"
+    },
+    "9": {
+      "acc": "852f8b527d4e220bd3d40dd0fde7682ffe5712a6cce4b2e318ab8605836773aa",
+      "audio": "36b31b821733eb4a61af7ad7904d068178f6b7fb94f119b9f349d4d219c3cb9c"
+    }
+  }
+}

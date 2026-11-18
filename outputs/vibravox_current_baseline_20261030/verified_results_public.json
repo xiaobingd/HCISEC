@@ -1,0 +1,858 @@
+{
+  "2BuQxDAGnW": {
+    "owner": "2BuQxDAGnW",
+    "known_negative": "95rDQfTOk7",
+    "unseen": [
+      "R7Mh-VA0Gl",
+      "Rsw6ppioe6"
+    ],
+    "routes": {
+      "full772": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.47614326171985083
+        },
+        "unseen": {
+          "far": 0.125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0625,
+          "auc": 0.9817708333333334,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.47614326171985083
+        },
+        "all_attackers": {
+          "far": 0.10714285714285714,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.05357142857142857,
+          "auc": 0.984375,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.47614326171985083
+        },
+        "weights": {
+          "full772": 1.0
+        },
+        "threshold": 0.47614326171985083,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 6
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "raw320": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.6589010291016852
+        },
+        "unseen": {
+          "far": 0.020833333333333332,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.010416666666666666,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.6589010291016852
+        },
+        "all_attackers": {
+          "far": 0.017857142857142856,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.008928571428571428,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.6589010291016852
+        },
+        "weights": {
+          "raw320": 1.0
+        },
+        "threshold": 0.6589010291016852,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 1
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "input_encoder640": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.42784504877232155
+        },
+        "unseen": {
+          "far": 0.10416666666666667,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.052083333333333336,
+          "auc": 0.9765625,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.42784504877232155
+        },
+        "all_attackers": {
+          "far": 0.08928571428571429,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.044642857142857144,
+          "auc": 0.9799107142857143,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.42784504877232155
+        },
+        "weights": {
+          "input_encoder640": 1.0
+        },
+        "threshold": 0.42784504877232155,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 5
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "cycle_encoder640": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.5,
+          "tar": 0.5,
+          "hter": 0.25,
+          "auc": 0.953125,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.3893145174835593
+        },
+        "unseen": {
+          "far": 0.1875,
+          "frr": 0.5,
+          "tar": 0.5,
+          "hter": 0.34375,
+          "auc": 0.8098958333333334,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.3893145174835593
+        },
+        "all_attackers": {
+          "far": 0.16071428571428573,
+          "frr": 0.5,
+          "tar": 0.5,
+          "hter": 0.33035714285714285,
+          "auc": 0.8303571428571429,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.3893145174835593
+        },
+        "weights": {
+          "cycle_encoder640": 1.0
+        },
+        "threshold": 0.3893145174835593,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 9
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "acc": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.47614326171985083
+        },
+        "unseen": {
+          "far": 0.125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0625,
+          "auc": 0.9817708333333334,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.47614326171985083
+        },
+        "all_attackers": {
+          "far": 0.10714285714285714,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.05357142857142857,
+          "auc": 0.984375,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.47614326171985083
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.0,
+          "teacher_audio": 0.0
+        },
+        "threshold": 0.47614326171985083,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 6
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "audio": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.47614326171985083
+        },
+        "unseen": {
+          "far": 0.125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0625,
+          "auc": 0.9817708333333334,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.47614326171985083
+        },
+        "all_attackers": {
+          "far": 0.10714285714285714,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.05357142857142857,
+          "auc": 0.984375,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.47614326171985083
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.0,
+          "teacher_audio": 0.0
+        },
+        "threshold": 0.47614326171985083,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 6
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "both": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.47614326171985083
+        },
+        "unseen": {
+          "far": 0.125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0625,
+          "auc": 0.9817708333333334,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.47614326171985083
+        },
+        "all_attackers": {
+          "far": 0.10714285714285714,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.05357142857142857,
+          "auc": 0.984375,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.47614326171985083
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.0,
+          "teacher_audio": 0.0
+        },
+        "threshold": 0.47614326171985083,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 6
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      },
+      "fixed_acc_audio": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.47614326171985083
+        },
+        "unseen": {
+          "far": 0.125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0625,
+          "auc": 0.9817708333333334,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.47614326171985083
+        },
+        "all_attackers": {
+          "far": 0.10714285714285714,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.05357142857142857,
+          "auc": 0.984375,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.47614326171985083
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.0,
+          "teacher_audio": 0.0
+        },
+        "threshold": 0.47614326171985083,
+        "per_attacker": {
+          "95rDQfTOk7": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 6
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 0
+          }
+        }
+      }
+    },
+    "teacher_selected_step": 600,
+    "checkpoint_sha256": "4543cdaf7ae4eff13c0db3757bb0c61626f1a3240a7ccfa75a41cdadf86ebc89",
+    "input_sha256": "4b5d52e75a25ad92bb1d5baaa9647f993faf81035bcb7441bd1c45921b06a7b2",
+    "fit_positive": 10,
+    "fit_negative": 10,
+    "final_positive": 8
+  },
+  "95rDQfTOk7": {
+    "owner": "95rDQfTOk7",
+    "known_negative": "2BuQxDAGnW",
+    "unseen": [
+      "R7Mh-VA0Gl",
+      "Rsw6ppioe6"
+    ],
+    "routes": {
+      "full772": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.024024906383032507
+        },
+        "unseen": {
+          "far": 0.6666666666666666,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.3333333333333333,
+          "auc": 0.6953125,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.024024906383032507
+        },
+        "all_attackers": {
+          "far": 0.5714285714285714,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.2857142857142857,
+          "auc": 0.7388392857142857,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.024024906383032507
+        },
+        "weights": {
+          "full772": 1.0
+        },
+        "threshold": 0.024024906383032507,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 8
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 24
+          }
+        }
+      },
+      "raw320": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.125,
+          "tar": 0.875,
+          "hter": 0.0625,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.38595324009457527
+        },
+        "unseen": {
+          "far": 0.041666666666666664,
+          "frr": 0.125,
+          "tar": 0.875,
+          "hter": 0.08333333333333333,
+          "auc": 0.9869791666666666,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.38595324009457527
+        },
+        "all_attackers": {
+          "far": 0.03571428571428571,
+          "frr": 0.125,
+          "tar": 0.875,
+          "hter": 0.08035714285714285,
+          "auc": 0.9888392857142857,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.38595324009457527
+        },
+        "weights": {
+          "raw320": 1.0
+        },
+        "threshold": 0.38595324009457527,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 0
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 2
+          }
+        }
+      },
+      "input_encoder640": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.23548782639900864
+        },
+        "unseen": {
+          "far": 0.3958333333333333,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.19791666666666666,
+          "auc": 0.9765625,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.23548782639900864
+        },
+        "all_attackers": {
+          "far": 0.3392857142857143,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.16964285714285715,
+          "auc": 0.9799107142857143,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.23548782639900864
+        },
+        "weights": {
+          "input_encoder640": 1.0
+        },
+        "threshold": 0.23548782639900864,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 1
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 18
+          }
+        }
+      },
+      "cycle_encoder640": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.13833230489456927
+        },
+        "unseen": {
+          "far": 0.14583333333333334,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.07291666666666667,
+          "auc": 0.9557291666666666,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.13833230489456927
+        },
+        "all_attackers": {
+          "far": 0.125,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0625,
+          "auc": 0.9620535714285715,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.13833230489456927
+        },
+        "weights": {
+          "cycle_encoder640": 1.0
+        },
+        "threshold": 0.13833230489456927,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 0
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 7
+          }
+        }
+      },
+      "acc": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.2729774968881077
+        },
+        "unseen": {
+          "far": 0.5416666666666666,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.2708333333333333,
+          "auc": 0.7213541666666666,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.2729774968881077
+        },
+        "all_attackers": {
+          "far": 0.4642857142857143,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.23214285714285715,
+          "auc": 0.7611607142857143,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.2729774968881077
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.25,
+          "teacher_audio": 0.0
+        },
+        "threshold": 0.2729774968881077,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 2
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 24
+          }
+        }
+      },
+      "audio": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.1022809463958396
+        },
+        "unseen": {
+          "far": 0.6041666666666666,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.3020833333333333,
+          "auc": 0.7994791666666666,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.1022809463958396
+        },
+        "all_attackers": {
+          "far": 0.5178571428571429,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.25892857142857145,
+          "auc": 0.8281249999999999,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.1022809463958396
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.0,
+          "teacher_audio": 0.25
+        },
+        "threshold": 0.1022809463958396,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 5
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 24
+          }
+        }
+      },
+      "both": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.1022809463958396
+        },
+        "unseen": {
+          "far": 0.6041666666666666,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.3020833333333333,
+          "auc": 0.7994791666666666,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.1022809463958396
+        },
+        "all_attackers": {
+          "far": 0.5178571428571429,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.25892857142857145,
+          "auc": 0.8281249999999999,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.1022809463958396
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.0,
+          "teacher_audio": 0.25
+        },
+        "threshold": 0.1022809463958396,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 5
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 24
+          }
+        }
+      },
+      "fixed_acc_audio": {
+        "known": {
+          "far": 0.0,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.0,
+          "auc": 1.0,
+          "genuine_n": 8,
+          "impostor_n": 8,
+          "threshold": 0.2729774968881077
+        },
+        "unseen": {
+          "far": 0.5416666666666666,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.2708333333333333,
+          "auc": 0.7213541666666666,
+          "genuine_n": 8,
+          "impostor_n": 48,
+          "threshold": 0.2729774968881077
+        },
+        "all_attackers": {
+          "far": 0.4642857142857143,
+          "frr": 0.0,
+          "tar": 1.0,
+          "hter": 0.23214285714285715,
+          "auc": 0.7611607142857143,
+          "genuine_n": 8,
+          "impostor_n": 56,
+          "threshold": 0.2729774968881077
+        },
+        "weights": {
+          "full772": 1.0,
+          "raw320": 0.0,
+          "teacher_acc": 0.25,
+          "teacher_audio": 0.0
+        },
+        "threshold": 0.2729774968881077,
+        "per_attacker": {
+          "2BuQxDAGnW": {
+            "n": 8,
+            "accepted": 0
+          },
+          "R7Mh-VA0Gl": {
+            "n": 24,
+            "accepted": 2
+          },
+          "Rsw6ppioe6": {
+            "n": 24,
+            "accepted": 24
+          }
+        }
+      }
+    },
+    "teacher_selected_step": 600,
+    "checkpoint_sha256": "2b9ac36bbca9ad4210571837f0e7fdb2a7ae5bd8ebd9531d555a2ac88866ae73",
+    "input_sha256": "4b5d52e75a25ad92bb1d5baaa9647f993faf81035bcb7441bd1c45921b06a7b2",
+    "fit_positive": 10,
+    "fit_negative": 10,
+    "final_positive": 8
+  }
+}

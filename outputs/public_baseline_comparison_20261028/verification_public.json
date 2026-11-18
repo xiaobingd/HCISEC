@@ -1,0 +1,95 @@
+{
+  "verified_routes": [
+    [
+      "esmb",
+      "0001",
+      "raw320"
+    ],
+    [
+      "esmb",
+      "0001",
+      "input_encoder640"
+    ],
+    [
+      "esmb",
+      "0001",
+      "cycle_encoder640"
+    ],
+    [
+      "esmb",
+      "0001",
+      "full772"
+    ],
+    [
+      "esmb",
+      "0002",
+      "raw320"
+    ],
+    [
+      "esmb",
+      "0002",
+      "input_encoder640"
+    ],
+    [
+      "esmb",
+      "0002",
+      "cycle_encoder640"
+    ],
+    [
+      "esmb",
+      "0002",
+      "full772"
+    ],
+    [
+      "vibravox",
+      "2BuQxDAGnW",
+      "raw320"
+    ],
+    [
+      "vibravox",
+      "2BuQxDAGnW",
+      "input_encoder640"
+    ],
+    [
+      "vibravox",
+      "2BuQxDAGnW",
+      "cycle_encoder640"
+    ],
+    [
+      "vibravox",
+      "2BuQxDAGnW",
+      "full772"
+    ],
+    [
+      "vibravox",
+      "95rDQfTOk7",
+      "raw320"
+    ],
+    [
+      "vibravox",
+      "95rDQfTOk7",
+      "input_encoder640"
+    ],
+    [
+      "vibravox",
+      "95rDQfTOk7",
+      "cycle_encoder640"
+    ],
+    [
+      "vibravox",
+      "95rDQfTOk7",
+      "full772"
+    ]
+  ],
+  "n_routes": 16,
+  "checks": [
+    "checkpoint SHA",
+    "unit role disjointness",
+    "unknown excluded",
+    "locked threshold",
+    "genuine and attacker counts",
+    "FAR/TAR/HTER",
+    "known and unknown AUC"
+  ],
+  "status": "PASS"
+}

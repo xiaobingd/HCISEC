@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "routes": 675,
+  "checks": [
+    "all roles and content groups disjoint",
+    "independent enrollment not encoder training",
+    "candidate checkpoint/lambda/T selection replay",
+    "teacher development-only CE and authentication checks",
+    "student and backend ACC-only inference",
+    "RBF180 enrollment rows only and hyperparameter refit",
+    "joint and lowFARcalibration thresholds",
+    "all final score/AUC/acceptance and8attack source counts",
+    "frozen teacher KD gradient isolation"
+  ]
+}

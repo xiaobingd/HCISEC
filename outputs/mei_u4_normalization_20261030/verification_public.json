@@ -1,0 +1,1 @@
+{"status":"PASS","routes":540,"checks":["train-only global scalar statistics","validation checkpoint audit","student-only score replay","enrollment scaler","calibration thresholds","AUC FAR FRR all8attacks"]}

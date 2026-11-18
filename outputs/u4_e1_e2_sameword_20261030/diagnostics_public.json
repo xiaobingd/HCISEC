@@ -1,0 +1,273 @@
+{
+  "protocol": "same 15 words; U4 target; heldout two words; all8 attackers retained",
+  "e1": {
+    "paired_same_recording": {
+      "n": 270,
+      "zero_lag_mean": 0.0414804176641872,
+      "zero_lag_median": 0.034876609457086205,
+      "best_pm5_mean": 0.23006141173525912,
+      "best_pm5_median_frames": 0,
+      "best_lag_frames": {
+        "-5": 79,
+        "-4": 12,
+        "-3": 14,
+        "-2": 14,
+        "-1": 5,
+        "0": 14,
+        "1": 8,
+        "2": 11,
+        "3": 10,
+        "4": 17,
+        "5": 86
+      }
+    },
+    "same_identity_different_word": {
+      "n": 270,
+      "zero_lag_mean": 0.029298158569861246,
+      "zero_lag_median": 0.025851753944738015,
+      "best_pm5_mean": 0.21014102021444775,
+      "best_pm5_median_frames": -1,
+      "best_lag_frames": {
+        "-5": 94,
+        "-4": 14,
+        "-3": 6,
+        "-2": 13,
+        "-1": 16,
+        "0": 10,
+        "1": 7,
+        "2": 12,
+        "3": 12,
+        "4": 9,
+        "5": 77
+      }
+    },
+    "different_identity_same_word": {
+      "n": 270,
+      "zero_lag_mean": 0.040390036364676855,
+      "zero_lag_median": 0.03481429819983649,
+      "best_pm5_mean": 0.21047495693055407,
+      "best_pm5_median_frames": -1,
+      "best_lag_frames": {
+        "-5": 80,
+        "-4": 11,
+        "-3": 16,
+        "-2": 21,
+        "-1": 15,
+        "0": 11,
+        "1": 10,
+        "2": 10,
+        "3": 10,
+        "4": 13,
+        "5": 73
+      }
+    }
+  },
+  "e2": {
+    "raw": {
+      "same_identity_same_word": {
+        "n": 135,
+        "mean_similarity": 0.1617275252300142,
+        "median_similarity": 0.1066385880112648,
+        "q10": -0.08503884971141815,
+        "q90": 0.534320211410523
+      },
+      "same_identity_cross_word": {
+        "n": 3780,
+        "mean_similarity": 0.11946513199303395,
+        "median_similarity": 0.09508579224348068,
+        "q10": -0.21773429065942762,
+        "q90": 0.4992572695016861
+      },
+      "different_identity_same_word": {
+        "n": 2160,
+        "mean_similarity": 0.001190064540905614,
+        "median_similarity": 0.008546579629182816,
+        "q10": -0.32141839861869814,
+        "q90": 0.3002179145812989
+      },
+      "different_identity_cross_word": {
+        "n": 30240,
+        "mean_similarity": -0.006605786262328428,
+        "median_similarity": -0.005263670347630978,
+        "q10": -0.3353712499141693,
+        "q90": 0.30775481462478665
+      },
+      "cross_word_genuine_vs_same_word_impostor_auc": 0.6109658534195571
+    },
+    "old_audio": {
+      "same_identity_same_word": {
+        "n": 135,
+        "mean_similarity": -0.004780974573697205,
+        "median_similarity": 0.021189482882618904,
+        "q10": -0.7452759861946106,
+        "q90": 0.6780919671058655
+      },
+      "same_identity_cross_word": {
+        "n": 3780,
+        "mean_similarity": 0.020038592412349614,
+        "median_similarity": 0.04253185726702213,
+        "q10": -0.6925063610076904,
+        "q90": 0.696454894542694
+      },
+      "different_identity_same_word": {
+        "n": 2160,
+        "mean_similarity": 0.00879745917948269,
+        "median_similarity": 0.014724815264344215,
+        "q10": -0.709123182296753,
+        "q90": 0.6877865672111512
+      },
+      "different_identity_cross_word": {
+        "n": 30240,
+        "mean_similarity": 0.005390439960241224,
+        "median_similarity": 0.011602978222072124,
+        "q10": -0.7083655714988708,
+        "q90": 0.6949801921844483
+      },
+      "cross_word_genuine_vs_same_word_impostor_auc": 0.5069351361943955
+    },
+    "identity_acc": {
+      "same_identity_same_word": {
+        "n": 135,
+        "mean_similarity": 0.4769706134856851,
+        "median_similarity": 0.5594936609268188,
+        "q10": -0.09680553078651427,
+        "q90": 0.9362001657485962
+      },
+      "same_identity_cross_word": {
+        "n": 3780,
+        "mean_similarity": 0.4729881196010937,
+        "median_similarity": 0.5586854219436646,
+        "q10": -0.11252496168017384,
+        "q90": 0.9343851268291473
+      },
+      "different_identity_same_word": {
+        "n": 2160,
+        "mean_similarity": 0.038658097303414254,
+        "median_similarity": 0.17298272997140884,
+        "q10": -0.7956977486610413,
+        "q90": 0.7548293769359593
+      },
+      "different_identity_cross_word": {
+        "n": 30240,
+        "mean_similarity": 0.03951445931523161,
+        "median_similarity": 0.17998013645410538,
+        "q10": -0.7962693750858307,
+        "q90": 0.7448876678943636
+      },
+      "cross_word_genuine_vs_same_word_impostor_auc": 0.7146751910640801
+    },
+    "base": {
+      "same_identity_same_word": {
+        "n": 135,
+        "mean_similarity": 0.09165099965822365,
+        "median_similarity": 0.06867314130067825,
+        "q10": -0.07727279663085937,
+        "q90": 0.3092565655708313
+      },
+      "same_identity_cross_word": {
+        "n": 3780,
+        "mean_similarity": 0.07338286085093083,
+        "median_similarity": 0.05931858904659748,
+        "q10": -0.1210051819682121,
+        "q90": 0.28370520770549773
+      },
+      "different_identity_same_word": {
+        "n": 2160,
+        "mean_similarity": -0.00022251609738709198,
+        "median_similarity": 0.0063205137848854065,
+        "q10": -0.1974473878741264,
+        "q90": 0.1869363695383073
+      },
+      "different_identity_cross_word": {
+        "n": 30240,
+        "mean_similarity": -0.0038036006518013506,
+        "median_similarity": 0.0012877853587269783,
+        "q10": -0.2039901942014694,
+        "q90": 0.18558095991611492
+      },
+      "cross_word_genuine_vs_same_word_impostor_auc": 0.6136778610621203
+    },
+    "raw+old_audio": {
+      "same_identity_same_word": {
+        "n": 135,
+        "mean_similarity": 0.07847327465812365,
+        "median_similarity": 0.07833252847194672,
+        "q10": -0.28821481466293336,
+        "q90": 0.4298940241336823
+      },
+      "same_identity_cross_word": {
+        "n": 3780,
+        "mean_similarity": 0.06975186382390795,
+        "median_similarity": 0.07101693004369736,
+        "q10": -0.32589566409587856,
+        "q90": 0.45118440985679625
+      },
+      "different_identity_same_word": {
+        "n": 2160,
+        "mean_similarity": 0.004993763090439003,
+        "median_similarity": 0.0017824890092015266,
+        "q10": -0.37710228860378264,
+        "q90": 0.3845774114131928
+      },
+      "different_identity_cross_word": {
+        "n": 30240,
+        "mean_similarity": -0.000607673484261829,
+        "median_similarity": 0.0019910642877221107,
+        "q10": -0.3804119676351547,
+        "q90": 0.3738181084394455
+      },
+      "cross_word_genuine_vs_same_word_impostor_auc": 0.559729938271605
+    },
+    "base+raw": {
+      "same_identity_same_word": {
+        "n": 135,
+        "mean_similarity": 0.1266892706423446,
+        "median_similarity": 0.08800044655799866,
+        "q10": -0.05925268679857254,
+        "q90": 0.3925775408744812
+      },
+      "same_identity_cross_word": {
+        "n": 3780,
+        "mean_similarity": 0.09642399984141492,
+        "median_similarity": 0.07440100610256195,
+        "q10": -0.12987517118453978,
+        "q90": 0.36733408868312817
+      },
+      "different_identity_same_word": {
+        "n": 2160,
+        "mean_similarity": 0.00048377397233033897,
+        "median_similarity": 0.0097992904484272,
+        "q10": -0.21921350210905075,
+        "q90": 0.2023135513067246
+      },
+      "different_identity_cross_word": {
+        "n": 30240,
+        "mean_similarity": -0.005204693837930834,
+        "median_similarity": -0.002410900080576539,
+        "q10": -0.22238998413085936,
+        "q90": 0.20498448908329012
+      },
+      "cross_word_genuine_vs_same_word_impostor_auc": 0.6293430335097001
+    }
+  },
+  "stored_spectrum_clip_audit": {
+    "ACC": {
+      "n": 6048000,
+      "fraction_at_or_beyond_0p99": 0.02324371693121693,
+      "fraction_exact_edges": 0.02012450396825397
+    },
+    "Audio": {
+      "n": 6048000,
+      "fraction_at_or_beyond_0p99": 0.023307208994708995,
+      "fraction_exact_edges": 0.020546296296296295
+    }
+  },
+  "physical_sync_waveforms_available": false,
+  "wear_sessions_available": false,
+  "limits": [
+    "ACC/Audio are stored normalized log-spectrum arrays; cannot recover physical waveform coherence, cross-spectrum phase, absolute band-energy transfer, or impulse response",
+    "envelope correlations are across 80 transformed time bins, have no physical frequency calibration and are descriptive",
+    "same user different word is a content-identity proxy; no independent rewear/session split",
+    "pairwise distances are descriptive and dependent; this is not a calibrated authentication result"
+  ]
+}

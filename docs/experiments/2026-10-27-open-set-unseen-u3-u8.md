@@ -1,3 +1,5 @@
+> 2026-10-29词序审计更正：用户确认前100条是10个英文数字、后段是20个VR指令；Audio诊断支持前段10项/后段20项轮流重复。本报告原row//10分词不能证明真实跨词隔离，旧数值保留但跨词解释撤回。详见2026-10-29-mei-audio-order-audit.md。
+
 # Open-set attacks from unseen users U3 and U8
 
 Date: 2026-10-27
@@ -12,7 +14,7 @@ Date: 2026-10-27
 
 ## Positive-only cosine prototype results
 
-Cells are `TAR / open-set FAR / AUC`. TAR/FAR are measured on the 57 genuine and 114 unseen-identity queries.
+Cells are `TAR / open-set FAR / AUC`. TAR/FAR are measured on the 57 genuine and 114 unseen-identity queries. FAR is also listed by target below as the primary operating-point result.
 
 | Target | ACC teacher feature | G, λ=0 | G, λ=0.25 | G, λ=0.5 |
 |---|---:|---:|---:|---:|

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "routes": 6,
+  "checks": [
+    "base772 and raw320 cache versus protocol inputs",
+    "train-only 450sample branchscalers",
+    "trainingOOF-only raw weight replay",
+    "calibration jointHTER thresholds",
+    "recomputed frozen branch scores counts AUC all8attackers"
+  ]
+}

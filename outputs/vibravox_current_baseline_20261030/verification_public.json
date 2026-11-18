@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "owners": [
+    "2BuQxDAGnW",
+    "95rDQfTOk7"
+  ],
+  "routes": 16,
+  "checks": [
+    "wholeutterance role and exact text isolation",
+    "normalization known GANtrain only",
+    "teacher upstream units no auth/unseen",
+    "teacher checkpoint selection replay",
+    "60outer RBF refits OOF replay",
+    "fusion candidates and fixedACC anchor replay",
+    "joint calibration threshold brute force",
+    "known/unseen separate pairwiseAUC acceptancecounts",
+    "canonical full772 regenerated from original G/F",
+    "generatedAudio teacher provenance from ACC only"
+  ]
+}

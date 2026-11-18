@@ -1,0 +1,655 @@
+{
+  "status": "PASS",
+  "targets": 3,
+  "seed": 42,
+  "results": {
+    "4": {
+      "target": 4,
+      "routes": {
+        "frozen": {
+          "far": 0.24873096446700507,
+          "frr": 0.2553191489361702,
+          "tar": 0.7446808510638299,
+          "hter": 0.25202505670158765,
+          "auc": 0.8458796846311696,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.3619574308395386,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 31
+            },
+            "2": {
+              "n": 50,
+              "accepted": 13
+            },
+            "3": {
+              "n": 47,
+              "accepted": 9
+            },
+            "5": {
+              "n": 50,
+              "accepted": 6
+            },
+            "6": {
+              "n": 50,
+              "accepted": 12
+            },
+            "7": {
+              "n": 49,
+              "accepted": 16
+            },
+            "8": {
+              "n": 49,
+              "accepted": 7
+            },
+            "9": {
+              "n": 49,
+              "accepted": 4
+            }
+          },
+          "selected_upstream_step": 100,
+          "selected_auth_step": 125,
+          "gradient_audit": null,
+          "encoder_delta_l2": 0.0,
+          "upstream_conversion": {
+            "paired_l1": 0.2970481514930725,
+            "cycle_l1": 0.1900508552789688,
+            "paired_corr": 0.6587419509887695,
+            "output_drift_l1": 5.3429882740374524e-08
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.2554314434528351,
+            "cycle_l1": 0.22475570440292358,
+            "paired_corr": 0.7506005167961121
+          },
+          "genuine_accepted": 35,
+          "attack_accepted": 98,
+          "target_crossword_intra_cos": 0.3511497676372528,
+          "target_sameword_inter_cos": 0.1190778911113739,
+          "identity_cosine_gap": 0.2320718765258789
+        },
+        "conversion_only": {
+          "far": 0.25380710659898476,
+          "frr": 0.23404255319148937,
+          "tar": 0.7659574468085106,
+          "hter": 0.24392482989523706,
+          "auc": 0.8447456528782805,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.3690844774246216,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 33
+            },
+            "2": {
+              "n": 50,
+              "accepted": 12
+            },
+            "3": {
+              "n": 47,
+              "accepted": 9
+            },
+            "5": {
+              "n": 50,
+              "accepted": 7
+            },
+            "6": {
+              "n": 50,
+              "accepted": 11
+            },
+            "7": {
+              "n": 49,
+              "accepted": 17
+            },
+            "8": {
+              "n": 49,
+              "accepted": 7
+            },
+            "9": {
+              "n": 49,
+              "accepted": 4
+            }
+          },
+          "selected_upstream_step": 100,
+          "selected_auth_step": 125,
+          "gradient_audit": {
+            "identity_encoder_grad_norm": 0.0,
+            "identity_generated_audio_grad_norm": 0.0
+          },
+          "encoder_delta_l2": 0.06195931400736238,
+          "upstream_conversion": {
+            "paired_l1": 0.29737401008605957,
+            "cycle_l1": 0.18968385457992554,
+            "paired_corr": 0.6590530872344971,
+            "output_drift_l1": 0.00558555219322443
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.2551741302013397,
+            "cycle_l1": 0.22430305182933807,
+            "paired_corr": 0.7515150308609009
+          },
+          "genuine_accepted": 36,
+          "attack_accepted": 100,
+          "target_crossword_intra_cos": 0.34540894627571106,
+          "target_sameword_inter_cos": 0.11542798578739166,
+          "identity_cosine_gap": 0.2299809604883194
+        },
+        "identity_conversion": {
+          "far": 0.2436548223350254,
+          "frr": 0.2553191489361702,
+          "tar": 0.7446808510638299,
+          "hter": 0.2494869856355978,
+          "auc": 0.8606760989307701,
+          "genuine_n": 47,
+          "impostor_n": 394,
+          "threshold": 0.3146985173225403,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 30
+            },
+            "2": {
+              "n": 50,
+              "accepted": 11
+            },
+            "3": {
+              "n": 47,
+              "accepted": 12
+            },
+            "5": {
+              "n": 50,
+              "accepted": 7
+            },
+            "6": {
+              "n": 50,
+              "accepted": 11
+            },
+            "7": {
+              "n": 49,
+              "accepted": 14
+            },
+            "8": {
+              "n": 49,
+              "accepted": 6
+            },
+            "9": {
+              "n": 49,
+              "accepted": 5
+            }
+          },
+          "selected_upstream_step": 100,
+          "selected_auth_step": 200,
+          "gradient_audit": {
+            "identity_encoder_grad_norm": 273.7923139609248,
+            "identity_generated_audio_grad_norm": 13.885898518824389
+          },
+          "encoder_delta_l2": 0.07016734007985333,
+          "upstream_conversion": {
+            "paired_l1": 0.29726165533065796,
+            "cycle_l1": 0.18910323083400726,
+            "paired_corr": 0.6595442295074463,
+            "output_drift_l1": 0.0142264598980546
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.2551230788230896,
+            "cycle_l1": 0.22440893948078156,
+            "paired_corr": 0.7516658306121826
+          },
+          "genuine_accepted": 35,
+          "attack_accepted": 96,
+          "target_crossword_intra_cos": 0.2914050817489624,
+          "target_sameword_inter_cos": -0.009149166755378246,
+          "identity_cosine_gap": 0.3005542457103729
+        }
+      },
+      "baseline_upstream_conversion": {
+        "paired_l1": 0.2970481514930725,
+        "cycle_l1": 0.1900508552789688,
+        "paired_corr": 0.6587420105934143
+      }
+    },
+    "1": {
+      "target": 1,
+      "routes": {
+        "frozen": {
+          "far": 0.03324808184143223,
+          "frr": 0.04,
+          "tar": 0.96,
+          "hter": 0.03662404092071611,
+          "auc": 0.9923785166240409,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.7459079027175903,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 0
+            },
+            "3": {
+              "n": 47,
+              "accepted": 1
+            },
+            "4": {
+              "n": 47,
+              "accepted": 10
+            },
+            "5": {
+              "n": 50,
+              "accepted": 0
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 1
+            },
+            "8": {
+              "n": 49,
+              "accepted": 1
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "selected_upstream_step": 100,
+          "selected_auth_step": 25,
+          "gradient_audit": null,
+          "encoder_delta_l2": 0.0,
+          "upstream_conversion": {
+            "paired_l1": 0.32447683811187744,
+            "cycle_l1": 0.17723612487316132,
+            "paired_corr": 0.6762491464614868,
+            "output_drift_l1": 5.634279887090088e-08
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.29654550552368164,
+            "cycle_l1": 0.17502489686012268,
+            "paired_corr": 0.7430320978164673
+          },
+          "genuine_accepted": 48,
+          "attack_accepted": 13,
+          "target_crossword_intra_cos": 0.8061976432800293,
+          "target_sameword_inter_cos": 0.38216668367385864,
+          "identity_cosine_gap": 0.42403095960617065
+        },
+        "conversion_only": {
+          "far": 0.03580562659846547,
+          "frr": 0.02,
+          "tar": 0.98,
+          "hter": 0.027902813299232734,
+          "auc": 0.9923273657289002,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.7372329235076904,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 0
+            },
+            "3": {
+              "n": 47,
+              "accepted": 1
+            },
+            "4": {
+              "n": 47,
+              "accepted": 10
+            },
+            "5": {
+              "n": 50,
+              "accepted": 0
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 2
+            },
+            "8": {
+              "n": 49,
+              "accepted": 1
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "selected_upstream_step": 100,
+          "selected_auth_step": 25,
+          "gradient_audit": {
+            "identity_encoder_grad_norm": 0.0,
+            "identity_generated_audio_grad_norm": 0.0
+          },
+          "encoder_delta_l2": 0.0518852975180118,
+          "upstream_conversion": {
+            "paired_l1": 0.3241366446018219,
+            "cycle_l1": 0.1769203245639801,
+            "paired_corr": 0.6766818761825562,
+            "output_drift_l1": 0.00443941680714488
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.29606539011001587,
+            "cycle_l1": 0.17472690343856812,
+            "paired_corr": 0.7435351014137268
+          },
+          "genuine_accepted": 49,
+          "attack_accepted": 14,
+          "target_crossword_intra_cos": 0.8078548908233643,
+          "target_sameword_inter_cos": 0.3872002363204956,
+          "identity_cosine_gap": 0.42065465450286865
+        },
+        "identity_conversion": {
+          "far": 0.028132992327365727,
+          "frr": 0.1,
+          "tar": 0.9,
+          "hter": 0.06406649616368287,
+          "auc": 0.9871611253196931,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.7767115831375122,
+          "attack_by_user": {
+            "2": {
+              "n": 50,
+              "accepted": 0
+            },
+            "3": {
+              "n": 47,
+              "accepted": 1
+            },
+            "4": {
+              "n": 47,
+              "accepted": 6
+            },
+            "5": {
+              "n": 50,
+              "accepted": 1
+            },
+            "6": {
+              "n": 50,
+              "accepted": 0
+            },
+            "7": {
+              "n": 49,
+              "accepted": 2
+            },
+            "8": {
+              "n": 49,
+              "accepted": 1
+            },
+            "9": {
+              "n": 49,
+              "accepted": 0
+            }
+          },
+          "selected_upstream_step": 50,
+          "selected_auth_step": 150,
+          "gradient_audit": {
+            "identity_encoder_grad_norm": 274.85776676753056,
+            "identity_generated_audio_grad_norm": 11.779772017579534
+          },
+          "encoder_delta_l2": 0.051388582096536614,
+          "upstream_conversion": {
+            "paired_l1": 0.32402530312538147,
+            "cycle_l1": 0.1779918372631073,
+            "paired_corr": 0.676662266254425,
+            "output_drift_l1": 0.014329155907034874
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.2957924008369446,
+            "cycle_l1": 0.17522183060646057,
+            "paired_corr": 0.743279218673706
+          },
+          "genuine_accepted": 45,
+          "attack_accepted": 11,
+          "target_crossword_intra_cos": 0.8123935461044312,
+          "target_sameword_inter_cos": -0.19817595183849335,
+          "identity_cosine_gap": 1.010569453239441
+        }
+      },
+      "baseline_upstream_conversion": {
+        "paired_l1": 0.32447683811187744,
+        "cycle_l1": 0.17723610997200012,
+        "paired_corr": 0.6762491464614868
+      }
+    },
+    "5": {
+      "target": 5,
+      "routes": {
+        "frozen": {
+          "far": 0.27621483375959077,
+          "frr": 0.22,
+          "tar": 0.78,
+          "hter": 0.24810741687979537,
+          "auc": 0.8397953964194373,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.6166808605194092,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 13
+            },
+            "3": {
+              "n": 47,
+              "accepted": 20
+            },
+            "4": {
+              "n": 47,
+              "accepted": 4
+            },
+            "6": {
+              "n": 50,
+              "accepted": 10
+            },
+            "7": {
+              "n": 49,
+              "accepted": 15
+            },
+            "8": {
+              "n": 49,
+              "accepted": 24
+            },
+            "9": {
+              "n": 49,
+              "accepted": 22
+            }
+          },
+          "selected_upstream_step": 0,
+          "selected_auth_step": 50,
+          "gradient_audit": null,
+          "encoder_delta_l2": 0.0,
+          "upstream_conversion": {
+            "paired_l1": 0.3311687707901001,
+            "cycle_l1": 0.19946768879890442,
+            "paired_corr": 0.6565619111061096,
+            "output_drift_l1": 4.921007601410565e-08
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.28416499495506287,
+            "cycle_l1": 0.1939939260482788,
+            "paired_corr": 0.7780962586402893
+          },
+          "genuine_accepted": 39,
+          "attack_accepted": 108,
+          "target_crossword_intra_cos": 0.5746720433235168,
+          "target_sameword_inter_cos": 0.4451996386051178,
+          "identity_cosine_gap": 0.12947240471839905
+        },
+        "conversion_only": {
+          "far": 0.27621483375959077,
+          "frr": 0.22,
+          "tar": 0.78,
+          "hter": 0.24810741687979537,
+          "auc": 0.839846547314578,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.6166805028915405,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 13
+            },
+            "3": {
+              "n": 47,
+              "accepted": 20
+            },
+            "4": {
+              "n": 47,
+              "accepted": 4
+            },
+            "6": {
+              "n": 50,
+              "accepted": 10
+            },
+            "7": {
+              "n": 49,
+              "accepted": 15
+            },
+            "8": {
+              "n": 49,
+              "accepted": 24
+            },
+            "9": {
+              "n": 49,
+              "accepted": 22
+            }
+          },
+          "selected_upstream_step": 0,
+          "selected_auth_step": 50,
+          "gradient_audit": {
+            "identity_encoder_grad_norm": 0.0,
+            "identity_generated_audio_grad_norm": 0.0
+          },
+          "encoder_delta_l2": 0.0,
+          "upstream_conversion": {
+            "paired_l1": 0.3311688005924225,
+            "cycle_l1": 0.1994677186012268,
+            "paired_corr": 0.6565619111061096,
+            "output_drift_l1": 5.0203379231561485e-08
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.28416499495506287,
+            "cycle_l1": 0.19399391114711761,
+            "paired_corr": 0.7780962586402893
+          },
+          "genuine_accepted": 39,
+          "attack_accepted": 108,
+          "target_crossword_intra_cos": 0.5746728777885437,
+          "target_sameword_inter_cos": 0.4451998770236969,
+          "identity_cosine_gap": 0.1294730007648468
+        },
+        "identity_conversion": {
+          "far": 0.27621483375959077,
+          "frr": 0.22,
+          "tar": 0.78,
+          "hter": 0.24810741687979537,
+          "auc": 0.839846547314578,
+          "genuine_n": 50,
+          "impostor_n": 391,
+          "threshold": 0.6166781187057495,
+          "attack_by_user": {
+            "1": {
+              "n": 50,
+              "accepted": 0
+            },
+            "2": {
+              "n": 50,
+              "accepted": 13
+            },
+            "3": {
+              "n": 47,
+              "accepted": 20
+            },
+            "4": {
+              "n": 47,
+              "accepted": 4
+            },
+            "6": {
+              "n": 50,
+              "accepted": 10
+            },
+            "7": {
+              "n": 49,
+              "accepted": 15
+            },
+            "8": {
+              "n": 49,
+              "accepted": 24
+            },
+            "9": {
+              "n": 49,
+              "accepted": 22
+            }
+          },
+          "selected_upstream_step": 0,
+          "selected_auth_step": 50,
+          "gradient_audit": {
+            "identity_encoder_grad_norm": 306.4598325648847,
+            "identity_generated_audio_grad_norm": 19.63844006312359
+          },
+          "encoder_delta_l2": 0.0,
+          "upstream_conversion": {
+            "paired_l1": 0.3311687707901001,
+            "cycle_l1": 0.1994677186012268,
+            "paired_corr": 0.6565619111061096,
+            "output_drift_l1": 4.949479759375208e-08
+          },
+          "final_conversion_diagnostic": {
+            "paired_l1": 0.28416499495506287,
+            "cycle_l1": 0.19399389624595642,
+            "paired_corr": 0.7780962586402893
+          },
+          "genuine_accepted": 39,
+          "attack_accepted": 108,
+          "target_crossword_intra_cos": 0.5746760964393616,
+          "target_sameword_inter_cos": 0.445201575756073,
+          "identity_cosine_gap": 0.12947452068328857
+        }
+      },
+      "baseline_upstream_conversion": {
+        "paired_l1": 0.3311687707901001,
+        "cycle_l1": 0.19946768879890442,
+        "paired_corr": 0.6565619111061096
+      }
+    }
+  },
+  "macro": {
+    "frozen": {
+      "tar": 0.82822695035461,
+      "far": 0.18606462668934268,
+      "auc": 0.8926845325582159,
+      "hter": 0.1789188381673664,
+      "identity_cosine_gap": 0.2618584136168162
+    },
+    "conversion_only": {
+      "tar": 0.8419858156028369,
+      "far": 0.18860918898568033,
+      "auc": 0.8923065219739197,
+      "hter": 0.17331168669142172,
+      "identity_cosine_gap": 0.2600362052520116
+    },
+    "identity_conversion": {
+      "tar": 0.8082269503546099,
+      "far": 0.18266754947399397,
+      "auc": 0.8958945905216803,
+      "hter": 0.18722029955969202,
+      "identity_cosine_gap": 0.4801994065443675
+    }
+  },
+  "verification": "Upstream/auth disjointness;scaler1080 upstream stats;only6 allowed G tensors change;decoder and F hashes fixed;live identity encoder/fake gradients;upstream guarded and auth selection replay;checkpoint features,calibration,AUC/counts/eight attackers and paired conversion reproduced"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "targets": [
+    4,
+    5
+  ],
+  "routes": 10,
+  "checks": [
+    "40 OOF candidates pertarget replay",
+    "training-only chosen fusion replay",
+    "independent quantile90 formula",
+    "calibration TAR/FAR replay",
+    "independent saved models final inference",
+    "AUC/counts all8sources"
+  ]
+}

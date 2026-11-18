@@ -1,0 +1,90 @@
+{
+  "verified_score_sets": 5760,
+  "rows_per_preprocessing": 960,
+  "counts": {
+    "1": {
+      "genuine": 57,
+      "unknown": 88,
+      "known": 294,
+      "calibration": 21
+    },
+    "2": {
+      "genuine": 53,
+      "unknown": 88,
+      "known": 298,
+      "calibration": 27
+    },
+    "4": {
+      "genuine": 52,
+      "unknown": 88,
+      "known": 299,
+      "calibration": 22
+    },
+    "5": {
+      "genuine": 50,
+      "unknown": 88,
+      "known": 301,
+      "calibration": 25
+    },
+    "7": {
+      "genuine": 47,
+      "unknown": 88,
+      "known": 304,
+      "calibration": 20
+    }
+  },
+  "protocol": {
+    "targets": [
+      1,
+      2,
+      4,
+      5,
+      7
+    ],
+    "unknown": [
+      3,
+      8
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "registration_sizes": [
+      10,
+      20,
+      40,
+      60
+    ],
+    "K": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "primary_multi_K": 2,
+    "K_selection": "All K are prespecified ablations, no choosing best K on final scores. Phase 1 screens the multiprototype hypothesis before any K optimization.",
+    "features": [
+      "raw_profile320",
+      "cycle772",
+      "cycle772_teacher64"
+    ],
+    "frr_calibration": 0.1,
+    "teacher": "Frozen original personal teacher; ACC branch only, no final real Audio input",
+    "cv": "Known-user RBF only, 5 grouped folds inside registration-word training data",
+    "next_stage": "Do not auto-start adapters/reliability/new generators; assess stage1 first",
+    "P1_scope": "Unknown U3/U8 absent from generator target training and teacher development. Known users used only by RBF fitting/selection; prototype/SVDD boundary and preprocessing use target enrollment only.",
+    "sampling": "Word-balanced round-robin enrollment, nested10/20/40/60 for each seed; all final attacks retained",
+    "limitations": [
+      "No independent new recordings",
+      "Authentication-only word holdout, not upstream word holdout",
+      "Tail missing row//10 word mapping assumption",
+      "No claim of novel method or reproduced PGBL/PAF",
+      "No existing compatible frozen G for U6/U9 in this audited cohort; U3/U8 are reserved unknown identities"
+    ],
+    "feature_origin": "Scale-only; preserve mean for Cosine. Centered historical run retained separately."
+  },
+  "preprocessing_caveat": "Scale-only audit was added after partial centered outcomes; both fully disclosed. No per-user final-based choice.",
+  "rbf_control": "All60 target×budget×feature RBF summaries identical across origins",
+  "private_artifacts": "Retained on server, not published"
+}
