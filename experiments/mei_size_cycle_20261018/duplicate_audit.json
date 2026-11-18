@@ -1,0 +1,21 @@
+{
+  "nominal_pairs": 340,
+  "unique_pairs": 255,
+  "unique_ACC": 255,
+  "unique_audio": 255,
+  "per_split": {
+    "train": {
+      "nominal": 280,
+      "unique_pairs": 210
+    },
+    "validation": {
+      "nominal": 60,
+      "unique_pairs": 60
+    }
+  },
+  "cross_split_duplicate_groups": 15,
+  "test": "not read",
+  "unique_source_keys_metadata": 300,
+  "clean_train_source_keys_after_protecting_val_and_test": 180,
+  "protected_rule": "All VAL/test source keys blocked from TRAIN based on metadata; test arrays not read"
+}

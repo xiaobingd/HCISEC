@@ -1,0 +1,42 @@
+{
+  "source": "same20train4REUSEDval,58/16 original.8s windows;251=195separateXYZ magnitudes+56energy;4test+28reserveUNREAD",
+  "scope": "completepairedCycleGANpilot, new temporal generators and2DPatchGAN, NOT exact trainb reproduction; no identityclaims",
+  "chain": "G:ACC251x81->audio80x81; F:audio80x81->ACC251x81; F only receivesG output, no originalACC/latent skip across cycle; reverseaudio cycle included",
+  "seeds": [
+    42,
+    43
+  ],
+  "epochs": 160,
+  "updates_per_epoch": 4,
+  "batch_size": 8,
+  "selection": "fixedendpoint, noVALselection",
+  "common": {
+    "audio_cycle": 10,
+    "paired_ACC": 2,
+    "adversarial": 0.05,
+    "lr": 0.0005,
+    "weight_decay": 0.001
+  },
+  "routes": {
+    "cycle_balanced": {
+      "acc_cycle": 10,
+      "paired_audio": 10,
+      "corrupt": false
+    },
+    "acc_priority": {
+      "acc_cycle": 30,
+      "paired_audio": 2,
+      "corrupt": false
+    },
+    "robust_priority": {
+      "acc_cycle": 30,
+      "paired_audio": 2,
+      "corrupt": true
+    }
+  },
+  "corruption": "robustroute TRAIN6bitSTE quantization +Gaussian std.01 ongeneratedaudio; smalltrain-scaledACCnoise onreversecycle; G/audioadversarial evaluatedclean",
+  "controls": "cleanvsquant8/noise.005/blur3 generatedaudio thenF, sameperturbationonREALaudio beforeF, wrongrecordgeneratedaudio beforeF; modifications are diagnostic, notproofhiddenencoding",
+  "sampler": "same seed schedule,8distinctrecordings/update, uniformwindowperrecord, no augmentation",
+  "frontend": "unchangedactivity_alignment_20261018 TRAINscales, identicalallroutes; nottheprevious641complexcontextfrontend",
+  "torch": "2.4.1+cu121"
+}

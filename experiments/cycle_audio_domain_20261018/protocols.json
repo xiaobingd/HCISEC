@@ -1,0 +1,86 @@
+{
+  "audio_domain": {
+    "source": "same20train4REUSEDval,58/16 windows;test4/auth28 unread;same251ACC/80Mel frontend/scales ascycle_return",
+    "task": "completeACC->Gaudio->FACC and reverseaudio cycle, no crosscyclelatent bypass",
+    "initialization": "ALLroutes same acc_priority seed42/43 G/F fromcycle_return; newmatched discriminators,40D-only warmupupdates; no selectingcheckpoint byVAL",
+    "routes": {
+      "continuation": {
+        "adv": 0.05,
+        "pair_audio": 2,
+        "pair_ACC": 2,
+        "freq": 0,
+        "envelope": 0,
+        "profile": 0,
+        "feature_matching": 0,
+        "smooth": false
+      },
+      "audio_anchor": {
+        "adv": 1.0,
+        "pair_audio": 10,
+        "pair_ACC": 5,
+        "freq": 1,
+        "envelope": 1,
+        "profile": 2,
+        "feature_matching": 2,
+        "smooth": false
+      },
+      "audio_anchor_smooth": {
+        "adv": 1.0,
+        "pair_audio": 10,
+        "pair_ACC": 5,
+        "freq": 1,
+        "envelope": 1,
+        "profile": 2,
+        "feature_matching": 2,
+        "smooth": true
+      }
+    },
+    "common": {
+      "acc_cycle": 30,
+      "audio_cycle": 10,
+      "ACC_adversarial": 0.05,
+      "epochs": 120,
+      "updates_per_epoch": 4,
+      "batch_size": 8,
+      "lr": 0.0002,
+      "weight_decay": 0.001
+    },
+    "seeds": [
+      42,
+      43
+    ],
+    "discriminators": "oneACC PatchGAN and two-scale audioPatchGAN with features, sameALLroutes includingcontinuation",
+    "bottleneck": "smoothroute explicit differentiable3x3 normalizedMel averageS: F(S(G(x))) andF(S(realMel)); rawG evaluatedforaudioquality, no cosmeticpostfilter onshownG",
+    "feature_matching": "pairedDfeature temporalmeans/std, preservesfrequencyprofile, notspeakeridentityloss",
+    "selection": "fixedendpoint; noVALselection; seedsdescribeoptimizervariationnotindependent subjects",
+    "limits": "new pairedCycleGANfine-tune, notoriginaltrainb reproduction or audiblewaveform; noidentityaccuracy",
+    "torch": "2.4.1+cu121"
+  },
+  "resnet_curriculum": {
+    "source": "same251ACC/80Mel,20train4REUSEDval58/16windows;4test+28reserveUNREAD; no preprocessingchange",
+    "architecture": "G=251->80learnedfrequencyprojection->user model_drop.GeneratorAccToAudio hidden16,2residualblocks,resizeconvolution,InstanceNorm removed; no directlinear outputskip. F=previous temporal80->251. Same2scaleaudioD/ACCPatchGAN",
+    "model_source_sha256": "a50c38a48fc9dafe7ac6659d4705b1a90ef95f703724d1713987962f890a4c73",
+    "stages": "120epochsreal-pairprewarm THEN120epochsfullbidirectionalcycle; each4updates8record-balanced; fixedendpoint; noVALselection",
+    "seeds": [
+      42,
+      43
+    ],
+    "losses": {
+      "paired_audio": 20,
+      "paired_ACC": 5,
+      "audio_adversarial": 1,
+      "ACC_adversarial": 0.05,
+      "frequency_gradient": 1,
+      "envelope": 1,
+      "profile": 2,
+      "feature_matching": 2,
+      "stage2_ACC_cycle": "ramp10to20over40epochs",
+      "stage2_audio_cycle": 10,
+      "stage2_TRAIN_teacher": 5
+    },
+    "teacher": "cachedstage1G outputs forTRAIN only; no VALteacher conditioning at inference",
+    "perturbation": "stage2eachbatch50%3x3Melaverage beforeF onbothgeneratedandrealMel, alwaysGaussian.005 ongeneratedMel cycle; evaluatecleanF(G) andblurcontrol; rawG shown",
+    "scope": "architecture+curriculum+loss package exploration, not component-isolated comparison. Pairedprewarm alone is NOT fullcycle. Finalstage ISfullcycle, no crosscyclebypass, noidentityclaims",
+    "torch": "2.4.1+cu121"
+  }
+}

@@ -1,0 +1,889 @@
+{
+  "baseline": {
+    "audio_mae": 0.3070895263304313,
+    "audio_detail_corr": 0.243758680140086,
+    "ACC_cycle_mae": 0.10973094856987398,
+    "ACC_detail_corr": 0.0680282535367517
+  },
+  "baseline_extra": {
+    "active_audio_mae": 0.4379358269274235,
+    "inactive_audio_mae": 0.21230844128876925,
+    "activity_false_positive_rate": 0.13966122302249606,
+    "activity_recall": 0.6107962369616993,
+    "activity_F1": 0.6306859415110588,
+    "physical_log_energy_corr": 0.6121635673309754,
+    "local_spectral_contrast_corr": 0.4867984536699405
+  },
+  "routes": {
+    "continue": {
+      "macro": {
+        "audio_mae": 0.3138994115094344,
+        "audio_detail_corr": 0.21079320499726262,
+        "ACC_cycle_mae": 0.10806433744728565,
+        "ACC_detail_corr": 0.06765352830120774
+      },
+      "extra": {
+        "active_audio_mae": 0.4495884343981743,
+        "inactive_audio_mae": 0.21626197931667168,
+        "activity_false_positive_rate": 0.1381866456358661,
+        "activity_recall": 0.6053905261797154,
+        "activity_F1": 0.6246547994347622,
+        "physical_log_energy_corr": 0.5919536530181118,
+        "local_spectral_contrast_corr": 0.48461999910363285
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15364667028188705,
+        "active_highpass_rms_ratio": 0.6185137629508972,
+        "gradient_mae": 0.11420167982578278,
+        "gradient_magnitude_ratio": 0.561794251203537,
+        "near_target_peak_precision": 0.5728119738270153,
+        "near_target_peak_recall": 0.26637932441919315
+      },
+      "train_audio_mae": 0.23238461464643478
+    },
+    "focal": {
+      "macro": {
+        "audio_mae": 0.3142022478083769,
+        "audio_detail_corr": 0.20699827931027873,
+        "ACC_cycle_mae": 0.10849985008438429,
+        "ACC_detail_corr": 0.06523677138763526
+      },
+      "extra": {
+        "active_audio_mae": 0.4403901911030213,
+        "inactive_audio_mae": 0.22304416690021753,
+        "activity_false_positive_rate": 0.13504085557917603,
+        "activity_recall": 0.6000711967102013,
+        "activity_F1": 0.6230928010181658,
+        "physical_log_energy_corr": 0.5981832924690574,
+        "local_spectral_contrast_corr": 0.4931413457769259
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15213897079229355,
+        "active_highpass_rms_ratio": 0.588617742061615,
+        "gradient_mae": 0.1126965768635273,
+        "gradient_magnitude_ratio": 0.5371531248092651,
+        "near_target_peak_precision": 0.5762752775937603,
+        "near_target_peak_recall": 0.2560039836084309
+      },
+      "train_audio_mae": 0.23082375526428223
+    },
+    "focal_residual": {
+      "macro": {
+        "audio_mae": 0.31401794975002606,
+        "audio_detail_corr": 0.20655872419814494,
+        "ACC_cycle_mae": 0.10842226302872102,
+        "ACC_detail_corr": 0.06606952739331218
+      },
+      "extra": {
+        "active_audio_mae": 0.44156510780255,
+        "inactive_audio_mae": 0.2219450857490301,
+        "activity_false_positive_rate": 0.1334584778564731,
+        "activity_recall": 0.5941682762389606,
+        "activity_F1": 0.6181426096110717,
+        "physical_log_energy_corr": 0.596735631219033,
+        "local_spectral_contrast_corr": 0.4946043316713291
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15200040489435196,
+        "active_highpass_rms_ratio": 0.5891442000865936,
+        "gradient_mae": 0.1124877817928791,
+        "gradient_magnitude_ratio": 0.5396677851676941,
+        "near_target_peak_precision": 0.5730785553163422,
+        "near_target_peak_recall": 0.25680397054741966
+      },
+      "train_audio_mae": 0.23074688017368317
+    },
+    "structure": {
+      "macro": {
+        "audio_mae": 0.3205820873379707,
+        "audio_detail_corr": 0.20933819516050017,
+        "ACC_cycle_mae": 0.10980917066335677,
+        "ACC_detail_corr": 0.061675121742094205
+      },
+      "extra": {
+        "active_audio_mae": 0.4452525570988655,
+        "inactive_audio_mae": 0.23074063820143542,
+        "activity_false_positive_rate": 0.1480648814826951,
+        "activity_recall": 0.635634454122264,
+        "activity_F1": 0.6449892690814834,
+        "physical_log_energy_corr": 0.5981833982622731,
+        "local_spectral_contrast_corr": 0.4727185114952015
+      },
+      "sharp": {
+        "active_highpass_mae": 0.1583758071064949,
+        "active_highpass_rms_ratio": 0.6881626546382904,
+        "gradient_mae": 0.12221110984683037,
+        "gradient_magnitude_ratio": 0.7496461272239685,
+        "near_target_peak_precision": 0.5641784101595219,
+        "near_target_peak_recall": 0.3750387748771449
+      },
+      "train_audio_mae": 0.23585756868124008
+    },
+    "structure_residual": {
+      "macro": {
+        "audio_mae": 0.3202492476751407,
+        "audio_detail_corr": 0.2104569278955744,
+        "ACC_cycle_mae": 0.10962138635416827,
+        "ACC_detail_corr": 0.0618987914564432
+      },
+      "extra": {
+        "active_audio_mae": 0.444662864257892,
+        "inactive_audio_mae": 0.23066411403318246,
+        "activity_false_positive_rate": 0.14766085017327268,
+        "activity_recall": 0.6371037152857333,
+        "activity_F1": 0.6465656740340155,
+        "physical_log_energy_corr": 0.5974279147783708,
+        "local_spectral_contrast_corr": 0.47583774202002743
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15797503292560577,
+        "active_highpass_rms_ratio": 0.6886911690235138,
+        "gradient_mae": 0.12155920639634132,
+        "gradient_magnitude_ratio": 0.7473463416099548,
+        "near_target_peak_precision": 0.5657006286431654,
+        "near_target_peak_recall": 0.37832851708543536
+      },
+      "train_audio_mae": 0.23514655977487564
+    },
+    "highpass": {
+      "macro": {
+        "audio_mae": 0.3078172956903775,
+        "audio_detail_corr": 0.24341903181557006,
+        "ACC_cycle_mae": 0.1071100623657306,
+        "ACC_detail_corr": 0.07537951677669386
+      },
+      "extra": {
+        "active_audio_mae": 0.4370961330831051,
+        "inactive_audio_mae": 0.2141341938947638,
+        "activity_false_positive_rate": 0.14824018749297418,
+        "activity_recall": 0.6302179156141126,
+        "activity_F1": 0.6412053655985764,
+        "physical_log_energy_corr": 0.6104295612199642,
+        "local_spectral_contrast_corr": 0.4887357936935609
+      },
+      "sharp": {
+        "active_highpass_mae": 0.1545940861105919,
+        "active_highpass_rms_ratio": 0.6718241274356842,
+        "gradient_mae": 0.11650317534804344,
+        "gradient_magnitude_ratio": 0.6398486196994781,
+        "near_target_peak_precision": 0.5760266327453174,
+        "near_target_peak_recall": 0.3135132487632855
+      },
+      "train_audio_mae": 0.25180448591709137
+    }
+  },
+  "paired": {
+    "focal": {
+      "audio_mae_change_vs_continue": 0.0003028362989425659,
+      "conditional_record_bootstrap95": [
+        -0.0010976037569344044,
+        0.0017562394123524427
+      ],
+      "records_improved": 31,
+      "records": 60,
+      "limits": "Conditional on reused validation, seed-average predictions; not fresh sessions or architecture selection uncertainty."
+    },
+    "focal_residual": {
+      "audio_mae_change_vs_continue": 0.00011853824059168497,
+      "conditional_record_bootstrap95": [
+        -0.0011953873156259457,
+        0.0014759704129149497
+      ],
+      "records_improved": 31,
+      "records": 60,
+      "limits": "Conditional on reused validation, seed-average predictions; not fresh sessions or architecture selection uncertainty."
+    },
+    "structure": {
+      "audio_mae_change_vs_continue": 0.006682675828536351,
+      "conditional_record_bootstrap95": [
+        0.004639511210843921,
+        0.008657708714405694
+      ],
+      "records_improved": 11,
+      "records": 60,
+      "limits": "Conditional on reused validation, seed-average predictions; not fresh sessions or architecture selection uncertainty."
+    },
+    "structure_residual": {
+      "audio_mae_change_vs_continue": 0.006349836165706317,
+      "conditional_record_bootstrap95": [
+        0.004332147243743142,
+        0.008308466421440243
+      ],
+      "records_improved": 10,
+      "records": 60,
+      "limits": "Conditional on reused validation, seed-average predictions; not fresh sessions or architecture selection uncertainty."
+    },
+    "highpass": {
+      "audio_mae_change_vs_continue": -0.006082115819056829,
+      "conditional_record_bootstrap95": [
+        -0.010162476282566786,
+        -0.0021661209501326107
+      ],
+      "records_improved": 38,
+      "records": 60,
+      "limits": "Conditional on reused validation, seed-average predictions; not fresh sessions or architecture selection uncertainty."
+    }
+  },
+  "seed_results": [
+    {
+      "seed": 42,
+      "route": "continue",
+      "macro": {
+        "audio_mae": 0.3068046435713768,
+        "audio_detail_corr": 0.22865336524291674,
+        "ACC_cycle_mae": 0.10828976482152938,
+        "ACC_detail_corr": 0.06427049941537497
+      },
+      "extra": {
+        "active_audio_mae": 0.4507792055606842,
+        "inactive_audio_mae": 0.20375188191731772,
+        "activity_false_positive_rate": 0.12325680653424213,
+        "activity_recall": 0.6131946910131482,
+        "activity_F1": 0.6385441192432955,
+        "physical_log_energy_corr": 0.6203280424694505,
+        "local_spectral_contrast_corr": 0.49313682690864563
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15322330594062805,
+        "active_highpass_rms_ratio": 0.5998878479003906,
+        "gradient_mae": 0.11284259706735611,
+        "gradient_magnitude_ratio": 0.5472922921180725,
+        "near_target_peak_precision": 0.5641098822689975,
+        "near_target_peak_recall": 0.26352222820851906,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.23944233357906342
+    },
+    {
+      "seed": 42,
+      "route": "focal",
+      "macro": {
+        "audio_mae": 0.3070571035146713,
+        "audio_detail_corr": 0.22606614093601513,
+        "ACC_cycle_mae": 0.1087687390546004,
+        "ACC_detail_corr": 0.0620188320292199
+      },
+      "extra": {
+        "active_audio_mae": 0.4374230531354745,
+        "inactive_audio_mae": 0.2132047300537427,
+        "activity_false_positive_rate": 0.1253943828297883,
+        "activity_recall": 0.6179982831892613,
+        "activity_F1": 0.6436795323926537,
+        "physical_log_energy_corr": 0.6273250481445899,
+        "local_spectral_contrast_corr": 0.5010355190567176
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15180765092372894,
+        "active_highpass_rms_ratio": 0.5739017128944397,
+        "gradient_mae": 0.11171463876962662,
+        "gradient_magnitude_ratio": 0.5296264886856079,
+        "near_target_peak_precision": 0.5709240948628355,
+        "near_target_peak_recall": 0.25540807497020457,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.23789645731449127
+    },
+    {
+      "seed": 42,
+      "route": "focal_residual",
+      "macro": {
+        "audio_mae": 0.3063633032143116,
+        "audio_detail_corr": 0.22738812567766445,
+        "ACC_cycle_mae": 0.10865394957363605,
+        "ACC_detail_corr": 0.0634447233467944
+      },
+      "extra": {
+        "active_audio_mae": 0.43803771287202836,
+        "inactive_audio_mae": 0.21170408241450786,
+        "activity_false_positive_rate": 0.1243754973991432,
+        "activity_recall": 0.6134121224716654,
+        "activity_F1": 0.6389007319179707,
+        "physical_log_energy_corr": 0.6273423307239275,
+        "local_spectral_contrast_corr": 0.5023078701433973
+      },
+      "sharp": {
+        "active_highpass_mae": 0.1517268568277359,
+        "active_highpass_rms_ratio": 0.5751972198486328,
+        "gradient_mae": 0.11157965660095215,
+        "gradient_magnitude_ratio": 0.5335527062416077,
+        "near_target_peak_precision": 0.5648438068885168,
+        "near_target_peak_recall": 0.25720396401691403,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.23792247474193573
+    },
+    {
+      "seed": 43,
+      "route": "continue",
+      "macro": {
+        "audio_mae": 0.320994179447492,
+        "audio_detail_corr": 0.19293304475160847,
+        "ACC_cycle_mae": 0.10783891007304192,
+        "ACC_detail_corr": 0.07103655718704052
+      },
+      "extra": {
+        "active_audio_mae": 0.4483976632356644,
+        "inactive_audio_mae": 0.22877207671602567,
+        "activity_false_positive_rate": 0.1531164847374901,
+        "activity_recall": 0.5975863613462828,
+        "activity_F1": 0.610765479626229,
+        "physical_log_energy_corr": 0.563579263566773,
+        "local_spectral_contrast_corr": 0.47610317129862006
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15407003462314606,
+        "active_highpass_rms_ratio": 0.6371396780014038,
+        "gradient_mae": 0.11556076258420944,
+        "gradient_magnitude_ratio": 0.5762962102890015,
+        "near_target_peak_precision": 0.5815140653850331,
+        "near_target_peak_recall": 0.26923642062986725,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.22532689571380615
+    },
+    {
+      "seed": 43,
+      "route": "focal",
+      "macro": {
+        "audio_mae": 0.3213473921020826,
+        "audio_detail_corr": 0.18793041768454233,
+        "ACC_cycle_mae": 0.10823096111416816,
+        "ACC_detail_corr": 0.06845471074605061
+      },
+      "extra": {
+        "active_audio_mae": 0.4433573290705681,
+        "inactive_audio_mae": 0.23288360374669234,
+        "activity_false_positive_rate": 0.14468732832856376,
+        "activity_recall": 0.5821441102311412,
+        "activity_F1": 0.6025060696436779,
+        "physical_log_energy_corr": 0.569041536793525,
+        "local_spectral_contrast_corr": 0.4852471724971343
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15247029066085815,
+        "active_highpass_rms_ratio": 0.6033337712287903,
+        "gradient_mae": 0.11367851495742798,
+        "gradient_magnitude_ratio": 0.5446797609329224,
+        "near_target_peak_precision": 0.5816264603246851,
+        "near_target_peak_recall": 0.2565998922466572,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.22375105321407318
+    },
+    {
+      "seed": 43,
+      "route": "focal_residual",
+      "macro": {
+        "audio_mae": 0.3216725962857405,
+        "audio_detail_corr": 0.18572932271862544,
+        "ACC_cycle_mae": 0.10819057648380598,
+        "ACC_detail_corr": 0.06869433143982998
+      },
+      "extra": {
+        "active_audio_mae": 0.44509250273307166,
+        "inactive_audio_mae": 0.23218608908355237,
+        "activity_false_positive_rate": 0.14254145831380302,
+        "activity_recall": 0.5749244300062557,
+        "activity_F1": 0.5973844873041727,
+        "physical_log_energy_corr": 0.5661289317141384,
+        "local_spectral_contrast_corr": 0.48690079319926094
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15227395296096802,
+        "active_highpass_rms_ratio": 0.6030911803245544,
+        "gradient_mae": 0.11339590698480606,
+        "gradient_magnitude_ratio": 0.5457828640937805,
+        "near_target_peak_precision": 0.5813133037441676,
+        "near_target_peak_recall": 0.2564039770779253,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.2235712856054306
+    },
+    {
+      "seed": 42,
+      "route": "structure",
+      "macro": {
+        "audio_mae": 0.3159591364363829,
+        "audio_detail_corr": 0.22232269677500371,
+        "ACC_cycle_mae": 0.11017211812237898,
+        "ACC_detail_corr": 0.05879742256541751
+      },
+      "extra": {
+        "active_audio_mae": 0.4376661812265714,
+        "inactive_audio_mae": 0.22835440064469972,
+        "activity_false_positive_rate": 0.15021829228612446,
+        "activity_recall": 0.6661857859415062,
+        "activity_F1": 0.668011771178288,
+        "physical_log_energy_corr": 0.6181758576786271,
+        "local_spectral_contrast_corr": 0.4739346352739401
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15979601442813873,
+        "active_highpass_rms_ratio": 0.6986510157585144,
+        "gradient_mae": 0.12285143882036209,
+        "gradient_magnitude_ratio": 0.7741165161132812,
+        "near_target_peak_precision": 0.559285866704602,
+        "near_target_peak_recall": 0.3928588920997208,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.24390462040901184
+    },
+    {
+      "seed": 42,
+      "route": "structure_residual",
+      "macro": {
+        "audio_mae": 0.3156687239805857,
+        "audio_detail_corr": 0.223280885192069,
+        "ACC_cycle_mae": 0.109997683390975,
+        "ACC_detail_corr": 0.05921490465749
+      },
+      "extra": {
+        "active_audio_mae": 0.4380364611744881,
+        "inactive_audio_mae": 0.22765804578860602,
+        "activity_false_positive_rate": 0.1485547698435638,
+        "activity_recall": 0.6621048700758118,
+        "activity_F1": 0.6663022881366961,
+        "physical_log_energy_corr": 0.6172274807986521,
+        "local_spectral_contrast_corr": 0.47820405618868483
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15909188985824585,
+        "active_highpass_rms_ratio": 0.6982318758964539,
+        "gradient_mae": 0.12190689146518707,
+        "gradient_magnitude_ratio": 0.7656669616699219,
+        "near_target_peak_precision": 0.5630311270820182,
+        "near_target_peak_recall": 0.38663858549248176,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.2431577444076538
+    },
+    {
+      "seed": 43,
+      "route": "structure",
+      "macro": {
+        "audio_mae": 0.32520503823955854,
+        "audio_detail_corr": 0.19635369354599666,
+        "ACC_cycle_mae": 0.10944622320433457,
+        "ACC_detail_corr": 0.0645528209187709
+      },
+      "extra": {
+        "active_audio_mae": 0.4528389329711596,
+        "inactive_audio_mae": 0.2331268757581711,
+        "activity_false_positive_rate": 0.1459114706792657,
+        "activity_recall": 0.6050831223030217,
+        "activity_F1": 0.6219667669846787,
+        "physical_log_energy_corr": 0.578190938845919,
+        "local_spectral_contrast_corr": 0.47150238771646297
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15695559978485107,
+        "active_highpass_rms_ratio": 0.6776742935180664,
+        "gradient_mae": 0.12157078087329865,
+        "gradient_magnitude_ratio": 0.7251757383346558,
+        "near_target_peak_precision": 0.5690709536144417,
+        "near_target_peak_recall": 0.3572186576545689,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.22781051695346832
+    },
+    {
+      "seed": 43,
+      "route": "structure_residual",
+      "macro": {
+        "audio_mae": 0.32482977136969565,
+        "audio_detail_corr": 0.1976329705990798,
+        "ACC_cycle_mae": 0.10924508931736152,
+        "ACC_detail_corr": 0.0645826782553964
+      },
+      "extra": {
+        "active_audio_mae": 0.4512892673412959,
+        "inactive_audio_mae": 0.2336701822777589,
+        "activity_false_positive_rate": 0.14676693050298154,
+        "activity_recall": 0.6121025604956548,
+        "activity_F1": 0.6268290599313351,
+        "physical_log_energy_corr": 0.5776283487580894,
+        "local_spectral_contrast_corr": 0.47347142785137003
+      },
+      "sharp": {
+        "active_highpass_mae": 0.1568581759929657,
+        "active_highpass_rms_ratio": 0.6791504621505737,
+        "gradient_mae": 0.12121152132749557,
+        "gradient_magnitude_ratio": 0.7290257215499878,
+        "near_target_peak_precision": 0.5683701302043127,
+        "near_target_peak_recall": 0.3700184486783889,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.22713537514209747
+    },
+    {
+      "seed": 42,
+      "route": "highpass",
+      "macro": {
+        "audio_mae": 0.3058145187795162,
+        "audio_detail_corr": 0.24978413891222404,
+        "ACC_cycle_mae": 0.10813080184161664,
+        "ACC_detail_corr": 0.06618296379151443
+      },
+      "extra": {
+        "active_audio_mae": 0.43083893607060114,
+        "inactive_audio_mae": 0.21534318725268045,
+        "activity_false_positive_rate": 0.1588393862681006,
+        "activity_recall": 0.6616211254148336,
+        "activity_F1": 0.6637294892712907,
+        "physical_log_energy_corr": 0.6132377923127154,
+        "local_spectral_contrast_corr": 0.4955796966827639
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15428641438484192,
+        "active_highpass_rms_ratio": 0.6812464594841003,
+        "gradient_mae": 0.11613542586565018,
+        "gradient_magnitude_ratio": 0.6488857865333557,
+        "near_target_peak_precision": 0.5719356220549539,
+        "near_target_peak_recall": 0.3110316566260143,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.25565245747566223
+    },
+    {
+      "seed": 43,
+      "route": "highpass",
+      "macro": {
+        "audio_mae": 0.3098200726012389,
+        "audio_detail_corr": 0.2370539247189161,
+        "ACC_cycle_mae": 0.10608932288984457,
+        "ACC_detail_corr": 0.08457606976187328
+      },
+      "extra": {
+        "active_audio_mae": 0.443353330095609,
+        "inactive_audio_mae": 0.2129252005368471,
+        "activity_false_positive_rate": 0.13764098871784777,
+        "activity_recall": 0.5988147058133915,
+        "activity_F1": 0.6186812419258622,
+        "physical_log_energy_corr": 0.6076213301272129,
+        "local_spectral_contrast_corr": 0.48189189070435784
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15490175783634186,
+        "active_highpass_rms_ratio": 0.6624017953872681,
+        "gradient_mae": 0.1168709248304367,
+        "gradient_magnitude_ratio": 0.6308114528656006,
+        "near_target_peak_precision": 0.5801176434356811,
+        "near_target_peak_recall": 0.31599484090055674,
+        "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+      },
+      "train_audio_mae": 0.2479565143585205
+    }
+  ],
+  "protocol": {
+    "phases": [
+      {
+        "folder": "results",
+        "protocol": {
+          "scope": "Repeatedly explored same 180TRAIN/60VAL recordings; no TEST/auth read. Shared frozen frontend unchanged. Offline full2s. Same 180 common 65-frame interiors as preceding experiment. Fixed end point; no VAL selection.",
+          "routes": [
+            "continue",
+            "focal",
+            "focal_residual"
+          ],
+          "seeds": [
+            42,
+            43
+          ],
+          "epochs": 180,
+          "updates_per_epoch": 4,
+          "batch_recordings": 8,
+          "initial": "Same-seed final full-context G/F weights; new D 40 warmup all routes.",
+          "loss": "All prior full-context losses and complete bidirectional cycles retained. Focal adds 8*mean patch16/32 focal complex Fourier error + 4*paired local contrast L1. Residual additionally trainable full-resolution zero-head .35 bounded branch, no downsample/normalization. Structure routes instead add 4*local centered cosine error + 2*local log std error in 16x16 target patches (8 stride), target std weights; exploratory followup after first focal observations.",
+          "reference": "https://openaccess.thecvf.com/content/ICCV2021/html/Jiang_Focal_Frequency_Loss_for_Image_Reconstruction_and_Synthesis_ICCV_2021_paper.html",
+          "limits": "Mel-image Fourier coefficients are not waveform spectral frequencies. Architecture/objective ablation, not proof of physical harmonic or identity recovery."
+        }
+      },
+      {
+        "folder": "results_structure",
+        "protocol": {
+          "scope": "Repeatedly explored same 180TRAIN/60VAL recordings; no TEST/auth read. Shared frozen frontend unchanged. Offline full2s. Same 180 common 65-frame interiors as preceding experiment. Fixed end point; no VAL selection.",
+          "routes": [
+            "structure",
+            "structure_residual"
+          ],
+          "seeds": [
+            42,
+            43
+          ],
+          "epochs": 180,
+          "updates_per_epoch": 4,
+          "batch_recordings": 8,
+          "initial": "Same-seed final full-context G/F weights; new D 40 warmup all routes.",
+          "loss": "All prior full-context losses and complete bidirectional cycles retained. Focal adds 8*mean patch16/32 focal complex Fourier error + 4*paired local contrast L1. Residual additionally trainable full-resolution zero-head .35 bounded branch, no downsample/normalization. Structure routes instead add 4*local centered cosine error + 2*local log std error in 16x16 target patches (8 stride), target std weights; exploratory followup after first focal observations.",
+          "reference": "https://openaccess.thecvf.com/content/ICCV2021/html/Jiang_Focal_Frequency_Loss_for_Image_Reconstruction_and_Synthesis_ICCV_2021_paper.html",
+          "limits": "Mel-image Fourier coefficients are not waveform spectral frequencies. Architecture/objective ablation, not proof of physical harmonic or identity recovery."
+        }
+      },
+      {
+        "folder": "results_highpass",
+        "protocol": {
+          "scope": "Repeatedly explored same 180TRAIN/60VAL recordings; no TEST/auth read. Shared frozen frontend unchanged. Offline full2s. Same 180 common 65-frame interiors as preceding experiment. Fixed end point; no VAL selection.",
+          "routes": [
+            "highpass"
+          ],
+          "seeds": [
+            42,
+            43
+          ],
+          "epochs": 180,
+          "updates_per_epoch": 4,
+          "batch_recordings": 8,
+          "initial": "Same-seed final full-context G/F weights; new D 40 warmup all routes.",
+          "loss": "All prior full-context losses and complete bidirectional cycles retained. Focal adds 8*mean patch16/32 focal complex Fourier error + 4*paired local contrast L1. Residual additionally trainable full-resolution zero-head .35 bounded branch, no downsample/normalization. Structure routes instead add 4*local centered cosine error + 2*local log std error in 16x16 target patches (8 stride), target std weights; exploratory followup after first focal observations.",
+          "reference": "https://openaccess.thecvf.com/content/ICCV2021/html/Jiang_Focal_Frequency_Loss_for_Image_Reconstruction_and_Synthesis_ICCV_2021_paper.html",
+          "limits": "Mel-image Fourier coefficients are not waveform spectral frequencies. Architecture/objective ablation, not proof of physical harmonic or identity recovery.",
+          "highpass_followup": "After first structure route had more peaks but poorer correspondence: freeze same-seed prior full-context base G; learn ONLY high-pass residual .175*tanh(head) minus9bin localmean (max increment .35), F still trainable. Adds 1*local shape+0.5*logstd instead of structure4/2; all prior completecycle losses unchanged. Base freeze / constrained branch / weaker structure is a package, not isolated component attribution."
+        }
+      }
+    ],
+    "scope": "All fixed endpoints; structure/highpass added during repeated VAL exploration, not independent confirmation. Unchanged private signal preprocessing; no test/auth read."
+  },
+  "source_hashes": {
+    "train_mei_sharp_cycle.py": "552e9efcaaf871de3322b71c44ab3cc1e5697ce7700dd3f6f668c0b7a0daa14d",
+    "report_mei_sharp_cycle.py": "584269f19502af51fa7dbe96a58873547bbc13ff49c5f8dfc25f841b7ef80921",
+    "audit_mei_sharp_cycle.py": "79dcd79f7d8630be8932d0ba488cd1d7296e18cdffd30db832b1527db99ea1d4",
+    "pack_mei_sharp_review.py": "c128a2f0f658f79d83a6bb96f8bac5192fd0094907a532cdc079326e12566585"
+  },
+  "controls": {
+    "runs": [
+      {
+        "seed": 42,
+        "route": "initial",
+        "sharp": {
+          "active_highpass_mae": 0.15356919169425964,
+          "active_highpass_rms_ratio": 0.647771954536438,
+          "gradient_mae": 0.11344887316226959,
+          "gradient_magnitude_ratio": 0.5587082505226135,
+          "near_target_peak_precision": 0.5767534021235232,
+          "near_target_peak_recall": 0.25637132454980327,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 3.4123659133911133e-06,
+        "blur3_cycle_mae_increase": 0.0015733540058135986,
+        "wrong_record_audio_mae_increase": 0.06629371643066406
+      },
+      {
+        "seed": 42,
+        "route": "continue",
+        "sharp": {
+          "active_highpass_mae": 0.15322330594062805,
+          "active_highpass_rms_ratio": 0.5998878479003906,
+          "gradient_mae": 0.11284259706735611,
+          "gradient_magnitude_ratio": 0.5472922921180725,
+          "near_target_peak_precision": 0.5641098822689975,
+          "near_target_peak_recall": 0.26352222820851906,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 3.248453140258789e-06,
+        "blur3_cycle_mae_increase": 0.004783943295478821,
+        "wrong_record_audio_mae_increase": 0.06018337607383728
+      },
+      {
+        "seed": 42,
+        "route": "focal",
+        "sharp": {
+          "active_highpass_mae": 0.15180765092372894,
+          "active_highpass_rms_ratio": 0.5739017128944397,
+          "gradient_mae": 0.11171463876962662,
+          "gradient_magnitude_ratio": 0.5296264886856079,
+          "near_target_peak_precision": 0.5709240948628355,
+          "near_target_peak_recall": 0.25540807497020457,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 4.410743713378906e-06,
+        "blur3_cycle_mae_increase": 0.00470057874917984,
+        "wrong_record_audio_mae_increase": 0.05978015065193176
+      },
+      {
+        "seed": 42,
+        "route": "focal_residual",
+        "sharp": {
+          "active_highpass_mae": 0.1517268568277359,
+          "active_highpass_rms_ratio": 0.5751972198486328,
+          "gradient_mae": 0.11157965660095215,
+          "gradient_magnitude_ratio": 0.5335527062416077,
+          "near_target_peak_precision": 0.5648438068885168,
+          "near_target_peak_recall": 0.25720396401691403,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 1.959502696990967e-06,
+        "blur3_cycle_mae_increase": 0.00507798045873642,
+        "wrong_record_audio_mae_increase": 0.060242027044296265
+      },
+      {
+        "seed": 43,
+        "route": "initial",
+        "sharp": {
+          "active_highpass_mae": 0.15447472035884857,
+          "active_highpass_rms_ratio": 0.6295424699783325,
+          "gradient_mae": 0.11436346173286438,
+          "gradient_magnitude_ratio": 0.5506141185760498,
+          "near_target_peak_precision": 0.5792159679431444,
+          "near_target_peak_recall": 0.25741620544970695,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 4.634261131286621e-06,
+        "blur3_cycle_mae_increase": 0.0012278780341148376,
+        "wrong_record_audio_mae_increase": 0.054856330156326294
+      },
+      {
+        "seed": 43,
+        "route": "continue",
+        "sharp": {
+          "active_highpass_mae": 0.15407003462314606,
+          "active_highpass_rms_ratio": 0.6371396780014038,
+          "gradient_mae": 0.11556076258420944,
+          "gradient_magnitude_ratio": 0.5762962102890015,
+          "near_target_peak_precision": 0.5815140653850331,
+          "near_target_peak_recall": 0.26923642062986725,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 5.677342414855957e-06,
+        "blur3_cycle_mae_increase": 0.0015618577599525452,
+        "wrong_record_audio_mae_increase": 0.05519634485244751
+      },
+      {
+        "seed": 43,
+        "route": "focal",
+        "sharp": {
+          "active_highpass_mae": 0.15247029066085815,
+          "active_highpass_rms_ratio": 0.6033337712287903,
+          "gradient_mae": 0.11367851495742798,
+          "gradient_magnitude_ratio": 0.5446797609329224,
+          "near_target_peak_precision": 0.5816264603246851,
+          "near_target_peak_recall": 0.2565998922466572,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 5.833804607391357e-06,
+        "blur3_cycle_mae_increase": 0.0017651617527008057,
+        "wrong_record_audio_mae_increase": 0.05456995964050293
+      },
+      {
+        "seed": 43,
+        "route": "focal_residual",
+        "sharp": {
+          "active_highpass_mae": 0.15227395296096802,
+          "active_highpass_rms_ratio": 0.6030911803245544,
+          "gradient_mae": 0.11339590698480606,
+          "gradient_magnitude_ratio": 0.5457828640937805,
+          "near_target_peak_precision": 0.5813133037441676,
+          "near_target_peak_recall": 0.2564039770779253,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 5.640089511871338e-06,
+        "blur3_cycle_mae_increase": 0.0017640963196754456,
+        "wrong_record_audio_mae_increase": 0.05403435230255127
+      },
+      {
+        "seed": 42,
+        "route": "structure",
+        "sharp": {
+          "active_highpass_mae": 0.15979601442813873,
+          "active_highpass_rms_ratio": 0.6986510157585144,
+          "gradient_mae": 0.12285143882036209,
+          "gradient_magnitude_ratio": 0.7741165161132812,
+          "near_target_peak_precision": 0.559285866704602,
+          "near_target_peak_recall": 0.3928588920997208,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 6.16908073425293e-06,
+        "blur3_cycle_mae_increase": 0.004195794463157654,
+        "wrong_record_audio_mae_increase": 0.06330341100692749
+      },
+      {
+        "seed": 42,
+        "route": "structure_residual",
+        "sharp": {
+          "active_highpass_mae": 0.15909188985824585,
+          "active_highpass_rms_ratio": 0.6982318758964539,
+          "gradient_mae": 0.12190689146518707,
+          "gradient_magnitude_ratio": 0.7656669616699219,
+          "near_target_peak_precision": 0.5630311270820182,
+          "near_target_peak_recall": 0.38663858549248176,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 3.032386302947998e-06,
+        "blur3_cycle_mae_increase": 0.004570402204990387,
+        "wrong_record_audio_mae_increase": 0.06394323706626892
+      },
+      {
+        "seed": 43,
+        "route": "structure",
+        "sharp": {
+          "active_highpass_mae": 0.15695559978485107,
+          "active_highpass_rms_ratio": 0.6776742935180664,
+          "gradient_mae": 0.12157078087329865,
+          "gradient_magnitude_ratio": 0.7251757383346558,
+          "near_target_peak_precision": 0.5690709536144417,
+          "near_target_peak_recall": 0.3572186576545689,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 4.693865776062012e-06,
+        "blur3_cycle_mae_increase": 0.0015041083097457886,
+        "wrong_record_audio_mae_increase": 0.05544769763946533
+      },
+      {
+        "seed": 43,
+        "route": "structure_residual",
+        "sharp": {
+          "active_highpass_mae": 0.1568581759929657,
+          "active_highpass_rms_ratio": 0.6791504621505737,
+          "gradient_mae": 0.12121152132749557,
+          "gradient_magnitude_ratio": 0.7290257215499878,
+          "near_target_peak_precision": 0.5683701302043127,
+          "near_target_peak_recall": 0.3700184486783889,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 5.602836608886719e-06,
+        "blur3_cycle_mae_increase": 0.001458972692489624,
+        "wrong_record_audio_mae_increase": 0.055587053298950195
+      },
+      {
+        "seed": 42,
+        "route": "highpass",
+        "sharp": {
+          "active_highpass_mae": 0.15428641438484192,
+          "active_highpass_rms_ratio": 0.6812464594841003,
+          "gradient_mae": 0.11613542586565018,
+          "gradient_magnitude_ratio": 0.6488857865333557,
+          "near_target_peak_precision": 0.5719356220549539,
+          "near_target_peak_recall": 0.3110316566260143,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 5.684792995452881e-06,
+        "blur3_cycle_mae_increase": 0.0055477917194366455,
+        "wrong_record_audio_mae_increase": 0.06621220707893372
+      },
+      {
+        "seed": 43,
+        "route": "highpass",
+        "sharp": {
+          "active_highpass_mae": 0.15490175783634186,
+          "active_highpass_rms_ratio": 0.6624017953872681,
+          "gradient_mae": 0.1168709248304367,
+          "gradient_magnitude_ratio": 0.6308114528656006,
+          "near_target_peak_precision": 0.5801176434356811,
+          "near_target_peak_recall": 0.31599484090055674,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        },
+        "quant8_cycle_mae_increase": 2.5257468223571777e-06,
+        "blur3_cycle_mae_increase": 0.0016832873225212097,
+        "wrong_record_audio_mae_increase": 0.05485990643501282
+      }
+    ],
+    "scope": "Read-only controls on repeatedly explored VAL. Quant8/3x3 blur act on normalized Mel, not waveform. Wrong-record input dependence and detail metrics do not establish speaker identity or harmonic truth."
+  },
+  "baseline_sharp": {
+    "active_highpass_mae": 0.1540219560265541,
+    "active_highpass_rms_ratio": 0.6386572122573853,
+    "gradient_mae": 0.11390616744756699,
+    "gradient_magnitude_ratio": 0.5546611845493317,
+    "near_target_peak_precision": 0.5779846850333339,
+    "near_target_peak_recall": 0.25689376499975514
+  }
+}

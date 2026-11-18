@@ -1,0 +1,36 @@
+{
+  "trainer_sha256": "b07ad57a83335c4d17dbf7bb8b14130cef06c5814e85f3ef7a2086852cd9e168",
+  "splits": {
+    "train": {
+      "windows": 58,
+      "recordings": 20,
+      "x_shape": [
+        58,
+        251,
+        81
+      ],
+      "y_shape": [
+        58,
+        80,
+        81
+      ],
+      "sha256": "709c61e29301994d64f50821e44b4651c787f8d17664a1526e99a2f078421359"
+    },
+    "val": {
+      "windows": 16,
+      "recordings": 4,
+      "x_shape": [
+        16,
+        251,
+        81
+      ],
+      "y_shape": [
+        16,
+        80,
+        81
+      ],
+      "sha256": "73d8be847ebe71a8d43de01637bbf2e7b428da1c0260fee630301c425bccef91"
+    }
+  },
+  "test_and_auth_reserve": "not accessed"
+}

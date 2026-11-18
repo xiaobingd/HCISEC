@@ -1,0 +1,1401 @@
+{
+  "baseline": {
+    "audio_mae": 0.3070895263304313,
+    "audio_detail_corr": 0.243758680140086,
+    "ACC_cycle_mae": 0.10973094856987398,
+    "ACC_detail_corr": 0.0680282535367517
+  },
+  "baseline_extra": {
+    "active_audio_mae": 0.4379358269274235,
+    "inactive_audio_mae": 0.21230844128876925,
+    "activity_false_positive_rate": 0.13966122302249606,
+    "activity_recall": 0.6107962369616993,
+    "activity_F1": 0.6306859415110588,
+    "physical_log_energy_corr": 0.6121635673309754,
+    "local_spectral_contrast_corr": 0.4867984536699405
+  },
+  "routes": {
+    "direct": {
+      "macro": {
+        "audio_mae": 0.31376914866268635,
+        "audio_detail_corr": 0.24381014393870382,
+        "ACC_cycle_mae": 0.107026991682748,
+        "ACC_detail_corr": 0.07752394062422563
+      },
+      "extra": {
+        "active_audio_mae": 0.4194311421364546,
+        "inactive_audio_mae": 0.23601729602863392,
+        "activity_false_positive_rate": 0.1582183189515,
+        "activity_recall": 0.6574535039386029,
+        "activity_F1": 0.6558996820675651,
+        "physical_log_energy_corr": 0.6140279615117097,
+        "local_spectral_contrast_corr": 0.4952816362975957
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15326401591300964,
+        "active_highpass_rms_ratio": 0.6483463644981384,
+        "gradient_mae": 0.11465064063668251,
+        "gradient_magnitude_ratio": 0.5973419547080994,
+        "near_target_peak_precision": 0.5711633422463057,
+        "near_target_peak_recall": 0.28113010399830207
+      }
+    },
+    "velocity": {
+      "macro": {
+        "audio_mae": 0.34726942413383055,
+        "audio_detail_corr": 0.1661053621945152,
+        "ACC_cycle_mae": 0.12233762345794175,
+        "ACC_detail_corr": 0.03817387669589459
+      },
+      "extra": {
+        "active_audio_mae": 0.523618654244476,
+        "inactive_audio_mae": 0.22255398105416033,
+        "activity_false_positive_rate": 0.1488938636586189,
+        "activity_recall": 0.6287074029081351,
+        "activity_F1": 0.6418215194058592,
+        "physical_log_energy_corr": 0.60971959222231,
+        "local_spectral_contrast_corr": 0.2776032458215155
+      },
+      "sharp": {
+        "active_highpass_mae": 0.2079332967599233,
+        "active_highpass_rms_ratio": 0.884821355342865,
+        "gradient_mae": 0.19928831855456036,
+        "gradient_magnitude_ratio": 1.4331582585970561,
+        "near_target_peak_precision": 0.4931900191159525,
+        "near_target_peak_recall": 0.7283010345409326
+      }
+    },
+    "data_prediction": {
+      "macro": {
+        "audio_mae": 0.31240978903240624,
+        "audio_detail_corr": 0.24128966166521826,
+        "ACC_cycle_mae": 0.10746665905333228,
+        "ACC_detail_corr": 0.07880249838819148
+      },
+      "extra": {
+        "active_audio_mae": 0.43102434443102944,
+        "inactive_audio_mae": 0.2255014191692074,
+        "activity_false_positive_rate": 0.15975648431698275,
+        "activity_recall": 0.6598004567486214,
+        "activity_F1": 0.6565997743141649,
+        "physical_log_energy_corr": 0.6121625899593737,
+        "local_spectral_contrast_corr": 0.4832836829363311
+      },
+      "sharp": {
+        "active_highpass_mae": 0.1550881614287694,
+        "active_highpass_rms_ratio": 0.6572287976741791,
+        "gradient_mae": 0.11580910036961238,
+        "gradient_magnitude_ratio": 0.604909876982371,
+        "near_target_peak_precision": 0.5762481734088087,
+        "near_target_peak_recall": 0.2704472852143911
+      }
+    },
+    "decoupled": {
+      "macro": {
+        "audio_mae": 0.34826429933309555,
+        "audio_detail_corr": 0.16811170539641856,
+        "ACC_cycle_mae": 0.12229620617710882,
+        "ACC_detail_corr": 0.03812212837875875
+      },
+      "extra": {
+        "active_audio_mae": 0.5217046732703844,
+        "inactive_audio_mae": 0.2253916795262032,
+        "activity_false_positive_rate": 0.16151268706134878,
+        "activity_recall": 0.6590767677871542,
+        "activity_F1": 0.6573151598895206,
+        "physical_log_energy_corr": 0.6089436367884005,
+        "local_spectral_contrast_corr": 0.2868180123479559
+      },
+      "sharp": {
+        "active_highpass_mae": 0.2079146752754847,
+        "active_highpass_rms_ratio": 0.8987739682197571,
+        "gradient_mae": 0.19766695300738016,
+        "gradient_magnitude_ratio": 1.4240439732869468,
+        "near_target_peak_precision": 0.4940129238919958,
+        "near_target_peak_recall": 0.7194875729920056
+      }
+    }
+  },
+  "seed_results": [
+    {
+      "seed": 42,
+      "route": "direct",
+      "macro": {
+        "audio_mae": 0.30787136579553287,
+        "audio_detail_corr": 0.24997428835886673,
+        "ACC_cycle_mae": 0.10770760873953501,
+        "ACC_detail_corr": 0.06901097632713582
+      },
+      "extra": {
+        "active_audio_mae": 0.42202016338706017,
+        "inactive_audio_mae": 0.22482268077631792,
+        "activity_false_positive_rate": 0.15624257025379643,
+        "activity_recall": 0.6547561967966143,
+        "activity_F1": 0.660364038313823,
+        "physical_log_energy_corr": 0.6153279957351623,
+        "local_spectral_contrast_corr": 0.4996384730091759
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15284864604473114,
+        "active_highpass_rms_ratio": 0.6393083930015564,
+        "gradient_mae": 0.11418081820011139,
+        "gradient_magnitude_ratio": 0.5971016883850098,
+        "near_target_peak_precision": 0.5681702344546381,
+        "near_target_peak_recall": 0.29560333708837405
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.30787136579553287,
+          "audio_detail_corr": 0.24997428835886673,
+          "ACC_cycle_mae": 0.10770760873953501,
+          "ACC_detail_corr": 0.06901097632713582
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "route": "velocity",
+      "macro": {
+        "audio_mae": 0.3462093178596761,
+        "audio_detail_corr": 0.16829790866750724,
+        "ACC_cycle_mae": 0.12408168257938491,
+        "ACC_detail_corr": 0.032601327939673345
+      },
+      "extra": {
+        "active_audio_mae": 0.5235781408018537,
+        "inactive_audio_mae": 0.22129326636592547,
+        "activity_false_positive_rate": 0.1527946137730311,
+        "activity_recall": 0.6373447732362693,
+        "activity_F1": 0.6504611185203893,
+        "physical_log_energy_corr": 0.6078506196934401,
+        "local_spectral_contrast_corr": 0.2805293813794805
+      },
+      "sharp": {
+        "active_highpass_mae": 0.2087473620971044,
+        "active_highpass_rms_ratio": 0.8950676918029785,
+        "gradient_mae": 0.19962458312511444,
+        "gradient_magnitude_ratio": 1.4482983748118083,
+        "near_target_peak_precision": 0.4937889984445454,
+        "near_target_peak_recall": 0.7270575174282868
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.34633394752939545,
+          "audio_detail_corr": 0.166824003522792,
+          "ACC_cycle_mae": 0.12410293395320575,
+          "ACC_detail_corr": 0.03322891841810552
+        },
+        {
+          "audio_mae": 0.3457344916959604,
+          "audio_detail_corr": 0.1689675148093589,
+          "ACC_cycle_mae": 0.1240598970403274,
+          "ACC_detail_corr": 0.0327904039196101
+        },
+        {
+          "audio_mae": 0.34655951435367266,
+          "audio_detail_corr": 0.16910220767037082,
+          "ACC_cycle_mae": 0.1240822167446216,
+          "ACC_detail_corr": 0.0317846614813044
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "route": "data_prediction",
+      "macro": {
+        "audio_mae": 0.31053733428319297,
+        "audio_detail_corr": 0.24800578866640788,
+        "ACC_cycle_mae": 0.10845678370032046,
+        "ACC_detail_corr": 0.06757339468886409
+      },
+      "extra": {
+        "active_audio_mae": 0.42569483402702546,
+        "inactive_audio_mae": 0.22638529481159317,
+        "activity_false_positive_rate": 0.16441260050565695,
+        "activity_recall": 0.6726900279426579,
+        "activity_F1": 0.6690930666122173,
+        "physical_log_energy_corr": 0.6114651874387679,
+        "local_spectral_contrast_corr": 0.49339884579777155
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15445777277151743,
+        "active_highpass_rms_ratio": 0.6602615118026733,
+        "gradient_mae": 0.11524892846743266,
+        "gradient_magnitude_ratio": 0.615993062655131,
+        "near_target_peak_precision": 0.5719032102150832,
+        "near_target_peak_recall": 0.2793859147877858
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.3105956216653188,
+          "audio_detail_corr": 0.2470863036975663,
+          "ACC_cycle_mae": 0.10848183619479339,
+          "ACC_detail_corr": 0.0679029046882159
+        },
+        {
+          "audio_mae": 0.31041772464911144,
+          "audio_detail_corr": 0.24852841169189047,
+          "ACC_cycle_mae": 0.10846327903370062,
+          "ACC_detail_corr": 0.0674176282289485
+        },
+        {
+          "audio_mae": 0.3105986565351486,
+          "audio_detail_corr": 0.24840265060976688,
+          "ACC_cycle_mae": 0.10842523587246736,
+          "ACC_detail_corr": 0.06739965114942786
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "route": "direct",
+      "macro": {
+        "audio_mae": 0.3196669315298398,
+        "audio_detail_corr": 0.23764599951854087,
+        "ACC_cycle_mae": 0.10634637462596098,
+        "ACC_detail_corr": 0.08603690492131544
+      },
+      "extra": {
+        "active_audio_mae": 0.416842120885849,
+        "inactive_audio_mae": 0.2472119112809499,
+        "activity_false_positive_rate": 0.16019406764920355,
+        "activity_recall": 0.6601508110805915,
+        "activity_F1": 0.6514353258213074,
+        "physical_log_energy_corr": 0.612727927288257,
+        "local_spectral_contrast_corr": 0.49092479958601554
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15367938578128815,
+        "active_highpass_rms_ratio": 0.6573843359947205,
+        "gradient_mae": 0.11512046307325363,
+        "gradient_magnitude_ratio": 0.597582221031189,
+        "near_target_peak_precision": 0.5741564500379733,
+        "near_target_peak_recall": 0.2666568709082301
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.3196669315298398,
+          "audio_detail_corr": 0.23764599951854087,
+          "ACC_cycle_mae": 0.10634637462596098,
+          "ACC_detail_corr": 0.08603690492131544
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "route": "velocity",
+      "macro": {
+        "audio_mae": 0.34832953040798503,
+        "audio_detail_corr": 0.16391281572152314,
+        "ACC_cycle_mae": 0.12059356433649858,
+        "ACC_detail_corr": 0.04374642545211582
+      },
+      "extra": {
+        "active_audio_mae": 0.5236591676870982,
+        "inactive_audio_mae": 0.22381469574239518,
+        "activity_false_positive_rate": 0.14499311354420671,
+        "activity_recall": 0.6200700325800009,
+        "activity_F1": 0.633181920291329,
+        "physical_log_energy_corr": 0.6115885647511797,
+        "local_spectral_contrast_corr": 0.2746771102635505
+      },
+      "sharp": {
+        "active_highpass_mae": 0.20711923142274222,
+        "active_highpass_rms_ratio": 0.8745750188827515,
+        "gradient_mae": 0.19895205398400626,
+        "gradient_magnitude_ratio": 1.418018142382304,
+        "near_target_peak_precision": 0.4925910397873597,
+        "near_target_peak_recall": 0.7295445516535785
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.3485343354443709,
+          "audio_detail_corr": 0.16272977408021064,
+          "ACC_cycle_mae": 0.12066666421790918,
+          "ACC_detail_corr": 0.043458507474873294
+        },
+        {
+          "audio_mae": 0.34779277021686233,
+          "audio_detail_corr": 0.16442075633683564,
+          "ACC_cycle_mae": 0.12063629440963268,
+          "ACC_detail_corr": 0.043258371204270826
+        },
+        {
+          "audio_mae": 0.34866148556272186,
+          "audio_detail_corr": 0.1645879167475231,
+          "ACC_cycle_mae": 0.12047773438195387,
+          "ACC_detail_corr": 0.04452239767720334
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "route": "data_prediction",
+      "macro": {
+        "audio_mae": 0.31428224378161956,
+        "audio_detail_corr": 0.2345735346640286,
+        "ACC_cycle_mae": 0.1064765344063441,
+        "ACC_detail_corr": 0.09003160208751888
+      },
+      "extra": {
+        "active_audio_mae": 0.4363538548350334,
+        "inactive_audio_mae": 0.22461754352682164,
+        "activity_false_positive_rate": 0.15510036812830855,
+        "activity_recall": 0.646910885554585,
+        "activity_F1": 0.6441064820161125,
+        "physical_log_energy_corr": 0.6128599924799794,
+        "local_spectral_contrast_corr": 0.4731685200748907
+      },
+      "sharp": {
+        "active_highpass_mae": 0.15571855008602142,
+        "active_highpass_rms_ratio": 0.6541960835456848,
+        "gradient_mae": 0.1163692722717921,
+        "gradient_magnitude_ratio": 0.593826691309611,
+        "near_target_peak_precision": 0.5805931366025342,
+        "near_target_peak_recall": 0.26150865564099635
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.3143872601290544,
+          "audio_detail_corr": 0.23374873339414437,
+          "ACC_cycle_mae": 0.10647742698589961,
+          "ACC_detail_corr": 0.09011045702995048
+        },
+        {
+          "audio_mae": 0.3141700086494287,
+          "audio_detail_corr": 0.2349960194229527,
+          "ACC_cycle_mae": 0.10647912261386712,
+          "ACC_detail_corr": 0.08996537298164829
+        },
+        {
+          "audio_mae": 0.31428946256637574,
+          "audio_detail_corr": 0.23497585117498873,
+          "ACC_cycle_mae": 0.10647305361926555,
+          "ACC_detail_corr": 0.09001897625095788
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "route": "decoupled",
+      "macro": {
+        "audio_mae": 0.34652570742699834,
+        "audio_detail_corr": 0.16945646070229048,
+        "ACC_cycle_mae": 0.12429725258714623,
+        "ACC_detail_corr": 0.032585467112735876
+      },
+      "extra": {
+        "active_audio_mae": 0.5164847253097428,
+        "inactive_audio_mae": 0.226430179634028,
+        "activity_false_positive_rate": 0.16783772540867525,
+        "activity_recall": 0.6733980502120246,
+        "activity_F1": 0.66962223570358,
+        "physical_log_energy_corr": 0.6079524491294584,
+        "local_spectral_contrast_corr": 0.2884471522925029
+      },
+      "sharp": {
+        "active_highpass_mae": 0.20957461992899576,
+        "active_highpass_rms_ratio": 0.9149683515230814,
+        "gradient_mae": 0.2005941222111384,
+        "gradient_magnitude_ratio": 1.4684459368387859,
+        "near_target_peak_precision": 0.4945398969885635,
+        "near_target_peak_recall": 0.7206739481804378
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.3467058800160885,
+          "audio_detail_corr": 0.16779187191307396,
+          "ACC_cycle_mae": 0.12435389508803686,
+          "ACC_detail_corr": 0.033263368790915716
+        },
+        {
+          "audio_mae": 0.34600106701254846,
+          "audio_detail_corr": 0.1701708194967163,
+          "ACC_cycle_mae": 0.1243053166816632,
+          "ACC_detail_corr": 0.03273944595542036
+        },
+        {
+          "audio_mae": 0.34687017525235814,
+          "audio_detail_corr": 0.17040669069708117,
+          "ACC_cycle_mae": 0.12423254599173864,
+          "ACC_detail_corr": 0.031753586591871545
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "route": "decoupled",
+      "macro": {
+        "audio_mae": 0.35000289123919276,
+        "audio_detail_corr": 0.16676695009054662,
+        "ACC_cycle_mae": 0.1202951597670714,
+        "ACC_detail_corr": 0.04365878964478162
+      },
+      "extra": {
+        "active_audio_mae": 0.526924621231026,
+        "inactive_audio_mae": 0.2243531794183784,
+        "activity_false_positive_rate": 0.1551876487140223,
+        "activity_recall": 0.6447554853622838,
+        "activity_F1": 0.6450080840754611,
+        "physical_log_energy_corr": 0.6099348244473424,
+        "local_spectral_contrast_corr": 0.2851888724034089
+      },
+      "sharp": {
+        "active_highpass_mae": 0.20625473062197366,
+        "active_highpass_rms_ratio": 0.8825795849164327,
+        "gradient_mae": 0.19473978380362192,
+        "gradient_magnitude_ratio": 1.3796420097351074,
+        "near_target_peak_precision": 0.4934859507954282,
+        "near_target_peak_recall": 0.7183011978035733
+      },
+      "draw_macros": [
+        {
+          "audio_mae": 0.35021659582853315,
+          "audio_detail_corr": 0.1654265365888256,
+          "ACC_cycle_mae": 0.12036756314337253,
+          "ACC_detail_corr": 0.04327840873198433
+        },
+        {
+          "audio_mae": 0.3494501692553361,
+          "audio_detail_corr": 0.16737409822441807,
+          "ACC_cycle_mae": 0.12032665113608042,
+          "ACC_detail_corr": 0.043233853045496026
+        },
+        {
+          "audio_mae": 0.35034190863370895,
+          "audio_detail_corr": 0.1675002154583962,
+          "ACC_cycle_mae": 0.12019126502176126,
+          "ACC_detail_corr": 0.0444641071568645
+        }
+      ]
+    }
+  ],
+  "paired_audio_changes": {
+    "direct": {
+      "audio_mae_change_vs_previous": 0.006679622332255045,
+      "record_bootstrap95": [
+        0.003449846987302105,
+        0.009942239917193847
+      ],
+      "records_lower_error": 17,
+      "records": 60,
+      "limits": "Conditional on reused samepersonVAL/currentmodels; average seeds and randomdraw metrics, no selection uncertainty or new-session guarantee."
+    },
+    "velocity": {
+      "audio_mae_change_vs_previous": 0.0401798978033993,
+      "record_bootstrap95": [
+        0.03243141332641244,
+        0.047255212193768895
+      ],
+      "records_lower_error": 6,
+      "records": 60,
+      "limits": "Conditional on reused samepersonVAL/currentmodels; average seeds and randomdraw metrics, no selection uncertainty or new-session guarantee."
+    },
+    "data_prediction": {
+      "audio_mae_change_vs_previous": 0.005320262701974975,
+      "record_bootstrap95": [
+        0.0031015717890113597,
+        0.007499836419398584
+      ],
+      "records_lower_error": 13,
+      "records": 60,
+      "limits": "Conditional on reused samepersonVAL/currentmodels; average seeds and randomdraw metrics, no selection uncertainty or new-session guarantee."
+    },
+    "decoupled": {
+      "audio_mae_change_vs_previous": 0.04117477300266425,
+      "record_bootstrap95": [
+        0.03358717550834019,
+        0.04821145619472696
+      ],
+      "records_lower_error": 6,
+      "records": 60,
+      "limits": "Conditional on reused samepersonVAL/currentmodels; average seeds and randomdraw metrics, no selection uncertainty or new-session guarantee."
+    }
+  },
+  "controls": [
+    {
+      "seed": 42,
+      "route": "direct",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.3677998368938764,
+            "audio_detail_corr": 0.13379044558423372,
+            "ACC_cycle_mae": 0.11987724887828032,
+            "ACC_detail_corr": 0.012926242344614265
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3400132680932681,
+            "audio_detail_corr": 0.2464996139582717,
+            "ACC_cycle_mae": 0.117457007492582,
+            "ACC_detail_corr": 0.024014187639888152
+          },
+          "wrong_record_audio_mae_change": 0.05992847109834354,
+          "constant_ACC_audio_mae_change": 0.032141902297735225,
+          "quant8_cycle_mae_increase": 5.193054676055908e-06,
+          "blur3_cycle_mae_increase": 0.005219846963882446,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.0,
+      "zero_prior_noise": null,
+      "one_NFE_same_weights": null
+    },
+    {
+      "seed": 42,
+      "route": "velocity",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.3990539679924647,
+            "audio_detail_corr": 0.08889526102192098,
+            "ACC_cycle_mae": 0.1337705227235953,
+            "ACC_detail_corr": 0.008047123826143511
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3569725602865219,
+            "audio_detail_corr": 0.1646955914271673,
+            "ACC_cycle_mae": 0.1337370876222849,
+            "ACC_detail_corr": 0.015218043594279813
+          },
+          "wrong_record_audio_mae_change": 0.05272002046306923,
+          "constant_ACC_audio_mae_change": 0.010638612757126464,
+          "quant8_cycle_mae_increase": 1.0505318641662598e-06,
+          "blur3_cycle_mae_increase": -0.00969427078962326,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 1,
+          "wrong_record_macro": {
+            "audio_mae": 0.398623272528251,
+            "audio_detail_corr": 0.08990694932642397,
+            "ACC_cycle_mae": 0.1339127879589796,
+            "ACC_detail_corr": 0.007910051784514887
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3553776778280735,
+            "audio_detail_corr": 0.16691936451432865,
+            "ACC_cycle_mae": 0.13372127413749696,
+            "ACC_detail_corr": 0.014706581129172924
+          },
+          "wrong_record_audio_mae_change": 0.05288878083229065,
+          "constant_ACC_audio_mae_change": 0.009643186132113124,
+          "quant8_cycle_mae_increase": 3.077089786529541e-06,
+          "blur3_cycle_mae_increase": -0.009699203073978424,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 2,
+          "wrong_record_macro": {
+            "audio_mae": 0.3994701012969017,
+            "audio_detail_corr": 0.08908153077693674,
+            "ACC_cycle_mae": 0.1339650801072518,
+            "ACC_detail_corr": 0.007190224544073089
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3563841832180818,
+            "audio_detail_corr": 0.16588283336612256,
+            "ACC_cycle_mae": 0.1339499461154143,
+            "ACC_detail_corr": 0.01360657435574464
+          },
+          "wrong_record_audio_mae_change": 0.05291058694322903,
+          "constant_ACC_audio_mae_change": 0.009824668864409136,
+          "quant8_cycle_mae_increase": 1.914799213409424e-06,
+          "blur3_cycle_mae_increase": -0.00964229553937912,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.10877025127410889,
+      "zero_prior_noise": {
+        "macro": {
+          "audio_mae": 0.33045818681518235,
+          "audio_detail_corr": 0.2501917041259891,
+          "ACC_cycle_mae": 0.11084667257964612,
+          "ACC_detail_corr": 0.062353097169619676
+        },
+        "extra": {
+          "active_audio_mae": 0.510833366215229,
+          "inactive_audio_mae": 0.2032281233618657,
+          "activity_false_positive_rate": 0.13085698299127116,
+          "activity_recall": 0.5923010520225512,
+          "activity_F1": 0.6253029806047632,
+          "physical_log_energy_corr": 0.6096102310546333,
+          "local_spectral_contrast_corr": 0.4627237828914124
+        },
+        "sharp": {
+          "active_highpass_mae": 0.1562792807817459,
+          "active_highpass_rms_ratio": 0.5990055799484253,
+          "gradient_mae": 0.11504697054624557,
+          "gradient_magnitude_ratio": 0.501238226890564,
+          "near_target_peak_precision": 0.5720355486315193,
+          "near_target_peak_recall": 0.26838745489869553,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      },
+      "one_NFE_same_weights": {
+        "macro": {
+          "audio_mae": 0.36284966170787813,
+          "audio_detail_corr": 0.17251014290509892,
+          "ACC_cycle_mae": 0.12244022091229757,
+          "ACC_detail_corr": 0.03305392484024646
+        },
+        "extra": {
+          "active_audio_mae": 0.5867872054378191,
+          "inactive_audio_mae": 0.20729864152769248,
+          "activity_false_positive_rate": 0.12063289851630914,
+          "activity_recall": 0.5448805002093626,
+          "activity_F1": 0.5907425766189647,
+          "physical_log_energy_corr": 0.6048614880395201,
+          "local_spectral_contrast_corr": 0.27239714434876494
+        },
+        "sharp": {
+          "active_highpass_mae": 0.20389311015605927,
+          "active_highpass_rms_ratio": 0.8389686346054077,
+          "gradient_mae": 0.18097223341464996,
+          "gradient_magnitude_ratio": 1.186847448348999,
+          "near_target_peak_precision": 0.4935036552183843,
+          "near_target_peak_recall": 0.7032374981632953,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "route": "data_prediction",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.3727821151415507,
+            "audio_detail_corr": 0.13301446225421007,
+            "ACC_cycle_mae": 0.12057240741948287,
+            "ACC_detail_corr": 0.012508930715487867
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3488810377816359,
+            "audio_detail_corr": 0.24543771606607814,
+            "ACC_cycle_mae": 0.11697852487365405,
+            "ACC_detail_corr": 0.024051045120376705
+          },
+          "wrong_record_audio_mae_change": 0.0621864934762319,
+          "constant_ACC_audio_mae_change": 0.03828541611631714,
+          "quant8_cycle_mae_increase": 2.041459083557129e-06,
+          "blur3_cycle_mae_increase": 0.002072438597679138,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 1,
+          "wrong_record_macro": {
+            "audio_mae": 0.37273879994948705,
+            "audio_detail_corr": 0.13409239703519304,
+            "ACC_cycle_mae": 0.12061554441849391,
+            "ACC_detail_corr": 0.011717545873796385
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.34848964313666025,
+            "audio_detail_corr": 0.24652605253888696,
+            "ACC_cycle_mae": 0.11698140526811282,
+            "ACC_detail_corr": 0.023474329198344183
+          },
+          "wrong_record_audio_mae_change": 0.06232107530037562,
+          "constant_ACC_audio_mae_change": 0.03807191848754882,
+          "quant8_cycle_mae_increase": 4.023313522338867e-06,
+          "blur3_cycle_mae_increase": 0.0020601004362106323,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 2,
+          "wrong_record_macro": {
+            "audio_mae": 0.37281183525919914,
+            "audio_detail_corr": 0.13331686446379237,
+            "ACC_cycle_mae": 0.12061028455694517,
+            "ACC_detail_corr": 0.011908119209092698
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3486369694272677,
+            "audio_detail_corr": 0.24613725660525543,
+            "ACC_cycle_mae": 0.11698067995409171,
+            "ACC_detail_corr": 0.023418905909010464
+          },
+          "wrong_record_audio_mae_change": 0.06221317872405052,
+          "constant_ACC_audio_mae_change": 0.038038312892119064,
+          "quant8_cycle_mae_increase": 4.187226295471191e-06,
+          "blur3_cycle_mae_increase": 0.002110898494720459,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.015314700081944466,
+      "zero_prior_noise": {
+        "macro": {
+          "audio_mae": 0.30982182919979095,
+          "audio_detail_corr": 0.250667088882569,
+          "ACC_cycle_mae": 0.10825714816649755,
+          "ACC_detail_corr": 0.0684576844431643
+        },
+        "extra": {
+          "active_audio_mae": 0.42532595694065095,
+          "inactive_audio_mae": 0.22540918340285618,
+          "activity_false_positive_rate": 0.16399920592796416,
+          "activity_recall": 0.6712597768610429,
+          "activity_F1": 0.6682774492518058,
+          "physical_log_energy_corr": 0.6116971306784812,
+          "local_spectral_contrast_corr": 0.49536474231947547
+        },
+        "sharp": {
+          "active_highpass_mae": 0.1541752964258194,
+          "active_highpass_rms_ratio": 0.658740758895874,
+          "gradient_mae": 0.11489787697792053,
+          "gradient_magnitude_ratio": 0.6098175048828125,
+          "near_target_peak_precision": 0.572389885807504,
+          "near_target_peak_recall": 0.27886891642585426,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      },
+      "one_NFE_same_weights": {
+        "macro": {
+          "audio_mae": 0.3112480916082859,
+          "audio_detail_corr": 0.24191409763508281,
+          "ACC_cycle_mae": 0.10908267286916574,
+          "ACC_detail_corr": 0.06335655739624323
+        },
+        "extra": {
+          "active_audio_mae": 0.42304203162590664,
+          "inactive_audio_mae": 0.22950882042447726,
+          "activity_false_positive_rate": 0.16281148589002187,
+          "activity_recall": 0.6704022262936652,
+          "activity_F1": 0.6682355320387648,
+          "physical_log_energy_corr": 0.6130527040536898,
+          "local_spectral_contrast_corr": 0.48955657811867126
+        },
+        "sharp": {
+          "active_highpass_mae": 0.15489821135997772,
+          "active_highpass_rms_ratio": 0.6672366857528687,
+          "gradient_mae": 0.11637777090072632,
+          "gradient_magnitude_ratio": 0.6340596675872803,
+          "near_target_peak_precision": 0.5660636592626517,
+          "near_target_peak_recall": 0.28664021811888785,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "route": "direct",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.38125625203053154,
+            "audio_detail_corr": 0.1016736513349252,
+            "ACC_cycle_mae": 0.1203260121246179,
+            "ACC_detail_corr": 0.010127499213942412
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3497137156625589,
+            "audio_detail_corr": 0.2427034556346385,
+            "ACC_cycle_mae": 0.11598347574472427,
+            "ACC_detail_corr": 0.02067915372464395
+          },
+          "wrong_record_audio_mae_change": 0.06158932050069171,
+          "constant_ACC_audio_mae_change": 0.03004678413271905,
+          "quant8_cycle_mae_increase": 4.395842552185059e-06,
+          "blur3_cycle_mae_increase": 0.0017299726605415344,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.0,
+      "zero_prior_noise": null,
+      "one_NFE_same_weights": null
+    },
+    {
+      "seed": 43,
+      "route": "velocity",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.40381278097629547,
+            "audio_detail_corr": 0.06840209052982463,
+            "ACC_cycle_mae": 0.13345967816809814,
+            "ACC_detail_corr": 0.006593449228876725
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.35389905273914335,
+            "audio_detail_corr": 0.16376620187535887,
+            "ACC_cycle_mae": 0.13065796693166096,
+            "ACC_detail_corr": 0.011123888931278334
+          },
+          "wrong_record_audio_mae_change": 0.05527844553192457,
+          "constant_ACC_audio_mae_change": 0.0053647172947724475,
+          "quant8_cycle_mae_increase": 7.078051567077637e-07,
+          "blur3_cycle_mae_increase": -0.010539986193180084,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 1,
+          "wrong_record_macro": {
+            "audio_mae": 0.4034309002260367,
+            "audio_detail_corr": 0.06959710059114949,
+            "ACC_cycle_mae": 0.13343698730071385,
+            "ACC_detail_corr": 0.0060506309625026075
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3525698939959208,
+            "audio_detail_corr": 0.16533244836001437,
+            "ACC_cycle_mae": 0.13091292182604472,
+            "ACC_detail_corr": 0.010508618493924435
+          },
+          "wrong_record_audio_mae_change": 0.05563813000917439,
+          "constant_ACC_audio_mae_change": 0.004777123779058479,
+          "quant8_cycle_mae_increase": 3.1068921089172363e-06,
+          "blur3_cycle_mae_increase": -0.01049792766571045,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 2,
+          "wrong_record_macro": {
+            "audio_mae": 0.40423668548464775,
+            "audio_detail_corr": 0.06875778900626206,
+            "ACC_cycle_mae": 0.1333555782834689,
+            "ACC_detail_corr": 0.006969651201148794
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3535880898435911,
+            "audio_detail_corr": 0.16454441142893392,
+            "ACC_cycle_mae": 0.13086367286741735,
+            "ACC_detail_corr": 0.011959916340307481
+          },
+          "wrong_record_audio_mae_change": 0.05557519992192589,
+          "constant_ACC_audio_mae_change": 0.004926604280869218,
+          "quant8_cycle_mae_increase": 1.8104910850524902e-06,
+          "blur3_cycle_mae_increase": -0.010329611599445343,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.10388629883527756,
+      "zero_prior_noise": {
+        "macro": {
+          "audio_mae": 0.33512868533531825,
+          "audio_detail_corr": 0.23447145798649294,
+          "ACC_cycle_mae": 0.10795689361790815,
+          "ACC_detail_corr": 0.08224755753912477
+        },
+        "extra": {
+          "active_audio_mae": 0.5119910359382629,
+          "inactive_audio_mae": 0.20918624463180702,
+          "activity_false_positive_rate": 0.1216274584456011,
+          "activity_recall": 0.559767593085565,
+          "activity_F1": 0.5954788241702575,
+          "physical_log_energy_corr": 0.6118482048727952,
+          "local_spectral_contrast_corr": 0.4424283266821902
+        },
+        "sharp": {
+          "active_highpass_mae": 0.15754808485507965,
+          "active_highpass_rms_ratio": 0.5952953696250916,
+          "gradient_mae": 0.11713015288114548,
+          "gradient_magnitude_ratio": 0.4985646903514862,
+          "near_target_peak_precision": 0.573769917702679,
+          "near_target_peak_recall": 0.27446082512938563,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      },
+      "one_NFE_same_weights": {
+        "macro": {
+          "audio_mae": 0.39153629044691723,
+          "audio_detail_corr": 0.16787686588905543,
+          "ACC_cycle_mae": 0.12221353476246198,
+          "ACC_detail_corr": 0.04136430569470298
+        },
+        "extra": {
+          "active_audio_mae": 0.6621975705027581,
+          "inactive_audio_mae": 0.20437329784035682,
+          "activity_false_positive_rate": 0.08161038831480995,
+          "activity_recall": 0.4224755919923121,
+          "activity_F1": 0.5039584159999005,
+          "physical_log_energy_corr": 0.5927253191009326,
+          "local_spectral_contrast_corr": 0.2519592561194778
+        },
+        "sharp": {
+          "active_highpass_mae": 0.19861063361167908,
+          "active_highpass_rms_ratio": 0.7708030343055725,
+          "gradient_mae": 0.16590820252895355,
+          "gradient_magnitude_ratio": 0.9245344400405884,
+          "near_target_peak_precision": 0.49049776976368986,
+          "near_target_peak_recall": 0.6438262232453348,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "route": "data_prediction",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.3782991416752338,
+            "audio_detail_corr": 0.09987781092687806,
+            "ACC_cycle_mae": 0.12141365458567938,
+            "ACC_detail_corr": 0.011023101886091681
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.34237332294384637,
+            "audio_detail_corr": 0.24156161619720481,
+            "ACC_cycle_mae": 0.11655232086777687,
+            "ACC_detail_corr": 0.021469791897139146
+          },
+          "wrong_record_audio_mae_change": 0.06391188154617944,
+          "constant_ACC_audio_mae_change": 0.02798606281479199,
+          "quant8_cycle_mae_increase": 4.477798938751221e-06,
+          "blur3_cycle_mae_increase": 0.0014273971319198608,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 1,
+          "wrong_record_macro": {
+            "audio_mae": 0.37817342827717465,
+            "audio_detail_corr": 0.1008046306603357,
+            "ACC_cycle_mae": 0.12141741464535395,
+            "ACC_detail_corr": 0.01068089929014548
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.34201183716456096,
+            "audio_detail_corr": 0.24233302260935022,
+            "ACC_cycle_mae": 0.11657958403229714,
+            "ACC_detail_corr": 0.021179064431799517
+          },
+          "wrong_record_audio_mae_change": 0.06400341962774597,
+          "constant_ACC_audio_mae_change": 0.027841828515132283,
+          "quant8_cycle_mae_increase": 3.516674041748047e-06,
+          "blur3_cycle_mae_increase": 0.0014258697628974915,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 2,
+          "wrong_record_macro": {
+            "audio_mae": 0.3782925814390182,
+            "audio_detail_corr": 0.09995430875714771,
+            "ACC_cycle_mae": 0.12142204865813255,
+            "ACC_detail_corr": 0.010797947303671788
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.342193357894818,
+            "audio_detail_corr": 0.24187973035448074,
+            "ACC_cycle_mae": 0.1166258285442988,
+            "ACC_detail_corr": 0.02131135680311559
+          },
+          "wrong_record_audio_mae_change": 0.06400311887264248,
+          "constant_ACC_audio_mae_change": 0.02790389532844223,
+          "quant8_cycle_mae_increase": 3.2782554626464844e-06,
+          "blur3_cycle_mae_increase": 0.001468367874622345,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.01400977373123169,
+      "zero_prior_noise": {
+        "macro": {
+          "audio_mae": 0.3136934913694859,
+          "audio_detail_corr": 0.23651662131443457,
+          "ACC_cycle_mae": 0.10627928053339322,
+          "ACC_detail_corr": 0.09102002351260972
+        },
+        "extra": {
+          "active_audio_mae": 0.436054561038812,
+          "inactive_audio_mae": 0.22381505568822224,
+          "activity_false_positive_rate": 0.15524618022479525,
+          "activity_recall": 0.6446331914563534,
+          "activity_F1": 0.6423094437871858,
+          "physical_log_energy_corr": 0.6129960403791466,
+          "local_spectral_contrast_corr": 0.47481265370986075
+        },
+        "sharp": {
+          "active_highpass_mae": 0.1555066704750061,
+          "active_highpass_rms_ratio": 0.6530342698097229,
+          "gradient_mae": 0.11608367413282394,
+          "gradient_magnitude_ratio": 0.5889439582824707,
+          "near_target_peak_precision": 0.5821956028421562,
+          "near_target_peak_recall": 0.2624120422523714,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      },
+      "one_NFE_same_weights": {
+        "macro": {
+          "audio_mae": 0.3243918038904667,
+          "audio_detail_corr": 0.22898384939888064,
+          "ACC_cycle_mae": 0.10716785676777363,
+          "ACC_detail_corr": 0.08375550003257727
+        },
+        "extra": {
+          "active_audio_mae": 0.4166695599754651,
+          "inactive_audio_mae": 0.25521089931329094,
+          "activity_false_positive_rate": 0.1624351800499865,
+          "activity_recall": 0.6650742194577114,
+          "activity_F1": 0.6535381559668013,
+          "physical_log_energy_corr": 0.6117660496445888,
+          "local_spectral_contrast_corr": 0.4805794303779953
+        },
+        "sharp": {
+          "active_highpass_mae": 0.15540027618408203,
+          "active_highpass_rms_ratio": 0.6712899208068848,
+          "gradient_mae": 0.11730598658323288,
+          "gradient_magnitude_ratio": 0.6322928071022034,
+          "near_target_peak_precision": 0.570837605628823,
+          "near_target_peak_recall": 0.27075476318753977,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "route": "decoupled",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.40108298311630886,
+            "audio_detail_corr": 0.08964106873607815,
+            "ACC_cycle_mae": 0.1341488049676021,
+            "ACC_detail_corr": 0.008000354324755389
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3619260244071484,
+            "audio_detail_corr": 0.16496117877304586,
+            "ACC_cycle_mae": 0.1337770855675141,
+            "ACC_detail_corr": 0.015042041918237825
+          },
+          "wrong_record_audio_mae_change": 0.05437710310022037,
+          "constant_ACC_audio_mae_change": 0.015220144391059898,
+          "quant8_cycle_mae_increase": 9.08970832824707e-07,
+          "blur3_cycle_mae_increase": -0.010472938418388367,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 1,
+          "wrong_record_macro": {
+            "audio_mae": 0.4005151535073916,
+            "audio_detail_corr": 0.0911496463091971,
+            "ACC_cycle_mae": 0.13432451635599135,
+            "ACC_detail_corr": 0.00787592862897891
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3600857069094976,
+            "audio_detail_corr": 0.16765213793729097,
+            "ACC_cycle_mae": 0.13375877862175306,
+            "ACC_detail_corr": 0.014429462871806326
+          },
+          "wrong_record_audio_mae_change": 0.05451408649484313,
+          "constant_ACC_audio_mae_change": 0.014084639896949136,
+          "quant8_cycle_mae_increase": 1.0207295417785645e-06,
+          "blur3_cycle_mae_increase": -0.01047419011592865,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 2,
+          "wrong_record_macro": {
+            "audio_mae": 0.4015275905529658,
+            "audio_detail_corr": 0.09013859607564466,
+            "ACC_cycle_mae": 0.1342919231702884,
+            "ACC_detail_corr": 0.007226524068039672
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.36120361760258674,
+            "audio_detail_corr": 0.16651960351227543,
+            "ACC_cycle_mae": 0.13393067866563796,
+            "ACC_detail_corr": 0.013372344141484737
+          },
+          "wrong_record_audio_mae_change": 0.05465741530060764,
+          "constant_ACC_audio_mae_change": 0.014333442350228598,
+          "quant8_cycle_mae_increase": 3.248453140258789e-06,
+          "blur3_cycle_mae_increase": -0.01036817580461502,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.11150597035884857,
+      "zero_prior_noise": {
+        "macro": {
+          "audio_mae": 0.32227939640482267,
+          "audio_detail_corr": 0.2512935194332261,
+          "ACC_cycle_mae": 0.10930215877791245,
+          "ACC_detail_corr": 0.06276641791911537
+        },
+        "extra": {
+          "active_audio_mae": 0.4915268431107203,
+          "inactive_audio_mae": 0.2021903252849976,
+          "activity_false_positive_rate": 0.13850422032810575,
+          "activity_recall": 0.6089753363506333,
+          "activity_F1": 0.6351189342398886,
+          "physical_log_energy_corr": 0.6106488690282738,
+          "local_spectral_contrast_corr": 0.4731686697524678
+        },
+        "sharp": {
+          "active_highpass_mae": 0.15533673763275146,
+          "active_highpass_rms_ratio": 0.6075939536094666,
+          "gradient_mae": 0.11502598971128464,
+          "gradient_magnitude_ratio": 0.5349385738372803,
+          "near_target_peak_precision": 0.5708980648678114,
+          "near_target_peak_recall": 0.2780526032228045,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      },
+      "one_NFE_same_weights": {
+        "macro": {
+          "audio_mae": 0.36429230570793153,
+          "audio_detail_corr": 0.17495695721652377,
+          "ACC_cycle_mae": 0.12212961080173651,
+          "ACC_detail_corr": 0.03329208996252038
+        },
+        "extra": {
+          "active_audio_mae": 0.5895003686348598,
+          "inactive_audio_mae": 0.20785803745190304,
+          "activity_false_positive_rate": 0.12604891816700017,
+          "activity_recall": 0.5648675421285794,
+          "activity_F1": 0.6047282912687837,
+          "physical_log_energy_corr": 0.6039006752367931,
+          "local_spectral_contrast_corr": 0.27864439103375804
+        },
+        "sharp": {
+          "active_highpass_mae": 0.20323403179645538,
+          "active_highpass_rms_ratio": 0.8445680141448975,
+          "gradient_mae": 0.17813925445079803,
+          "gradient_magnitude_ratio": 1.156581163406372,
+          "near_target_peak_precision": 0.4952623296614993,
+          "near_target_peak_recall": 0.6924621638830386,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "route": "decoupled",
+      "draws": [
+        {
+          "draw": 0,
+          "wrong_record_macro": {
+            "audio_mae": 0.4060847957928975,
+            "audio_detail_corr": 0.06978944370223593,
+            "ACC_cycle_mae": 0.13326457689205806,
+            "ACC_detail_corr": 0.006645614505584082
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.35673223013679184,
+            "audio_detail_corr": 0.16533657885140407,
+            "ACC_cycle_mae": 0.1312673207372427,
+            "ACC_detail_corr": 0.011028551377322926
+          },
+          "wrong_record_audio_mae_change": 0.05586819996436437,
+          "constant_ACC_audio_mae_change": 0.006515634308258689,
+          "quant8_cycle_mae_increase": 1.6391277313232422e-06,
+          "blur3_cycle_mae_increase": -0.009735651314258575,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 1,
+          "wrong_record_macro": {
+            "audio_mae": 0.40562691663702327,
+            "audio_detail_corr": 0.07123827713812161,
+            "ACC_cycle_mae": 0.13323240441580614,
+            "ACC_detail_corr": 0.006076969668460696
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3552490721146266,
+            "audio_detail_corr": 0.16737516428417137,
+            "ACC_cycle_mae": 0.13153587790826957,
+            "ACC_detail_corr": 0.010485391013733976
+          },
+          "wrong_record_audio_mae_change": 0.05617674738168715,
+          "constant_ACC_audio_mae_change": 0.005798902859290467,
+          "quant8_cycle_mae_increase": 1.1771917343139648e-06,
+          "blur3_cycle_mae_increase": -0.009691894054412842,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        },
+        {
+          "draw": 2,
+          "wrong_record_macro": {
+            "audio_mae": 0.4065388210117817,
+            "audio_detail_corr": 0.07029459672555619,
+            "ACC_cycle_mae": 0.13318926567832629,
+            "ACC_detail_corr": 0.0069780389740625726
+          },
+          "constant_ACC_macro": {
+            "audio_mae": 0.3563615679740906,
+            "audio_detail_corr": 0.16647599451907136,
+            "ACC_cycle_mae": 0.13147062410910923,
+            "ACC_detail_corr": 0.01202053705265596
+          },
+          "wrong_record_audio_mae_change": 0.05619691237807273,
+          "constant_ACC_audio_mae_change": 0.006019659340381622,
+          "quant8_cycle_mae_increase": 1.4379620552062988e-06,
+          "blur3_cycle_mae_increase": -0.00948914885520935,
+          "TRAIN_only_time_template_audio_mae": 0.3236478567123413
+        }
+      ],
+      "mean_pointwise_std_across3draws": 0.10126573592424393,
+      "zero_prior_noise": {
+        "macro": {
+          "audio_mae": 0.3335542805492878,
+          "audio_detail_corr": 0.23403536494641702,
+          "ACC_cycle_mae": 0.10766685493290425,
+          "ACC_detail_corr": 0.08276497928556222
+        },
+        "extra": {
+          "active_audio_mae": 0.5075545638799668,
+          "inactive_audio_mae": 0.20942968179782231,
+          "activity_false_positive_rate": 0.12720299754277645,
+          "activity_recall": 0.5711651875546562,
+          "activity_F1": 0.6025154260553087,
+          "physical_log_energy_corr": 0.6107966004318801,
+          "local_spectral_contrast_corr": 0.44478509856643184
+        },
+        "sharp": {
+          "active_highpass_mae": 0.1573035567998886,
+          "active_highpass_rms_ratio": 0.6046524047851562,
+          "gradient_mae": 0.11707919836044312,
+          "gradient_magnitude_ratio": 0.5033575892448425,
+          "near_target_peak_precision": 0.5746754414356098,
+          "near_target_peak_recall": 0.26794664576904864,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      },
+      "one_NFE_same_weights": {
+        "macro": {
+          "audio_mae": 0.3959291306634744,
+          "audio_detail_corr": 0.1711379428596777,
+          "ACC_cycle_mae": 0.12136680074036121,
+          "ACC_detail_corr": 0.04204280870114949
+        },
+        "extra": {
+          "active_audio_mae": 0.6724882319569587,
+          "inactive_audio_mae": 0.20486513823270797,
+          "activity_false_positive_rate": 0.08372423431678974,
+          "activity_recall": 0.4320227389456992,
+          "activity_F1": 0.5115210982062465,
+          "physical_log_energy_corr": 0.5888156808716712,
+          "local_spectral_contrast_corr": 0.260664748880514
+        },
+        "sharp": {
+          "active_highpass_mae": 0.1957990974187851,
+          "active_highpass_rms_ratio": 0.7608394026756287,
+          "gradient_mae": 0.16003453731536865,
+          "gradient_magnitude_ratio": 0.8547811508178711,
+          "near_target_peak_precision": 0.49171339719491935,
+          "near_target_peak_recall": 0.6136552872606161,
+          "peak_scope": "Mel local maxima margin .025, +/-1 frequency bin, active target proxy only; not physical harmonic/F0 or identity metric."
+        }
+      }
+    }
+  ],
+  "protocol": {
+    "phases": [
+      {
+        "folder": "results",
+        "protocol": {
+          "routes": [
+            "direct",
+            "velocity",
+            "data_prediction"
+          ],
+          "seeds": [
+            42,
+            43
+          ],
+          "epochs": 180,
+          "updates_per_epoch": 4,
+          "batch_records": 8,
+          "scope": "Same clean mei180TRAIN/60 repeatedly explored VAL full2s shared frozen frontend, same common65frame interiors x180; no TEST/auth read, no external samples or pretrained speech weights. Offline future ACC context.",
+          "model": "Frozen previous same-seed fullcontext G, 24channel no-downsample time-conditioned predictor shared architecture; ReturnF trainable. No crosscycle bypass. Direct=1NFE, velocity/DP=5NFE. Not compute-matched.",
+          "training": "New D40warmup all routes, lr.0001; all completeACCcycle20/audio10/pairedACC5, pairedMel2 + coreMSE20 (direct actualoutput; velocity conditional OT field; DP interpolant-conditioned targetdata); audioGAN.1/ACCGAN.05, contrast.5/freqgrad1/timegrad1/physicalenergy3. Noise.005 beforeF. Gaussianprior centeredonbase,sigma.2, t=sigmoid(N(.4,1)). Uniform5step Euler, no MeanFlow/JVP training. Fixedendpoint/noVALcheckpointselection.",
+          "evaluation": "3fixed draws per trainedflow, no best-of-N, metrics averaged across draw metrics NOT averaged spectrograms. Plot draw0 fixedsame4sources. Deterministic direct only1draw. Stochastic controls use SAME noise for paired and wrong/shuffled inputs.",
+          "references": [
+            "https://arxiv.org/abs/2605.16251",
+            "https://arxiv.org/abs/2512.19442",
+            "https://arxiv.org/abs/2510.16997"
+          ],
+          "limits": "Inspired project Mel adaptation, not waveform RMFSR/MeanFlow/Stream.FM reproduction or speakeridentity proof. DP/prior ideas tested, no PASE implementation. Changed matched objective from prior experiment; old model is reference, direct is currentsame-budget control."
+        }
+      },
+      {
+        "folder": "results_decoupled",
+        "protocol": {
+          "routes": [
+            "decoupled"
+          ],
+          "seeds": [
+            42,
+            43
+          ],
+          "epochs": 180,
+          "updates_per_epoch": 4,
+          "batch_records": 8,
+          "scope": "Same clean mei180TRAIN/60 repeatedly explored VAL full2s shared frozen frontend, same common65frame interiors x180; no TEST/auth read, no external samples or pretrained speech weights. Offline future ACC context.",
+          "model": "Frozen previous same-seed fullcontext G, 24channel no-downsample time-conditioned predictor shared architecture; ReturnF trainable. No crosscycle bypass. Direct=1NFE, velocity/DP=5NFE. Not compute-matched.",
+          "training": "New D40warmup all routes, lr.0001; all completeACCcycle20/audio10/pairedACC5, pairedMel2 + coreMSE20 (direct actualoutput; velocity conditional OT field; DP interpolant-conditioned targetdata); audioGAN.1/ACCGAN.05, contrast.5/freqgrad1/timegrad1/physicalenergy3. Noise.005 beforeF. Gaussianprior centeredonbase,sigma.2, t=sigmoid(N(.4,1)). Uniform5step Euler, no MeanFlow/JVP training. Fixedendpoint/noVALcheckpointselection.",
+          "evaluation": "3fixed draws per trainedflow, no best-of-N, metrics averaged across draw metrics NOT averaged spectrograms. Plot draw0 fixedsame4sources. Deterministic direct only1draw. Stochastic controls use SAME noise for paired and wrong/shuffled inputs.",
+          "references": [
+            "https://arxiv.org/abs/2605.16251",
+            "https://arxiv.org/abs/2512.19442",
+            "https://arxiv.org/abs/2510.16997"
+          ],
+          "limits": "Inspired project Mel adaptation, not waveform RMFSR/MeanFlow/Stream.FM reproduction or speakeridentity proof. DP/prior ideas tested, no PASE implementation. Changed matched objective from prior experiment; old model is reference, direct is currentsame-budget control.",
+          "decoupled_followup": "Inspired by FRSE dual-field concept (SpeechCommunication183,September2026,doi10.1016/j.specom.2026.103449); not exact reproduction. Same shared24channel trunk,2outputheads instead1. residual target=realMel-base; noise target=sampledGaussian, velocity=residual_hat-.2*noise_hat. Core=sum(residualMSE+.2^2*noiseMSE), no cross-term. Same5NFE/fullcycles. Additional exploratory phase; no selected VALcheckpoint."
+        }
+      }
+    ],
+    "scope": "Original3routes6fits plus2decoupled exploratory fits. Same180TRAIN60reusedVAL, fixed endpoints; research-inspired Mel adaptations, not original algorithms reproduced."
+  },
+  "source_hashes": {
+    "train_mei_flow_cycle.py": "ad75b6f739a920fc1ab61ea0a1cf9f2d3643860f6fdd3610b85c1fe0c8dc715e",
+    "audit_mei_flow_cycle.py": "9329a341d2f385e6ba87b4d0878f1e2cbe180d1d7fc0dcc996efac741aedb1be",
+    "pack_mei_flow_review.py": "da91e7c2724db02b034555ec9e2cbb25b064276126f8c0af9be9a17208b639eb",
+    "report_mei_flow_cycle.py": "5976bd8edb09c817cdf78eaa0de78e40c2ffcc5438e45aa16f874b424180b2c9"
+  },
+  "control_summary": {
+    "direct": {
+      "diversity": 0.0,
+      "wrong_record_audio_mae_change": 0.060758895799517626,
+      "constant_ACC_audio_mae_change": 0.031094343215227138,
+      "quant8_cycle_mae_increase": 4.794448614120483e-06,
+      "blur3_cycle_mae_increase": 0.0034749098122119904
+    },
+    "velocity": {
+      "diversity": 0.10632827505469322,
+      "wrong_record_audio_mae_change": 0.054168527283602295,
+      "constant_ACC_audio_mae_change": 0.007529152184724812,
+      "quant8_cycle_mae_increase": 1.944601535797119e-06,
+      "blur3_cycle_mae_increase": -0.010067215810219446,
+      "zero_noise_macro": {
+        "audio_mae": 0.3327934360752503,
+        "audio_detail_corr": 0.24233158105624103,
+        "ACC_cycle_mae": 0.10940178309877713,
+        "ACC_detail_corr": 0.07230032735437222
+      }
+    },
+    "data_prediction": {
+      "diversity": 0.014662236906588078,
+      "wrong_record_audio_mae_change": 0.06310652792453765,
+      "constant_ACC_audio_mae_change": 0.033021239025725256,
+      "quant8_cycle_mae_increase": 3.5874545574188232e-06,
+      "blur3_cycle_mae_increase": 0.001760845383008321,
+      "zero_noise_macro": {
+        "audio_mae": 0.3117576602846384,
+        "audio_detail_corr": 0.24359185509850179,
+        "ACC_cycle_mae": 0.10726821434994538,
+        "ACC_detail_corr": 0.07973885397788702
+      }
+    },
+    "decoupled": {
+      "diversity": 0.10638585314154625,
+      "wrong_record_audio_mae_change": 0.055298410769965896,
+      "constant_ACC_audio_mae_change": 0.010328737191028068,
+      "quant8_cycle_mae_increase": 1.5720725059509277e-06,
+      "blur3_cycle_mae_increase": -0.010038666427135468,
+      "zero_noise_macro": {
+        "audio_mae": 0.3279168384770552,
+        "audio_detail_corr": 0.24266444218982156,
+        "ACC_cycle_mae": 0.10848450685540835,
+        "ACC_detail_corr": 0.0727656986023388
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "fixed_train": {
+    "crops": 58,
+    "mean_active_fraction": 0.8186462324393359,
+    "crops_with_activity": 1.0,
+    "recordings": 20
+  },
+  "crop_bank_train": {
+    "crops": 1918,
+    "mean_active_fraction": 0.3538408063955509,
+    "crops_with_activity": 0.543274244004171,
+    "recordings": 20
+  }
+}

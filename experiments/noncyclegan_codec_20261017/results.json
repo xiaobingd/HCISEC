@@ -1,0 +1,119 @@
+{
+  "training": {
+    "ridge": {
+      "validation_latent_mse": 0.9083145260810852,
+      "alpha": 1000.0
+    },
+    "regression": {
+      "epoch": 4,
+      "validation_latent_mse": 0.8827264904975891,
+      "parameters": 199424
+    },
+    "contrastive": {
+      "epoch": 35,
+      "validation_latent_mse": 0.8799138069152832,
+      "parameters": 199424
+    },
+    "memory": {
+      "epoch": 2,
+      "validation_latent_mse": 0.9023041725158691,
+      "parameters": 199040,
+      "bank": "training only; entire query recording excluded during training"
+    },
+    "memory_contrastive": {
+      "epoch": 30,
+      "validation_latent_mse": 0.9168424010276794,
+      "parameters": 199040,
+      "bank": "training only; entire query recording excluded during training"
+    },
+    "decoder_supervised": {
+      "epoch": 36,
+      "validation_spectral_loss": 0.5256624817848206,
+      "parameters": 199424,
+      "decoder": "frozen, gradient enabled only to train adapter"
+    }
+  },
+  "validation": {
+    "codec_oracle": {
+      "audio_mae": 0.1131556221629997,
+      "matching_gap": 0.4163034463063555,
+      "detail_corr": 0.8311470632578508,
+      "detail_matching_gap": 0.07997477694841831,
+      "envelope_corr": 0.9779408221078935,
+      "variance_ratio": 0.9196745351894899
+    },
+    "mean_latent": {
+      "audio_mae": 0.44914079888639225,
+      "matching_gap": 0.0,
+      "detail_corr": 0.3571299804798196,
+      "detail_matching_gap": 0.0,
+      "envelope_corr": -0.015892015581280613,
+      "variance_ratio": 5.671679558683233e-32
+    },
+    "ridge": {
+      "audio_mae": 0.43641161313075477,
+      "matching_gap": 0.011271584845589933,
+      "detail_corr": 0.3709659172143925,
+      "detail_matching_gap": -0.0007850277140592221,
+      "envelope_corr": 0.1630613255960572,
+      "variance_ratio": 0.0766242453490272
+    },
+    "regression": {
+      "audio_mae": 0.4502509340788089,
+      "matching_gap": -0.0004721781317131857,
+      "detail_corr": 0.35597539439749104,
+      "detail_matching_gap": -9.953510459698167e-05,
+      "envelope_corr": 0.03194685792810725,
+      "variance_ratio": 0.0009301268086668935
+    },
+    "contrastive": {
+      "audio_mae": 0.44567711643173186,
+      "matching_gap": 0.0014196524947601707,
+      "detail_corr": 0.3595720589059534,
+      "detail_matching_gap": 0.00019656284204741525,
+      "envelope_corr": 0.0629152010177729,
+      "variance_ratio": 0.012670020033196836
+    },
+    "memory": {
+      "audio_mae": 0.45241676550353854,
+      "matching_gap": -0.0018237433748758414,
+      "detail_corr": 0.3665871887635138,
+      "detail_matching_gap": -0.000888417161485161,
+      "envelope_corr": -0.09067731216049649,
+      "variance_ratio": 0.04436613552873258
+    },
+    "memory_contrastive": {
+      "audio_mae": 0.42733340441156253,
+      "matching_gap": 0.028733725909932506,
+      "detail_corr": 0.35552479640992907,
+      "detail_matching_gap": 0.0002748745844390055,
+      "envelope_corr": 0.17769479568090354,
+      "variance_ratio": 0.20760400620736907
+    },
+    "decoder_supervised": {
+      "audio_mae": 0.4460968380974163,
+      "matching_gap": 0.006363736581578516,
+      "detail_corr": 0.4290712032770425,
+      "detail_matching_gap": -0.00011170245232536291,
+      "envelope_corr": 0.10269623746556919,
+      "variance_ratio": 0.045164461057395584
+    },
+    "resampling_control": {
+      "audio_mae": 0.0008863019607012072,
+      "matching_gap": 0.5373389222095284,
+      "detail_corr": 0.9998228860964495,
+      "detail_matching_gap": 0.15095815616532618,
+      "envelope_corr": 0.9999964220185884,
+      "variance_ratio": 0.9993521406851489
+    },
+    "train_mean_mel": {
+      "audio_mae": 0.43819814920425415,
+      "matching_gap": 0.0,
+      "detail_corr": 0.5355640649795532,
+      "detail_matching_gap": 0.0,
+      "envelope_corr": 0.021861938759684563,
+      "variance_ratio": 7.021708738676755e-15
+    }
+  },
+  "interpretation": "Exploratory reused validation, single person. No identity/FAR/FRR conclusions. Clean microphone only supplies targets/oracle, never student inference. No tests or authentication reserve accessed."
+}

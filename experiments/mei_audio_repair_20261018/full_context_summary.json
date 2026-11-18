@@ -1,0 +1,146 @@
+{
+  "summary": {
+    "old_local": {
+      "audio_mae": 0.32356129996478555,
+      "audio_detail_corr": 0.22225166976465477,
+      "ACC_cycle_mae": 0.11290300761659941,
+      "ACC_detail_corr": 0.06747287940290617
+    },
+    "initial_full": {
+      "audio_mae": 0.33032094823817415,
+      "audio_detail_corr": 0.21089427043012066,
+      "ACC_cycle_mae": 0.11254145385076603,
+      "ACC_detail_corr": 0.0704994385236024
+    },
+    "final": {
+      "audio_mae": 0.3070895263304313,
+      "audio_detail_corr": 0.243758680140086,
+      "ACC_cycle_mae": 0.10973094856987398,
+      "ACC_detail_corr": 0.0680282535367517
+    }
+  },
+  "controls": {
+    "time_template_audio_mae": 0.3236478189627329,
+    "time_template_detail_corr": 0.2786087116084372,
+    "wrong_record_audio_mae_increase": 0.06057495685915152
+  },
+  "protocol": {
+    "data": {
+      "source": "EXACT same180cleanTRAIN/60REUSEDval source pairs and frozen shared calibration; noTEST/auth read",
+      "context": "Full~2s ACC input and2s output201frames; offline task can use later same-recordingACC. No lag-search/time-shift/resampling change, no microphone inference. Not a causal real-time model.",
+      "preprocessing": "Same signedXYZ0-500HzSTFT+56energy and80Mel; window length only changes. STFT boundary padding unchanged; raw waveforms not padded. Allsourcefilters/scales unchanged.",
+      "common_score": "First3 original.8s windows at0/.4/.8s, discard8edgeframes each (65interiorframes), SAME60source records. Exactparity checked against legacyX/Y. Last~1.2s starts not used for common score to avoid1ms source-specific rounding.",
+      "parity": {
+        "train": {
+          "recordings": 180,
+          "ACC_max_shared_interior_error": 0.0,
+          "Mel_max_shared_interior_error": 0.0
+        },
+        "validation": {
+          "recordings": 60,
+          "ACC_max_shared_interior_error": 0.0,
+          "Mel_max_shared_interior_error": 0.0
+        }
+      },
+      "scope": "Full context is an exploratory follow-up after12localrepairfits failed. Common score not directly comparable to older all240-window/all-frameMAE."
+    },
+    "training": "Oldsame-seedmei180longG/F init, Gonlyoutputcrop generalizes81->inputT=201; SAME network weights/architecture. NewD40warmup.120epochs4updates8uniqueTRAINrecordings. CompleteACCcycle20/audio10/pairedACC5/pairedMel20; no S oroldteacher; audioGAN.1/ACCGAN.05,localcontrast.5,freqgrad1,timegrad1,physicalMelenergy3. Fixedendpoint,noVALselection.",
+    "seeds": [
+      42,
+      43
+    ],
+    "epochs": 120,
+    "scope": "Exploratory longcontext/objective adaptation package, not clean attribution tocontext alone. Offline2s latency. Common interior scoring comparedoldLOCALandinitialFULLGandTRAINtime-template; not directly againstolderall-frameMAE."
+  },
+  "seed_results": [
+    {
+      "seed": 42,
+      "old_local": {
+        "audio_mae": 0.32487343698740007,
+        "audio_detail_corr": 0.21953435493483595,
+        "ACC_cycle_mae": 0.11545639174679916,
+        "ACC_detail_corr": 0.05517226738304384
+      },
+      "initial_full": {
+        "audio_mae": 0.32949745853741963,
+        "audio_detail_corr": 0.1981516199963168,
+        "ACC_cycle_mae": 0.11419021785259247,
+        "ACC_detail_corr": 0.061948453461558334
+      },
+      "final": {
+        "audio_mae": 0.30484295015533763,
+        "audio_detail_corr": 0.2503052576287398,
+        "ACC_cycle_mae": 0.11117958910763263,
+        "ACC_detail_corr": 0.0596270726818025
+      },
+      "final_extra": {
+        "active_audio_mae": 0.4313760717709859,
+        "inactive_audio_mae": 0.21330368717511494,
+        "activity_false_positive_rate": 0.15098095066910025,
+        "activity_recall": 0.6428300087314801,
+        "activity_F1": 0.6537494320394948,
+        "physical_log_energy_corr": 0.6146604239325827,
+        "local_spectral_contrast_corr": 0.4941920813383139
+      }
+    },
+    {
+      "seed": 43,
+      "old_local": {
+        "audio_mae": 0.3222491629421711,
+        "audio_detail_corr": 0.2249689845944736,
+        "ACC_cycle_mae": 0.11034962348639965,
+        "ACC_detail_corr": 0.07977349142276849
+      },
+      "initial_full": {
+        "audio_mae": 0.3311444379389286,
+        "audio_detail_corr": 0.22363692086392453,
+        "ACC_cycle_mae": 0.11089268984893957,
+        "ACC_detail_corr": 0.07905042358564646
+      },
+      "final": {
+        "audio_mae": 0.30933610250552496,
+        "audio_detail_corr": 0.23721210265143225,
+        "ACC_cycle_mae": 0.1082823080321153,
+        "ACC_detail_corr": 0.0764294343917009
+      },
+      "final_extra": {
+        "active_audio_mae": 0.44449558208386103,
+        "inactive_audio_mae": 0.21131319540242355,
+        "activity_false_positive_rate": 0.1283414953758919,
+        "activity_recall": 0.5787624651919183,
+        "activity_F1": 0.607622450982623,
+        "physical_log_energy_corr": 0.6096667107293682,
+        "local_spectral_contrast_corr": 0.47940482600156714
+      }
+    }
+  ],
+  "scope": "Same65interiorframes fromfirst3legacycrops /60records, not olderall240/full81metrics. Fullcontext permits futureACC, noMIC inference and no timestamp edits. No identityclaim.",
+  "paired_audio_deltas": {
+    "old_local": {
+      "new_minus_baseline": -0.016471773634354273,
+      "record_bootstrap95": [
+        -0.025728555511062345,
+        -0.007322336810951438
+      ],
+      "n_new_lower_error": 39,
+      "n_records": 60,
+      "limits": "Conditional on reusedsame-personVAL/currentmodels; seedsaveraged, not newusers/sessions or modelselection uncertainty."
+    },
+    "time_template": {
+      "new_minus_baseline": -0.016558292632301647,
+      "record_bootstrap95": [
+        -0.038429815225924056,
+        0.00609847203207512
+      ],
+      "n_new_lower_error": 35,
+      "n_records": 60,
+      "limits": "Conditional on reusedsame-personVAL/currentmodels; seedsaveraged, not newusers/sessions or modelselection uncertainty."
+    }
+  },
+  "source_hashes": {
+    "export_mei_full_context.py": "67e9adf7886e24a26f846d9c3a7bd8e706e4942985ff0f13fb9e446a2f62a4ef",
+    "train_mei_full_context.py": "774559f2ecf2b615c8a8c8e8ada8f10840bc243bd6575f28bbdf74d2a8cdd3f0",
+    "pack_mei_full_context.py": "bd0669d9efba204244782ca1692d09250ddd85085d9a4822382fb5641b60f168",
+    "report_mei_full_context.py": "d3118cf991e325dde034d6f4a74fe84607cf69024776dfae26c363397bc89272"
+  }
+}

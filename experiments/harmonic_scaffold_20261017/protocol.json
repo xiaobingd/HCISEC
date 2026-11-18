@@ -1,0 +1,8 @@
+{
+  "source": "same personal raw IMU",
+  "split": "existing20train4val; no test or28reserve",
+  "filter": "original FIR101 40-499 Hz per axis, record DC removal and Tukey unchanged",
+  "representation": "original magnitude frontend vs signed XYZ spectrum/pitch salience; ablation explicitly separate",
+  "goal": "voicing+F0 then harmonic scaffold, not authentication or full speech reconstruction",
+  "shared_rules": "no per-user filter/gain, all calibration train only"
+}

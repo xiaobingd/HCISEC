@@ -1,0 +1,183 @@
+{
+  "train": {
+    "recording_01_imu3": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_01_imu4": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_02_imu3": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_02_imu5": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_03_imu4": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_04_imu1": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_04_imu2": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_04_imu3": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_04_imu5": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_05_imu5": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_06_imu1": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_06_imu4": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_07_imu1": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_08_imu2": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_08_imu5": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_09_imu2": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_10_imu1": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_10_imu2": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_10_imu5": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    },
+    "recording_imu": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0
+    }
+  },
+  "val": {
+    "recording_02_imu4": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0,
+      "direct_hardware_time_nudft_f0_prominence_db": -0.26265402216455985,
+      "axis_prominence_db": [
+        -1.558320520843659,
+        -0.997203839732338,
+        -0.32697428444582305
+      ],
+      "matched_minus_wrong_prominence_db": 0.6612687469444312,
+      "unique_voiced_frames": 122
+    },
+    "recording_04_imu4": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0,
+      "direct_hardware_time_nudft_f0_prominence_db": -0.0913209990285723,
+      "axis_prominence_db": [
+        -0.9025285551533786,
+        1.0562597588298355,
+        -1.0360470531136228
+      ],
+      "matched_minus_wrong_prominence_db": 0.1267111860139466,
+      "unique_voiced_frames": 101
+    },
+    "recording_05_imu4": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0,
+      "direct_hardware_time_nudft_f0_prominence_db": -0.4569159980484103,
+      "axis_prominence_db": [
+        -0.906289260704564,
+        -1.224243717716306,
+        -0.3408190426162816
+      ],
+      "matched_minus_wrong_prominence_db": 0.535948362215366,
+      "unique_voiced_frames": 101
+    },
+    "recording_08_imu3": {
+      "imu_source_hash_matches": true,
+      "audio_source_hash_matches": true,
+      "cached_acc_reconstruction_max_difference": 0.0,
+      "cached_audio_max_difference": 0.0,
+      "direct_hardware_time_nudft_f0_prominence_db": -1.2556915046860981,
+      "axis_prominence_db": [
+        -2.018085814136282,
+        -1.7007771053419436,
+        -1.0337649993598284
+      ],
+      "matched_minus_wrong_prominence_db": -1.0233776015104568,
+      "unique_voiced_frames": 128
+    }
+  },
+  "notes": "All24used records verified against original hashes and exact cached interpolation/WAV reconstruction. Direct hardware-time nonuniform Fourier check done only on4existingvalidation recordings at existing nominal paired centers; no lag search. It is a signal-detection diagnostic, not a train/test model score."
+}

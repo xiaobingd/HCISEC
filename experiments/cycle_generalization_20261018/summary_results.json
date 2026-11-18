@@ -1,0 +1,1099 @@
+{
+  "summary": {
+    "fixed_full": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.1626778868958354,
+          "seed_std": 0.017017256282269966
+        },
+        "audio_detail_corr": {
+          "mean": 0.7602477232247604,
+          "seed_std": 0.028801647099374605
+        },
+        "audio_envelope_corr": {
+          "mean": 0.9409510832909724,
+          "seed_std": 0.012186080321823889
+        },
+        "audio_profile_mae": {
+          "mean": 0.05508222454227507,
+          "seed_std": 0.0105837260838598
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.6381463780999184,
+          "seed_std": 0.0036207064986228943
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.22292363047599792,
+          "seed_std": 0.0015346594154834747
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.7544783122843483,
+          "seed_std": 0.0007469524043565157
+        },
+        "ACC_detail_corr": {
+          "mean": 0.21408892023331327,
+          "seed_std": 0.005902834823347677
+        },
+        "ACC_energy_corr": {
+          "mean": 0.6405421820623669,
+          "seed_std": 0.0015165171503233599
+        },
+        "paired_ACC_mae": {
+          "mean": 0.2604744154959917,
+          "seed_std": 0.00016411356627943352
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.14821374770253898,
+          "seed_std": 0.014626976288855079
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0006478194147348404,
+          "seed_std": 0.0003266904503107071
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.2892238456755877,
+          "seed_std": 0.028850777074694633
+        },
+        "audio_template_mae": {
+          "mean": 0.36269171684980395,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.28619055300951,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.4635552205145359,
+          "seed_std": 0.007276576012372971
+        },
+        "audio_detail_corr": {
+          "mean": 0.08426086128335458,
+          "seed_std": 0.009074120926062933
+        },
+        "audio_envelope_corr": {
+          "mean": 0.04755485895102943,
+          "seed_std": 0.000983917300453982
+        },
+        "audio_profile_mae": {
+          "mean": 0.16488956939429045,
+          "seed_std": 0.013293850235641003
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.6961355209350586,
+          "seed_std": 0.022482559084892273
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.21974875964224339,
+          "seed_std": 0.002011844888329506
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.7165803171785006,
+          "seed_std": 0.00699186765823695
+        },
+        "ACC_detail_corr": {
+          "mean": 0.1462007638015692,
+          "seed_std": 0.021759111434191833
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5235160583812998,
+          "seed_std": 0.01844026419914646
+        },
+        "paired_ACC_mae": {
+          "mean": 0.2672438472509384,
+          "seed_std": 0.0020672380924224854
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.15353795234113932,
+          "seed_std": 0.02024287637323141
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.00018508732318878174,
+          "seed_std": 0.0006633475422859192
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.021624483168125153,
+          "seed_std": 0.009566299617290497
+        },
+        "audio_template_mae": {
+          "mean": 0.43819811195135117,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.2460499033331871,
+          "seed_std": 0.0
+        }
+      },
+      "selected_cycle_epochs": [
+        105,
+        105
+      ],
+      "parameters": {
+        "G": 249089,
+        "F": 125030
+      }
+    },
+    "dense_full": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2486796289682388,
+          "seed_std": 0.01898381561040878
+        },
+        "audio_detail_corr": {
+          "mean": 0.5393015918367865,
+          "seed_std": 0.018037810993952963
+        },
+        "audio_envelope_corr": {
+          "mean": 0.7983847490496463,
+          "seed_std": 0.028359472258594642
+        },
+        "audio_profile_mae": {
+          "mean": 0.12878825264051558,
+          "seed_std": 0.04408227680251002
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.549598041921854,
+          "seed_std": 0.03679916784167292
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.2386514764279127,
+          "seed_std": 0.0021771486848592703
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.7120968991141984,
+          "seed_std": 0.005541371437341236
+        },
+        "ACC_detail_corr": {
+          "mean": 0.18436056572033532,
+          "seed_std": 0.009792345466074603
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5602394068372766,
+          "seed_std": 0.010920219367669182
+        },
+        "paired_ACC_mae": {
+          "mean": 0.2925461757928133,
+          "seed_std": 0.002082113549113279
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.15632768310606482,
+          "seed_std": 0.004232234135270116
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0002284664660692215,
+          "seed_std": 0.00034458152949810026
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.2179713189601898,
+          "seed_std": 0.005894241482019419
+        },
+        "audio_template_mae": {
+          "mean": 0.36269171684980395,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.28619055300951,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.5201993733644485,
+          "seed_std": 0.00697491317987442
+        },
+        "audio_detail_corr": {
+          "mean": -0.057493354744475006,
+          "seed_std": 0.03836720223928859
+        },
+        "audio_envelope_corr": {
+          "mean": -0.10887691586196457,
+          "seed_std": 0.024138566158913383
+        },
+        "audio_profile_mae": {
+          "mean": 0.2616873234510422,
+          "seed_std": 0.0998663529753685
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.3957562204450369,
+          "seed_std": 0.09628506936132908
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.224770225584507,
+          "seed_std": 0.007027469575405121
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.6962793180822255,
+          "seed_std": 0.020910643013542785
+        },
+        "ACC_detail_corr": {
+          "mean": 0.12263034912768418,
+          "seed_std": 0.02071518226607201
+        },
+        "ACC_energy_corr": {
+          "mean": 0.47312911532782226,
+          "seed_std": 0.04956529132349535
+        },
+        "paired_ACC_mae": {
+          "mean": 0.2730311118066311,
+          "seed_std": 0.00011284276843070984
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.14426215924322605,
+          "seed_std": 0.0015692319720983505
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0003916211426258087,
+          "seed_std": 0.00037428736686706543
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.030979804694652557,
+          "seed_std": 0.0050505176186561584
+        },
+        "audio_template_mae": {
+          "mean": 0.43819811195135117,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.2460499033331871,
+          "seed_std": 0.0
+        }
+      },
+      "selected_cycle_epochs": [
+        120,
+        105
+      ],
+      "parameters": {
+        "G": 249089,
+        "F": 125030
+      }
+    },
+    "dense_small": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2859786435961723,
+          "seed_std": 0.0068144083023071456
+        },
+        "audio_detail_corr": {
+          "mean": 0.40986089365133865,
+          "seed_std": 0.004989471005777901
+        },
+        "audio_envelope_corr": {
+          "mean": 0.6203706915500273,
+          "seed_std": 0.00032171240954803615
+        },
+        "audio_profile_mae": {
+          "mean": 0.11204606462270023,
+          "seed_std": 0.00920912567526102
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.4971691802144051,
+          "seed_std": 0.017407414317131054
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.2654310133308172,
+          "seed_std": 0.004676626250147836
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.6293650368148562,
+          "seed_std": 0.016951710134853804
+        },
+        "ACC_detail_corr": {
+          "mean": 0.1517136211673295,
+          "seed_std": 0.008494995424521576
+        },
+        "ACC_energy_corr": {
+          "mean": 0.4136821301005893,
+          "seed_std": 0.022776909085063246
+        },
+        "paired_ACC_mae": {
+          "mean": 0.308275043964386,
+          "seed_std": 0.0008705250918865093
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1855731602758169,
+          "seed_std": 0.0056066628545522745
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0016540363430976868,
+          "seed_std": 0.0006254069507122041
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.1723453789949417,
+          "seed_std": 0.004122665524482733
+        },
+        "audio_template_mae": {
+          "mean": 0.36269171684980395,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.28619055300951,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.5366276912391186,
+          "seed_std": 0.002060677856206894
+        },
+        "audio_detail_corr": {
+          "mean": 0.0006523952351857112,
+          "seed_std": 0.02297259289377574
+        },
+        "audio_envelope_corr": {
+          "mean": -0.2703730334584646,
+          "seed_std": 0.018709409753501383
+        },
+        "audio_profile_mae": {
+          "mean": 0.22455830685794353,
+          "seed_std": 0.002835771068930626
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.39427541196346283,
+          "seed_std": 0.03843476623296738
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.22985503636300564,
+          "seed_std": 2.2413209080696106e-05
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.668749475351938,
+          "seed_std": 2.3884596754730758e-05
+        },
+        "ACC_detail_corr": {
+          "mean": 0.13073011826227826,
+          "seed_std": 0.015601919297721666
+        },
+        "ACC_energy_corr": {
+          "mean": 0.3914043060277116,
+          "seed_std": 0.0030566536473429495
+        },
+        "paired_ACC_mae": {
+          "mean": 0.2771334610879421,
+          "seed_std": 0.0010566525161266327
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.15810461156070232,
+          "seed_std": 0.008374577388167381
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0006707459688186646,
+          "seed_std": 0.00011153891682624817
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": -0.0012488625943660736,
+          "seed_std": 0.0008047781884670258
+        },
+        "audio_template_mae": {
+          "mean": 0.43819811195135117,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.2460499033331871,
+          "seed_std": 0.0
+        }
+      },
+      "selected_cycle_epochs": [
+        105,
+        105
+      ],
+      "parameters": {
+        "G": 51041,
+        "F": 43878
+      }
+    },
+    "dense_small_feature": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2945924889296293,
+          "seed_std": 0.0029651422053575682
+        },
+        "audio_detail_corr": {
+          "mean": 0.43204153014936136,
+          "seed_std": 0.011845432169081349
+        },
+        "audio_envelope_corr": {
+          "mean": 0.5854873837936219,
+          "seed_std": 0.011695532062818925
+        },
+        "audio_profile_mae": {
+          "mean": 0.14133716113865374,
+          "seed_std": 0.01603236459195613
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.43402535542845727,
+          "seed_std": 0.03061028942465782
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.28524623401463034,
+          "seed_std": 0.003373989835381508
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.5545092487477623,
+          "seed_std": 0.015716898335529084
+        },
+        "ACC_detail_corr": {
+          "mean": 0.11574681250641045,
+          "seed_std": 0.013020888078101173
+        },
+        "ACC_energy_corr": {
+          "mean": 0.25808180601345776,
+          "seed_std": 0.04164896510736496
+        },
+        "paired_ACC_mae": {
+          "mean": 0.30866162925958635,
+          "seed_std": 0.000754404067993153
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1935744732618332,
+          "seed_std": 0.010899273306131357
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0008088130503892898,
+          "seed_std": 0.00036080740392208094
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.1761378049850464,
+          "seed_std": 0.007404951751232153
+        },
+        "audio_template_mae": {
+          "mean": 0.36269171684980395,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.28619055300951,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.5481192506849766,
+          "seed_std": 0.0014988742768764496
+        },
+        "audio_detail_corr": {
+          "mean": 0.021657707843985317,
+          "seed_std": 0.005964052933684481
+        },
+        "audio_envelope_corr": {
+          "mean": -0.3083597312717493,
+          "seed_std": 0.0013657809618959627
+        },
+        "audio_profile_mae": {
+          "mean": 0.2715175524353981,
+          "seed_std": 0.015149440616369247
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.333962207660079,
+          "seed_std": 0.05906521715223789
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.23895701207220554,
+          "seed_std": 8.019991219043732e-05
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.6313058621661078,
+          "seed_std": 0.0012859374801046375
+        },
+        "ACC_detail_corr": {
+          "mean": 0.09671060513464366,
+          "seed_std": 0.013929978787559971
+        },
+        "ACC_energy_corr": {
+          "mean": 0.2957148420914475,
+          "seed_std": 4.474790483516289e-06
+        },
+        "paired_ACC_mae": {
+          "mean": 0.2725558616220951,
+          "seed_std": 0.0014442987740039825
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.16454018838703632,
+          "seed_std": 0.007090343162417412
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0006406586617231369,
+          "seed_std": 0.00013179145753383636
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": -0.006083536893129349,
+          "seed_std": 0.0006896816194057465
+        },
+        "audio_template_mae": {
+          "mean": 0.43819811195135117,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.2460499033331871,
+          "seed_std": 0.0
+        }
+      },
+      "selected_cycle_epochs": [
+        60,
+        105
+      ],
+      "parameters": {
+        "G": 51041,
+        "F": 43878
+      }
+    }
+  },
+  "protocol": {
+    "routes": {
+      "fixed_full": {
+        "dense": false,
+        "small": false,
+        "feature_cycle": false
+      },
+      "dense_full": {
+        "dense": true,
+        "small": false,
+        "feature_cycle": false
+      },
+      "dense_small": {
+        "dense": true,
+        "small": true,
+        "feature_cycle": false
+      },
+      "dense_small_feature": {
+        "dense": true,
+        "small": true,
+        "feature_cycle": true
+      }
+    },
+    "data": {
+      "source": "one person OpenVR vAccel, existing20TRAIN only for new crops",
+      "test_and_auth_reserve": "not opened",
+      "external_validation": "existing4 reused exploratory VAL, unchanged original16 windows",
+      "crop_bank": {
+        "step_ms": 40,
+        "duration_ms": 800,
+        "count": 1918,
+        "sampler": "8 distinct recordings/update, 75% select crop with audio-active fraction>=0.1 when available;25% uniform. Same rule fixed/dense. TRAIN labels only; no microphone inference",
+        "independent_new_recordings": 0
+      },
+      "coverage": [
+        {
+          "recording": "recording_01_imu3",
+          "duration": 4.256,
+          "crops": 87,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.24
+        },
+        {
+          "recording": "recording_01_imu4",
+          "duration": 4.288,
+          "crops": 88,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.28
+        },
+        {
+          "recording": "recording_02_imu3",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0000000000000004,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_02_imu5",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 0.8000000000000002,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_03_imu4",
+          "duration": 4.608,
+          "crops": 96,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.6
+        },
+        {
+          "recording": "recording_04_imu1",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0000000000000004,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_04_imu2",
+          "duration": 4.512,
+          "crops": 93,
+          "old_coverage_seconds": 1.6,
+          "new_coverage_seconds": 4.48
+        },
+        {
+          "recording": "recording_04_imu3",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_04_imu5",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 0.8000000000000002,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_05_imu5",
+          "duration": 4.544,
+          "crops": 94,
+          "old_coverage_seconds": 0.8000000000000002,
+          "new_coverage_seconds": 4.5200000000000005
+        },
+        {
+          "recording": "recording_06_imu1",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_06_imu4",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0000000000000004,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_07_imu1",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_08_imu2",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 1.5999999999999999,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_08_imu5",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 0.8000000000000002,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_09_imu2",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 1.6000000000000003,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_10_imu1",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 2.0,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_10_imu2",
+          "duration": 4.576,
+          "crops": 95,
+          "old_coverage_seconds": 1.6,
+          "new_coverage_seconds": 4.56
+        },
+        {
+          "recording": "recording_10_imu5",
+          "duration": 4.544,
+          "crops": 94,
+          "old_coverage_seconds": 0.8,
+          "new_coverage_seconds": 4.5200000000000005
+        },
+        {
+          "recording": "recording_imu",
+          "duration": 6.0369375,
+          "crops": 131,
+          "old_coverage_seconds": 0.8000000000000003,
+          "new_coverage_seconds": 6.0
+        }
+      ],
+      "old_union_seconds": 31.200000000000003,
+      "new_union_seconds": 91.92000000000002,
+      "raw_total_seconds": 92.27693749999999,
+      "frontend": "unchanged251XYZ magnitude+energy and80Mel, exact prior crop functions/parameters; no per-user/axis/window normalization; frozen previous20TRAIN scales, not refit",
+      "parity_max_absolute_error": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "internal_holdout_recordings": [
+        "recording_04_imu3",
+        "recording_06_imu4",
+        "recording_09_imu2",
+        "recording_10_imu5"
+      ],
+      "internal_split": "16 fit /4 early-stop. All crops of holdout excluded from gradient updates. Frozen prior calibration includes the20 originalTRAIN; internal split is gradient-held-out, not completely preprocessing-blind. ExternalVAL never used for checkpoint selection.",
+      "scale_source_sha256": "578d35e7ddbdda373d7390d333437b47051eeb7af4560ededca168ddfe9c2f13",
+      "scope": "coverage expansion and sampling of already authorizedTRAIN; overlapping crops are not independent utterances"
+    },
+    "seeds": [
+      42,
+      43
+    ],
+    "selection": "For EACH route/seed fit16TRAIN, evaluate4internalTRAIN recordings every15full-cycle epochs. Choose minimum 0.5*(audioMAE/audioTRAIN-templateMAE + pixelACCcycleMAE/ACCTRAIN-templateMAE), then reinitialize same seed and refit20TRAIN for selected cycle epochs. Prewarm120 fixed. No externalVAL selection.",
+    "training": {
+      "warm_epochs": 120,
+      "max_cycle_epochs": 120,
+      "updates_per_epoch": 4,
+      "batch_size": 8,
+      "weight_decay": 0.001
+    },
+    "capacity": "full G original project 2DResNet hidden16 blocks2 with axialattention, F64/dilations1,2,4,8,16; small Ghidden8 blocks1 (no axialattention), F32/dilations1,2,4. Package capacity reduction, not width-only ablation.",
+    "feature_cycle": "25%originalpixel +75%fixed per-frequency temporal means/stds over5/15frames; samefeaturechannel weighting; reverseaudio cycle unchanged. No learned identity loss, no external encoder, no bypass.",
+    "common": "pairedprewarm thencompletebidirectionalcycle; same audioGAN+pairedlosses+TRAIN-onlyprewarmteacher; Gaussian.005 and50%3x3Mel bottleneck duringcycle; raw G evaluated/shown, cleanF(G) mainmetric; all preprocessing/scales frozen and same",
+    "scope": "singleperson, exploratory4VAL reused, noidentityverification; test4/auth28 unopened; finite40mscropbanknotindependentnewrecordings",
+    "torch": "2.4.1+cu121"
+  },
+  "limits": "Two optimization seeds, one person; external4VAL reused for exploration; no independent authentication outcome. Internal selection uses gradient-held-out recordings but prior20TRAIN global frontend scales. Crops are overlapping, no new subjects/sessions. Raw signal plots/arrays/checkpoints private.",
+  "seed_results": [
+    {
+      "route": "fixed_full",
+      "seed": 42,
+      "train": {
+        "audio_mae": 0.14566063061356543,
+        "audio_detail_corr": 0.789049370324135,
+        "audio_envelope_corr": 0.9531371636127963,
+        "audio_profile_mae": 0.04449849845841527,
+        "audio_curvature_ratio": 0.6345256716012955,
+        "ACC_cycle_mae": 0.2244582898914814,
+        "ACC_cycle_corr": 0.7537313598799917,
+        "ACC_detail_corr": 0.20818608540996558,
+        "ACC_energy_corr": 0.6390256649120435,
+        "paired_ACC_mae": 0.2603103019297123,
+        "reverse_audio_cycle_mae": 0.13358677141368389,
+        "blur_cycle_mae_increase": 0.0003211289644241333,
+        "wrong_ACC_input_audio_mae_increase": 0.3180746227502823,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.4708317965269089,
+        "audio_detail_corr": 0.09333498220941751,
+        "audio_envelope_corr": 0.04853877625148341,
+        "audio_profile_mae": 0.15159571915864944,
+        "audio_curvature_ratio": 0.6736529618501663,
+        "ACC_cycle_mae": 0.2217606045305729,
+        "ACC_cycle_corr": 0.7095884495202636,
+        "ACC_detail_corr": 0.12444165236737736,
+        "ACC_energy_corr": 0.5050757941821533,
+        "paired_ACC_mae": 0.26517660915851593,
+        "reverse_audio_cycle_mae": 0.1332950759679079,
+        "blur_cycle_mae_increase": -0.00047826021909713745,
+        "wrong_ACC_input_audio_mae_increase": 0.03119078278541565,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 105,
+      "parameters": {
+        "G": 249089,
+        "F": 125030
+      }
+    },
+    {
+      "route": "dense_full",
+      "seed": 42,
+      "train": {
+        "audio_mae": 0.22969581335783004,
+        "audio_detail_corr": 0.5573394028307395,
+        "audio_envelope_corr": 0.826744221308241,
+        "audio_profile_mae": 0.08470597583800554,
+        "audio_curvature_ratio": 0.5863972097635269,
+        "ACC_cycle_mae": 0.23647432774305344,
+        "ACC_cycle_corr": 0.7176382705515396,
+        "ACC_detail_corr": 0.19415291118640993,
+        "ACC_energy_corr": 0.5711596262049458,
+        "paired_ACC_mae": 0.2904640622437,
+        "reverse_audio_cycle_mae": 0.1520954489707947,
+        "blur_cycle_mae_increase": -0.00011611506342887879,
+        "wrong_ACC_input_audio_mae_increase": 0.22386556044220923,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.5132244601845741,
+        "audio_detail_corr": -0.0958605569837636,
+        "audio_envelope_corr": -0.08473834970305119,
+        "audio_profile_mae": 0.16182097047567368,
+        "audio_curvature_ratio": 0.49204128980636597,
+        "ACC_cycle_mae": 0.21774275600910187,
+        "ACC_cycle_corr": 0.7171899610957684,
+        "ACC_detail_corr": 0.1433455313937562,
+        "ACC_energy_corr": 0.5226944066513176,
+        "paired_ACC_mae": 0.2729182690382004,
+        "reverse_audio_cycle_mae": 0.1426929272711277,
+        "blur_cycle_mae_increase": -0.0007659085094928741,
+        "wrong_ACC_input_audio_mae_increase": 0.036030322313308716,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 120,
+      "parameters": {
+        "G": 249089,
+        "F": 125030
+      }
+    },
+    {
+      "route": "dense_small",
+      "seed": 42,
+      "train": {
+        "audio_mae": 0.2791642352938652,
+        "audio_detail_corr": 0.41485036465711655,
+        "audio_envelope_corr": 0.6206924039595754,
+        "audio_profile_mae": 0.1028369389474392,
+        "audio_curvature_ratio": 0.5145765945315361,
+        "ACC_cycle_mae": 0.27010763958096506,
+        "ACC_cycle_corr": 0.6124133266800024,
+        "ACC_detail_corr": 0.14321862574280791,
+        "ACC_energy_corr": 0.39090522101552605,
+        "paired_ACC_mae": 0.3074045188724995,
+        "reverse_audio_cycle_mae": 0.1911798231303692,
+        "blur_cycle_mae_increase": 0.0010286293923854827,
+        "wrong_ACC_input_audio_mae_increase": 0.17646804451942444,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.5345670133829117,
+        "audio_detail_corr": -0.02232019765859003,
+        "audio_envelope_corr": -0.2516636237049632,
+        "audio_profile_mae": 0.22739407792687416,
+        "audio_curvature_ratio": 0.4327101781964302,
+        "ACC_cycle_mae": 0.22983262315392494,
+        "ACC_cycle_corr": 0.6687733599486927,
+        "ACC_detail_corr": 0.1151281989645566,
+        "ACC_energy_corr": 0.3944609596750545,
+        "paired_ACC_mae": 0.2760768085718155,
+        "reverse_audio_cycle_mae": 0.1664791889488697,
+        "blur_cycle_mae_increase": -0.0005592070519924164,
+        "wrong_ACC_input_audio_mae_increase": -0.0020536407828330994,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 105,
+      "parameters": {
+        "G": 51041,
+        "F": 43878
+      }
+    },
+    {
+      "route": "dense_small_feature",
+      "seed": 42,
+      "train": {
+        "audio_mae": 0.29162734672427176,
+        "audio_detail_corr": 0.42019609798028,
+        "audio_envelope_corr": 0.5737918517308029,
+        "audio_profile_mae": 0.12530479654669763,
+        "audio_curvature_ratio": 0.4646356448531151,
+        "ACC_cycle_mae": 0.28862022385001185,
+        "ACC_cycle_corr": 0.5387923504122332,
+        "ACC_detail_corr": 0.10272592442830927,
+        "ACC_energy_corr": 0.21643284090609277,
+        "paired_ACC_mae": 0.3079072251915932,
+        "reverse_audio_cycle_mae": 0.20447374656796455,
+        "blur_cycle_mae_increase": 0.0004480056464672089,
+        "wrong_ACC_input_audio_mae_increase": 0.16873285323381423,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.5466203764081001,
+        "audio_detail_corr": 0.015693654910300836,
+        "audio_envelope_corr": -0.3097255122336453,
+        "audio_profile_mae": 0.25636811181902885,
+        "audio_curvature_ratio": 0.3930274248123169,
+        "ACC_cycle_mae": 0.2388768121600151,
+        "ACC_cycle_corr": 0.6300199246860032,
+        "ACC_detail_corr": 0.08278062634708369,
+        "ACC_energy_corr": 0.295719316881931,
+        "paired_ACC_mae": 0.2711115628480911,
+        "reverse_audio_cycle_mae": 0.17163053154945374,
+        "blur_cycle_mae_increase": -0.0005088672041893005,
+        "wrong_ACC_input_audio_mae_increase": -0.005393855273723602,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 60,
+      "parameters": {
+        "G": 51041,
+        "F": 43878
+      }
+    },
+    {
+      "route": "fixed_full",
+      "seed": 43,
+      "train": {
+        "audio_mae": 0.17969514317810537,
+        "audio_detail_corr": 0.7314460761253858,
+        "audio_envelope_corr": 0.9287650029691485,
+        "audio_profile_mae": 0.06566595062613487,
+        "audio_curvature_ratio": 0.6417670845985413,
+        "ACC_cycle_mae": 0.22138897106051444,
+        "ACC_cycle_corr": 0.7552252646887048,
+        "ACC_detail_corr": 0.21999175505666094,
+        "ACC_energy_corr": 0.6420586992126902,
+        "paired_ACC_mae": 0.26063852906227114,
+        "reverse_audio_cycle_mae": 0.16284072399139404,
+        "blur_cycle_mae_increase": 0.0009745098650455475,
+        "wrong_ACC_input_audio_mae_increase": 0.26037306860089304,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.45627864450216293,
+        "audio_detail_corr": 0.07518674035729164,
+        "audio_envelope_corr": 0.046570941650575445,
+        "audio_profile_mae": 0.17818341962993145,
+        "audio_curvature_ratio": 0.7186180800199509,
+        "ACC_cycle_mae": 0.21773691475391388,
+        "ACC_cycle_corr": 0.7235721848367375,
+        "ACC_detail_corr": 0.16795987523576103,
+        "ACC_energy_corr": 0.5419563225804462,
+        "paired_ACC_mae": 0.2693110853433609,
+        "reverse_audio_cycle_mae": 0.17378082871437073,
+        "blur_cycle_mae_increase": 0.0008484348654747009,
+        "wrong_ACC_input_audio_mae_increase": 0.012058183550834656,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 105,
+      "parameters": {
+        "G": 249089,
+        "F": 125030
+      }
+    },
+    {
+      "route": "dense_full",
+      "seed": 43,
+      "train": {
+        "audio_mae": 0.2676634445786476,
+        "audio_detail_corr": 0.5212637808428335,
+        "audio_envelope_corr": 0.7700252767910517,
+        "audio_profile_mae": 0.17287052944302558,
+        "audio_curvature_ratio": 0.5127988740801811,
+        "ACC_cycle_mae": 0.24082862511277198,
+        "ACC_cycle_corr": 0.7065555276768571,
+        "ACC_detail_corr": 0.17456822025426072,
+        "ACC_energy_corr": 0.5493191874696074,
+        "paired_ACC_mae": 0.2946282893419266,
+        "reverse_audio_cycle_mae": 0.16055991724133492,
+        "blur_cycle_mae_increase": 0.0005730479955673218,
+        "wrong_ACC_input_audio_mae_increase": 0.2120770774781704,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.527174286544323,
+        "audio_detail_corr": -0.019126152505186414,
+        "audio_envelope_corr": -0.13301548202087796,
+        "audio_profile_mae": 0.3615536764264107,
+        "audio_curvature_ratio": 0.2994711510837078,
+        "ACC_cycle_mae": 0.2317976951599121,
+        "ACC_cycle_corr": 0.6753686750686828,
+        "ACC_detail_corr": 0.10191516686161217,
+        "ACC_energy_corr": 0.4235638240043269,
+        "paired_ACC_mae": 0.2731439545750618,
+        "reverse_audio_cycle_mae": 0.1458313912153244,
+        "blur_cycle_mae_increase": -1.7333775758743286e-05,
+        "wrong_ACC_input_audio_mae_increase": 0.0259292870759964,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 105,
+      "parameters": {
+        "G": 249089,
+        "F": 125030
+      }
+    },
+    {
+      "route": "dense_small",
+      "seed": 43,
+      "train": {
+        "audio_mae": 0.2927930518984795,
+        "audio_detail_corr": 0.40487142264556075,
+        "audio_envelope_corr": 0.6200489791404793,
+        "audio_profile_mae": 0.12125519029796124,
+        "audio_curvature_ratio": 0.47976176589727404,
+        "ACC_cycle_mae": 0.2607543870806694,
+        "ACC_cycle_corr": 0.64631674694971,
+        "ACC_detail_corr": 0.16020861659185107,
+        "ACC_energy_corr": 0.43645903918565254,
+        "paired_ACC_mae": 0.3091455690562725,
+        "reverse_audio_cycle_mae": 0.17996649742126464,
+        "blur_cycle_mae_increase": 0.002279443293809891,
+        "wrong_ACC_input_audio_mae_increase": 0.16822271347045897,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.5386883690953255,
+        "audio_detail_corr": 0.023624988128961452,
+        "audio_envelope_corr": -0.28908244321196597,
+        "audio_profile_mae": 0.2217225357890129,
+        "audio_curvature_ratio": 0.35584064573049545,
+        "ACC_cycle_mae": 0.22987744957208633,
+        "ACC_cycle_corr": 0.6687255907551832,
+        "ACC_detail_corr": 0.14633203755999993,
+        "ACC_energy_corr": 0.3883476523803686,
+        "paired_ACC_mae": 0.27819011360406876,
+        "reverse_audio_cycle_mae": 0.14973003417253494,
+        "blur_cycle_mae_increase": -0.0007822848856449127,
+        "wrong_ACC_input_audio_mae_increase": -0.00044408440589904785,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 105,
+      "parameters": {
+        "G": 51041,
+        "F": 43878
+      }
+    },
+    {
+      "route": "dense_small_feature",
+      "seed": 43,
+      "train": {
+        "audio_mae": 0.2975576311349869,
+        "audio_detail_corr": 0.4438869623184427,
+        "audio_envelope_corr": 0.5971829158564408,
+        "audio_profile_mae": 0.1573695257306099,
+        "audio_curvature_ratio": 0.40341506600379945,
+        "ACC_cycle_mae": 0.28187224417924883,
+        "ACC_cycle_corr": 0.5702261470832913,
+        "ACC_detail_corr": 0.12876770058451162,
+        "ACC_energy_corr": 0.2997307711208227,
+        "paired_ACC_mae": 0.3094160333275795,
+        "reverse_audio_cycle_mae": 0.18267519995570183,
+        "blur_cycle_mae_increase": 0.0011696204543113708,
+        "wrong_ACC_input_audio_mae_increase": 0.18354275673627854,
+        "audio_template_mae": 0.36269171684980395,
+        "ACC_template_mae": 0.28619055300951
+      },
+      "validation": {
+        "audio_mae": 0.549618124961853,
+        "audio_detail_corr": 0.0276217607776698,
+        "audio_envelope_corr": -0.3069939503098534,
+        "audio_profile_mae": 0.28666699305176735,
+        "audio_curvature_ratio": 0.2748969905078411,
+        "ACC_cycle_mae": 0.23903721198439598,
+        "ACC_cycle_corr": 0.6325917996462125,
+        "ACC_detail_corr": 0.11064058392220363,
+        "ACC_energy_corr": 0.29571036730096395,
+        "paired_ACC_mae": 0.2740001603960991,
+        "reverse_audio_cycle_mae": 0.1574498452246189,
+        "blur_cycle_mae_increase": -0.0007724501192569733,
+        "wrong_ACC_input_audio_mae_increase": -0.006773218512535095,
+        "audio_template_mae": 0.43819811195135117,
+        "ACC_template_mae": 0.2460499033331871
+      },
+      "selected_cycle_epoch": 105,
+      "parameters": {
+        "G": 51041,
+        "F": 43878
+      }
+    }
+  ]
+}

@@ -1,0 +1,1641 @@
+{
+  "summary": {
+    "personal20": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.21657241713255643,
+          "seed_std": 0.01649633999913931
+        },
+        "audio_detail_corr": {
+          "mean": 0.18196086595373145,
+          "seed_std": 0.04076865185102381
+        },
+        "audio_envelope_corr": {
+          "mean": 0.7182744291810703,
+          "seed_std": 0.0566992603105963
+        },
+        "audio_profile_mae": {
+          "mean": 0.12969881957396864,
+          "seed_std": 0.019554187450557946
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.32856946233659984,
+          "seed_std": 0.0035231420770287514
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.13597352579236033,
+          "seed_std": 0.0001393266022205325
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.7957395354470689,
+          "seed_std": 0.001570254342405042
+        },
+        "ACC_detail_corr": {
+          "mean": 0.07601780549893973,
+          "seed_std": 0.015474215774820138
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5213597054331791,
+          "seed_std": 0.007094698254189458
+        },
+        "paired_ACC_mae": {
+          "mean": 0.15406304169446228,
+          "seed_std": 0.0023686049506068257
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.11956833358854055,
+          "seed_std": 0.027240891940891743
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -9.091682732105254e-05,
+          "seed_std": 0.0004926305264234543
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.11360577046871186,
+          "seed_std": 0.016853658109903344
+        },
+        "audio_template_mae": {
+          "mean": 0.4118298292160034,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.14034103080630303,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.28844571113586426,
+          "seed_std": 0.0023602619767189026
+        },
+        "audio_detail_corr": {
+          "mean": 0.02726121771736946,
+          "seed_std": 0.02583771336640664
+        },
+        "audio_envelope_corr": {
+          "mean": 0.44124307776622845,
+          "seed_std": 0.013327213982435249
+        },
+        "audio_profile_mae": {
+          "mean": 0.15054952446371317,
+          "seed_std": 0.018261459656059742
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.3045423850417137,
+          "seed_std": 0.01542346179485321
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.1181021174415946,
+          "seed_std": 4.7723762691020966e-05
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.8190380653007758,
+          "seed_std": 0.0011940357277606672
+        },
+        "ACC_detail_corr": {
+          "mean": 0.06882357961674986,
+          "seed_std": 0.018819522072498193
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5345105511139966,
+          "seed_std": 0.0011775453169102779
+        },
+        "paired_ACC_mae": {
+          "mean": 0.14040877670049667,
+          "seed_std": 0.0028362981975078583
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1271216506138444,
+          "seed_std": 0.034345841966569424
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0003905743360519409,
+          "seed_std": 0.00026217103004455566
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.02501435950398445,
+          "seed_std": 0.00645461305975914
+        },
+        "audio_template_mae": {
+          "mean": 0.4100922644138336,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11987618170678616,
+          "seed_std": 0.0
+        }
+      },
+      "common_small_train": {
+        "audio_mae": {
+          "mean": 0.21657241713255643,
+          "seed_std": 0.01649633999913931
+        },
+        "audio_detail_corr": {
+          "mean": 0.18196086595373145,
+          "seed_std": 0.04076865185102381
+        },
+        "audio_envelope_corr": {
+          "mean": 0.7182744291810703,
+          "seed_std": 0.0566992603105963
+        },
+        "audio_profile_mae": {
+          "mean": 0.12969881957396864,
+          "seed_std": 0.019554187450557946
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.32856946233659984,
+          "seed_std": 0.0035231420770287514
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.13597352579236033,
+          "seed_std": 0.0001393266022205325
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.7957395354470689,
+          "seed_std": 0.001570254342405042
+        },
+        "ACC_detail_corr": {
+          "mean": 0.07601780549893973,
+          "seed_std": 0.015474215774820138
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5213597054331791,
+          "seed_std": 0.007094698254189458
+        },
+        "paired_ACC_mae": {
+          "mean": 0.15406304169446228,
+          "seed_std": 0.0023686049506068257
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.11956833358854055,
+          "seed_std": 0.027240891940891743
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -9.091682732105254e-05,
+          "seed_std": 0.0004926305264234543
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.11360577046871186,
+          "seed_std": 0.016853658109903344
+        },
+        "audio_template_mae": {
+          "mean": 0.4118298292160034,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.14034103080630303,
+          "seed_std": 0.0
+        }
+      },
+      "n_train_recordings": 20,
+      "n_train_windows": 222
+    },
+    "mei20": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2089789893478155,
+          "seed_std": 0.005167022719979278
+        },
+        "audio_detail_corr": {
+          "mean": 0.4604433843971472,
+          "seed_std": 0.012381878504218014
+        },
+        "audio_envelope_corr": {
+          "mean": 0.8587123447224797,
+          "seed_std": 0.0060639837445713995
+        },
+        "audio_profile_mae": {
+          "mean": 0.11248114360496403,
+          "seed_std": 0.00817485535517335
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.4632709212601185,
+          "seed_std": 0.05137914791703224
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.12185823731124401,
+          "seed_std": 0.00029446370899677277
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9346056408260233,
+          "seed_std": 0.000308798433573787
+        },
+        "ACC_detail_corr": {
+          "mean": 0.07108569848022928,
+          "seed_std": 0.005678841472161834
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5081236639376414,
+          "seed_std": 0.004489772651992574
+        },
+        "paired_ACC_mae": {
+          "mean": 0.14413174539804458,
+          "seed_std": 0.0004671908915042794
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1381804820150137,
+          "seed_std": 0.00810829885303975
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0002460269257426262,
+          "seed_std": 0.00016494002193212512
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.05915939435362816,
+          "seed_std": 0.005545109510421753
+        },
+        "audio_template_mae": {
+          "mean": 0.35853723585605624,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11695960350334644,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.3030626744031906,
+          "seed_std": 0.006202211727698637
+        },
+        "audio_detail_corr": {
+          "mean": 0.21840383531932103,
+          "seed_std": 0.01169914621682086
+        },
+        "audio_envelope_corr": {
+          "mean": 0.551259346463286,
+          "seed_std": 0.01143947434909981
+        },
+        "audio_profile_mae": {
+          "mean": 0.16934397201985119,
+          "seed_std": 0.0017593313629428592
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5181141592562198,
+          "seed_std": 0.05496887788176538
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.1238874014467001,
+          "seed_std": 0.0005381894608338725
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9315872480369707,
+          "seed_std": 0.0008152486933625802
+        },
+        "ACC_detail_corr": {
+          "mean": 0.06320313594820806,
+          "seed_std": 0.006566619206093368
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5480693705290971,
+          "seed_std": 0.004373156810231482
+        },
+        "paired_ACC_mae": {
+          "mean": 0.14917974658310412,
+          "seed_std": 0.0011169151713450731
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.13958639279007912,
+          "seed_std": 0.009051797166466702
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.00012628150482972463,
+          "seed_std": 0.00010557696223258972
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.028957479819655418,
+          "seed_std": 0.0018047977238893516
+        },
+        "audio_template_mae": {
+          "mean": 0.37991733103990555,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11999386958777905,
+          "seed_std": 0.0
+        }
+      },
+      "common_small_train": {
+        "audio_mae": {
+          "mean": 0.2089789893478155,
+          "seed_std": 0.005167022719979278
+        },
+        "audio_detail_corr": {
+          "mean": 0.4604433843971472,
+          "seed_std": 0.012381878504218014
+        },
+        "audio_envelope_corr": {
+          "mean": 0.8587123447224797,
+          "seed_std": 0.0060639837445713995
+        },
+        "audio_profile_mae": {
+          "mean": 0.11248114360496403,
+          "seed_std": 0.00817485535517335
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.4632709212601185,
+          "seed_std": 0.05137914791703224
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.12185823731124401,
+          "seed_std": 0.00029446370899677277
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9346056408260233,
+          "seed_std": 0.000308798433573787
+        },
+        "ACC_detail_corr": {
+          "mean": 0.07108569848022928,
+          "seed_std": 0.005678841472161834
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5081236639376414,
+          "seed_std": 0.004489772651992574
+        },
+        "paired_ACC_mae": {
+          "mean": 0.14413174539804458,
+          "seed_std": 0.0004671908915042794
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1381804820150137,
+          "seed_std": 0.00810829885303975
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0002460269257426262,
+          "seed_std": 0.00016494002193212512
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.05915939435362816,
+          "seed_std": 0.005545109510421753
+        },
+        "audio_template_mae": {
+          "mean": 0.35853723585605624,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11695960350334644,
+          "seed_std": 0.0
+        }
+      },
+      "n_train_recordings": 20,
+      "n_train_windows": 80
+    },
+    "mei70": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2552870056458882,
+          "seed_std": 0.003349931538105033
+        },
+        "audio_detail_corr": {
+          "mean": 0.31313223716208916,
+          "seed_std": 0.0006763124418922295
+        },
+        "audio_envelope_corr": {
+          "mean": 0.6795100430869657,
+          "seed_std": 0.0006756758883649239
+        },
+        "audio_profile_mae": {
+          "mean": 0.14197479614189693,
+          "seed_std": 0.0017577869551522463
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.46869103312492366,
+          "seed_std": 0.03861681520938873
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.12103174775838851,
+          "seed_std": 0.00018960929342678318
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9359378370894802,
+          "seed_std": 0.0001345378403105335
+        },
+        "ACC_detail_corr": {
+          "mean": 0.08200549354592815,
+          "seed_std": 0.0012333229708720375
+        },
+        "ACC_energy_corr": {
+          "mean": 0.4945191780149997,
+          "seed_std": 0.005735680640818364
+        },
+        "paired_ACC_mae": {
+          "mean": 0.1470077058566468,
+          "seed_std": 0.00020593229149069858
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1351076225084918,
+          "seed_std": 0.00011876406414168539
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0008099525634731564,
+          "seed_std": 0.0005758154072931835
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.05123074278235436,
+          "seed_std": 0.0021297036537102285
+        },
+        "audio_template_mae": {
+          "mean": 0.36022577924387794,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11864764764904975,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.3142376658817132,
+          "seed_std": 0.009621060887972516
+        },
+        "audio_detail_corr": {
+          "mean": 0.26923715644661106,
+          "seed_std": 0.0024292021584099432
+        },
+        "audio_envelope_corr": {
+          "mean": 0.5618283544185433,
+          "seed_std": 0.005420955414668027
+        },
+        "audio_profile_mae": {
+          "mean": 0.17976940919955572,
+          "seed_std": 0.007155683388312656
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5162118213872114,
+          "seed_std": 0.04343275154630341
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.12285496555268766,
+          "seed_std": 1.4050056536991928e-05
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9326623913337575,
+          "seed_std": 6.727375332266083e-05
+        },
+        "ACC_detail_corr": {
+          "mean": 0.07921899862923779,
+          "seed_std": 0.0017124728660359786
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5745756442624168,
+          "seed_std": 0.004077521314413968
+        },
+        "paired_ACC_mae": {
+          "mean": 0.1500525835901499,
+          "seed_std": 4.618354141712466e-05
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.13589112187425295,
+          "seed_std": 0.0023580826818943024
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.000804578885436058,
+          "seed_std": 0.000416030486424764
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.031499742468198144,
+          "seed_std": 0.0016483778754870105
+        },
+        "audio_template_mae": {
+          "mean": 0.37324849565823875,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.12055882525940737,
+          "seed_std": 0.0
+        }
+      },
+      "common_small_train": {
+        "audio_mae": {
+          "mean": 0.2509801346808672,
+          "seed_std": 0.003931557014584544
+        },
+        "audio_detail_corr": {
+          "mean": 0.31778450845300404,
+          "seed_std": 0.006390448251803349
+        },
+        "audio_envelope_corr": {
+          "mean": 0.7138636062188742,
+          "seed_std": 0.007313380987023055
+        },
+        "audio_profile_mae": {
+          "mean": 0.1279944099485874,
+          "seed_std": 0.0005622409284114921
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.46121096089482305,
+          "seed_std": 0.036999400705099106
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.12158306110650302,
+          "seed_std": 7.133688777685027e-05
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.935254309306815,
+          "seed_std": 2.3989759260545362e-05
+        },
+        "ACC_detail_corr": {
+          "mean": 0.07970408927909049,
+          "seed_std": 0.0003162074307451468
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5343368057809856,
+          "seed_std": 0.00610648234765826
+        },
+        "paired_ACC_mae": {
+          "mean": 0.14705476984381677,
+          "seed_std": 0.0002855055034160642
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.13700734954327345,
+          "seed_std": 0.0017767386510968153
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0008087851107120514,
+          "seed_std": 0.000636662170290947
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.022578036040067674,
+          "seed_std": 0.00066150575876236
+        },
+        "audio_template_mae": {
+          "mean": 0.35555453449487684,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11781732141971588,
+          "seed_std": 0.0
+        }
+      },
+      "n_train_recordings": 70,
+      "n_train_windows": 280
+    },
+    "mei180": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2693167035364442,
+          "seed_std": 0.004518077149987226
+        },
+        "audio_detail_corr": {
+          "mean": 0.3099329730505015,
+          "seed_std": 0.0038274520379725507
+        },
+        "audio_envelope_corr": {
+          "mean": 0.6581821195165217,
+          "seed_std": 0.004958690724065629
+        },
+        "audio_profile_mae": {
+          "mean": 0.15565702699952655,
+          "seed_std": 0.0021771560526556433
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.496986133688026,
+          "seed_std": 0.08647829790910089
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.1235540094681912,
+          "seed_std": 0.0008740646350714892
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9329135850791672,
+          "seed_std": 0.00029297112430104466
+        },
+        "ACC_detail_corr": {
+          "mean": 0.10167622406263385,
+          "seed_std": 0.006862447681636019
+        },
+        "ACC_energy_corr": {
+          "mean": 0.4974678870567589,
+          "seed_std": 0.0049527539184443525
+        },
+        "paired_ACC_mae": {
+          "mean": 0.15162892008407247,
+          "seed_std": 0.0020473392680287333
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.14552573654800655,
+          "seed_std": 0.009557246064974198
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0005166743571559588,
+          "seed_std": 0.0006827410931388538
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.04487215470936563,
+          "seed_std": 0.002631705833805932
+        },
+        "audio_template_mae": {
+          "mean": 0.3599451614750756,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.12036331229739719,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.3127078144500653,
+          "seed_std": 0.0023855496197938697
+        },
+        "audio_detail_corr": {
+          "mean": 0.2573891397495533,
+          "seed_std": 0.00432414469159853
+        },
+        "audio_envelope_corr": {
+          "mean": 0.5638284255377697,
+          "seed_std": 0.0022471177152622035
+        },
+        "audio_profile_mae": {
+          "mean": 0.1742166151603063,
+          "seed_std": 0.0006482396274805069
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5558557954927286,
+          "seed_std": 0.09523154670993486
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.12237695517639319,
+          "seed_std": 0.0007740816722313567
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9339944487035909,
+          "seed_std": 0.0002576043172136111
+        },
+        "ACC_detail_corr": {
+          "mean": 0.10602554190550369,
+          "seed_std": 0.007381818807993296
+        },
+        "ACC_energy_corr": {
+          "mean": 0.6009294815157069,
+          "seed_std": 0.0012375178362606931
+        },
+        "paired_ACC_mae": {
+          "mean": 0.15144838852186998,
+          "seed_std": 0.002385901783903438
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.14247788954526186,
+          "seed_std": 0.00847139364729324
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0004956705495715141,
+          "seed_std": 0.0005857331678271293
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.029484080895781514,
+          "seed_std": 0.0014296793689330418
+        },
+        "audio_template_mae": {
+          "mean": 0.37352728843688965,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.12003248197336992,
+          "seed_std": 0.0
+        }
+      },
+      "common_small_train": {
+        "audio_mae": {
+          "mean": 0.2678129982203245,
+          "seed_std": 0.006905845180153858
+        },
+        "audio_detail_corr": {
+          "mean": 0.2808036732897914,
+          "seed_std": 0.0005385640178835471
+        },
+        "audio_envelope_corr": {
+          "mean": 0.6708276364042496,
+          "seed_std": 0.00880142100368364
+        },
+        "audio_profile_mae": {
+          "mean": 0.1449010897427797,
+          "seed_std": 0.007367334142327306
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.48937719836831095,
+          "seed_std": 0.08399497047066687
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.1225733557716012,
+          "seed_std": 0.0008964037522673565
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9346563106343873,
+          "seed_std": 0.00027183029000060754
+        },
+        "ACC_detail_corr": {
+          "mean": 0.10148697969661187,
+          "seed_std": 0.007851562866246303
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5394374557820714,
+          "seed_std": 0.0018546127928358302
+        },
+        "paired_ACC_mae": {
+          "mean": 0.1502157125622034,
+          "seed_std": 0.0019932184368371964
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.1469644857570529,
+          "seed_std": 0.009663853980600823
+        },
+        "blur_cycle_mae_increase": {
+          "mean": 0.0005596218630671501,
+          "seed_std": 0.0008086519315838814
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.017874325439333913,
+          "seed_std": 0.0012117061764001843
+        },
+        "audio_template_mae": {
+          "mean": 0.3562015160918236,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11756792888045312,
+          "seed_std": 0.0
+        }
+      },
+      "n_train_recordings": 180,
+      "n_train_windows": 720
+    },
+    "mei180_long": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.2526493486637871,
+          "seed_std": 0.00947061195555661
+        },
+        "audio_detail_corr": {
+          "mean": 0.30684514498544224,
+          "seed_std": 0.0244091729811787
+        },
+        "audio_envelope_corr": {
+          "mean": 0.7137185381462545,
+          "seed_std": 0.01779111526159921
+        },
+        "audio_profile_mae": {
+          "mean": 0.1655176498202814,
+          "seed_std": 0.014471652855475733
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5042486894047923,
+          "seed_std": 0.021540140815907077
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.11539880763739346,
+          "seed_std": 0.0018193608977728412
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9429924133105547,
+          "seed_std": 0.0017199520699500148
+        },
+        "ACC_detail_corr": {
+          "mean": 0.13876269551619602,
+          "seed_std": 0.007332704909036342
+        },
+        "ACC_energy_corr": {
+          "mean": 0.544429548062136,
+          "seed_std": 0.033170383644606394
+        },
+        "paired_ACC_mae": {
+          "mean": 0.13768385373469855,
+          "seed_std": 0.0011049943044781768
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.11536007258109748,
+          "seed_std": 0.006032253765604567
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0005978919358717071,
+          "seed_std": 0.0006813990366127756
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.05364977224833435,
+          "seed_std": 0.005432722758915692
+        },
+        "audio_template_mae": {
+          "mean": 0.3599451614750756,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.12036331229739719,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.2771147921681404,
+          "seed_std": 0.000747329493363702
+        },
+        "audio_detail_corr": {
+          "mean": 0.24800305717830884,
+          "seed_std": 0.0014205143992235963
+        },
+        "audio_envelope_corr": {
+          "mean": 0.6362889896053363,
+          "seed_std": 0.005270982303407334
+        },
+        "audio_profile_mae": {
+          "mean": 0.15400335701803367,
+          "seed_std": 0.005500561743974675
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5930307894945144,
+          "seed_std": 0.014382722973823536
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.11507960030188163,
+          "seed_std": 0.0022007747863729762
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.942541367517385,
+          "seed_std": 0.002039123738234949
+        },
+        "ACC_detail_corr": {
+          "mean": 0.1322481756511584,
+          "seed_std": 0.008602440096354032
+        },
+        "ACC_energy_corr": {
+          "mean": 0.6113136172606402,
+          "seed_std": 0.0374392329162031
+        },
+        "paired_ACC_mae": {
+          "mean": 0.1378823986276984,
+          "seed_std": 0.0013852051769693702
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.11292879910518726,
+          "seed_std": 0.0040788743024071095
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0007509589816133181,
+          "seed_std": 0.0007299945379296938
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.03728650373717149,
+          "seed_std": 0.0005850375940402337
+        },
+        "audio_template_mae": {
+          "mean": 0.37352728843688965,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.12003248197336992,
+          "seed_std": 0.0
+        }
+      },
+      "common_small_train": {
+        "audio_mae": {
+          "mean": 0.2555799838155508,
+          "seed_std": 0.009546762332320213
+        },
+        "audio_detail_corr": {
+          "mean": 0.2873842170104843,
+          "seed_std": 0.025051358708882754
+        },
+        "audio_envelope_corr": {
+          "mean": 0.7248034422852038,
+          "seed_std": 0.02674144309225135
+        },
+        "audio_profile_mae": {
+          "mean": 0.15537584591656922,
+          "seed_std": 0.013151434250175953
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5119748655706644,
+          "seed_std": 0.017926717922091467
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.11365858055651187,
+          "seed_std": 0.0018254995346069294
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9451441374091364,
+          "seed_std": 0.0015530415059449298
+        },
+        "ACC_detail_corr": {
+          "mean": 0.14121497259459004,
+          "seed_std": 0.008191032772201762
+        },
+        "ACC_energy_corr": {
+          "mean": 0.5895090978741648,
+          "seed_std": 0.029328888823371646
+        },
+        "paired_ACC_mae": {
+          "mean": 0.13533270321786406,
+          "seed_std": 0.0011905908584594754
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.11654410045593977,
+          "seed_std": 0.006874222494661811
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.000693604163825512,
+          "seed_std": 0.0007101597264409065
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.027108346670866014,
+          "seed_std": 0.004116400331258775
+        },
+        "audio_template_mae": {
+          "mean": 0.3562015160918236,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11756792888045312,
+          "seed_std": 0.0
+        }
+      },
+      "n_train_recordings": 180,
+      "n_train_windows": 720
+    },
+    "mei20_long": {
+      "train": {
+        "audio_mae": {
+          "mean": 0.109643030539155,
+          "seed_std": 0.000748985633254047
+        },
+        "audio_detail_corr": {
+          "mean": 0.8003943222843983,
+          "seed_std": 0.005323242962160968
+        },
+        "audio_envelope_corr": {
+          "mean": 0.9853228934595409,
+          "seed_std": 0.00011964301889466622
+        },
+        "audio_profile_mae": {
+          "mean": 0.043566019739955664,
+          "seed_std": 0.0065291046164929895
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5725776150822639,
+          "seed_std": 0.004378552734851826
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.11286507248878479,
+          "seed_std": 0.0004344906657934161
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9461425677419122,
+          "seed_std": 0.0011913358609600966
+        },
+        "ACC_detail_corr": {
+          "mean": 0.13529675866261848,
+          "seed_std": 0.009847344690802798
+        },
+        "ACC_energy_corr": {
+          "mean": 0.6246762833830288,
+          "seed_std": 0.005306767855441874
+        },
+        "paired_ACC_mae": {
+          "mean": 0.12230013869702816,
+          "seed_std": 0.0010389484465122278
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.102729913033545,
+          "seed_std": 0.003409291245043279
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.000666004978120327,
+          "seed_std": 0.0004832407459616661
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.19230978190898895,
+          "seed_std": 0.002306893467903137
+        },
+        "audio_template_mae": {
+          "mean": 0.35853723585605624,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11695960350334644,
+          "seed_std": 0.0
+        }
+      },
+      "validation": {
+        "audio_mae": {
+          "mean": 0.3302877587576707,
+          "seed_std": 0.010654231657584529
+        },
+        "audio_detail_corr": {
+          "mean": 0.15470352423285022,
+          "seed_std": 0.007935872772487682
+        },
+        "audio_envelope_corr": {
+          "mean": 0.4879771052526093,
+          "seed_std": 0.022175637996867975
+        },
+        "audio_profile_mae": {
+          "mean": 0.1816219851995508,
+          "seed_std": 0.005556952891250452
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.6345909044146538,
+          "seed_std": 0.02013883392016097
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.11828257143497467,
+          "seed_std": 0.00027775317430496493
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9407472936947385,
+          "seed_std": 0.00089589740840057
+        },
+        "ACC_detail_corr": {
+          "mean": 0.10876097032575158,
+          "seed_std": 0.008881565816360217
+        },
+        "ACC_energy_corr": {
+          "mean": 0.6182204834407057,
+          "seed_std": 0.00012919050200493887
+        },
+        "paired_ACC_mae": {
+          "mean": 0.1309815748905142,
+          "seed_std": 0.00034858739624420154
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.11908456174035867,
+          "seed_std": 0.002608320489525792
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.0011887097731232642,
+          "seed_std": 0.00033288765698671343
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.026855221887429552,
+          "seed_std": 0.00016097674767176322
+        },
+        "audio_template_mae": {
+          "mean": 0.37991733103990555,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11999386958777905,
+          "seed_std": 0.0
+        }
+      },
+      "common_small_train": {
+        "audio_mae": {
+          "mean": 0.109643030539155,
+          "seed_std": 0.000748985633254047
+        },
+        "audio_detail_corr": {
+          "mean": 0.8003943222843983,
+          "seed_std": 0.005323242962160968
+        },
+        "audio_envelope_corr": {
+          "mean": 0.9853228934595409,
+          "seed_std": 0.00011964301889466622
+        },
+        "audio_profile_mae": {
+          "mean": 0.043566019739955664,
+          "seed_std": 0.0065291046164929895
+        },
+        "audio_curvature_ratio": {
+          "mean": 0.5725776150822639,
+          "seed_std": 0.004378552734851826
+        },
+        "ACC_cycle_mae": {
+          "mean": 0.11286507248878479,
+          "seed_std": 0.0004344906657934161
+        },
+        "ACC_cycle_corr": {
+          "mean": 0.9461425677419122,
+          "seed_std": 0.0011913358609600966
+        },
+        "ACC_detail_corr": {
+          "mean": 0.13529675866261848,
+          "seed_std": 0.009847344690802798
+        },
+        "ACC_energy_corr": {
+          "mean": 0.6246762833830288,
+          "seed_std": 0.005306767855441874
+        },
+        "paired_ACC_mae": {
+          "mean": 0.12230013869702816,
+          "seed_std": 0.0010389484465122278
+        },
+        "reverse_audio_cycle_mae": {
+          "mean": 0.102729913033545,
+          "seed_std": 0.003409291245043279
+        },
+        "blur_cycle_mae_increase": {
+          "mean": -0.000666004978120327,
+          "seed_std": 0.0004832407459616661
+        },
+        "wrong_ACC_input_audio_mae_increase": {
+          "mean": 0.19230978190898895,
+          "seed_std": 0.002306893467903137
+        },
+        "audio_template_mae": {
+          "mean": 0.35853723585605624,
+          "seed_std": 0.0
+        },
+        "ACC_template_mae": {
+          "mean": 0.11695960350334644,
+          "seed_std": 0.0
+        }
+      },
+      "n_train_recordings": 20,
+      "n_train_windows": 80
+    }
+  },
+  "paired_record_deltas": {
+    "audio_mae": {
+      "mei180_minus_mei20": {
+        "delta": 0.009645140046874683,
+        "record_bootstrap95": [
+          0.0024272575632979473,
+          0.017109000605220595
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20": {
+        "delta": -0.0259478822350502,
+        "record_bootstrap95": [
+          -0.03633492789231241,
+          -0.0159878544509411
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20_long": {
+        "delta": -0.05317296658953031,
+        "record_bootstrap95": [
+          -0.06559441658668219,
+          -0.04096345372187596
+        ],
+        "n_records": 60,
+        "limits": "Matched360+360 epoch budget. Seed-averaged per-record conditional bootstrap; same person/session, not all optimization/split uncertainty."
+      }
+    },
+    "ACC_cycle_mae": {
+      "mei180_minus_mei20": {
+        "delta": -0.001510446270306905,
+        "record_bootstrap95": [
+          -0.0020048885544141134,
+          -0.0010165931656956674
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20": {
+        "delta": -0.008807801144818465,
+        "record_bootstrap95": [
+          -0.00980952690821141,
+          -0.007866816928920646
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20_long": {
+        "delta": -0.0032029711330930394,
+        "record_bootstrap95": [
+          -0.0037895838714515173,
+          -0.002692114238937697
+        ],
+        "n_records": 60,
+        "limits": "Matched360+360 epoch budget. Seed-averaged per-record conditional bootstrap; same person/session, not all optimization/split uncertainty."
+      }
+    },
+    "audio_detail_corr": {
+      "mei180_minus_mei20": {
+        "delta": 0.03898530443023226,
+        "record_bootstrap95": [
+          0.01598305490022691,
+          0.06060635891656883
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20": {
+        "delta": 0.029599221858987824,
+        "record_bootstrap95": [
+          0.005233609261113436,
+          0.053984931036344795
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20_long": {
+        "delta": 0.09329953294545863,
+        "record_bootstrap95": [
+          0.060525127672973335,
+          0.12602408423719455
+        ],
+        "n_records": 60,
+        "limits": "Matched360+360 epoch budget. Seed-averaged per-record conditional bootstrap; same person/session, not all optimization/split uncertainty."
+      }
+    },
+    "wrong_ACC_input_audio_mae_increase": {
+      "mei180_minus_mei20": {
+        "delta": 0.0005266010761260986,
+        "record_bootstrap95": [
+          -0.009386133613685767,
+          0.010749403573572635
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20": {
+        "delta": 0.008329023917516073,
+        "record_bootstrap95": [
+          -0.00557596003326277,
+          0.02250610377639531
+        ],
+        "n_records": 60,
+        "limits": "Repeatedly sampled same-person source recordings, seed-averaged. Conditional descriptive interval, not new users/sessions or all model/sampling uncertainty. Long comparison also changes optimization budget."
+      },
+      "mei180_long_minus_mei20_long": {
+        "delta": 0.010431281849741935,
+        "record_bootstrap95": [
+          -0.006223855040346582,
+          0.026528388867154713
+        ],
+        "n_records": 60,
+        "limits": "Matched360+360 epoch budget. Seed-averaged per-record conditional bootstrap; same person/session, not all optimization/split uncertainty."
+      }
+    }
+  },
+  "protocol": {
+    "data": {
+      "source": "Data0723/wangjingmei raw timestamp-matched npy pairs, NOT old nine-user spectral arrays; personal=previous20TRAIN/4REUSEDval rawvAccel",
+      "counts": {
+        "mei20": {
+          "recordings": 20,
+          "windows": 80
+        },
+        "mei70": {
+          "recordings": 70,
+          "windows": 280
+        },
+        "mei180": {
+          "recordings": 180,
+          "windows": 720
+        },
+        "mei_validation": {
+          "recordings": 60,
+          "windows": 240
+        },
+        "personal_validation": {
+          "recordings": 4,
+          "windows": 44
+        },
+        "personal20": {
+          "recordings": 20,
+          "windows": 222
+        }
+      },
+      "split": "Original task-wise280TRAIN contains duplicate source keys and crosses VAL/test metadata. Protect all originalVAL/test keys, remove their TRAIN copies, keep one canonical TRAIN row per source key:180uniqueTRAIN/60VAL, original60test metadata protected and arrays NOTopened. Cross-split raw content hashes checked. Old test was historically evaluated, not a pristine confirmation set. No auth model trained.",
+      "preprocessing": "SAME all domains/subsets: nominal first-sample-zero pairing; source timestamps sorted/deduplicated and interpolate signedXYZ at1000Hz; subtract fullrecord DC; main spectrum0-500Hz XYZ STFT128/hop10 plus56multiscale energies, no phase. Audio mono16k, original HTKMel80 nfft512/hop160. Fullrecord .8s crops/.4s stride, include final validcrop. No padding, stretching, lag search, per-user/window gain or normalization.",
+      "source_conversion": "Data0723 actual source48k stereo -> mean mono and polyphase16k; existingpersonal16k unchanged. Timestamp interpolation is source ingestion, common downstream frontend. Physical source type/unit may differ; cross-domain comparison is not a data-size causal test.",
+      "normalization": {
+        "scope": "ONE pooled calibration using original20personalTRAIN plus nested20meiTRAIN only, fixed IDENTICAL for every new route; does not use additional70/180-only records or anyVAL/test. Each low-data mei model has no feature stats from larger mei subsets.",
+        "spec_lo_hi": [
+          -119.0213360748668,
+          -26.288346076712333
+        ],
+        "energy_mean": [
+          -1.592593236168711,
+          -1.5013559966099557,
+          -1.523207138578504,
+          -1.2070543693539195,
+          -1.5248399169723736,
+          -1.4248323566239554,
+          -1.479095265949246,
+          -1.1757266812213236,
+          -1.9691208345378421,
+          -1.7796492527134569,
+          -2.0862274206032314,
+          -1.5660937746841794,
+          -1.8617029694682594,
+          -1.6651781078531558,
+          -1.9776696956055775,
+          -1.5070553141705505,
+          -2.3172035367465007,
+          -2.0072460555142517,
+          -2.3322755628242535,
+          -1.8687769185017442,
+          -2.261680008863445,
+          -1.934319792572419,
+          -2.2831179124742094,
+          -1.8252224025171337,
+          -2.5624177296809427,
+          -2.5425485622122714,
+          -2.369140944662048,
+          -2.2074983409778137,
+          -2.527633976922539,
+          -2.5062016023118114,
+          -2.330506755652116,
+          -2.1853050599911388,
+          -2.590135828919274,
+          -2.5648276288036995,
+          -2.4129636230362,
+          -2.2501624318735183,
+          -2.5588072633649093,
+          -2.530874530127372,
+          -2.3806648002595256,
+          -2.2282473969991075,
+          -2.717473778479055,
+          -2.6913052570792577,
+          -2.509181546197839,
+          -2.3609741100790558,
+          -2.687459636738692,
+          -2.6578601183157593,
+          -2.4714467026098577,
+          -2.3315684103335252,
+          -3.893073365722875,
+          -3.8682348152497656,
+          -3.6993992977961327,
+          -3.5216840649490946,
+          -3.8169982731125054,
+          -3.7914479047626806,
+          -3.6166357834081437,
+          -3.4632963877214853
+        ],
+        "energy_std": [
+          0.7109765139931075,
+          0.8611547478311885,
+          0.7569889727868567,
+          0.7307816536204569,
+          0.672156618470696,
+          0.826215041425988,
+          0.7233209461233814,
+          0.7217963531594206,
+          0.8037005826372875,
+          0.836510826761323,
+          0.7529698134150447,
+          0.7712303789396909,
+          0.7575047382922672,
+          0.7941292922430913,
+          0.7057495329133346,
+          0.7546574302990428,
+          0.8950509391746666,
+          1.0051107608035599,
+          0.8653828924960069,
+          0.9468404189487866,
+          0.8857997947097743,
+          0.9909671082746615,
+          0.8527462627201102,
+          0.946017818281391,
+          0.9440000383678353,
+          0.9678913350948072,
+          1.0469897927089051,
+          0.9938900525270754,
+          0.9316678915438593,
+          0.9619953786941621,
+          1.039020331595861,
+          0.9904093198770434,
+          1.0396407911434609,
+          1.0232186298191792,
+          1.1125258692851658,
+          1.0638656539970925,
+          1.017384981355237,
+          1.0062506008077936,
+          1.0952081575217967,
+          1.0492637822297557,
+          1.0932223489036037,
+          1.091441893109945,
+          1.1924671489192975,
+          1.1333004400661646,
+          1.0563901465431798,
+          1.0513471728162658,
+          1.1757880260266753,
+          1.1146414280104635,
+          0.782487384256643,
+          0.7654726758802025,
+          0.8891522786050728,
+          0.8135694321018083,
+          0.7662491550812901,
+          0.7497355405733584,
+          0.8803770288933032,
+          0.8131840369172618
+        ],
+        "audio_lo_hi": [
+          -100.0,
+          -33.51799395864004
+        ]
+      },
+      "sampler": "record-uniform; uniform crop per record, activity_fraction ones is compatibility field, no audio activity filtering",
+      "exact_raw_train_val_duplicate_pairs": 0,
+      "unique_train_raw_pairs": 180,
+      "unique_val_raw_pairs": 60,
+      "test_source_keys_blocked_from_train": 60,
+      "source_manifest_sha256": "79b0e0da39452885d269637dbd8774f77f4df0a46d0f0e0491feb221d3230756",
+      "scope": "Within-mei nested20/70/180 isolates gradient-training record count under fixed frontend/model/updates/validation; source/timing/session/content diversity grows with record count. Single subject per model, not identity accuracy.",
+      "membership_reconstruction": "Original manifest + exporter seed20261018 and duplicate/reserve-key rules; detailed membership kept in private run protocol."
+    },
+    "seeds": [
+      42,
+      43
+    ],
+    "routes": [
+      "personal20",
+      "mei20",
+      "mei70",
+      "mei180"
+    ],
+    "model": "SAME G original project2DResNet hidden16 blocks2 resize/noIN/projection251->80, F temporal64 fiveblocks; train_cycle_generalization.py fixed_full configuration",
+    "training": {
+      "prewarm_epochs": 120,
+      "full_cycle_epochs": 120,
+      "updates_per_epoch": 4,
+      "batch_size": 8,
+      "optimizer": "AdamW lr.0003 beta.5/.999 WD.001; Dlr.0002",
+      "selection": "fixed endpoints, no validation checkpoint/model selection, all runs from scratch. Same number gradient updates, not same full passes through each dataset."
+    },
+    "losses": "Identical previous full-cycle losses:20pairedaudio5pairedACC/audioGAN1/ACCGAN.05, spectralgradient/envelope/profile/FM; fullcycleACC ramp10->20 audio10 TRAIN-onlyprewarmteacher5;50%MelS/.005noise; no bypass.",
+    "scope": "Within-mei20/70/180 changes training-source record count only;20mei is nested and has same sharedcalibration as larger sets. Personal20 is a secondary different-source control, NOT a causal quantity-only comparison. Noidentityhead/FAR/FRR claims."
+  },
+  "long_budget_protocol": {
+    "seeds": [
+      42,
+      43
+    ],
+    "routes": [
+      "mei180_long"
+    ],
+    "model": "SAME G original project2DResNet hidden16 blocks2 resize/noIN/projection251->80, F temporal64 fiveblocks; train_cycle_generalization.py fixed_full configuration",
+    "training": {
+      "prewarm_epochs": 360,
+      "full_cycle_epochs": 360,
+      "updates_per_epoch": 4,
+      "batch_size": 8,
+      "optimizer": "AdamW lr.0003 beta.5/.999 WD.001; Dlr.0002",
+      "selection": "fixed endpoints, no validation checkpoint/model selection, all runs from scratch. Same number gradient updates, not same full passes through each dataset."
+    },
+    "losses": "Identical previous full-cycle losses:20pairedaudio5pairedACC/audioGAN1/ACCGAN.05, spectralgradient/envelope/profile/FM; fullcycleACC ramp10->20 audio10 TRAIN-onlyprewarmteacher5;50%MelS/.005noise; no bypass.",
+    "scope": "Within-mei20/70/180 changes training-source record count only;20mei is nested and has same sharedcalibration as larger sets. Personal20 is a secondary different-source control, NOT a causal quantity-only comparison. Noidentityhead/FAR/FRR claims.",
+    "budget_control": "Additional larger-set optimization control after first short-budget seed showed higher training error. SAME model/frontend/loss/frozen calibration and clean180TRAIN, 3xprewarm and3xfull-cycle updates, new same-seed initialization. Fixed360/360 endpoints, no externalVAL checkpoint selection. Exploratory follow-up, not predeclared with the original4routes."
+  },
+  "small_long_budget_protocol": {
+    "seeds": [
+      42,
+      43
+    ],
+    "routes": [
+      "mei20_long"
+    ],
+    "model": "SAME G original project2DResNet hidden16 blocks2 resize/noIN/projection251->80, F temporal64 fiveblocks; train_cycle_generalization.py fixed_full configuration",
+    "training": {
+      "prewarm_epochs": 360,
+      "full_cycle_epochs": 360,
+      "updates_per_epoch": 4,
+      "batch_size": 8,
+      "optimizer": "AdamW lr.0003 beta.5/.999 WD.001; Dlr.0002",
+      "selection": "fixed endpoints, no validation checkpoint/model selection, all runs from scratch. Same number gradient updates, not same full passes through each dataset."
+    },
+    "losses": "Identical previous full-cycle losses:20pairedaudio5pairedACC/audioGAN1/ACCGAN.05, spectralgradient/envelope/profile/FM; fullcycleACC ramp10->20 audio10 TRAIN-onlyprewarmteacher5;50%MelS/.005noise; no bypass.",
+    "scope": "Within-mei20/70/180 changes training-source record count only;20mei is nested and has same sharedcalibration as larger sets. Personal20 is a secondary different-source control, NOT a causal quantity-only comparison. Noidentityhead/FAR/FRR claims.",
+    "budget_control": "Exploratory follow-up after short-budget comparison. SAME model/frontend/loss/frozen calibration, 3xprewarm and3xfull-cycle updates, new same-seed initialization. Fixed360/360 endpoints, no externalVAL checkpoint selection.180long tests optimization adequacy;20long is matched-budget small-data control. Not predeclared with the original4routes."
+  },
+  "duplicate_audit": {
+    "nominal_pairs": 340,
+    "unique_pairs": 255,
+    "unique_ACC": 255,
+    "unique_audio": 255,
+    "per_split": {
+      "train": {
+        "nominal": 280,
+        "unique_pairs": 210
+      },
+      "validation": {
+        "nominal": 60,
+        "unique_pairs": 60
+      }
+    },
+    "cross_split_duplicate_groups": 15,
+    "test": "not read",
+    "unique_source_keys_metadata": 300,
+    "clean_train_source_keys_after_protecting_val_and_test": 180,
+    "protected_rule": "All VAL/test source keys blocked from TRAIN based on metadata; test arrays not read"
+  },
+  "scope": "All final models full cycles. Primary within-mei clean20/70/180, same60validation source records and shared calibration/model/updates. Additional20long/180long provide a matched3x-budget comparison. Follow-ups were exploratory, not all predeclared. No identity/authentication claim. Test arrays not read this round; historical test evaluation exists.",
+  "time_template_control": {
+    "protocol": "TRAIN-only microphone means separately for0/.4/.8/1.2s crop positions; predicts VAL without ACC. Checks capture-flow prior; NOT a usable identity model. All same60source records, no VAL/test template fitting.",
+    "templates": {
+      "20": {
+        "audio_mae": 0.2808691494166851,
+        "audio_detail_corr": 0.28704713537459803,
+        "audio_envelope_corr": 0.6672308382625699
+      },
+      "70": {
+        "audio_mae": 0.27188013270497324,
+        "audio_detail_corr": 0.3154375941908529,
+        "audio_envelope_corr": 0.6733575055881107
+      },
+      "180": {
+        "audio_mae": 0.272676108032465,
+        "audio_detail_corr": 0.3225793608022352,
+        "audio_envelope_corr": 0.6737147792834025
+      }
+    },
+    "model_comparisons": [
+      {
+        "route": "mei20",
+        "seed": 42,
+        "model_audio_mae": 0.296860462675492,
+        "time_template_audio_mae": 0.2808691494166851,
+        "mean_template_minus_model": -0.015991313258806865,
+        "n_model_beats_time_template": 27,
+        "n_records": 60
+      },
+      {
+        "route": "mei70",
+        "seed": 42,
+        "model_audio_mae": 0.3046166049937407,
+        "time_template_audio_mae": 0.27188013270497324,
+        "mean_template_minus_model": -0.0327364722887675,
+        "n_model_beats_time_template": 17,
+        "n_records": 60
+      },
+      {
+        "route": "mei180",
+        "seed": 42,
+        "model_audio_mae": 0.3103222648302714,
+        "time_template_audio_mae": 0.272676108032465,
+        "mean_template_minus_model": -0.037646156797806425,
+        "n_model_beats_time_template": 18,
+        "n_records": 60
+      },
+      {
+        "route": "mei20",
+        "seed": 43,
+        "model_audio_mae": 0.30926488613088926,
+        "time_template_audio_mae": 0.2808691494166851,
+        "mean_template_minus_model": -0.028395736714204152,
+        "n_model_beats_time_template": 20,
+        "n_records": 60
+      },
+      {
+        "route": "mei70",
+        "seed": 43,
+        "model_audio_mae": 0.32385872676968575,
+        "time_template_audio_mae": 0.27188013270497324,
+        "mean_template_minus_model": -0.05197859406471252,
+        "n_model_beats_time_template": 16,
+        "n_records": 60
+      },
+      {
+        "route": "mei180",
+        "seed": 43,
+        "model_audio_mae": 0.31509336406985916,
+        "time_template_audio_mae": 0.272676108032465,
+        "mean_template_minus_model": -0.042417256037394206,
+        "n_model_beats_time_template": 17,
+        "n_records": 60
+      },
+      {
+        "route": "mei180_long",
+        "seed": 42,
+        "model_audio_mae": 0.2778621216615041,
+        "time_template_audio_mae": 0.272676108032465,
+        "mean_template_minus_model": -0.005186013629039129,
+        "n_model_beats_time_template": 31,
+        "n_records": 60
+      },
+      {
+        "route": "mei180_long",
+        "seed": 43,
+        "model_audio_mae": 0.2763674626747767,
+        "time_template_audio_mae": 0.272676108032465,
+        "mean_template_minus_model": -0.003691354642311732,
+        "n_model_beats_time_template": 30,
+        "n_records": 60
+      },
+      {
+        "route": "mei20_long",
+        "seed": 42,
+        "model_audio_mae": 0.3196335271000862,
+        "time_template_audio_mae": 0.2808691494166851,
+        "mean_template_minus_model": -0.03876437768340111,
+        "n_model_beats_time_template": 17,
+        "n_records": 60
+      },
+      {
+        "route": "mei20_long",
+        "seed": 43,
+        "model_audio_mae": 0.34094199041525525,
+        "time_template_audio_mae": 0.2808691494166851,
+        "mean_template_minus_model": -0.060072840998570125,
+        "n_model_beats_time_template": 14,
+        "n_records": 60
+      }
+    ]
+  },
+  "source_hashes": {
+    "export_mei_size_cycle.py": "32df740393609c07dac93a6a06c826f02092410ac63546a717242f9f4f1a5659",
+    "train_mei_size_cycle.py": "4a2820f02b20e606e56225d3973089fa01f71c56eec72019f5f9b81ea8e6ea49",
+    "train_mei_size_long180_original.py": "4fd34c87f71111177006dc56cad4cf0dc4b3b18a25f6fe78781485ec5efc2df4",
+    "train_mei_size_long.py": "2df5696013da6a0a89ae176a7642b008f1773155045d1ed58bcc5f65f71dec00",
+    "audit_mei_duplicates.py": "03e5cd041347c730c73a276f425edd7bceaf961d188da99951a60e6040eee13a",
+    "audit_mei_time_template.py": "92f2281e04c42e6c239c1f1a6cc70223416d8c192ee14419025831fd88c17770",
+    "report_mei_size_cycle.py": "ee9cf4cb1e92308d1acde53c8db654bf3a0cef94b5acbbdcb3ab40cf36d4cf25",
+    "pack_mei_size_review.py": "d100aaa951703ec1f26cd9b66fb2d74d03d2491aeb8180b821a91d9a40360ba3",
+    "supplement_mei_controls.py": "a87a0d8a6dc2db4e020e15deecd2527114948f6bb33a4ba39f2449468b10c193",
+    "data0723_frontend_helpers.py": "823ed1c67276abb85cd1fce4f36b78e676422bdd95504011bb026a578e3d60ec"
+  },
+  "conclusion": "More independent recordings mitigate overfit under adequate training; long180MAE.2771 vs long20.3303. However noACC crop-position TRAIN template MAE.2727/detailcorr.3226 exceeds model.2771/.2480. Therefore conversion/identity front-end success not established. Quantity alone is not the full explanation."
+}

@@ -1,0 +1,141 @@
+{
+  "signed_filtered_xyz_power": {
+    "microphone_F0": {
+      "macro_prominence_db": -0.6299954676851429,
+      "per_record": {
+        "recording_02_imu4": {
+          "prominence_db": -0.3878451439811558,
+          "frames": 122
+        },
+        "recording_04_imu4": {
+          "prominence_db": -0.16663170318202217,
+          "frames": 101
+        },
+        "recording_05_imu4": {
+          "prominence_db": -0.6256177551435804,
+          "frames": 101
+        },
+        "recording_08_imu3": {
+          "prominence_db": -1.339887268433813,
+          "frames": 128
+        }
+      }
+    },
+    "half_F0": {
+      "macro_prominence_db": -0.4785807932954562,
+      "per_record": {
+        "recording_02_imu4": {
+          "prominence_db": -0.6595137695243705,
+          "frames": 122
+        },
+        "recording_04_imu4": {
+          "prominence_db": -0.5787069345178949,
+          "frames": 101
+        },
+        "recording_05_imu4": {
+          "prominence_db": -0.46900963377539473,
+          "frames": 101
+        },
+        "recording_08_imu3": {
+          "prominence_db": -0.20709283536416478,
+          "frames": 128
+        }
+      }
+    },
+    "folded_twice_F0": {
+      "macro_prominence_db": -4.013674187882431,
+      "per_record": {
+        "recording_02_imu4": {
+          "prominence_db": -3.550268301095527,
+          "frames": 104
+        },
+        "recording_04_imu4": {
+          "prominence_db": -4.013991868389504,
+          "frames": 84
+        },
+        "recording_05_imu4": {
+          "prominence_db": -3.6345999901553236,
+          "frames": 83
+        },
+        "recording_08_imu3": {
+          "prominence_db": -4.855836591889373,
+          "frames": 113
+        }
+      }
+    }
+  },
+  "time_vector_magnitude": {
+    "microphone_F0": {
+      "macro_prominence_db": -0.6376696219089909,
+      "per_record": {
+        "recording_02_imu4": {
+          "prominence_db": -1.2554210596641555,
+          "frames": 122
+        },
+        "recording_04_imu4": {
+          "prominence_db": -0.8654850811356365,
+          "frames": 101
+        },
+        "recording_05_imu4": {
+          "prominence_db": -0.32087055294046013,
+          "frames": 101
+        },
+        "recording_08_imu3": {
+          "prominence_db": -0.10890179389571131,
+          "frames": 128
+        }
+      }
+    },
+    "half_F0": {
+      "macro_prominence_db": -0.5227641653608596,
+      "per_record": {
+        "recording_02_imu4": {
+          "prominence_db": -1.0913493001046801,
+          "frames": 122
+        },
+        "recording_04_imu4": {
+          "prominence_db": -0.35875756824665733,
+          "frames": 101
+        },
+        "recording_05_imu4": {
+          "prominence_db": -0.40529637141061003,
+          "frames": 101
+        },
+        "recording_08_imu3": {
+          "prominence_db": -0.23565342168149073,
+          "frames": 128
+        }
+      }
+    },
+    "folded_twice_F0": {
+      "macro_prominence_db": -1.1365093132323338,
+      "per_record": {
+        "recording_02_imu4": {
+          "prominence_db": -0.6875377435129709,
+          "frames": 104
+        },
+        "recording_04_imu4": {
+          "prominence_db": -2.4288725964725018,
+          "frames": 84
+        },
+        "recording_05_imu4": {
+          "prominence_db": -0.20628433405275803,
+          "frames": 83
+        },
+        "recording_08_imu3": {
+          "prominence_db": -1.2233425788911043,
+          "frames": 113
+        }
+      }
+    }
+  },
+  "synthetic_signed": {
+    "true_F0": 41.25958939553587,
+    "folded_twice_F0": -16.17691928105381
+  },
+  "synthetic_time_magnitude": {
+    "true_F0": -5.729631813396582,
+    "folded_twice_F0": 29.280659920842062
+  },
+  "notes": "Measured inputs use existing signed-axis export: original DC/FIR/Tukey, no normalization. Same measured frames per eligible mapping, deduplicated; mappings near Nyquist can have different eligible counts. Broad spectral prominence is not actual SNR. Synthetic no-noise chirp demonstrates mathematical distortion only, not its causal importance in measured recordings."
+}
