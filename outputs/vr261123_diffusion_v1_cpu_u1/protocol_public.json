@@ -1,0 +1,31 @@
+{
+  "version": "V1 train_ddpm.py linear beta1e-4..0.01,1000steps,noiseMSE+0.4SSIM at all t",
+  "source_sha256": "621d6bfb68fcfe4b3fc1a60760940583d4ff1d354f73565533bfaaa0180b7bbb",
+  "model_sha256": "5001b3e1f27349eb9f573d446b4770d538971e88da355c0a6a5c48805812d4ce",
+  "note": "network file is the surviving BiometricUNet64 with GroupNorm; earliest archive identity unverified",
+  "initialization": "random,seed42; no ESMB/V3 checkpoint",
+  "owners": [
+    1
+  ],
+  "steps": 400,
+  "batch": 4,
+  "lr": 0.0001,
+  "optimizer": "AdamW default weight decay=.01",
+  "resolution": [
+    40,
+    32
+  ],
+  "sampling_steps": 10,
+  "features": "latent1536,guidance252,cycle88,bundle1876",
+  "normalization": "global upstream train-only mean and 3std,clip[-1,1]",
+  "counts": {
+    "train": 1600,
+    "valid": 480,
+    "register": 240,
+    "calibration": 160,
+    "sameword": 240,
+    "crossword": 240
+  },
+  "authentication": "balanced RBF C10;calibration EER threshold;query ACC only",
+  "target_scope": "U10 retained as attacker; target owners specified explicitly"
+}
