@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "baseline_max_error": 0.0,
+  "configuration_count": 450,
+  "cv_fold_workpoints": 4500,
+  "disjoint_cal_validation_words": true,
+  "z_affine_decision_check": true,
+  "choices_serialized_before_query": true,
+  "z_cohort_fit_only": true,
+  "t_models_registration_only": true,
+  "local_results_count_check": true,
+  "selection_replay": true,
+  "query_thresholds_not_retuned": true,
+  "hter_users_improved": 6,
+  "hter_users_equal": 3,
+  "hter_users_worse": 1,
+  "synthetic_checks": "PASS: midpoint decisions, affine transform, target exclusion, S/AS formulas, variance floor"
+}
