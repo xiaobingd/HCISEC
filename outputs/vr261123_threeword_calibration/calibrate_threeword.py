@@ -201,7 +201,7 @@ def main():
     (OUT/'cv_metrics_private.json').write_text(json.dumps(cv))
     (OUT/'verification_public.json').write_text(json.dumps(dict(status='PASS',
         baseline_max_error=max(errors),configuration_count=len(rows),cv_fold_workpoints=len(cv),
-        disjoint_cal_validation_words=True,cohort_fit_only=True,
+        disjoint_cal_validation_words=True,z_cohort_fit_only=True,t_models_registration_only=True,
         z_affine_decision_check=True,choices_serialized_before_query=True),indent=2))
     print('CALIBRATION_COMPLETE',flush=True)
 
