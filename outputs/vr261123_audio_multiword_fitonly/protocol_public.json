@@ -1,0 +1,80 @@
+{
+  "dataset": "same 10 users; hardware raw ACC; closed cross-word; all9 attackers retained",
+  "train_words": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "train_recordings": 2080,
+  "registration_words": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "calibration_words": [
+    8,
+    9,
+    18,
+    19,
+    24
+  ],
+  "query_words": [
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "registration_per_user": 24,
+  "primary": "3 words, expanded_all8 query, quantile threshold; compare matched CE and AudioKD",
+  "secondary": "1/5 words and additional_last4 recordings; no query-based choice of length",
+  "encoder": "762->256->192 same initial pure-ACC700-step checkpoint",
+  "initial_sha256": "267361c54a15867b0c1df1bdf5c55a3fa192ad72357657046c3ed119716a4ac4",
+  "teacher": "official hash-verified VoxCeleb ECAPA, fresh initialization; frozen backbone; fit-only projection+192->64->192 residual adaptation300steps seed4242",
+  "teacher_coverage": "all2080 fit Audio only; no registration/calibration/query Audio forwarded or used for adaptation",
+  "teacher_optimizer": "projection1e-5/residual1e-4/classifier1e-3 AdamW, CE+.1SupCon+.01anchor, batch40",
+  "methods": [
+    "CE",
+    "AudioKD",
+    "ShuffledAudioKD"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "student_steps": 400,
+  "student_batch": "same as previous CE control:10 users x(3 support words x2 +2 query words x2)=100",
+  "student_loss": "CE; Audio arms add same-user-cross-word/different-user-same-word relation MSE; detached weight min(10,.1*CE encoder grad norm/KD encoder grad norm)",
+  "negative_control": "fixed permutation across fit Audio records, independent RNG; preserves target marginal distribution, breaks input identity pairing",
+  "student_optimizer": "same AdamW lr1e-4 weight_decay.01,clip1; all trainable student parameters matched",
+  "selection": "fixed teacher300/student400; no model or weight search, fixed prior quantile rule q10/q95 midpoint",
+  "authentication": "ACC only, RBF C10 balanced, mean per-record scores across1/3/5distinct words; all thresholds locked before query metrics",
+  "grouping": "fixed seed1123, no source-ID reuse within evaluation set; 40available ->40/39/40used for1/3/5words",
+  "scope": "historically explored vocabulary/cohort; not new blind collection or open-set evidence",
+  "exclusions": "no old locally adapted teacher caches, no CycleGAN, no quality filtering or user removal"
+}
