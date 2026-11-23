@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "teacher_fit_records": 2080,
+  "teacher_nonfit_audio_forwarded": 0,
+  "official_teacher_sha256": "0575cb64845e6b9a10db9bcb74d5ac32b326b8dc90352671d345e2ee3d0126a2",
+  "ce_checkpoint_replay": [
+    {
+      "seed": 42,
+      "parameter_max_error": 8.866190910339355e-07
+    },
+    {
+      "seed": 43,
+      "parameter_max_error": 9.08970832824707e-07
+    },
+    {
+      "seed": 44,
+      "parameter_max_error": 2.182088792324066e-06
+    }
+  ],
+  "ce_threeword_metric_max_error": 0.0,
+  "query_workpoints": 540,
+  "threshold_count": 270,
+  "all_query_thresholds_locked": true,
+  "source_id_reuse": false,
+  "all_users_retained": true,
+  "local_rate_count_checks": true,
+  "synthetic_kd_gradient_checks": "PASS",
+  "runtime_execution": {
+    "status": "PASS",
+    "source_dataset_stats_initialization_hashes_match_remote": true,
+    "reference_checkpoints": 3,
+    "teacher_probe_rows": 1,
+    "teacher_embedding_probe_max_abs": 4.991888999938965e-07,
+    "teacher_pool_probe_max_abs": 1.4781951904296875e-05,
+    "teacher_initial_projection_replay_rows": 8,
+    "teacher_initial_projection_max_error": 0.0
+  },
+  "teacher_target_alignment_and_unit_norm": true,
+  "logged_aux_gradient_ratio_min": 0.09999999999999999,
+  "logged_aux_gradient_ratio_max": 0.10000000000000002
+}
