@@ -1,0 +1,1 @@
+{"status":"PASS","query_workpoints":540,"thresholds":180,"fresh_encoder_fit_only":true,"teacher_cache_fit_records":1280,"teacher_initial_projection_max_error":0.0,"teacher_nonfit_audio_forwarded":0,"query_prompts_in_train":0,"scaler_fit_records":1280,"source_id_reuse":false,"all_thresholds_locked_before_query":true,"all_users_retained":true}
