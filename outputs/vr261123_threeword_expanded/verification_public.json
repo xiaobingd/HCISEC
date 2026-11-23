@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "sample_id_count": 3200,
+  "unique_sample_ids": 3200,
+  "exact_feature_duplicate_rows": 0,
+  "old_baseline_max_error": 0.0,
+  "query_workpoints": 780,
+  "thresholds": 300,
+  "primary_group_source_reuse": false,
+  "word_split_disjoint": true,
+  "all_thresholds_locked_before_query": true,
+  "local_count_rate_checks": true,
+  "local_old_baseline_replay_max_error": 0.0
+}
