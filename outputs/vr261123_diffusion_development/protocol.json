@@ -32,5 +32,5 @@
   "threshold": "all development words only, saved before query evaluation",
   "control": "ACC to ACC same initialization, batches, noise and per-direction update budget",
   "query_status": "previously observed in historical exploration; reused evaluation",
-  "results": "detailed anonymized metrics retained locally pending publication approval"
+  "results": "User-approved anonymous aggregate report and metrics published as report.md and results_public.json on 2026-11-23"
 }
