@@ -1,0 +1,20 @@
+{
+  "seed": 4242,
+  "steps": 300,
+  "selection": "fixed last checkpoint",
+  "training_trace": [
+    {
+      "step": 100,
+      "loss": 0.5817584991455078
+    },
+    {
+      "step": 200,
+      "loss": 0.41240304708480835
+    },
+    {
+      "step": 300,
+      "loss": 0.4005446434020996
+    }
+  ]
+}
+
