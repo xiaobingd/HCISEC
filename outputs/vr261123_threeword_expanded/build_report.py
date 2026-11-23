@@ -35,6 +35,7 @@ for reg,cal,group,rule,query in configs:
     for us in range(1,11):peruser.append(dict(user=us,**cfg,**avg(get(reg,cal,query,rule,us,group=group))))
 assert len(macro)==26 and len(peruser)==260
 oldpath=p.parent/'threeword_calibration/results_public.json'
+if not oldpath.exists():oldpath=p.parent/'vr261123_threeword_calibration/results_public.json'
 old=json.loads(oldpath.read_text())
 errs=[]
 for r in rows:
