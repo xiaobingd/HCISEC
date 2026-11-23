@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-23",
+  "target": "anonymous U1",
+  "seed": 42,
+  "steps": 400,
+  "batch": 4,
+  "resolution": [
+    40,
+    32
+  ],
+  "registration_words": 4,
+  "registration_per_word": 6,
+  "development_words": 4,
+  "development_per_word": 8,
+  "sameword_queries_per_target": 8,
+  "crossword_queries_per_target": 24,
+  "attack_identities": 9,
+  "noise_steps": [
+    100,
+    500,
+    900
+  ],
+  "response_dimensions_per_step": 84,
+  "fusion_weight_candidates": [
+    0,
+    0.25,
+    0.5,
+    1,
+    2
+  ],
+  "selection": "leave-one-development-word-out mean max(FAR,FRR), HTER secondary",
+  "threshold": "all development words only, saved before query evaluation",
+  "control": "ACC to ACC same initialization, batches, noise and per-direction update budget",
+  "query_status": "previously observed in historical exploration; reused evaluation",
+  "results": "detailed anonymized metrics retained locally pending publication approval"
+}
