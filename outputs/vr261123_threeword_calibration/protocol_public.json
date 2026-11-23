@@ -1,0 +1,42 @@
+{
+  "dataset": "10 users, raw hardware ACC, closed known identities; all nine attacker identities retained",
+  "model": "frozen CE 42/43/44; same 762->256->192 encoder and RBF C10 balanced",
+  "registration_words": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "registration_per_user": 24,
+  "development_words": [
+    8,
+    9,
+    18,
+    19,
+    24
+  ],
+  "query_words": [
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "challenge": "3 distinct query words, mean of normalized per-record RBF scores; previous exact 7 trials/identity retained",
+  "development_crossvalidation": "10 exhaustive two-calibration-word versus three-validation-word splits; word sets disjoint",
+  "cv_calibration": "8 triplets/identity, three independent recordings from two words; records reused across triplets",
+  "cv_validation": "4 triplets/identity, three distinct held-out words; folds dependent, not independent participants",
+  "cohort": "Z: nine non-target identity prototypes from 26 fit words only; T: nine non-target registration RBF models; no probe identity label",
+  "normalization": "raw, Z, T, S=(Z+T)/2, adaptive S with independent top3 Z/T cohorts; RBF-score adaptation, not cosine backend",
+  "std_floor": "max(1e-3, 0.1 * standard deviation of fit-only RBF score matrix)",
+  "threshold_rules": {
+    "strict5": "development FAR<=5%, min FRR, then min FAR, highest threshold (legacy)",
+    "midpoint5": "same decisions/objective on development, threshold at adjacent-score gap midpoint",
+    "quantile_gap": "(genuine q10 + impostor q95)/2, fixed quantiles; no claim of empirical FAR bound"
+  },
+  "selection": "single global recipe: CV FAR<=5%, minimum macro FRR, then HTER/FAR/declared order; fallback min max(FAR,FRR) if none feasible",
+  "safety": "FAR constraint only on development CV; no guaranteed final FAR",
+  "scope": "historically observed query vocabulary, exploratory calibration follow-up, not new blind validation",
+  "exclusions": "no Audio, new training, quality gate, retries, target/attacker filtering or query tuning",
+  "source": "S/AS normalization definition: https://www.fit.vut.cz/research/group/speech/public/publi/2017/matejka_interspeech2017_IS170803.pdf"
+}
