@@ -1,0 +1,18 @@
+{
+  "platform": "local Windows CPU; remote CPU extraction stopped after160 records and not used in final cache",
+  "extraction_threads": [
+    2,
+    8
+  ],
+  "training_threads": 2,
+  "versions": {
+    "torch": "2.5.0",
+    "torchaudio": "2.5.0",
+    "speechbrain": "0.5.16",
+    "numpy": "1.23.4",
+    "scikit-learn": "1.4.2"
+  },
+  "trainer_source_sha256": "a3260364b742aba5c74ea4413e3043858a7e95b637bd37fe37539a9f0b257497",
+  "local_wrapper_sha256": "d4a42b0121a84ac2a860360d014601e08851db96c3c1990462601e58fd20a18e",
+  "ce_parameter_crossplatform_tolerance": 0.0001
+}
