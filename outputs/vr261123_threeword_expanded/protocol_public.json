@@ -1,0 +1,84 @@
+{
+  "dataset": "same 10 users x40 words x8 independent nominal recordings; 3200 total IDs",
+  "scope": "increase authentication source recordings only, not subjects, word coverage, sessions or encoder training",
+  "model": "frozen CE encoders42/43/44, fixed train scaler, same RBF C10 balanced",
+  "registration_words": [
+    20,
+    21,
+    22,
+    23
+  ],
+  "registration_conditions": [
+    24,
+    32
+  ],
+  "calibration_words": [
+    8,
+    9,
+    18,
+    19,
+    24
+  ],
+  "calibration_conditions": [
+    20,
+    40
+  ],
+  "query_words": [
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "calibration_grouping": {
+    "4": {
+      "source_available_per_user": 20,
+      "source_used_per_user": 18,
+      "trials_per_user": 6,
+      "source_reuse": false,
+      "unused_per_user": 2
+    },
+    "8": {
+      "source_available_per_user": 40,
+      "source_used_per_user": 39,
+      "trials_per_user": 13,
+      "source_reuse": false,
+      "unused_per_user": 1
+    }
+  },
+  "query_grouping": {
+    "legacy_first4": {
+      "source_available_per_user": 20,
+      "source_used_per_user": 20,
+      "trials_per_user": 7,
+      "source_reuse": true,
+      "unused_per_user": 0
+    },
+    "additional_last4": {
+      "source_available_per_user": 20,
+      "source_used_per_user": 18,
+      "trials_per_user": 6,
+      "source_reuse": false,
+      "unused_per_user": 2
+    },
+    "expanded_all8": {
+      "source_available_per_user": 40,
+      "source_used_per_user": 39,
+      "trials_per_user": 13,
+      "source_reuse": false,
+      "unused_per_user": 1
+    }
+  },
+  "rules": [
+    "strict5",
+    "quantile_gap"
+  ],
+  "quantile_rule": "(genuine q10 + impostor q95)/2; fixed from previous development selection",
+  "grouping": "same seed1123 word order, no repeated source record in primary groups; unused last1/2 fixed by index, no quality selection",
+  "baseline": "exact previous 7-group calibration/query replay at registration24; legacy group has one source reuse",
+  "main_comparison": "2x2 registration/calibration factorial on identical expanded_all8 queries",
+  "uncertainty": "all seeds reuse same physical data; no independence-based CI; additional repeats may have appeared in old quality-retry diagnostics, not blind new collection",
+  "isolation": "all fit/reg/cal/query words disjoint; all thresholds serialized before query metrics; no user filtering, Audio, retry, quality gating or query tuning",
+  "exact_spectrum_amplitude_duplicate_rows": 0,
+  "source_audit": "unique sample IDs, complete user/word/repetition grid and exact spectrum+amplitude hashes; not a fresh raw-waveform dedup audit"
+}
