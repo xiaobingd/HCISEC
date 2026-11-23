@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_dataset_stats_initialization_hashes_match_remote": true,
+  "reference_checkpoints": 3,
+  "teacher_probe_rows": 1,
+  "teacher_embedding_probe_max_abs": 4.991888999938965e-07,
+  "teacher_pool_probe_max_abs": 1.4781951904296875e-05,
+  "teacher_initial_projection_replay_rows": 8,
+  "teacher_initial_projection_max_error": 0.0
+}
