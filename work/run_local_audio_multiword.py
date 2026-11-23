@@ -39,4 +39,3 @@ source=source.replace("ROOT/'full_run_10x40_raw_acc/threeword_expanded/results_p
 source=source.replace("assert err<1e-6,('CE_REPLAY_MISMATCH',seed,err)","assert err<1e-4,('CE_REPLAY_MISMATCH',seed,err)")
 scope={'__name__':'__main__','local_model':local_model}
 exec(compile(source,'local_audio_multiword_fitonly.py','exec'),scope)
-
