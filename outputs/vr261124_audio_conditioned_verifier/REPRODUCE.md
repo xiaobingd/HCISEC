@@ -1,0 +1,1 @@
+复现需本地私有缓存，不能只靠公开仓库运行。将 source/runtime_helpers 下两个模块放在 --root 所指数据根目录，再执行 source/experiments/audio_conditioned_verifier_20261124/run_conditioned_verifier.py --root <数据根目录>。所需目录、NPZ 字段见脚本。Audio 提取需官方 VoxCeleb ECAPA 权重与 SpeechBrain 0.5.16，PyTorch/torchaudio 2.5；脚本不会下载或上传私有数据。先运行 test_conditioned_verifier.py，再运行训练、verify_results.py、make_report.py。当前所有统计均来自实际运行。

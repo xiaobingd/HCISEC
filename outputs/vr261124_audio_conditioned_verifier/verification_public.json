@@ -1,0 +1,1 @@
+{"status":"PASS","models":120,"target_folds":30,"workpoints":720,"primary_workpoints":450,"thresholds":240,"held_target_optimization_records":0,"hard_negative_indices_shared_across_arms":true,"query_audio_used":false,"all_thresholds_locked_before_query_scores":true,"global_encoders_frozen":true,"not_full_user_disjoint_encoder":true,"parameters_per_gate":24866}
