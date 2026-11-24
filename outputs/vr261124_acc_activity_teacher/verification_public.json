@@ -1,0 +1,1 @@
+{"status":"PASS","models":60,"folds":30,"identity_thresholds":150,"probability_selections":90,"workpoints":300,"inference_only_ACC_for_predicted":true,"all_thresholds_before_query_scores":true,"global_identity_encoder_changed":false,"parameters":2081}

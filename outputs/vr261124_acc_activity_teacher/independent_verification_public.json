@@ -1,0 +1,1 @@
+{"status":"PASS","models":60,"identity_folds":30,"probability_selections":90,"identity_thresholds":150,"identity_workpoints":300,"target_and_dev_excluded_from_training":true,"ACC_only_inference_replayed":true,"legacy_baseline_max_error":0.0,"replay_max_error":0.0}
