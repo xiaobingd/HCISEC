@@ -1,0 +1,35 @@
+{
+  "recording_groups": 400,
+  "segments": 3200,
+  "wav_rate_counts": {
+    "48000": 400
+  },
+  "requested_mapping_rate": 44100,
+  "note": "44100 is a sensitivity recomputation,not proof of hardware clock;metadata segment seconds left as recorded;affine residual invariant under rate rescaling",
+  "by_rate": {
+    "44100": {
+      "slope_median": 1.0000837214542702,
+      "effective_frame_rate_median": 44096.30819295017,
+      "residual_p95_median_ms": 5.61484327606172,
+      "residual_p95_max_ms": 175.2114859521854
+    },
+    "48000": {
+      "slope_median": 1.0885264995420623,
+      "effective_frame_rate_median": 44096.30819295018,
+      "residual_p95_median_ms": 5.614843276062608,
+      "residual_p95_max_ms": 175.21148595219364
+    }
+  },
+  "candidate_segment_center_shift_ms": {
+    "median": -566.1520789144561,
+    "min": -1927.160400620778,
+    "max": -18.686758747207932
+  },
+  "outside_candidate_range": 1,
+  "consistent_mapping_max_difference_ms": 0.0,
+  "timestamp_frames_match_wav_groups": 400,
+  "reported_rate_counts": {
+    "48000.0": 400
+  },
+  "historical_caches_modified": false
+}
