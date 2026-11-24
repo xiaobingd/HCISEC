@@ -100,7 +100,7 @@ def main():
         threshold='fixed (cal genuineQ10+impostorQ95)/2;all locks saved before query metrics',
         challenge='1record or3distinct querywords averaged score;all8repetitions;40or39sourcesperuser,40or13trials',
         limitations='new protocol uses4registrationwords and5calibrationwords,not prior single-registrationword folds;historically viewed cohort;3sACCwindows may overlap withinword/include adjacent utterances;VADcenters remain;physicalsyncunverified')
-    protocol.update(scope='phase2 enrollment identity-consistency exploration;allrules fixed before this phase metrics',audio='frozen official ECAPA192,registeredAudio320only,length-aware44100->16k',acoustic_quality='Audio embedding cosine against same-person other3registration-word mean;rank within current word',acc_quality='within-word medoid control andleave-word-out ACCcosine control',fusion='fixed ACC top2; third sample chosen between ACC ranks3/4 using Audio cross-word consistency',negative_control='fixed coin flip and five no-fixed-point Audio within-user-word shuffles',comparison='Audio boundary must beat ACC top3, coin boundary and shuffled Audio on fixed EER/HTER; do not tune using query')
+    protocol.update(scope='conditional Audio boundary slot on frozen ACC enrollment; no calibration or query Audio',audio='frozen official ECAPA192,registeredAudio320only,length-aware44100->16k',acoustic_quality='Audio embedding cosine against same-person other3registration-word mean;rank within current word',acc_quality='within-word medoid control andleave-word-out ACCcosine control',fusion='fixed ACC top2; third sample chosen between ACC ranks3/4 using Audio cross-word consistency',negative_control='fixed coin flip and five no-fixed-point Audio within-user-word shuffles',comparison='Audio boundary must beat ACC top3, coin boundary and shuffled Audio on fixed EER/HTER; do not tune using query')
     protocol.update(negative_background='fixed all32registered ACC records from each ofother9users;288negatives for every target andmethod;selection affects own positive template only',scope_revision='fixednegative comparison isolates own enrollment-quality;original variable-negative acoustic pilot retained separately')
     (OUT/'protocol_public.json').write_text(json.dumps(protocol,indent=2))
     lookup={(int(us),int(wo),int(re)):i for i,(us,wo,re) in enumerate(zip(u,w,r))}
@@ -215,7 +215,7 @@ def main():
     (OUT/'per_seed_user_public.json').write_text(json.dumps(rows,indent=2))
     (OUT/'verification_public.json').write_text(json.dumps(dict(status='PASS',workpoints=2880,thresholds=960,registration_audio_reads=320,
         calibration_or_query_audio_read=0,models_updated=False,all_users_retained=True,registration_budget_matched_primary=True,
-        roles_word_disjoint=True,all_locks_serialized_before_query_metrics=True,reference32_not_budget_matched=True),indent=2))
+        roles_word_disjoint=True,all_locks_serialized_before_query_metrics=True,reference32_not_budget_matched=False),indent=2))
     print('ENROLLMENT_BOUNDARY_COMPLETE',flush=True)
 
 if __name__=='__main__':main()
