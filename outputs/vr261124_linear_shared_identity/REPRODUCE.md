@@ -1,0 +1,1 @@
+依赖Python3.10/NumPy/SciPy/threadpoolctl。需要私有根目录中的元数据、三个纯ACC冻结特征缓存及1280条fit-only ECAPA特征缓存。先执行source/test_linear_shared_identity.py，再执行source/audit_linear_shared_identity.py --root <私有根目录>，随后同参数运行verify_linear_shared_identity.py与report_linear_shared_identity.py。所有超参数仅由内层身份开发决定，维度1/2/4与ridge.1/1/10均预先固定。当前公开输出不含私有线性矩阵或逐样本分数；需私有缓存才能实际复现。并列相似度采用均分，只有10位用户，不把45身份对视作45独立受试者。
