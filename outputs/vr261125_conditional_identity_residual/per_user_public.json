@@ -1,0 +1,62 @@
+[
+  {
+    "user": 1,
+    "baseline_mse": 0.06448577115717966,
+    "audio_mse": 0.06477819521274755,
+    "incident_pairs": 9
+  },
+  {
+    "user": 2,
+    "baseline_mse": 0.12217268663251524,
+    "audio_mse": 0.11862528634373451,
+    "incident_pairs": 9
+  },
+  {
+    "user": 3,
+    "baseline_mse": 0.11259149025804664,
+    "audio_mse": 0.11142196785364818,
+    "incident_pairs": 9
+  },
+  {
+    "user": 4,
+    "baseline_mse": 0.11271991904033674,
+    "audio_mse": 0.11268762965868473,
+    "incident_pairs": 9
+  },
+  {
+    "user": 5,
+    "baseline_mse": 0.1018024960224273,
+    "audio_mse": 0.10389807827947135,
+    "incident_pairs": 9
+  },
+  {
+    "user": 6,
+    "baseline_mse": 0.1587618707397859,
+    "audio_mse": 0.15941211777906922,
+    "incident_pairs": 9
+  },
+  {
+    "user": 7,
+    "baseline_mse": 0.14070328292982562,
+    "audio_mse": 0.14006025267708277,
+    "incident_pairs": 9
+  },
+  {
+    "user": 8,
+    "baseline_mse": 0.05670358308756597,
+    "audio_mse": 0.05844657789636977,
+    "incident_pairs": 9
+  },
+  {
+    "user": 9,
+    "baseline_mse": 0.14239078544320893,
+    "audio_mse": 0.1468827116950958,
+    "incident_pairs": 9
+  },
+  {
+    "user": 10,
+    "baseline_mse": 0.07794190496979797,
+    "audio_mse": 0.07734541789351611,
+    "incident_pairs": 9
+  }
+]

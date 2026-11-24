@@ -1,0 +1,452 @@
+[
+  {
+    "user_pair": [
+      1,
+      2
+    ],
+    "baseline_mse": 0.052370697411860914,
+    "audio_mse": 0.04720712391785321,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      1,
+      3
+    ],
+    "baseline_mse": 0.026701066031743742,
+    "audio_mse": 0.025457320563737743,
+    "validation_tasks": 4,
+    "hard_tasks": 3
+  },
+  {
+    "user_pair": [
+      1,
+      4
+    ],
+    "baseline_mse": 0.013508501601115275,
+    "audio_mse": 0.013111391059829053,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      1,
+      5
+    ],
+    "baseline_mse": 0.03966257570890428,
+    "audio_mse": 0.03727068483245901,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      1,
+      6
+    ],
+    "baseline_mse": 0.19488614277845046,
+    "audio_mse": 0.19860156067355517,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      1,
+      7
+    ],
+    "baseline_mse": 0.06609103753580384,
+    "audio_mse": 0.06915350048768287,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      1,
+      8
+    ],
+    "baseline_mse": 0.010231595022971975,
+    "audio_mse": 0.014752447262949449,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      1,
+      9
+    ],
+    "baseline_mse": 0.14221637848562452,
+    "audio_mse": 0.1413716781858451,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      1,
+      10
+    ],
+    "baseline_mse": 0.034703945838141875,
+    "audio_mse": 0.036078049930816446,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      2,
+      3
+    ],
+    "baseline_mse": 0.04309899450419245,
+    "audio_mse": 0.04016719821401951,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      2,
+      4
+    ],
+    "baseline_mse": 0.047143691811463155,
+    "audio_mse": 0.04578412927968791,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      2,
+      5
+    ],
+    "baseline_mse": 0.1564979387530126,
+    "audio_mse": 0.15366808937044182,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      2,
+      6
+    ],
+    "baseline_mse": 0.13582522000856953,
+    "audio_mse": 0.1375342816164745,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      2,
+      7
+    ],
+    "baseline_mse": 0.30698937042118546,
+    "audio_mse": 0.306456054863916,
+    "validation_tasks": 4,
+    "hard_tasks": 3
+  },
+  {
+    "user_pair": [
+      2,
+      8
+    ],
+    "baseline_mse": 0.03312365360192014,
+    "audio_mse": 0.031058124687419402,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      2,
+      9
+    ],
+    "baseline_mse": 0.21695425150353798,
+    "audio_mse": 0.20119970862331552,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      2,
+      10
+    ],
+    "baseline_mse": 0.10755036167689502,
+    "audio_mse": 0.10455286652048264,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      3,
+      4
+    ],
+    "baseline_mse": 0.20819680004556546,
+    "audio_mse": 0.20972494039635164,
+    "validation_tasks": 4,
+    "hard_tasks": 2
+  },
+  {
+    "user_pair": [
+      3,
+      5
+    ],
+    "baseline_mse": 0.20831866844771985,
+    "audio_mse": 0.2044618404266207,
+    "validation_tasks": 4,
+    "hard_tasks": 3
+  },
+  {
+    "user_pair": [
+      3,
+      6
+    ],
+    "baseline_mse": 0.11817061600493961,
+    "audio_mse": 0.11625385046121878,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      3,
+      7
+    ],
+    "baseline_mse": 0.06581127829119947,
+    "audio_mse": 0.06701360961787321,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      3,
+      8
+    ],
+    "baseline_mse": 0.027659681964053724,
+    "audio_mse": 0.03080630876677004,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      3,
+      9
+    ],
+    "baseline_mse": 0.2803363527713359,
+    "audio_mse": 0.2736566051165636,
+    "validation_tasks": 4,
+    "hard_tasks": 3
+  },
+  {
+    "user_pair": [
+      3,
+      10
+    ],
+    "baseline_mse": 0.03502995426166956,
+    "audio_mse": 0.0352560371196784,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      4,
+      5
+    ],
+    "baseline_mse": 0.046588598362780356,
+    "audio_mse": 0.04685568815615511,
+    "validation_tasks": 4,
+    "hard_tasks": 2
+  },
+  {
+    "user_pair": [
+      4,
+      6
+    ],
+    "baseline_mse": 0.22032511295055865,
+    "audio_mse": 0.21645074712328943,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      4,
+      7
+    ],
+    "baseline_mse": 0.24555100135420763,
+    "audio_mse": 0.2374664933519164,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      4,
+      8
+    ],
+    "baseline_mse": 0.06211418299773788,
+    "audio_mse": 0.06837359672779049,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      4,
+      9
+    ],
+    "baseline_mse": 0.10784005699641487,
+    "audio_mse": 0.1129837207673613,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      4,
+      10
+    ],
+    "baseline_mse": 0.06321132524318736,
+    "audio_mse": 0.06343796006578128,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      5,
+      6
+    ],
+    "baseline_mse": 0.14044502308070386,
+    "audio_mse": 0.14071281609907427,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      5,
+      7
+    ],
+    "baseline_mse": 0.06711792139402152,
+    "audio_mse": 0.07293058887857704,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      5,
+      8
+    ],
+    "baseline_mse": 0.053457554525784046,
+    "audio_mse": 0.05570961031780375,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      5,
+      9
+    ],
+    "baseline_mse": 0.15769117386332188,
+    "audio_mse": 0.1771831266778388,
+    "validation_tasks": 4,
+    "hard_tasks": 3
+  },
+  {
+    "user_pair": [
+      5,
+      10
+    ],
+    "baseline_mse": 0.04644301006559723,
+    "audio_mse": 0.04629025975627178,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      6,
+      7
+    ],
+    "baseline_mse": 0.20219336058063458,
+    "audio_mse": 0.19481026871663104,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      6,
+      8
+    ],
+    "baseline_mse": 0.11240359414639098,
+    "audio_mse": 0.11271243588260305,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      6,
+      9
+    ],
+    "baseline_mse": 0.09866274288041463,
+    "audio_mse": 0.12287394816420301,
+    "validation_tasks": 4,
+    "hard_tasks": 1
+  },
+  {
+    "user_pair": [
+      6,
+      10
+    ],
+    "baseline_mse": 0.20594502422741107,
+    "audio_mse": 0.19475915127457366,
+    "validation_tasks": 4,
+    "hard_tasks": 2
+  },
+  {
+    "user_pair": [
+      7,
+      8
+    ],
+    "baseline_mse": 0.037339754945695094,
+    "audio_mse": 0.0351474948529292,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      7,
+      9
+    ],
+    "baseline_mse": 0.11931429873811952,
+    "audio_mse": 0.12434248628697621,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      7,
+      10
+    ],
+    "baseline_mse": 0.1559215231075634,
+    "audio_mse": 0.15322177703724338,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      8,
+      9
+    ],
+    "baseline_mse": 0.1399160220129673,
+    "audio_mse": 0.14163982733301192,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      8,
+      10
+    ],
+    "baseline_mse": 0.034086208570572554,
+    "audio_mse": 0.035819355236050565,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  },
+  {
+    "user_pair": [
+      9,
+      10
+    ],
+    "baseline_mse": 0.018585791737143666,
+    "audio_mse": 0.026693304100746926,
+    "validation_tasks": 4,
+    "hard_tasks": 0
+  }
+]

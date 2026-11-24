@@ -1,0 +1,23 @@
+{
+  "correct": {
+    "mse_reduction": -0.00032844450087300724,
+    "hard_mse_reduction": 0.00015721008214625464,
+    "baseline_mse": 0.10902737902806899,
+    "audio_mse": 0.10935582352894202,
+    "baseline_spearman": 0.45202629710793535,
+    "audio_spearman": 0.45063942302745963
+  },
+  "identity_permutation_p": 0.405,
+  "null_mean": -0.000619948395333245,
+  "null95": [
+    -0.004072976524659413,
+    0.004510232614219599
+  ],
+  "cache_alignment": "PASS",
+  "pairs": 45,
+  "validation_pair_tasks": 180,
+  "independent_users": 10,
+  "final_Audio_read": false,
+  "limitation": "Pair tasks share identities, not 180 independent subjects; permutation acts on ten user labels consistently across all words. Audio and ACC have different temporal window origins from newest continuous experiment.",
+  "hard_identity_permutation_p": 0.475
+}
