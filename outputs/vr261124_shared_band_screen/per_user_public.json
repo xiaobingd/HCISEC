@@ -1,0 +1,1302 @@
+[
+  {
+    "user": 1,
+    "hz": 50,
+    "paired_mse_advantage": 0.02971586585044861
+  },
+  {
+    "user": 2,
+    "hz": 50,
+    "paired_mse_advantage": 0.11908163875341415
+  },
+  {
+    "user": 3,
+    "hz": 50,
+    "paired_mse_advantage": 0.13560335338115692
+  },
+  {
+    "user": 4,
+    "hz": 50,
+    "paired_mse_advantage": 0.19864869117736816
+  },
+  {
+    "user": 5,
+    "hz": 50,
+    "paired_mse_advantage": 0.10355570167303085
+  },
+  {
+    "user": 6,
+    "hz": 50,
+    "paired_mse_advantage": 0.07572701573371887
+  },
+  {
+    "user": 7,
+    "hz": 50,
+    "paired_mse_advantage": 0.11827751249074936
+  },
+  {
+    "user": 8,
+    "hz": 50,
+    "paired_mse_advantage": 0.09633622318506241
+  },
+  {
+    "user": 9,
+    "hz": 50,
+    "paired_mse_advantage": 0.11548718065023422
+  },
+  {
+    "user": 10,
+    "hz": 50,
+    "paired_mse_advantage": 0.28097519278526306
+  },
+  {
+    "user": 1,
+    "hz": 60,
+    "paired_mse_advantage": 0.03170115873217583
+  },
+  {
+    "user": 2,
+    "hz": 60,
+    "paired_mse_advantage": 0.10406754165887833
+  },
+  {
+    "user": 3,
+    "hz": 60,
+    "paired_mse_advantage": 0.11743929982185364
+  },
+  {
+    "user": 4,
+    "hz": 60,
+    "paired_mse_advantage": 0.1811133772134781
+  },
+  {
+    "user": 5,
+    "hz": 60,
+    "paired_mse_advantage": 0.09714195877313614
+  },
+  {
+    "user": 6,
+    "hz": 60,
+    "paired_mse_advantage": 0.07177955657243729
+  },
+  {
+    "user": 7,
+    "hz": 60,
+    "paired_mse_advantage": 0.11068078875541687
+  },
+  {
+    "user": 8,
+    "hz": 60,
+    "paired_mse_advantage": 0.08752640336751938
+  },
+  {
+    "user": 9,
+    "hz": 60,
+    "paired_mse_advantage": 0.10068152099847794
+  },
+  {
+    "user": 10,
+    "hz": 60,
+    "paired_mse_advantage": 0.2442913055419922
+  },
+  {
+    "user": 1,
+    "hz": 70,
+    "paired_mse_advantage": 0.015560555271804333
+  },
+  {
+    "user": 2,
+    "hz": 70,
+    "paired_mse_advantage": 0.12931157648563385
+  },
+  {
+    "user": 3,
+    "hz": 70,
+    "paired_mse_advantage": 0.10339922457933426
+  },
+  {
+    "user": 4,
+    "hz": 70,
+    "paired_mse_advantage": 0.16812336444854736
+  },
+  {
+    "user": 5,
+    "hz": 70,
+    "paired_mse_advantage": 0.1101687029004097
+  },
+  {
+    "user": 6,
+    "hz": 70,
+    "paired_mse_advantage": 0.0723460465669632
+  },
+  {
+    "user": 7,
+    "hz": 70,
+    "paired_mse_advantage": 0.10371199995279312
+  },
+  {
+    "user": 8,
+    "hz": 70,
+    "paired_mse_advantage": 0.07470205426216125
+  },
+  {
+    "user": 9,
+    "hz": 70,
+    "paired_mse_advantage": 0.10823223739862442
+  },
+  {
+    "user": 10,
+    "hz": 70,
+    "paired_mse_advantage": 0.22436366975307465
+  },
+  {
+    "user": 1,
+    "hz": 80,
+    "paired_mse_advantage": 0.03715575113892555
+  },
+  {
+    "user": 2,
+    "hz": 80,
+    "paired_mse_advantage": 0.10544779151678085
+  },
+  {
+    "user": 3,
+    "hz": 80,
+    "paired_mse_advantage": 0.09500663727521896
+  },
+  {
+    "user": 4,
+    "hz": 80,
+    "paired_mse_advantage": 0.19736777245998383
+  },
+  {
+    "user": 5,
+    "hz": 80,
+    "paired_mse_advantage": 0.15693412721157074
+  },
+  {
+    "user": 6,
+    "hz": 80,
+    "paired_mse_advantage": 0.0707869827747345
+  },
+  {
+    "user": 7,
+    "hz": 80,
+    "paired_mse_advantage": 0.09757676720619202
+  },
+  {
+    "user": 8,
+    "hz": 80,
+    "paired_mse_advantage": 0.0704662948846817
+  },
+  {
+    "user": 9,
+    "hz": 80,
+    "paired_mse_advantage": 0.13828027248382568
+  },
+  {
+    "user": 10,
+    "hz": 80,
+    "paired_mse_advantage": 0.21988411247730255
+  },
+  {
+    "user": 1,
+    "hz": 90,
+    "paired_mse_advantage": 0.043722521513700485
+  },
+  {
+    "user": 2,
+    "hz": 90,
+    "paired_mse_advantage": 0.11398818343877792
+  },
+  {
+    "user": 3,
+    "hz": 90,
+    "paired_mse_advantage": 0.07487407326698303
+  },
+  {
+    "user": 4,
+    "hz": 90,
+    "paired_mse_advantage": 0.20835904777050018
+  },
+  {
+    "user": 5,
+    "hz": 90,
+    "paired_mse_advantage": 0.16451264917850494
+  },
+  {
+    "user": 6,
+    "hz": 90,
+    "paired_mse_advantage": 0.0695689395070076
+  },
+  {
+    "user": 7,
+    "hz": 90,
+    "paired_mse_advantage": 0.07904404401779175
+  },
+  {
+    "user": 8,
+    "hz": 90,
+    "paired_mse_advantage": 0.09184921532869339
+  },
+  {
+    "user": 9,
+    "hz": 90,
+    "paired_mse_advantage": 0.13342222571372986
+  },
+  {
+    "user": 10,
+    "hz": 90,
+    "paired_mse_advantage": 0.18329185247421265
+  },
+  {
+    "user": 1,
+    "hz": 100,
+    "paired_mse_advantage": 0.046196192502975464
+  },
+  {
+    "user": 2,
+    "hz": 100,
+    "paired_mse_advantage": 0.13139496743679047
+  },
+  {
+    "user": 3,
+    "hz": 100,
+    "paired_mse_advantage": 0.09217134863138199
+  },
+  {
+    "user": 4,
+    "hz": 100,
+    "paired_mse_advantage": 0.23423807322978973
+  },
+  {
+    "user": 5,
+    "hz": 100,
+    "paired_mse_advantage": 0.21651871502399445
+  },
+  {
+    "user": 6,
+    "hz": 100,
+    "paired_mse_advantage": 0.07844075560569763
+  },
+  {
+    "user": 7,
+    "hz": 100,
+    "paired_mse_advantage": 0.06915830820798874
+  },
+  {
+    "user": 8,
+    "hz": 100,
+    "paired_mse_advantage": 0.09830521792173386
+  },
+  {
+    "user": 9,
+    "hz": 100,
+    "paired_mse_advantage": 0.16481584310531616
+  },
+  {
+    "user": 10,
+    "hz": 100,
+    "paired_mse_advantage": 0.19584684073925018
+  },
+  {
+    "user": 1,
+    "hz": 110,
+    "paired_mse_advantage": 0.01486598327755928
+  },
+  {
+    "user": 2,
+    "hz": 110,
+    "paired_mse_advantage": 0.17250452935695648
+  },
+  {
+    "user": 3,
+    "hz": 110,
+    "paired_mse_advantage": 0.10947313159704208
+  },
+  {
+    "user": 4,
+    "hz": 110,
+    "paired_mse_advantage": 0.2658791244029999
+  },
+  {
+    "user": 5,
+    "hz": 110,
+    "paired_mse_advantage": 0.19653327763080597
+  },
+  {
+    "user": 6,
+    "hz": 110,
+    "paired_mse_advantage": 0.06265902519226074
+  },
+  {
+    "user": 7,
+    "hz": 110,
+    "paired_mse_advantage": 0.060317158699035645
+  },
+  {
+    "user": 8,
+    "hz": 110,
+    "paired_mse_advantage": 0.09042259305715561
+  },
+  {
+    "user": 9,
+    "hz": 110,
+    "paired_mse_advantage": 0.1607838273048401
+  },
+  {
+    "user": 10,
+    "hz": 110,
+    "paired_mse_advantage": 0.16312581300735474
+  },
+  {
+    "user": 1,
+    "hz": 120,
+    "paired_mse_advantage": 0.022689655423164368
+  },
+  {
+    "user": 2,
+    "hz": 120,
+    "paired_mse_advantage": 0.18474645912647247
+  },
+  {
+    "user": 3,
+    "hz": 120,
+    "paired_mse_advantage": 0.12801197171211243
+  },
+  {
+    "user": 4,
+    "hz": 120,
+    "paired_mse_advantage": 0.31906282901763916
+  },
+  {
+    "user": 5,
+    "hz": 120,
+    "paired_mse_advantage": 0.17619575560092926
+  },
+  {
+    "user": 6,
+    "hz": 120,
+    "paired_mse_advantage": 0.08023488521575928
+  },
+  {
+    "user": 7,
+    "hz": 120,
+    "paired_mse_advantage": 0.14491261541843414
+  },
+  {
+    "user": 8,
+    "hz": 120,
+    "paired_mse_advantage": 0.08769657462835312
+  },
+  {
+    "user": 9,
+    "hz": 120,
+    "paired_mse_advantage": 0.15205018222332
+  },
+  {
+    "user": 10,
+    "hz": 120,
+    "paired_mse_advantage": 0.23411762714385986
+  },
+  {
+    "user": 1,
+    "hz": 130,
+    "paired_mse_advantage": 0.01986754685640335
+  },
+  {
+    "user": 2,
+    "hz": 130,
+    "paired_mse_advantage": 0.15029770135879517
+  },
+  {
+    "user": 3,
+    "hz": 130,
+    "paired_mse_advantage": 0.14949119091033936
+  },
+  {
+    "user": 4,
+    "hz": 130,
+    "paired_mse_advantage": 0.3146071135997772
+  },
+  {
+    "user": 5,
+    "hz": 130,
+    "paired_mse_advantage": 0.17401494085788727
+  },
+  {
+    "user": 6,
+    "hz": 130,
+    "paired_mse_advantage": 0.09179841727018356
+  },
+  {
+    "user": 7,
+    "hz": 130,
+    "paired_mse_advantage": 0.14932066202163696
+  },
+  {
+    "user": 8,
+    "hz": 130,
+    "paired_mse_advantage": 0.07141303271055222
+  },
+  {
+    "user": 9,
+    "hz": 130,
+    "paired_mse_advantage": 0.14543622732162476
+  },
+  {
+    "user": 10,
+    "hz": 130,
+    "paired_mse_advantage": 0.2846294939517975
+  },
+  {
+    "user": 1,
+    "hz": 140,
+    "paired_mse_advantage": 0.0008776960894465446
+  },
+  {
+    "user": 2,
+    "hz": 140,
+    "paired_mse_advantage": 0.14557375013828278
+  },
+  {
+    "user": 3,
+    "hz": 140,
+    "paired_mse_advantage": 0.13765475153923035
+  },
+  {
+    "user": 4,
+    "hz": 140,
+    "paired_mse_advantage": 0.2687307298183441
+  },
+  {
+    "user": 5,
+    "hz": 140,
+    "paired_mse_advantage": 0.15021789073944092
+  },
+  {
+    "user": 6,
+    "hz": 140,
+    "paired_mse_advantage": 0.08630859106779099
+  },
+  {
+    "user": 7,
+    "hz": 140,
+    "paired_mse_advantage": 0.16184662282466888
+  },
+  {
+    "user": 8,
+    "hz": 140,
+    "paired_mse_advantage": 0.05164487659931183
+  },
+  {
+    "user": 9,
+    "hz": 140,
+    "paired_mse_advantage": 0.1608932465314865
+  },
+  {
+    "user": 10,
+    "hz": 140,
+    "paired_mse_advantage": 0.2988661229610443
+  },
+  {
+    "user": 1,
+    "hz": 150,
+    "paired_mse_advantage": 0.01247063372284174
+  },
+  {
+    "user": 2,
+    "hz": 150,
+    "paired_mse_advantage": 0.13326866924762726
+  },
+  {
+    "user": 3,
+    "hz": 150,
+    "paired_mse_advantage": 0.10565996915102005
+  },
+  {
+    "user": 4,
+    "hz": 150,
+    "paired_mse_advantage": 0.25175362825393677
+  },
+  {
+    "user": 5,
+    "hz": 150,
+    "paired_mse_advantage": 0.1504635065793991
+  },
+  {
+    "user": 6,
+    "hz": 150,
+    "paired_mse_advantage": 0.08270636945962906
+  },
+  {
+    "user": 7,
+    "hz": 150,
+    "paired_mse_advantage": 0.16396383941173553
+  },
+  {
+    "user": 8,
+    "hz": 150,
+    "paired_mse_advantage": 0.06293075531721115
+  },
+  {
+    "user": 9,
+    "hz": 150,
+    "paired_mse_advantage": 0.15498115122318268
+  },
+  {
+    "user": 10,
+    "hz": 150,
+    "paired_mse_advantage": 0.3020065128803253
+  },
+  {
+    "user": 1,
+    "hz": 160,
+    "paired_mse_advantage": 0.029497599229216576
+  },
+  {
+    "user": 2,
+    "hz": 160,
+    "paired_mse_advantage": 0.10199185460805893
+  },
+  {
+    "user": 3,
+    "hz": 160,
+    "paired_mse_advantage": 0.0945676937699318
+  },
+  {
+    "user": 4,
+    "hz": 160,
+    "paired_mse_advantage": 0.21046636998653412
+  },
+  {
+    "user": 5,
+    "hz": 160,
+    "paired_mse_advantage": 0.13089103996753693
+  },
+  {
+    "user": 6,
+    "hz": 160,
+    "paired_mse_advantage": 0.07374674826860428
+  },
+  {
+    "user": 7,
+    "hz": 160,
+    "paired_mse_advantage": 0.13330435752868652
+  },
+  {
+    "user": 8,
+    "hz": 160,
+    "paired_mse_advantage": 0.062093500047922134
+  },
+  {
+    "user": 9,
+    "hz": 160,
+    "paired_mse_advantage": 0.14671571552753448
+  },
+  {
+    "user": 10,
+    "hz": 160,
+    "paired_mse_advantage": 0.26148703694343567
+  },
+  {
+    "user": 1,
+    "hz": 170,
+    "paired_mse_advantage": 0.03109448216855526
+  },
+  {
+    "user": 2,
+    "hz": 170,
+    "paired_mse_advantage": 0.11857283860445023
+  },
+  {
+    "user": 3,
+    "hz": 170,
+    "paired_mse_advantage": 0.09049361944198608
+  },
+  {
+    "user": 4,
+    "hz": 170,
+    "paired_mse_advantage": 0.23584534227848053
+  },
+  {
+    "user": 5,
+    "hz": 170,
+    "paired_mse_advantage": 0.1845533698797226
+  },
+  {
+    "user": 6,
+    "hz": 170,
+    "paired_mse_advantage": 0.08642140030860901
+  },
+  {
+    "user": 7,
+    "hz": 170,
+    "paired_mse_advantage": 0.12403422594070435
+  },
+  {
+    "user": 8,
+    "hz": 170,
+    "paired_mse_advantage": 0.08147711306810379
+  },
+  {
+    "user": 9,
+    "hz": 170,
+    "paired_mse_advantage": 0.19263112545013428
+  },
+  {
+    "user": 10,
+    "hz": 170,
+    "paired_mse_advantage": 0.2403743416070938
+  },
+  {
+    "user": 1,
+    "hz": 180,
+    "paired_mse_advantage": 0.031118711456656456
+  },
+  {
+    "user": 2,
+    "hz": 180,
+    "paired_mse_advantage": 0.09770891070365906
+  },
+  {
+    "user": 3,
+    "hz": 180,
+    "paired_mse_advantage": 0.08790221065282822
+  },
+  {
+    "user": 4,
+    "hz": 180,
+    "paired_mse_advantage": 0.24510617554187775
+  },
+  {
+    "user": 5,
+    "hz": 180,
+    "paired_mse_advantage": 0.22079844772815704
+  },
+  {
+    "user": 6,
+    "hz": 180,
+    "paired_mse_advantage": 0.1052551195025444
+  },
+  {
+    "user": 7,
+    "hz": 180,
+    "paired_mse_advantage": 0.1144803836941719
+  },
+  {
+    "user": 8,
+    "hz": 180,
+    "paired_mse_advantage": 0.08587916940450668
+  },
+  {
+    "user": 9,
+    "hz": 180,
+    "paired_mse_advantage": 0.21995413303375244
+  },
+  {
+    "user": 10,
+    "hz": 180,
+    "paired_mse_advantage": 0.2157774418592453
+  },
+  {
+    "user": 1,
+    "hz": 190,
+    "paired_mse_advantage": 0.025788992643356323
+  },
+  {
+    "user": 2,
+    "hz": 190,
+    "paired_mse_advantage": 0.10264250636100769
+  },
+  {
+    "user": 3,
+    "hz": 190,
+    "paired_mse_advantage": 0.0869743749499321
+  },
+  {
+    "user": 4,
+    "hz": 190,
+    "paired_mse_advantage": 0.23616807162761688
+  },
+  {
+    "user": 5,
+    "hz": 190,
+    "paired_mse_advantage": 0.20032383501529694
+  },
+  {
+    "user": 6,
+    "hz": 190,
+    "paired_mse_advantage": 0.10971737653017044
+  },
+  {
+    "user": 7,
+    "hz": 190,
+    "paired_mse_advantage": 0.10047344118356705
+  },
+  {
+    "user": 8,
+    "hz": 190,
+    "paired_mse_advantage": 0.0904960110783577
+  },
+  {
+    "user": 9,
+    "hz": 190,
+    "paired_mse_advantage": 0.20230810344219208
+  },
+  {
+    "user": 10,
+    "hz": 190,
+    "paired_mse_advantage": 0.18169915676116943
+  },
+  {
+    "user": 1,
+    "hz": 200,
+    "paired_mse_advantage": 0.029154295101761818
+  },
+  {
+    "user": 2,
+    "hz": 200,
+    "paired_mse_advantage": 0.1240830197930336
+  },
+  {
+    "user": 3,
+    "hz": 200,
+    "paired_mse_advantage": 0.10822407156229019
+  },
+  {
+    "user": 4,
+    "hz": 200,
+    "paired_mse_advantage": 0.25067469477653503
+  },
+  {
+    "user": 5,
+    "hz": 200,
+    "paired_mse_advantage": 0.24948374927043915
+  },
+  {
+    "user": 6,
+    "hz": 200,
+    "paired_mse_advantage": 0.10877584666013718
+  },
+  {
+    "user": 7,
+    "hz": 200,
+    "paired_mse_advantage": 0.10498819500207901
+  },
+  {
+    "user": 8,
+    "hz": 200,
+    "paired_mse_advantage": 0.08920932561159134
+  },
+  {
+    "user": 9,
+    "hz": 200,
+    "paired_mse_advantage": 0.2354632169008255
+  },
+  {
+    "user": 10,
+    "hz": 200,
+    "paired_mse_advantage": 0.1606263965368271
+  },
+  {
+    "user": 1,
+    "hz": 210,
+    "paired_mse_advantage": 0.03077562153339386
+  },
+  {
+    "user": 2,
+    "hz": 210,
+    "paired_mse_advantage": 0.12768228352069855
+  },
+  {
+    "user": 3,
+    "hz": 210,
+    "paired_mse_advantage": 0.08641427755355835
+  },
+  {
+    "user": 4,
+    "hz": 210,
+    "paired_mse_advantage": 0.20414745807647705
+  },
+  {
+    "user": 5,
+    "hz": 210,
+    "paired_mse_advantage": 0.16834253072738647
+  },
+  {
+    "user": 6,
+    "hz": 210,
+    "paired_mse_advantage": 0.07561830431222916
+  },
+  {
+    "user": 7,
+    "hz": 210,
+    "paired_mse_advantage": 0.08877695351839066
+  },
+  {
+    "user": 8,
+    "hz": 210,
+    "paired_mse_advantage": 0.085456483066082
+  },
+  {
+    "user": 9,
+    "hz": 210,
+    "paired_mse_advantage": 0.17364339530467987
+  },
+  {
+    "user": 10,
+    "hz": 210,
+    "paired_mse_advantage": 0.12315229326486588
+  },
+  {
+    "user": 1,
+    "hz": 220,
+    "paired_mse_advantage": 0.037419144064188004
+  },
+  {
+    "user": 2,
+    "hz": 220,
+    "paired_mse_advantage": 0.13386765122413635
+  },
+  {
+    "user": 3,
+    "hz": 220,
+    "paired_mse_advantage": 0.11098096519708633
+  },
+  {
+    "user": 4,
+    "hz": 220,
+    "paired_mse_advantage": 0.2571369409561157
+  },
+  {
+    "user": 5,
+    "hz": 220,
+    "paired_mse_advantage": 0.20636481046676636
+  },
+  {
+    "user": 6,
+    "hz": 220,
+    "paired_mse_advantage": 0.09583017975091934
+  },
+  {
+    "user": 7,
+    "hz": 220,
+    "paired_mse_advantage": 0.10780302435159683
+  },
+  {
+    "user": 8,
+    "hz": 220,
+    "paired_mse_advantage": 0.09618896245956421
+  },
+  {
+    "user": 9,
+    "hz": 220,
+    "paired_mse_advantage": 0.22048823535442352
+  },
+  {
+    "user": 10,
+    "hz": 220,
+    "paired_mse_advantage": 0.16939161717891693
+  },
+  {
+    "user": 1,
+    "hz": 230,
+    "paired_mse_advantage": 0.046896617859601974
+  },
+  {
+    "user": 2,
+    "hz": 230,
+    "paired_mse_advantage": 0.14354389905929565
+  },
+  {
+    "user": 3,
+    "hz": 230,
+    "paired_mse_advantage": 0.10892298072576523
+  },
+  {
+    "user": 4,
+    "hz": 230,
+    "paired_mse_advantage": 0.2607531249523163
+  },
+  {
+    "user": 5,
+    "hz": 230,
+    "paired_mse_advantage": 0.16927345097064972
+  },
+  {
+    "user": 6,
+    "hz": 230,
+    "paired_mse_advantage": 0.07764091342687607
+  },
+  {
+    "user": 7,
+    "hz": 230,
+    "paired_mse_advantage": 0.0873352512717247
+  },
+  {
+    "user": 8,
+    "hz": 230,
+    "paired_mse_advantage": 0.11298820376396179
+  },
+  {
+    "user": 9,
+    "hz": 230,
+    "paired_mse_advantage": 0.20981208980083466
+  },
+  {
+    "user": 10,
+    "hz": 230,
+    "paired_mse_advantage": 0.16377413272857666
+  },
+  {
+    "user": 1,
+    "hz": 240,
+    "paired_mse_advantage": 0.03433666750788689
+  },
+  {
+    "user": 2,
+    "hz": 240,
+    "paired_mse_advantage": 0.1657169908285141
+  },
+  {
+    "user": 3,
+    "hz": 240,
+    "paired_mse_advantage": 0.13151271641254425
+  },
+  {
+    "user": 4,
+    "hz": 240,
+    "paired_mse_advantage": 0.27147865295410156
+  },
+  {
+    "user": 5,
+    "hz": 240,
+    "paired_mse_advantage": 0.15543751418590546
+  },
+  {
+    "user": 6,
+    "hz": 240,
+    "paired_mse_advantage": 0.07940281927585602
+  },
+  {
+    "user": 7,
+    "hz": 240,
+    "paired_mse_advantage": 0.10030456632375717
+  },
+  {
+    "user": 8,
+    "hz": 240,
+    "paired_mse_advantage": 0.10882566124200821
+  },
+  {
+    "user": 9,
+    "hz": 240,
+    "paired_mse_advantage": 0.20585735142230988
+  },
+  {
+    "user": 10,
+    "hz": 240,
+    "paired_mse_advantage": 0.19312810897827148
+  },
+  {
+    "user": 1,
+    "hz": 250,
+    "paired_mse_advantage": 0.012198243290185928
+  },
+  {
+    "user": 2,
+    "hz": 250,
+    "paired_mse_advantage": 0.17290441691875458
+  },
+  {
+    "user": 3,
+    "hz": 250,
+    "paired_mse_advantage": 0.1375395655632019
+  },
+  {
+    "user": 4,
+    "hz": 250,
+    "paired_mse_advantage": 0.2952759563922882
+  },
+  {
+    "user": 5,
+    "hz": 250,
+    "paired_mse_advantage": 0.15211553871631622
+  },
+  {
+    "user": 6,
+    "hz": 250,
+    "paired_mse_advantage": 0.07684236764907837
+  },
+  {
+    "user": 7,
+    "hz": 250,
+    "paired_mse_advantage": 0.12345021218061447
+  },
+  {
+    "user": 8,
+    "hz": 250,
+    "paired_mse_advantage": 0.08149078488349915
+  },
+  {
+    "user": 9,
+    "hz": 250,
+    "paired_mse_advantage": 0.19084317982196808
+  },
+  {
+    "user": 10,
+    "hz": 250,
+    "paired_mse_advantage": 0.20012985169887543
+  },
+  {
+    "user": 1,
+    "hz": 260,
+    "paired_mse_advantage": 0.00915862713009119
+  },
+  {
+    "user": 2,
+    "hz": 260,
+    "paired_mse_advantage": 0.16961626708507538
+  },
+  {
+    "user": 3,
+    "hz": 260,
+    "paired_mse_advantage": 0.14584898948669434
+  },
+  {
+    "user": 4,
+    "hz": 260,
+    "paired_mse_advantage": 0.29934197664260864
+  },
+  {
+    "user": 5,
+    "hz": 260,
+    "paired_mse_advantage": 0.1731007844209671
+  },
+  {
+    "user": 6,
+    "hz": 260,
+    "paired_mse_advantage": 0.06960614770650864
+  },
+  {
+    "user": 7,
+    "hz": 260,
+    "paired_mse_advantage": 0.1299128383398056
+  },
+  {
+    "user": 8,
+    "hz": 260,
+    "paired_mse_advantage": 0.08967709541320801
+  },
+  {
+    "user": 9,
+    "hz": 260,
+    "paired_mse_advantage": 0.19045566022396088
+  },
+  {
+    "user": 10,
+    "hz": 260,
+    "paired_mse_advantage": 0.21315248310565948
+  },
+  {
+    "user": 1,
+    "hz": 270,
+    "paired_mse_advantage": 0.01218567043542862
+  },
+  {
+    "user": 2,
+    "hz": 270,
+    "paired_mse_advantage": 0.15994179248809814
+  },
+  {
+    "user": 3,
+    "hz": 270,
+    "paired_mse_advantage": 0.14125150442123413
+  },
+  {
+    "user": 4,
+    "hz": 270,
+    "paired_mse_advantage": 0.30082836747169495
+  },
+  {
+    "user": 5,
+    "hz": 270,
+    "paired_mse_advantage": 0.17441897094249725
+  },
+  {
+    "user": 6,
+    "hz": 270,
+    "paired_mse_advantage": 0.08128183335065842
+  },
+  {
+    "user": 7,
+    "hz": 270,
+    "paired_mse_advantage": 0.1526765376329422
+  },
+  {
+    "user": 8,
+    "hz": 270,
+    "paired_mse_advantage": 0.07514508813619614
+  },
+  {
+    "user": 9,
+    "hz": 270,
+    "paired_mse_advantage": 0.20438532531261444
+  },
+  {
+    "user": 10,
+    "hz": 270,
+    "paired_mse_advantage": 0.24774684011936188
+  },
+  {
+    "user": 1,
+    "hz": 280,
+    "paired_mse_advantage": -5.856466941622784e-06
+  },
+  {
+    "user": 2,
+    "hz": 280,
+    "paired_mse_advantage": 0.14402349293231964
+  },
+  {
+    "user": 3,
+    "hz": 280,
+    "paired_mse_advantage": 0.1347586065530777
+  },
+  {
+    "user": 4,
+    "hz": 280,
+    "paired_mse_advantage": 0.2839198708534241
+  },
+  {
+    "user": 5,
+    "hz": 280,
+    "paired_mse_advantage": 0.1731703132390976
+  },
+  {
+    "user": 6,
+    "hz": 280,
+    "paired_mse_advantage": 0.0803796797990799
+  },
+  {
+    "user": 7,
+    "hz": 280,
+    "paired_mse_advantage": 0.15280191600322723
+  },
+  {
+    "user": 8,
+    "hz": 280,
+    "paired_mse_advantage": 0.08187950402498245
+  },
+  {
+    "user": 9,
+    "hz": 280,
+    "paired_mse_advantage": 0.1921251267194748
+  },
+  {
+    "user": 10,
+    "hz": 280,
+    "paired_mse_advantage": 0.25382542610168457
+  },
+  {
+    "user": 1,
+    "hz": 290,
+    "paired_mse_advantage": 0.018128924071788788
+  },
+  {
+    "user": 2,
+    "hz": 290,
+    "paired_mse_advantage": 0.150559663772583
+  },
+  {
+    "user": 3,
+    "hz": 290,
+    "paired_mse_advantage": 0.13063910603523254
+  },
+  {
+    "user": 4,
+    "hz": 290,
+    "paired_mse_advantage": 0.2588064670562744
+  },
+  {
+    "user": 5,
+    "hz": 290,
+    "paired_mse_advantage": 0.1642700880765915
+  },
+  {
+    "user": 6,
+    "hz": 290,
+    "paired_mse_advantage": 0.08362340927124023
+  },
+  {
+    "user": 7,
+    "hz": 290,
+    "paired_mse_advantage": 0.1273152083158493
+  },
+  {
+    "user": 8,
+    "hz": 290,
+    "paired_mse_advantage": 0.0804697796702385
+  },
+  {
+    "user": 9,
+    "hz": 290,
+    "paired_mse_advantage": 0.17580969631671906
+  },
+  {
+    "user": 10,
+    "hz": 290,
+    "paired_mse_advantage": 0.25186648964881897
+  },
+  {
+    "user": 1,
+    "hz": 300,
+    "paired_mse_advantage": 0.02676560916006565
+  },
+  {
+    "user": 2,
+    "hz": 300,
+    "paired_mse_advantage": 0.1378970593214035
+  },
+  {
+    "user": 3,
+    "hz": 300,
+    "paired_mse_advantage": 0.12073477357625961
+  },
+  {
+    "user": 4,
+    "hz": 300,
+    "paired_mse_advantage": 0.2705000340938568
+  },
+  {
+    "user": 5,
+    "hz": 300,
+    "paired_mse_advantage": 0.16577796638011932
+  },
+  {
+    "user": 6,
+    "hz": 300,
+    "paired_mse_advantage": 0.08166678994894028
+  },
+  {
+    "user": 7,
+    "hz": 300,
+    "paired_mse_advantage": 0.12589934468269348
+  },
+  {
+    "user": 8,
+    "hz": 300,
+    "paired_mse_advantage": 0.07270777970552444
+  },
+  {
+    "user": 9,
+    "hz": 300,
+    "paired_mse_advantage": 0.16420365869998932
+  },
+  {
+    "user": 10,
+    "hz": 300,
+    "paired_mse_advantage": 0.2479623556137085
+  }
+]

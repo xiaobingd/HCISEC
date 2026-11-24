@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "frequency_rows": 26,
+  "user_frequency_rows": 260,
+  "models_frozen": true,
+  "final_audio_used": false,
+  "final_authentication_results_used": false,
+  "synthetic_auc_checks": "PASS",
+  "source_sha256": {
+    "screen_shared_bands.py": "cea028922643bd2d391446aadb1394257f4beeb3bbe512c440b6512ffe9816b3",
+    "test_shared_band_screen.py": "aac4805855036c363a39e5bb9bfa940c5920bdfda81711574073a63d24758271",
+    "train_crossword_mechanism.py": "6d9dd6ad58589e5576c614a35db30a38b568c8a2725fd19e88d3c7b757159a39"
+  }
+}
