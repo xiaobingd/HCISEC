@@ -1,0 +1,16 @@
+{
+  "training_records": 1280,
+  "nontraining_audio_read": 0,
+  "source_interpretation_hz": 44100,
+  "source_wav_header_hz": 48000,
+  "resampled_hz": 16000,
+  "duration_scale": 1.08843537414966,
+  "frequency_scale": 0.91875,
+  "plot_sample_id": "01_00_00",
+  "old_duration_s": 0.58,
+  "new_duration_s": 0.6312925170068027,
+  "acc_duration_s": 0.62928429999738,
+  "original_files_modified": false,
+  "physical_sync_verified": false,
+  "local_target": "50to300Hz/10Hz interpolated bins,100msSTFT/20ms hop,12coarse250msbins;3s centerpadding retains historical segmentation cues"
+}
