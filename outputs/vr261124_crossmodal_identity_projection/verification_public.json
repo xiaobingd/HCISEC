@@ -1,0 +1,1 @@
+{"status":"PASS","models":60,"folds":30,"episode_tasks":12000,"thresholds":240,"workpoints":720,"target_in_training":false,"innerdev_in_training":false,"query_audio_used":false,"all_locks_before_query_scoring":true,"global_encoders_updated":false}
