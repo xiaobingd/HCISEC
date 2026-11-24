@@ -1,0 +1,52 @@
+[
+  {
+    "user": 1,
+    "records": 320,
+    "median_duration_44100_s": 0.7183673469387755
+  },
+  {
+    "user": 2,
+    "records": 320,
+    "median_duration_44100_s": 0.7619047619047619
+  },
+  {
+    "user": 3,
+    "records": 320,
+    "median_duration_44100_s": 0.8054421768707483
+  },
+  {
+    "user": 4,
+    "records": 320,
+    "median_duration_44100_s": 0.8272108843537415
+  },
+  {
+    "user": 5,
+    "records": 320,
+    "median_duration_44100_s": 0.7183673469387755
+  },
+  {
+    "user": 6,
+    "records": 320,
+    "median_duration_44100_s": 0.7401360544217688
+  },
+  {
+    "user": 7,
+    "records": 320,
+    "median_duration_44100_s": 0.6748299319727891
+  },
+  {
+    "user": 8,
+    "records": 320,
+    "median_duration_44100_s": 0.7401360544217688
+  },
+  {
+    "user": 9,
+    "records": 320,
+    "median_duration_44100_s": 0.8925170068027211
+  },
+  {
+    "user": 10,
+    "records": 320,
+    "median_duration_44100_s": 0.7945578231292516
+  }
+]

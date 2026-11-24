@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "records": 3200,
+  "recording_groups": 400,
+  "audio_timebase_hz": 44100,
+  "seconds_multiplier": 1.08843537414966,
+  "pcm_frame_boundaries_identical": true,
+  "max_host_boundary_change_ms": 0.0,
+  "duration_median_s": 0.7619047619047619,
+  "source_wav_or_metadata_modified": false,
+  "historical_features_or_models_modified": false,
+  "physical_sync_verified": false,
+  "usage": "new offline inputs must read this manifest44100 timebase explicitly;old loaders still use48000 and are not automatically changed"
+}
