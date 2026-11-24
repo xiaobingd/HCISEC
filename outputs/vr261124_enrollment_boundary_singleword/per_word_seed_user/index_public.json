@@ -1,0 +1,37 @@
+{
+  "total_rows": 7200,
+  "shards": [
+    {
+      "path": "per_word_seed_user/part_01.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_02.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_03.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_04.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_05.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_06.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_07.csv",
+      "rows": 1000
+    },
+    {
+      "path": "per_word_seed_user/part_08.csv",
+      "rows": 200
+    }
+  ]
+}
