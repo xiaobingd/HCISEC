@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "candidate_models": 150,
+  "selected_models": 90,
+  "folds": 30,
+  "thresholds": 90,
+  "workpoints": 90,
+  "test_Audio_labels_missing": true,
+  "hard_activity_mask": false,
+  "identity_gradient_reaches_shared_encoder": true,
+  "all_thresholds_before_test_inference": true,
+  "protocol_sha256": "7d36a40864f6e61e26262de16525b25af9d8afb76210ee87c9ec7e25f5ec75b9"
+}

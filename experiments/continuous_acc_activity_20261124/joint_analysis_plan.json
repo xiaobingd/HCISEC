@@ -1,0 +1,14 @@
+{
+  "primary_method": "Joint_correct",
+  "controls": ["Identity_only", "Joint_wrongwindow"],
+  "primary_metrics": ["eer", "auc"],
+  "utility_metrics": ["hter", "far", "frr"],
+  "support_rule": "Correct joint supervision must have beneficial 95% paired target-cluster EER and AUC differences against both controls and no worse mean HTER. Report partial results separately.",
+  "uncertainty_unit": "ten users; average three seeds per target before resampling; shared background makes intervals exploratory",
+  "bootstrap_seed": 20261125,
+  "bootstrap_repetitions": 10000,
+  "hyperparameter_policy": "same two lambdas for correct/wrong; each candidate400steps; shared lambda selected from pooled correct/wrong development identity AUC thenEER; target identity/test words excluded",
+  "query_policy": "all fixed test windows counted; no Audio, hard activity mask, window or user selection",
+  "historical_exposure": "same eight test words were evaluated in the preceding experiment; this is an exploratory replication, not independent blind confirmation",
+  "no_test_based_method_search": true
+}

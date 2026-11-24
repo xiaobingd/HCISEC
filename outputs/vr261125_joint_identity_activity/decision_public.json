@@ -1,0 +1,91 @@
+{
+  "decision": "本轮未取得稳定独立 Audio 身份增益：正确联合监督未同时在 EER/AUC 上超过纯身份训练和错误窗口控制。保留部分指标与逐用户差异，不使用测试词继续搜索权重。",
+  "full_support": false,
+  "correct_vs_wrong_supported": false,
+  "correct_vs_identity_supported": false,
+  "comparisons": [
+    {
+      "control": "Identity_only",
+      "metric": "eer",
+      "delta": 0.0006176443522307937,
+      "target_cluster_ci95": [
+        -0.0017056176115569331,
+        0.0028967541777705566
+      ],
+      "improved_users": 4
+    },
+    {
+      "control": "Identity_only",
+      "metric": "hter",
+      "delta": 0.002728441438583014,
+      "target_cluster_ci95": [
+        -0.0018876402891700697,
+        0.0070789956763089605
+      ],
+      "improved_users": 3
+    },
+    {
+      "control": "Identity_only",
+      "metric": "auc",
+      "delta": 0.00045463600282495963,
+      "target_cluster_ci95": [
+        -0.00021356865517936446,
+        0.001132726310367604
+      ],
+      "improved_users": 5
+    },
+    {
+      "control": "Joint_wrongwindow",
+      "metric": "eer",
+      "delta": 0.0010842630374664959,
+      "target_cluster_ci95": [
+        -0.0021655260459301365,
+        0.0046446797806487545
+      ],
+      "improved_users": 5
+    },
+    {
+      "control": "Joint_wrongwindow",
+      "metric": "hter",
+      "delta": 0.004023396917744797,
+      "target_cluster_ci95": [
+        0.0003474360946467875,
+        0.007743034103980634
+      ],
+      "improved_users": 3
+    },
+    {
+      "control": "Joint_wrongwindow",
+      "metric": "auc",
+      "delta": 0.0002805859036416836,
+      "target_cluster_ci95": [
+        -0.0005167921469756071,
+        0.0010618851924656758
+      ],
+      "improved_users": 5
+    }
+  ],
+  "activity_proxy_auc": {
+    "Identity_only": 0.6886498816015197,
+    "Joint_correct": 0.7101545040943483,
+    "Joint_wrongwindow": 0.6891928468530615
+  },
+  "selected_lambda_counts": {
+    "0.1": 18,
+    "0.03": 12
+  },
+  "gradient_diagnostics": [
+    {
+      "arm": "Joint_correct",
+      "body_gradient_cosine_mean": -0.056169384178550295,
+      "aux_to_identity_gradient_ratio_mean": 0.004737963058869354,
+      "observations": 120
+    },
+    {
+      "arm": "Joint_wrongwindow",
+      "body_gradient_cosine_mean": 0.05373559836880304,
+      "aux_to_identity_gradient_ratio_mean": 0.002180495921250743,
+      "observations": 120
+    }
+  ]
+}

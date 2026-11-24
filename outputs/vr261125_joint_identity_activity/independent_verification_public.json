@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "candidate_models": 150,
+  "selected_models": 90,
+  "identity_folds": 30,
+  "batch_tasks_checked": 12000,
+  "shared_lambdas_recomputed": 30,
+  "identity_workpoints": 90,
+  "ACC_only_replayed_models": 9,
+  "max_metric_replay_error": 0.0,
+  "test_Audio_labels_missing": true,
+  "data_hash_unchanged": true,
+  "all_test_windows_counted": true
+}
