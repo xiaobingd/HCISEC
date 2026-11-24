@@ -1,0 +1,1 @@
+依赖 Python3.10/PyTorch2.5/NumPy/SciPy。需要本地私有根目录及相同纯 ACC stage3 检查点、fit-only ECAPA 缓存、coarse_pilot 原始 ACC 缓存；字段与对齐断言见审计脚本。先运行 source/test_selective_gradients.py，再运行 source/audit_selective_gradients.py --root <私有数据根目录> --episodes 20，然后同样参数 --root 运行 verify_selective_gradients.py 和 report_selective_gradients.py。全程不改写原模型，所有虚拟更新回滚。本轮只作训练词内诊断，不输出新的 EER/HTER。
