@@ -1,0 +1,67 @@
+{
+  "name": "Conditional Audio\u2013ACC Correspondence and Cross-Word Authentication",
+  "status": "SYNC_GATE_PENDING;no new learned model or authentication launched",
+  "train_words": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    33,
+    34
+  ],
+  "development_words": [
+    8,
+    18,
+    24,
+    30
+  ],
+  "query_families": {
+    "english_word": [
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "english_long": [
+      3,
+      9,
+      12,
+      19,
+      32
+    ],
+    "chinese_long": [
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "arms": [
+    "A ACC identity",
+    "B true paired local Audio",
+    "C same-user same-word different repetition",
+    "D different-user same-word Audio"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "selection": "no final query Audio or query-based weight selection;conditional retrieval on development before final authentication; stop if no repeatable correspondence advantage",
+  "synchronization": "audit affine callback timing and IMU packet offset;both do not establish physical latency;need marker verification",
+  "architecture": "matched lightweight temporal CNN;CE and cross-word SupCon all arms;same number steps,batches,source recordings;crossmodal conditional contrast only B/C/D",
+  "controls": "condition candidate set on user and word;exclude exact duplicate/source overlap;common observation windows;report duration-only and padding-mask baselines;global lag determined using training marker data only",
+  "limits": "development words historically explored;fresh blinded recordings needed for final confirmation"
+}

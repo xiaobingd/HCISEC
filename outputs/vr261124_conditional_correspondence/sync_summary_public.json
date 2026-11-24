@@ -1,0 +1,23 @@
+{
+  "groups": 160,
+  "records": 1280,
+  "scope": "16training words only;no development/finalAudio;untrained energy diagnostic",
+  "physical_sync_verified": false,
+  "audio_residual_p95_ms": {
+    "median": 5.611340606613369,
+    "max": 175.21148595219364
+  },
+  "imu_packet_p95_ms": {
+    "median": 1.2417299987646397,
+    "max": 1.343880002968944
+  },
+  "conditional_top1": 0.140625,
+  "chance_top1": 0.125,
+  "conditional_margin": 0.012908529695199612,
+  "note": "Host-clock residual is not physical latency; metadata VAD and duration can aid energy retrieval;not evidence of learned correspondence or identity gain",
+  "target_user_cluster_top1_bootstrap95": [
+    0.13359375,
+    0.1484375
+  ],
+  "audio_contiguous_groups": 160
+}
