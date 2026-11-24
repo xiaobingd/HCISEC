@@ -1,0 +1,1 @@
+{"development":[1,8,13,21,22,30,32,37],"hop_seconds":3,"locked_before_waveform_extraction":true,"recording_edge_guard_seconds":0.5,"seed":20261124,"test":[11,12,14,15,17,33,34,35],"train":[0,2,3,4,5,6,7,9,10,16,18,19,20,23,24,25,26,27,28,29,31,36,38,39],"window_anchor":"first valid IMU timestamp + .5sec;noAudioorVAD boundaries","window_seconds":3}

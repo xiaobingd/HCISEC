@@ -1,0 +1,1 @@
+{"status":"PASS","source_recordings":400,"unique_IMU_files":400,"unique_IMU_file_hashes":400,"duplicated_source_files":0,"word_identity_consistent":true,"distinct_prompt_labels":40,"shared_test_and_training_Audio_paths":0,"no_Audio_read":true}

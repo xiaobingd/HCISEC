@@ -1,0 +1,1 @@
+{"status":"PASS","models":90,"target_folds":30,"mask_threshold_selections":120,"identity_thresholds":150,"workpoints":150,"test_Audio_labels_absent":true,"Audio_VAD_centering":false,"all_thresholds_before_test_scores":true,"no_test_window_dropped":true,"protocol_sha256":"c11f3ad222e88367482fdd7859ceb5c5325c68f61a6ac9903d6e38e27ffc8f9f"}
