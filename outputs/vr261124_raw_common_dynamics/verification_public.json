@@ -1,0 +1,1 @@
+{"status":"PASS","fit_records":1280,"template_training_repeats":[0,1,2,3],"event_evaluation_repeats":[4,5,6,7],"outer_identity_folds":45,"feature_workpoints":2700,"no_final_query_used":true,"no_encoder_used":true,"no_final_authentication":true,"all_users_retained":true,"vectorized_feature_assay":true}
