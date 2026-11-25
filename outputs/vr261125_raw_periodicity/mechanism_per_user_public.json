@@ -1,0 +1,182 @@
+[
+  {
+    "user": 1,
+    "correct": {
+      "joint_voiced_fraction": 0.000316722972972973,
+      "pitch_within10pct": 0.0,
+      "median_abs_cents": 1390.9089667193725,
+      "audio_voiced_fraction": 0.12674197635135134,
+      "acc_voiced_fraction": 0.0018475506756756757
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.0004750844594594595,
+      "pitch_within10pct": 0.0,
+      "median_abs_cents": 1163.3027253690695,
+      "audio_voiced_fraction": 0.12674197635135134,
+      "acc_voiced_fraction": 0.0018475506756756757
+    },
+    "delta_match": 0.0
+  },
+  {
+    "user": 2,
+    "correct": {
+      "joint_voiced_fraction": 0.016205658783783782,
+      "pitch_within10pct": 0.6514657980456026,
+      "median_abs_cents": 94.89487617837258,
+      "audio_voiced_fraction": 0.27570734797297297,
+      "acc_voiced_fraction": 0.02290962837837838
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.013883023648648648,
+      "pitch_within10pct": 0.5703422053231939,
+      "median_abs_cents": 122.56114264411909,
+      "audio_voiced_fraction": 0.27570734797297297,
+      "acc_voiced_fraction": 0.02290962837837838
+    },
+    "delta_match": 0.08112359272240866
+  },
+  {
+    "user": 3,
+    "correct": {
+      "joint_voiced_fraction": 0.0005806587837837838,
+      "pitch_within10pct": 0.7272727272727273,
+      "median_abs_cents": 140.84593521820554,
+      "audio_voiced_fraction": 0.1671241554054054,
+      "acc_voiced_fraction": 0.001583614864864865
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.0006862331081081081,
+      "pitch_within10pct": 0.46153846153846156,
+      "median_abs_cents": 821.5082302935677,
+      "audio_voiced_fraction": 0.1671241554054054,
+      "acc_voiced_fraction": 0.001583614864864865
+    },
+    "delta_match": 0.26573426573426573
+  },
+  {
+    "user": 4,
+    "correct": {
+      "joint_voiced_fraction": 0.03637035472972973,
+      "pitch_within10pct": 0.24818577648766327,
+      "median_abs_cents": 1172.286441128962,
+      "audio_voiced_fraction": 0.2596072635135135,
+      "acc_voiced_fraction": 0.06329180743243243
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.03805954391891892,
+      "pitch_within10pct": 0.27323162274618584,
+      "median_abs_cents": 1148.5582934341255,
+      "audio_voiced_fraction": 0.2596072635135135,
+      "acc_voiced_fraction": 0.06329180743243243
+    },
+    "delta_match": -0.025045846258522575
+  },
+  {
+    "user": 5,
+    "correct": {
+      "joint_voiced_fraction": 0.0002639358108108108,
+      "pitch_within10pct": 1.0,
+      "median_abs_cents": 27.862393025057035,
+      "audio_voiced_fraction": 0.14569256756756757,
+      "acc_voiced_fraction": 0.0011085304054054054
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.0002639358108108108,
+      "pitch_within10pct": 0.2,
+      "median_abs_cents": 186.40047848177042,
+      "audio_voiced_fraction": 0.14569256756756757,
+      "acc_voiced_fraction": 0.0011085304054054054
+    },
+    "delta_match": 0.8
+  },
+  {
+    "user": 6,
+    "correct": {
+      "joint_voiced_fraction": 0.02533783783783784,
+      "pitch_within10pct": 0.2,
+      "median_abs_cents": 376.9907332167374,
+      "audio_voiced_fraction": 0.17736486486486486,
+      "acc_voiced_fraction": 0.04560810810810811
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.026024070945945946,
+      "pitch_within10pct": 0.22515212981744423,
+      "median_abs_cents": 413.3761551860973,
+      "audio_voiced_fraction": 0.17736486486486486,
+      "acc_voiced_fraction": 0.04560810810810811
+    },
+    "delta_match": -0.02515212981744422
+  },
+  {
+    "user": 7,
+    "correct": {
+      "joint_voiced_fraction": 0.02349028716216216,
+      "pitch_within10pct": 0.15056179775280898,
+      "median_abs_cents": 1185.0252008869286,
+      "audio_voiced_fraction": 0.19737119932432431,
+      "acc_voiced_fraction": 0.041385135135135136
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.023595861486486486,
+      "pitch_within10pct": 0.174496644295302,
+      "median_abs_cents": 1207.7152090927054,
+      "audio_voiced_fraction": 0.19737119932432431,
+      "acc_voiced_fraction": 0.041385135135135136
+    },
+    "delta_match": -0.023934846542493032
+  },
+  {
+    "user": 8,
+    "correct": {
+      "joint_voiced_fraction": 0.002533783783783784,
+      "pitch_within10pct": 0.6041666666666666,
+      "median_abs_cents": 83.41817124436821,
+      "audio_voiced_fraction": 0.1819045608108108,
+      "acc_voiced_fraction": 0.004909206081081081
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.0027977195945945946,
+      "pitch_within10pct": 0.5094339622641509,
+      "median_abs_cents": 162.66644756726922,
+      "audio_voiced_fraction": 0.1819045608108108,
+      "acc_voiced_fraction": 0.004909206081081081
+    },
+    "delta_match": 0.09473270440251569
+  },
+  {
+    "user": 9,
+    "correct": {
+      "joint_voiced_fraction": 0.0005806587837837838,
+      "pitch_within10pct": 0.0,
+      "median_abs_cents": 1316.063719292033,
+      "audio_voiced_fraction": 0.20011613175675674,
+      "acc_voiced_fraction": 0.0014252533783783783
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.0004750844594594595,
+      "pitch_within10pct": 0.1111111111111111,
+      "median_abs_cents": 1276.7956980486636,
+      "audio_voiced_fraction": 0.20011613175675674,
+      "acc_voiced_fraction": 0.0014252533783783783
+    },
+    "delta_match": -0.1111111111111111
+  },
+  {
+    "user": 10,
+    "correct": {
+      "joint_voiced_fraction": 0.01567778716216216,
+      "pitch_within10pct": 0.4983164983164983,
+      "median_abs_cents": 166.4849243390574,
+      "audio_voiced_fraction": 0.259765625,
+      "acc_voiced_fraction": 0.02143158783783784
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.015308277027027027,
+      "pitch_within10pct": 0.3724137931034483,
+      "median_abs_cents": 1045.6062463555586,
+      "audio_voiced_fraction": 0.259765625,
+      "acc_voiced_fraction": 0.02143158783783784
+    },
+    "delta_match": 0.12590270521305003
+  }
+]

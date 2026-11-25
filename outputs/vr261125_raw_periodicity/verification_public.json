@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "aligned_samples": 1280,
+  "candidates": 3,
+  "endpoint_pairs_per_candidate": 45,
+  "all_features_finite": true,
+  "public_aggregates_recomputed": true,
+  "holm_recomputed": true,
+  "raw_ACC_replayed_windows": 3,
+  "max_track_replay_error": 5.684341886080802e-14,
+  "private_export": false,
+  "final_Audio_opened": false,
+  "source_audio_fit_recordings": 160
+}

@@ -1,0 +1,23 @@
+{
+  "samples": 1280,
+  "Audio_recordings": 160,
+  "band_hz": [
+    40,
+    450
+  ],
+  "f0_search_hz": [
+    60,
+    400
+  ],
+  "frame_ms": 60,
+  "hop_ms": 20,
+  "method": "summed-axis normalized lagged autocorrelation; earliest local maximum >=.6, else global max; parabola lag refinement; bandlimited periodicity estimate,not gold F0/YIN",
+  "voicing": "local autocorrelation maximum in search interior AND confidence>=.6 AND framepower>maxpower*1e-4;fixed,notlearnedVAD;reject boundary fallback to avoid50Hz->400Hz alias",
+  "harmonic": "H1 and up-to450Hz harmonic-neighborhood(+/-15Hz) power fractions; limited number ofharmonics at highF0",
+  "descriptor": "periodicity6:log2F0 Q10/Q50/Q90/std,voicedconfidence mean,voicedfraction;harmonic4:median/std ofharmonicfraction andH1fraction",
+  "audio_clock": "legacy PCM48000 header interpreted44100,resampled4k;unverified physical samplerate;F0 scale conditional onthisassumption",
+  "inference": "noAudio-basedACCcrop;3sec legacy alignedwindows mayoverlap;identity analysis descriptor-level,notphase alignment",
+  "fit_only": true,
+  "final_Audio_opened": false,
+  "physical_sync_verified": false
+}

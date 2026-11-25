@@ -1,0 +1,41 @@
+[
+  {
+    "candidate": "shape",
+    "baseline_mse": 0.10902737902806899,
+    "audio_mse": 0.10699763554323817,
+    "mse_reduction": 0.0020297434848308466,
+    "hard_mse_reduction": 0.0018152785206115448,
+    "baseline_spearman": 0.45202629710793535,
+    "audio_spearman": 0.4534893052254699,
+    "permutation_p": 0.07,
+    "hard_permutation_p": 0.26,
+    "holm_p": 0.21000000000000002,
+    "hard_holm_p": 0.78
+  },
+  {
+    "candidate": "envelope",
+    "baseline_mse": 0.10902737902806899,
+    "audio_mse": 0.10853781245017619,
+    "mse_reduction": 0.0004895665778928546,
+    "hard_mse_reduction": -0.0010815465117942108,
+    "baseline_spearman": 0.45202629710793535,
+    "audio_spearman": 0.4498780826568721,
+    "permutation_p": 0.28,
+    "hard_permutation_p": 0.69,
+    "holm_p": 0.28,
+    "hard_holm_p": 0.79
+  },
+  {
+    "candidate": "combined",
+    "baseline_mse": 0.10902737902806899,
+    "audio_mse": 0.10722115684672515,
+    "mse_reduction": 0.00180622218134385,
+    "hard_mse_reduction": 0.0008667121507538629,
+    "baseline_spearman": 0.45202629710793535,
+    "audio_spearman": 0.4485344197866189,
+    "permutation_p": 0.105,
+    "hard_permutation_p": 0.395,
+    "holm_p": 0.21000000000000002,
+    "hard_holm_p": 0.79
+  }
+]

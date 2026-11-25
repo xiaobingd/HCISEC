@@ -1,0 +1,39 @@
+{
+  "correct": {
+    "joint_voiced_fraction": 0.01213576858108108,
+    "pitch_within10pct": 0.31491953023053504,
+    "median_abs_cents": 695.095334592426,
+    "audio_voiced_fraction": 0.19913956925675674,
+    "acc_voiced_fraction": 0.02055004222972973
+  },
+  "same_person_word_wrongrepeat": {
+    "joint_voiced_fraction": 0.012156883445945945,
+    "pitch_within10pct": 0.2948328267477204,
+    "median_abs_cents": 761.2650659985546,
+    "audio_voiced_fraction": 0.19913956925675674,
+    "acc_voiced_fraction": 0.02055004222972973
+  },
+  "user_macro_match_advantage": 0.11822493343426692,
+  "users_with_comparable_voiced_frames": 10,
+  "paired_user_signflip_p": 0.078125,
+  "descriptive_periodicity_identity_relation_spearman": -0.025592271840247264,
+  "identity_permutation_p": 0.675,
+  "scope": "frame comparison at legacy alignment, NO lag tuning;wrongrepeat retains user/word;notphysicalsync validation;voicing intersections maydiffer;sharedidentitydescriptors notalone proof ofidentitytransfer;allcohortscalers trainwordsonly inthisdescriptiveanalysis",
+  "header_rate_pitchscale_sensitivity": {
+    "correct": {
+      "joint_voiced_fraction": 0.01213576858108108,
+      "pitch_within10pct": 0.21400608960417572,
+      "median_abs_cents": 754.5527368495373,
+      "audio_voiced_fraction": 0.19913956925675674,
+      "acc_voiced_fraction": 0.02055004222972973
+    },
+    "wrongrepeat": {
+      "joint_voiced_fraction": 0.012156883445945945,
+      "pitch_within10pct": 0.21580547112462006,
+      "median_abs_cents": 845.3671792409801,
+      "audio_voiced_fraction": 0.19913956925675674,
+      "acc_voiced_fraction": 0.02055004222972973
+    },
+    "caveat": "pitch-only rescaling sensitivity,notfull header48000 re-extraction or clock realignment;notusedtoselect results"
+  }
+}
