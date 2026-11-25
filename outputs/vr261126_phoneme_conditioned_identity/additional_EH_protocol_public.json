@@ -1,0 +1,41 @@
+{
+  "scope": "posthocfollow-up motivatedbyNext;historicalwords notgloballyblind;noadditionaltrainingorcalibration",
+  "selection": "allnotpreviouslyused Englishsinglewords whosefixed bundleddictionary firstpronunciationcontainsEH;selectedbyvocabonly beforeloadingACC/queryscores",
+  "words": [
+    23,
+    24,
+    25
+  ],
+  "lexicon": {
+    "23": {
+      "word": "reset",
+      "phones": "R IY S EH T"
+    },
+    "24": {
+      "word": "select",
+      "phones": "S AH L EH K T"
+    },
+    "25": {
+      "word": "seven",
+      "phones": "S EH V AH N"
+    }
+  },
+  "model_sha256": {
+    "42_B0_identity": "a31b065fa823dcede81b82f35b3ff453ccf38050f86bbfec16bfaa0026e18579",
+    "42_B1_dictionary_ACC": "41963089a0c7b253a28edf3f55b1ebf52e7a54c0eef3ef3d5ba9774e19e613a0",
+    "42_B2_Audio_phoneme": "1118d9b14828e2e45288e76d2ee6bfff6c038e9345bc547ab2d2e20a266e8e6a",
+    "42_B3_shuffled_phoneme": "f62161df1a3f227f834a39569a1293326e667d63a6dc3122663671885a9aacca",
+    "43_B0_identity": "daa059ccb68856f74d05aa50523b0b121aad0bd8a74cb0dfb19bd1d05b4e3c9a",
+    "43_B1_dictionary_ACC": "712646af3c09ebade55623e9c62c544d3da6c5f6305912db15abc2548ce31998",
+    "43_B2_Audio_phoneme": "a6bd19a305374c011f36b7e787c4fc3823738ce036858ab0894c6a557fe16a4f",
+    "43_B3_shuffled_phoneme": "1ab5e88c625445fc26e70cba7813fca7ed39b787b9bd43d7f7f5f9d8aab166ac",
+    "44_B0_identity": "76d5a12d2a971151ee6457efcd7fadcdda7c03a56f80b69a0d9ae2506fa1ee77",
+    "44_B1_dictionary_ACC": "36d4180fb5f06d40136fbaa9f3e5814b4f73d83b7165eb841fddddaab17f1cac",
+    "44_B2_Audio_phoneme": "60e5fd230300f8050dda2dc254f1f77a6e7ded9a8780ff6acc36ee98958aa9a2",
+    "44_B3_shuffled_phoneme": "8b00804a3f63b699c9b863af0a6bc51756539f2328afb7abe2daac12d3bb34e3"
+  },
+  "threshold_sha256": "4c2c91859e9e5a8182cc12ef6cfebbf66475f300e5cc6a2bb3e23bf5ccf0b95f",
+  "no_Audio_opened": true,
+  "no_threshold_changes": true,
+  "no_model_changes": true
+}

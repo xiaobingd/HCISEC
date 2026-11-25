@@ -1,0 +1,22 @@
+[
+  {
+    "control": "B0_identity",
+    "eer_delta": 0.0013888888888888902,
+    "improved_users": 6,
+    "p": 0.57421875,
+    "holm_primary_p": 1.0
+  },
+  {
+    "control": "B1_dictionary_ACC",
+    "eer_delta": 0.00555555555555555,
+    "improved_users": 6,
+    "p": 0.671875,
+    "holm_primary_p": 1.0
+  },
+  {
+    "control": "B3_shuffled_phoneme",
+    "eer_delta": -0.007870370370370357,
+    "improved_users": 5,
+    "p": 0.1103515625
+  }
+]

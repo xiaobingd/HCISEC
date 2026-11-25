@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "models_replayed": 12,
+  "personal_workpoints_replayed": 120,
+  "per_word_metrics_replayed": 360,
+  "max_metric_error": 0.0,
+  "used_ACC_role_support": "920ms per recording;min center gap>0.9814401500043459",
+  "Audio_teacher_outside_fit_missing": true,
+  "matched_batches_checked": 1200,
+  "nontrivial_balanced_phone_shuffle": true,
+  "closed_identity_training": true,
+  "query_input_ACC_only": true,
+  "legacy_segmentation": true,
+  "final_raw_Audio_opened": false,
+  "additional_EH_query_words": [
+    23,
+    24,
+    25
+  ],
+  "additional_models_and_thresholds_unchanged": true,
+  "additional_query_Audio_unused": true
+}

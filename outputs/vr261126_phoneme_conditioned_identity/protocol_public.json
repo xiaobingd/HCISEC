@@ -1,0 +1,66 @@
+{
+  "scope": "closed-set cross-word;all10 identities train representations;NOT unseen-user study;historicalviewedwords exploratorynotblind",
+  "train_words": [
+    0,
+    1,
+    6,
+    7,
+    11,
+    13
+  ],
+  "query_words": [
+    10,
+    14,
+    15
+  ],
+  "fit_repeats": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "registration_repeats": [
+    4,
+    5
+  ],
+  "calibration_repeats": [
+    6,
+    7
+  ],
+  "counts": {
+    "fit": 240,
+    "registration": 120,
+    "calibration": 120,
+    "query": 240
+  },
+  "register_per_user": 12,
+  "calibrate_per_user": 12,
+  "query_per_user": 24,
+  "roles": "no recording index overlap;used rawACCframe unioncenter+/-460ms;minimumrepeatcentergap exceeds920ms;raw3seccacheitself overlapsbutunusedpartsnotmodelinput",
+  "minimum_repeat_center_gap_s": 0.9814401500043459,
+  "input": "41x24 fixed120msACC FFT/axisstd windows,20msstep;closed legacyVAD-anchored3s cache: notfullyAudiofreecontinuouspipeline",
+  "encoder": "shared frameMLP24->32SiLU->32SiLU;learnedattention;weightedmean/std64+rawmean24->32L2;temporary10classhead;5057params",
+  "global_loss": "normalizedCE scale16 +.1crosswordSupCon temperature.1",
+  "local_loss": ".1SupCon onteacher-localembedding: sameidentity/samephone/differentword positives;differentidentity/samephone negatives;singletonphoneanchors skipped",
+  "arms": {
+    "B0_identity": "global identity only",
+    "B1_dictionary_ACC": "local loss with dictionaryphone groups andACCenergyGaussian",
+    "B2_Audio_phoneme": "dictionaryphone groups plus correct fitAudioGaussian region",
+    "B3_shuffled_phoneme": "sameAudioGaussian region,wordwisephoneclassshuffle separatelyforeachuser preserving2/3/1counts"
+  },
+  "teacher": "cachedautomaticfitAudio phonecenter -100ms,sigma100ms fixedfrompreviousexploration;reg/cal/query teacherarraysNaN;noqueryAudio inmodel orcrop",
+  "lexicon_limitation": "phone categories originate dictionary,notAudio;Audioindependentbenefit requires B2>B1;trainingAYonlyfive,noAYcrosswordlocalpositive;querynine isgeneralizationcontrol",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "steps": 400,
+  "batch": "10usersx6trainwordsx1fitrepeat=60,identicalbatch/init perseedacrossarms",
+  "optimizer": "AdamW.001 wd.01 clip1",
+  "normalization": "fit samples only,sharedacrossarms;nohyperparameterselection/earlystopping",
+  "authentication": "cosine to12registration embeddings;threshold mincalHTER thenFARFRRbalance thenhigherthreshold;all120thresholdslockedbeforequeryscoring;classifierdiscarded",
+  "primary": "pooledquery MacroEER paired byuser,seedmean, B2vsB0 andB2vsB1 exactuser signflip Holm2;B3control andHTER/FAR/FRR/AUC allreported",
+  "no_private_export": true,
+  "no_raw_final_Audio_opened": true
+}
