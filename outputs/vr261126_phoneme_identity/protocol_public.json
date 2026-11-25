@@ -1,0 +1,82 @@
+{
+  "groups": {
+    "AE": [
+      0,
+      1,
+      10
+    ],
+    "EH": [
+      6,
+      11,
+      13,
+      14
+    ],
+    "AY": [
+      7,
+      15
+    ]
+  },
+  "lexicon": {
+    "0": {
+      "word": "Back",
+      "phones": "B AE K"
+    },
+    "1": {
+      "word": "Cancel",
+      "phones": "K AE N S AH L"
+    },
+    "6": {
+      "word": "Exit",
+      "phones": "EH G Z IH T"
+    },
+    "7": {
+      "word": "five",
+      "phones": "F AY V"
+    },
+    "10": {
+      "word": "Grab",
+      "phones": "G R AE B"
+    },
+    "11": {
+      "word": "Help",
+      "phones": "HH EH L P"
+    },
+    "13": {
+      "word": "Menu",
+      "phones": "M EH N Y UW"
+    },
+    "14": {
+      "word": "Next",
+      "phones": "N EH K S T"
+    },
+    "15": {
+      "word": "nine",
+      "phones": "N AY N"
+    }
+  },
+  "users": 10,
+  "fit_words_only": [
+    0,
+    1,
+    6,
+    7,
+    10,
+    11,
+    13,
+    14,
+    15
+  ],
+  "samples": 720,
+  "aligner": "PocketSphinx5.0.4 bundled US-English acoustic model,known single-word text,word alignment then phone-state alignment;automatic estimated labels,notmanualtruth",
+  "dependency_sha256": "3dbbca377ca081c1afeb87dac8d17e41e17dcb89ff04041edb03a73b42e53bbd",
+  "plans": "threelexicalvowelgroups,leaveonewordout;AYonly2words andexploratory;time not in vocabulary",
+  "crop": "120ms at aligned vowel center,wordcenter,samewordwrongphonefarthestcenter,andfixed+-100ms offsets;wholeword unequalduration contextcontrol",
+  "front": "raw3axisACC1000Hz;DCremove;21logbandpowers+3axisstd;identical24Dallarms;noencodertraining",
+  "timing": "AudioPCM interpreted44100;alignafter16kresample;mapphonewithinwordfractiontoexistingIMUinterval,notphysicallyvalidated;mappingmaycontain175ms residual",
+  "failures": "anyalignment/cropfailure useswordcenter forallarms;all10users retained;coverage reported;no favorableuserfilter",
+  "eval": "leavewordout query,othergroupwords enrollment;targetheldoutfromscaler fitting,other9users andsupportwords only;unitprototypecosine;all8queryrepsincluded;nohyperparameterselection",
+  "primary": "EH andAEsharedphone-vswordcenterAUC,userclusterpairedsignflip,Holm2;AYexploratory;offsetsnotselected",
+  "scope": "diagnostic oracle Audio locates historicalfit-word query phones;NOT ACC-onlydeployment;nofinaltestAudio;noEERorKDclaim;rawoldcutwindows mayoverlap butdistinctwordtrials",
+  "no_neural_training": true,
+  "no_final_test_audio": true
+}

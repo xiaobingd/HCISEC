@@ -1,0 +1,182 @@
+[
+  {
+    "group": "AE",
+    "user": 1,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "valid": 24,
+    "total": 24
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "valid": 32,
+    "total": 32
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "valid": 16,
+    "total": 16
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "valid": 16,
+    "total": 16
+  }
+]

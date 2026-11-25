@@ -1,0 +1,46 @@
+[
+  {
+    "group": "AE",
+    "control": "word_center",
+    "delta_auc": -0.019675925925925885,
+    "user_signflip_p": 0.71875,
+    "improved_users": 2,
+    "holm_primary_p": 1.0
+  },
+  {
+    "group": "AE",
+    "control": "wrong_phone",
+    "delta_auc": 0.09571759259259259,
+    "user_signflip_p": 0.0029296875,
+    "improved_users": 9
+  },
+  {
+    "group": "EH",
+    "control": "word_center",
+    "delta_auc": -0.023350694444444476,
+    "user_signflip_p": 0.7705078125,
+    "improved_users": 3,
+    "holm_primary_p": 1.0
+  },
+  {
+    "group": "EH",
+    "control": "wrong_phone",
+    "delta_auc": 0.08046875000000005,
+    "user_signflip_p": 0.0322265625,
+    "improved_users": 7
+  },
+  {
+    "group": "AY",
+    "control": "word_center",
+    "delta_auc": -0.013020833333333343,
+    "user_signflip_p": 0.76171875,
+    "improved_users": 3
+  },
+  {
+    "group": "AY",
+    "control": "wrong_phone",
+    "delta_auc": 0.1084201388888889,
+    "user_signflip_p": 0.060546875,
+    "improved_users": 8
+  }
+]

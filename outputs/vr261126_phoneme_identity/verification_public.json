@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "samples": 720,
+  "recordings": 90,
+  "users": 10,
+  "groups": 3,
+  "arms": 6,
+  "rows": 540,
+  "identity_word_role": "all selected oldfit words only;leavewordout diagnostic",
+  "aggregate_recomputed": true,
+  "holm_recomputed": true,
+  "within_user_word_phone_interval_overlaps": 0,
+  "raw_ACC_replayed_windows": 3,
+  "max_feature_replay_error": 0.0,
+  "final_Audio_opened": false,
+  "manual_phone_validation": false,
+  "oracle_query_Audio": true,
+  "ACC_only_deployment_claim": false,
+  "estimated_phone_duration_median_ms": 150.00000000000034,
+  "estimated_phone_shorter_than_120ms_fraction": 0.2722222222222222
+}

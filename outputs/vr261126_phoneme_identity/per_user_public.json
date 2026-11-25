@@ -1,0 +1,1262 @@
+[
+  {
+    "group": "AE",
+    "user": 1,
+    "arm": "shared_phone",
+    "auc": 0.7372685185185185,
+    "margin": -0.2287328147835975
+  },
+  {
+    "group": "AE",
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.7714120370370371,
+    "margin": -0.1660161285957524
+  },
+  {
+    "group": "AE",
+    "user": 1,
+    "arm": "wrong_phone",
+    "auc": 0.689236111111111,
+    "margin": -0.18096590800257517
+  },
+  {
+    "group": "AE",
+    "user": 1,
+    "arm": "offset_minus100",
+    "auc": 0.7766203703703702,
+    "margin": -0.11923317031804818
+  },
+  {
+    "group": "AE",
+    "user": 1,
+    "arm": "offset_plus100",
+    "auc": 0.6157407407407407,
+    "margin": -0.21390547714541333
+  },
+  {
+    "group": "AE",
+    "user": 1,
+    "arm": "whole_word",
+    "auc": 0.7962962962962963,
+    "margin": -0.22944169448043383
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "arm": "shared_phone",
+    "auc": 0.7291666666666666,
+    "margin": -0.17227874210649716
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5457175925925926,
+    "margin": -0.42677648579877236
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "arm": "wrong_phone",
+    "auc": 0.5254629629629629,
+    "margin": -0.4033832639298636
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "arm": "offset_minus100",
+    "auc": 0.8234953703703703,
+    "margin": -0.1533269321117895
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "arm": "offset_plus100",
+    "auc": 0.5868055555555556,
+    "margin": -0.4003614761141095
+  },
+  {
+    "group": "AE",
+    "user": 2,
+    "arm": "whole_word",
+    "auc": 0.8119212962962963,
+    "margin": -0.21398135338349397
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "arm": "shared_phone",
+    "auc": 0.5225694444444445,
+    "margin": -0.29118463222655744
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.7146990740740741,
+    "margin": -0.12296921327331019
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "arm": "wrong_phone",
+    "auc": 0.46296296296296297,
+    "margin": -0.42541694331209357
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "arm": "offset_minus100",
+    "auc": 0.7094907407407408,
+    "margin": -0.1849750887034887
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "arm": "offset_plus100",
+    "auc": 0.6180555555555556,
+    "margin": -0.1800823439105801
+  },
+  {
+    "group": "AE",
+    "user": 3,
+    "arm": "whole_word",
+    "auc": 0.820601851851852,
+    "margin": -0.173876897096077
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "arm": "shared_phone",
+    "auc": 0.666087962962963,
+    "margin": -0.37104821815660305
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.7621527777777777,
+    "margin": -0.11278076692407801
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "arm": "wrong_phone",
+    "auc": 0.6377314814814815,
+    "margin": -0.25676987565676995
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "arm": "offset_minus100",
+    "auc": 0.8368055555555557,
+    "margin": -0.07535240436538122
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "arm": "offset_plus100",
+    "auc": 0.7355324074074074,
+    "margin": -0.13729019676160523
+  },
+  {
+    "group": "AE",
+    "user": 4,
+    "arm": "whole_word",
+    "auc": 0.8894675925925926,
+    "margin": -0.09511517743065219
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "arm": "shared_phone",
+    "auc": 0.7974537037037036,
+    "margin": -0.05567861740767375
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.6782407407407408,
+    "margin": -0.15083306688412326
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "arm": "wrong_phone",
+    "auc": 0.7193287037037037,
+    "margin": -0.1637772067840705
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "arm": "offset_minus100",
+    "auc": 0.8900462962962963,
+    "margin": -0.01580456610108621
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "arm": "offset_plus100",
+    "auc": 0.7476851851851851,
+    "margin": -0.21531634662005958
+  },
+  {
+    "group": "AE",
+    "user": 5,
+    "arm": "whole_word",
+    "auc": 0.8350694444444445,
+    "margin": -0.07614540638437468
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "arm": "shared_phone",
+    "auc": 0.8096064814814815,
+    "margin": -0.08902147266015437
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.8559027777777777,
+    "margin": -0.11028435592642233
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "arm": "wrong_phone",
+    "auc": 0.6053240740740741,
+    "margin": -0.38226473473787936
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "arm": "offset_minus100",
+    "auc": 0.9097222222222223,
+    "margin": 0.10312980225217981
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "arm": "offset_plus100",
+    "auc": 0.625,
+    "margin": -0.25732836045264956
+  },
+  {
+    "group": "AE",
+    "user": 6,
+    "arm": "whole_word",
+    "auc": 0.9959490740740741,
+    "margin": 0.2296339418991007
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "arm": "shared_phone",
+    "auc": 0.867476851851852,
+    "margin": -0.06610821590931475
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.8836805555555555,
+    "margin": -0.09749206253715519
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "arm": "wrong_phone",
+    "auc": 0.7222222222222223,
+    "margin": -0.2923643158360459
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "arm": "offset_minus100",
+    "auc": 0.9212962962962963,
+    "margin": 0.08394661615391523
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "arm": "offset_plus100",
+    "auc": 0.8391203703703703,
+    "margin": -0.11192688278766734
+  },
+  {
+    "group": "AE",
+    "user": 7,
+    "arm": "whole_word",
+    "auc": 0.9699074074074074,
+    "margin": 0.07033204549803905
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "arm": "shared_phone",
+    "auc": 0.6539351851851852,
+    "margin": -0.2186364456812884
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.6556712962962963,
+    "margin": -0.1877563669426372
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "arm": "wrong_phone",
+    "auc": 0.5787037037037037,
+    "margin": -0.21717216901024328
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "arm": "offset_minus100",
+    "auc": 0.6886574074074074,
+    "margin": -0.18163901796228923
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "arm": "offset_plus100",
+    "auc": 0.5225694444444444,
+    "margin": -0.4088065688984524
+  },
+  {
+    "group": "AE",
+    "user": 8,
+    "arm": "whole_word",
+    "auc": 0.7621527777777777,
+    "margin": -0.13258281142453424
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "arm": "shared_phone",
+    "auc": 0.8692129629629629,
+    "margin": -0.05259358933276809
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.8871527777777777,
+    "margin": -0.014766974770401363
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "arm": "wrong_phone",
+    "auc": 0.7256944444444445,
+    "margin": -0.05901495357179328
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "arm": "offset_minus100",
+    "auc": 0.9166666666666666,
+    "margin": 0.008018008605448471
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "arm": "offset_plus100",
+    "auc": 0.7708333333333334,
+    "margin": -0.12484778107629572
+  },
+  {
+    "group": "AE",
+    "user": 9,
+    "arm": "whole_word",
+    "auc": 0.898726851851852,
+    "margin": -0.10052075198500555
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "arm": "shared_phone",
+    "auc": 0.6273148148148148,
+    "margin": -0.24419686375217664
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.7222222222222222,
+    "margin": -0.18172655911527172
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "arm": "wrong_phone",
+    "auc": 0.65625,
+    "margin": -0.38468806060517863
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "arm": "offset_minus100",
+    "auc": 0.9126157407407408,
+    "margin": 0.00454947250243229
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "arm": "offset_plus100",
+    "auc": 0.6759259259259259,
+    "margin": -0.22643897704962587
+  },
+  {
+    "group": "AE",
+    "user": 10,
+    "arm": "whole_word",
+    "auc": 0.8877314814814814,
+    "margin": -0.07379573063358559
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "arm": "shared_phone",
+    "auc": 0.4722222222222222,
+    "margin": -0.3165905725652667
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.661892361111111,
+    "margin": -0.22110294797931623
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "arm": "wrong_phone",
+    "auc": 0.5295138888888888,
+    "margin": -0.34171269908607227
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "arm": "offset_minus100",
+    "auc": 0.8229166666666667,
+    "margin": -0.03613775124824556
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "arm": "offset_plus100",
+    "auc": 0.7777777777777778,
+    "margin": -0.1641942336741684
+  },
+  {
+    "group": "EH",
+    "user": 1,
+    "arm": "whole_word",
+    "auc": 0.8806423611111112,
+    "margin": -0.030428583292266095
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "arm": "shared_phone",
+    "auc": 0.6701388888888888,
+    "margin": -0.2694661342627334
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5555555555555556,
+    "margin": -0.3449019240339476
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "arm": "wrong_phone",
+    "auc": 0.7725694444444444,
+    "margin": -0.16150754980750318
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "arm": "offset_minus100",
+    "auc": 0.8159722222222223,
+    "margin": -0.10358025181728646
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "arm": "offset_plus100",
+    "auc": 0.6176215277777777,
+    "margin": -0.271850247194202
+  },
+  {
+    "group": "EH",
+    "user": 2,
+    "arm": "whole_word",
+    "auc": 0.8376736111111112,
+    "margin": -0.03807130334731085
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "arm": "shared_phone",
+    "auc": 0.7907986111111112,
+    "margin": -0.10332458424909381
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.724826388888889,
+    "margin": -0.2208516189463433
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "arm": "wrong_phone",
+    "auc": 0.5928819444444444,
+    "margin": -0.24645025685644287
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "arm": "offset_minus100",
+    "auc": 0.7122395833333333,
+    "margin": -0.17529467579295582
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "arm": "offset_plus100",
+    "auc": 0.6397569444444444,
+    "margin": -0.2653026238427639
+  },
+  {
+    "group": "EH",
+    "user": 3,
+    "arm": "whole_word",
+    "auc": 0.8463541666666667,
+    "margin": -0.08796527707896533
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "arm": "shared_phone",
+    "auc": 0.7951388888888888,
+    "margin": -0.18061485837839697
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.8428819444444444,
+    "margin": -0.08885535846188808
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "arm": "wrong_phone",
+    "auc": 0.6145833333333333,
+    "margin": -0.24126312067031108
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "arm": "offset_minus100",
+    "auc": 0.8897569444444444,
+    "margin": 0.022995099743486132
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "arm": "offset_plus100",
+    "auc": 0.5425347222222221,
+    "margin": -0.28561957883025646
+  },
+  {
+    "group": "EH",
+    "user": 4,
+    "arm": "whole_word",
+    "auc": 0.9348958333333335,
+    "margin": 0.07012557393782426
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "arm": "shared_phone",
+    "auc": 0.787326388888889,
+    "margin": -0.10679297177058983
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.6948784722222223,
+    "margin": -0.186221697712135
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "arm": "wrong_phone",
+    "auc": 0.5620659722222222,
+    "margin": -0.2675308640887112
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "arm": "offset_minus100",
+    "auc": 0.88671875,
+    "margin": 0.041452865120818
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "arm": "offset_plus100",
+    "auc": 0.7026909722222222,
+    "margin": -0.1753378429481271
+  },
+  {
+    "group": "EH",
+    "user": 5,
+    "arm": "whole_word",
+    "auc": 0.7981770833333334,
+    "margin": -0.11567736182093351
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "arm": "shared_phone",
+    "auc": 0.7126736111111112,
+    "margin": -0.2337415283973279
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.7725694444444444,
+    "margin": -0.22157197867415748
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "arm": "wrong_phone",
+    "auc": 0.7065972222222221,
+    "margin": -0.22500238072701684
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "arm": "offset_minus100",
+    "auc": 0.9309895833333334,
+    "margin": 0.07397066211163694
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "arm": "offset_plus100",
+    "auc": 0.45182291666666663,
+    "margin": -0.43713661470938314
+  },
+  {
+    "group": "EH",
+    "user": 6,
+    "arm": "whole_word",
+    "auc": 0.9865451388888888,
+    "margin": 0.25530530948261165
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "arm": "shared_phone",
+    "auc": 0.7951388888888888,
+    "margin": -0.1630187149159524
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.8181423611111112,
+    "margin": -0.16785592912721795
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "arm": "wrong_phone",
+    "auc": 0.681423611111111,
+    "margin": -0.2651504702003588
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "arm": "offset_minus100",
+    "auc": 0.8897569444444444,
+    "margin": 0.021052755497095815
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "arm": "offset_plus100",
+    "auc": 0.8064236111111112,
+    "margin": -0.15228567804568613
+  },
+  {
+    "group": "EH",
+    "user": 7,
+    "arm": "whole_word",
+    "auc": 0.8637152777777778,
+    "margin": -0.15766005930025281
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "arm": "shared_phone",
+    "auc": 0.6796875,
+    "margin": -0.1785777026491906
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.8020833333333335,
+    "margin": -0.07983556851077263
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "arm": "wrong_phone",
+    "auc": 0.6297743055555556,
+    "margin": -0.253757414391128
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "arm": "offset_minus100",
+    "auc": 0.8012152777777777,
+    "margin": -0.03871806677217045
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "arm": "offset_plus100",
+    "auc": 0.80859375,
+    "margin": -0.07734107446381955
+  },
+  {
+    "group": "EH",
+    "user": 8,
+    "arm": "whole_word",
+    "auc": 0.8224826388888888,
+    "margin": -0.09553343626856023
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "arm": "shared_phone",
+    "auc": 0.8528645833333334,
+    "margin": -0.11673814714486123
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9066840277777778,
+    "margin": -0.021060430801729375
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "arm": "wrong_phone",
+    "auc": 0.8637152777777777,
+    "margin": -0.07831432852044876
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "arm": "offset_minus100",
+    "auc": 0.9171006944444444,
+    "margin": 0.02751292777465013
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "arm": "offset_plus100",
+    "auc": 0.865017361111111,
+    "margin": -0.06982344051872053
+  },
+  {
+    "group": "EH",
+    "user": 9,
+    "arm": "whole_word",
+    "auc": 0.9592013888888888,
+    "margin": 0.09646171557438236
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "arm": "shared_phone",
+    "auc": 0.7569444444444444,
+    "margin": -0.16687884832187333
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.7669270833333334,
+    "margin": -0.17603275290916504
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "arm": "wrong_phone",
+    "auc": 0.5551215277777778,
+    "margin": -0.28154385972764057
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "arm": "offset_minus100",
+    "auc": 0.8676215277777778,
+    "margin": -0.01352057505553349
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "arm": "offset_plus100",
+    "auc": 0.7374131944444444,
+    "margin": -0.276905394917724
+  },
+  {
+    "group": "EH",
+    "user": 10,
+    "arm": "whole_word",
+    "auc": 0.8302951388888888,
+    "margin": -0.18497116797716967
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "arm": "shared_phone",
+    "auc": 0.7690972222222223,
+    "margin": -0.0786573132175696
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.8272569444444444,
+    "margin": -0.06271286352953696
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "arm": "wrong_phone",
+    "auc": 0.6137152777777778,
+    "margin": -0.20542272168132197
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "arm": "offset_minus100",
+    "auc": 0.8333333333333334,
+    "margin": 0.030972039651302286
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "arm": "offset_plus100",
+    "auc": 0.6866319444444444,
+    "margin": -0.17649908714632878
+  },
+  {
+    "group": "AY",
+    "user": 1,
+    "arm": "whole_word",
+    "auc": 0.8888888888888888,
+    "margin": -0.05384531993809415
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "arm": "shared_phone",
+    "auc": 0.4869791666666667,
+    "margin": -0.4305396689571456
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5295138888888888,
+    "margin": -0.3612172976396696
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "arm": "wrong_phone",
+    "auc": 0.6484375,
+    "margin": -0.32671511319877944
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "arm": "offset_minus100",
+    "auc": 0.6796875,
+    "margin": -0.25635903028668716
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "arm": "offset_plus100",
+    "auc": 0.6189236111111112,
+    "margin": -0.27537286287835894
+  },
+  {
+    "group": "AY",
+    "user": 2,
+    "arm": "whole_word",
+    "auc": 0.9383680555555556,
+    "margin": 0.07191738999704786
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "arm": "shared_phone",
+    "auc": 0.7673611111111112,
+    "margin": -0.18680046745850387
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.7838541666666667,
+    "margin": -0.1606263665223997
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "arm": "wrong_phone",
+    "auc": 0.5494791666666665,
+    "margin": -0.3225467305328028
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "arm": "offset_minus100",
+    "auc": 0.4609375,
+    "margin": -0.3382711248946399
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "arm": "offset_plus100",
+    "auc": 0.8315972222222222,
+    "margin": -0.04323468445207432
+  },
+  {
+    "group": "AY",
+    "user": 3,
+    "arm": "whole_word",
+    "auc": 0.8697916666666666,
+    "margin": -0.07516332017911956
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "arm": "shared_phone",
+    "auc": 0.84375,
+    "margin": -0.13803626065700034
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.8237847222222222,
+    "margin": -0.09398161298373649
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "arm": "wrong_phone",
+    "auc": 0.6822916666666667,
+    "margin": -0.15486668719947483
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "arm": "offset_minus100",
+    "auc": 0.96875,
+    "margin": 0.1329966104416052
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "arm": "offset_plus100",
+    "auc": 0.5789930555555556,
+    "margin": -0.22475294142141633
+  },
+  {
+    "group": "AY",
+    "user": 4,
+    "arm": "whole_word",
+    "auc": 0.9661458333333333,
+    "margin": 0.1424899477860152
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "arm": "shared_phone",
+    "auc": 0.6545138888888888,
+    "margin": -0.2563511460453149
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.671875,
+    "margin": -0.18026947329190923
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "arm": "wrong_phone",
+    "auc": 0.5746527777777778,
+    "margin": -0.3064699799480076
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "arm": "offset_minus100",
+    "auc": 0.8194444444444444,
+    "margin": -0.01578645100971195
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "arm": "offset_plus100",
+    "auc": 0.48263888888888884,
+    "margin": -0.3694773090255046
+  },
+  {
+    "group": "AY",
+    "user": 5,
+    "arm": "whole_word",
+    "auc": 0.7960069444444444,
+    "margin": -0.15434836608235306
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "arm": "shared_phone",
+    "auc": 0.8958333333333333,
+    "margin": 0.10536616083156529
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.8802083333333334,
+    "margin": -0.005087186267884989
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "arm": "wrong_phone",
+    "auc": 0.6310763888888888,
+    "margin": -0.32155812921527704
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "arm": "offset_minus100",
+    "auc": 0.9730902777777778,
+    "margin": 0.1540910882315047
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "arm": "offset_plus100",
+    "auc": 0.5112847222222222,
+    "margin": -0.2584291333730349
+  },
+  {
+    "group": "AY",
+    "user": 6,
+    "arm": "whole_word",
+    "auc": 0.9331597222222222,
+    "margin": 0.057406831085620245
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "arm": "shared_phone",
+    "auc": 0.9010416666666667,
+    "margin": -0.00722591089052569
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.90625,
+    "margin": 0.07160222314072501
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "arm": "wrong_phone",
+    "auc": 0.8723958333333333,
+    "margin": -0.05211886888464608
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "arm": "offset_minus100",
+    "auc": 0.9887152777777778,
+    "margin": 0.2002623478235642
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "arm": "offset_plus100",
+    "auc": 0.875,
+    "margin": 0.032573150348764755
+  },
+  {
+    "group": "AY",
+    "user": 7,
+    "arm": "whole_word",
+    "auc": 0.967013888888889,
+    "margin": 0.0815023214361177
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "arm": "shared_phone",
+    "auc": 0.5460069444444444,
+    "margin": -0.4091065119706261
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.6328125,
+    "margin": -0.22097323913758793
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "arm": "wrong_phone",
+    "auc": 0.8324652777777778,
+    "margin": -0.07713218128904388
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "arm": "offset_minus100",
+    "auc": 0.7821180555555556,
+    "margin": -0.10803015634971797
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "arm": "offset_plus100",
+    "auc": 0.7534722222222221,
+    "margin": -0.10636797273544132
+  },
+  {
+    "group": "AY",
+    "user": 8,
+    "arm": "whole_word",
+    "auc": 0.9001736111111112,
+    "margin": -0.044236979814122196
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "arm": "shared_phone",
+    "auc": 0.8645833333333333,
+    "margin": -0.04495757103340142
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9184027777777778,
+    "margin": 0.002131259317628033
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "arm": "wrong_phone",
+    "auc": 0.584201388888889,
+    "margin": -0.3001123982957494
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "arm": "offset_minus100",
+    "auc": 0.9053819444444444,
+    "margin": -0.01185077885872154
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "arm": "offset_plus100",
+    "auc": 0.8723958333333333,
+    "margin": -0.07116632075686252
+  },
+  {
+    "group": "AY",
+    "user": 9,
+    "arm": "whole_word",
+    "auc": 0.9175347222222223,
+    "margin": -0.0186027512739896
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "arm": "shared_phone",
+    "auc": 0.6241319444444444,
+    "margin": -0.269060955566498
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.5095486111111112,
+    "margin": -0.28568582241246104
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "arm": "wrong_phone",
+    "auc": 0.2803819444444444,
+    "margin": -0.5997610974796402
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "arm": "offset_minus100",
+    "auc": 0.45486111111111116,
+    "margin": -0.3982770657964395
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "arm": "offset_plus100",
+    "auc": 0.3368055555555556,
+    "margin": -0.400648103377785
+  },
+  {
+    "group": "AY",
+    "user": 10,
+    "arm": "whole_word",
+    "auc": 0.6111111111111112,
+    "margin": -0.16068190943891505
+  }
+]
