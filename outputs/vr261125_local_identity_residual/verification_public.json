@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "candidate_groups": 3,
+  "identity_pairs_per_group": 45,
+  "user_rows": 30,
+  "aggregate_recomputed": true,
+  "holm_recomputed": true,
+  "repeat_stability_scope": "descriptive all-cohort train-word standardized even-vs-odd pairrelations; no predictive selection",
+  "final_test_audio_opened": false
+}

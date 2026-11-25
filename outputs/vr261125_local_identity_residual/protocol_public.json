@@ -1,0 +1,41 @@
+{
+  "train_words": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    13,
+    14,
+    15
+  ],
+  "validation_words": [
+    16,
+    17,
+    33,
+    34
+  ],
+  "users": 10,
+  "samples": 1280,
+  "candidates": [
+    "shape",
+    "envelope",
+    "combined"
+  ],
+  "shape": "14D: per-frame 7band logpowers minus frequency mean; time mean/std; NOT F0 or resolved harmonics",
+  "envelope": "15D: within-window standardized 300-3500Hz logenergy,10timebins,autocorrelation at20/40/100/200/400ms; NOT vocal-fold periodicity",
+  "target": "bidirectional different-user cross-word raw ACC cosine; even repeats support, odd repeats nextword query",
+  "baseline": "same-word ACC cosine + summed/absolute-difference energy mean/std; offline diagnostic uses Audio activity in botharms",
+  "fit": "standardized Ridge10 fixed;45 endpointheldpair folds,8baseusers only;wordcentering28basepairs only;validationword background used for centering,notregression",
+  "permutation": "199 fixedseed20261125 global Audio user permutations sharedacrosswords/candidates; refit everypredictor; candidatefeature scalers fittedbase/trainonly beforepermutation",
+  "multiplicity": "Holm3 forprimaryMSEimprovement;hardquartile secondary,separateHolm3",
+  "hard": "topquartile ACC samewordrelationship ontrain28basepairs",
+  "scope": "historical16fitwordcache;fourvalidationwords alreadyseen;exploratorynotblind;physicalsync unverified;windowsmayoverlap;noF0claim;noauthenticationgainclaim",
+  "repeat_stability": "Spearman same-word pairrelations even vs odd prototypes perword,descriptiveonly",
+  "no_final_test_audio": true,
+  "no_neural_training": true
+}

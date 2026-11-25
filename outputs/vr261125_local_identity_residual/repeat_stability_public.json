@@ -1,0 +1,162 @@
+[
+  {
+    "candidate": "shape",
+    "word": 0,
+    "spearman": 0.8508563899868248
+  },
+  {
+    "candidate": "shape",
+    "word": 1,
+    "spearman": 0.9279314888010538
+  },
+  {
+    "candidate": "shape",
+    "word": 2,
+    "spearman": 0.806060606060606
+  },
+  {
+    "candidate": "shape",
+    "word": 4,
+    "spearman": 0.800395256916996
+  },
+  {
+    "candidate": "shape",
+    "word": 5,
+    "spearman": 0.9028985507246375
+  },
+  {
+    "candidate": "shape",
+    "word": 6,
+    "spearman": 0.7644268774703556
+  },
+  {
+    "candidate": "shape",
+    "word": 7,
+    "spearman": 0.7466403162055335
+  },
+  {
+    "candidate": "shape",
+    "word": 10,
+    "spearman": 0.7893280632411066
+  },
+  {
+    "candidate": "shape",
+    "word": 11,
+    "spearman": 0.7965744400527008
+  },
+  {
+    "candidate": "shape",
+    "word": 13,
+    "spearman": 0.9517786561264822
+  },
+  {
+    "candidate": "shape",
+    "word": 14,
+    "spearman": 0.7399209486166007
+  },
+  {
+    "candidate": "shape",
+    "word": 15,
+    "spearman": 0.897364953886693
+  },
+  {
+    "candidate": "shape",
+    "word": 16,
+    "spearman": 0.8849802371541501
+  },
+  {
+    "candidate": "shape",
+    "word": 17,
+    "spearman": 0.8974967061923582
+  },
+  {
+    "candidate": "shape",
+    "word": 33,
+    "spearman": 0.9471673254281949
+  },
+  {
+    "candidate": "shape",
+    "word": 34,
+    "spearman": 0.8482213438735177
+  },
+  {
+    "candidate": "envelope",
+    "word": 0,
+    "spearman": 0.8926218708827404
+  },
+  {
+    "candidate": "envelope",
+    "word": 1,
+    "spearman": 0.8420289855072463
+  },
+  {
+    "candidate": "envelope",
+    "word": 2,
+    "spearman": 0.7872200263504611
+  },
+  {
+    "candidate": "envelope",
+    "word": 4,
+    "spearman": 0.7913043478260869
+  },
+  {
+    "candidate": "envelope",
+    "word": 5,
+    "spearman": 0.7920948616600788
+  },
+  {
+    "candidate": "envelope",
+    "word": 6,
+    "spearman": 0.8794466403162055
+  },
+  {
+    "candidate": "envelope",
+    "word": 7,
+    "spearman": 0.8210803689064559
+  },
+  {
+    "candidate": "envelope",
+    "word": 10,
+    "spearman": 0.9077733860342555
+  },
+  {
+    "candidate": "envelope",
+    "word": 11,
+    "spearman": 0.8263504611330699
+  },
+  {
+    "candidate": "envelope",
+    "word": 13,
+    "spearman": 0.9031620553359684
+  },
+  {
+    "candidate": "envelope",
+    "word": 14,
+    "spearman": 0.8358366271409748
+  },
+  {
+    "candidate": "envelope",
+    "word": 15,
+    "spearman": 0.8981554677206851
+  },
+  {
+    "candidate": "envelope",
+    "word": 16,
+    "spearman": 0.8368906455862978
+  },
+  {
+    "candidate": "envelope",
+    "word": 17,
+    "spearman": 0.817786561264822
+  },
+  {
+    "candidate": "envelope",
+    "word": 33,
+    "spearman": 0.9251646903820816
+  },
+  {
+    "candidate": "envelope",
+    "word": 34,
+    "spearman": 0.8096179183135704
+  }
+]

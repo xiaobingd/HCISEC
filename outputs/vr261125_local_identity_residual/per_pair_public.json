@@ -1,0 +1,1217 @@
+[
+  {
+    "user_pair": [
+      1,
+      2
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.05237069741186093,
+    "audio_mse": 0.05218827910359369
+  },
+  {
+    "user_pair": [
+      1,
+      2
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.05237069741186093,
+    "audio_mse": 0.04824934620303783
+  },
+  {
+    "user_pair": [
+      1,
+      2
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.05237069741186093,
+    "audio_mse": 0.04795827675309006
+  },
+  {
+    "user_pair": [
+      1,
+      3
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.026701066031743746,
+    "audio_mse": 0.028714809252866017
+  },
+  {
+    "user_pair": [
+      1,
+      3
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.026701066031743746,
+    "audio_mse": 0.029488766931964228
+  },
+  {
+    "user_pair": [
+      1,
+      3
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.026701066031743746,
+    "audio_mse": 0.03194521751972951
+  },
+  {
+    "user_pair": [
+      1,
+      4
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.013508501601115275,
+    "audio_mse": 0.018691727306661316
+  },
+  {
+    "user_pair": [
+      1,
+      4
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.013508501601115275,
+    "audio_mse": 0.023524988063012335
+  },
+  {
+    "user_pair": [
+      1,
+      4
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.013508501601115275,
+    "audio_mse": 0.03244708519183268
+  },
+  {
+    "user_pair": [
+      1,
+      5
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.03966257570890429,
+    "audio_mse": 0.04506545118866559
+  },
+  {
+    "user_pair": [
+      1,
+      5
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.03966257570890429,
+    "audio_mse": 0.042915264895008215
+  },
+  {
+    "user_pair": [
+      1,
+      5
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.03966257570890429,
+    "audio_mse": 0.0478596286601707
+  },
+  {
+    "user_pair": [
+      1,
+      6
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.1948861427784505,
+    "audio_mse": 0.19327040054870234
+  },
+  {
+    "user_pair": [
+      1,
+      6
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.1948861427784505,
+    "audio_mse": 0.18759721221985148
+  },
+  {
+    "user_pair": [
+      1,
+      6
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.1948861427784505,
+    "audio_mse": 0.1878499034389284
+  },
+  {
+    "user_pair": [
+      1,
+      7
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.06609103753580384,
+    "audio_mse": 0.07059304447836454
+  },
+  {
+    "user_pair": [
+      1,
+      7
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.06609103753580384,
+    "audio_mse": 0.06109275870968056
+  },
+  {
+    "user_pair": [
+      1,
+      7
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.06609103753580384,
+    "audio_mse": 0.06497947870474383
+  },
+  {
+    "user_pair": [
+      1,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.010231595022971973,
+    "audio_mse": 0.010984107709910595
+  },
+  {
+    "user_pair": [
+      1,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.010231595022971973,
+    "audio_mse": 0.024951480860023984
+  },
+  {
+    "user_pair": [
+      1,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.010231595022971973,
+    "audio_mse": 0.025565336133567686
+  },
+  {
+    "user_pair": [
+      1,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.14221637848562452,
+    "audio_mse": 0.14429472756612008
+  },
+  {
+    "user_pair": [
+      1,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.14221637848562452,
+    "audio_mse": 0.1414936620417535
+  },
+  {
+    "user_pair": [
+      1,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.14221637848562452,
+    "audio_mse": 0.14341461616327256
+  },
+  {
+    "user_pair": [
+      1,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.03470394583814188,
+    "audio_mse": 0.035625685629598995
+  },
+  {
+    "user_pair": [
+      1,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.03470394583814188,
+    "audio_mse": 0.03460690514046437
+  },
+  {
+    "user_pair": [
+      1,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.03470394583814188,
+    "audio_mse": 0.035106534483281056
+  },
+  {
+    "user_pair": [
+      2,
+      3
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.04309899450419246,
+    "audio_mse": 0.03437874740043452
+  },
+  {
+    "user_pair": [
+      2,
+      3
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.04309899450419246,
+    "audio_mse": 0.043732069262585396
+  },
+  {
+    "user_pair": [
+      2,
+      3
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.04309899450419246,
+    "audio_mse": 0.03550024060313713
+  },
+  {
+    "user_pair": [
+      2,
+      4
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.04714369181146319,
+    "audio_mse": 0.025729696482975743
+  },
+  {
+    "user_pair": [
+      2,
+      4
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.04714369181146319,
+    "audio_mse": 0.025280601790004922
+  },
+  {
+    "user_pair": [
+      2,
+      4
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.04714369181146319,
+    "audio_mse": 0.007386140672563136
+  },
+  {
+    "user_pair": [
+      2,
+      5
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.1564979387530126,
+    "audio_mse": 0.15186190544045394
+  },
+  {
+    "user_pair": [
+      2,
+      5
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.1564979387530126,
+    "audio_mse": 0.15429046962415946
+  },
+  {
+    "user_pair": [
+      2,
+      5
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.1564979387530126,
+    "audio_mse": 0.15211603134169666
+  },
+  {
+    "user_pair": [
+      2,
+      6
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.13582522000856956,
+    "audio_mse": 0.1390229118172873
+  },
+  {
+    "user_pair": [
+      2,
+      6
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.13582522000856956,
+    "audio_mse": 0.11341345614855347
+  },
+  {
+    "user_pair": [
+      2,
+      6
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.13582522000856956,
+    "audio_mse": 0.11832822926195163
+  },
+  {
+    "user_pair": [
+      2,
+      7
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.30698937042118546,
+    "audio_mse": 0.3139269556510113
+  },
+  {
+    "user_pair": [
+      2,
+      7
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.30698937042118546,
+    "audio_mse": 0.25716407814914094
+  },
+  {
+    "user_pair": [
+      2,
+      7
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.30698937042118546,
+    "audio_mse": 0.26405357604691526
+  },
+  {
+    "user_pair": [
+      2,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.03312365360192012,
+    "audio_mse": 0.030070916756727552
+  },
+  {
+    "user_pair": [
+      2,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.03312365360192012,
+    "audio_mse": 0.02317149319368012
+  },
+  {
+    "user_pair": [
+      2,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.03312365360192012,
+    "audio_mse": 0.02139299026761528
+  },
+  {
+    "user_pair": [
+      2,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.21695425150353798,
+    "audio_mse": 0.2308431099065159
+  },
+  {
+    "user_pair": [
+      2,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.21695425150353798,
+    "audio_mse": 0.23105146561650342
+  },
+  {
+    "user_pair": [
+      2,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.21695425150353798,
+    "audio_mse": 0.247409133408306
+  },
+  {
+    "user_pair": [
+      2,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.10755036167689502,
+    "audio_mse": 0.10819176319955255
+  },
+  {
+    "user_pair": [
+      2,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.10755036167689502,
+    "audio_mse": 0.07924915502746638
+  },
+  {
+    "user_pair": [
+      2,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.10755036167689502,
+    "audio_mse": 0.08013312901041622
+  },
+  {
+    "user_pair": [
+      3,
+      4
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.20819680004556554,
+    "audio_mse": 0.22842194543397762
+  },
+  {
+    "user_pair": [
+      3,
+      4
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.20819680004556554,
+    "audio_mse": 0.21322903199375604
+  },
+  {
+    "user_pair": [
+      3,
+      4
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.20819680004556554,
+    "audio_mse": 0.23436786357049488
+  },
+  {
+    "user_pair": [
+      3,
+      5
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.20831866844771985,
+    "audio_mse": 0.2122670979020375
+  },
+  {
+    "user_pair": [
+      3,
+      5
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.20831866844771985,
+    "audio_mse": 0.21011853578786985
+  },
+  {
+    "user_pair": [
+      3,
+      5
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.20831866844771985,
+    "audio_mse": 0.21416533347843728
+  },
+  {
+    "user_pair": [
+      3,
+      6
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.11817061600493961,
+    "audio_mse": 0.12162031689464456
+  },
+  {
+    "user_pair": [
+      3,
+      6
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.11817061600493961,
+    "audio_mse": 0.11208963110731121
+  },
+  {
+    "user_pair": [
+      3,
+      6
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.11817061600493961,
+    "audio_mse": 0.11706823483687184
+  },
+  {
+    "user_pair": [
+      3,
+      7
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.06581127829119947,
+    "audio_mse": 0.06551238233523081
+  },
+  {
+    "user_pair": [
+      3,
+      7
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.06581127829119947,
+    "audio_mse": 0.06696874757632222
+  },
+  {
+    "user_pair": [
+      3,
+      7
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.06581127829119947,
+    "audio_mse": 0.06682078193393157
+  },
+  {
+    "user_pair": [
+      3,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.027659681964053724,
+    "audio_mse": 0.027345105199526997
+  },
+  {
+    "user_pair": [
+      3,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.027659681964053724,
+    "audio_mse": 0.046757196381694205
+  },
+  {
+    "user_pair": [
+      3,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.027659681964053724,
+    "audio_mse": 0.04626677144297991
+  },
+  {
+    "user_pair": [
+      3,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.28033635277133595,
+    "audio_mse": 0.30125331603660527
+  },
+  {
+    "user_pair": [
+      3,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.28033635277133595,
+    "audio_mse": 0.28017689505628807
+  },
+  {
+    "user_pair": [
+      3,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.28033635277133595,
+    "audio_mse": 0.3011075980797775
+  },
+  {
+    "user_pair": [
+      3,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.035029954261669556,
+    "audio_mse": 0.033799942401564295
+  },
+  {
+    "user_pair": [
+      3,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.035029954261669556,
+    "audio_mse": 0.03131221576262274
+  },
+  {
+    "user_pair": [
+      3,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.035029954261669556,
+    "audio_mse": 0.03064745865036852
+  },
+  {
+    "user_pair": [
+      4,
+      5
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.046588598362780356,
+    "audio_mse": 0.045770616729370814
+  },
+  {
+    "user_pair": [
+      4,
+      5
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.046588598362780356,
+    "audio_mse": 0.030713784751630786
+  },
+  {
+    "user_pair": [
+      4,
+      5
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.046588598362780356,
+    "audio_mse": 0.030398261829949813
+  },
+  {
+    "user_pair": [
+      4,
+      6
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.22032511295055873,
+    "audio_mse": 0.23071713408666378
+  },
+  {
+    "user_pair": [
+      4,
+      6
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.22032511295055873,
+    "audio_mse": 0.22129373329623708
+  },
+  {
+    "user_pair": [
+      4,
+      6
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.22032511295055873,
+    "audio_mse": 0.23789092410954174
+  },
+  {
+    "user_pair": [
+      4,
+      7
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.24555100135420763,
+    "audio_mse": 0.24335399448248718
+  },
+  {
+    "user_pair": [
+      4,
+      7
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.24555100135420763,
+    "audio_mse": 0.238200927231151
+  },
+  {
+    "user_pair": [
+      4,
+      7
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.24555100135420763,
+    "audio_mse": 0.23512037767188415
+  },
+  {
+    "user_pair": [
+      4,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.06211418299773788,
+    "audio_mse": 0.06164187809869065
+  },
+  {
+    "user_pair": [
+      4,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.06211418299773788,
+    "audio_mse": 0.10121691473869301
+  },
+  {
+    "user_pair": [
+      4,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.06211418299773788,
+    "audio_mse": 0.10199849853034695
+  },
+  {
+    "user_pair": [
+      4,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.10784005699641488,
+    "audio_mse": 0.11721616299829477
+  },
+  {
+    "user_pair": [
+      4,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.10784005699641488,
+    "audio_mse": 0.10383381970438021
+  },
+  {
+    "user_pair": [
+      4,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.10784005699641488,
+    "audio_mse": 0.112266265727046
+  },
+  {
+    "user_pair": [
+      4,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.06321132524318737,
+    "audio_mse": 0.06491860419838652
+  },
+  {
+    "user_pair": [
+      4,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.06321132524318737,
+    "audio_mse": 0.048125673315749434
+  },
+  {
+    "user_pair": [
+      4,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.06321132524318737,
+    "audio_mse": 0.050043868311050496
+  },
+  {
+    "user_pair": [
+      5,
+      6
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.14044502308070383,
+    "audio_mse": 0.1282883471247569
+  },
+  {
+    "user_pair": [
+      5,
+      6
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.14044502308070383,
+    "audio_mse": 0.13442660944644547
+  },
+  {
+    "user_pair": [
+      5,
+      6
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.14044502308070383,
+    "audio_mse": 0.12456491085588771
+  },
+  {
+    "user_pair": [
+      5,
+      7
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.06711792139402152,
+    "audio_mse": 0.07658597883414378
+  },
+  {
+    "user_pair": [
+      5,
+      7
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.06711792139402152,
+    "audio_mse": 0.05380007694072073
+  },
+  {
+    "user_pair": [
+      5,
+      7
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.06711792139402152,
+    "audio_mse": 0.0625952816388913
+  },
+  {
+    "user_pair": [
+      5,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.053457554525784046,
+    "audio_mse": 0.06683822664008955
+  },
+  {
+    "user_pair": [
+      5,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.053457554525784046,
+    "audio_mse": 0.11047182977133765
+  },
+  {
+    "user_pair": [
+      5,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.053457554525784046,
+    "audio_mse": 0.12633429908640442
+  },
+  {
+    "user_pair": [
+      5,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.15769117386332185,
+    "audio_mse": 0.15263419910574832
+  },
+  {
+    "user_pair": [
+      5,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.15769117386332185,
+    "audio_mse": 0.15676653803157692
+  },
+  {
+    "user_pair": [
+      5,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.15769117386332185,
+    "audio_mse": 0.15144004357887558
+  },
+  {
+    "user_pair": [
+      5,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.04644301006559724,
+    "audio_mse": 0.06522116533283828
+  },
+  {
+    "user_pair": [
+      5,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.04644301006559724,
+    "audio_mse": 0.036309159073901885
+  },
+  {
+    "user_pair": [
+      5,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.04644301006559724,
+    "audio_mse": 0.053473344910864834
+  },
+  {
+    "user_pair": [
+      6,
+      7
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.20219336058063453,
+    "audio_mse": 0.20403471584395116
+  },
+  {
+    "user_pair": [
+      6,
+      7
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.20219336058063453,
+    "audio_mse": 0.22407222465212134
+  },
+  {
+    "user_pair": [
+      6,
+      7
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.20219336058063453,
+    "audio_mse": 0.22633722334518852
+  },
+  {
+    "user_pair": [
+      6,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.11240359414639099,
+    "audio_mse": 0.10351511148128713
+  },
+  {
+    "user_pair": [
+      6,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.11240359414639099,
+    "audio_mse": 0.10060632412346993
+  },
+  {
+    "user_pair": [
+      6,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.11240359414639099,
+    "audio_mse": 0.0958853632830522
+  },
+  {
+    "user_pair": [
+      6,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.09866274288041466,
+    "audio_mse": 0.0996371430986958
+  },
+  {
+    "user_pair": [
+      6,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.09866274288041466,
+    "audio_mse": 0.09486683110404559
+  },
+  {
+    "user_pair": [
+      6,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.09866274288041466,
+    "audio_mse": 0.09617702882770315
+  },
+  {
+    "user_pair": [
+      6,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.20594502422741098,
+    "audio_mse": 0.20520195824512885
+  },
+  {
+    "user_pair": [
+      6,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.20594502422741098,
+    "audio_mse": 0.1926439328253066
+  },
+  {
+    "user_pair": [
+      6,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.20594502422741098,
+    "audio_mse": 0.19226453637822494
+  },
+  {
+    "user_pair": [
+      7,
+      8
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.03733975494569509,
+    "audio_mse": 0.03101284036198062
+  },
+  {
+    "user_pair": [
+      7,
+      8
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.03733975494569509,
+    "audio_mse": 0.03618979643766489
+  },
+  {
+    "user_pair": [
+      7,
+      8
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.03733975494569509,
+    "audio_mse": 0.030207490533185426
+  },
+  {
+    "user_pair": [
+      7,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.11931429873811952,
+    "audio_mse": 0.11883419623538653
+  },
+  {
+    "user_pair": [
+      7,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.11931429873811952,
+    "audio_mse": 0.11881893733726284
+  },
+  {
+    "user_pair": [
+      7,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.11931429873811952,
+    "audio_mse": 0.11833500781032524
+  },
+  {
+    "user_pair": [
+      7,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.1559215231075634,
+    "audio_mse": 0.17094618154659375
+  },
+  {
+    "user_pair": [
+      7,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.1559215231075634,
+    "audio_mse": 0.14938536947442768
+  },
+  {
+    "user_pair": [
+      7,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.1559215231075634,
+    "audio_mse": 0.1649559666179416
+  },
+  {
+    "user_pair": [
+      8,
+      9
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.13991602201296735,
+    "audio_mse": 0.13987592635561227
+  },
+  {
+    "user_pair": [
+      8,
+      9
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.13991602201296735,
+    "audio_mse": 0.2198484834605205
+  },
+  {
+    "user_pair": [
+      8,
+      9
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.13991602201296735,
+    "audio_mse": 0.21989872521549716
+  },
+  {
+    "user_pair": [
+      8,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.03408620857057253,
+    "audio_mse": 0.032243892907485916
+  },
+  {
+    "user_pair": [
+      8,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.03408620857057253,
+    "audio_mse": 0.02420559174948917
+  },
+  {
+    "user_pair": [
+      8,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.03408620857057253,
+    "audio_mse": 0.023962898126980936
+  },
+  {
+    "user_pair": [
+      9,
+      10
+    ],
+    "candidate": "shape",
+    "baseline_mse": 0.018585791737143666,
+    "audio_mse": 0.018238020372620033
+  },
+  {
+    "user_pair": [
+      9,
+      10
+    ],
+    "candidate": "envelope",
+    "baseline_mse": 0.018585791737143666,
+    "audio_mse": 0.01888429481124704
+  },
+  {
+    "user_pair": [
+      9,
+      10
+    ],
+    "candidate": "combined",
+    "baseline_mse": 0.018585791737143666,
+    "audio_mse": 0.018596315594976525
+  }
+]
