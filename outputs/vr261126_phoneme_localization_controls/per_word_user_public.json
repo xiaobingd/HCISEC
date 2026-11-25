@@ -1,0 +1,5042 @@
+[
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.7083333333333333,
+    "margin": -0.21792113057940063
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.689236111111111,
+    "margin": 0.05169715959776786
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.6788194444444444,
+    "margin": -0.12051672129445831
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9270833333333334,
+    "margin": 0.10017480098481274
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7569444444444444,
+    "margin": 0.04098438867995539
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.7465277777777778,
+    "margin": -0.238389212311565
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.6788194444444444,
+    "margin": -0.12051672129445831
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.4930555555555556,
+    "margin": -0.4713568559647057
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.7395833333333333,
+    "margin": -0.14642383114327673
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9409722222222222,
+    "margin": 0.007170084501889853
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8611111111111112,
+    "margin": -0.07351127869056298
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8003472222222222,
+    "margin": -0.13489082180421127
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.7864583333333335,
+    "margin": -0.04413349452343671
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9409722222222222,
+    "margin": 0.007170084501889853
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.704861111111111,
+    "margin": -0.06890738650140049
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.6753472222222223,
+    "margin": -0.08999234774553785
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7881944444444444,
+    "margin": -0.06251346754495014
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7170138888888888,
+    "margin": -0.10838724197695196
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8472222222222222,
+    "margin": 0.13188178479715612
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.5069444444444444,
+    "margin": -0.19180946970017126
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7881944444444444,
+    "margin": -0.06251346754495014
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.6006944444444444,
+    "margin": -0.09906722277237914
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.6006944444444444,
+    "margin": -0.09906722277237914
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9010416666666666,
+    "margin": 0.028235504806933417
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9097222222222222,
+    "margin": 0.15734350425092403
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.796875,
+    "margin": -0.29889192430452083
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.7916666666666667,
+    "margin": -0.33195985220301416
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9010416666666666,
+    "margin": 0.028235504806933417
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.6024305555555556,
+    "margin": -0.09363774013445181
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.6024305555555556,
+    "margin": -0.09363774013445181
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8315972222222222,
+    "margin": -0.01642447767734702
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7690972222222223,
+    "margin": 0.0061364536370366665
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8177083333333333,
+    "margin": -0.2630174310103599
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.7378472222222222,
+    "margin": -0.04718753393162031
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8315972222222222,
+    "margin": -0.01642447767734702
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.59375,
+    "margin": -0.5869050839143659
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.7447916666666666,
+    "margin": -0.22099509911423987
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 1.0,
+    "margin": 0.19022163388314203
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.859375,
+    "margin": 0.012945246602271462
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9947916666666667,
+    "margin": 0.3025450675451436
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.8628472222222222,
+    "margin": -0.027495889177774492
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 1.0,
+    "margin": 0.19022163388314203
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.7447916666666666,
+    "margin": -0.3362024303374598
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.8576388888888888,
+    "margin": -0.026643574028186314
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9201388888888888,
+    "margin": 0.1848038718139904
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9149305555555556,
+    "margin": 0.15051779081548342
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9565972222222222,
+    "margin": 0.0411514960054772
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.8333333333333334,
+    "margin": -0.21005633534539914
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9201388888888888,
+    "margin": 0.1848038718139904
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.6145833333333333,
+    "margin": -0.09710161631386999
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.6145833333333333,
+    "margin": -0.09710161631386999
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7517361111111112,
+    "margin": -0.14111226756084783
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8489583333333334,
+    "margin": -0.07002367253155233
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9357638888888888,
+    "margin": -0.003310347683966
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.6684027777777778,
+    "margin": -0.22666141940551426
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7517361111111112,
+    "margin": -0.14111226756084783
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.8315972222222221,
+    "margin": -0.08553051141554392
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.935763888888889,
+    "margin": -0.041482827232762004
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9444444444444444,
+    "margin": -0.039218482544661974
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9427083333333334,
+    "margin": -0.047924807201937106
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8767361111111112,
+    "margin": -0.37734934516998075
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.8680555555555556,
+    "margin": -0.04779152790032264
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9444444444444444,
+    "margin": -0.039218482544661974
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.578125,
+    "margin": -0.5129869266648172
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.71875,
+    "margin": -0.4782154954436859
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9913194444444444,
+    "margin": 0.14869671274803736
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9704861111111112,
+    "margin": 0.09982872319493931
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9895833333333334,
+    "margin": 0.07220581905631876
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.6076388888888888,
+    "margin": -0.4051733911743749
+  },
+  {
+    "group": "AE",
+    "held_word": 0,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9913194444444444,
+    "margin": 0.14869671274803736
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.8281250000000001,
+    "margin": -0.20175910385010357
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.6319444444444443,
+    "margin": -0.11646241527980467
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8159722222222222,
+    "margin": 0.041995728052917486
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9079861111111112,
+    "margin": 0.054393309502692555
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9444444444444444,
+    "margin": -0.11298271649375957
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.8229166666666666,
+    "margin": -0.4285546319252045
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8159722222222222,
+    "margin": 0.041995728052917486
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.6440972222222222,
+    "margin": -0.34579878587590074
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.6475694444444444,
+    "margin": -0.22140206472433904
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7934027777777778,
+    "margin": -0.12961873556216524
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8055555555555556,
+    "margin": -0.047498702735764
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.6510416666666666,
+    "margin": -0.43868120962752694
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.7083333333333333,
+    "margin": -0.30280207635090106
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7934027777777778,
+    "margin": -0.12961873556216524
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.8107638888888888,
+    "margin": -0.018481571590588386
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.6614583333333334,
+    "margin": -0.21349328079719126
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.5590277777777778,
+    "margin": -0.41473132944634283
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5885416666666667,
+    "margin": -0.2973026041898995
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8315972222222222,
+    "margin": -0.1491287704457507
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.3628472222222222,
+    "margin": -0.4003147008698613
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.5590277777777778,
+    "margin": -0.41473132944634283
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.8177083333333334,
+    "margin": -0.13880608636560005
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.7881944444444444,
+    "margin": 0.08224582048197414
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.6180555555555556,
+    "margin": -0.21582932177077177
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7170138888888888,
+    "margin": -0.13124588590445815
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8940972222222223,
+    "margin": 0.07361033352541949
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.47222222222222227,
+    "margin": -0.390966444484634
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.6180555555555556,
+    "margin": -0.21582932177077177
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.6944444444444444,
+    "margin": -0.22378729546784126
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.8246527777777777,
+    "margin": -0.12532597377680632
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9583333333333334,
+    "margin": -0.03726164172407727
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9548611111111112,
+    "margin": -0.038115521407196436
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7170138888888888,
+    "margin": -0.25272691651736273
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.8645833333333333,
+    "margin": -0.10718326288413924
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9583333333333334,
+    "margin": -0.03726164172407727
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.998263888888889,
+    "margin": 0.17274976333074477
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.6822916666666667,
+    "margin": -0.17020259468781815
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7378472222222222,
+    "margin": -0.0617076526770768
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7309027777777777,
+    "margin": -0.013815263743133114
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9704861111111112,
+    "margin": 0.11045343343525627
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.7378472222222223,
+    "margin": -0.017122267463169367
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7378472222222222,
+    "margin": -0.0617076526770768
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.9427083333333334,
+    "margin": -0.1530436772515742
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.921875,
+    "margin": -0.0914490935316509
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8819444444444444,
+    "margin": -0.0843091389939395
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9444444444444444,
+    "margin": 0.016412742689940474
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8524305555555555,
+    "margin": -0.10280666872365063
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.8767361111111112,
+    "margin": 0.025228325024328722
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8819444444444444,
+    "margin": -0.0843091389939395
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.8020833333333333,
+    "margin": -0.18694236999275549
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.654513888888889,
+    "margin": -0.12593693458133937
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.529513888888889,
+    "margin": -0.1321302609231142
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.53125,
+    "margin": -0.20320053371601626
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7534722222222221,
+    "margin": -0.08971299396629734
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.592013888888889,
+    "margin": -0.2987296584255255
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.529513888888889,
+    "margin": -0.1321302609231142
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.8732638888888888,
+    "margin": 0.08479798987211704
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.9652777777777778,
+    "margin": -0.06674576650333913
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8940972222222222,
+    "margin": 0.016282013655486365
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.875,
+    "margin": 0.036899556550375336
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8368055555555555,
+    "margin": 0.12158354940579658
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.8263888888888888,
+    "margin": -0.09958232261178848
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8940972222222222,
+    "margin": 0.016282013655486365
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.7465277777777778,
+    "margin": 0.07232860893161787
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.6649305555555556,
+    "margin": -0.3239907144963673
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8541666666666666,
+    "margin": -0.11547275036645858
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8315972222222223,
+    "margin": -0.008489783201358552
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9010416666666667,
+    "margin": 0.04660623296842449
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.5486111111111112,
+    "margin": -0.03943843908812794
+  },
+  {
+    "group": "AE",
+    "held_word": 1,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8541666666666666,
+    "margin": -0.11547275036645858
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.6944444444444444,
+    "margin": -0.23160009222445327
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.5729166666666666,
+    "margin": -0.13434201717528468
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.5850694444444444,
+    "margin": -0.1544274041946167
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.6006944444444444,
+    "margin": -0.17811318355883937
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7135416666666667,
+    "margin": -0.05226847310881129
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.2673611111111111,
+    "margin": -0.3388781126504263
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.5850694444444444,
+    "margin": -0.1544274041946167
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.3819444444444444,
+    "margin": -0.4593095628775589
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.2777777777777778,
+    "margin": -0.5684211516654143
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.6597222222222222,
+    "margin": -0.2859403349193174
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7569444444444444,
+    "margin": -0.14697185532994725
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.3055555555555556,
+    "margin": -0.466451877268405
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.5677083333333333,
+    "margin": -0.279429815596383
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.6597222222222222,
+    "margin": -0.2859403349193174
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.8472222222222222,
+    "margin": -0.10398829929513947
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.6736111111111112,
+    "margin": -0.16915916617510834
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.6684027777777778,
+    "margin": -0.1175228076132593
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.546875,
+    "margin": -0.20311047646401786
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.90625,
+    "margin": 0.11223992410266999
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.6128472222222222,
+    "margin": -0.14356691823802903
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.6684027777777778,
+    "margin": -0.1175228076132593
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.9739583333333334,
+    "margin": 0.238123954390079
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.4652777777777778,
+    "margin": -0.5668393737618493
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9774305555555556,
+    "margin": 0.06748713163676182
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9548611111111112,
+    "margin": -0.03260187162616388
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.982638888888889,
+    "margin": 0.4224365938510358
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.6736111111111112,
+    "margin": -0.39079403807081464
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9774305555555556,
+    "margin": 0.06748713163676182
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.671875,
+    "margin": -0.29164098489455914
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.7430555555555556,
+    "margin": -0.04074685916209126
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8350694444444444,
+    "margin": 0.08666432275685858
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7899305555555556,
+    "margin": 0.07323742898109664
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8177083333333334,
+    "margin": -0.03527405512995942
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.6736111111111112,
+    "margin": -0.1699681347271077
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8350694444444444,
+    "margin": 0.08666432275685858
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.9305555555555556,
+    "margin": 0.12397599650488618
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.6579861111111112,
+    "margin": -0.6471724480502945
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.953125,
+    "margin": 0.11790492902455921
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8940972222222223,
+    "margin": -0.01671976396879124
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9809027777777778,
+    "margin": 0.04719673018524683
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.842013888888889,
+    "margin": -0.20701797765378144
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.953125,
+    "margin": 0.11790492902455921
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.8697916666666667,
+    "margin": -0.039979277854024386
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.9340277777777778,
+    "margin": -0.06252661014181865
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.796875,
+    "margin": -0.19461897480501053
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.765625,
+    "margin": -0.22031233025323832
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7638888888888888,
+    "margin": -0.2885404777685424
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.7951388888888888,
+    "margin": -0.18832044124407174
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.796875,
+    "margin": -0.19461897480501053
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.8506944444444445,
+    "margin": -0.08697291367455273
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.828125,
+    "margin": -0.14775412935116133
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.71875,
+    "margin": -0.12802467219589872
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.689236111111111,
+    "margin": -0.13406306905004658
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8611111111111112,
+    "margin": -0.1741053047085902
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.7100694444444444,
+    "margin": -0.14260023964593038
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.71875,
+    "margin": -0.12802467219589872
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9375,
+    "margin": -0.023202868697150308
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.96875,
+    "margin": -0.07032355331873068
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8350694444444444,
+    "margin": -0.06595276941550382
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8246527777777777,
+    "margin": -0.05498969094942375
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9427083333333334,
+    "margin": -0.038376958887877066
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.7395833333333333,
+    "margin": -0.32655143309713547
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8350694444444444,
+    "margin": -0.06595276941550382
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.9270833333333333,
+    "margin": 0.16474674250189303
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.5729166666666667,
+    "margin": -0.39275076711922363
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9496527777777778,
+    "margin": -0.07228791134781258
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9184027777777778,
+    "margin": -0.0292043130345226
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8697916666666666,
+    "margin": -0.24686439026939405
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.8125,
+    "margin": -0.16812473581811593
+  },
+  {
+    "group": "EH",
+    "held_word": 6,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9496527777777778,
+    "margin": -0.07228791134781258
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.8350694444444445,
+    "margin": -0.14026958100513215
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.7152777777777778,
+    "margin": -0.10644005040903932
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8524305555555556,
+    "margin": 0.043646970340739194
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8055555555555556,
+    "margin": -0.050573405888091234
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8420138888888888,
+    "margin": 0.04173964258091845
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.796875,
+    "margin": -0.041999517093284235
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8524305555555556,
+    "margin": 0.043646970340739194
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5364583333333334,
+    "margin": -0.29347868594482635
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.7743055555555555,
+    "margin": -0.12922169482270607
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7204861111111112,
+    "margin": -0.18102409135851089
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.6215277777777778,
+    "margin": -0.2275020657843247
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7899305555555556,
+    "margin": -0.12881878318749074
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.4652777777777778,
+    "margin": -0.3866112405422386
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7204861111111112,
+    "margin": -0.18102409135851089
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.7881944444444444,
+    "margin": -0.20676074956476512
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.6111111111111112,
+    "margin": -0.1476943440933759
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.4392361111111111,
+    "margin": -0.3185724878258046
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5347222222222222,
+    "margin": -0.18014471457653985
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8107638888888888,
+    "margin": -0.10500359161973419
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.7395833333333334,
+    "margin": -0.22557106262160803
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.4392361111111111,
+    "margin": -0.3185724878258046
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.8888888888888888,
+    "margin": -0.09022997826398924
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.7708333333333334,
+    "margin": -0.28412372746165343
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 1.0,
+    "margin": 0.12860262878898393
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8871527777777778,
+    "margin": -0.016288816799331807
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8975694444444444,
+    "margin": -0.018706494444206613
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.9496527777777778,
+    "margin": -0.13237433763578127
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 1.0,
+    "margin": 0.12860262878898393
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.6527777777777778,
+    "margin": -0.19485995213662116
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.8055555555555556,
+    "margin": -0.14149834424175572
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8819444444444444,
+    "margin": 0.02211386470835531
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8715277777777778,
+    "margin": 0.013943689848121416
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.810763888888889,
+    "margin": -0.1865322047107055
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.65625,
+    "margin": -0.30991504912685686
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8819444444444444,
+    "margin": 0.02211386470835531
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.8767361111111112,
+    "margin": -0.048360985003255384
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.5364583333333334,
+    "margin": -0.45413826547507485
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9878472222222222,
+    "margin": 0.16106901555495778
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8993055555555556,
+    "margin": 0.03547372621803625
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9427083333333333,
+    "margin": 0.27425092118597316
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.9114583333333333,
+    "margin": 0.05629029029101342
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9878472222222222,
+    "margin": 0.16106901555495778
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.8645833333333333,
+    "margin": 0.13971762406326282
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.907986111111111,
+    "margin": 0.03462546924064651
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 1.0,
+    "margin": 0.30080420504060745
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9913194444444444,
+    "margin": 0.3311486212607008
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8506944444444445,
+    "margin": -0.09457058653818697
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.8524305555555556,
+    "margin": 0.026294627907659532
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 1.0,
+    "margin": 0.30080420504060745
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.59375,
+    "margin": -0.23666448105599014
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.6458333333333333,
+    "margin": -0.3230344742647997
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7760416666666667,
+    "margin": -0.06643531135377106
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7395833333333334,
+    "margin": -0.06264375702565865
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.875,
+    "margin": -0.03135725027049966
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.5798611111111112,
+    "margin": -0.3890404950101532
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7760416666666667,
+    "margin": -0.06643531135377106
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9357638888888888,
+    "margin": 0.030054905901725795
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.8923611111111112,
+    "margin": 0.14436326430594412
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9479166666666666,
+    "margin": -0.005868466286831686
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9236111111111112,
+    "margin": -0.009491913524564043
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8142361111111112,
+    "margin": -0.07673871101209194
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.8940972222222222,
+    "margin": 0.036784369472904144
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9479166666666666,
+    "margin": -0.005868466286831686
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.5,
+    "margin": -0.2464270229599844
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.513888888888889,
+    "margin": -0.3611380372296088
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.4774305555555556,
+    "margin": -0.41800619572890524
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5381944444444444,
+    "margin": -0.42199385098826364
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.4357638888888889,
+    "margin": -0.33262916500066103
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.5920138888888888,
+    "margin": -0.2572099302499584
+  },
+  {
+    "group": "AY",
+    "held_word": 7,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.4774305555555556,
+    "margin": -0.41800619572890524
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.7777777777777778,
+    "margin": -0.07836815135775302
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.6510416666666666,
+    "margin": -0.405907665781534
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8350694444444444,
+    "margin": -0.2791785177126037
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9392361111111112,
+    "margin": -0.03562220186267256
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.65625,
+    "margin": -0.38223964062433036
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.6423611111111112,
+    "margin": -0.01925460011402303
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8350694444444444,
+    "margin": -0.2791785177126037
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5,
+    "margin": -0.4631738155557106
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.5208333333333333,
+    "margin": -0.4859831960815604
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.736111111111111,
+    "margin": -0.3375321452750931
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.6701388888888888,
+    "margin": -0.34850266265719865
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.4739583333333333,
+    "margin": -0.27878717412488585
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.6927083333333333,
+    "margin": -0.1699006554451536
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.736111111111111,
+    "margin": -0.3375321452750931
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.6284722222222222,
+    "margin": -0.2815186817279417
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.6909722222222222,
+    "margin": -0.3677975032317948
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.78125,
+    "margin": -0.07768046911917315
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7291666666666666,
+    "margin": -0.03960663417843191
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8072916666666666,
+    "margin": -0.26876460963698245
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.6979166666666667,
+    "margin": -0.28142972610963973
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.78125,
+    "margin": -0.07768046911917315
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.8680555555555556,
+    "margin": -0.10046899163425488
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 1.0,
+    "margin": 0.30948214067003593
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9913194444444444,
+    "margin": -0.038463396132305316
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9409722222222223,
+    "margin": 0.026245360210432514
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9253472222222223,
+    "margin": 0.06839365250660885
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.734375,
+    "margin": -0.39021835778216096
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9913194444444444,
+    "margin": -0.038463396132305316
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.7378472222222222,
+    "margin": -0.1350741650500767
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.9097222222222222,
+    "margin": -0.0668502619107976
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8802083333333333,
+    "margin": 0.0062724210981656495
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8663194444444444,
+    "margin": -0.04458522678970286
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9375,
+    "margin": 0.033233437957253815
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.7899305555555556,
+    "margin": -0.012665055407261712
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8802083333333333,
+    "margin": 0.0062724210981656495
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.9756944444444444,
+    "margin": 0.08330225280435416
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.9704861111111112,
+    "margin": 0.1902276818796694
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9913194444444444,
+    "margin": 0.1808754255504742
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9479166666666666,
+    "margin": 0.024520806889514843
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.984375,
+    "margin": 0.1963404779803154
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.828125,
+    "margin": -0.22244626133951925
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9913194444444444,
+    "margin": 0.1808754255504742
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.9635416666666666,
+    "margin": 0.19676991997756843
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.828125,
+    "margin": -0.37211559627996527
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9618055555555556,
+    "margin": 0.15134511564169478
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9618055555555556,
+    "margin": 0.16357266771476614
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9322916666666667,
+    "margin": 0.08746579467656405
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.8923611111111112,
+    "margin": -0.013496637406873839
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9618055555555556,
+    "margin": 0.15134511564169478
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.5503472222222222,
+    "margin": -0.27922511452128607
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.7552083333333333,
+    "margin": -0.021771789895322285
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7847222222222222,
+    "margin": -0.2716745254029057
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7864583333333333,
+    "margin": -0.1888533814676023
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8003472222222223,
+    "margin": 0.011956855071528737
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.7013888888888888,
+    "margin": -0.13051825921282545
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7847222222222222,
+    "margin": -0.2716745254029057
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9565972222222222,
+    "margin": -0.0435684027677772
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.7847222222222222,
+    "margin": -0.03788783647863539
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9114583333333333,
+    "margin": 0.046990494705521024
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8767361111111112,
+    "margin": 0.06919931963945528
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8715277777777778,
+    "margin": -0.04025005237002836
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.9131944444444445,
+    "margin": -0.010406917486193143
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9114583333333333,
+    "margin": 0.046990494705521024
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.8420138888888888,
+    "margin": -0.10452135961261588
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.8506944444444444,
+    "margin": 0.07186136455627626
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8923611111111112,
+    "margin": -0.019575544874281908
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.859375,
+    "margin": -0.006839201092657853
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.19548613647253152
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.7256944444444444,
+    "margin": -0.2879787609940271
+  },
+  {
+    "group": "AE",
+    "held_word": 10,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8923611111111112,
+    "margin": -0.019575544874281908
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.767361111111111,
+    "margin": -0.10691106885342722
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.7274305555555556,
+    "margin": -0.2970033797164201
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8541666666666667,
+    "margin": -0.05564176629194397
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8090277777777777,
+    "margin": -0.16028271436737462
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.6597222222222222,
+    "margin": -0.23679655830079804
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.5190972222222222,
+    "margin": -0.3313586110427389
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8541666666666667,
+    "margin": -0.05564176629194397
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.6388888888888888,
+    "margin": -0.1654695010651455
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.8211805555555556,
+    "margin": -0.2987991569302261
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8072916666666667,
+    "margin": -0.23400685747408534
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.6736111111111112,
+    "margin": -0.3896099660808506
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.5121527777777777,
+    "margin": -0.5524545327464536
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.8125,
+    "margin": -0.14127369835267228
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8072916666666667,
+    "margin": -0.23400685747408534
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.6579861111111112,
+    "margin": -0.22846494025370903
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.7309027777777778,
+    "margin": -0.20075522620196481
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.6527777777777778,
+    "margin": -0.27669045964566363
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7083333333333334,
+    "margin": -0.2960520307606824
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7222222222222222,
+    "margin": -0.09406816852560518
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.8420138888888888,
+    "margin": -0.11869984702903769
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.6527777777777778,
+    "margin": -0.27669045964566363
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.8038194444444444,
+    "margin": -0.3101140668727273
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.6527777777777778,
+    "margin": -0.203720790605329
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7100694444444444,
+    "margin": -0.15710118897427647
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.6788194444444444,
+    "margin": -0.14793085609231454
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7430555555555556,
+    "margin": -0.14851406459695154
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.90625,
+    "margin": 0.1205183728775791
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7100694444444444,
+    "margin": -0.15710118897427647
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.5972222222222222,
+    "margin": -0.1277529495876435
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.8368055555555556,
+    "margin": -0.08580303575788868
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9548611111111112,
+    "margin": 0.09017669779590146
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9357638888888888,
+    "margin": 0.03288978289977853
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.828125,
+    "margin": -0.06480469704006289
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.8125,
+    "margin": -0.021526180600360698
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9548611111111112,
+    "margin": 0.09017669779590146
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.7135416666666666,
+    "margin": -0.42022678843367023
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.9930555555555556,
+    "margin": 0.16689201581921054
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9895833333333334,
+    "margin": 0.18182696087847555
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.96875,
+    "margin": 0.18704540080266907
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9184027777777777,
+    "margin": 0.2968494086941973
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.7256944444444444,
+    "margin": -0.3437319114040758
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9895833333333334,
+    "margin": 0.18182696087847555
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.7708333333333334,
+    "margin": -0.2862402425070516
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.8055555555555555,
+    "margin": -0.22689748678815866
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.814236111111111,
+    "margin": 0.1004343344228936
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.84375,
+    "margin": 0.004539449427639463
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8315972222222222,
+    "margin": -0.22159293130567198
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.8281249999999999,
+    "margin": -0.12389152326154294
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.814236111111111,
+    "margin": 0.1004343344228936
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.7517361111111112,
+    "margin": -0.028264778941225227
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.7777777777777778,
+    "margin": 0.008464686232858953
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8211805555555555,
+    "margin": -0.014344487460726803
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7378472222222222,
+    "margin": -0.04122232314424837
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.829861111111111,
+    "margin": -0.0011921269757038458
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.7690972222222222,
+    "margin": -0.24671971821110766
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8211805555555555,
+    "margin": -0.014344487460726803
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9131944444444444,
+    "margin": 0.021558712224182708
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.9791666666666667,
+    "margin": 0.2023754928632582
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9201388888888888,
+    "margin": 0.03156660405147564
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9149305555555556,
+    "margin": 0.020511130890393664
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9565972222222223,
+    "margin": 0.051799177187827276
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.9305555555555556,
+    "margin": -0.018386511049792623
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9201388888888888,
+    "margin": 0.03156660405147564
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.7413194444444444,
+    "margin": -0.3963950229343973
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.6840277777777777,
+    "margin": -0.3325745759726246
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7013888888888888,
+    "margin": -0.12952362146180207
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5069444444444444,
+    "margin": -0.2741759778385599
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8923611111111112,
+    "margin": -0.13866202093613123
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.5850694444444444,
+    "margin": -0.3360021639469983
+  },
+  {
+    "group": "EH",
+    "held_word": 11,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7013888888888888,
+    "margin": -0.12952362146180207
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.5868055555555556,
+    "margin": -0.5240676498576586
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.5694444444444444,
+    "margin": -0.3888486575831558
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8958333333333334,
+    "margin": -0.007550148600817992
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8940972222222222,
+    "margin": 0.03971044272953608
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.5625,
+    "margin": -0.20666552111945985
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.5642361111111112,
+    "margin": -0.29942473081169707
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8958333333333334,
+    "margin": -0.007550148600817992
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5034722222222222,
+    "margin": -0.5825724014903249
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.3871527777777778,
+    "margin": -0.5894709787762772
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9305555555555556,
+    "margin": 0.053985096075973966
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9722222222222223,
+    "margin": 0.09022770997654003
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8072916666666667,
+    "margin": -0.14209117365607649
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.6979166666666666,
+    "margin": -0.30533158007649264
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9305555555555556,
+    "margin": 0.053985096075973966
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.6909722222222222,
+    "margin": -0.39100356766913763
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.8975694444444444,
+    "margin": -0.21829427880626878
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7152777777777777,
+    "margin": -0.12207671502211036
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8177083333333335,
+    "margin": -0.12593491517508723
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7743055555555556,
+    "margin": -0.18881973758686713
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.795138888888889,
+    "margin": -0.23151059989398567
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7152777777777777,
+    "margin": -0.12207671502211036
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.9756944444444444,
+    "margin": 0.12738725559114866
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.9444444444444444,
+    "margin": 0.09527453100283725
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9635416666666666,
+    "margin": 0.1323647736950305
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9809027777777778,
+    "margin": 0.16766034918421818
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.40343682635348077
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.8194444444444444,
+    "margin": -0.16014715581655015
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9635416666666666,
+    "margin": 0.1323647736950305
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.8003472222222223,
+    "margin": -0.25119140702484055
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.8246527777777778,
+    "margin": -0.11562136136934914
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8819444444444445,
+    "margin": -0.012332926039235931
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8506944444444445,
+    "margin": -0.04565140433306787
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9010416666666666,
+    "margin": -0.1492947097482705
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.8715277777777779,
+    "margin": -0.17376178495938577
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8819444444444445,
+    "margin": -0.012332926039235931
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.8802083333333333,
+    "margin": 0.031150183219803868
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.6527777777777778,
+    "margin": -0.06994354002332012
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8263888888888888,
+    "margin": -0.02843258380419278
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7569444444444444,
+    "margin": -0.09851656997934438
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9809027777777777,
+    "margin": -0.05563498057745653
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.5503472222222223,
+    "margin": -0.10740340092554213
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8263888888888888,
+    "margin": -0.02843258380419278
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.998263888888889,
+    "margin": 0.080167856760408
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.907986111111111,
+    "margin": 0.10861573031403443
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.984375,
+    "margin": 0.005007787491819987
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9809027777777778,
+    "margin": 0.034130567406658374
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9374999999999999,
+    "margin": 0.08948146271239338
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.8576388888888888,
+    "margin": -0.06964781735252687
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.984375,
+    "margin": 0.005007787491819987
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.829861111111111,
+    "margin": -0.1404011891096224
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.6770833333333334,
+    "margin": -0.1784524312533613
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.796875,
+    "margin": -0.05618415587676259
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8211805555555556,
+    "margin": -0.032828071492174454
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7899305555555556,
+    "margin": -0.059263557685301615
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.609375,
+    "margin": -0.27738104085121706
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.796875,
+    "margin": -0.05618415587676259
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.8385416666666667,
+    "margin": -0.07449473514455661
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.953125,
+    "margin": 0.0074090904151193
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9583333333333334,
+    "margin": 0.11127844298220552
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9288194444444444,
+    "margin": 0.09396953687315247
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9427083333333333,
+    "margin": 0.08441425919211998
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.8993055555555556,
+    "margin": -0.06718664409027064
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9583333333333334,
+    "margin": 0.11127844298220552
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.8333333333333334,
+    "margin": -0.0868255484253983
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.8263888888888888,
+    "margin": -0.272858192293521
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9305555555555556,
+    "margin": 0.10966053377826813
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9479166666666666,
+    "margin": 0.09937395375234809
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9010416666666667,
+    "margin": 0.1092158869340835
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.873263888888889,
+    "margin": 0.059926337727599026
+  },
+  {
+    "group": "EH",
+    "held_word": 13,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9305555555555556,
+    "margin": 0.10966053377826813
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.5989583333333334,
+    "margin": -0.0218329809817258
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.859375,
+    "margin": -0.0014800160261788514
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9565972222222223,
+    "margin": 0.07306831409439642
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9305555555555556,
+    "margin": -0.004900727498398261
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9444444444444444,
+    "margin": 0.030974906109421878
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.5381944444444444,
+    "margin": -0.2967008357562045
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9565972222222223,
+    "margin": 0.07306831409439642
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.6979166666666667,
+    "margin": -0.1722562307027612
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.6996527777777778,
+    "margin": -0.1350832060251967
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8663194444444444,
+    "margin": 0.05164108904828291
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7204861111111112,
+    "margin": -0.0941746758973909
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.5052083333333334,
+    "margin": -0.2855291923619343
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.6024305555555556,
+    "margin": -0.35182944302538566
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8663194444444444,
+    "margin": 0.05164108904828291
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.703125,
+    "margin": -0.15994966856738707
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.8229166666666666,
+    "margin": 0.04612626088805
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8125,
+    "margin": -0.18488872089079
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7725694444444444,
+    "margin": -0.15921712741971547
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8784722222222222,
+    "margin": 0.09950114120514028
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.9131944444444444,
+    "margin": 0.08047902816467718
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8125,
+    "margin": -0.18488872089079
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.6180555555555556,
+    "margin": -0.4108185769560527
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.828125,
+    "margin": -0.19858075600210295
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9079861111111112,
+    "margin": 0.049229682616428676
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8819444444444444,
+    "margin": -0.1624321749406246
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.2432186226155587
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.78125,
+    "margin": -0.2920366125038022
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9079861111111112,
+    "margin": 0.049229682616428676
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.7100694444444444,
+    "margin": -0.07430144934149689
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.7100694444444444,
+    "margin": -0.07430144934149689
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.875,
+    "margin": 0.001303365969747925
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8836805555555556,
+    "margin": -0.025982447803614854
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9201388888888888,
+    "margin": -0.012340349346666855
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.7916666666666666,
+    "margin": -0.061915786795505155
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.875,
+    "margin": 0.001303365969747925
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.5659722222222222,
+    "margin": -0.6211873059876497
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.9548611111111112,
+    "margin": -0.08388253973049287
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9548611111111112,
+    "margin": 0.024583342347705754
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.951388888888889,
+    "margin": 0.03282838123948821
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.24627200964831528
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.7326388888888888,
+    "margin": -0.2768128236059122
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9548611111111112,
+    "margin": 0.024583342347705754
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.6336805555555556,
+    "margin": -0.4253720529082038
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.5364583333333334,
+    "margin": -0.4787155034549469
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9635416666666666,
+    "margin": 0.1733878748786802
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9427083333333334,
+    "margin": 0.1521160398983741
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.810763888888889,
+    "margin": -0.05711365637980064
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.6996527777777778,
+    "margin": -0.2702150778056681
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9635416666666666,
+    "margin": 0.1733878748786802
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.7760416666666667,
+    "margin": -0.06370339231769012
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.6736111111111112,
+    "margin": -0.050989910039866485
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8680555555555556,
+    "margin": 0.04368104844470633
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8003472222222222,
+    "margin": -0.023742254378483284
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8038194444444444,
+    "margin": -0.07181604501479322
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.6302083333333334,
+    "margin": -0.047609811888507284
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8680555555555556,
+    "margin": 0.04368104844470633
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9375,
+    "margin": -0.008102831589393282
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.9045138888888888,
+    "margin": 0.00429454501954225
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.954861111111111,
+    "margin": 0.03315943348042317
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9027777777777779,
+    "margin": -0.007917033736060546
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8541666666666666,
+    "margin": -0.034608982822317245
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.8420138888888888,
+    "margin": -0.05482800034224623
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.954861111111111,
+    "margin": 0.03315943348042317
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.5659722222222223,
+    "margin": -0.3856571827787576
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.829861111111111,
+    "margin": -0.33523534046674
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8888888888888888,
+    "margin": 0.03806869880921258
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8038194444444444,
+    "margin": -0.07017531120537318
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9479166666666666,
+    "margin": 0.029559626131722368
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.7569444444444444,
+    "margin": -0.22331483124997809
+  },
+  {
+    "group": "EH",
+    "held_word": 14,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8888888888888888,
+    "margin": 0.03806869880921258
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "word_center",
+    "auc": 0.8194444444444444,
+    "margin": 0.014843853946058222
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "fixed_support_selected",
+    "auc": 0.8298611111111112,
+    "margin": -0.0780848185108208
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8142361111111112,
+    "margin": 0.01829710896186538
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.75,
+    "margin": -0.011025239969764504
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8923611111111112,
+    "margin": 0.005343640579432221
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "Audio_nominal",
+    "auc": 0.7413194444444445,
+    "margin": -0.11531510934185496
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 1,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8142361111111112,
+    "margin": 0.01829710896186538
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "word_center",
+    "auc": 0.5225694444444444,
+    "margin": -0.4289559093345129
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "fixed_support_selected",
+    "auc": 0.5902777777777778,
+    "margin": -0.1217448779392348
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "correct_Audio_selected",
+    "auc": 0.6388888888888888,
+    "margin": -0.3316939692148635
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5138888888888888,
+    "margin": -0.4426569950217399
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "ACC_energy_peak",
+    "auc": 0.720486111111111,
+    "margin": -0.25995495192910795
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "Audio_nominal",
+    "auc": 0.5086805555555556,
+    "margin": -0.47446809737205264
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 2,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.6388888888888888,
+    "margin": -0.3316939692148635
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "word_center",
+    "auc": 0.779513888888889,
+    "margin": -0.11449198348003431
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "fixed_support_selected",
+    "auc": 0.6822916666666667,
+    "margin": -0.17956769517447085
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "correct_Audio_selected",
+    "auc": 0.48263888888888884,
+    "margin": -0.3579697619634752
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5572916666666666,
+    "margin": -0.34737680528086
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7291666666666667,
+    "margin": -0.04923996558824281
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "Audio_nominal",
+    "auc": 0.795138888888889,
+    "margin": -0.14802987229539968
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 3,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.48263888888888884,
+    "margin": -0.3579697619634752
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "word_center",
+    "auc": 0.7586805555555556,
+    "margin": -0.09773324770348374
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "fixed_support_selected",
+    "auc": 0.8715277777777777,
+    "margin": 0.11131430182386051
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9375,
+    "margin": 0.13739059209422652
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8663194444444444,
+    "margin": 0.07218132066982591
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9479166666666667,
+    "margin": 0.19867583066124284
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "Audio_nominal",
+    "auc": 0.7378472222222221,
+    "margin": -0.1436981836782194
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 4,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9375,
+    "margin": 0.13739059209422652
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "word_center",
+    "auc": 0.6909722222222223,
+    "margin": -0.16567899444719733
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "fixed_support_selected",
+    "auc": 0.7847222222222222,
+    "margin": -0.12158514932230234
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7569444444444444,
+    "margin": -0.05368676672777921
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7777777777777778,
+    "margin": -0.08448353841365794
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7083333333333333,
+    "margin": -0.19005233226230758
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "Audio_nominal",
+    "auc": 0.6527777777777777,
+    "margin": -0.20278724296377293
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 5,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7569444444444444,
+    "margin": -0.05368676672777921
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "word_center",
+    "auc": 0.8836805555555556,
+    "margin": 0.038186612467485406
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.4774305555555556,
+    "margin": -0.5819562096976301
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9583333333333334,
+    "margin": 0.1471131609080516
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9375,
+    "margin": 0.14603873491097036
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9253472222222223,
+    "margin": -0.029319875970743245
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "Audio_nominal",
+    "auc": 0.8802083333333333,
+    "margin": 0.15444203137211715
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 6,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9583333333333334,
+    "margin": 0.1471131609080516
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "word_center",
+    "auc": 0.9479166666666667,
+    "margin": 0.003486822218187191
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "fixed_support_selected",
+    "auc": 0.9253472222222222,
+    "margin": -0.042434040963987577
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "correct_Audio_selected",
+    "auc": 0.9774305555555556,
+    "margin": 0.09972049060652095
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.9739583333333334,
+    "margin": 0.009141119248546298
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "ACC_energy_peak",
+    "auc": 0.859375,
+    "margin": -0.1938287652816749
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "Audio_nominal",
+    "auc": 0.9496527777777778,
+    "margin": -0.04074644968871091
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 7,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.9774305555555556,
+    "margin": 0.09972049060652095
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "word_center",
+    "auc": 0.671875,
+    "margin": -0.20528199721918572
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "fixed_support_selected",
+    "auc": 0.5746527777777778,
+    "margin": -0.3175788989500321
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "correct_Audio_selected",
+    "auc": 0.7881944444444444,
+    "margin": -0.14962500134566487
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7447916666666667,
+    "margin": -0.25407800315507634
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8697916666666666,
+    "margin": -0.051896514138318514
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "Audio_nominal",
+    "auc": 0.5121527777777778,
+    "margin": -0.4291725289310989
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 8,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7881944444444444,
+    "margin": -0.14962500134566487
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "word_center",
+    "auc": 0.9010416666666667,
+    "margin": -0.025792387266469728
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "fixed_support_selected",
+    "auc": 0.9965277777777778,
+    "margin": 0.059099128694749314
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "correct_Audio_selected",
+    "auc": 0.8628472222222222,
+    "margin": -0.017833091430611393
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8888888888888888,
+    "margin": 0.019999684572204118
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8715277777777778,
+    "margin": 0.0067733836418408
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "Audio_nominal",
+    "auc": 0.8350694444444444,
+    "margin": -0.126699511539707
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 9,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8628472222222222,
+    "margin": -0.017833091430611393
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "word_center",
+    "auc": 0.5190972222222222,
+    "margin": -0.32494462186493767
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "fixed_support_selected",
+    "auc": 0.5642361111111112,
+    "margin": -0.2575357359580404
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "correct_Audio_selected",
+    "auc": 0.4322916666666667,
+    "margin": -0.37854793586397373
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.5625,
+    "margin": -0.4053539653238652
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "ACC_energy_peak",
+    "auc": 0.46701388888888884,
+    "margin": -0.3257345878906864
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "Audio_nominal",
+    "auc": 0.65625,
+    "margin": -0.2809119808830376
+  },
+  {
+    "group": "AY",
+    "held_word": 15,
+    "user": 10,
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.4322916666666667,
+    "margin": -0.37854793586397373
+  }
+]

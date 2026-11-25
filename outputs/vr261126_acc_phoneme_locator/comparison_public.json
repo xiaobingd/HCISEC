@@ -1,0 +1,23 @@
+[
+  {
+    "control": "wrongrepeat_Audio_trained",
+    "delta_auc": -0.006901041666666663,
+    "improved_users": 3,
+    "p": 0.8779296875,
+    "holm_p": 0.8779296875
+  },
+  {
+    "control": "ACC_energy_peak",
+    "delta_auc": 0.01293402777777779,
+    "improved_users": 4,
+    "p": 0.3486328125,
+    "holm_p": 0.697265625
+  },
+  {
+    "control": "ACC_self_energy_trained",
+    "delta_auc": 0.00269097222222221,
+    "improved_users": 5,
+    "p": 0.4033203125,
+    "posthoc_control": true
+  }
+]

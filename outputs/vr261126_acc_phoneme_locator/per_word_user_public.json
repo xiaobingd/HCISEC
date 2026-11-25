@@ -1,0 +1,1682 @@
+[
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7847222222222222,
+    "margin": 0.015735428810198578
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.78125,
+    "margin": 0.0006600192187230097
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.625,
+    "margin": -0.03686057251826362
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7135416666666667,
+    "margin": -0.05226847310881129
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.5729166666666666,
+    "margin": -0.13434201717528468
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.5850694444444444,
+    "margin": -0.1544274041946167
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.4305555555555556,
+    "margin": -0.37088406611506153
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.5329861111111112,
+    "margin": -0.30584227150442045
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.4149305555555556,
+    "margin": -0.4240627623259857
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.3055555555555556,
+    "margin": -0.466451877268405
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.2777777777777778,
+    "margin": -0.5684211516654143
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.6597222222222222,
+    "margin": -0.2859403349193174
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7725694444444445,
+    "margin": -0.023137507531036085
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.7725694444444444,
+    "margin": -0.03519364960829827
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8211805555555556,
+    "margin": 0.0029063714812035575
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.90625,
+    "margin": 0.11223992410266999
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.6736111111111112,
+    "margin": -0.16915916617510834
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.6684027777777778,
+    "margin": -0.1175228076132593
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9756944444444445,
+    "margin": 0.21335425011104323
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9756944444444445,
+    "margin": 0.19969463537464766
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9461805555555555,
+    "margin": 0.2329812586252805
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.982638888888889,
+    "margin": 0.4224365938510358
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.4652777777777778,
+    "margin": -0.5668393737618493
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9774305555555556,
+    "margin": 0.06748713163676182
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.828125,
+    "margin": -0.06138524325853678
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8350694444444444,
+    "margin": -0.05491411136770736
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.7916666666666667,
+    "margin": -0.1378559300243964
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8177083333333334,
+    "margin": -0.03527405512995942
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.7430555555555556,
+    "margin": -0.04074685916209126
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8350694444444444,
+    "margin": 0.08666432275685858
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9357638888888888,
+    "margin": 0.0317705592129461
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9357638888888888,
+    "margin": 0.03464186460546746
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9357638888888888,
+    "margin": 0.0540490037161309
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9809027777777778,
+    "margin": 0.04719673018524683
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.6579861111111112,
+    "margin": -0.6471724480502945
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.953125,
+    "margin": 0.11790492902455921
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8993055555555556,
+    "margin": -0.11104135990060257
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.921875,
+    "margin": -0.07494715399098044
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.892361111111111,
+    "margin": -0.09636448340416173
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7638888888888888,
+    "margin": -0.2885404777685424
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.9340277777777778,
+    "margin": -0.06252661014181865
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.796875,
+    "margin": -0.19461897480501053
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8541666666666667,
+    "margin": -0.13861115730318976
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8472222222222222,
+    "margin": -0.1621443816785759
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8958333333333334,
+    "margin": -0.10919656053058256
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8611111111111112,
+    "margin": -0.1741053047085902
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.828125,
+    "margin": -0.14775412935116133
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.71875,
+    "margin": -0.12802467219589872
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8645833333333333,
+    "margin": -0.11604902431121622
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.875,
+    "margin": -0.1094710578746471
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8246527777777779,
+    "margin": -0.16078450504184383
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9427083333333334,
+    "margin": -0.038376958887877066
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.96875,
+    "margin": -0.07032355331873068
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8350694444444444,
+    "margin": -0.06595276941550382
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8211805555555556,
+    "margin": -0.22245364622671726
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8350694444444444,
+    "margin": -0.24011946670316092
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8489583333333334,
+    "margin": -0.259071000774564
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8697916666666666,
+    "margin": -0.24686439026939405
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "fixed_support_selected",
+    "auc": 0.5729166666666667,
+    "margin": -0.39275076711922363
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9496527777777778,
+    "margin": -0.07228791134781258
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7361111111111112,
+    "margin": -0.16408900245036417
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.7135416666666666,
+    "margin": -0.17432172208009242
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8038194444444444,
+    "margin": -0.1525647902970071
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.6597222222222222,
+    "margin": -0.23679655830079804
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.7274305555555556,
+    "margin": -0.2970033797164201
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8541666666666667,
+    "margin": -0.05564176629194397
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.904513888888889,
+    "margin": -0.015457663885377136
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8993055555555556,
+    "margin": -0.022625067920276885
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9166666666666667,
+    "margin": -0.06904498480495923
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.5121527777777777,
+    "margin": -0.5524545327464536
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.8211805555555556,
+    "margin": -0.2987991569302261
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8072916666666667,
+    "margin": -0.23400685747408534
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7048611111111112,
+    "margin": -0.164655647288534
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.7013888888888888,
+    "margin": -0.17277886010305468
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.7673611111111112,
+    "margin": -0.001600052919453858
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7222222222222222,
+    "margin": -0.09406816852560518
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.7309027777777778,
+    "margin": -0.20075522620196481
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.6527777777777778,
+    "margin": -0.27669045964566363
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.6631944444444444,
+    "margin": -0.24541931533819203
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.6371527777777778,
+    "margin": -0.24871229883172505
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.6944444444444444,
+    "margin": -0.19727077176095353
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7430555555555556,
+    "margin": -0.14851406459695154
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.6527777777777778,
+    "margin": -0.203720790605329
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.7100694444444444,
+    "margin": -0.15710118897427647
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8177083333333334,
+    "margin": -0.038182241680304395
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8263888888888888,
+    "margin": -0.07007028682729487
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8576388888888888,
+    "margin": -0.09415934485120238
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.828125,
+    "margin": -0.06480469704006289
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.8368055555555556,
+    "margin": -0.08580303575788868
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9548611111111112,
+    "margin": 0.09017669779590146
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9375,
+    "margin": 0.22092704597378124
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9375,
+    "margin": 0.2281544420444876
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.953125,
+    "margin": 0.33227314954916853
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9184027777777777,
+    "margin": 0.2968494086941973
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.9930555555555556,
+    "margin": 0.16689201581921054
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9895833333333334,
+    "margin": 0.18182696087847555
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8854166666666667,
+    "margin": -0.053628423932819684
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8940972222222223,
+    "margin": -0.0551452363495503
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.859375,
+    "margin": -0.12794662501066217
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8315972222222222,
+    "margin": -0.22159293130567198
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.8055555555555555,
+    "margin": -0.22689748678815866
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.814236111111111,
+    "margin": 0.1004343344228936
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7777777777777778,
+    "margin": -0.01133346231450031
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.78125,
+    "margin": -0.048907569052481156
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.796875,
+    "margin": 0.017433665559037505
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.829861111111111,
+    "margin": -0.0011921269757038458
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.7777777777777778,
+    "margin": 0.008464686232858953
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8211805555555555,
+    "margin": -0.014344487460726803
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9444444444444445,
+    "margin": 0.04618620236561408
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9652777777777777,
+    "margin": 0.06604901860702442
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9791666666666666,
+    "margin": 0.037602365144381006
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9565972222222223,
+    "margin": 0.051799177187827276
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.9791666666666667,
+    "margin": 0.2023754928632582
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9201388888888888,
+    "margin": 0.03156660405147564
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "auc": 0.6614583333333333,
+    "margin": -0.26678768995796437
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.6805555555555556,
+    "margin": -0.2785513928434391
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.6909722222222222,
+    "margin": -0.3433996475347948
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8923611111111112,
+    "margin": -0.13866202093613123
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "fixed_support_selected",
+    "auc": 0.6840277777777777,
+    "margin": -0.3325745759726246
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.7013888888888888,
+    "margin": -0.12952362146180207
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8107638888888888,
+    "margin": -0.05761637491657853
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.7881944444444444,
+    "margin": -0.1087005790064608
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.7256944444444444,
+    "margin": -0.09974056236293499
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.5625,
+    "margin": -0.20666552111945985
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.5694444444444444,
+    "margin": -0.3888486575831558
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8958333333333334,
+    "margin": -0.007550148600817992
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8611111111111112,
+    "margin": -0.08744510481436385
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8524305555555556,
+    "margin": -0.1223177565652567
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.7760416666666667,
+    "margin": -0.210573565515775
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8072916666666667,
+    "margin": -0.14209117365607649
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.3871527777777778,
+    "margin": -0.5894709787762772
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9305555555555556,
+    "margin": 0.053985096075973966
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9149305555555556,
+    "margin": -0.10064217135762153
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.904513888888889,
+    "margin": -0.12488762403602069
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.888888888888889,
+    "margin": -0.15520727920996275
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7743055555555556,
+    "margin": -0.18881973758686713
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.8975694444444444,
+    "margin": -0.21829427880626878
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.7152777777777777,
+    "margin": -0.12207671502211036
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 1.0,
+    "margin": 0.5059137223067052
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 1.0,
+    "margin": 0.5365695686578114
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 1.0,
+    "margin": 0.5044344944131186
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.40343682635348077
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.9444444444444444,
+    "margin": 0.09527453100283725
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9635416666666666,
+    "margin": 0.1323647736950305
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.84375,
+    "margin": -0.08266416803011017
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8333333333333334,
+    "margin": -0.0866034217747426
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.873263888888889,
+    "margin": -0.10927821014728553
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9010416666666666,
+    "margin": -0.1492947097482705
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.8246527777777778,
+    "margin": -0.11562136136934914
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8819444444444445,
+    "margin": -0.012332926039235931
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9409722222222221,
+    "margin": -0.02558087425494924
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9288194444444444,
+    "margin": -0.035583345866542
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9809027777777778,
+    "margin": 0.04997621546166812
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9809027777777777,
+    "margin": -0.05563498057745653
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.6527777777777778,
+    "margin": -0.06994354002332012
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8263888888888888,
+    "margin": -0.02843258380419278
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9253472222222222,
+    "margin": 0.008953060909134933
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9079861111111112,
+    "margin": 0.0075072679441816545
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9565972222222222,
+    "margin": 0.06431093494903806
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9374999999999999,
+    "margin": 0.08948146271239338
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.907986111111111,
+    "margin": 0.10861573031403443
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.984375,
+    "margin": 0.005007787491819987
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8732638888888888,
+    "margin": -0.04946456091434559
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8697916666666667,
+    "margin": -0.08874002158447018
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8541666666666667,
+    "margin": -0.05716670721320362
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.7899305555555556,
+    "margin": -0.059263557685301615
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.6770833333333334,
+    "margin": -0.1784524312533613
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.796875,
+    "margin": -0.05618415587676259
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9548611111111112,
+    "margin": 0.15133178952335846
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9565972222222222,
+    "margin": 0.13944223238741807
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8923611111111112,
+    "margin": 0.1058651851937901
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9427083333333333,
+    "margin": 0.08441425919211998
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.953125,
+    "margin": 0.0074090904151193
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9583333333333334,
+    "margin": 0.11127844298220552
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7482638888888888,
+    "margin": -0.14707863192417955
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8750000000000001,
+    "margin": 0.02536152708257252
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8385416666666667,
+    "margin": -0.014102568847207043
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9010416666666667,
+    "margin": 0.1092158869340835
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "fixed_support_selected",
+    "auc": 0.8263888888888888,
+    "margin": -0.272858192293521
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9305555555555556,
+    "margin": 0.10966053377826813
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.935763888888889,
+    "margin": -0.033266257824103654
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.907986111111111,
+    "margin": -0.09561234533984976
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8437500000000001,
+    "margin": -0.09700789538642693
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9444444444444444,
+    "margin": 0.030974906109421878
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.859375,
+    "margin": -0.0014800160261788514
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9565972222222223,
+    "margin": 0.07306831409439642
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.798611111111111,
+    "margin": 0.07714369157070812
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8177083333333334,
+    "margin": 0.07142090774959034
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.7256944444444444,
+    "margin": -0.09785287063388927
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.5052083333333334,
+    "margin": -0.2855291923619343
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.6996527777777778,
+    "margin": -0.1350832060251967
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8663194444444444,
+    "margin": 0.05164108904828291
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7430555555555556,
+    "margin": -0.1448431537674237
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.7881944444444445,
+    "margin": -0.07499662617171812
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8003472222222222,
+    "margin": -0.104037371998117
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8784722222222222,
+    "margin": 0.09950114120514028
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.8229166666666666,
+    "margin": 0.04612626088805
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8125,
+    "margin": -0.18488872089079
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9479166666666666,
+    "margin": 0.2754544453769205
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 1.0,
+    "margin": 0.38337174039035093
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 1.0,
+    "margin": 0.253784253566619
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.2432186226155587
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.828125,
+    "margin": -0.19858075600210295
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9079861111111112,
+    "margin": 0.049229682616428676
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.7829861111111112,
+    "margin": -0.12949907937452737
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.7864583333333333,
+    "margin": -0.1408175710142512
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8368055555555555,
+    "margin": -0.03959927976838415
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9201388888888888,
+    "margin": -0.012340349346666855
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.7100694444444444,
+    "margin": -0.07430144934149689
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.875,
+    "margin": 0.001303365969747925
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9756944444444444,
+    "margin": 0.22580265528649446
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9791666666666666,
+    "margin": 0.2381875396288718
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.9861111111111112,
+    "margin": 0.22547964862164888
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 1.0,
+    "margin": 0.24627200964831528
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.9548611111111112,
+    "margin": -0.08388253973049287
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9548611111111112,
+    "margin": 0.024583342347705754
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8784722222222222,
+    "margin": -0.007009415270448578
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8697916666666667,
+    "margin": -0.010125614296401513
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8524305555555555,
+    "margin": -0.04765082351797306
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.810763888888889,
+    "margin": -0.05711365637980064
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.5364583333333334,
+    "margin": -0.4787155034549469
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.9635416666666666,
+    "margin": 0.1733878748786802
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.845486111111111,
+    "margin": -0.05127727171339915
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8402777777777778,
+    "margin": -0.022720353290403547
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.7951388888888888,
+    "margin": -0.0780607596251154
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8038194444444444,
+    "margin": -0.07181604501479322
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.6736111111111112,
+    "margin": -0.050989910039866485
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8680555555555556,
+    "margin": 0.04368104844470633
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.8854166666666666,
+    "margin": -0.0012736751303537297
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.8819444444444444,
+    "margin": 0.0025237385777912534
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8802083333333334,
+    "margin": -0.01016272520913182
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.8541666666666666,
+    "margin": -0.034608982822317245
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.9045138888888888,
+    "margin": 0.00429454501954225
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.954861111111111,
+    "margin": 0.03315943348042317
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "auc": 0.9513888888888888,
+    "margin": -0.01928093122470714
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.9565972222222222,
+    "margin": 0.04803722587074891
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8871527777777778,
+    "margin": -0.05199977028292041
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "ACC_energy_peak",
+    "auc": 0.9479166666666666,
+    "margin": 0.029559626131722368
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "fixed_support_selected",
+    "auc": 0.829861111111111,
+    "margin": -0.33523534046674
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8888888888888888,
+    "margin": 0.03806869880921258
+  }
+]

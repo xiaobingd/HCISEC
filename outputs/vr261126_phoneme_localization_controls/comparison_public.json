@@ -1,0 +1,68 @@
+[
+  {
+    "group": "AE",
+    "control": "fixed_support_selected",
+    "delta_auc": 0.08576388888888892,
+    "improved_users": 10,
+    "user_signflip_p": 0.0009765625,
+    "holm_primary_p": 0.0029296875
+  },
+  {
+    "group": "AE",
+    "control": "wrongrepeat_Audio_sameoffset",
+    "delta_auc": -0.000983796296296302,
+    "improved_users": 6,
+    "user_signflip_p": 0.521484375
+  },
+  {
+    "group": "AE",
+    "control": "ACC_energy_peak",
+    "delta_auc": -0.011921296296296268,
+    "improved_users": 4,
+    "user_signflip_p": 0.650390625
+  },
+  {
+    "group": "EH",
+    "control": "fixed_support_selected",
+    "delta_auc": 0.09934895833333333,
+    "improved_users": 8,
+    "user_signflip_p": 0.0068359375,
+    "holm_primary_p": 0.013671875
+  },
+  {
+    "group": "EH",
+    "control": "wrongrepeat_Audio_sameoffset",
+    "delta_auc": 0.02690972222222221,
+    "improved_users": 10,
+    "user_signflip_p": 0.0009765625
+  },
+  {
+    "group": "EH",
+    "control": "ACC_energy_peak",
+    "delta_auc": 0.020920138888888884,
+    "improved_users": 4,
+    "user_signflip_p": 0.3310546875
+  },
+  {
+    "group": "AY",
+    "control": "fixed_support_selected",
+    "delta_auc": 0.0631076388888889,
+    "improved_users": 6,
+    "user_signflip_p": 0.1591796875,
+    "holm_primary_p": 0.1591796875
+  },
+  {
+    "group": "AY",
+    "control": "wrongrepeat_Audio_sameoffset",
+    "delta_auc": 0.017361111111111126,
+    "improved_users": 6,
+    "user_signflip_p": 0.2099609375
+  },
+  {
+    "group": "AY",
+    "control": "ACC_energy_peak",
+    "delta_auc": -0.01640624999999999,
+    "improved_users": 6,
+    "user_signflip_p": 0.62890625
+  }
+]

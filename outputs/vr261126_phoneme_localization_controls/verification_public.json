@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "samples": 720,
+  "outer_word_target_folds": 90,
+  "scaler_target_excluded": true,
+  "selector_queryword_and_target_excluded": true,
+  "old_reference_features_reproduced": true,
+  "wrongrepeat_user_word_matched": true,
+  "max_legacy_ACC_center_change_seconds": 0.0,
+  "final_Audio_opened": false,
+  "query_Audio_oracle_diagnostic": true,
+  "independent_aggregate_check": true,
+  "selector_offset_check": true,
+  "holm_recomputed": true,
+  "isolation_perturbation": "all outerqueryword andtargetuser candidate features changed+1000;innerAUC unchanged",
+  "max_isolation_auc_change": 0.0
+}

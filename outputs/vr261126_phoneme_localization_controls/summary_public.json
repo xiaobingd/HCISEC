@@ -1,0 +1,128 @@
+[
+  {
+    "group": "AE",
+    "arm": "word_center",
+    "auc": 0.7476851851851851,
+    "margin": -0.15714019807679241
+  },
+  {
+    "group": "AE",
+    "arm": "fixed_support_selected",
+    "auc": 0.7527777777777778,
+    "margin": -0.12671227582603106
+  },
+  {
+    "group": "AE",
+    "arm": "correct_Audio_selected",
+    "auc": 0.8385416666666667,
+    "margin": -0.05306872800481072
+  },
+  {
+    "group": "AE",
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8395254629629629,
+    "margin": -0.026177810688815063
+  },
+  {
+    "group": "AE",
+    "arm": "ACC_energy_peak",
+    "auc": 0.850462962962963,
+    "margin": -0.05532140541399544
+  },
+  {
+    "group": "AE",
+    "arm": "Audio_nominal",
+    "auc": 0.7280092592592593,
+    "margin": -0.17894796120166312
+  },
+  {
+    "group": "AE",
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8385416666666667,
+    "margin": -0.05306872800481072
+  },
+  {
+    "group": "EH",
+    "arm": "word_center",
+    "auc": 0.7546440972222223,
+    "margin": -0.17282902071566728
+  },
+  {
+    "group": "EH",
+    "arm": "fixed_support_selected",
+    "auc": 0.754079861111111,
+    "margin": -0.1749473884132738
+  },
+  {
+    "group": "EH",
+    "arm": "correct_Audio_selected",
+    "auc": 0.8534288194444445,
+    "margin": -0.018026701043850474
+  },
+  {
+    "group": "EH",
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.8265190972222223,
+    "margin": -0.05371482405791158
+  },
+  {
+    "group": "EH",
+    "arm": "ACC_energy_peak",
+    "auc": 0.8325086805555555,
+    "margin": -0.04391369922361723
+  },
+  {
+    "group": "EH",
+    "arm": "Audio_nominal",
+    "auc": 0.7312934027777778,
+    "margin": -0.18357440626552862
+  },
+  {
+    "group": "EH",
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.8534288194444445,
+    "margin": -0.018026701043850474
+  },
+  {
+    "group": "AY",
+    "arm": "word_center",
+    "auc": 0.7483506944444445,
+    "margin": -0.12968203793268326
+  },
+  {
+    "group": "AY",
+    "arm": "fixed_support_selected",
+    "auc": 0.7235243055555556,
+    "margin": -0.16491871002246664
+  },
+  {
+    "group": "AY",
+    "arm": "correct_Audio_selected",
+    "auc": 0.7866319444444445,
+    "margin": -0.06102525210479417
+  },
+  {
+    "group": "AY",
+    "arm": "wrongrepeat_Audio_sameoffset",
+    "auc": 0.7692708333333333,
+    "margin": -0.09428430875116664
+  },
+  {
+    "group": "AY",
+    "arm": "ACC_energy_peak",
+    "auc": 0.8030381944444445,
+    "margin": -0.07738001805976254
+  },
+  {
+    "group": "AY",
+    "arm": "Audio_nominal",
+    "auc": 0.7353298611111111,
+    "margin": -0.17153696449650202
+  },
+  {
+    "group": "AY",
+    "arm": "Audio_minus100_fixed",
+    "auc": 0.7866319444444445,
+    "margin": -0.06102525210479417
+  }
+]

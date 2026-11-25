@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "fit_folds": 40,
+  "fitted_locators": 120,
+  "utterances": 320,
+  "all_outerword_target_excluded": true,
+  "query_label_perturbation_no_effect": true,
+  "reference_features_replayed": true,
+  "locator_query_inputs_ACC_only": true,
+  "legacy_input_already_segmented": true,
+  "final_Audio_opened": false,
+  "independent_saved_weight_ACC_only_replays": 3,
+  "max_auc_replay_error": 0.0,
+  "aggregate_recomputed": true,
+  "holm_recomputed": true
+}

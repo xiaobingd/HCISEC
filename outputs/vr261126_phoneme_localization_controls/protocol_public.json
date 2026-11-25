@@ -1,0 +1,51 @@
+{
+  "samples": 720,
+  "users": 10,
+  "groups": {
+    "AE": [
+      0,
+      1,
+      10
+    ],
+    "EH": [
+      6,
+      11,
+      13,
+      14
+    ],
+    "AY": [
+      7,
+      15
+    ]
+  },
+  "arms": [
+    "word_center",
+    "fixed_support_selected",
+    "correct_Audio_selected",
+    "wrongrepeat_Audio_sameoffset",
+    "ACC_energy_peak",
+    "Audio_nominal",
+    "Audio_minus100_fixed"
+  ],
+  "offset_grid_seconds": [
+    -0.2,
+    -0.1,
+    0.0,
+    0.1,
+    0.2
+  ],
+  "window_seconds": 0.12,
+  "source": "same720historicalfit utterances andfrozenautomaticphoneboundaries;noAudiofileopenedthisrun;cachedqueryAudio remainsoracleinfo",
+  "selection": "per outerqueryword,targetidentity: exclude BOTH from hyperparameterselection; remainingwords innerleavewordout within vowelgroup,9backgroundidentities;groupswith>=2remainingwords;mean innerAUC acrossgroups andwords,then fixed tie rule",
+  "equal_budget": "fixed-wordcenteroffset andcorrectAudiooffset each5candidates;wrongrepeatusescorrectAudioselectedoffset,notseparatelytuned",
+  "wrongrepeat": "sameuser/sameword fourthotherrepeat normalizedphonephase,thenmaptoownwordinterval;nototherusersmeanalignment",
+  "energy": "ACC40-450Hz squared3axisenergy,120ms rollingwindow20msstep;maximumcenter in[1.1,1.9]sec offixed3seccache;nodevelopmenttuning",
+  "fixed": "wordcenter plus support-selectedoffset;usesnophoneboundary",
+  "diagnostic": "nominal andpreviouslyinspected -100ms retainedasreferences,notindependentconfirmation",
+  "primary": "correctAudio_selected vsfixed_support_selected pervowelgroup,exactpaireduser signflip,Holm3;wrongrepeatsecondary",
+  "frontend": "same24D fixed120msrawACCstatistics,registeredprototype cosine;scaler only9backgroundidentities/supportwords;all10users retained",
+  "limitation": "all9words previouslyviewed exploratory;legacy3secACCcachecenter alreadyuseshistoricalutterance segmentation: energy/fixedarms arelocalnoadditionalAudio,notfullyAudio-freecontinuouspipeline;queryAudiooracleforcorrect/wrongarms;noEER/HTER/deployedmodelclaim",
+  "no_neural_training": true,
+  "no_final_test_audio": true,
+  "no_private_export": true
+}

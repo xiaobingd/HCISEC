@@ -1,0 +1,22 @@
+{
+  "scope": "EH selectedafterhistoricaldiagnostic positivecorrect-vswrong relationship;exploratorynotblind;4historicalfitwords320utterances10users",
+  "teacher": "cachedautomaticvowelposition plus priornested-support-selected Audiooffset;wrongteacher sameuserwordfourthotherrepeat",
+  "model": "framewise standardizedRidge(alpha10),24rawACCfeatures,NOtime/word/userinput;41candidate120mswindows step20ms,centers1.1..1.9;argmax",
+  "target": "Gaussian softbump sigma100ms aroundteachercenter;fixedbeforefit,noquerylossselection",
+  "exclusion": "outerqueryword andtargetidentity excludedfromALLlocatorfit/scalerfit;threeotherEHwordsx9baseusers;offset selectionalso excludedouterword/target",
+  "inference": "locator takesACCwindowfeatures only;registration andquery bothselectedbyfrozenlocator;queryAudio usedONLY offlineMAEdiagnostic,notpositionscoresorhyperparameters",
+  "backend": "24D selectedACCfeatures,scaler9baseusersregistrationwordsonly,unitidentityprototype cosine;all10usersretained",
+  "controls": [
+    "correct_Audio_trained",
+    "wrongrepeat_Audio_trained",
+    "ACC_self_energy_trained",
+    "ACC_energy_peak",
+    "fixed_support_selected",
+    "oracle_Audio_selected"
+  ],
+  "primary": "correctAudio-trained locator vswrongteacher andACCenergy,paired10user signflipHolm2",
+  "added_control": "after firstreadout add sameRidge/samebudget ACCenergy-teacher selflocalizer asposthoccontrol;nohyperparametersearch orfavorable selection",
+  "limits": "legacy3seccachealreadyAudio/utteranceanchored;NOTcontinuousAudiofreepipeline;nomanuallabelsorphysicalsync;noEER/HTER;noexternalblindwords",
+  "final_Audio_opened": false,
+  "neural_network_trained": false
+}

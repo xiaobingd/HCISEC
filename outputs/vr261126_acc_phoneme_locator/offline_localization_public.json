@@ -1,0 +1,722 @@
+[
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 224.9161805994216
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 227.4161805994216
+  },
+  {
+    "user": 1,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 79.9161805994215
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 112.52430821575417
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 72.52430821575415
+  },
+  {
+    "user": 2,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 125.02430821575419
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 201.6335262655563
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 201.6335262655563
+  },
+  {
+    "user": 3,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 144.13352626555624
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 263.9172057619094
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 263.9172057619094
+  },
+  {
+    "user": 4,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 278.9172057619094
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 291.6864755065537
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 299.1864755065536
+  },
+  {
+    "user": 5,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 234.18647550655362
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 131.5268609448681
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 136.5268609448681
+  },
+  {
+    "user": 6,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 214.02686094486816
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 197.61329980760368
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 202.61329980760368
+  },
+  {
+    "user": 7,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 212.61329980760368
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 299.62707778907827
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 302.12707778907827
+  },
+  {
+    "user": 8,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 274.62707778907827
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 186.4543184034071
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 183.9543184034071
+  },
+  {
+    "user": 9,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 216.45431840340711
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 198.68505335993498
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 196.18505335993495
+  },
+  {
+    "user": 10,
+    "query_word": 6,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 71.18505335993486
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 99.28284350752884
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 99.28284350752884
+  },
+  {
+    "user": 1,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 107.57694563240113
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 194.46453081335318
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 191.96453081335318
+  },
+  {
+    "user": 2,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 127.90855462673922
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 44.58595326591888
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 44.58595326591888
+  },
+  {
+    "user": 3,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 44.31470219411829
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 92.96725796605281
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 92.96725796605281
+  },
+  {
+    "user": 4,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 80.88249641542627
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 255.67317665808963
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 215.67317665808957
+  },
+  {
+    "user": 5,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 249.59019197048013
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 39.2134847132575
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 39.2134847132575
+  },
+  {
+    "user": 6,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 53.35811000991117
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 56.35187282482715
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 58.85187282482715
+  },
+  {
+    "user": 7,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 58.85187282482715
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 15.244046614960565
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 20.23751944867011
+  },
+  {
+    "user": 8,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 21.267933404198164
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 57.717664546013125
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 57.717664546013125
+  },
+  {
+    "user": 9,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 112.31032744925962
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 58.57841926565577
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 63.29513339319737
+  },
+  {
+    "user": 10,
+    "query_word": 11,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 52.965736006852396
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 93.83864042542197
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 169.85875671811692
+  },
+  {
+    "user": 1,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 126.99695145107684
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 33.95487540429115
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 33.95487540429115
+  },
+  {
+    "user": 2,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 100.14266708169755
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 110.43755852326409
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 110.43755852326409
+  },
+  {
+    "user": 3,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 108.69705741503944
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 115.02940081891586
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 126.27687822280822
+  },
+  {
+    "user": 4,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 133.52043859312303
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 173.52477445771618
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 173.52477445771618
+  },
+  {
+    "user": 5,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 190.1236542730043
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 256.18691667705787
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 256.18691667705787
+  },
+  {
+    "user": 6,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 253.6869166770579
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 69.37937796928692
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 69.37937796928692
+  },
+  {
+    "user": 7,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 102.5952952070646
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 67.37273575764291
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 72.37273575764291
+  },
+  {
+    "user": 8,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 55.91492187999697
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 218.8295595363248
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 218.8295595363248
+  },
+  {
+    "user": 9,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 186.46178975524654
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 159.6925568498126
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 134.51421359979676
+  },
+  {
+    "user": 10,
+    "query_word": 13,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 132.01421359979676
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 60.51467324594989
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 116.45963054012005
+  },
+  {
+    "user": 1,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 127.93613071467396
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 375.88146659060783
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 375.88146659060783
+  },
+  {
+    "user": 2,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 222.41265675930453
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 65.02889577390877
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 108.23176408446075
+  },
+  {
+    "user": 3,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 46.86255018017291
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 99.63669204109505
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 111.46141457407205
+  },
+  {
+    "user": 4,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 103.96141457407204
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 136.27704787144685
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 139.77397989059386
+  },
+  {
+    "user": 5,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 113.01270093806586
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 11.574180402307816
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 14.074180402307817
+  },
+  {
+    "user": 6,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 11.729910919938884
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 18.872116457234466
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 19.19444278528426
+  },
+  {
+    "user": 7,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 22.14195628870652
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 95.00956146504383
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 97.50956146504383
+  },
+  {
+    "user": 8,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 105.17649239447826
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 100.92005654782484
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 103.42005654782486
+  },
+  {
+    "user": 9,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 130.92005654782488
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "correct_Audio_trained",
+    "offline_teacher_center_MAE_ms": 67.75913249263348
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "wrongrepeat_Audio_trained",
+    "offline_teacher_center_MAE_ms": 72.09487411772459
+  },
+  {
+    "user": 10,
+    "query_word": 14,
+    "arm": "ACC_self_energy_trained",
+    "offline_teacher_center_MAE_ms": 59.59487411772457
+  }
+]

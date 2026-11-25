@@ -1,0 +1,32 @@
+[
+  {
+    "arm": "correct_Audio_trained",
+    "auc": 0.8454427083333332,
+    "margin": -0.029187106764115577
+  },
+  {
+    "arm": "wrongrepeat_Audio_trained",
+    "auc": 0.85234375,
+    "margin": -0.024580701438553378
+  },
+  {
+    "arm": "ACC_self_energy_trained",
+    "auc": 0.8427517361111111,
+    "margin": -0.03753814688090183
+  },
+  {
+    "arm": "ACC_energy_peak",
+    "auc": 0.8325086805555555,
+    "margin": -0.04391369922361723
+  },
+  {
+    "arm": "fixed_support_selected",
+    "auc": 0.754079861111111,
+    "margin": -0.1749473884132738
+  },
+  {
+    "arm": "oracle_Audio_selected",
+    "auc": 0.8534288194444445,
+    "margin": -0.018026701043850474
+  }
+]
