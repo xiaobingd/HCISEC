@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "models_replayed": 18,
+  "calibration_workpoints_replayed": 180,
+  "pooled_query_metrics_replayed": 360,
+  "per_word_metrics_replayed": 1080,
+  "max_metric_error": 0.0,
+  "historical_control_models_reproduced": 6,
+  "max_historical_parameter_error": 0.0,
+  "historical_control_thresholds_reproduced": 60,
+  "local_attention_gradient_detached_zero_connected_nonzero": true,
+  "query_ACC_only": true,
+  "query_Audio_teacher_unused": true,
+  "source_data_and_roles_unchanged": true
+}

@@ -1,0 +1,434 @@
+[
+  {
+    "seed": 42,
+    "arm": "C0_identity",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.17792518436908722,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.09621050953865051,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.020076917484402657,
+        "local_to_global_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 42,
+    "arm": "C1_detached_Audio",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.17792518436908722,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.09945134073495865,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.029796946793794632,
+        "local_to_global_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 42,
+    "arm": "C2_connected_ACC",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.015716325491666794,
+        "global_attention_gradient_norm": 0.17792518436908722,
+        "local_to_global_ratio": 0.08833109010057237
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.021138226613402367,
+        "global_attention_gradient_norm": 0.10040172934532166,
+        "local_to_global_ratio": 0.21053647931401223
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.022565731778740883,
+        "global_attention_gradient_norm": 0.03235158696770668,
+        "local_to_global_ratio": 0.6975154511358584
+      }
+    ]
+  },
+  {
+    "seed": 42,
+    "arm": "C3_connected_Audio",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.013813085854053497,
+        "global_attention_gradient_norm": 0.17792518436908722,
+        "local_to_global_ratio": 0.07763423656428363
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.01795363612473011,
+        "global_attention_gradient_norm": 0.10262242704629898,
+        "local_to_global_ratio": 0.17494846537424197
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.025466786697506905,
+        "global_attention_gradient_norm": 0.037863589823246,
+        "local_to_global_ratio": 0.6725930324195464
+      }
+    ]
+  },
+  {
+    "seed": 42,
+    "arm": "C4_connected_wrongrepeat",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.01360245794057846,
+        "global_attention_gradient_norm": 0.17792518436908722,
+        "local_to_global_ratio": 0.07645043611342608
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.025260169059038162,
+        "global_attention_gradient_norm": 0.1029069572687149,
+        "local_to_global_ratio": 0.245466096068488
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.024887438863515854,
+        "global_attention_gradient_norm": 0.030805246904492378,
+        "local_to_global_ratio": 0.8078961009686463
+      }
+    ]
+  },
+  {
+    "seed": 42,
+    "arm": "C5_connected_shuffledphone",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.02390602044761181,
+        "global_attention_gradient_norm": 0.17792518436908722,
+        "local_to_global_ratio": 0.13435995883540167
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.02129492536187172,
+        "global_attention_gradient_norm": 0.10965573042631149,
+        "local_to_global_ratio": 0.19419801663882838
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.01304498128592968,
+        "global_attention_gradient_norm": 0.029647592455148697,
+        "local_to_global_ratio": 0.44000136961084835
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "arm": "C0_identity",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.12292231619358063,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.12009243667125702,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.01555082481354475,
+        "local_to_global_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "arm": "C1_detached_Audio",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.12292231619358063,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.13495568931102753,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.021762704476714134,
+        "local_to_global_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "arm": "C2_connected_ACC",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.015746138989925385,
+        "global_attention_gradient_norm": 0.12292231619358063,
+        "local_to_global_ratio": 0.12809829392677596
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.017012421041727066,
+        "global_attention_gradient_norm": 0.13812823593616486,
+        "local_to_global_ratio": 0.12316396373576548
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.022878551855683327,
+        "global_attention_gradient_norm": 0.016419464722275734,
+        "local_to_global_ratio": 1.393379884342074
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "arm": "C3_connected_Audio",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.03404821455478668,
+        "global_attention_gradient_norm": 0.12292231619358063,
+        "local_to_global_ratio": 0.2769896924262869
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.01847458817064762,
+        "global_attention_gradient_norm": 0.13558898866176605,
+        "local_to_global_ratio": 0.13625434006837728
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.01675563119351864,
+        "global_attention_gradient_norm": 0.022873906418681145,
+        "local_to_global_ratio": 0.732521629092366
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "arm": "C4_connected_wrongrepeat",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.029599197208881378,
+        "global_attention_gradient_norm": 0.12292231619358063,
+        "local_to_global_ratio": 0.2407959606152226
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.018600430339574814,
+        "global_attention_gradient_norm": 0.13167202472686768,
+        "local_to_global_ratio": 0.14126334259808337
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.016642196103930473,
+        "global_attention_gradient_norm": 0.022238915786147118,
+        "local_to_global_ratio": 0.7483366664078602
+      }
+    ]
+  },
+  {
+    "seed": 43,
+    "arm": "C5_connected_shuffledphone",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.01792619563639164,
+        "global_attention_gradient_norm": 0.12292231619358063,
+        "local_to_global_ratio": 0.14583353284818595
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.021697986871004105,
+        "global_attention_gradient_norm": 0.13142845034599304,
+        "local_to_global_ratio": 0.16509353046378383
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.00924227386713028,
+        "global_attention_gradient_norm": 0.028076644986867905,
+        "local_to_global_ratio": 0.329180137849558
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "arm": "C0_identity",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.23324154317378998,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.06616384536027908,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.009843375533819199,
+        "local_to_global_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "arm": "C1_detached_Audio",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.23324154317378998,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.0721924751996994,
+        "local_to_global_ratio": 0.0
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.0,
+        "global_attention_gradient_norm": 0.013319110497832298,
+        "local_to_global_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "arm": "C2_connected_ACC",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.013762769289314747,
+        "global_attention_gradient_norm": 0.23324154317378998,
+        "local_to_global_ratio": 0.059006509312365535
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.010736900381743908,
+        "global_attention_gradient_norm": 0.06600752472877502,
+        "local_to_global_ratio": 0.1626617635771352
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.01697431318461895,
+        "global_attention_gradient_norm": 0.016972744837403297,
+        "local_to_global_ratio": 1.0000924038645886
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "arm": "C3_connected_Audio",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.013046961277723312,
+        "global_attention_gradient_norm": 0.23324154317378998,
+        "local_to_global_ratio": 0.05593755340574953
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.01119202934205532,
+        "global_attention_gradient_norm": 0.07141492515802383,
+        "local_to_global_ratio": 0.15671835148311206
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.017083842307329178,
+        "global_attention_gradient_norm": 0.016060175374150276,
+        "local_to_global_ratio": 1.06373946170143
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "arm": "C4_connected_wrongrepeat",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.011156794615089893,
+        "global_attention_gradient_norm": 0.23324154317378998,
+        "local_to_global_ratio": 0.04783365117241093
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.018662117421627045,
+        "global_attention_gradient_norm": 0.0719854012131691,
+        "local_to_global_ratio": 0.2592486407954197
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.01575007662177086,
+        "global_attention_gradient_norm": 0.01711956225335598,
+        "local_to_global_ratio": 0.9200046349715129
+      }
+    ]
+  },
+  {
+    "seed": 44,
+    "arm": "C5_connected_shuffledphone",
+    "gradient": [
+      {
+        "step": 1,
+        "local_attention_gradient_norm": 0.01868649385869503,
+        "global_attention_gradient_norm": 0.23324154317378998,
+        "local_to_global_ratio": 0.08011649041771082
+      },
+      {
+        "step": 100,
+        "local_attention_gradient_norm": 0.01655077561736107,
+        "global_attention_gradient_norm": 0.07125987857580185,
+        "local_to_global_ratio": 0.23225938561985307
+      },
+      {
+        "step": 400,
+        "local_attention_gradient_norm": 0.02607204020023346,
+        "global_attention_gradient_norm": 0.014991934411227703,
+        "local_to_global_ratio": 1.7390711221833846
+      }
+    ]
+  }
+]

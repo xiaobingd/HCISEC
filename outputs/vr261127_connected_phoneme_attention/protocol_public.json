@@ -1,0 +1,62 @@
+{
+  "scope": "closed-set cross-word;all10 identities train representations;NOT unseen-user study;historicalviewedwords exploratorynotblind",
+  "data_protocol": "samevr261126_phoneme_conditioned_identity train/reg/cal/query roles,features,normalization,registrationandcalibration",
+  "train_words": [
+    0,
+    1,
+    6,
+    7,
+    11,
+    13
+  ],
+  "query_words": [
+    10,
+    14,
+    15
+  ],
+  "additional_query_words": [
+    23,
+    24,
+    25
+  ],
+  "extra_scope": "samefrozenadditionalEHwordset aspreviousstudy,alreadyviewed;noquerywordselection",
+  "counts": {
+    "fit": 240,
+    "registration": 120,
+    "calibration": 120,
+    "query": 240,
+    "additional_query": 240
+  },
+  "architecture": "shared frameMLP24->32SiLU->32SiLU;learnedattention;weightedmean/std64+rawmean24->32L2;temporary10classhead;5057params",
+  "parameters": 5057,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "steps": 400,
+  "batch": "10usersx6trainwordsx1fitrepeat=60,identicalbatch/init perseedacrossarms",
+  "optimizer": "AdamW.001 wd.01 clip1",
+  "global_loss": "normalizedCE scale16 +.1crosswordSupCon temperature.1",
+  "local_loss": ".1SupCon onteacher-localembedding: sameidentity/samephone/differentword positives;differentidentity/samephone negatives;singletonphoneanchors skipped",
+  "connection": "local_weight=softmax(ACC_attention_logits+log(training_prior));sameattentionparameterused forglobalquerypooling;NO extraalignmentKL/VADloss/head",
+  "C0_identity": "sameglobalidentitybaseline",
+  "C1_detached_Audio": "exactpreviousB2;teacherlocalpooldoesnotuseattentionparameter",
+  "C2_connected_ACC": "connectedlocalidentityloss withACCenergyprior/dictionaryphone",
+  "C3_connected_Audio": "connectedlocalidentityloss withcorrectAudio prior/dictionaryphone",
+  "C4_connected_wrongrepeat": "sameuser/sameword anotherFITrepeat prior;only4fitreps used,rotate2;noREG/CAL/queryAudio",
+  "C5_connected_shuffledphone": "samecorrectAudio prior;balancedper-userwordwisephoneclassshuffle exactlysame previousnegativecontrol",
+  "query": "globalsoftmaxACCattentiononly;noAudio,phonelabel,priororwordIDinput;legacycachealreadysegmented,notcontinuousendtoendAudiofree",
+  "budget": "18models400steps each,sameinitializationandfrozenbatchesacrossarmsperseed;noearlystopping/weightsearch/userfilter",
+  "calibration": "same12REG/12CAL peruser;all180tau locked beforebothquerysets scored;originalcalruleunchanged",
+  "primary": "initial3words MacroEER paireduser seedmean C3vsC1(connectioneffect),C3vsC2(Audioindependent),Holm2;wrongprior/shuffledphone andadditional3wordset reported",
+  "teacher_sigma_s": 0.1,
+  "teacher_offset_s": -0.1,
+  "prior_log_floor": 1e-20,
+  "source_minimum_repeat_center_gap_s": 0.9814401500043459,
+  "all_historical_words_exploratory": true,
+  "Audio_teacher_only_fit": true,
+  "private_export": false,
+  "data_sha256": "496c9d2005b71fb3b9a19c1050a1f8cfb044eb95754a6101d8187fb93e087ac5",
+  "roles_sha256": "ea9b45d14c5a8804002aa4d36ec6ec48cfea5cd37f491eb6a5b39233fecdc3b6"
+}

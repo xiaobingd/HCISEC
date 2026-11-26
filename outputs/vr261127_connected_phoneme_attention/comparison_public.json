@@ -1,0 +1,66 @@
+[
+  {
+    "phase": "initial",
+    "control": "C1_detached_Audio",
+    "eer_delta": 0.0018518518518518452,
+    "improved_users": 6,
+    "p": 0.76171875,
+    "holm_primary_p": 1.0
+  },
+  {
+    "phase": "initial",
+    "control": "C2_connected_ACC",
+    "eer_delta": 0.0037037037037036978,
+    "improved_users": 8,
+    "p": 0.5634765625,
+    "holm_primary_p": 1.0
+  },
+  {
+    "phase": "initial",
+    "control": "C4_connected_wrongrepeat",
+    "eer_delta": 0.007330246913580238,
+    "improved_users": 4,
+    "p": 0.935546875,
+    "holm_control_p": 1.0
+  },
+  {
+    "phase": "initial",
+    "control": "C5_connected_shuffledphone",
+    "eer_delta": 0.0016975308641975326,
+    "improved_users": 4,
+    "p": 0.630859375,
+    "holm_control_p": 1.0
+  },
+  {
+    "phase": "additional_EH",
+    "control": "C1_detached_Audio",
+    "eer_delta": -0.001929012345679015,
+    "improved_users": 6,
+    "p": 0.33984375,
+    "holm_primary_p": 0.33984375
+  },
+  {
+    "phase": "additional_EH",
+    "control": "C2_connected_ACC",
+    "eer_delta": -0.009645061728395065,
+    "improved_users": 7,
+    "p": 0.0986328125,
+    "holm_primary_p": 0.197265625
+  },
+  {
+    "phase": "additional_EH",
+    "control": "C4_connected_wrongrepeat",
+    "eer_delta": 0.002700617283950624,
+    "improved_users": 3,
+    "p": 0.623046875,
+    "holm_control_p": 1.0
+  },
+  {
+    "phase": "additional_EH",
+    "control": "C5_connected_shuffledphone",
+    "eer_delta": 0.002854938271604944,
+    "improved_users": 5,
+    "p": 0.693359375,
+    "holm_control_p": 1.0
+  }
+]
