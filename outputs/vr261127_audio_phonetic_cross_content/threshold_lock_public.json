@@ -1,0 +1,30 @@
+{
+  "status": "LOCKED",
+  "locked_at_unix": 1795742115.598734,
+  "count": 150,
+  "models": 15,
+  "users": 10,
+  "checkpoint_sha256": [
+    "4bd29e4687f361a70c0ac70551aed762a98059223eed328a22584ad481f33fce",
+    "c7aa7e0d103ac2115982f20fe80062d8ab753d50ebc1e61b0d98066f649325a9",
+    "93aa37c324f0e682c2b1ed9e3b0142d42c15e78ca6000fed6975977d3ca2f8e5",
+    "9874259906afa441a60d334a779e8fac5d845515560ecd57c0908829a76980f4",
+    "5c3a39a3d340e9c0cd1333fa6d15a190218df21456fbec3ec29b5005e79ae463",
+    "ac0f35f281e6999f784ac301016762fd53f01ddc8513f4a61c539a30eb27e860",
+    "b6a1770198bde35274d0825688402eac177857c1f8af58802fd5ac5bfbecfc54",
+    "5d4793da400ae56453eac6340a4aafc7116887fefa60524408de08cd723c5f73",
+    "612be90cf9bc370bb0962640f226d8444ffa0eec3cede20a2abc3fac7b2aea3f",
+    "74b4c13c904c0b8ffd56752315c54fb766345c4a20c43a53c433b7401a1417c3",
+    "9cdce9b88eedbefbed3c688584e2f4d3b47575cfae458e799ac77c80ed7f8956",
+    "be03d1a8c69f1b27aa7d8ab5719140d2cfbf94becc8ea3a68b03ca2ea2d13bc7",
+    "fa062e642507a945de002f0cb61fe60c86287a1cb3739ed05a6045d20b04799b",
+    "9d71017d1a3e92ee9f2b1244817db5afc7bc90a315cf506bb35fdd96ae077c54",
+    "db9a3a186a9ddb1a753c395fee07910833fd731fdb8e84f8059b8c882c814fdd"
+  ],
+  "lock_sha256": "f439f028cfeef9068fcd0ee8fe51f60ad37c31eb64d92f44bb9ab0f301b40389",
+  "development_lock_sha256": "5b136ce6d0c92c46a8c66aeb3938bc5abdbda523ba18be52b5d7d15ce9cd7816",
+  "formula": "(genuineCalQ10+all9identityImpostorCalQ95)/2",
+  "quantile_interpolation": "numpy linear",
+  "query_scores_computed_before_lock": 0,
+  "query_Audio_read": 0
+}

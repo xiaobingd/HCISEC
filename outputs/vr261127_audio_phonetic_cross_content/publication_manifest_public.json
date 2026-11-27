@@ -1,0 +1,320 @@
+{
+  "files": [
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/clock_mapping.py",
+      "bytes": 3582,
+      "sha256": "7ce154a8c88a47e7412fadc6932455cd38b6c495801489fdc4e48844d9938bab"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/common.py",
+      "bytes": 5587,
+      "sha256": "75207acb8377f93df850f7647a2be20110e7c3cb94e2600464828e793fd53496"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/development.py",
+      "bytes": 3623,
+      "sha256": "f0dd4f0f83aa890f6988e2c562472bf98831ddaf9f7b984a3d87060b26c9102b"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/download_runtime.ps1",
+      "bytes": 2207,
+      "sha256": "c7f1649c15fba8c8482da5910947beb4ded4ed289da593b5c09d2c574ac13e78"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/download_teacher.ps1",
+      "bytes": 1903,
+      "sha256": "63df843241864dbe8899b6c375d35e646ff3d3b77a6f57c8f40d8677d67f9485"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/evaluate.py",
+      "bytes": 10534,
+      "sha256": "b4c0a7ce9eb40fa848b64e89ab278cb656c5ee3fd393b09ef9e404c4fff1bb21"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/extract_teacher.py",
+      "bytes": 9926,
+      "sha256": "7ab606c935beca552a113b18ef9c3b50598a436ce700e9418d86545881104f3b"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/install_runtime.py",
+      "bytes": 1040,
+      "sha256": "dbac65e4506324c7bd9d8c0304a3ca84d65760581ac62fe96d2dd067e9b19ede"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/PLAN_SOURCE.md",
+      "bytes": 12789,
+      "sha256": "8f172bb4e3fb391f88ca40d824830e11a2e906d00571a248a2ab632c0ba4cfd3"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/prepare_acc.py",
+      "bytes": 6687,
+      "sha256": "750fd7f6ac21be595a528650e732a9c1d69f4ffa81a1c9909a668110ae65dee1"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/README.md",
+      "bytes": 1106,
+      "sha256": "c86b369e2440d4e831cfc2d8ad75070332e821a12326d099aa1adeb7cb160e29"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/report.py",
+      "bytes": 18853,
+      "sha256": "f4117a71aa6faeb30522896fb55ea992330e094ce41f2eb67b10f2a09dfdb7a1"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/run_pipeline.py",
+      "bytes": 1469,
+      "sha256": "df5a7557dfdbc4e15708b5ce281908cedfd6cd0138237c335ca1530d55386714"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/runtime.py",
+      "bytes": 5056,
+      "sha256": "f50c6567b26249de2fca48795fa793695fa7967efbe3d08e1b469009e93694b2"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/test_clock.py",
+      "bytes": 1213,
+      "sha256": "58e1036dc817972f5b0496fbe18de31211afc5c337a2b7ee46120358d73ce818"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/test_common.py",
+      "bytes": 2460,
+      "sha256": "fa7712efd5e9b43d377304766a61aeea9a1f348a4fa8454f2fe58de217724ea9"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/test_metrics.py",
+      "bytes": 2099,
+      "sha256": "66354db38ae0487b34eeb89f0500df58766508caf2a3cf28c4e15485b03dcb49"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/train.py",
+      "bytes": 9951,
+      "sha256": "3c5c7a1b5f909ab3aebc13e4a28a1df3f295bb44c8cdd01fefde71cd7fcf2cc2"
+    },
+    {
+      "path": "experiments/audio_phonetic_cross_content_20261127/verify.py",
+      "bytes": 14340,
+      "sha256": "c4808f8740b67fbd206716cf67dd3939ae483cfff7be4e67f45e4232da4857c3"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/data_audit_public.json",
+      "bytes": 81496,
+      "sha256": "fbee1b2cb8f1585fcb9fb0c3624916cdb988723ea3d73125766b4d8d4cc8ecfe"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/development_lock_public.json",
+      "bytes": 11069,
+      "sha256": "5b136ce6d0c92c46a8c66aeb3938bc5abdbda523ba18be52b5d7d15ce9cd7816"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/development_seed42_shuffle_public.json",
+      "bytes": 162,
+      "sha256": "9c6b236a30398ebc896830183dc5efbb0fcea535fb23f4a3e91b487ca790f21e"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/final_seed42_shuffle_public.json",
+      "bytes": 162,
+      "sha256": "9c6b236a30398ebc896830183dc5efbb0fcea535fb23f4a3e91b487ca790f21e"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/final_seed43_shuffle_public.json",
+      "bytes": 162,
+      "sha256": "43825313753da47ab010d1792dc16f0553d5e4b10932cf64ef467064eb81307c"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/final_seed44_shuffle_public.json",
+      "bytes": 163,
+      "sha256": "5713df5fc7316cb2e14d6617c2b76991935f9d7ab30f66d3c751385435bb37c3"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/input_verification_public.json",
+      "bytes": 1858,
+      "sha256": "1c6deb0a68734a0dc542cabcfae12fd34ff51051dc6b2320ccde4748765540d7"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/lexicon_public.json",
+      "bytes": 3855,
+      "sha256": "b5c2a7dcf4bc1859aad851ea7c03ccb401d383775d46e81c184ed2ad71902901"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/protocol.json",
+      "bytes": 2893,
+      "sha256": "b479b0e4bbb6a8c34db773c8f6aba4d8c4825a5eb22ce18eef842f1201a77848"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/query_phase_public.json",
+      "bytes": 214,
+      "sha256": "8e592803d92145a5af3493faca10c50b29b3f33e0b53ce9aabf4dae4d817bea7"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/report.md",
+      "bytes": 15229,
+      "sha256": "8abab31f10a15f464284cce8569f18da571315bac92183a25f3a0cb437f57df8"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/REPRODUCE.md",
+      "bytes": 7615,
+      "sha256": "293e52cad05f3bef6da4bab52f0608d69f656238c6ea673c4b3fdaa296612da7"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/role_split_public.json",
+      "bytes": 1578,
+      "sha256": "602b586c2c825b5eac7c46e200b12e442fdb1558b3cff59f258a0bb822d56826"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/software_public.json",
+      "bytes": 344,
+      "sha256": "edc68ac2245c76dff1dd69bef3182fe411ea7d941793e6a8d0fcfe27aa145689"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/summary_public.json",
+      "bytes": 15034,
+      "sha256": "cc9532002fa072b8530da2bcd8887970c8ede57fdbb415c53c98da2f44f2a936"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/T0_anonymous_metrics_public.json",
+      "bytes": 113504,
+      "sha256": "c5545f00694a7faae21110948e5924d931a866064000586146e34278ebec63eb"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/T1_anonymous_metrics_public.json",
+      "bytes": 114168,
+      "sha256": "1ad6b88eca091e72458f563cd68b6862ecd00ec1d525fd913366af078b1db200"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/T2_anonymous_metrics_public.json",
+      "bytes": 116283,
+      "sha256": "81ecb1810926b7669a0d5d8dc9e675d0e9d7634a37561a9e1ee77a7f3ece5555"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/T3_anonymous_metrics_public.json",
+      "bytes": 116408,
+      "sha256": "995dd394523d807ba56fd680f99ef2f1a3eb0969281d9bf6302702a47b46dfe6"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/T4_anonymous_metrics_public.json",
+      "bytes": 116576,
+      "sha256": "5de55fd44aa4c316d815b5a3a7bede84c9884fb5686b40e7706dd6014382b6e3"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/teacher_audit_public.json",
+      "bytes": 190385,
+      "sha256": "0a87449b718dfd7bef6ea95839da0caa3967ad9eb1c5fd015a957858bbe8cc9e"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/teacher_model_public.json",
+      "bytes": 1044,
+      "sha256": "2310e029b924098a8c6fa65d437e2504244a126f43bbfb1d5293cd910cd3cf9b"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/threshold_lock_public.json",
+      "bytes": 1602,
+      "sha256": "36d60fa6a47169ad6f8f5e7d1069293dfa775ddfdf0c898a60174129bf24904e"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_development_42_T0_public.json",
+      "bytes": 1544,
+      "sha256": "6ba434acd5a40a19a9c9967c454b3453b99df48f84e7a8f066d5c71cc8f05ea8"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_development_42_T1_public.json",
+      "bytes": 1721,
+      "sha256": "6b0c19335ff86680ceaacd7f5c51f90ddc245e3a2a546d19b93db454662686cd"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_development_42_T2_public.json",
+      "bytes": 1900,
+      "sha256": "e0a1c0a7c9b9d972fc32504c6a325e7fe6a1b5a434fbb8f74ffbbfdc602e6b37"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_development_42_T3_public.json",
+      "bytes": 2078,
+      "sha256": "ecdff078c794bef182543ff6c5f87609abb22f84b5bf37b6874eba16111c155d"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_development_42_T4_public.json",
+      "bytes": 2070,
+      "sha256": "b21e27fc9ed28bfab92bc6a76eaf2554358a35248cc67eb70bc64b3f1ebb2566"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_42_T0_public.json",
+      "bytes": 4056,
+      "sha256": "f2966c9fa7dbf2e885bfc0dd31fe200f912ed34a6e57c5561b55005bea8a68a7"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_42_T1_public.json",
+      "bytes": 4355,
+      "sha256": "83cf09166be23d98f0fab22c1496d6b848fd3567080c925aa08e48b4a3e94ecc"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_42_T2_public.json",
+      "bytes": 4677,
+      "sha256": "c0dba461c44c1d92c900c96bf9b4edc1ad8d76e8306176b6d5d297a32d7d9abe"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_42_T3_public.json",
+      "bytes": 4685,
+      "sha256": "2f3111b633554635cea015b53ca929e5e8dd2d84c1764622731d771f36a835e0"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_42_T4_public.json",
+      "bytes": 4679,
+      "sha256": "ae6ed87ea1d8de344d0fdf04b814c4bc3d9e9f496a6584962307e43b7491b567"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_43_T0_public.json",
+      "bytes": 4069,
+      "sha256": "9cd4d7f96ee49c9cb54f342af40c71946c2810b2e75e46b72577429efaed2234"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_43_T1_public.json",
+      "bytes": 4359,
+      "sha256": "fcf56507421fd59502f3a536f1d22f4c432d378c66b8b19f9fb320006f1ad22f"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_43_T2_public.json",
+      "bytes": 4670,
+      "sha256": "d216ec7ee98f5e1645e93d5579013a21de2443b63418f7f7b7569f7d91b7ccbb"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_43_T3_public.json",
+      "bytes": 4681,
+      "sha256": "f370c298d3c4adf18695d2a40ae61ee3de9b9aa5d3e622305a68219d4f71c443"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_43_T4_public.json",
+      "bytes": 4684,
+      "sha256": "2ec174aff1dfa199d9fdc6aeb91cc1e8968cd0d5fbc8fc0a20098afc59fa79f8"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_44_T0_public.json",
+      "bytes": 4067,
+      "sha256": "65e1d422d6b1c0946328b7038b5413dd62ff77e99103c64ef1a04d54a2a5b4ea"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_44_T1_public.json",
+      "bytes": 4356,
+      "sha256": "6d40ea50b006bc0a95933447339f97daae2671787088b004b8dceda388f011c7"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_44_T2_public.json",
+      "bytes": 4673,
+      "sha256": "0a58722cd256fa4fc219ff4d90b6398f0ccc53e6df43171fa469b003cea913e9"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_44_T3_public.json",
+      "bytes": 4683,
+      "sha256": "b6b35faeea6c68174444adde11e322b31c43f2c47c1f3e1518c736eee4eaaee9"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/train_final_44_T4_public.json",
+      "bytes": 4682,
+      "sha256": "cb7541922b8378d7defc0c2c88d7990c108f51c239be662fe7b95a7d5fc9cbbb"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_cross_content/verification_public.json",
+      "bytes": 7725,
+      "sha256": "605beb3c7dc881e9049f7bd1ec227ae241701aa9dfdb19137c5d426581160c1a"
+    }
+  ],
+  "private_signals_embeddings_models_thresholds_scores_excluded": true
+}

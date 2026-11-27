@@ -1,0 +1,63 @@
+{
+  "stage": "development",
+  "seed": 42,
+  "arm": "T3",
+  "steps": 200,
+  "parameters": 137301,
+  "initial_sha256": "8c9ebefe7ca6f377bddb13f98d741eb1e1a77954f56bb5773b217a36e5a4d60f",
+  "batch_sha256": "539353a3cc7960a4b099d55d7e8dba96b39eb7f667b52ca1a4060b87f9f146f9",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.029578696936368942,
+      "crossword_supcon": 2.2102808952331543,
+      "phone_kl": 5.303741455078125,
+      "word_ce": 2.5510668754577637,
+      "valid_phone_frames": 11680,
+      "preclip_gradnorm": 1.4523128271102905,
+      "elapsed_s": 18.677894199998264
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.004572717472910881,
+      "crossword_supcon": 1.914499044418335,
+      "phone_kl": 0.27849119901657104,
+      "word_ce": 2.4565906524658203,
+      "valid_phone_frames": 11680,
+      "preclip_gradnorm": 0.8244599103927612,
+      "elapsed_s": 35.147799599999416
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.3640077114105225,
+      "phone_grad": 0.05332234501838684,
+      "content_reverse_grad": 0.002020957414060831,
+      "phone_to_id_ratio": 0.022555910050868988,
+      "content_to_id_ratio": 0.0008548861369490623,
+      "phone_id_cosine": -0.004495490342378616,
+      "content_id_cosine": 0.2813330590724945
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.197522759437561,
+      "phone_grad": 0.14948074519634247,
+      "content_reverse_grad": 0.0119477529078722,
+      "phone_to_id_ratio": 0.12482497096061707,
+      "content_to_id_ratio": 0.00997705664485693,
+      "phone_id_cosine": -0.05187007784843445,
+      "content_id_cosine": 0.021855061873793602
+    },
+    {
+      "step": 200,
+      "identity_grad": 0.5246484875679016,
+      "phone_grad": 0.07217187434434891,
+      "content_reverse_grad": 0.024068517610430717,
+      "phone_to_id_ratio": 0.1375623345375061,
+      "content_to_id_ratio": 0.045875512063503265,
+      "phone_id_cosine": 0.005970582365989685,
+      "content_id_cosine": 0.18621587753295898
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "revision": "ae45363bf3413b374fecd9dc8bc1df0e24c3b7f4",
+  "weight_sha256": "3173bde9e9ce490fa0f989e413c42f25bc1820c020adc1e6b9b87025b3cfcc5e",
+  "weight_key_renames": [
+    "wav2vec2.encoder.pos_conv_embed.conv.weight_g",
+    "wav2vec2.encoder.pos_conv_embed.conv.weight_v"
+  ],
+  "parameters": 315840520,
+  "receptive_field_samples": 400,
+  "stride_samples": 320,
+  "sampling_rate": 16000,
+  "blank_id": 0,
+  "attention_implementation": "sdpa",
+  "precision": "float32",
+  "loading": "torchweights_only,mmap,strictassign",
+  "frozen": true,
+  "tokenizer": {
+    "espeak_version": "1.52.0",
+    "tokenizer": "Wav2Vec2PhonemeCTCTokenizer",
+    "do_phonemize": false,
+    "front": "direct eSpeak-ng en-us C API,stressremoved,underscore wholephone separator;tokenizer validatesIPAsequence",
+    "vocab_size": 392,
+    "blank_id": 0
+  },
+  "software": {
+    "torch": "2.5.0",
+    "transformers": "4.46.3",
+    "tokenizers": "0.20.3",
+    "espeakng-loader": "0.2.4"
+  },
+  "platform": "Windows-10-10.0.26300-SP0"
+}

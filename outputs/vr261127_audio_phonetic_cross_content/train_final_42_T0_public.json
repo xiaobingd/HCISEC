@@ -1,0 +1,143 @@
+{
+  "stage": "final",
+  "seed": 42,
+  "arm": "T0",
+  "steps": 1000,
+  "parameters": 137561,
+  "initial_sha256": "e9e181afa1abaee824ce9d3f0567ae308c93dcfdc716e0b307adb6a90451e950",
+  "batch_sha256": "167ab4d9086790a9e5e9b9ccb2f15590b06c0fc881045dea08fa17ea6d8163a9",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.0834161788225174,
+      "crossword_supcon": 2.4669272899627686,
+      "phone_kl": 0.0,
+      "word_ce": 0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 3.463486671447754,
+      "elapsed_s": 10.630240599999524
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.0018730729352682829,
+      "crossword_supcon": 1.92618727684021,
+      "phone_kl": -0.0,
+      "word_ce": -0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.211412712931633,
+      "elapsed_s": 23.504402700000355
+    },
+    {
+      "step": 300,
+      "identity_ce": 0.0010555124608799815,
+      "crossword_supcon": 1.8694393634796143,
+      "phone_kl": -0.0,
+      "word_ce": -0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.10956792533397675,
+      "elapsed_s": 34.07037680000212
+    },
+    {
+      "step": 400,
+      "identity_ce": 0.0005705916555598378,
+      "crossword_supcon": 1.8513832092285156,
+      "phone_kl": 0.0,
+      "word_ce": 0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.08707676082849503,
+      "elapsed_s": 45.89102710000225
+    },
+    {
+      "step": 500,
+      "identity_ce": 0.0004032956494484097,
+      "crossword_supcon": 1.8256479501724243,
+      "phone_kl": -0.0,
+      "word_ce": -0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.0530608706176281,
+      "elapsed_s": 56.77180270000099
+    },
+    {
+      "step": 600,
+      "identity_ce": 0.00028468199889175594,
+      "crossword_supcon": 1.8170549869537354,
+      "phone_kl": -0.0,
+      "word_ce": -0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.0534338541328907,
+      "elapsed_s": 66.95218720000048
+    },
+    {
+      "step": 700,
+      "identity_ce": 0.0001987315044971183,
+      "crossword_supcon": 1.809807538986206,
+      "phone_kl": -0.0,
+      "word_ce": -0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.03995634987950325,
+      "elapsed_s": 77.59169850000035
+    },
+    {
+      "step": 800,
+      "identity_ce": 0.00016755409887991846,
+      "crossword_supcon": 1.8066867589950562,
+      "phone_kl": 0.0,
+      "word_ce": 0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.03298339247703552,
+      "elapsed_s": 88.83814170000187
+    },
+    {
+      "step": 900,
+      "identity_ce": 0.00013845654029864818,
+      "crossword_supcon": 1.8051677942276,
+      "phone_kl": 0.0,
+      "word_ce": 0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.029865896329283714,
+      "elapsed_s": 98.98858780000228
+    },
+    {
+      "step": 1000,
+      "identity_ce": 0.00013853151176590472,
+      "crossword_supcon": 1.803871512413025,
+      "phone_kl": 0.0,
+      "word_ce": 0.0,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.028230246156454086,
+      "elapsed_s": 108.90602910000234
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.4021008014678955,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.0
+    },
+    {
+      "step": 100,
+      "identity_grad": 2.9712417125701904,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.0
+    },
+    {
+      "step": 1000,
+      "identity_grad": 0.027453798800706863,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.0
+    }
+  ]
+}

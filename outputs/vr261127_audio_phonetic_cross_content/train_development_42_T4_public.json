@@ -1,0 +1,63 @@
+{
+  "stage": "development",
+  "seed": 42,
+  "arm": "T4",
+  "steps": 200,
+  "parameters": 137301,
+  "initial_sha256": "8c9ebefe7ca6f377bddb13f98d741eb1e1a77954f56bb5773b217a36e5a4d60f",
+  "batch_sha256": "539353a3cc7960a4b099d55d7e8dba96b39eb7f667b52ca1a4060b87f9f146f9",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.02971658483147621,
+      "crossword_supcon": 2.21085262298584,
+      "phone_kl": 5.294820785522461,
+      "word_ce": 2.551079511642456,
+      "valid_phone_frames": 11680,
+      "preclip_gradnorm": 1.454537034034729,
+      "elapsed_s": 17.93922179999936
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.00364456744864583,
+      "crossword_supcon": 1.9033820629119873,
+      "phone_kl": 0.2786903381347656,
+      "word_ce": 2.4572629928588867,
+      "valid_phone_frames": 11680,
+      "preclip_gradnorm": 0.6538259387016296,
+      "elapsed_s": 34.187768799998594
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.3640077114105225,
+      "phone_grad": 0.05354789271950722,
+      "content_reverse_grad": 0.002020957414060831,
+      "phone_to_id_ratio": 0.022651318460702896,
+      "content_to_id_ratio": 0.0008548861369490623,
+      "phone_id_cosine": -0.004612494260072708,
+      "content_id_cosine": 0.2813330590724945
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.2009241580963135,
+      "phone_grad": 0.15347447991371155,
+      "content_reverse_grad": 0.011958410032093525,
+      "phone_to_id_ratio": 0.1277969777584076,
+      "content_to_id_ratio": 0.009957673028111458,
+      "phone_id_cosine": -0.0588526725769043,
+      "content_id_cosine": 0.0212185550481081
+    },
+    {
+      "step": 200,
+      "identity_grad": 0.4301838278770447,
+      "phone_grad": 0.04043392837047577,
+      "content_reverse_grad": 0.024004820734262466,
+      "phone_to_id_ratio": 0.0939922109246254,
+      "content_to_id_ratio": 0.055801309645175934,
+      "phone_id_cosine": 0.07066299021244049,
+      "content_id_cosine": 0.14779245853424072
+    }
+  ]
+}

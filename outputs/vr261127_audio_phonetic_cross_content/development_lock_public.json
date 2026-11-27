@@ -1,0 +1,313 @@
+{
+  "status": "LOCKED",
+  "locked_at_unix": 1795739884.875821,
+  "protocol_sha256": "9119ad3807ec05a89753aab728622f4a7ec9db6ff76c7024e0beaeb72099b360",
+  "teacher_cache_sha256": "b67c300e343a69f7cf8fa9306a88d1762dc54310f58f15b972bb42fc6e64a85e",
+  "teacher_audit_sha256": "0a87449b718dfd7bef6ea95839da0caa3967ad9eb1c5fd015a957858bbe8cc9e",
+  "optimized_words": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    13,
+    14,
+    15
+  ],
+  "independent_development_words": [
+    16,
+    17,
+    33,
+    34
+  ],
+  "models": [
+    {
+      "arm": "T0",
+      "checkpoint_sha256": "055adba32eac8d11f315aeb5191e17904a8e9dc2f79abc13e30a772e3d0418c9",
+      "dev_windows": 197,
+      "valid_frames": 28737,
+      "full_posterior_KL": 5.7846808433532715,
+      "teacher_nonblank_mass": 0.0385323092341423,
+      "nonblank_mass_weighted_conditional_KL": 5.302695274353027,
+      "nonblank_mass_weighted_top1": 0.001420485437847674,
+      "teacher_nonblank_majority_frames": 0,
+      "nonblank_majority_top1": null,
+      "final_training": {
+        "step": 200,
+        "identity_ce": 0.0016639397945255041,
+        "crossword_supcon": 1.861628770828247,
+        "phone_kl": -0.0,
+        "word_ce": -0.0,
+        "valid_phone_frames": 0,
+        "preclip_gradnorm": 0.1267559975385666,
+        "elapsed_s": 60.95093110000016
+      },
+      "gradient": [
+        {
+          "step": 1,
+          "identity_grad": 2.3640077114105225,
+          "phone_grad": 0.0,
+          "content_reverse_grad": 0.0,
+          "phone_to_id_ratio": 0.0,
+          "content_to_id_ratio": 0.0,
+          "phone_id_cosine": 0.0,
+          "content_id_cosine": 0.0
+        },
+        {
+          "step": 100,
+          "identity_grad": 1.1096830368041992,
+          "phone_grad": 0.0,
+          "content_reverse_grad": 0.0,
+          "phone_to_id_ratio": 0.0,
+          "content_to_id_ratio": 0.0,
+          "phone_id_cosine": 0.0,
+          "content_id_cosine": 0.0
+        },
+        {
+          "step": 200,
+          "identity_grad": 0.11739512532949448,
+          "phone_grad": 0.0,
+          "content_reverse_grad": 0.0,
+          "phone_to_id_ratio": 0.0,
+          "content_to_id_ratio": 0.0,
+          "phone_id_cosine": 0.0,
+          "content_id_cosine": 0.0
+        }
+      ]
+    },
+    {
+      "arm": "T1",
+      "checkpoint_sha256": "62fe512354a94f0d9a6ae6052d089063a55614f855aa759c242e2fc1c3a67732",
+      "dev_windows": 197,
+      "valid_frames": 28737,
+      "full_posterior_KL": 5.784607887268066,
+      "teacher_nonblank_mass": 0.0385323092341423,
+      "nonblank_mass_weighted_conditional_KL": 5.30235481262207,
+      "nonblank_mass_weighted_top1": 0.0014198122080415487,
+      "teacher_nonblank_majority_frames": 0,
+      "nonblank_majority_top1": null,
+      "final_training": {
+        "step": 200,
+        "identity_ce": 0.0016871091211214662,
+        "crossword_supcon": 1.8617479801177979,
+        "phone_kl": -0.0,
+        "word_ce": 2.4581291675567627,
+        "valid_phone_frames": 0,
+        "preclip_gradnorm": 0.13339759409427643,
+        "elapsed_s": 55.044061599997804
+      },
+      "gradient": [
+        {
+          "step": 1,
+          "identity_grad": 2.3640077114105225,
+          "phone_grad": 0.0,
+          "content_reverse_grad": 0.002020957414060831,
+          "phone_to_id_ratio": 0.0,
+          "content_to_id_ratio": 0.0008548861369490623,
+          "phone_id_cosine": 0.0,
+          "content_id_cosine": 0.2813330590724945
+        },
+        {
+          "step": 100,
+          "identity_grad": 1.1088504791259766,
+          "phone_grad": 0.0,
+          "content_reverse_grad": 0.011517912149429321,
+          "phone_to_id_ratio": 0.0,
+          "content_to_id_ratio": 0.010387254878878593,
+          "phone_id_cosine": 0.0,
+          "content_id_cosine": 0.04355726018548012
+        },
+        {
+          "step": 200,
+          "identity_grad": 0.11918468028306961,
+          "phone_grad": 0.0,
+          "content_reverse_grad": 0.01580207608640194,
+          "phone_to_id_ratio": 0.0,
+          "content_to_id_ratio": 0.13258479535579681,
+          "phone_id_cosine": 0.0,
+          "content_id_cosine": 0.019296564161777496
+        }
+      ]
+    },
+    {
+      "arm": "T2",
+      "checkpoint_sha256": "505a8c51eb7851f9e2a592567017c9f91cbb376e60e72cdb9c6940d1e57fd11c",
+      "dev_windows": 197,
+      "valid_frames": 28737,
+      "full_posterior_KL": 1.286774754524231,
+      "teacher_nonblank_mass": 0.0385323092341423,
+      "nonblank_mass_weighted_conditional_KL": 5.441849708557129,
+      "nonblank_mass_weighted_top1": 0.0,
+      "teacher_nonblank_majority_frames": 0,
+      "nonblank_majority_top1": null,
+      "final_training": {
+        "step": 200,
+        "identity_ce": 0.003328457474708557,
+        "crossword_supcon": 1.9123947620391846,
+        "phone_kl": 2.4564690589904785,
+        "word_ce": 2.4556546211242676,
+        "valid_phone_frames": 11680,
+        "preclip_gradnorm": 0.34593072533607483,
+        "elapsed_s": 115.59902250000232
+      },
+      "gradient": [
+        {
+          "step": 1,
+          "identity_grad": 2.3640077114105225,
+          "phone_grad": 0.02581329271197319,
+          "content_reverse_grad": 0.002020957414060831,
+          "phone_to_id_ratio": 0.010919293388724327,
+          "content_to_id_ratio": 0.0008548861369490623,
+          "phone_id_cosine": 0.03031611442565918,
+          "content_id_cosine": 0.2813330590724945
+        },
+        {
+          "step": 100,
+          "identity_grad": 1.141026496887207,
+          "phone_grad": 0.08614683151245117,
+          "content_reverse_grad": 0.011779602617025375,
+          "phone_to_id_ratio": 0.07549941539764404,
+          "content_to_id_ratio": 0.010323689319193363,
+          "phone_id_cosine": -0.008483435027301311,
+          "content_id_cosine": 0.037892065942287445
+        },
+        {
+          "step": 200,
+          "identity_grad": 0.27195316553115845,
+          "phone_grad": 0.09055372327566147,
+          "content_reverse_grad": 0.02361047826707363,
+          "phone_to_id_ratio": 0.33297544717788696,
+          "content_to_id_ratio": 0.08681818097829819,
+          "phone_id_cosine": -0.19273371994495392,
+          "content_id_cosine": 0.14865389466285706
+        }
+      ]
+    },
+    {
+      "arm": "T3",
+      "checkpoint_sha256": "2eb7e40accca3b2d30f67953d9940894218555650e948ebd052d46d0aa7d558a",
+      "dev_windows": 197,
+      "valid_frames": 28737,
+      "full_posterior_KL": 0.3186618685722351,
+      "teacher_nonblank_mass": 0.0385323092341423,
+      "nonblank_mass_weighted_conditional_KL": 5.136324882507324,
+      "nonblank_mass_weighted_top1": 0.0,
+      "teacher_nonblank_majority_frames": 0,
+      "nonblank_majority_top1": null,
+      "final_training": {
+        "step": 200,
+        "identity_ce": 0.004572717472910881,
+        "crossword_supcon": 1.914499044418335,
+        "phone_kl": 0.27849119901657104,
+        "word_ce": 2.4565906524658203,
+        "valid_phone_frames": 11680,
+        "preclip_gradnorm": 0.8244599103927612,
+        "elapsed_s": 35.147799599999416
+      },
+      "gradient": [
+        {
+          "step": 1,
+          "identity_grad": 2.3640077114105225,
+          "phone_grad": 0.05332234501838684,
+          "content_reverse_grad": 0.002020957414060831,
+          "phone_to_id_ratio": 0.022555910050868988,
+          "content_to_id_ratio": 0.0008548861369490623,
+          "phone_id_cosine": -0.004495490342378616,
+          "content_id_cosine": 0.2813330590724945
+        },
+        {
+          "step": 100,
+          "identity_grad": 1.197522759437561,
+          "phone_grad": 0.14948074519634247,
+          "content_reverse_grad": 0.0119477529078722,
+          "phone_to_id_ratio": 0.12482497096061707,
+          "content_to_id_ratio": 0.00997705664485693,
+          "phone_id_cosine": -0.05187007784843445,
+          "content_id_cosine": 0.021855061873793602
+        },
+        {
+          "step": 200,
+          "identity_grad": 0.5246484875679016,
+          "phone_grad": 0.07217187434434891,
+          "content_reverse_grad": 0.024068517610430717,
+          "phone_to_id_ratio": 0.1375623345375061,
+          "content_to_id_ratio": 0.045875512063503265,
+          "phone_id_cosine": 0.005970582365989685,
+          "content_id_cosine": 0.18621587753295898
+        }
+      ]
+    },
+    {
+      "arm": "T4",
+      "checkpoint_sha256": "89db6c1d771325304aa0f895af64e6c9a0d629b8798fb1d7003bb788e848cccf",
+      "dev_windows": 197,
+      "valid_frames": 28737,
+      "full_posterior_KL": 0.3476892411708832,
+      "teacher_nonblank_mass": 0.0385323092341423,
+      "nonblank_mass_weighted_conditional_KL": 5.2885212898254395,
+      "nonblank_mass_weighted_top1": 0.0,
+      "teacher_nonblank_majority_frames": 0,
+      "nonblank_majority_top1": null,
+      "final_training": {
+        "step": 200,
+        "identity_ce": 0.00364456744864583,
+        "crossword_supcon": 1.9033820629119873,
+        "phone_kl": 0.2786903381347656,
+        "word_ce": 2.4572629928588867,
+        "valid_phone_frames": 11680,
+        "preclip_gradnorm": 0.6538259387016296,
+        "elapsed_s": 34.187768799998594
+      },
+      "gradient": [
+        {
+          "step": 1,
+          "identity_grad": 2.3640077114105225,
+          "phone_grad": 0.05354789271950722,
+          "content_reverse_grad": 0.002020957414060831,
+          "phone_to_id_ratio": 0.022651318460702896,
+          "content_to_id_ratio": 0.0008548861369490623,
+          "phone_id_cosine": -0.004612494260072708,
+          "content_id_cosine": 0.2813330590724945
+        },
+        {
+          "step": 100,
+          "identity_grad": 1.2009241580963135,
+          "phone_grad": 0.15347447991371155,
+          "content_reverse_grad": 0.011958410032093525,
+          "phone_to_id_ratio": 0.1277969777584076,
+          "content_to_id_ratio": 0.009957673028111458,
+          "phone_id_cosine": -0.0588526725769043,
+          "content_id_cosine": 0.0212185550481081
+        },
+        {
+          "step": 200,
+          "identity_grad": 0.4301838278770447,
+          "phone_grad": 0.04043392837047577,
+          "content_reverse_grad": 0.024004820734262466,
+          "phone_to_id_ratio": 0.0939922109246254,
+          "content_to_id_ratio": 0.055801309645175934,
+          "phone_id_cosine": 0.07066299021244049,
+          "content_id_cosine": 0.14779245853424072
+        }
+      ]
+    }
+  ],
+  "selected_settings": {
+    "lambda_phone": 0.1,
+    "lambda_content": 0.05,
+    "final_steps": 1000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "registration_K": 12
+  },
+  "decision": "Retain all predeclared settings: finite losses/gradients. No lambda scan, authentication queries or calibration used. Blank is not interpreted as silence.",
+  "query_scores_read": 0,
+  "calibration_scores_read": 0
+}

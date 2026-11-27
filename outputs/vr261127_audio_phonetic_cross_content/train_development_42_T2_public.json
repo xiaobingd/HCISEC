@@ -1,0 +1,61 @@
+{
+  "stage": "development",
+  "seed": 42,
+  "arm": "T2",
+  "steps": 200,
+  "parameters": 137301,
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.02700461447238922,
+      "crossword_supcon": 2.2104837894439697,
+      "phone_kl": 5.3814377784729,
+      "word_ce": 2.551243305206299,
+      "valid_phone_frames": 11680,
+      "preclip_gradnorm": 1.3572014570236206,
+      "elapsed_s": 54.25856980000026
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.003328457474708557,
+      "crossword_supcon": 1.9123947620391846,
+      "phone_kl": 2.4564690589904785,
+      "word_ce": 2.4556546211242676,
+      "valid_phone_frames": 11680,
+      "preclip_gradnorm": 0.34593072533607483,
+      "elapsed_s": 115.59902250000232
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.3640077114105225,
+      "phone_grad": 0.02581329271197319,
+      "content_reverse_grad": 0.002020957414060831,
+      "phone_to_id_ratio": 0.010919293388724327,
+      "content_to_id_ratio": 0.0008548861369490623,
+      "phone_id_cosine": 0.03031611442565918,
+      "content_id_cosine": 0.2813330590724945
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.141026496887207,
+      "phone_grad": 0.08614683151245117,
+      "content_reverse_grad": 0.011779602617025375,
+      "phone_to_id_ratio": 0.07549941539764404,
+      "content_to_id_ratio": 0.010323689319193363,
+      "phone_id_cosine": -0.008483435027301311,
+      "content_id_cosine": 0.037892065942287445
+    },
+    {
+      "step": 200,
+      "identity_grad": 0.27195316553115845,
+      "phone_grad": 0.09055372327566147,
+      "content_reverse_grad": 0.02361047826707363,
+      "phone_to_id_ratio": 0.33297544717788696,
+      "content_to_id_ratio": 0.08681818097829819,
+      "phone_id_cosine": -0.19273371994495392,
+      "content_id_cosine": 0.14865389466285706
+    }
+  ]
+}

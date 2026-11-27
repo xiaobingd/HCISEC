@@ -1,0 +1,62 @@
+{
+  "data": {
+    "windows": 2179,
+    "unique_record_groups": 400,
+    "nonoverlap": true,
+    "role_group_overlap": 0,
+    "registration_windows": 120,
+    "raw_acc_SHA256": "f47ef556aa86240948e9f76c59c8f2d1cb8053c6ce323c9cffdb3ec0d1eaad3f",
+    "sameword_K12_comparable": false,
+    "cross_recording_same_user_window_overlap": 0,
+    "independently_rehashed_unique_raw_ACC_sources": 400,
+    "original_prompt_metadata_labels_checked": 400,
+    "independent_direct_FFT_max_absolute_error": 9.536588763126019e-07
+  },
+  "teacher": {
+    "training_development_only": true,
+    "query_Audio_reads": 0,
+    "full_vocabulary": 392,
+    "replay": [
+      {
+        "user": 1,
+        "word": 0,
+        "posterior_max_error": 0.0,
+        "mapped_max_error": 0.0
+      },
+      {
+        "user": 2,
+        "word": 16,
+        "posterior_max_error": 0.0,
+        "mapped_max_error": 0.0
+      },
+      {
+        "user": 10,
+        "word": 34,
+        "posterior_max_error": 0.0,
+        "mapped_max_error": 0.0
+      }
+    ],
+    "mean_valid_blank_probability": 0.9505619406700134,
+    "nonblank_majority_frames": 0,
+    "valid_frames": 119393,
+    "windows_without_auxiliary": 0,
+    "discontinuous_clock_case_replay": {
+      "user": 9,
+      "word": 33,
+      "mapped_max_error": 0.0,
+      "clock_audit": {
+        "clock_estimated_rate": 42751.200897557836,
+        "clock_block_median_rate": 44102.82152308582,
+        "resampling_nominal_rate": 44100,
+        "callback_global_residual_p95_ms": 175.2114859536959,
+        "callback_residual_p95_ms": 6.193395743321162,
+        "callback_discontinuities": 2,
+        "valid_clock_segments": 2,
+        "masked_clock_segments": 1
+      }
+    }
+  },
+  "status": "PASS_INPUTS_ONLY",
+  "authentication_models_checked": 0,
+  "query_Audio_reads": 0
+}

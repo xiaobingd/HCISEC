@@ -1,0 +1,3744 @@
+{
+  "status": "PASS",
+  "users": 10,
+  "recordings": 400,
+  "actual_windows": 2179,
+  "nominal_utterances": 3200,
+  "roles": {
+    "optimize": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "development": [
+      16,
+      17,
+      33,
+      34
+    ],
+    "registration": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "calibration": [
+      8,
+      18,
+      24,
+      30,
+      31
+    ],
+    "english_short": [
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "english_long": [
+      3,
+      9,
+      12,
+      19,
+      32
+    ],
+    "chinese": [
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "actual_role_windows": {
+    "optimize": 621,
+    "development": 197,
+    "registration": 215,
+    "calibration": 233,
+    "english_short": 241,
+    "english_long": 333,
+    "chinese": 339
+  },
+  "records": [
+    {
+      "user": 1,
+      "word": 0,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 1,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 2,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 3,
+      "role": "english_long",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 4,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 5,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 6,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 7,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 8,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 9,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 10,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 11,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 12,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 13,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 14,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 15,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 16,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 17,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 18,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 19,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 20,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 21,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 22,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 23,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 24,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 25,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 26,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 27,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 28,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 29,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 30,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 31,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 32,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 33,
+      "role": "development",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 34,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 35,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 36,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 37,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 38,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 1,
+      "word": 39,
+      "role": "chinese",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 0,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 1,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 2,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 3,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 4,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 5,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 6,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 7,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 8,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 9,
+      "role": "english_long",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 10,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 11,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 12,
+      "role": "english_long",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 13,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 14,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 15,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 16,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 17,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 18,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 19,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 20,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 21,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 22,
+      "role": "registration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 23,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 24,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 25,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 26,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 27,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 28,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 29,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 30,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 31,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 32,
+      "role": "english_long",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 33,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 34,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 35,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 36,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 37,
+      "role": "chinese",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 38,
+      "role": "chinese",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 2,
+      "word": 39,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 0,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 1,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 2,
+      "role": "optimize",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 3,
+      "role": "english_long",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 4,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 5,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 6,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 7,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 8,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 9,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 10,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 11,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 12,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 13,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 14,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 15,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 16,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 17,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 18,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 19,
+      "role": "english_long",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 20,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 21,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 22,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 23,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 24,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 25,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 26,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 27,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 28,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 29,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 30,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 31,
+      "role": "calibration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 32,
+      "role": "english_long",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 33,
+      "role": "development",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 34,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 35,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 36,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 37,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 38,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 3,
+      "word": 39,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 0,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 1,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 2,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 3,
+      "role": "english_long",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 4,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 5,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 6,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 7,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 8,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 9,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 10,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 11,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 12,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 13,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 14,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 15,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 16,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 17,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 18,
+      "role": "calibration",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 19,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 20,
+      "role": "registration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 21,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 22,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 23,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 24,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 25,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 26,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 27,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 28,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 29,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 30,
+      "role": "calibration",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 31,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 32,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 33,
+      "role": "development",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 34,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 35,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 36,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 37,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 38,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 4,
+      "word": 39,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 0,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 1,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 2,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 3,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 4,
+      "role": "optimize",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 5,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 6,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 7,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 8,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 9,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 10,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 11,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 12,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 13,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 14,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 15,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 16,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 17,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 18,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 19,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 20,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 21,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 22,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 23,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 24,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 25,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 26,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 27,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 28,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 29,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 30,
+      "role": "calibration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 31,
+      "role": "calibration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 32,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 33,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 34,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 35,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 36,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 37,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 38,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 5,
+      "word": 39,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 0,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 1,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 2,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 3,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 4,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 5,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 6,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 7,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 8,
+      "role": "calibration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 9,
+      "role": "english_long",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 10,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 11,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 12,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 13,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 14,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 15,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 16,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 17,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 18,
+      "role": "calibration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 19,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 20,
+      "role": "registration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 21,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 22,
+      "role": "registration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 23,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 24,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 25,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 26,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 27,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 28,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 29,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 30,
+      "role": "calibration",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 31,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 32,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 33,
+      "role": "development",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 34,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 35,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 36,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 37,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 38,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 6,
+      "word": 39,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 0,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 1,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 2,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 3,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 4,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 5,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 6,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 7,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 8,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 9,
+      "role": "english_long",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 10,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 11,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 12,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 13,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 14,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 15,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 16,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 17,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 18,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 19,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 20,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 21,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 22,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 23,
+      "role": "registration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 24,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 25,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 26,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 27,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 28,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 29,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 30,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 31,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 32,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 33,
+      "role": "development",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 34,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 35,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 36,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 37,
+      "role": "chinese",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 38,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 7,
+      "word": 39,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 0,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 1,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 2,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 3,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 4,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 5,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 6,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 7,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 8,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 9,
+      "role": "english_long",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 10,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 11,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 12,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 13,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 14,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 15,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 16,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 17,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 18,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 19,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 20,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 21,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 22,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 23,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 24,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 25,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 26,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 27,
+      "role": "english_short",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 28,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 29,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 30,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 31,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 32,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 33,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 34,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 35,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 36,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 37,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 38,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 8,
+      "word": 39,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 0,
+      "role": "optimize",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 1,
+      "role": "optimize",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 2,
+      "role": "optimize",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 3,
+      "role": "english_long",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 4,
+      "role": "optimize",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 5,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 6,
+      "role": "optimize",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 7,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 8,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 9,
+      "role": "english_long",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 10,
+      "role": "optimize",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 11,
+      "role": "optimize",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 12,
+      "role": "english_long",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 13,
+      "role": "optimize",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 14,
+      "role": "optimize",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 15,
+      "role": "optimize",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 16,
+      "role": "development",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 17,
+      "role": "development",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 18,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 19,
+      "role": "english_long",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 20,
+      "role": "registration",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 21,
+      "role": "registration",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 22,
+      "role": "registration",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 23,
+      "role": "registration",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 24,
+      "role": "calibration",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 25,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 26,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 27,
+      "role": "english_short",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 28,
+      "role": "english_short",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 29,
+      "role": "english_short",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 30,
+      "role": "calibration",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 31,
+      "role": "calibration",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 32,
+      "role": "english_long",
+      "windows": 11,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 33,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 34,
+      "role": "development",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 35,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 36,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 37,
+      "role": "chinese",
+      "windows": 8,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 38,
+      "role": "chinese",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 9,
+      "word": 39,
+      "role": "chinese",
+      "windows": 9,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 0,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 1,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 2,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 3,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 4,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 5,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 6,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 7,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 8,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 9,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 10,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 11,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 12,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 13,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 14,
+      "role": "optimize",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 15,
+      "role": "optimize",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 16,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 17,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 18,
+      "role": "calibration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 19,
+      "role": "english_long",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 20,
+      "role": "registration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 21,
+      "role": "registration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 22,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 23,
+      "role": "registration",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 24,
+      "role": "calibration",
+      "windows": 3,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 25,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 26,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 27,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 28,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 29,
+      "role": "english_short",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 30,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 31,
+      "role": "calibration",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 32,
+      "role": "english_long",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 33,
+      "role": "development",
+      "windows": 4,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 34,
+      "role": "development",
+      "windows": 5,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 35,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 36,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 37,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 38,
+      "role": "chinese",
+      "windows": 6,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    },
+    {
+      "user": 10,
+      "word": 39,
+      "role": "chinese",
+      "windows": 7,
+      "valid_acc": true,
+      "Audio_opened": false,
+      "Audio_timestamps_opened": false
+    }
+  ],
+  "input_channels": 147,
+  "frequency_hz": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    470,
+    480,
+    490
+  ],
+  "frames": 146,
+  "stft_window_ms": 100,
+  "stft_hop_ms": 20,
+  "processing_hz": 1000,
+  "source": "rawhardwareaccelxyz;no trackingvelocity",
+  "window": "firstvalidIMU+.5s thennonoverlap3sec,origins independentofAudio",
+  "unique_source_hashes": 400,
+  "registration_per_word": 3,
+  "registration_K": 12,
+  "registration_indices_before_model_results": true,
+  "role_record_group_overlap": 0,
+  "window_overlap_same_record": 0,
+  "Audio_files_opened": 0,
+  "Audio_timestamp_files_opened": 0,
+  "same_content_diagnostic_same_K_feasible": false,
+  "same_content_reason": "needsKseparate samewordREGwindows plusatleast1query peruser/word;notforce-reuseorpool",
+  "physical_sync_verified": false,
+  "data_sha256": "f47ef556aa86240948e9f76c59c8f2d1cb8053c6ce323c9cffdb3ec0d1eaad3f"
+}

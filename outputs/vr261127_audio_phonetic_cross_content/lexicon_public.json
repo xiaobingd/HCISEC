@@ -1,0 +1,260 @@
+{
+  "lexicon": {
+    "0": {
+      "text": "Back",
+      "phones": [
+        "b",
+        "æ",
+        "k"
+      ],
+      "ids": [
+        26,
+        36,
+        11
+      ],
+      "missing": []
+    },
+    "1": {
+      "text": "Cancel",
+      "phones": [
+        "k",
+        "æ",
+        "n",
+        "s",
+        "əl"
+      ],
+      "ids": [
+        11,
+        36,
+        4,
+        5,
+        61
+      ],
+      "missing": []
+    },
+    "2": {
+      "text": "Confirm",
+      "phones": [
+        "k",
+        "ə",
+        "n",
+        "f",
+        "ɜː",
+        "m"
+      ],
+      "ids": [
+        11,
+        7,
+        4,
+        23,
+        63,
+        13
+      ],
+      "missing": []
+    },
+    "4": {
+      "text": "Down",
+      "phones": [
+        "d",
+        "aʊ",
+        "n"
+      ],
+      "ids": [
+        12,
+        53,
+        4
+      ],
+      "missing": []
+    },
+    "5": {
+      "text": "eight",
+      "phones": [
+        "eɪ",
+        "t"
+      ],
+      "ids": [
+        44,
+        6
+      ],
+      "missing": []
+    },
+    "6": {
+      "text": "Exit",
+      "phones": [
+        "ɛ",
+        "ɡ",
+        "z",
+        "ɪ",
+        "t"
+      ],
+      "ids": [
+        14,
+        35,
+        21,
+        17,
+        6
+      ],
+      "missing": []
+    },
+    "7": {
+      "text": "five",
+      "phones": [
+        "f",
+        "aɪ",
+        "v"
+      ],
+      "ids": [
+        23,
+        37,
+        25
+      ],
+      "missing": []
+    },
+    "10": {
+      "text": "Grab",
+      "phones": [
+        "ɡ",
+        "ɹ",
+        "æ",
+        "b"
+      ],
+      "ids": [
+        35,
+        27,
+        36,
+        26
+      ],
+      "missing": []
+    },
+    "11": {
+      "text": "Help",
+      "phones": [
+        "h",
+        "ɛ",
+        "l",
+        "p"
+      ],
+      "ids": [
+        39,
+        14,
+        8,
+        18
+      ],
+      "missing": []
+    },
+    "13": {
+      "text": "Menu",
+      "phones": [
+        "m",
+        "ɛ",
+        "n",
+        "j",
+        "uː"
+      ],
+      "ids": [
+        13,
+        14,
+        4,
+        24,
+        46
+      ],
+      "missing": []
+    },
+    "14": {
+      "text": "Next",
+      "phones": [
+        "n",
+        "ɛ",
+        "k",
+        "s",
+        "t"
+      ],
+      "ids": [
+        4,
+        14,
+        11,
+        5,
+        6
+      ],
+      "missing": []
+    },
+    "15": {
+      "text": "nine",
+      "phones": [
+        "n",
+        "aɪ",
+        "n"
+      ],
+      "ids": [
+        4,
+        37,
+        4
+      ],
+      "missing": []
+    },
+    "16": {
+      "text": "Off",
+      "phones": [
+        "ɔ",
+        "f"
+      ],
+      "ids": [
+        40,
+        23
+      ],
+      "missing": []
+    },
+    "17": {
+      "text": "Okay",
+      "phones": [
+        "oʊ",
+        "k",
+        "eɪ"
+      ],
+      "ids": [
+        49,
+        11,
+        44
+      ],
+      "missing": []
+    },
+    "33": {
+      "text": "zero",
+      "phones": [
+        "z",
+        "iə",
+        "ɹ",
+        "oʊ"
+      ],
+      "ids": [
+        21,
+        81,
+        27,
+        49
+      ],
+      "missing": []
+    },
+    "34": {
+      "text": "Zoom",
+      "phones": [
+        "z",
+        "uː",
+        "m"
+      ],
+      "ids": [
+        21,
+        46,
+        13
+      ],
+      "missing": []
+    }
+  },
+  "tokenizer": {
+    "espeak_version": "1.52.0",
+    "tokenizer": "Wav2Vec2PhonemeCTCTokenizer",
+    "do_phonemize": false,
+    "front": "direct eSpeak-ng en-us C API,stressremoved,underscore wholephone separator;tokenizer validatesIPAsequence",
+    "vocab_size": 392,
+    "blank_id": 0
+  }
+}

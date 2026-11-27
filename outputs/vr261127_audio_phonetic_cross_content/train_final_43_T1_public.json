@@ -1,0 +1,143 @@
+{
+  "stage": "final",
+  "seed": 43,
+  "arm": "T1",
+  "steps": 1000,
+  "parameters": 137561,
+  "initial_sha256": "bf95574c3c3e595cb93cc10cedcd335d7d4e679b8f0462ca57458cc6f6e478cf",
+  "batch_sha256": "9b30a36ea96478e29629ca955e5e4357863754a3a870a175e1fcf0cc4369f2f3",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.061238259077072144,
+      "crossword_supcon": 2.3201541900634766,
+      "phone_kl": 0.0,
+      "word_ce": 2.752941131591797,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 1.6175121068954468,
+      "elapsed_s": 10.2241068000003
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.003031874308362603,
+      "crossword_supcon": 1.946364402770996,
+      "phone_kl": 0.0,
+      "word_ce": 2.757779598236084,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.27608662843704224,
+      "elapsed_s": 20.29804420000073
+    },
+    {
+      "step": 300,
+      "identity_ce": 0.0010611418401822448,
+      "crossword_supcon": 1.880409836769104,
+      "phone_kl": -0.0,
+      "word_ce": 2.766242027282715,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.11512597650289536,
+      "elapsed_s": 31.523216199999297
+    },
+    {
+      "step": 400,
+      "identity_ce": 0.0006371419294737279,
+      "crossword_supcon": 1.8388105630874634,
+      "phone_kl": -0.0,
+      "word_ce": 2.767995834350586,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.07666166871786118,
+      "elapsed_s": 42.350871700000425
+    },
+    {
+      "step": 500,
+      "identity_ce": 0.0004224114236421883,
+      "crossword_supcon": 1.8245060443878174,
+      "phone_kl": -0.0,
+      "word_ce": 2.723620891571045,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.08732239902019501,
+      "elapsed_s": 53.599416199998814
+    },
+    {
+      "step": 600,
+      "identity_ce": 0.0003245242405682802,
+      "crossword_supcon": 1.8172118663787842,
+      "phone_kl": -0.0,
+      "word_ce": 2.7547199726104736,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.06764710694551468,
+      "elapsed_s": 67.07992919999742
+    },
+    {
+      "step": 700,
+      "identity_ce": 0.00023949085152707994,
+      "crossword_supcon": 1.809325933456421,
+      "phone_kl": -0.0,
+      "word_ce": 2.787473440170288,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.06376968324184418,
+      "elapsed_s": 91.02824909999981
+    },
+    {
+      "step": 800,
+      "identity_ce": 0.00022609555162489414,
+      "crossword_supcon": 1.8054155111312866,
+      "phone_kl": -0.0,
+      "word_ce": 2.759610891342163,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.061560485512018204,
+      "elapsed_s": 103.06431080000038
+    },
+    {
+      "step": 900,
+      "identity_ce": 0.00017615078832022846,
+      "crossword_supcon": 1.8049942255020142,
+      "phone_kl": -0.0,
+      "word_ce": 2.7557878494262695,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.0683959573507309,
+      "elapsed_s": 113.18581899999845
+    },
+    {
+      "step": 1000,
+      "identity_ce": 0.00019044159853365272,
+      "crossword_supcon": 1.8034553527832031,
+      "phone_kl": -0.0,
+      "word_ce": 2.7375428676605225,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.056824106723070145,
+      "elapsed_s": 125.08080379999956
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 5.4636921882629395,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0016914469888433814,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0003095794818364084,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": -0.2465490698814392
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.3475204706192017,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.005959514528512955,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.004422578029334545,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": -0.043611980974674225
+    },
+    {
+      "step": 1000,
+      "identity_grad": 0.024694491177797318,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.025523122400045395,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 1.033555269241333,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.21150052547454834
+    }
+  ]
+}

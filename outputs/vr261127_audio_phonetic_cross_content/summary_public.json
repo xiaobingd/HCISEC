@@ -1,0 +1,464 @@
+{
+  "status": "COMPLETE",
+  "protocol_sha256": "9119ad3807ec05a89753aab728622f4a7ec9db6ff76c7024e0beaeb72099b360",
+  "models": 15,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "users": 10,
+  "primary": "equal English short/long family user macro then seed mean",
+  "metrics_units": "fractions,not percentages",
+  "summary": [
+    {
+      "arm": "T0",
+      "family": "english_short",
+      "EER": 0.05344545424342671,
+      "AUC": 0.9807723177241556,
+      "FAR": 0.042962184454461955,
+      "FRR": 0.08834240158801564,
+      "TAR": 0.9116575984119843,
+      "HTER": 0.06565229302123879
+    },
+    {
+      "arm": "T0",
+      "family": "english_long",
+      "EER": 0.059803949315814765,
+      "AUC": 0.9779547837930401,
+      "FAR": 0.040271094415412205,
+      "FRR": 0.13464625767403168,
+      "TAR": 0.8653537423259682,
+      "HTER": 0.08745867604472196
+    },
+    {
+      "arm": "T0",
+      "family": "chinese",
+      "EER": 0.07613119924635763,
+      "AUC": 0.9622678445082843,
+      "FAR": 0.046406827702431507,
+      "FRR": 0.20560031124547248,
+      "TAR": 0.7943996887545274,
+      "HTER": 0.12600356947395203
+    },
+    {
+      "arm": "T0",
+      "family": "english_primary",
+      "EER": 0.05662470177962074,
+      "AUC": 0.9793635507585977,
+      "FAR": 0.04161663943493708,
+      "FRR": 0.11149432963102367,
+      "TAR": 0.8885056703689764,
+      "HTER": 0.07655548453298036
+    },
+    {
+      "arm": "T1",
+      "family": "english_short",
+      "EER": 0.05430781594772533,
+      "AUC": 0.9811133689985213,
+      "FAR": 0.04281693480470551,
+      "FRR": 0.09477618547793985,
+      "TAR": 0.9052238145220601,
+      "HTER": 0.0687965601413227
+    },
+    {
+      "arm": "T1",
+      "family": "english_long",
+      "EER": 0.059240080906097996,
+      "AUC": 0.9782070234610742,
+      "FAR": 0.03959548420142935,
+      "FRR": 0.13440196977326246,
+      "TAR": 0.8655980302267375,
+      "HTER": 0.08699872698734591
+    },
+    {
+      "arm": "T1",
+      "family": "chinese",
+      "EER": 0.07756251033834553,
+      "AUC": 0.9639347528320186,
+      "FAR": 0.04792190444621947,
+      "FRR": 0.21386765902894933,
+      "TAR": 0.7861323409710507,
+      "HTER": 0.1308947817375844
+    },
+    {
+      "arm": "T1",
+      "family": "english_primary",
+      "EER": 0.056773948426911656,
+      "AUC": 0.9796601962297978,
+      "FAR": 0.041206209503067436,
+      "FRR": 0.11458907762560115,
+      "TAR": 0.8854109223743989,
+      "HTER": 0.0778976435643343
+    },
+    {
+      "arm": "T2",
+      "family": "english_short",
+      "EER": 0.07004054814416859,
+      "AUC": 0.9741984516361203,
+      "FAR": 0.06012498885573382,
+      "FRR": 0.10197000692614729,
+      "TAR": 0.8980299930738528,
+      "HTER": 0.08104749789094054
+    },
+    {
+      "arm": "T2",
+      "family": "english_long",
+      "EER": 0.06850677955717478,
+      "AUC": 0.9728196827572,
+      "FAR": 0.05270481464609241,
+      "FRR": 0.13246399926033792,
+      "TAR": 0.8675360007396621,
+      "HTER": 0.09258440695321518
+    },
+    {
+      "arm": "T2",
+      "family": "chinese",
+      "EER": 0.08739580129516976,
+      "AUC": 0.9597110367633407,
+      "FAR": 0.055345413510028925,
+      "FRR": 0.20274078413677968,
+      "TAR": 0.7972592158632203,
+      "HTER": 0.1290430988234043
+    },
+    {
+      "arm": "T2",
+      "family": "english_primary",
+      "EER": 0.06927366385067169,
+      "AUC": 0.9735090671966603,
+      "FAR": 0.05641490175091312,
+      "FRR": 0.11721700309324261,
+      "TAR": 0.8827829969067573,
+      "HTER": 0.08681595242207783
+    },
+    {
+      "arm": "T3",
+      "family": "english_short",
+      "EER": 0.07110112864259971,
+      "AUC": 0.9731852361309313,
+      "FAR": 0.05938590305008699,
+      "FRR": 0.10673623160465265,
+      "TAR": 0.8932637683953473,
+      "HTER": 0.08306106732736983
+    },
+    {
+      "arm": "T3",
+      "family": "english_long",
+      "EER": 0.07041559984865167,
+      "AUC": 0.9719010216371544,
+      "FAR": 0.05458075334249828,
+      "FRR": 0.13453608488830812,
+      "TAR": 0.8654639151116917,
+      "HTER": 0.09455841911540322
+    },
+    {
+      "arm": "T3",
+      "family": "chinese",
+      "EER": 0.0860332214534858,
+      "AUC": 0.9593332807705844,
+      "FAR": 0.0613502315450706,
+      "FRR": 0.20588268410849053,
+      "TAR": 0.7941173158915095,
+      "HTER": 0.13361645782678058
+    },
+    {
+      "arm": "T3",
+      "family": "english_primary",
+      "EER": 0.07075836424562568,
+      "AUC": 0.9725431288840428,
+      "FAR": 0.05698332819629263,
+      "FRR": 0.1206361582464804,
+      "TAR": 0.8793638417535196,
+      "HTER": 0.08880974322138653
+    },
+    {
+      "arm": "T4",
+      "family": "english_short",
+      "EER": 0.07019593748352437,
+      "AUC": 0.9734796785281509,
+      "FAR": 0.055616215775109626,
+      "FRR": 0.11935838527943789,
+      "TAR": 0.8806416147205619,
+      "HTER": 0.08748730052727378
+    },
+    {
+      "arm": "T4",
+      "family": "english_long",
+      "EER": 0.0696173370909241,
+      "AUC": 0.9728589493097739,
+      "FAR": 0.051804134783172535,
+      "FRR": 0.1443132465831797,
+      "TAR": 0.8556867534168203,
+      "HTER": 0.09805869068317616
+    },
+    {
+      "arm": "T4",
+      "family": "chinese",
+      "EER": 0.08775002669565639,
+      "AUC": 0.9596282459077902,
+      "FAR": 0.056914086017642376,
+      "FRR": 0.2221517954832749,
+      "TAR": 0.7778482045167252,
+      "HTER": 0.13953294075045866
+    },
+    {
+      "arm": "T4",
+      "family": "english_primary",
+      "EER": 0.06990663728722425,
+      "AUC": 0.9731693139189624,
+      "FAR": 0.053710175279141084,
+      "FRR": 0.1318358159313088,
+      "TAR": 0.8681641840686911,
+      "HTER": 0.09277299560522495
+    }
+  ],
+  "content_probes": [
+    {
+      "seed": 42,
+      "arm": "T0",
+      "train_word_balanced_accuracy": 0.0695495675145694,
+      "two_fold_accuracy": [
+        0.072305245042314,
+        0.06679388998682477
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 42,
+      "arm": "T1",
+      "train_word_balanced_accuracy": 0.06892289447808563,
+      "two_fold_accuracy": [
+        0.062331131512165995,
+        0.07551465744400526
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 42,
+      "arm": "T2",
+      "train_word_balanced_accuracy": 0.06256412955485294,
+      "two_fold_accuracy": [
+        0.06393401856763925,
+        0.06119424054206663
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 42,
+      "arm": "T3",
+      "train_word_balanced_accuracy": 0.07497314927388952,
+      "two_fold_accuracy": [
+        0.06117847669571807,
+        0.08876782185206097
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 42,
+      "arm": "T4",
+      "train_word_balanced_accuracy": 0.05522686201542086,
+      "two_fold_accuracy": [
+        0.049384236453201974,
+        0.061069487577639754
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 43,
+      "arm": "T0",
+      "train_word_balanced_accuracy": 0.07319831307966146,
+      "two_fold_accuracy": [
+        0.0697518986042693,
+        0.07664472755505364
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 43,
+      "arm": "T1",
+      "train_word_balanced_accuracy": 0.07493717629821453,
+      "two_fold_accuracy": [
+        0.08571568517689207,
+        0.06415866741953698
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 43,
+      "arm": "T2",
+      "train_word_balanced_accuracy": 0.06927761230211568,
+      "two_fold_accuracy": [
+        0.06362357111279525,
+        0.0749316534914361
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 43,
+      "arm": "T3",
+      "train_word_balanced_accuracy": 0.07345641341729235,
+      "two_fold_accuracy": [
+        0.07755758968043451,
+        0.06935523715415019
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 43,
+      "arm": "T4",
+      "train_word_balanced_accuracy": 0.07379441240215931,
+      "two_fold_accuracy": [
+        0.07860414100985222,
+        0.0689846837944664
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 44,
+      "arm": "T0",
+      "train_word_balanced_accuracy": 0.07501212656970715,
+      "two_fold_accuracy": [
+        0.06813319582716135,
+        0.08189105731225296
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 44,
+      "arm": "T1",
+      "train_word_balanced_accuracy": 0.05686629341579211,
+      "two_fold_accuracy": [
+        0.05304418103448276,
+        0.06068840579710145
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 44,
+      "arm": "T2",
+      "train_word_balanced_accuracy": 0.05747496490890419,
+      "two_fold_accuracy": [
+        0.05800946539093091,
+        0.056940464426877474
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 44,
+      "arm": "T3",
+      "train_word_balanced_accuracy": 0.06676775909856636,
+      "two_fold_accuracy": [
+        0.07314661362344552,
+        0.06038890457368719
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    },
+    {
+      "seed": 44,
+      "arm": "T4",
+      "train_word_balanced_accuracy": 0.062211417003161754,
+      "two_fold_accuracy": [
+        0.05567489263609953,
+        0.06874794137022397
+      ],
+      "chance": 0.0625,
+      "description": "16 fit-word classifier;odd/even user-held-out probe;encoder itself closed-set trained on all10users;explanation only,not model selection;no unseen-word-class accuracy"
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "T3-T0",
+      "metric": "English equal-family seed-averaged user-macro EER",
+      "mean_difference": 0.014133662466004943,
+      "user_cluster_bootstrap_95CI": [
+        0.007636138055858543,
+        0.02109261207000834
+      ],
+      "exact_user_signflip_p": 0.005859375,
+      "users": 10,
+      "bootstrap_replicates": 10000,
+      "per_seed_difference": {
+        "42": 0.01923505191334836,
+        "43": 0.007633375757312294,
+        "44": 0.015532559727354227
+      },
+      "seeds_improved": 0,
+      "users_improved": 1,
+      "interpretation": "negative favors T3",
+      "Holm_corrected_p": 0.017578125
+    },
+    {
+      "comparison": "T3-T2",
+      "metric": "English equal-family seed-averaged user-macro EER",
+      "mean_difference": 0.001484700394953993,
+      "user_cluster_bootstrap_95CI": [
+        -0.0018091513031213155,
+        0.004938894063700019
+      ],
+      "exact_user_signflip_p": 0.4453125,
+      "users": 10,
+      "bootstrap_replicates": 10000,
+      "per_seed_difference": {
+        "42": 0.0035951380442928588,
+        "43": 0.005463230685304757,
+        "44": -0.004604267544735641
+      },
+      "seeds_improved": 1,
+      "users_improved": 5,
+      "interpretation": "negative favors T3",
+      "Holm_corrected_p": 0.890625
+    },
+    {
+      "comparison": "T3-T4",
+      "metric": "English equal-family seed-averaged user-macro EER",
+      "mean_difference": 0.0008517269584014355,
+      "user_cluster_bootstrap_95CI": [
+        -0.0012435362387789414,
+        0.0033173720364923086
+      ],
+      "exact_user_signflip_p": 0.5390625,
+      "users": 10,
+      "bootstrap_replicates": 10000,
+      "per_seed_difference": {
+        "42": 0.002916640680956123,
+        "43": 0.000742835913146056,
+        "44": -0.001104295718897877
+      },
+      "seeds_improved": 1,
+      "users_improved": 5,
+      "interpretation": "negative favors T3",
+      "Holm_corrected_p": 0.890625
+    }
+  ],
+  "sameword_matched_diagnostic": {
+    "status": "NOT_COMPARABLE",
+    "K": 12,
+    "G_content": null,
+    "reason": "Per-person-per-word continuous windows insufficient for12 independent same-word registration plus an independent query;no window reuse and no K adjustment after queries."
+  },
+  "query_Audio_read": 0,
+  "query_Audio_clock_read": 0,
+  "all_other_9_identities_retained": true,
+  "all_predeclared_query_words_retained": true,
+  "detail_files": [
+    "T0_anonymous_metrics_public.json",
+    "T1_anonymous_metrics_public.json",
+    "T2_anonymous_metrics_public.json",
+    "T3_anonymous_metrics_public.json",
+    "T4_anonymous_metrics_public.json"
+  ]
+}

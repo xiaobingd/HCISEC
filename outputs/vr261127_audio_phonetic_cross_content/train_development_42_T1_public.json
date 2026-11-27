@@ -1,0 +1,61 @@
+{
+  "stage": "development",
+  "seed": 42,
+  "arm": "T1",
+  "steps": 200,
+  "parameters": 137301,
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.025840723887085915,
+      "crossword_supcon": 2.206486463546753,
+      "phone_kl": -0.0,
+      "word_ce": 2.551024913787842,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 1.3028507232666016,
+      "elapsed_s": 26.33584979999796
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.0016871091211214662,
+      "crossword_supcon": 1.8617479801177979,
+      "phone_kl": -0.0,
+      "word_ce": 2.4581291675567627,
+      "valid_phone_frames": 0,
+      "preclip_gradnorm": 0.13339759409427643,
+      "elapsed_s": 55.044061599997804
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.3640077114105225,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.002020957414060831,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0008548861369490623,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.2813330590724945
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.1088504791259766,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.011517912149429321,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.010387254878878593,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.04355726018548012
+    },
+    {
+      "step": 200,
+      "identity_grad": 0.11918468028306961,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.01580207608640194,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.13258479535579681,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.019296564161777496
+    }
+  ]
+}
