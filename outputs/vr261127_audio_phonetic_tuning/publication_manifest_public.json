@@ -1,0 +1,180 @@
+{
+  "files": [
+    {
+      "path": "experiments/audio_phonetic_tuning_20261127/evaluate_tuning.py",
+      "bytes": 9074,
+      "sha256": "c660f7ed0574c52a02b1533a4a983a2fd263b751b216a9dffe55bc0e763412a7"
+    },
+    {
+      "path": "experiments/audio_phonetic_tuning_20261127/README.md",
+      "bytes": 853,
+      "sha256": "3fca74e37528daefda66c6b09d4a92370dc4621bb81c1cf1e297b82a8f63af95"
+    },
+    {
+      "path": "experiments/audio_phonetic_tuning_20261127/report.py",
+      "bytes": 10687,
+      "sha256": "cf46b153cff441bd6889044c4b2815961a97b7ee9ee3daee5c4444bdd555a3c4"
+    },
+    {
+      "path": "experiments/audio_phonetic_tuning_20261127/test_selection.py",
+      "bytes": 693,
+      "sha256": "75144424380a8a935f7a26bdd96846a1c6446839b7bebd6d94fc73ac6625d5ed"
+    },
+    {
+      "path": "experiments/audio_phonetic_tuning_20261127/train_select.py",
+      "bytes": 11964,
+      "sha256": "5b90a86493e324c2852a73f7b18aa4cf4719cdfdae6b1f4880aad249183b3454"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/BASE_anonymous_metrics_public.json",
+      "bytes": 114586,
+      "sha256": "5a3c19206c3d56e5662c3dce5c8635f5d10e5329d19d41ff3985d4e506f2ad50"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/MATCHED_anonymous_metrics_public.json",
+      "bytes": 116544,
+      "sha256": "547bc0bc99baa85580d11e1ffdf36e0f15ae3d42a935bd0a3b018c7c57baf089"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/model_catalog_public.json",
+      "bytes": 3681,
+      "sha256": "e0078cbbd4ec4ef5718bf289341ddd6d8d2efacf0d495a0578109add48465cec"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/ORIGINAL_anonymous_metrics_public.json",
+      "bytes": 119654,
+      "sha256": "cf95cc3dee97339d7806935479401b8ebfaba35700808154bf6d98aab0ddb7a3"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/protocol.json",
+      "bytes": 2201,
+      "sha256": "a40b7c6fcc047f9fd03648042dc2c7fe6588c2dbc1a320c1ca903bc295c2e15b"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/query_phase_public.json",
+      "bytes": 162,
+      "sha256": "5797a93033a02023097ad6d794268ce97331ca2cfdb2ffcacd609066c611b421"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/report.md",
+      "bytes": 9386,
+      "sha256": "6b907685acbf73908dba094acbce1ff0170202c8597cccd5d4d038b5bdb60343"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/REPRODUCE.md",
+      "bytes": 3055,
+      "sha256": "5dce4ffee950f57e886478f3ab400d8d5dce4a75e3f978b48b1b86f2e42e4991"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/selection_lock_public.json",
+      "bytes": 57558,
+      "sha256": "56dc2e5e48de726b0da0a8f84a85599468b9ff9a5c7581a731f6468397b87fac"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/shuffle_42_public.json",
+      "bytes": 108,
+      "sha256": "adbc142955a58230a6d45beb5e36cd0dda6d0b726447bbce479b95d219309af8"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/shuffle_43_public.json",
+      "bytes": 108,
+      "sha256": "515571b100527658d427cf9e2c2033ed93faecf705759f837c89d85ea442435e"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/shuffle_44_public.json",
+      "bytes": 109,
+      "sha256": "38f3e2f7f96f5b86707dcf2812d25de0dd47b400db5a3558c2c561aa9af82850"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/SHUFFLED_anonymous_metrics_public.json",
+      "bytes": 118677,
+      "sha256": "7139d16ae6a7438cc13685d14c51fab93f94ba26a5f9e13f77fc3a3a4e4bcd8d"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/summary_public.json",
+      "bytes": 8299,
+      "sha256": "5ebc81aee5e43520a7b97382a9181db158ca43a541dffd6e9980d63f9f84a4f3"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/threshold_lock_public.json",
+      "bytes": 5873,
+      "sha256": "0c97fb9c606eca08805f67949b823608abbbf0c30e48ca9af10c82a30d28f701"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_development_42_A_public.json",
+      "bytes": 2587,
+      "sha256": "45b3436fc3dc4f97320fbcf8334a509b7b777ad44790f956ff4f4d2df3a35bf2"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_development_42_B_public.json",
+      "bytes": 2789,
+      "sha256": "4a34307b54119dfc85bbfb23710e05897c8fd703fd3ca9b03a8cb2a9e02d3166"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_development_42_BASE_public.json",
+      "bytes": 2366,
+      "sha256": "60fc9de82213edd66865a0627d7775b33c0e14fe61b0bf0959d152e6ba64ce22"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_development_42_ORIGINAL_public.json",
+      "bytes": 2793,
+      "sha256": "1a716e816ef86da05de09276ce0b1cf72bb3fb567c5d0802ed6cb38cae96603b"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_42_MATCHED_public.json",
+      "bytes": 4360,
+      "sha256": "99baac425b90ed21f899b16eb9bffc53f97de3a092101026b6ab829ec7334833"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_42_SHUFFLED_public.json",
+      "bytes": 4692,
+      "sha256": "1c7a243a42199ea54b702a3051fb7675665895cf51b14d3946c464d2e2ebc933"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_42_TUNED_public.json",
+      "bytes": 4697,
+      "sha256": "3fe7ab4f7d729c0db3b65d015f3d7321bcd4a904417553ceb63b6594fb486019"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_43_MATCHED_public.json",
+      "bytes": 4360,
+      "sha256": "58a6be6b1db0899227d30a61cc46551be0527554807d54a966cc17075b40d114"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_43_SHUFFLED_public.json",
+      "bytes": 4689,
+      "sha256": "db4147f29bae8db3ff5f2fa6fac6f55a791a6bc5f8e90d0a23590b0db662fae8"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_43_TUNED_public.json",
+      "bytes": 4702,
+      "sha256": "c5c6d1285f4f30139fa259ee7132ca8b25208dcb52b504419a9c8d4e8da91da5"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_44_MATCHED_public.json",
+      "bytes": 4370,
+      "sha256": "5cc13b70bb219f216ab4d4533132961e5387713b5d20612420abf061b25db029"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_44_SHUFFLED_public.json",
+      "bytes": 4704,
+      "sha256": "839e8080fcec5eb6c706ea1062b35efef6be8e9ca14177d4f0e3de2c9643025f"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/train_final_44_TUNED_public.json",
+      "bytes": 4691,
+      "sha256": "b3f09e296c1130fbddd48918ffe71d0eb458edd8d3761dc59ec6e1bd2a30a58e"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/TUNED_anonymous_metrics_public.json",
+      "bytes": 117205,
+      "sha256": "2cd175b5966a1aed28af097e56252e020977dd7a4fb2def3f49b57e18a5b0f9c"
+    },
+    {
+      "path": "outputs/vr261127_audio_phonetic_tuning/verification_public.json",
+      "bytes": 2001,
+      "sha256": "0fb4e36edd51c6c1043b760b2993d73a93f473ffd433a754e1b5d813e8afa078"
+    }
+  ],
+  "private_data_excluded": true
+}

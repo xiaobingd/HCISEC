@@ -1,0 +1,86 @@
+{
+  "spec_sha256": "0f64de2891023306f577c1313a64ed316e06c28bfbef0112333d0a5ee705ea74",
+  "config": {
+    "phone": 0.1,
+    "content": 0.05
+  },
+  "steps": 400,
+  "seed": 42,
+  "code": "ORIGINAL",
+  "initial_sha256": "8c9ebefe7ca6f377bddb13f98d741eb1e1a77954f56bb5773b217a36e5a4d60f",
+  "batch_sha256": "54b885694bedaee0e968166cd320b739f0501d1df9a9979241b8c64fa82f2700",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.029578696936368942,
+      "supcon": 2.2102808952331543,
+      "phone_KL": 5.303741455078125,
+      "content_CE": 2.5510668754577637,
+      "valid_phone_frames": 11680,
+      "gradient_norm": 1.4523128271102905,
+      "elapsed_s": 16.102183499999228
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.004572717472910881,
+      "supcon": 1.914499044418335,
+      "phone_KL": 0.27849119901657104,
+      "content_CE": 2.4565906524658203,
+      "valid_phone_frames": 11680,
+      "gradient_norm": 0.8244599103927612,
+      "elapsed_s": 31.650019499997143
+    },
+    {
+      "step": 300,
+      "identity_ce": 0.0013732246588915586,
+      "supcon": 1.8601481914520264,
+      "phone_KL": 0.21387308835983276,
+      "content_CE": 2.5155692100524902,
+      "valid_phone_frames": 11680,
+      "gradient_norm": 0.1707664132118225,
+      "elapsed_s": 47.271659699996235
+    },
+    {
+      "step": 400,
+      "identity_ce": 0.0005499987164512277,
+      "supcon": 1.8276420831680298,
+      "phone_KL": 0.1999356597661972,
+      "content_CE": 2.482440710067749,
+      "valid_phone_frames": 11680,
+      "gradient_norm": 0.09644731879234314,
+      "elapsed_s": 62.519688100001076
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.3640077114105225,
+      "phone_grad": 0.05332234501838684,
+      "content_reverse_grad": 0.002020957414060831,
+      "phone_to_id_ratio": 0.022555910050868988,
+      "content_to_id_ratio": 0.0008548861369490623,
+      "phone_id_cosine": -0.004495490342378616,
+      "content_id_cosine": 0.2813330590724945
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.197522759437561,
+      "phone_grad": 0.14948074519634247,
+      "content_reverse_grad": 0.0119477529078722,
+      "phone_to_id_ratio": 0.12482497096061707,
+      "content_to_id_ratio": 0.00997705664485693,
+      "phone_id_cosine": -0.05187007784843445,
+      "content_id_cosine": 0.021855061873793602
+    },
+    {
+      "step": 400,
+      "identity_grad": 0.06998954713344574,
+      "phone_grad": 0.030943475663661957,
+      "content_reverse_grad": 0.031237347051501274,
+      "phone_to_id_ratio": 0.4421156644821167,
+      "content_to_id_ratio": 0.4463144540786743,
+      "phone_id_cosine": -0.47148430347442627,
+      "content_id_cosine": 0.10361894965171814
+    }
+  ]
+}

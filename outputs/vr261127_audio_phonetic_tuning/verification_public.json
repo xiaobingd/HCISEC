@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "deployments": [
+    {
+      "seed": 42,
+      "arm": "BASE",
+      "encoder_only": true
+    },
+    {
+      "seed": 42,
+      "arm": "ORIGINAL",
+      "encoder_only": true
+    },
+    {
+      "seed": 42,
+      "arm": "MATCHED",
+      "encoder_only": true
+    },
+    {
+      "seed": 42,
+      "arm": "TUNED",
+      "encoder_only": true
+    },
+    {
+      "seed": 42,
+      "arm": "SHUFFLED",
+      "encoder_only": true
+    },
+    {
+      "seed": 43,
+      "arm": "BASE",
+      "encoder_only": true
+    },
+    {
+      "seed": 43,
+      "arm": "ORIGINAL",
+      "encoder_only": true
+    },
+    {
+      "seed": 43,
+      "arm": "MATCHED",
+      "encoder_only": true
+    },
+    {
+      "seed": 43,
+      "arm": "TUNED",
+      "encoder_only": true
+    },
+    {
+      "seed": 43,
+      "arm": "SHUFFLED",
+      "encoder_only": true
+    },
+    {
+      "seed": 44,
+      "arm": "BASE",
+      "encoder_only": true
+    },
+    {
+      "seed": 44,
+      "arm": "ORIGINAL",
+      "encoder_only": true
+    },
+    {
+      "seed": 44,
+      "arm": "MATCHED",
+      "encoder_only": true
+    },
+    {
+      "seed": 44,
+      "arm": "TUNED",
+      "encoder_only": true
+    },
+    {
+      "seed": 44,
+      "arm": "SHUFFLED",
+      "encoder_only": true
+    }
+  ],
+  "calibrated_thresholds": 150,
+  "independent_metric_fields": 16200,
+  "metric_max_absolute_error": 1.1102230246251565e-16,
+  "score_max_absolute_error": 0.0,
+  "threshold_max_absolute_error": 0.0,
+  "previous_reference_max_error": 0.0,
+  "same_initialization_and_batches": true,
+  "normalization_equals_frozen_reference": true,
+  "development_only_parameter_selection": true,
+  "all10identities_all15querywords_retained": true,
+  "query_Audio_reads": 0,
+  "source_data_sha256": "f47ef556aa86240948e9f76c59c8f2d1cb8053c6ce323c9cffdb3ec0d1eaad3f",
+  "source_teacher_sha256": "b67c300e343a69f7cf8fa9306a88d1762dc54310f58f15b972bb42fc6e64a85e"
+}

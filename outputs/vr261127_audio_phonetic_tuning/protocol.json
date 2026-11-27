@@ -1,0 +1,91 @@
+{
+  "reference_commit": "e6ec6c1f0caefd3caf7a9a1435feeef3c19ac0ea",
+  "data_sha256": "f47ef556aa86240948e9f76c59c8f2d1cb8053c6ce323c9cffdb3ec0d1eaad3f",
+  "teacher_sha256": "b67c300e343a69f7cf8fa9306a88d1762dc54310f58f15b972bb42fc6e64a85e",
+  "configs": {
+    "BASE": {
+      "phone": 0.0,
+      "content": 0.0
+    },
+    "ORIGINAL": {
+      "phone": 0.1,
+      "content": 0.05
+    },
+    "A": {
+      "phone": 0.01,
+      "content": 0.0
+    },
+    "B": {
+      "phone": 0.03,
+      "content": 0.01
+    }
+  },
+  "development": {
+    "seed": 42,
+    "steps": 400,
+    "optimize_words": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "validation_words": [
+      16,
+      17,
+      33,
+      34
+    ],
+    "folds": "4cyclic folds:queryDEV[k],calDEV[k+1],enrollother2words;2windows/enrollword;K4",
+    "score": "mean(EER+HTER)/2 across4foldsx10users",
+    "gate": "EERandHTER<=BASE;FARandFRR<=BASE+.005;choose lowestscoreeligible A/B,else lowestscore A/B for exploratoryconfirmation only"
+  },
+  "final": {
+    "words": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      33,
+      34
+    ],
+    "steps": 1000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "methods": [
+      "BASE",
+      "ORIGINAL",
+      "MATCHED",
+      "TUNED",
+      "SHUFFLED"
+    ],
+    "reuse": "read-only previous BASE/ORIGINAL;MATCHED reusesBASE ifcontent0",
+    "controls": "MATCHEDsamecontentlambda,noAudio;SHUFFLEDsameparameters andAudio posterior marginal/masks",
+    "registration_K": 12,
+    "threshold": "genuineCalQ10/impostorCalQ95midpoint;lockall150beforequeries"
+  },
+  "unchanged": "Student147->64CNN->attentionstats->192L2;392phonemes;identityCE+.1SupCon;AdamWlr.0003wd.01clip1;batch80;sigma100ms;fullvocabKL;noaugmentation;all10users/all15querywords",
+  "scope": "closedsetknownidentities;historicalquerypool alreadyseen;exploratory follow-up,notnewblindconfirmation",
+  "query_Audio_reads": 0,
+  "no_query_scores_for_parameter_selection": true
+}

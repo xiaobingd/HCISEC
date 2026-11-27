@@ -1,0 +1,289 @@
+{
+  "status": "COMPLETE",
+  "selected": "B",
+  "parameters": {
+    "phone": 0.03,
+    "content": 0.01
+  },
+  "development_gate_passed": false,
+  "units": "fractions",
+  "summary": [
+    {
+      "arm": "BASE",
+      "family": "english_short",
+      "EER": 0.05344545424342671,
+      "AUC": 0.9807723177241556,
+      "FAR": 0.042962184454461955,
+      "FRR": 0.08834240158801564,
+      "TAR": 0.9116575984119843,
+      "HTER": 0.06565229302123879
+    },
+    {
+      "arm": "BASE",
+      "family": "english_long",
+      "EER": 0.059803949315814765,
+      "AUC": 0.9779547837930401,
+      "FAR": 0.040271094415412205,
+      "FRR": 0.13464625767403168,
+      "TAR": 0.8653537423259682,
+      "HTER": 0.08745867604472196
+    },
+    {
+      "arm": "BASE",
+      "family": "chinese",
+      "EER": 0.07613119924635763,
+      "AUC": 0.9622678445082843,
+      "FAR": 0.046406827702431507,
+      "FRR": 0.20560031124547248,
+      "TAR": 0.7943996887545274,
+      "HTER": 0.12600356947395203
+    },
+    {
+      "arm": "BASE",
+      "family": "english_primary",
+      "EER": 0.05662470177962074,
+      "AUC": 0.9793635507585977,
+      "FAR": 0.04161663943493708,
+      "FRR": 0.11149432963102367,
+      "TAR": 0.8885056703689764,
+      "HTER": 0.07655548453298036
+    },
+    {
+      "arm": "ORIGINAL",
+      "family": "english_short",
+      "EER": 0.07110112864259971,
+      "AUC": 0.9731852361309313,
+      "FAR": 0.05938590305008699,
+      "FRR": 0.10673623160465265,
+      "TAR": 0.8932637683953473,
+      "HTER": 0.08306106732736983
+    },
+    {
+      "arm": "ORIGINAL",
+      "family": "english_long",
+      "EER": 0.07041559984865167,
+      "AUC": 0.9719010216371544,
+      "FAR": 0.05458075334249828,
+      "FRR": 0.13453608488830812,
+      "TAR": 0.8654639151116917,
+      "HTER": 0.09455841911540322
+    },
+    {
+      "arm": "ORIGINAL",
+      "family": "chinese",
+      "EER": 0.0860332214534858,
+      "AUC": 0.9593332807705844,
+      "FAR": 0.0613502315450706,
+      "FRR": 0.20588268410849053,
+      "TAR": 0.7941173158915095,
+      "HTER": 0.13361645782678058
+    },
+    {
+      "arm": "ORIGINAL",
+      "family": "english_primary",
+      "EER": 0.07075836424562568,
+      "AUC": 0.9725431288840428,
+      "FAR": 0.05698332819629263,
+      "FRR": 0.1206361582464804,
+      "TAR": 0.8793638417535196,
+      "HTER": 0.08880974322138653
+    },
+    {
+      "arm": "MATCHED",
+      "family": "english_short",
+      "EER": 0.05382391097855056,
+      "AUC": 0.980551299943228,
+      "FAR": 0.042962956939942835,
+      "FRR": 0.08867207191768596,
+      "TAR": 0.9113279280823142,
+      "HTER": 0.06581751442881441
+    },
+    {
+      "arm": "MATCHED",
+      "family": "english_long",
+      "EER": 0.059126281099824124,
+      "AUC": 0.9778395832613376,
+      "FAR": 0.04115740462161807,
+      "FRR": 0.13590992408643954,
+      "TAR": 0.8640900759135604,
+      "HTER": 0.08853366435402882
+    },
+    {
+      "arm": "MATCHED",
+      "family": "chinese",
+      "EER": 0.07614473818605344,
+      "AUC": 0.9623454626072555,
+      "FAR": 0.04651319933210792,
+      "FRR": 0.2127022183473796,
+      "TAR": 0.7872977816526203,
+      "HTER": 0.12960770883974376
+    },
+    {
+      "arm": "MATCHED",
+      "family": "english_primary",
+      "EER": 0.05647509603918734,
+      "AUC": 0.9791954416022829,
+      "FAR": 0.042060180780780464,
+      "FRR": 0.11229099800206274,
+      "TAR": 0.8877090019979372,
+      "HTER": 0.0771755893914216
+    },
+    {
+      "arm": "TUNED",
+      "family": "english_short",
+      "EER": 0.0675852606456601,
+      "AUC": 0.9742021766430227,
+      "FAR": 0.055354648064837295,
+      "FRR": 0.09871403937193411,
+      "TAR": 0.9012859606280659,
+      "HTER": 0.07703434371838572
+    },
+    {
+      "arm": "TUNED",
+      "family": "english_long",
+      "EER": 0.06763018507740538,
+      "AUC": 0.9720941618757497,
+      "FAR": 0.05091434729219573,
+      "FRR": 0.1491119281234595,
+      "TAR": 0.8508880718765404,
+      "HTER": 0.10001313770782763
+    },
+    {
+      "arm": "TUNED",
+      "family": "chinese",
+      "EER": 0.09004145298796135,
+      "AUC": 0.957576262023623,
+      "FAR": 0.05469752448665019,
+      "FRR": 0.22005249257752035,
+      "TAR": 0.7799475074224796,
+      "HTER": 0.13737500853208529
+    },
+    {
+      "arm": "TUNED",
+      "family": "english_primary",
+      "EER": 0.06760772286153273,
+      "AUC": 0.973148169259386,
+      "FAR": 0.053134497678516524,
+      "FRR": 0.12391298374769681,
+      "TAR": 0.8760870162523031,
+      "HTER": 0.08852374071310666
+    },
+    {
+      "arm": "SHUFFLED",
+      "family": "english_short",
+      "EER": 0.06705225823313746,
+      "AUC": 0.9743769442347877,
+      "FAR": 0.055361407676607036,
+      "FRR": 0.10568345721854493,
+      "TAR": 0.8943165427814551,
+      "HTER": 0.08052243244757598
+    },
+    {
+      "arm": "SHUFFLED",
+      "family": "english_long",
+      "EER": 0.06729201808331933,
+      "AUC": 0.9725294262364316,
+      "FAR": 0.04968565918540793,
+      "FRR": 0.14730862263773828,
+      "TAR": 0.8526913773622616,
+      "HTER": 0.09849714091157308
+    },
+    {
+      "arm": "SHUFFLED",
+      "family": "chinese",
+      "EER": 0.08764750998647816,
+      "AUC": 0.9576901666362737,
+      "FAR": 0.05285441964978938,
+      "FRR": 0.2197970423220701,
+      "TAR": 0.7802029576779298,
+      "HTER": 0.13632573098592976
+    },
+    {
+      "arm": "SHUFFLED",
+      "family": "english_primary",
+      "EER": 0.0671721381582284,
+      "AUC": 0.9734531852356098,
+      "FAR": 0.052523533431007484,
+      "FRR": 0.1264960399281416,
+      "TAR": 0.8735039600718584,
+      "HTER": 0.08950978667957457
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "TUNED-BASE",
+      "metric": "English equal-family seed-averaged user-macro EER",
+      "mean_difference": 0.010983021081911995,
+      "user_cluster_bootstrap_95CI": [
+        0.004684892675235861,
+        0.018139137755675654
+      ],
+      "exact_user_signflip_p": 0.005859375,
+      "users": 10,
+      "bootstrap_replicates": 10000,
+      "per_seed_difference": {
+        "42": 0.014571036538097007,
+        "43": 0.005496327577833873,
+        "44": 0.012881699129805142
+      },
+      "seeds_improved": 0,
+      "users_improved": 1,
+      "interpretation": "negative favors TUNED",
+      "Holm_corrected_p": 0.017578125
+    },
+    {
+      "comparison": "TUNED-MATCHED",
+      "metric": "English equal-family seed-averaged user-macro EER",
+      "mean_difference": 0.01113262682234539,
+      "user_cluster_bootstrap_95CI": [
+        0.00468517417484403,
+        0.018339482576550707
+      ],
+      "exact_user_signflip_p": 0.01171875,
+      "users": 10,
+      "bootstrap_replicates": 10000,
+      "per_seed_difference": {
+        "42": 0.015863510394342133,
+        "43": 0.005502311105401669,
+        "44": 0.012032058967292376
+      },
+      "seeds_improved": 0,
+      "users_improved": 1,
+      "interpretation": "negative favors TUNED",
+      "Holm_corrected_p": 0.0234375
+    },
+    {
+      "comparison": "TUNED-SHUFFLED",
+      "metric": "English equal-family seed-averaged user-macro EER",
+      "mean_difference": 0.0004355847033043366,
+      "user_cluster_bootstrap_95CI": [
+        -0.0014695333915135216,
+        0.0024634381918886192
+      ],
+      "exact_user_signflip_p": 0.705078125,
+      "users": 10,
+      "bootstrap_replicates": 10000,
+      "per_seed_difference": {
+        "42": 0.0009579533033589882,
+        "43": 0.00033420131197113567,
+        "44": 1.4599494582892558e-05
+      },
+      "seeds_improved": 0,
+      "users_improved": 4,
+      "interpretation": "negative favors TUNED",
+      "Holm_corrected_p": 0.705078125
+    }
+  ],
+  "newly_trained_final_models": 9,
+  "reused_reference_evaluations": 6,
+  "historical_query_pool": true,
+  "Audio_query_reads": 0,
+  "no_test_parameter_selection": true,
+  "detail_files": [
+    "BASE_anonymous_metrics_public.json",
+    "ORIGINAL_anonymous_metrics_public.json",
+    "MATCHED_anonymous_metrics_public.json",
+    "TUNED_anonymous_metrics_public.json",
+    "SHUFFLED_anonymous_metrics_public.json"
+  ]
+}

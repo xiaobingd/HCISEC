@@ -1,0 +1,86 @@
+{
+  "spec_sha256": "0f64de2891023306f577c1313a64ed316e06c28bfbef0112333d0a5ee705ea74",
+  "config": {
+    "phone": 0.0,
+    "content": 0.0
+  },
+  "steps": 400,
+  "seed": 42,
+  "code": "BASE",
+  "initial_sha256": "8c9ebefe7ca6f377bddb13f98d741eb1e1a77954f56bb5773b217a36e5a4d60f",
+  "batch_sha256": "54b885694bedaee0e968166cd320b739f0501d1df9a9979241b8c64fa82f2700",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.025845130905508995,
+      "supcon": 2.2066140174865723,
+      "phone_KL": -0.0,
+      "content_CE": -0.0,
+      "valid_phone_frames": 0,
+      "gradient_norm": 1.3039517402648926,
+      "elapsed_s": 10.247426100002485
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.0016639368841424584,
+      "supcon": 1.861628770828247,
+      "phone_KL": -0.0,
+      "content_CE": -0.0,
+      "valid_phone_frames": 0,
+      "gradient_norm": 0.1267557591199875,
+      "elapsed_s": 19.958513500001573
+    },
+    {
+      "step": 300,
+      "identity_ce": 0.0008744294755160809,
+      "supcon": 1.8445314168930054,
+      "phone_KL": -0.0,
+      "content_CE": -0.0,
+      "valid_phone_frames": 0,
+      "gradient_norm": 0.08142887055873871,
+      "elapsed_s": 30.270913100001053
+    },
+    {
+      "step": 400,
+      "identity_ce": 0.0004199340473860502,
+      "supcon": 1.819114327430725,
+      "phone_KL": -0.0,
+      "content_CE": -0.0,
+      "valid_phone_frames": 0,
+      "gradient_norm": 0.04522702842950821,
+      "elapsed_s": 40.49771970000438
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 2.3640077114105225,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.0
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.1096832752227783,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.0
+    },
+    {
+      "step": 400,
+      "identity_grad": 0.04413406550884247,
+      "phone_grad": 0.0,
+      "content_reverse_grad": 0.0,
+      "phone_to_id_ratio": 0.0,
+      "content_to_id_ratio": 0.0,
+      "phone_id_cosine": 0.0,
+      "content_id_cosine": 0.0
+    }
+  ]
+}

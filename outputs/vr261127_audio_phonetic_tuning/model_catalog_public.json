@@ -1,0 +1,152 @@
+[
+  {
+    "code": "BASE",
+    "seed": 42,
+    "config": {
+      "phone": 0.0,
+      "content": 0.0
+    },
+    "checkpoint_sha256": "4bd29e4687f361a70c0ac70551aed762a98059223eed328a22584ad481f33fce",
+    "reused_reference": true
+  },
+  {
+    "code": "ORIGINAL",
+    "seed": 42,
+    "config": {
+      "phone": 0.1,
+      "content": 0.05
+    },
+    "checkpoint_sha256": "9874259906afa441a60d334a779e8fac5d845515560ecd57c0908829a76980f4",
+    "reused_reference": true
+  },
+  {
+    "code": "MATCHED",
+    "seed": 42,
+    "config": {
+      "phone": 0.0,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "19b93cc5c041863802591d75154a53d4fb562b99b3a653d9db75c16bc84de390",
+    "reused_reference": false
+  },
+  {
+    "code": "TUNED",
+    "seed": 42,
+    "config": {
+      "phone": 0.03,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "67a6d88652794f51c8be411b574d8d4189a9ed7e6db965ce979864778b641d86",
+    "reused_reference": false
+  },
+  {
+    "code": "SHUFFLED",
+    "seed": 42,
+    "config": {
+      "phone": 0.03,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "acc53c26a22803c229e151f74b6249527605f8c5be50c9eb5d3f138db4c49801",
+    "reused_reference": false
+  },
+  {
+    "code": "BASE",
+    "seed": 43,
+    "config": {
+      "phone": 0.0,
+      "content": 0.0
+    },
+    "checkpoint_sha256": "ac0f35f281e6999f784ac301016762fd53f01ddc8513f4a61c539a30eb27e860",
+    "reused_reference": true
+  },
+  {
+    "code": "ORIGINAL",
+    "seed": 43,
+    "config": {
+      "phone": 0.1,
+      "content": 0.05
+    },
+    "checkpoint_sha256": "612be90cf9bc370bb0962640f226d8444ffa0eec3cede20a2abc3fac7b2aea3f",
+    "reused_reference": true
+  },
+  {
+    "code": "MATCHED",
+    "seed": 43,
+    "config": {
+      "phone": 0.0,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "ddbb9f3c252ad9d3ee96949846b16c38c475e525b2ba3651a86f06b0918b56a9",
+    "reused_reference": false
+  },
+  {
+    "code": "TUNED",
+    "seed": 43,
+    "config": {
+      "phone": 0.03,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "1f8766a7c13ee2bb26ec351fb3aa08d2b6a8f0c2e6e14fc586d2c43076d853ec",
+    "reused_reference": false
+  },
+  {
+    "code": "SHUFFLED",
+    "seed": 43,
+    "config": {
+      "phone": 0.03,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "d84b7024d48ce7036a3693b94662006b57ddebd70eb8e1901bf536db2dc67ba7",
+    "reused_reference": false
+  },
+  {
+    "code": "BASE",
+    "seed": 44,
+    "config": {
+      "phone": 0.0,
+      "content": 0.0
+    },
+    "checkpoint_sha256": "9cdce9b88eedbefbed3c688584e2f4d3b47575cfae458e799ac77c80ed7f8956",
+    "reused_reference": true
+  },
+  {
+    "code": "ORIGINAL",
+    "seed": 44,
+    "config": {
+      "phone": 0.1,
+      "content": 0.05
+    },
+    "checkpoint_sha256": "9d71017d1a3e92ee9f2b1244817db5afc7bc90a315cf506bb35fdd96ae077c54",
+    "reused_reference": true
+  },
+  {
+    "code": "MATCHED",
+    "seed": 44,
+    "config": {
+      "phone": 0.0,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "f49f0e6b31426cf4fffa7642a0e6f6c1fab38625d2a2c0cc89f092d620533451",
+    "reused_reference": false
+  },
+  {
+    "code": "TUNED",
+    "seed": 44,
+    "config": {
+      "phone": 0.03,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "d5ea1ad018b0a14004321352de1ab71cb86a6dbd3f8542af8f64393459104bc6",
+    "reused_reference": false
+  },
+  {
+    "code": "SHUFFLED",
+    "seed": 44,
+    "config": {
+      "phone": 0.03,
+      "content": 0.01
+    },
+    "checkpoint_sha256": "e1033298b37386c843156c26c523aaf573f0c2aa638adb84d83db28a92f385f5",
+    "reused_reference": false
+  }
+]
