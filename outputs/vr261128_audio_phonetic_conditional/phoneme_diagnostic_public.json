@@ -1,0 +1,258 @@
+{
+  "status": "COMPLETE",
+  "stage": "400step12wordmodels;held4DEVwords",
+  "labels": "teacher posterior agreement,not manually labeled phoneme accuracy",
+  "rows": [
+    {
+      "arm": "MATCHED",
+      "conditional_weighted_KL": 5.3868088722229,
+      "teacher_argmax_agreement": 0.0020916087087243795,
+      "teacher_probability_at_student_argmax": 0.001818491262383759,
+      "windows": 197,
+      "positive_weight_frames": 16916,
+      "predicted_phone_modes": [
+        {
+          "token_id": 32,
+          "symbol": "w",
+          "weight_fraction": 0.2836761176586151
+        },
+        {
+          "token_id": 290,
+          "symbol": "iʊ",
+          "weight_fraction": 0.07225270569324493
+        },
+        {
+          "token_id": 182,
+          "symbol": "χ",
+          "weight_fraction": 0.06966236233711243
+        },
+        {
+          "token_id": 303,
+          "symbol": "dʰ",
+          "weight_fraction": 0.0615258626639843
+        },
+        {
+          "token_id": 272,
+          "symbol": "ie",
+          "weight_fraction": 0.032935839146375656
+        }
+      ],
+      "teacher_phone_modes": [
+        {
+          "token_id": 21,
+          "symbol": "z",
+          "weight_fraction": 0.17308858036994934
+        },
+        {
+          "token_id": 49,
+          "symbol": "oʊ",
+          "weight_fraction": 0.15972520411014557
+        },
+        {
+          "token_id": 13,
+          "symbol": "m",
+          "weight_fraction": 0.12766267359256744
+        },
+        {
+          "token_id": 23,
+          "symbol": "f",
+          "weight_fraction": 0.11355391144752502
+        },
+        {
+          "token_id": 40,
+          "symbol": "ɔ",
+          "weight_fraction": 0.10367505252361298
+        }
+      ]
+    },
+    {
+      "arm": "ORIGINAL",
+      "conditional_weighted_KL": 4.870432376861572,
+      "teacher_argmax_agreement": 0.0,
+      "teacher_probability_at_student_argmax": 0.0,
+      "windows": 197,
+      "positive_weight_frames": 16916,
+      "predicted_phone_modes": [
+        {
+          "token_id": 4,
+          "symbol": "n",
+          "weight_fraction": 0.9999995827674866
+        },
+        {
+          "token_id": 5,
+          "symbol": "s",
+          "weight_fraction": 0.0
+        },
+        {
+          "token_id": 2,
+          "symbol": "</s>",
+          "weight_fraction": 0.0
+        },
+        {
+          "token_id": 1,
+          "symbol": "<s>",
+          "weight_fraction": 0.0
+        },
+        {
+          "token_id": 3,
+          "symbol": "<unk>",
+          "weight_fraction": 0.0
+        }
+      ],
+      "teacher_phone_modes": [
+        {
+          "token_id": 21,
+          "symbol": "z",
+          "weight_fraction": 0.17308858036994934
+        },
+        {
+          "token_id": 49,
+          "symbol": "oʊ",
+          "weight_fraction": 0.15972520411014557
+        },
+        {
+          "token_id": 13,
+          "symbol": "m",
+          "weight_fraction": 0.12766267359256744
+        },
+        {
+          "token_id": 23,
+          "symbol": "f",
+          "weight_fraction": 0.11355391144752502
+        },
+        {
+          "token_id": 40,
+          "symbol": "ɔ",
+          "weight_fraction": 0.10367505252361298
+        }
+      ]
+    },
+    {
+      "arm": "TUNED",
+      "conditional_weighted_KL": 4.740331172943115,
+      "teacher_argmax_agreement": 0.0,
+      "teacher_probability_at_student_argmax": 4.7716759581817314e-05,
+      "windows": 197,
+      "positive_weight_frames": 16916,
+      "predicted_phone_modes": [
+        {
+          "token_id": 4,
+          "symbol": "n",
+          "weight_fraction": 0.9162307381629944
+        },
+        {
+          "token_id": 14,
+          "symbol": "ɛ",
+          "weight_fraction": 0.07986873388290405
+        },
+        {
+          "token_id": 11,
+          "symbol": "k",
+          "weight_fraction": 0.003547228639945388
+        },
+        {
+          "token_id": 6,
+          "symbol": "t",
+          "weight_fraction": 0.0002799778594635427
+        },
+        {
+          "token_id": 44,
+          "symbol": "eɪ",
+          "weight_fraction": 7.376048597507179e-05
+        }
+      ],
+      "teacher_phone_modes": [
+        {
+          "token_id": 21,
+          "symbol": "z",
+          "weight_fraction": 0.17308858036994934
+        },
+        {
+          "token_id": 49,
+          "symbol": "oʊ",
+          "weight_fraction": 0.15972520411014557
+        },
+        {
+          "token_id": 13,
+          "symbol": "m",
+          "weight_fraction": 0.12766267359256744
+        },
+        {
+          "token_id": 23,
+          "symbol": "f",
+          "weight_fraction": 0.11355391144752502
+        },
+        {
+          "token_id": 40,
+          "symbol": "ɔ",
+          "weight_fraction": 0.10367505252361298
+        }
+      ]
+    },
+    {
+      "arm": "SHUFFLED",
+      "conditional_weighted_KL": 4.691845417022705,
+      "teacher_argmax_agreement": 0.00045332516310736537,
+      "teacher_probability_at_student_argmax": 0.0007535594631917775,
+      "windows": 197,
+      "positive_weight_frames": 16916,
+      "predicted_phone_modes": [
+        {
+          "token_id": 4,
+          "symbol": "n",
+          "weight_fraction": 0.8962662220001221
+        },
+        {
+          "token_id": 14,
+          "symbol": "ɛ",
+          "weight_fraction": 0.09194891154766083
+        },
+        {
+          "token_id": 11,
+          "symbol": "k",
+          "weight_fraction": 0.011785357259213924
+        },
+        {
+          "token_id": 2,
+          "symbol": "</s>",
+          "weight_fraction": 0.0
+        },
+        {
+          "token_id": 5,
+          "symbol": "s",
+          "weight_fraction": 0.0
+        }
+      ],
+      "teacher_phone_modes": [
+        {
+          "token_id": 21,
+          "symbol": "z",
+          "weight_fraction": 0.17308858036994934
+        },
+        {
+          "token_id": 49,
+          "symbol": "oʊ",
+          "weight_fraction": 0.15972520411014557
+        },
+        {
+          "token_id": 13,
+          "symbol": "m",
+          "weight_fraction": 0.12766267359256744
+        },
+        {
+          "token_id": 23,
+          "symbol": "f",
+          "weight_fraction": 0.11355391144752502
+        },
+        {
+          "token_id": 40,
+          "symbol": "ɔ",
+          "weight_fraction": 0.10367505252361298
+        }
+      ]
+    }
+  ],
+  "query_words_used": 0,
+  "query_Audio_reads": 0,
+  "used_for_hyperparameter_selection": false
+}

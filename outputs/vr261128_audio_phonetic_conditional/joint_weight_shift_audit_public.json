@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "seeds": [
+    {
+      "seed": 42,
+      "weight_joint_shift_max_error": 0.0,
+      "window_weight_marginal_max_error": 9.5367431640625e-07,
+      "mask_preserved": true
+    },
+    {
+      "seed": 43,
+      "weight_joint_shift_max_error": 0.0,
+      "window_weight_marginal_max_error": 9.5367431640625e-07,
+      "mask_preserved": true
+    },
+    {
+      "seed": 44,
+      "weight_joint_shift_max_error": 0.0,
+      "window_weight_marginal_max_error": 9.5367431640625e-07,
+      "mask_preserved": true
+    }
+  ]
+}

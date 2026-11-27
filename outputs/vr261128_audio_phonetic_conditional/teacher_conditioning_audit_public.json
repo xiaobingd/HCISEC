@@ -1,0 +1,12 @@
+{
+  "windows": 818,
+  "valid_teacher_frames": 119393,
+  "positive_weight_frames": 74889,
+  "windows_without_conditional_supervision": 0,
+  "mean_valid_nonblank_mass": 0.049438055604696274,
+  "mass_floor": 0.001,
+  "mean_positive_conditional_confidence": 0.7650128602981567,
+  "blank_is_silence_claim": false,
+  "student_blank_auxiliary_gradient": "exactzero tested",
+  "query_Audio_reads": 0
+}

@@ -1,0 +1,99 @@
+{
+  "reference_commit": "53be0e2539dcecfb9637656ae7b0f645946ffc03",
+  "data_sha256": "f47ef556aa86240948e9f76c59c8f2d1cb8053c6ce323c9cffdb3ec0d1eaad3f",
+  "teacher_sha256": "b67c300e343a69f7cf8fa9306a88d1762dc54310f58f15b972bb42fc6e64a85e",
+  "loss_source_sha256": "510282422f2be183bf133bb546fd1d2a154e9a47710d94bb1667198385600f8f",
+  "configs": {
+    "MATCHED": {
+      "phone": 0.0,
+      "content": 0.01,
+      "kind": "none"
+    },
+    "ORIGINAL": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "full"
+    },
+    "TUNED": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "SHUFFLED": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    }
+  },
+  "loss": "teacher conditional q[k>0]/sum(q[k>0]);student logsoftmax(logits[k>0]);weight=nonblankmass*maxconditionalprob*valid*(mass>=.001);sumweightedKL/sumweights",
+  "confidence": "CTC posterior proxy,not physicalVAD/groundtruthphoneconfidence",
+  "development": {
+    "words": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "evaluation_words": [
+      16,
+      17,
+      33,
+      34
+    ],
+    "steps": 400,
+    "seed": 42,
+    "diagnostic": "4cyclic DEV folds:2wordsK4register,1cal,1query;fixedhyperparameters,no selection scan"
+  },
+  "final": {
+    "words": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      33,
+      34
+    ],
+    "steps": 1000,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "methods": [
+      "BASE",
+      "ORIGINAL",
+      "MATCHED",
+      "TUNED",
+      "SHUFFLED"
+    ],
+    "names": {
+      "ORIGINAL": "matchedlambda full392KL",
+      "TUNED": "conditional391KL",
+      "SHUFFLED": "conditionaljointposteriorandweighttimeshift"
+    },
+    "reuse": "BASEoriginalpureACC,MATCHEDpreviouscontent.01noAudio",
+    "registration_K": 12,
+    "thresholds": "genuineCalQ10/impostorCalQ95midpoint;all150lockedbeforequeries"
+  },
+  "unchanged": "147channelCNN,192L2identity,392phonehead,CE+.1crosswordSupCon;lr.0003wd.01clip1;batch80;sigma100ms;all10users/all15querywords",
+  "scope": "closedset;historicalquerypool exploratory;fixedonecoefficient,no queryhyperselection",
+  "query_Audio_reads": 0
+}

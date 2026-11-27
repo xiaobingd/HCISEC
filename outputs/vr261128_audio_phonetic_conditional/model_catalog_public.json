@@ -1,0 +1,167 @@
+[
+  {
+    "code": "BASE",
+    "seed": 42,
+    "config": {
+      "phone": 0.0,
+      "content": 0.0,
+      "kind": "none"
+    },
+    "checkpoint_sha256": "4bd29e4687f361a70c0ac70551aed762a98059223eed328a22584ad481f33fce",
+    "reused_reference": true
+  },
+  {
+    "code": "ORIGINAL",
+    "seed": 42,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "full"
+    },
+    "checkpoint_sha256": "7ee09489ec25da012e1c0f64642e99b4c6cd6762eaffb849ea3a767028f2eaa7",
+    "reused_reference": false
+  },
+  {
+    "code": "MATCHED",
+    "seed": 42,
+    "config": {
+      "phone": 0.0,
+      "content": 0.01,
+      "kind": "none"
+    },
+    "checkpoint_sha256": "19b93cc5c041863802591d75154a53d4fb562b99b3a653d9db75c16bc84de390",
+    "reused_reference": true
+  },
+  {
+    "code": "TUNED",
+    "seed": 42,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "checkpoint_sha256": "43b070e69038a3d42880d00c7af33721810e5ae8d4deff379dfdfaf06476f36d",
+    "reused_reference": false
+  },
+  {
+    "code": "SHUFFLED",
+    "seed": 42,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "checkpoint_sha256": "d1ec14a71b61f6c365271ff5a2ddf5f627456106f2b2fa1ab5965583d4729808",
+    "reused_reference": false
+  },
+  {
+    "code": "BASE",
+    "seed": 43,
+    "config": {
+      "phone": 0.0,
+      "content": 0.0,
+      "kind": "none"
+    },
+    "checkpoint_sha256": "ac0f35f281e6999f784ac301016762fd53f01ddc8513f4a61c539a30eb27e860",
+    "reused_reference": true
+  },
+  {
+    "code": "ORIGINAL",
+    "seed": 43,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "full"
+    },
+    "checkpoint_sha256": "54587415d69bc0c94a0f0486a2fa61de28f657c35001cb3a04360f8606eee7c6",
+    "reused_reference": false
+  },
+  {
+    "code": "MATCHED",
+    "seed": 43,
+    "config": {
+      "phone": 0.0,
+      "content": 0.01,
+      "kind": "none"
+    },
+    "checkpoint_sha256": "ddbb9f3c252ad9d3ee96949846b16c38c475e525b2ba3651a86f06b0918b56a9",
+    "reused_reference": true
+  },
+  {
+    "code": "TUNED",
+    "seed": 43,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "checkpoint_sha256": "216eb2330b6865bc417be10ed070969a92ce61b262796b4f611c1208c25a6853",
+    "reused_reference": false
+  },
+  {
+    "code": "SHUFFLED",
+    "seed": 43,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "checkpoint_sha256": "4919aedbb856b980bf260d32a627ef7360110af3f6927413713ff5e8cd1dd43b",
+    "reused_reference": false
+  },
+  {
+    "code": "BASE",
+    "seed": 44,
+    "config": {
+      "phone": 0.0,
+      "content": 0.0,
+      "kind": "none"
+    },
+    "checkpoint_sha256": "9cdce9b88eedbefbed3c688584e2f4d3b47575cfae458e799ac77c80ed7f8956",
+    "reused_reference": true
+  },
+  {
+    "code": "ORIGINAL",
+    "seed": 44,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "full"
+    },
+    "checkpoint_sha256": "84f4f05134c0bc3bcd497247a14e8e4d6317641fdb74c6453bf118bc12f40ed3",
+    "reused_reference": false
+  },
+  {
+    "code": "MATCHED",
+    "seed": 44,
+    "config": {
+      "phone": 0.0,
+      "content": 0.01,
+      "kind": "none"
+    },
+    "checkpoint_sha256": "f49f0e6b31426cf4fffa7642a0e6f6c1fab38625d2a2c0cc89f092d620533451",
+    "reused_reference": true
+  },
+  {
+    "code": "TUNED",
+    "seed": 44,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "checkpoint_sha256": "7e51e82114fe7f666af2ed2cff7d256cddd9e2304f29e731aa473a4585833e5d",
+    "reused_reference": false
+  },
+  {
+    "code": "SHUFFLED",
+    "seed": 44,
+    "config": {
+      "phone": 0.01,
+      "content": 0.01,
+      "kind": "conditional"
+    },
+    "checkpoint_sha256": "1a97c706466a666cda968d797cd77cb58847986a37056bb9ae86d4e57066e5ab",
+    "reused_reference": false
+  }
+]

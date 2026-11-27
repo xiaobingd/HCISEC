@@ -1,0 +1,147 @@
+{
+  "spec_sha256": "1cbfc928c37b13c45e8c54ec77b9cac7cc35c99b72655521de8c37035720b1cf",
+  "config": {
+    "phone": 0.01,
+    "content": 0.01,
+    "kind": "conditional"
+  },
+  "steps": 1000,
+  "seed": 43,
+  "code": "SHUFFLED",
+  "initial_sha256": "bf95574c3c3e595cb93cc10cedcd335d7d4e679b8f0462ca57458cc6f6e478cf",
+  "batch_sha256": "9b30a36ea96478e29629ca955e5e4357863754a3a870a175e1fcf0cc4369f2f3",
+  "trace": [
+    {
+      "step": 100,
+      "identity_ce": 0.0611935555934906,
+      "supcon": 2.3206169605255127,
+      "phone_KL": 5.201635837554932,
+      "content_CE": 2.752918004989624,
+      "valid_phone_frames": 6999,
+      "gradient_norm": 1.6182630062103271,
+      "elapsed_s": 18.81761379999807
+    },
+    {
+      "step": 200,
+      "identity_ce": 0.0030960901640355587,
+      "supcon": 1.9461801052093506,
+      "phone_KL": 4.775542736053467,
+      "content_CE": 2.757178544998169,
+      "valid_phone_frames": 7028,
+      "gradient_norm": 0.2765367329120636,
+      "elapsed_s": 36.154102200001944
+    },
+    {
+      "step": 300,
+      "identity_ce": 0.0011995446402579546,
+      "supcon": 1.882327675819397,
+      "phone_KL": 4.441762447357178,
+      "content_CE": 2.762080430984497,
+      "valid_phone_frames": 8148,
+      "gradient_norm": 0.11254261434078217,
+      "elapsed_s": 52.88645050000923
+    },
+    {
+      "step": 400,
+      "identity_ce": 0.0007644037250429392,
+      "supcon": 1.8471418619155884,
+      "phone_KL": 3.662693738937378,
+      "content_CE": 2.7594141960144043,
+      "valid_phone_frames": 7308,
+      "gradient_norm": 0.07730349898338318,
+      "elapsed_s": 74.14431420000619
+    },
+    {
+      "step": 500,
+      "identity_ce": 0.0005619468283839524,
+      "supcon": 1.8323568105697632,
+      "phone_KL": 2.728888511657715,
+      "content_CE": 2.7190639972686768,
+      "valid_phone_frames": 8433,
+      "gradient_norm": 0.09954122453927994,
+      "elapsed_s": 92.729230500001
+    },
+    {
+      "step": 600,
+      "identity_ce": 0.00034607521956786513,
+      "supcon": 1.8215553760528564,
+      "phone_KL": 2.4624557495117188,
+      "content_CE": 2.7406017780303955,
+      "valid_phone_frames": 7710,
+      "gradient_norm": 0.0660042017698288,
+      "elapsed_s": 113.49962719999894
+    },
+    {
+      "step": 700,
+      "identity_ce": 0.00024206195666920394,
+      "supcon": 1.8124761581420898,
+      "phone_KL": 2.3960766792297363,
+      "content_CE": 2.7882590293884277,
+      "valid_phone_frames": 7329,
+      "gradient_norm": 0.04868200793862343,
+      "elapsed_s": 134.58294629999727
+    },
+    {
+      "step": 800,
+      "identity_ce": 0.00020983978174626827,
+      "supcon": 1.807093858718872,
+      "phone_KL": 2.7121450901031494,
+      "content_CE": 2.7500596046447754,
+      "valid_phone_frames": 7490,
+      "gradient_norm": 0.042139701545238495,
+      "elapsed_s": 152.09868140000617
+    },
+    {
+      "step": 900,
+      "identity_ce": 0.00019412787514738739,
+      "supcon": 1.8045040369033813,
+      "phone_KL": 2.337160348892212,
+      "content_CE": 2.7409496307373047,
+      "valid_phone_frames": 7338,
+      "gradient_norm": 0.042309217154979706,
+      "elapsed_s": 169.34097460001067
+    },
+    {
+      "step": 1000,
+      "identity_ce": 0.00015191057173069566,
+      "supcon": 1.8036361932754517,
+      "phone_KL": 2.7197203636169434,
+      "content_CE": 2.7329680919647217,
+      "valid_phone_frames": 7345,
+      "gradient_norm": 0.044822659343481064,
+      "elapsed_s": 188.8769214000058
+    }
+  ],
+  "gradient": [
+    {
+      "step": 1,
+      "identity_grad": 5.4636921882629395,
+      "phone_grad": 0.0016160650411620736,
+      "content_reverse_grad": 0.0003382893337402493,
+      "phone_to_id_ratio": 0.0002957825781777501,
+      "content_to_id_ratio": 6.191588181536645e-05,
+      "phone_id_cosine": 0.13606078922748566,
+      "content_id_cosine": -0.24654901027679443
+    },
+    {
+      "step": 100,
+      "identity_grad": 1.3475308418273926,
+      "phone_grad": 0.006197863258421421,
+      "content_reverse_grad": 0.001192686497233808,
+      "phone_to_id_ratio": 0.004599422216415405,
+      "content_to_id_ratio": 0.0008850903250277042,
+      "phone_id_cosine": 0.026826461777091026,
+      "content_id_cosine": -0.04310145601630211
+    },
+    {
+      "step": 1000,
+      "identity_grad": 0.035360127687454224,
+      "phone_grad": 0.008961771614849567,
+      "content_reverse_grad": 0.01039751898497343,
+      "phone_to_id_ratio": 0.2534428536891937,
+      "content_to_id_ratio": 0.29404643177986145,
+      "phone_id_cosine": -0.06800311803817749,
+      "content_id_cosine": 0.22242608666419983
+    }
+  ]
+}
